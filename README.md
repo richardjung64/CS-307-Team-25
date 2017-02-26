@@ -7,6 +7,9 @@ Today, people seek to know what clothing is in-style verses clothing that is on 
 * Android Studio - The IDE and SDK was used
 * AWS - Services like AWS S3 and their SDK
 
+##Running the tests
+Haven't started running any tests yet.
+
 ##Authors
 * Richard Jung
 * Arka Acharya
@@ -17,4 +20,4 @@ Today, people seek to know what clothing is in-style verses clothing that is on 
 
 ###Acknowledgments
 
-Facebook and Google for using their API and parts of their SDK to succesfully integrate our app with them
+Facebook and Google for using their API and parts of their SDK to succesfully integrate our app with them.

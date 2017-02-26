@@ -4,8 +4,8 @@ Today, people seek to know what clothing is in-style verses clothing that is on 
 
 ##Built With
 
-Android Studio - The IDE and SDK was used
-AWS - Services like AWS S3 and their SDK used
+* Android Studio - The IDE and SDK was used
+* AWS - Services like AWS S3 and their SDK
 
 ##Authors
 * Richard Jung

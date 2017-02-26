@@ -1,0 +1,7 @@
+#Sun Feb 26 02:02:10 EST 2017
+base.0=/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c36e4600d95de4a7a60363bb223e951ed675b250
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_1076ecd3651102a52e3e39d19356ef1712fd1ae5/classes.dex
+base.1=/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_1076ecd3651102a52e3e39d19356ef1712fd1ae5
+file.0=/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c36e4600d95de4a7a60363bb223e951ed675b250/classes.dex

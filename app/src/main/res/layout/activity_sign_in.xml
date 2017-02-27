@@ -39,4 +39,13 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="61dp" />
 
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp" />
+
 </RelativeLayout>

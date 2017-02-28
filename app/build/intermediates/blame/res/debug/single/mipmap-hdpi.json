@@ -1,34 +1,10 @@
 [
     {
-<<<<<<< HEAD
-=======
-        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\main_box_lower.png",
-        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-hdpi\\main_box_lower.png"
-    },
-    {
->>>>>>> parent of 0d0bb8d... sign in
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\splash_icon.png",
         "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-hdpi\\splash_icon.png"
     },
     {
-<<<<<<< HEAD
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
         "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-=======
-        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\main_background.png",
-        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-hdpi\\main_background.png"
-    },
-    {
-        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\main_box_upper.png",
-        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-hdpi\\main_box_upper.png"
-    },
-    {
-        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
-        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\main_logo.png",
-        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-hdpi\\main_logo.png"
->>>>>>> parent of 0d0bb8d... sign in
     }
 ]

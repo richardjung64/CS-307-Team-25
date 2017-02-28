@@ -359,15 +359,9 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-<<<<<<< HEAD
     <string name="app_name">Stylin\'</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
-=======
-    <string name="app_name">Stylin'\'</string>
-    <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
-    <string name="auth_google_play_services_client_google_display_name">Google</string>
->>>>>>> parent of 0d0bb8d... sign in
     <string name="button_text_sign_in">SIGN IN</string>
     <string name="button_text_sign_out">SIGN OUT</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
@@ -496,7 +490,6 @@
     <string name="nosql_select_table_item_partition_key_text">Partition Key</string>
     <string name="nosql_select_table_item_sort_key_text">Sort Key</string>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <string name="title_activity_home">HomeActivity</string>
     <string name="title_activity_item_detail">Item Detail</string>
     <string name="title_activity_item_list">Item List</string>
     <string name="title_activity_main">@string/app_name</string>

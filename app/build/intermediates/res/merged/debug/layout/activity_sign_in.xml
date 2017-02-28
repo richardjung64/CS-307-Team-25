@@ -33,20 +33,26 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/main_logo"
-        android:id="@+id/main_logo"
+        app:srcCompat="@mipmap/main_logo"
+        android:id="@+id/login_Logo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp" />
+        android:layout_marginTop="61dp" />
 
-    <Button
-        android:text="Button"
+    <CheckBox
+        android:text="CheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+<<<<<<< HEAD
         android:layout_marginBottom="74dp"
-        android:id="@+id/button2" />
+        android:id="@+id/button2"
+        android:onClick="openHome"/>
 
+=======
+        android:layout_marginBottom="26dp" />
+>>>>>>> parent of 0d0bb8d... sign in
 
 </RelativeLayout>

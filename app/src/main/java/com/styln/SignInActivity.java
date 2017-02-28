@@ -152,4 +152,8 @@ public class SignInActivity extends Activity {
         super.onActivityResult(requestCode, resultCode, data);
         signInManager.handleActivityResult(requestCode, resultCode, data);
     }
-}
+
+    public void openHome(View v){
+        Intent home = new Intent(SignInActivity.this, HomeActivity.this);
+        startActivity(home);
+    }}

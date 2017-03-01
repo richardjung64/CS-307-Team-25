@@ -19,15 +19,6 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 
     public void openHome(View view) {
@@ -39,7 +30,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void openTrend(View view) {
-        Log.d(LOG_TAG, "Launching Main Activity...");
+        Log.d(LOG_TAG, "Launching Trend Activity...");
         startActivity(new Intent(HomeActivity.this, TrendActivity.class)
                 .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         // finish should always be called on the main thread.
@@ -54,7 +45,7 @@ public class HomeActivity extends AppCompatActivity {
 
     public void openProfile(View view) {
         Log.d(LOG_TAG, "Launching Profile Activity...");
-        startActivity(new Intent(HomeActivity.this, TrendActivity.class)
+        startActivity(new Intent(HomeActivity.this, ProfileActivity.class)
                 .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         // finish should always be called on the main thread.
         finish();

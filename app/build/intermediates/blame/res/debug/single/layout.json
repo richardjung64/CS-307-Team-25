@@ -4,10 +4,6 @@
         "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_homenot.xml",
-        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_homenot.xml"
-    },
-    {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
         "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_layout_snackbar_include.xml"
     },
@@ -32,16 +28,16 @@
         "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_tooltip_bubble.xml",
-        "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\layout\\com_facebook_tooltip_bubble.xml"
+        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
+        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_splash.xml"
     },
     {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_demo_identity.xml",
         "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\layout\\fragment_demo_identity.xml"
     },
     {
-        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
-        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_splash.xml"
+        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_tooltip_bubble.xml",
+        "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\layout\\com_facebook_tooltip_bubble.xml"
     },
     {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
@@ -90,6 +86,10 @@
     {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
         "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_profile.xml",
+        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_profile.xml"
     },
     {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_drawer_item.xml",
@@ -246,6 +246,10 @@
     {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sign_in.xml",
         "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_sign_in.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_trend.xml",
+        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_trend.xml"
     },
     {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",

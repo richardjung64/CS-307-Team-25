@@ -5,33 +5,40 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="14037631421338"
+    timestamp="98187842113850"
     token="-5370349610670013868"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="4670" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="5942" />
+        duration="0" />
     <task
         name="verifier"
-        duration="1737" />
+        duration="0" />
 
     <artifact
-        location="D:\Github\CS-307-Team-25\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="D:\Github\CS-307-Team-25\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
-        timestamp="14037631421338"
+        timestamp="97899751874569"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Github\CS-307-Team-25\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="98187842113850"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="D:\Github\CS-307-Team-25\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

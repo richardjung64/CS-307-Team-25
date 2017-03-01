@@ -63,6 +63,8 @@
             android:name="com.styln.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme" />
+        <activity android:name="com.styln.TrendActivity" />
+        <activity android:name="com.styln.ProfileActivity" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

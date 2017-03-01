@@ -1,85 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/main_background"
-        android:id="@+id/main_background" />
+        android:id="@+id/background" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/main_box_upper"
-        android:id="@+id/main_box_upper"
-        android:scaleType="fitStart"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="393dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="500dp"
+        android:layout_height="70dp"
         android:src="@drawable/main_box_lower"
-        android:id="@+id/imageView4"
-        android:scaleType="fitEnd"
+        android:id="@+id/lowerBox"
+        android:scaleType="fitXY"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/main_home"
-        android:id="@+id/imageButton2"
-        android:visibility="visible"
-        android:scaleType="fitCenter"
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="55dp"
+        android:src="@drawable/main_box_upper"
+        android:id="@+id/upperBox"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        app:srcCompat="@drawable/main_home"
+        android:id="@+id/home"
+        android:adjustViewBounds= "true"
+        android:layout_alignLeft="@+id/background"
+        android:layout_alignTop="@+id/lowerBox"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="1dp"
+        android:onClick="openHome"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="85dp"
+        app:srcCompat="@drawable/main_trend"
+        android:id="@+id/trend"
+        android:layout_alignLeft="@+id/background"
+        android:layout_alignTop="@+id/lowerBox"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="0dp"
+        android:onClick="openTrend"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/main_box_post"
+        android:id="@+id/postBox"
+        android:scaleType="fitXY"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_alignTop="@+id/imageView4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="271dp"
-        android:layout_marginEnd="271dp"
-        android:layout_marginTop="147dp" />
+        android:layout_centerHorizontal="true" />
 
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.styln.HomeActivity">
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/main_post"
+        android:id="@+id/post"
+        android:layout_alignTop="@+id/postBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="openPost"
+        android:scaleType="fitXY"/>
 
-    <android.support.design.widget.AppBarLayout
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/main_browse"
+        android:id="@+id/browse"
+        android:layout_alignLeft="@+id/background"
+        android:layout_alignTop="@+id/lowerBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="openBrowse"
+        android:scaleType="fitStart"/>
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/main_me"
+        android:id="@+id/me"
+        android:layout_alignLeft="@+id/lowerBox"
+        android:layout_alignTop="@+id/lowerBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="315dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:onClick="openProfile"
+        android:scaleType="fitStart"/>
 
-    </android.support.design.widget.AppBarLayout>
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/main_settings"
+        android:id="@+id/settings"
+        android:layout_alignLeft="@+id/upperBox"
+        android:layout_alignTop="@+id/background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="500dp"
+        android:onClick="openSettings"
+        android:scaleType="fitXY"/>
 
-    <include layout="@layout/content_home" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
-
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/main_logo"
+        android:id="@+id/logo"
+        android:onClick="refresh"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/upperBox"
+        android:layout_alignRight="@+id/postBox"
+        android:layout_alignEnd="@+id/postBox"
+        android:layout_marginTop="5dp"/>
 
 
 </RelativeLayout>

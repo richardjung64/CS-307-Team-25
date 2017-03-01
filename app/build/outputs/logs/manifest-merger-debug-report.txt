@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:2:1-60:12
+ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:2:1-62:12
 	package
 		ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:3:5-24
 		INJECTED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml
@@ -34,7 +34,7 @@ ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:9:5-74
 	android:name
 		ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:9:22-71
 application
-ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:11:5-58:19
+ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:11:5-60:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] D:\Github\CS-307-Team-25\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.6.0\AndroidManifest.xml:28:5-20
 MERGED from [com.google.android.gms:play-services-plus:10.2.0] D:\Github\CS-307-Team-25\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\10.2.0\AndroidManifest.xml:18:5-19
 MERGED from [com.google.android.gms:play-services-base:10.2.0] D:\Github\CS-307-Team-25\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.0\AndroidManifest.xml:18:5-20:19
@@ -74,7 +74,7 @@ ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
 		ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:24:27-74
 activity#com.styln.SignInActivity
-ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:27:9-30:71
+ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:27:9-30:62
 	android:label
 		ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:30:13-59
 	android:configChanges
@@ -82,7 +82,7 @@ ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:27:9-30:71
 	android:name
 		ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:28:13-43
 activity#com.styln.MainActivity
-ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:31:9-34:60
+ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:31:9-34:51
 	android:label
 		ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:33:13-56
 	android:launchMode
@@ -113,13 +113,21 @@ MERGED from [com.google.android.gms:play-services-basement:10.2.0] D:\Github\CS-
 	android:name
 		ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:51:13-58
 activity#com.styln.HomeActivity
-ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:54:9-57:56
+ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:54:9-57:47
 	android:label
 		ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:56:13-56
 	android:theme
 		ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:57:13-44
 	android:name
 		ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:55:13-41
+activity#com.styln.TrendActivity
+ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:58:9-51
+	android:name
+		ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:58:19-48
+activity#com.styln.ProfileActivity
+ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:59:9-62
+	android:name
+		ADDED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml:59:19-50
 uses-sdk
 INJECTED from D:\Github\CS-307-Team-25\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:multidex:1.0.1] D:\Github\CS-307-Team-25\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42

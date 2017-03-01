@@ -36,6 +36,10 @@
         "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_logo.png"
     },
     {
+        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_box_post.png",
+        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_box_post.png"
+    },
+    {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_normal.xml",
         "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
     },

@@ -232,6 +232,10 @@
         "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\drawable\\messenger_button_white_bg_round.xml"
     },
     {
+        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_logo_small.png",
+        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_logo_small.png"
+    },
+    {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
         "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\drawable\\design_snackbar_background.xml"
     },

@@ -2,12 +2,11 @@
 <instant-run
     abi="x86"
     api-level="25"
-    density="xxhdpi"
+    density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="98187842113850"
-    token="-5370349610670013868"
-    verifier="COMPATIBLE" >
+    timestamp="152787252660347"
+    token="-5370349610670013868" >
 
     <task
         name="javac"
@@ -22,23 +21,13 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="D:\Github\CS-307-Team-25\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-        type="RESOURCES" />
-
     <build
-        timestamp="97899751874569"
+        timestamp="152637928545128"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Github\CS-307-Team-25\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build
-        timestamp="98187842113850"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="D:\Github\CS-307-Team-25\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
-    </build>
+    <build timestamp="152787252660347" />
 
 </instant-run>

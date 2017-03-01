@@ -2671,7 +2671,7 @@ containing a value of this type.
         public static final int ifRoom=0x7f0c0039;
         public static final int image=0x7f0c0054;
         public static final int imageButton2=0x7f0c0081;
-        public static final int imageView4=0x7f0c0080;
+        public static final int lowerBox =0x7f0c0080;
         public static final int imageView_demoIdentityUserImage=0x7f0c00ae;
         public static final int info=0x7f0c00cc;
         public static final int inline=0x7f0c0049;
@@ -2686,8 +2686,8 @@ containing a value of this type.
         public static final int list_item_icon=0x7f0c00bb;
         public static final int list_item_subtitle=0x7f0c00bd;
         public static final int list_item_title=0x7f0c00bc;
-        public static final int main_background=0x7f0c007e;
-        public static final int main_box_upper=0x7f0c007f;
+        public static final int background =0x7f0c007e;
+        public static final int upperBox =0x7f0c007f;
         public static final int main_content_layout=0x7f0c0085;
         public static final int main_fragment_container=0x7f0c0086;
         public static final int main_logo=0x7f0c008f;

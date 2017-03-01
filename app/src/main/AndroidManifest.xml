@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><!--      http://tools.android.com/tech-docs/new-build-system/applicationid-vs-packagename -->
+<?xml version="1.0" encoding="utf-8"?><!-- http://tools.android.com/tech-docs/new-build-system/applicationid-vs-packagename -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.styln">
 
@@ -27,11 +27,11 @@
         <activity
             android:name=".SignInActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:label="@string/title_activity_sign_in"></activity>
+            android:label="@string/title_activity_sign_in" />
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
-            android:launchMode="singleInstance"></activity>
+            android:launchMode="singleInstance" />
 
         <!-- BEGIN - FACEBOOK SIGN-IN -->
 
@@ -54,7 +54,8 @@
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".TrendActivity"></activity>
     </application>
 
 </manifest>

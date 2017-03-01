@@ -7,78 +7,129 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/main_background"
-        android:id="@+id/main_background" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/main_box_upper"
-        android:id="@+id/main_box_upper"
-        android:scaleType="fitStart"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="393dp" />
+        android:id="@+id/background" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/main_box_lower"
-        android:id="@+id/imageView4"
+        android:id="@+id/lowerBox"
         android:scaleType="fitEnd"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <ImageButton
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/main_home"
-        android:id="@+id/imageButton2"
-        android:visibility="visible"
-        android:scaleType="fitCenter"
-        android:layout_alignParentBottom="true"
+        android:src="@drawable/main_box_upper"
+        android:id="@+id/upperBox"
+        android:scaleType="fitStart"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/main_logo"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="150dp"
+        android:layout_alignBottom="@+id/upperBox"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="271dp"
-        android:layout_marginEnd="271dp"
-        android:layout_marginTop="147dp" />
+        android:onClick="refresh"/>
 
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.styln.HomeActivity">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/main_home"
+        android:id="@+id/home"
+        android:layout_alignLeft="@+id/background"
+        android:layout_alignTop="@+id/background"
+        android:layout_alignBottom="@+id/background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="500dp"
+        android:onClick="openHome"/>
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/main_trend"
+        android:id="@+id/trend"
+        android:layout_alignLeft="@+id/background"
+        android:layout_alignTop="@+id/background"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="openTrend"/>
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/main_box_post"
+        android:id="@+id/postBox"
+        android:layout_alignLeft="@+id/background"
+        android:layout_alignTop="@+id/background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="480dp"
+        />
 
-    </android.support.design.widget.AppBarLayout>
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/main_post"
+        android:id="@+id/post"
+        android:layout_alignLeft="@+id/background"
+        android:layout_alignTop="@+id/background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="openPost"/>
 
-    <include layout="@layout/content_home" />
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/main_browse"
+        android:id="@+id/browse"
+        android:layout_alignLeft="@+id/background"
+        android:layout_alignTop="@+id/background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="508dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="openBrowse"/>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/main_me"
+        android:id="@+id/me"
+        android:layout_alignLeft="@+id/background"
+        android:layout_alignTop="@+id/background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="315dp"
+        android:layout_marginTop="508dp"
+        android:layout_marginBottom="3dp"
+        android:onClick="openProfile"/>
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/main_settings"
+        android:id="@+id/settings"
+        android:layout_alignLeft="@+id/background"
+        android:layout_alignTop="@+id/background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="315dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="500dp"
+        android:onClick="openSettings"/>
 
 
 

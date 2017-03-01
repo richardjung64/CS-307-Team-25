@@ -15,6 +15,13 @@
     <ImageView
         android:layout_width="500dp"
         android:layout_height="70dp"
+        android:src="@drawable/main_box_upper"
+        android:id="@+id/upperBox"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="70dp"
         android:src="@drawable/main_box_lower"
         android:id="@+id/lowerBox"
         android:scaleType="fitXY"
@@ -23,36 +30,16 @@
         android:layout_alignParentStart="true" />
 
     <ImageView
-        android:layout_width="500dp"
-        android:layout_height="55dp"
-        android:src="@drawable/main_box_upper"
-        android:id="@+id/upperBox"
-        android:scaleType="fitXY" />
-
-    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/main_home"
-        android:id="@+id/home"
-        android:layout_alignLeft="@+id/background"
-        android:layout_alignTop="@+id/lowerBox"
-        android:layout_marginLeft="13dp"
-        android:layout_marginTop="1dp"
-        android:onClick="openHome
-        //android:scaleType="fitXY"
-       android:adjustViewBounds="true"" />
-
-    <ImageView
-        android:layout_width="80dp"
-        android:layout_height="85dp"
         app:srcCompat="@drawable/main_trend"
         android:id="@+id/trend"
-        android:layout_alignLeft="@+id/background"
-        android:layout_alignTop="@+id/lowerBox"
-        android:layout_marginLeft="70dp"
+        android:layout_alignLeft="@+id/homeBox"
+        android:layout_alignTop="@+id/trendBox"
+        android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
         android:onClick="openTrend"
-        android:scaleType="fitStart"/>
+        android:scaleType="fitCenter"/>
 
     <ImageView
         android:layout_width="100dp"
@@ -60,20 +47,45 @@
         app:srcCompat="@drawable/main_box_post"
         android:id="@+id/postBox"
         android:scaleType="fitXY"
-        android:layout_alignParentBottom="true"
+
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/main_home"
+        android:id="@+id/home"
+        android:onClick="openHome"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_alignTop="@id/homeBox"
+        android:layout_alignLeft="@id/homeBox"
+        android:paddingRight="300dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentRight="true"/>
 
     <ImageView
         android:layout_width="90dp"
         android:layout_height="80dp"
         app:srcCompat="@drawable/main_post"
         android:id="@+id/post"
-        android:layout_alignTop="@+id/postBox"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="5dp"
-        android:onClick="openPost"
-        android:scaleType="fitXY"/>
+        />
+
+    <Space
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/homeBox"
+        android:layout_alignTop="@+id/lowerBox"
+        android:layout_marginLeft="5dp" />
+
+    <Space
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/trendBox"
+        android:layout_alignTop="@+id/lowerBox"
+        android:layout_toRightOf="@+id/homeBox"
+        />
 
     <ImageView
         android:layout_width="match_parent"
@@ -104,18 +116,18 @@
         android:scaleType="fitStart"/>
 
     <ImageView
-        android:layout_width="55dp"
-        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/main_settings"
         android:id="@+id/settings"
         android:layout_alignLeft="@+id/upperBox"
-        android:layout_alignTop="@+id/background"
+        android:layout_alignTop="@+id/upperBox"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="310dp"
         android:layout_marginTop="3dp"
         android:layout_marginBottom="500dp"
         android:onClick="openSettings"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitCenter"/>
 
     <ImageView
         android:layout_width="100dp"

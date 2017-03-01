@@ -53,6 +53,11 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void openProfile(View view) {
+        Log.d(LOG_TAG, "Launching Profile Activity...");
+        startActivity(new Intent(HomeActivity.this, TrendActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        // finish should always be called on the main thread.
+        finish();
     }
 
     public void openSettings(View view) {

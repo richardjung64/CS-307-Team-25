@@ -16,16 +16,16 @@
         "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\drawable\\design_fab_background.xml"
     },
     {
-        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_home.png",
-        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_home.png"
+        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_button_facebook.xml",
+        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\selector_button_facebook.xml"
     },
     {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_disabled.xml",
         "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
     },
     {
-        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_button_facebook.xml",
-        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\selector_button_facebook.xml"
+        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_home.png",
+        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_home.png"
     },
     {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_background.png",
@@ -102,6 +102,10 @@
     {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
         "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\me_textbackground.png",
+        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\me_textbackground.png"
     },
     {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_disabled.xml",

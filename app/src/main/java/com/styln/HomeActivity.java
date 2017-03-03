@@ -1,6 +1,8 @@
 package com.styln;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,7 +15,18 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
+import com.amazonaws.mobile.user.signin.Utils;
 import com.facebook.login.widget.ProfilePictureView;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -21,7 +34,24 @@ public class HomeActivity extends AppCompatActivity {
     private ImageView imageLike;
     private TextView textLikes;
     private ImageView profilePic;
-    @Override
+
+    public static Bitmap getBitmapFromURL(String src) {
+        try {
+            URL url = new URL(src);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setDoInput(true);
+            connection.connect();
+            InputStream input = connection.getInputStream();
+            Bitmap myBitmap = BitmapFactory.decodeStream(input);
+            Log.e("Bitmap","returned");
+            return myBitmap;
+        } catch (IOException e) {
+            e.printStackTrace();
+            Log.e("Exception",e.getMessage());
+            return null;
+        }
+    }
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
@@ -30,7 +60,8 @@ public class HomeActivity extends AppCompatActivity {
         imageLike = (ImageView)findViewById(R.id.like);
         textLikes = (TextView)findViewById(R.id.numLikes);
         profilePic = (ImageView)findViewById(R.id.profilePicture);
-        String add = FacebookSignInProvider.userImageUrl;
+        String address = FacebookSignInProvider.userImageUrl;
+        new loadURLImage(address, profilePic).execute();
     }
 
 

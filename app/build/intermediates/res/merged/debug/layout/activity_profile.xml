@@ -11,10 +11,12 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/me_textbackground"
+        app:srcCompat="@drawable/me_textbg"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="30dp"
+        android:layout_marginLeft="50dp"
+        android:scaleType="fitXY"
         android:id="@+id/textBackground"
         />
 
@@ -137,6 +139,67 @@
         android:onClick="openProfile"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"/>
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="3"
+        android:layout_alignTop="@+id/textBackground"
+        android:layout_toRightOf="@+id/homeBox"
+        android:layout_toEndOf="@+id/homeBox"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="142dp"
+        android:id="@+id/seekBar" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:text="RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner"
+        android:layout_toRightOf="@+id/homeBox"
+        android:layout_toEndOf="@+id/homeBox"
+        android:layout_marginBottom="51dp"
+        android:id="@+id/radioButton" />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioButton"
+        android:layout_toRightOf="@+id/radioButton"
+        android:layout_toEndOf="@+id/radioButton"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/checkBox" />
+
+    <Switch
+        android:text="Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_toRightOf="@+id/seekBar"
+        android:layout_toEndOf="@+id/seekBar"
+        android:id="@+id/switch1" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_alignRight="@+id/browse"
+        android:layout_alignEnd="@+id/browse"
+        android:layout_marginTop="56dp"
+        android:id="@+id/ratingBar" />
 
 
 </RelativeLayout>

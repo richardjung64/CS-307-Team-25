@@ -4,6 +4,10 @@
         "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_me.png"
     },
     {
+        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\me_textbg.png",
+        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\me_textbg.png"
+    },
+    {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
         "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_item_background_holo_light.xml"
     },
@@ -102,10 +106,6 @@
     {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
         "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_cab_background_top_material.xml"
-    },
-    {
-        "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\me_textbackground.png",
-        "source": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\me_textbackground.png"
     },
     {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_disabled.xml",

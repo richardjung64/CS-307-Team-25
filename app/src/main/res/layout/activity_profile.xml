@@ -11,11 +11,13 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/me_textbackground"
+        app:srcCompat="@drawable/me_textbg"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="30dp"
-        android:id="@+id/textBackground"
+        android:layout_marginLeft="50dp"
+        android:scaleType="fitXY"
+        android:id="@+id/textbg"
         />
 
     <ImageView
@@ -137,6 +139,29 @@
         android:onClick="openProfile"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/AccPrivText"
+        android:layout_alignRight="@id/textbg"
+        android:layout_marginRight="15dp"
+        android:id="@+id/AccPrivBox"
+        android:onClick="onClick"
+        />
+
+    <TextView
+        android:text="Set Account Private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textbg"
+        android:layout_alignLeft="@+id/textbg"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/AccPrivText"
+        android:textSize="22sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
 
 
 </RelativeLayout>

@@ -6,6 +6,23 @@
     android:layout_height="match_parent"
     android:background="@drawable/main_background">
 
+
+    //Dummy Post
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/me_textbg"
+        android:layout_below="@+id/upperBox"
+        android:layout_alignLeft="@+id/textBackground"
+        android:layout_alignTop="@+id/textBackground"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:id="@+id/dummyPostBG"
+        android:scaleType="fitXY"
+        />
+
     <ImageView
         android:layout_width="500dp"
         android:layout_height="65dp"
@@ -160,6 +177,9 @@
         android:layout_alignRight="@+id/postBox"
         android:layout_alignEnd="@+id/postBox"
         android:paddingTop="5dp"/>
+
+
+
 
 
 </RelativeLayout>

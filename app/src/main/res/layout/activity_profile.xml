@@ -148,7 +148,7 @@
         android:layout_alignRight="@id/textbg"
         android:layout_marginRight="15dp"
         android:id="@+id/AccPrivBox"
-        android:onClick="onClick"
+        android:onClick="setPrivacy"
         />
 
     <TextView

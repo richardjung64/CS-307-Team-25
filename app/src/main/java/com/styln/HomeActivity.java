@@ -115,9 +115,24 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
+    public void addItem(View view) {
+        int id = view.getId();
+        if(id == R.id.Bitem1){
+            ProfileActivity.show1 = true;
+        }
+        if(id == R.id.Bitem2){
+            ProfileActivity.show2 = true;
+        }
+        Button a = (Button) findViewById(R.id.Bitem1);
+        Button b = (Button) findViewById(R.id.Bitem2);
+        a.setVisibility(View.INVISIBLE);
+        b.setVisibility(View.INVISIBLE);
+    }
     public void addTo(View view) {
-        ProfileActivity.show1 = true;
-        ProfileActivity.show2 = true;
+        Button a = (Button) findViewById(R.id.Bitem1);
+        Button b = (Button) findViewById(R.id.Bitem2);
+       a.setVisibility(View.VISIBLE);
+        b.setVisibility(View.VISIBLE);
     }
 
     public void follow(View view) {
@@ -131,4 +146,6 @@ public class HomeActivity extends AppCompatActivity {
             follow.setTextSize(10);
         }
     }
+
+
 }

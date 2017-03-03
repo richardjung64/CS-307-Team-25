@@ -131,17 +131,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onResume();
 
         if (!AWSMobileClient.defaultMobileClient().getIdentityManager().isUserSignedIn()) {
-            // In the case that the activity is restarted by the OS after the application
-            // is killed we must redirect to the splash activity to handle the sign-in flow.
+// In the case that the activity is restarted by the OS after the application
+// is killed we must redirect to the splash activity to handle the sign-in flow.
             Intent intent = new Intent(this, SplashActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
-            intent = new Intent(this, HomeActivity.class);
+        } else {
+            Intent intent = new Intent(this, HomeActivity.class);
             startActivity(intent);
-            return;
+            setContentView(R.layout.activity_home);
         }
-
-        setupSignInButtons();
+        return;
     }
 
     @Override

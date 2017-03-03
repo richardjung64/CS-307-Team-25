@@ -232,7 +232,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         app:srcCompat="@drawable/main_add"
-        android:id="@+id/imageView4"
+        android:id="@+id/add"
         android:layout_alignTop="@+id/like"
         android:layout_toRightOf="@+id/like"
         android:layout_toEndOf="@+id/like"
@@ -299,6 +299,30 @@
         android:layout_below="@+id/seperator"
         android:layout_toRightOf="@id/item1"
          />
+
+    <Button
+        android:text="Addidas Shirt"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:layout_alignTop="@+id/add"
+        android:layout_toRightOf="@id/add"
+        android:id="@+id/Bitem1"
+        android:visibility="gone"
+        android:onClick="addItem"
+        android:clickable="true"/>
+
+    <Button
+        android:text="Gonz Shoes"
+        android:textSize="10sp"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/Bitem1"
+        android:layout_toRightOf="@id/add"
+        android:id="@+id/Bitem2"
+        android:visibility="gone"
+        android:onClick="addItem"
+        android:clickable="true"/>
 
 
 </RelativeLayout>

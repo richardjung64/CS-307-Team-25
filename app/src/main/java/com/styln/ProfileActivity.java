@@ -1,19 +1,23 @@
 package com.styln;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.Image;
 import android.net.Uri;
 import android.provider.ContactsContract;
 import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -31,6 +35,7 @@ public class ProfileActivity extends AppCompatActivity {
     public static boolean show2;
     private ImageView myCol1;
     private ImageView myCol2;
+    static boolean checked = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +46,13 @@ public class ProfileActivity extends AppCompatActivity {
         identityManager = awsMobileClient.getIdentityManager();
         userName = (TextView)findViewById(R.id.userName);
         userName.setText(FacebookSignInProvider.userName);
+
+        CompoundButton cb = (CheckBox)findViewById(R.id.AccPrivBox);
+        if(checked){
+           cb.setChecked(true);
+        } else {
+            cb.setChecked(false);
+        }
 
         myCol1 = (ImageView)findViewById(R.id.item1);
         myCol2 = (ImageView)findViewById(R.id.item2);
@@ -87,21 +99,34 @@ public class ProfileActivity extends AppCompatActivity {
         // finish should always be called on the main thread.
         finish();
     }
-
-    public void onClick(View view) {
-        boolean checked = ((CheckBox) view).isChecked();
-        if(view.getId() == R.id.AccPrivBox){
-            if(checked){
-                //Set Account Private
-            } else {
-                //Set Account Public
-
-            }
-        }
-    }
-
-
+    String change = "";
     public void changeName(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("New Username");
+
+// Specify input
+        final EditText input = new EditText(this);
+        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_CLASS_TEXT);
+        builder.setView(input);
+
+//Confirm button
+        builder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                change = input.getText().toString();
+                userName.setText(change);
+            }
+        });
+//Cancel button
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        builder.show();
+
     }
 
     public void signOut(View view) {
@@ -109,5 +134,18 @@ public class ProfileActivity extends AppCompatActivity {
         startActivity(new Intent(ProfileActivity.this, SignInActivity.class));
         finish();
         return;
+    }
+
+    public void setPrivacy(View view) {
+        CompoundButton cb = (CheckBox) findViewById(R.id.AccPrivBox);
+        if(view.getId() == R.id.AccPrivBox){
+            checked = cb.isChecked();
+            if(checked){
+                //Set Account Private
+            } else {
+                //Set Account Public
+
+            }
+        }
     }
 }

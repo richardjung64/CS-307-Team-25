@@ -40,13 +40,13 @@
         android:layout_marginTop="33dp" />
 
     <Button
-        android:text="Button"
+        android:text="Sign In"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="74dp"
-        android:id="@+id/button2"
+        android:id="@+id/signIn"
         android:onClick="openHome"/>
 
 

@@ -25,9 +25,8 @@ public class HomeActivity extends AppCompatActivity {
     private ImageView imageLike;
     private TextView textLikes;
     private ImageView profilePic;
-    RoundImage roundedImage;
+    RoundImageView roundedImage;
     private Button follow;
-
 
     static boolean liked = false;
     static int numLikes = 0;
@@ -45,9 +44,12 @@ public class HomeActivity extends AppCompatActivity {
         profilePic = (ImageView)findViewById(R.id.profilePicture);
         String address = FacebookSignInProvider.userImageUrl;
         new LoadURLImage(address, profilePic).execute();
-        Bitmap bm = BitmapFactory.decodeResource(getResources(),R.drawable.test_kevin);
-        roundedImage = new RoundImage(bm);
-        profilePic.setImageDrawable(roundedImage);
+
+
+        profilePic = (ImageView)findViewById(R.id.kevin);
+        Bitmap bm = profilePic.getDrawingCache();
+        Bitmap bm2 = RoundImageView.getCroppedBitmap(bm,50);
+        profilePic.setImageBitmap(bm2);
 
         if(liked){
             imageLike.setImageResource(R.drawable.main_like_1);

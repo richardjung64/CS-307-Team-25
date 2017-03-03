@@ -5,47 +5,33 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="286225121316441"
+    timestamp="289771150867477"
     token="-5370349610670013868"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="310" />
+        duration="1457" />
     <task
         name="instant-run-dex"
-        duration="18" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="52" />
+        duration="1925" />
     <task
         name="verifier"
-        duration="3" />
+        duration="581" />
 
     <artifact
-        location="D:\Github\CS-307-Team-25\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="D:\Github\CS-307-Team-25\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="284706043207935"
+        timestamp="289771150867477"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Github\CS-307-Team-25\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="286140412763585"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="D:\Github\CS-307-Team-25\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="286225121316441"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="D:\Github\CS-307-Team-25\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

@@ -183,22 +183,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/changeName"
-        android:layout_alignLeft="@+id/myCollection"
-        android:layout_alignStart="@+id/myCollection"
+        android:layout_alignLeft="@+id/item1"
+        android:layout_alignStart="@+id/item1"
         android:layout_marginTop="15dp"
         android:id="@+id/textCollection"
         android:textSize="20sp"
         android:textColor="?attr/colorPrimaryDark" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/main_browse"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/test_empty"
         android:layout_below="@+id/changeName"
         android:layout_alignLeft="@+id/AccPrivText"
         android:layout_alignTop="@id/textCollection"
         android:layout_marginTop="50dp"
-        android:id="@+id/myCollection" />
+        android:id="@+id/item1" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/test_empty"
+        android:layout_below="@+id/changeName"
+        android:layout_alignTop="@id/textCollection"
+        android:layout_toRightOf="@id/item1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/item2" />
 
     <ImageView
         android:layout_width="wrap_content"

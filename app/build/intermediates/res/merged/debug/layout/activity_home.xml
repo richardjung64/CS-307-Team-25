@@ -189,40 +189,40 @@
         android:layout_marginLeft="18dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="15dp"
-        android:id="@+id/dummyPicture" />
+        android:id="@+id/dummyPictureBox" />
 
     <TextView
-        android:text="User Name"
+        android:text="Kevin Jiang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/dummyPicture"
-        android:layout_toRightOf="@+id/dummyPicture"
-        android:layout_toEndOf="@+id/dummyPicture"
+        android:layout_alignTop="@+id/dummyPictureBox"
+        android:layout_toRightOf="@+id/dummyPictureBox"
+        android:layout_toEndOf="@+id/dummyPictureBox"
         android:layout_marginLeft="10dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
-        android:id="@+id/textView"
-        android:textSize="24sp"
+        android:id="@+id/kevinName"
+        android:textSize="20sp"
         android:textColor="@color/common_google_signin_btn_text_dark_focused" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/main_line"
-        android:layout_below="@+id/dummyPicture"
+        android:layout_below="@+id/dummyPictureBox"
         android:layout_alignLeft="@+id/dummyPostBG"
         android:layout_marginTop="0dp"
         android:layout_alignRight="@id/dummyPostBG"
         android:scaleType="fitXY"
-        android:id="@+id/imageView2" />
+        android:id="@+id/seperator" />
 
     <ImageView
         android:layout_width="55dp"
         android:layout_height="55dp"
         app:srcCompat="@drawable/main_like_0"
         android:layout_alignBottom="@+id/dummyPostBG"
-        android:layout_alignLeft="@+id/dummyPicture"
-        android:layout_alignStart="@+id/dummyPicture"
+        android:layout_alignLeft="@+id/dummyPictureBox"
+        android:layout_alignStart="@+id/dummyPictureBox"
         android:layout_marginBottom="10dp"
         android:id="@+id/like"
         android:clickable="true"
@@ -241,8 +241,8 @@
         android:onClick="addTo"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         app:srcCompat="@drawable/messenger_button_send_round_shadow"
         android:id="@+id/profilePicture"
         android:layout_alignTop="@+id/settings"
@@ -261,6 +261,44 @@
         android:layout_marginLeft="15dp"
         android:id="@+id/numLikes"
         android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/test_kevin"
+        android:layout_alignTop="@id/dummyPictureBox"
+        android:layout_alignLeft="@id/dummyPictureBox"
+        android:scaleType="fitCenter"
+        android:id="@+id/kevin" />
+
+    <Button
+        android:text="FOLLOW"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:textSize="12sp"
+        android:layout_alignBottom="@+id/kevin"
+        android:layout_alignRight="@+id/dummyPostBG"
+        android:layout_marginRight="10dp"
+        android:layout_alignEnd="@+id/dummyPostBG"
+        android:id="@+id/follow"
+        android:onClick="follow"
+        android:clickable="true"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/item_1"
+        android:id="@+id/item1"
+        android:layout_below="@+id/seperator"
+        android:layout_alignLeft="@id/dummyPostBG" />
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/item_2"
+        android:id="@+id/item2"
+        android:layout_below="@+id/seperator"
+        android:layout_toRightOf="@id/item1"
+         />
 
 
 </RelativeLayout>

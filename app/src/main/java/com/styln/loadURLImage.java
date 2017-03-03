@@ -13,12 +13,12 @@ import java.net.URL;
  * Created by tiger on 2017/3/3.
  */
 
-public class loadURLImage extends AsyncTask<Void, Void, Bitmap> {
+public class LoadURLImage extends AsyncTask<Void, Void, Bitmap> {
 
     private String url;
     private ImageView imageView;
 
-    public loadURLImage(String url, ImageView imageView) {
+    public LoadURLImage(String url, ImageView imageView) {
         this.url = url;
         this.imageView = imageView;
     }

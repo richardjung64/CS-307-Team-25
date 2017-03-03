@@ -27,6 +27,10 @@ public class ProfileActivity extends AppCompatActivity {
 
     private IdentityManager identityManager;
     private TextView userName;
+    public static boolean show1;
+    public static boolean show2;
+    private ImageView myCol1;
+    private ImageView myCol2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +41,21 @@ public class ProfileActivity extends AppCompatActivity {
         identityManager = awsMobileClient.getIdentityManager();
         userName = (TextView)findViewById(R.id.userName);
         userName.setText(FacebookSignInProvider.userName);
+
+        myCol1 = (ImageView)findViewById(R.id.item1);
+        myCol2 = (ImageView)findViewById(R.id.item2);
+        if(show1){
+            myCol1.setImageResource(R.drawable.item_1);
+        } else {
+            myCol1.setImageResource(R.drawable.test_empty);
+        }
+
+        if(show2){
+            myCol2.setImageResource(R.drawable.item_2);
+        } else {
+            myCol2.setImageResource(R.drawable.test_empty);
+        }
+
     }
 
     public void openHome(View view) {

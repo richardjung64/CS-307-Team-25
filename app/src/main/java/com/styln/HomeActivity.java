@@ -4,27 +4,18 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
-import com.amazonaws.mobile.user.signin.Utils;
-import com.facebook.login.widget.ProfilePictureView;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -34,23 +25,13 @@ public class HomeActivity extends AppCompatActivity {
     private ImageView imageLike;
     private TextView textLikes;
     private ImageView profilePic;
+    RoundImage roundedImage;
+    private Button follow;
 
-    public static Bitmap getBitmapFromURL(String src) {
-        try {
-            URL url = new URL(src);
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setDoInput(true);
-            connection.connect();
-            InputStream input = connection.getInputStream();
-            Bitmap myBitmap = BitmapFactory.decodeStream(input);
-            Log.e("Bitmap","returned");
-            return myBitmap;
-        } catch (IOException e) {
-            e.printStackTrace();
-            Log.e("Exception",e.getMessage());
-            return null;
-        }
-    }
+
+    static boolean liked = false;
+    static int numLikes = 0;
+    static boolean followed = false;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,9 +40,30 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         imageLike = (ImageView)findViewById(R.id.like);
         textLikes = (TextView)findViewById(R.id.numLikes);
+        follow = (Button)findViewById(R.id.follow);
+
         profilePic = (ImageView)findViewById(R.id.profilePicture);
         String address = FacebookSignInProvider.userImageUrl;
-        new loadURLImage(address, profilePic).execute();
+        new LoadURLImage(address, profilePic).execute();
+        Bitmap bm = BitmapFactory.decodeResource(getResources(),R.drawable.test_kevin);
+        roundedImage = new RoundImage(bm);
+        profilePic.setImageDrawable(roundedImage);
+
+        if(liked){
+            imageLike.setImageResource(R.drawable.main_like_1);
+            textLikes.setText(numLikes+" likes");
+        } else {
+            imageLike.setImageResource(R.drawable.main_like_0);
+            textLikes.setText(numLikes+" likes");
+        }
+        if(followed){
+            follow.setText("UNFOLLOW");
+            follow.setTextSize(10);
+    } else {
+            follow.setText("FOLLOW");
+            follow.setTextSize(12);
+    }
+
     }
 
 
@@ -99,9 +101,6 @@ public class HomeActivity extends AppCompatActivity {
     public void openSettings(View view) {
     }
 
-    boolean liked = false;
-    int numLikes = 0;
-
     public void likePost(View view) {
         if(liked == false){
             liked = true;
@@ -117,11 +116,19 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void addTo(View view) {
-/*        Intent intent = getIntent();
-        ImageView image =
-        intent.putExtra(String.valueOf(R.id.myCollection),R.drawable.main_add);
-        startActivity(intent);*/
+        ProfileActivity.show1 = true;
+        ProfileActivity.show2 = true;
     }
 
-
+    public void follow(View view) {
+        if(followed){
+            followed = false;
+            follow.setText("FOLLOW");
+            follow.setTextSize(12);
+        } else {
+            followed = true;
+            follow.setText("UNFOLLOW");
+            follow.setTextSize(10);
+        }
+    }
 }

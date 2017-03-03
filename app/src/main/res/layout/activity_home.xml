@@ -241,8 +241,9 @@
         android:onClick="addTo"/>
 
     <ImageView
-        android:layout_width="65dp"
-        android:layout_height="65dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
         app:srcCompat="@drawable/messenger_button_send_round_shadow"
         android:id="@+id/profilePicture"
         android:layout_alignTop="@+id/settings"

@@ -36,6 +36,7 @@ public class ProfileActivity extends AppCompatActivity {
     private ImageView myCol1;
     private ImageView myCol2;
     static boolean checked = false;
+    private ImageView profilePic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +47,10 @@ public class ProfileActivity extends AppCompatActivity {
         identityManager = awsMobileClient.getIdentityManager();
         userName = (TextView)findViewById(R.id.userName);
         userName.setText(FacebookSignInProvider.userName);
+
+        profilePic = (ImageView)findViewById(R.id.profilePicture);
+        String address = FacebookSignInProvider.userImageUrl;
+        new LoadURLImage(address, profilePic).execute();
 
         CompoundButton cb = (CheckBox)findViewById(R.id.AccPrivBox);
         if(checked){

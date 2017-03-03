@@ -155,9 +155,9 @@
         android:text="Set Account Private"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textbg"
         android:layout_alignLeft="@+id/textbg"
-        android:layout_marginTop="75dp"
+        android:layout_below="@id/userName"
+        android:layout_marginTop="25dp"
         android:layout_marginLeft="20dp"
         android:id="@+id/AccPrivText"
         android:textSize="20sp"
@@ -191,8 +191,8 @@
         android:textColor="?attr/colorPrimaryDark" />
 
     <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         app:srcCompat="@drawable/test_empty"
         android:layout_below="@+id/changeName"
         android:layout_alignLeft="@+id/AccPrivText"
@@ -212,39 +212,38 @@
         android:id="@+id/item2" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/messenger_button_send_round_shadow"
         android:id="@+id/profilePicture"
         android:layout_alignTop="@+id/textbg"
         android:layout_alignLeft="@+id/textbg"
-        android:paddingLeft="15dp"
-        android:paddingTop="10dp"/>
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"/>
 
     <TextView
-        android:text="TextView"
+        android:text="Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/profilePicture"
         android:layout_toRightOf="@+id/profilePicture"
         android:layout_toEndOf="@+id/profilePicture"
         android:textSize="20sp"
-        android:layout_marginLeft="19dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginStart="19dp"
         android:layout_marginBottom="19dp"
-        android:id="@+id/userName"
-        tools:text="@string/user_id" />
+        android:id="@+id/userName" />
 
     <Button
         android:text="Logout"
         android:textSize="10dp"
         android:layout_width="65dp"
         android:layout_height="50dp"
-        android:layout_alignTop="@id/textbg"
+        android:layout_alignTop="@id/userName"
         android:layout_alignRight="@id/textbg"
         android:id="@+id/logout"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
         android:clickable="true"
         android:onClick="signOut"
          />

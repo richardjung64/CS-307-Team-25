@@ -55,8 +55,15 @@
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme" />
-        <activity android:name=".TrendActivity" />
-        <activity android:name=".ProfileActivity"></activity>
+        <activity
+            android:name=".TrendActivity"
+            android:label="TrendActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="ProfileActivity"
+            android:theme="@style/AppTheme">
+        </activity>
     </application>
 
 </manifest>

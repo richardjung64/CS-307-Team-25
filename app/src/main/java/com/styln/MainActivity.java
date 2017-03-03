@@ -136,10 +136,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(this, SplashActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
+            intent = new Intent(this, HomeActivity.class);
+            startActivity(intent);
             return;
         }
 
-        setupSignInButtons();
+        //setupSignInButtons();
     }
 
     @Override

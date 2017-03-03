@@ -17,7 +17,7 @@
         android:layout_marginBottom="30dp"
         android:layout_marginLeft="50dp"
         android:scaleType="fitXY"
-        android:id="@+id/textBackground"
+        android:id="@+id/textbg"
         />
 
     <ImageView
@@ -140,66 +140,103 @@
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"/>
 
-    <SeekBar
-        style="@style/Widget.AppCompat.SeekBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:max="10"
-        android:progress="3"
-        android:layout_alignTop="@+id/textBackground"
-        android:layout_toRightOf="@+id/homeBox"
-        android:layout_toEndOf="@+id/homeBox"
-        android:layout_marginLeft="47dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="142dp"
-        android:id="@+id/seekBar" />
-
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:id="@+id/spinner"
-        android:layout_below="@+id/seekBar"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <RadioButton
-        android:text="RadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/spinner"
-        android:layout_toRightOf="@+id/homeBox"
-        android:layout_toEndOf="@+id/homeBox"
-        android:layout_marginBottom="51dp"
-        android:id="@+id/radioButton" />
 
     <CheckBox
-        android:text="CheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/radioButton"
-        android:layout_toRightOf="@+id/radioButton"
-        android:layout_toEndOf="@+id/radioButton"
-        android:layout_marginBottom="15dp"
-        android:id="@+id/checkBox" />
+        android:layout_alignTop="@+id/AccPrivText"
+        android:layout_alignRight="@id/textbg"
+        android:layout_marginRight="15dp"
+        android:id="@+id/AccPrivBox"
+        android:onClick="onClick"
+        />
 
-    <Switch
-        android:text="Switch"
+    <TextView
+        android:text="Set Account Private"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/spinner"
-        android:layout_toRightOf="@+id/seekBar"
-        android:layout_toEndOf="@+id/seekBar"
-        android:id="@+id/switch1" />
+        android:layout_alignTop="@+id/textbg"
+        android:layout_alignLeft="@+id/textbg"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/AccPrivText"
+        android:textSize="20sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
 
-    <RatingBar
+    <Button
+        android:text="Change Username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/spinner"
-        android:layout_alignRight="@+id/browse"
-        android:layout_alignEnd="@+id/browse"
-        android:layout_marginTop="56dp"
-        android:id="@+id/ratingBar" />
+        android:layout_below="@+id/AccPrivText"
+        android:layout_alignLeft="@+id/textbg"
+        android:layout_alignStart="@+id/textbg"
+        android:layout_marginTop="5dp"
+        android:id="@+id/changeName"
+        android:layout_alignRight="@+id/textbg"
+        android:layout_alignEnd="@+id/textbg"
+        android:onClick="changeName"
+        android:clickable="true"/>
+
+
+    <TextView
+        android:text="My Collection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeName"
+        android:layout_alignLeft="@+id/myCollection"
+        android:layout_alignStart="@+id/myCollection"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textCollection"
+        android:textSize="20sp"
+        android:textColor="?attr/colorPrimaryDark" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/main_browse"
+        android:layout_below="@+id/changeName"
+        android:layout_alignLeft="@+id/AccPrivText"
+        android:layout_alignTop="@id/textCollection"
+        android:layout_marginTop="50dp"
+        android:id="@+id/myCollection" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/messenger_button_send_round_shadow"
+        android:id="@+id/profilePicture"
+        android:layout_alignTop="@+id/textbg"
+        android:layout_alignLeft="@+id/textbg"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/profilePicture"
+        android:layout_toRightOf="@+id/profilePicture"
+        android:layout_toEndOf="@+id/profilePicture"
+        android:textSize="20sp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="19dp"
+        android:id="@+id/userName"
+        tools:text="@string/user_id" />
+
+    <Button
+        android:text="Logout"
+        android:textSize="10dp"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/textbg"
+        android:layout_alignRight="@id/textbg"
+        android:id="@+id/logout"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="signOut"
+         />
 
 
 </RelativeLayout>

@@ -1,6 +1,7 @@
 package com.styln;
 
 import android.content.Intent;
+import android.media.Image;
 import android.net.Uri;
 import android.provider.ContactsContract;
 import android.support.annotation.IdRes;
@@ -13,17 +14,29 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.amazonaws.mobile.AWSMobileClient;
+import com.amazonaws.mobile.user.IdentityManager;
+import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    private static final String LOG_TAG = HomeActivity.class.getSimpleName();
+    private static final String LOG_TAG = ProfileActivity.class.getSimpleName();
 
+    private IdentityManager identityManager;
+    private TextView userName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_profile);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        final AWSMobileClient awsMobileClient = AWSMobileClient.defaultMobileClient();
+        identityManager = awsMobileClient.getIdentityManager();
+        userName = (TextView)findViewById(R.id.userName);
+        userName.setText(FacebookSignInProvider.userName);
     }
 
     public void openHome(View view) {
@@ -69,5 +82,13 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
 
+    public void changeName(View view) {
+    }
 
+    public void signOut(View view) {
+        identityManager.signOut();
+        startActivity(new Intent(ProfileActivity.this, SignInActivity.class));
+        finish();
+        return;
+    }
 }

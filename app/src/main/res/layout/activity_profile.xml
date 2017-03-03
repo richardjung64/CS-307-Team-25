@@ -157,11 +157,86 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textbg"
         android:layout_alignLeft="@+id/textbg"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="75dp"
         android:layout_marginLeft="20dp"
         android:id="@+id/AccPrivText"
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <Button
+        android:text="Change Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AccPrivText"
+        android:layout_alignLeft="@+id/textbg"
+        android:layout_alignStart="@+id/textbg"
+        android:layout_marginTop="5dp"
+        android:id="@+id/changeName"
+        android:layout_alignRight="@+id/textbg"
+        android:layout_alignEnd="@+id/textbg"
+        android:onClick="changeName"
+        android:clickable="true"/>
+
+
+    <TextView
+        android:text="My Collection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeName"
+        android:layout_alignLeft="@+id/myCollection"
+        android:layout_alignStart="@+id/myCollection"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textCollection"
+        android:textSize="20sp"
+        android:textColor="?attr/colorPrimaryDark" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/main_browse"
+        android:layout_below="@+id/changeName"
+        android:layout_alignLeft="@+id/AccPrivText"
+        android:layout_alignTop="@id/textCollection"
+        android:layout_marginTop="50dp"
+        android:id="@+id/myCollection" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/messenger_button_send_round_shadow"
+        android:id="@+id/profilePicture"
+        android:layout_alignTop="@+id/textbg"
+        android:layout_alignLeft="@+id/textbg"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/profilePicture"
+        android:layout_toRightOf="@+id/profilePicture"
+        android:layout_toEndOf="@+id/profilePicture"
+        android:textSize="20sp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="19dp"
+        android:id="@+id/userName"
+        tools:text="@string/user_id" />
+
+    <Button
+        android:text="Logout"
+        android:textSize="10dp"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/textbg"
+        android:layout_alignRight="@id/textbg"
+        android:id="@+id/logout"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="signOut"
+         />
 
 
 </RelativeLayout>

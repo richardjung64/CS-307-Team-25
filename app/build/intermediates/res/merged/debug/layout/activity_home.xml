@@ -6,6 +6,23 @@
     android:layout_height="match_parent"
     android:background="@drawable/main_background">
 
+
+    //Dummy Post
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/me_textbg"
+        android:layout_below="@+id/upperBox"
+        android:layout_alignLeft="@+id/textBackground"
+        android:layout_alignTop="@+id/textBackground"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:id="@+id/dummyPostBG"
+        android:scaleType="fitXY"
+        />
+
     <ImageView
         android:layout_width="500dp"
         android:layout_height="65dp"
@@ -134,13 +151,14 @@
         android:scaleType="fitCenter"/>
 
     <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         app:srcCompat="@drawable/main_settings"
         android:id="@+id/settings"
         android:layout_alignRight="@+id/upperBox"
         android:layout_alignTop="@+id/upperBox"
         android:layout_marginTop="3dp"
+        android:paddingRight="8dp"
         android:clickable="true"
         android:onClick="openSettings"
         android:scaleType="fitCenter"
@@ -160,6 +178,89 @@
         android:layout_alignRight="@+id/postBox"
         android:layout_alignEnd="@+id/postBox"
         android:paddingTop="5dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/messenger_button_send_round_shadow"
+        android:layout_alignTop="@+id/dummyPostBG"
+        android:layout_alignLeft="@+id/dummyPostBG"
+        android:layout_alignStart="@+id/dummyPostBG"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/dummyPicture" />
+
+    <TextView
+        android:text="User Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dummyPicture"
+        android:layout_toRightOf="@+id/dummyPicture"
+        android:layout_toEndOf="@+id/dummyPicture"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/main_line"
+        android:layout_below="@+id/dummyPicture"
+        android:layout_alignLeft="@+id/dummyPostBG"
+        android:layout_marginTop="0dp"
+        android:layout_alignRight="@id/dummyPostBG"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/main_like_0"
+        android:layout_alignBottom="@+id/dummyPostBG"
+        android:layout_alignLeft="@+id/dummyPicture"
+        android:layout_alignStart="@+id/dummyPicture"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/like"
+        android:clickable="true"
+        android:onClick="likePost"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/main_add"
+        android:id="@+id/imageView4"
+        android:layout_alignTop="@+id/like"
+        android:layout_toRightOf="@+id/like"
+        android:layout_toEndOf="@+id/like"
+        android:paddingLeft="10dp"
+        android:clickable="true"
+        android:onClick="addTo"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/messenger_button_send_round_shadow"
+        android:id="@+id/profilePicture"
+        android:layout_alignTop="@+id/settings"
+        android:layout_alignLeft="@+id/home"
+        android:paddingLeft="15dp"
+        android:layout_alignStart="@+id/dummyPostBG" />
+
+    <TextView
+        android:text="0 likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/like"
+        android:layout_alignLeft="@+id/dummyPostBG"
+        android:layout_alignBottom="@id/dummyPostBG"
+        android:layout_marginBottom="65dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/numLikes"
+        android:textSize="18sp" />
 
 
 </RelativeLayout>

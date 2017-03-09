@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.amazon.styln"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(include: ['*.jar'], dir: 'app/libs')
+
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.amazonaws:aws-android-sdk-core:2.3.9'
+    compile 'com.amazonaws:aws-android-sdk-ddb:2.3.9'
+    compile 'com.amazonaws:aws-android-sdk-ddb-mapper:2.3.9'
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    compile 'com.google.android.gms:play-services-plus:10.2.0'
+    compile 'com.google.android.gms:play-services-auth:10.2.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.android.support:design:23.4.0'
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}

@@ -49,10 +49,10 @@ public class FacebookSignInProvider implements SignInProvider {
     private CallbackManager facebookCallbackManager;
 
     /** User's name. */
-    private String userName;
+    public static String userName;
 
     /** User's image Url. */
-    private String userImageUrl;
+    public static String userImageUrl;
 
     /** Timeout for refreshing the Facebook Token. */
     private final long REFRESH_TOKEN_TIMEOUT_SECONDS = 15;
@@ -82,6 +82,7 @@ public class FacebookSignInProvider implements SignInProvider {
             initializedLatch.countDown();
         }
     }
+
 
     /**
      * @return the Facebook AccessToken when signed-in with a non-expired token.

@@ -18,7 +18,7 @@ import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobile.user.IdentityProvider;
 
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
-import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
+//import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 
 public class SignInActivity extends Activity {
     private static final String LOG_TAG = SignInActivity.class.getSimpleName();
@@ -29,6 +29,14 @@ public class SignInActivity extends Activity {
 
     /** The Google OnClick listener, since we must override it to get permissions on Marshmallow and above. */
     private View.OnClickListener googleOnClickListener;
+
+    public void openHome(View view) {
+        Log.d(LOG_TAG, "Launching Home Activity...");
+        startActivity(new Intent(SignInActivity.this, HomeActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        // finish should always be called on the main thread.
+        finish();
+    }
 
     /**
      * SignInResultsHandler handles the final result from sign in. Making it static is a best
@@ -55,8 +63,8 @@ public class SignInActivity extends Activity {
                 .getIdentityManager().loadUserInfoAndImage(provider, new Runnable() {
                 @Override
                 public void run() {
-                    Log.d(LOG_TAG, "Launching Main Activity...");
-                    startActivity(new Intent(SignInActivity.this, MainActivity.class)
+                    Log.d(LOG_TAG, "Launching Home Activity...");
+                    startActivity(new Intent(SignInActivity.this, HomeActivity.class)
                         .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                     // finish should always be called on the main thread.
                     finish();
@@ -109,7 +117,7 @@ public class SignInActivity extends Activity {
         signInManager.initializeSignInButton(FacebookSignInProvider.class,
             this.findViewById(R.id.fb_login_button));
 
-        googleOnClickListener =
+        /*googleOnClickListener =
             signInManager.initializeSignInButton(GoogleSignInProvider.class, findViewById(R.id.g_login_button));
 
         if (googleOnClickListener != null) {
@@ -131,7 +139,7 @@ public class SignInActivity extends Activity {
                 }
             });
         }
-
+*/
     }
 
     @Override

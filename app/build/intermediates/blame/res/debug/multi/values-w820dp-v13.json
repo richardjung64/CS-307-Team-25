@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "outputFile": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+=======
+        "outputFile": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25-testing/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+>>>>>>> master
         "map": [
             {
                 "to": {
@@ -11,6 +15,7 @@
                     "endOffset": 108
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
                     "position": {
                         "startLine": 4,
@@ -18,6 +23,15 @@
                         "startOffset": 295,
                         "endColumn": 57,
                         "endOffset": 348
+=======
+                    "file": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25-testing/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 57,
+                        "endOffset": 344
+>>>>>>> master
                     }
                 }
             }

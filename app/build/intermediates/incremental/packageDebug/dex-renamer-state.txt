@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Fri Mar 03 06:02:28 EST 2017
 base.0=D\:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_329a7e542fcac9008d38db1d2cc89a2f6e923cfc
 renamed.1=classes.dex
@@ -5,3 +6,12 @@ renamed.0=classes2.dex
 file.1=D\:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_7b5013fe15f88baffd5da6c17e6d57581a2efb1e\\classes.dex
 base.1=D\:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_7b5013fe15f88baffd5da6c17e6d57581a2efb1e
 file.0=D\:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_329a7e542fcac9008d38db1d2cc89a2f6e923cfc\\classes.dex
+=======
+#Wed Mar 08 12:12:19 EST 2017
+base.0=/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25-testing/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5a0fd4ae6939180f0afc05d0b2d783fe3d5cbc59
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25-testing/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ad1330781414f08dd4ab3c0545b435b16b15118f/classes.dex
+base.1=/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25-testing/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ad1330781414f08dd4ab3c0545b435b16b15118f
+file.0=/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25-testing/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5a0fd4ae6939180f0afc05d0b2d783fe3d5cbc59/classes.dex
+>>>>>>> master

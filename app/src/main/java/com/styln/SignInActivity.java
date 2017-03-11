@@ -13,12 +13,19 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.amazonaws.mobile.AWSMobileClient;
+<<<<<<< HEAD
+=======
+import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
+>>>>>>> master
 import com.amazonaws.mobile.user.signin.SignInManager;
 import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobile.user.IdentityProvider;
 
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
+<<<<<<< HEAD
 //import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
+=======
+>>>>>>> master
 
 public class SignInActivity extends Activity {
     private static final String LOG_TAG = SignInActivity.class.getSimpleName();
@@ -117,7 +124,11 @@ public class SignInActivity extends Activity {
         signInManager.initializeSignInButton(FacebookSignInProvider.class,
             this.findViewById(R.id.fb_login_button));
 
+<<<<<<< HEAD
         /*googleOnClickListener =
+=======
+        googleOnClickListener =
+>>>>>>> master
             signInManager.initializeSignInButton(GoogleSignInProvider.class, findViewById(R.id.g_login_button));
 
         if (googleOnClickListener != null) {
@@ -139,7 +150,10 @@ public class SignInActivity extends Activity {
                 }
             });
         }
+<<<<<<< HEAD
 */
+=======
+>>>>>>> master
     }
 
     @Override

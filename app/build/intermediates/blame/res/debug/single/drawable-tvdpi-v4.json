@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
         "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\10.2.0\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
     },
@@ -14,5 +15,21 @@
     {
         "merged": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
         "source": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\10.2.0\\res\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png"
+=======
+        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25-testing/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_tall_off_client.png",
+        "source": "/Users/shanu/.android/build-cache/e62bf90323feba17a460d91c10e0329e51dc697d/output/res/drawable-tvdpi-v4/ic_plusone_tall_off_client.png"
+    },
+    {
+        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25-testing/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_medium_off_client.png",
+        "source": "/Users/shanu/.android/build-cache/e62bf90323feba17a460d91c10e0329e51dc697d/output/res/drawable-tvdpi-v4/ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25-testing/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_small_off_client.png",
+        "source": "/Users/shanu/.android/build-cache/e62bf90323feba17a460d91c10e0329e51dc697d/output/res/drawable-tvdpi-v4/ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25-testing/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_standard_off_client.png",
+        "source": "/Users/shanu/.android/build-cache/e62bf90323feba17a460d91c10e0329e51dc697d/output/res/drawable-tvdpi-v4/ic_plusone_standard_off_client.png"
+>>>>>>> master
     }
 ]

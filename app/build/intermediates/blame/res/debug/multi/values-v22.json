@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "outputFile": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
+=======
+        "outputFile": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25-testing/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
+>>>>>>> master
         "map": [
             {
                 "to": {
@@ -11,7 +15,11 @@
                     "endOffset": 125
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v22\\values-v22.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-v22/values-v22.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +38,11 @@
                     "endOffset": 212
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v22\\values-v22.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-v22/values-v22.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -50,7 +62,11 @@
                     "endOffset": 548
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v22\\values-v22.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-v22/values-v22.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -71,7 +87,11 @@
                     "endOffset": 896
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-v22\\values-v22.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-v22/values-v22.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,

@@ -2629,7 +2629,10 @@ containing a value of this type.
         public static final int browse=0x7f0c008a;
         public static final int browseBox=0x7f0c0085;
         public static final int button=0x7f0c0048;
+<<<<<<< HEAD
         public static final int button2=0x7f0c00af;
+=======
+>>>>>>> master
         public static final int buttonPanel=0x7f0c0059;
         public static final int button_insert_sample_data=0x7f0c00d5;
         public static final int button_remove_sample_data=0x7f0c00d6;
@@ -2782,6 +2785,10 @@ containing a value of this type.
         public static final int showCustom=0x7f0c0013;
         public static final int showHome=0x7f0c0014;
         public static final int showTitle=0x7f0c0015;
+<<<<<<< HEAD
+=======
+        public static final int signIn=0x7f0c00af;
+>>>>>>> master
         public static final int small=0x7f0c004e;
         public static final int snackbar_action=0x7f0c00c6;
         public static final int snackbar_text=0x7f0c00c5;
@@ -3472,6 +3479,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #ActionBar_background com.amazon.mysampleapp:background}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionBar_backgroundSplit com.amazon.mysampleapp:backgroundSplit}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionBar_backgroundStacked com.amazon.mysampleapp:backgroundStacked}</code></td><td></td></tr>
@@ -3499,6 +3507,35 @@ containing a value of this type.
            <tr><td><code>{@link #ActionBar_subtitleTextStyle com.amazon.mysampleapp:subtitleTextStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionBar_title com.amazon.mysampleapp:title}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionBar_titleTextStyle com.amazon.mysampleapp:titleTextStyle}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #ActionBar_background com.amazon.styln:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit com.amazon.styln:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked com.amazon.styln:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd com.amazon.styln:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft com.amazon.styln:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight com.amazon.styln:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart com.amazon.styln:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout com.amazon.styln:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions com.amazon.styln:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider com.amazon.styln:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation com.amazon.styln:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height com.amazon.styln:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.amazon.styln:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.amazon.styln:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout com.amazon.styln:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon com.amazon.styln:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.amazon.styln:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding com.amazon.styln:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo com.amazon.styln:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode com.amazon.styln:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme com.amazon.styln:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding com.amazon.styln:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle com.amazon.styln:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle com.amazon.styln:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.amazon.styln:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title com.amazon.styln:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle com.amazon.styln:titleTextStyle}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -3538,17 +3575,29 @@ containing a value of this type.
             0x7f01001a, 0x7f01001b, 0x7f010057
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#background}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#background}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:background
         */
         public static final int ActionBar_background = 10;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#backgroundSplit}
+=======
+          @attr name com.amazon.styln:background
+        */
+        public static final int ActionBar_background = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#backgroundSplit}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3556,11 +3605,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#backgroundStacked}
+=======
+          @attr name com.amazon.styln:backgroundSplit
+        */
+        public static final int ActionBar_backgroundSplit = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#backgroundStacked}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3568,11 +3625,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#contentInsetEnd}
+=======
+          @attr name com.amazon.styln:backgroundStacked
+        */
+        public static final int ActionBar_backgroundStacked = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#contentInsetEnd}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3584,11 +3649,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#contentInsetLeft}
+=======
+          @attr name com.amazon.styln:contentInsetEnd
+        */
+        public static final int ActionBar_contentInsetEnd = 21;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#contentInsetLeft}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3600,11 +3673,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#contentInsetRight}
+=======
+          @attr name com.amazon.styln:contentInsetLeft
+        */
+        public static final int ActionBar_contentInsetLeft = 22;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#contentInsetRight}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3616,11 +3697,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#contentInsetStart}
+=======
+          @attr name com.amazon.styln:contentInsetRight
+        */
+        public static final int ActionBar_contentInsetRight = 23;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#contentInsetStart}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3632,21 +3721,37 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#customNavigationLayout}
+=======
+          @attr name com.amazon.styln:contentInsetStart
+        */
+        public static final int ActionBar_contentInsetStart = 20;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#customNavigationLayout}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#displayOptions}
+=======
+          @attr name com.amazon.styln:customNavigationLayout
+        */
+        public static final int ActionBar_customNavigationLayout = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#displayOptions}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3664,21 +3769,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#divider}
+=======
+          @attr name com.amazon.styln:displayOptions
+        */
+        public static final int ActionBar_displayOptions = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#divider}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:divider
         */
         public static final int ActionBar_divider = 9;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#elevation}
+=======
+          @attr name com.amazon.styln:divider
+        */
+        public static final int ActionBar_divider = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#elevation}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3690,11 +3811,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:elevation
         */
         public static final int ActionBar_elevation = 24;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#height}
+=======
+          @attr name com.amazon.styln:elevation
+        */
+        public static final int ActionBar_elevation = 24;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#height}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3706,11 +3835,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:height
         */
         public static final int ActionBar_height = 0;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#hideOnContentScroll}
+=======
+          @attr name com.amazon.styln:height
+        */
+        public static final int ActionBar_height = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#hideOnContentScroll}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3720,51 +3857,91 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#homeAsUpIndicator}
+=======
+          @attr name com.amazon.styln:hideOnContentScroll
+        */
+        public static final int ActionBar_hideOnContentScroll = 19;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#homeAsUpIndicator}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#homeLayout}
+=======
+          @attr name com.amazon.styln:homeAsUpIndicator
+        */
+        public static final int ActionBar_homeAsUpIndicator = 26;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#homeLayout}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#icon}
+=======
+          @attr name com.amazon.styln:homeLayout
+        */
+        public static final int ActionBar_homeLayout = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#icon}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:icon
         */
         public static final int ActionBar_icon = 7;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#indeterminateProgressStyle}
+=======
+          @attr name com.amazon.styln:icon
+        */
+        public static final int ActionBar_icon = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#indeterminateProgressStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#itemPadding}
+=======
+          @attr name com.amazon.styln:indeterminateProgressStyle
+        */
+        public static final int ActionBar_indeterminateProgressStyle = 16;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#itemPadding}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3776,21 +3953,37 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#logo}
+=======
+          @attr name com.amazon.styln:itemPadding
+        */
+        public static final int ActionBar_itemPadding = 18;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#logo}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:logo
         */
         public static final int ActionBar_logo = 8;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#navigationMode}
+=======
+          @attr name com.amazon.styln:logo
+        */
+        public static final int ActionBar_logo = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#navigationMode}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3804,21 +3997,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#popupTheme}
+=======
+          @attr name com.amazon.styln:navigationMode
+        */
+        public static final int ActionBar_navigationMode = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#popupTheme}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:popupTheme
         */
         public static final int ActionBar_popupTheme = 25;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#progressBarPadding}
+=======
+          @attr name com.amazon.styln:popupTheme
+        */
+        public static final int ActionBar_popupTheme = 25;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#progressBarPadding}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3830,21 +4039,37 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#progressBarStyle}
+=======
+          @attr name com.amazon.styln:progressBarPadding
+        */
+        public static final int ActionBar_progressBarPadding = 17;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#progressBarStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#subtitle}
+=======
+          @attr name com.amazon.styln:progressBarStyle
+        */
+        public static final int ActionBar_progressBarStyle = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#subtitle}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3854,21 +4079,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#subtitleTextStyle}
+=======
+          @attr name com.amazon.styln:subtitle
+        */
+        public static final int ActionBar_subtitle = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#subtitleTextStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#title}
+=======
+          @attr name com.amazon.styln:subtitleTextStyle
+        */
+        public static final int ActionBar_subtitleTextStyle = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#title}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3878,17 +4119,29 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:title
         */
         public static final int ActionBar_title = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#titleTextStyle}
+=======
+          @attr name com.amazon.styln:title
+        */
+        public static final int ActionBar_title = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#titleTextStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:titleTextStyle
+=======
+          @attr name com.amazon.styln:titleTextStyle
+>>>>>>> master
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -3940,12 +4193,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #ActionMode_background com.amazon.mysampleapp:background}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionMode_backgroundSplit com.amazon.mysampleapp:backgroundSplit}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionMode_closeItemLayout com.amazon.mysampleapp:closeItemLayout}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionMode_height com.amazon.mysampleapp:height}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionMode_subtitleTextStyle com.amazon.mysampleapp:subtitleTextStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionMode_titleTextStyle com.amazon.mysampleapp:titleTextStyle}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #ActionMode_background com.amazon.styln:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit com.amazon.styln:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout com.amazon.styln:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height com.amazon.styln:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.amazon.styln:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle com.amazon.styln:titleTextStyle}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -3959,17 +4221,29 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000e, 0x7f01001c
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#background}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#background}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:background
         */
         public static final int ActionMode_background = 3;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#backgroundSplit}
+=======
+          @attr name com.amazon.styln:background
+        */
+        public static final int ActionMode_background = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#backgroundSplit}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3977,21 +4251,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#closeItemLayout}
+=======
+          @attr name com.amazon.styln:backgroundSplit
+        */
+        public static final int ActionMode_backgroundSplit = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#closeItemLayout}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#height}
+=======
+          @attr name com.amazon.styln:closeItemLayout
+        */
+        public static final int ActionMode_closeItemLayout = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#height}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -4003,27 +4293,47 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:height
         */
         public static final int ActionMode_height = 0;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#subtitleTextStyle}
+=======
+          @attr name com.amazon.styln:height
+        */
+        public static final int ActionMode_height = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#subtitleTextStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#titleTextStyle}
+=======
+          @attr name com.amazon.styln:subtitleTextStyle
+        */
+        public static final int ActionMode_subtitleTextStyle = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#titleTextStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:titleTextStyle
+=======
+          @attr name com.amazon.styln:titleTextStyle
+>>>>>>> master
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -4032,8 +4342,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.amazon.mysampleapp:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
            <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.amazon.mysampleapp:initialActivityCount}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.amazon.styln:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.amazon.styln:initialActivityCount}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -4042,17 +4357,29 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001d, 0x7f01001e
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#expandActivityOverflowButtonDrawable}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#expandActivityOverflowButtonDrawable}
+>>>>>>> master
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#initialActivityCount}
+=======
+          @attr name com.amazon.styln:expandActivityOverflowButtonDrawable
+        */
+        public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#initialActivityCount}
+>>>>>>> master
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -4062,7 +4389,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:initialActivityCount
+=======
+          @attr name com.amazon.styln:initialActivityCount
+>>>>>>> master
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AlertDialog.
@@ -4072,11 +4403,19 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.amazon.mysampleapp:buttonPanelSideLayout}</code></td><td></td></tr>
            <tr><td><code>{@link #AlertDialog_listItemLayout com.amazon.mysampleapp:listItemLayout}</code></td><td></td></tr>
            <tr><td><code>{@link #AlertDialog_listLayout com.amazon.mysampleapp:listLayout}</code></td><td></td></tr>
            <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.amazon.mysampleapp:multiChoiceItemLayout}</code></td><td></td></tr>
            <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.amazon.mysampleapp:singleChoiceItemLayout}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.amazon.styln:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout com.amazon.styln:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout com.amazon.styln:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.amazon.styln:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.amazon.styln:singleChoiceItemLayout}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -4096,53 +4435,93 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#buttonPanelSideLayout}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#buttonPanelSideLayout}
+>>>>>>> master
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:buttonPanelSideLayout
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#listItemLayout}
+=======
+          @attr name com.amazon.styln:buttonPanelSideLayout
+        */
+        public static final int AlertDialog_buttonPanelSideLayout = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#listItemLayout}
+>>>>>>> master
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:listItemLayout
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#listLayout}
+=======
+          @attr name com.amazon.styln:listItemLayout
+        */
+        public static final int AlertDialog_listItemLayout = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#listLayout}
+>>>>>>> master
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:listLayout
         */
         public static final int AlertDialog_listLayout = 2;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#multiChoiceItemLayout}
+=======
+          @attr name com.amazon.styln:listLayout
+        */
+        public static final int AlertDialog_listLayout = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#multiChoiceItemLayout}
+>>>>>>> master
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:multiChoiceItemLayout
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#singleChoiceItemLayout}
+=======
+          @attr name com.amazon.styln:multiChoiceItemLayout
+        */
+        public static final int AlertDialog_multiChoiceItemLayout = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#singleChoiceItemLayout}
+>>>>>>> master
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:singleChoiceItemLayout
+=======
+          @attr name com.amazon.styln:singleChoiceItemLayout
+>>>>>>> master
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppBarLayout.
@@ -4152,8 +4531,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #AppBarLayout_elevation com.amazon.mysampleapp:elevation}</code></td><td></td></tr>
            <tr><td><code>{@link #AppBarLayout_expanded com.amazon.mysampleapp:expanded}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #AppBarLayout_elevation com.amazon.styln:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded com.amazon.styln:expanded}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #AppBarLayout_android_background
            @see #AppBarLayout_elevation
@@ -4169,7 +4553,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppBarLayout_android_background = 0;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#elevation}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#elevation}
+>>>>>>> master
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4181,11 +4569,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:elevation
         */
         public static final int AppBarLayout_elevation = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#expanded}
+=======
+          @attr name com.amazon.styln:elevation
+        */
+        public static final int AppBarLayout_elevation = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#expanded}
+>>>>>>> master
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4195,7 +4591,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:expanded
+=======
+          @attr name com.amazon.styln:expanded
+>>>>>>> master
         */
         public static final int AppBarLayout_expanded = 2;
         /** Attributes that can be used with a AppBarLayout_LayoutParams.
@@ -4204,8 +4604,13 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags com.amazon.mysampleapp:layout_scrollFlags}</code></td><td></td></tr>
            <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator com.amazon.mysampleapp:layout_scrollInterpolator}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags com.amazon.styln:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator com.amazon.styln:layout_scrollInterpolator}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #AppBarLayout_LayoutParams_layout_scrollFlags
            @see #AppBarLayout_LayoutParams_layout_scrollInterpolator
@@ -4214,7 +4619,11 @@ containing a value of this type.
             0x7f010025, 0x7f010026
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#layout_scrollFlags}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#layout_scrollFlags}
+>>>>>>> master
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
@@ -4230,17 +4639,29 @@ containing a value of this type.
 <tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
 <tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:layout_scrollFlags
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollFlags = 0;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#layout_scrollInterpolator}
+=======
+          @attr name com.amazon.styln:layout_scrollFlags
+        */
+        public static final int AppBarLayout_LayoutParams_layout_scrollFlags = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#layout_scrollInterpolator}
+>>>>>>> master
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:layout_scrollInterpolator
+=======
+          @attr name com.amazon.styln:layout_scrollInterpolator
+>>>>>>> master
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatImageView.
@@ -4250,7 +4671,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #AppCompatImageView_srcCompat com.amazon.mysampleapp:srcCompat}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #AppCompatImageView_srcCompat com.amazon.styln:srcCompat}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #AppCompatImageView_android_src
            @see #AppCompatImageView_srcCompat
@@ -4265,13 +4690,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatImageView_android_src = 0;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#srcCompat}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#srcCompat}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:srcCompat
+=======
+          @attr name com.amazon.styln:srcCompat
+>>>>>>> master
         */
         public static final int AppCompatImageView_srcCompat = 1;
         /** Attributes that can be used with a AppCompatTextView.
@@ -4281,7 +4714,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #AppCompatTextView_textAllCaps com.amazon.mysampleapp:textAllCaps}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.amazon.styln:textAllCaps}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_textAllCaps
@@ -4296,14 +4733,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#textAllCaps}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#textAllCaps}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:textAllCaps
+=======
+          @attr name com.amazon.styln:textAllCaps
+>>>>>>> master
         */
         public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a AppCompatTheme.
@@ -4312,6 +4757,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.amazon.mysampleapp:actionBarDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.amazon.mysampleapp:actionBarItemBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.amazon.mysampleapp:actionBarPopupTheme}</code></td><td></td></tr>
@@ -4424,6 +4870,120 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.amazon.mysampleapp:windowMinWidthMajor}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.amazon.mysampleapp:windowMinWidthMinor}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.amazon.mysampleapp:windowNoTitle}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.amazon.styln:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.amazon.styln:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.amazon.styln:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSize com.amazon.styln:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.amazon.styln:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.amazon.styln:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.amazon.styln:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.amazon.styln:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.amazon.styln:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.amazon.styln:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.amazon.styln:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.amazon.styln:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.amazon.styln:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.amazon.styln:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.amazon.styln:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.amazon.styln:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.amazon.styln:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.amazon.styln:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.amazon.styln:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.amazon.styln:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.amazon.styln:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.amazon.styln:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.amazon.styln:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.amazon.styln:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.amazon.styln:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.amazon.styln:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.amazon.styln:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.amazon.styln:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.amazon.styln:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.amazon.styln:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.amazon.styln:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.amazon.styln:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.amazon.styln:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.amazon.styln:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.amazon.styln:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.amazon.styln:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.amazon.styln:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.amazon.styln:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.amazon.styln:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.amazon.styln:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.amazon.styln:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.amazon.styln:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyle com.amazon.styln:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.amazon.styln:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.amazon.styln:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.amazon.styln:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorAccent com.amazon.styln:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.amazon.styln:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.amazon.styln:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.amazon.styln:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.amazon.styln:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimary com.amazon.styln:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.amazon.styln:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.amazon.styln:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_controlBackground com.amazon.styln:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.amazon.styln:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogTheme com.amazon.styln:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.amazon.styln:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerVertical com.amazon.styln:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.amazon.styln:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.amazon.styln:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextBackground com.amazon.styln:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextColor com.amazon.styln:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextStyle com.amazon.styln:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.amazon.styln:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.amazon.styln:imageButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.amazon.styln:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.amazon.styln:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.amazon.styln:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.amazon.styln:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.amazon.styln:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.amazon.styln:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.amazon.styln:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.amazon.styln:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelBackground com.amazon.styln:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.amazon.styln:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.amazon.styln:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.amazon.styln:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.amazon.styln:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.amazon.styln:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.amazon.styln:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.amazon.styln:ratingBarStyleIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.amazon.styln:ratingBarStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.amazon.styln:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.amazon.styln:seekBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.amazon.styln:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.amazon.styln:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.amazon.styln:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.amazon.styln:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_switchStyle com.amazon.styln:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.amazon.styln:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.amazon.styln:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.amazon.styln:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.amazon.styln:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.amazon.styln:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.amazon.styln:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.amazon.styln:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.amazon.styln:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.amazon.styln:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.amazon.styln:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBar com.amazon.styln:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.amazon.styln:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.amazon.styln:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.amazon.styln:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.amazon.styln:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.amazon.styln:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.amazon.styln:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.amazon.styln:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.amazon.styln:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.amazon.styln:windowNoTitle}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #AppCompatTheme_actionBarDivider
            @see #AppCompatTheme_actionBarItemBackground
@@ -4569,37 +5129,65 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010093, 0x7f010094, 0x7f010095, 0x7f010096
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionBarDivider}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionBarDivider}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionBarDivider
         */
         public static final int AppCompatTheme_actionBarDivider = 23;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionBarItemBackground}
+=======
+          @attr name com.amazon.styln:actionBarDivider
+        */
+        public static final int AppCompatTheme_actionBarDivider = 23;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionBarItemBackground}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionBarItemBackground
         */
         public static final int AppCompatTheme_actionBarItemBackground = 24;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionBarPopupTheme}
+=======
+          @attr name com.amazon.styln:actionBarItemBackground
+        */
+        public static final int AppCompatTheme_actionBarItemBackground = 24;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionBarPopupTheme}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionBarPopupTheme
         */
         public static final int AppCompatTheme_actionBarPopupTheme = 17;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionBarSize}
+=======
+          @attr name com.amazon.styln:actionBarPopupTheme
+        */
+        public static final int AppCompatTheme_actionBarPopupTheme = 17;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionBarSize}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4619,111 +5207,199 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionBarSize
         */
         public static final int AppCompatTheme_actionBarSize = 22;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionBarSplitStyle}
+=======
+          @attr name com.amazon.styln:actionBarSize
+        */
+        public static final int AppCompatTheme_actionBarSize = 22;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionBarSplitStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionBarSplitStyle
         */
         public static final int AppCompatTheme_actionBarSplitStyle = 19;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionBarStyle}
+=======
+          @attr name com.amazon.styln:actionBarSplitStyle
+        */
+        public static final int AppCompatTheme_actionBarSplitStyle = 19;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionBarStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionBarStyle
         */
         public static final int AppCompatTheme_actionBarStyle = 18;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionBarTabBarStyle}
+=======
+          @attr name com.amazon.styln:actionBarStyle
+        */
+        public static final int AppCompatTheme_actionBarStyle = 18;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionBarTabBarStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionBarTabBarStyle
         */
         public static final int AppCompatTheme_actionBarTabBarStyle = 13;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionBarTabStyle}
+=======
+          @attr name com.amazon.styln:actionBarTabBarStyle
+        */
+        public static final int AppCompatTheme_actionBarTabBarStyle = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionBarTabStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionBarTabStyle
         */
         public static final int AppCompatTheme_actionBarTabStyle = 12;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionBarTabTextStyle}
+=======
+          @attr name com.amazon.styln:actionBarTabStyle
+        */
+        public static final int AppCompatTheme_actionBarTabStyle = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionBarTabTextStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionBarTabTextStyle
         */
         public static final int AppCompatTheme_actionBarTabTextStyle = 14;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionBarTheme}
+=======
+          @attr name com.amazon.styln:actionBarTabTextStyle
+        */
+        public static final int AppCompatTheme_actionBarTabTextStyle = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionBarTheme}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionBarTheme
         */
         public static final int AppCompatTheme_actionBarTheme = 20;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionBarWidgetTheme}
+=======
+          @attr name com.amazon.styln:actionBarTheme
+        */
+        public static final int AppCompatTheme_actionBarTheme = 20;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionBarWidgetTheme}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionBarWidgetTheme
         */
         public static final int AppCompatTheme_actionBarWidgetTheme = 21;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionButtonStyle}
+=======
+          @attr name com.amazon.styln:actionBarWidgetTheme
+        */
+        public static final int AppCompatTheme_actionBarWidgetTheme = 21;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionButtonStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionButtonStyle
         */
         public static final int AppCompatTheme_actionButtonStyle = 49;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionDropDownStyle}
+=======
+          @attr name com.amazon.styln:actionButtonStyle
+        */
+        public static final int AppCompatTheme_actionButtonStyle = 49;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionDropDownStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionDropDownStyle
         */
         public static final int AppCompatTheme_actionDropDownStyle = 45;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionMenuTextAppearance}
+=======
+          @attr name com.amazon.styln:actionDropDownStyle
+        */
+        public static final int AppCompatTheme_actionDropDownStyle = 45;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionMenuTextAppearance}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionMenuTextAppearance
         */
         public static final int AppCompatTheme_actionMenuTextAppearance = 25;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionMenuTextColor}
+=======
+          @attr name com.amazon.styln:actionMenuTextAppearance
+        */
+        public static final int AppCompatTheme_actionMenuTextAppearance = 25;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionMenuTextColor}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4731,181 +5407,325 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionMenuTextColor
         */
         public static final int AppCompatTheme_actionMenuTextColor = 26;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionModeBackground}
+=======
+          @attr name com.amazon.styln:actionMenuTextColor
+        */
+        public static final int AppCompatTheme_actionMenuTextColor = 26;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionModeBackground}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionModeBackground
         */
         public static final int AppCompatTheme_actionModeBackground = 29;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionModeCloseButtonStyle}
+=======
+          @attr name com.amazon.styln:actionModeBackground
+        */
+        public static final int AppCompatTheme_actionModeBackground = 29;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionModeCloseButtonStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionModeCloseButtonStyle
         */
         public static final int AppCompatTheme_actionModeCloseButtonStyle = 28;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionModeCloseDrawable}
+=======
+          @attr name com.amazon.styln:actionModeCloseButtonStyle
+        */
+        public static final int AppCompatTheme_actionModeCloseButtonStyle = 28;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionModeCloseDrawable}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionModeCloseDrawable
         */
         public static final int AppCompatTheme_actionModeCloseDrawable = 31;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionModeCopyDrawable}
+=======
+          @attr name com.amazon.styln:actionModeCloseDrawable
+        */
+        public static final int AppCompatTheme_actionModeCloseDrawable = 31;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionModeCopyDrawable}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionModeCopyDrawable
         */
         public static final int AppCompatTheme_actionModeCopyDrawable = 33;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionModeCutDrawable}
+=======
+          @attr name com.amazon.styln:actionModeCopyDrawable
+        */
+        public static final int AppCompatTheme_actionModeCopyDrawable = 33;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionModeCutDrawable}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionModeCutDrawable
         */
         public static final int AppCompatTheme_actionModeCutDrawable = 32;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionModeFindDrawable}
+=======
+          @attr name com.amazon.styln:actionModeCutDrawable
+        */
+        public static final int AppCompatTheme_actionModeCutDrawable = 32;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionModeFindDrawable}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionModeFindDrawable
         */
         public static final int AppCompatTheme_actionModeFindDrawable = 37;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionModePasteDrawable}
+=======
+          @attr name com.amazon.styln:actionModeFindDrawable
+        */
+        public static final int AppCompatTheme_actionModeFindDrawable = 37;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionModePasteDrawable}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionModePasteDrawable
         */
         public static final int AppCompatTheme_actionModePasteDrawable = 34;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionModePopupWindowStyle}
+=======
+          @attr name com.amazon.styln:actionModePasteDrawable
+        */
+        public static final int AppCompatTheme_actionModePasteDrawable = 34;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionModePopupWindowStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionModePopupWindowStyle
         */
         public static final int AppCompatTheme_actionModePopupWindowStyle = 39;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionModeSelectAllDrawable}
+=======
+          @attr name com.amazon.styln:actionModePopupWindowStyle
+        */
+        public static final int AppCompatTheme_actionModePopupWindowStyle = 39;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionModeSelectAllDrawable}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionModeSelectAllDrawable
         */
         public static final int AppCompatTheme_actionModeSelectAllDrawable = 35;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionModeShareDrawable}
+=======
+          @attr name com.amazon.styln:actionModeSelectAllDrawable
+        */
+        public static final int AppCompatTheme_actionModeSelectAllDrawable = 35;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionModeShareDrawable}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionModeShareDrawable
         */
         public static final int AppCompatTheme_actionModeShareDrawable = 36;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionModeSplitBackground}
+=======
+          @attr name com.amazon.styln:actionModeShareDrawable
+        */
+        public static final int AppCompatTheme_actionModeShareDrawable = 36;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionModeSplitBackground}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionModeSplitBackground
         */
         public static final int AppCompatTheme_actionModeSplitBackground = 30;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionModeStyle}
+=======
+          @attr name com.amazon.styln:actionModeSplitBackground
+        */
+        public static final int AppCompatTheme_actionModeSplitBackground = 30;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionModeStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionModeStyle
         */
         public static final int AppCompatTheme_actionModeStyle = 27;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionModeWebSearchDrawable}
+=======
+          @attr name com.amazon.styln:actionModeStyle
+        */
+        public static final int AppCompatTheme_actionModeStyle = 27;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionModeWebSearchDrawable}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionModeWebSearchDrawable
         */
         public static final int AppCompatTheme_actionModeWebSearchDrawable = 38;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionOverflowButtonStyle}
+=======
+          @attr name com.amazon.styln:actionModeWebSearchDrawable
+        */
+        public static final int AppCompatTheme_actionModeWebSearchDrawable = 38;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionOverflowButtonStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionOverflowButtonStyle
         */
         public static final int AppCompatTheme_actionOverflowButtonStyle = 15;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionOverflowMenuStyle}
+=======
+          @attr name com.amazon.styln:actionOverflowButtonStyle
+        */
+        public static final int AppCompatTheme_actionOverflowButtonStyle = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionOverflowMenuStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionOverflowMenuStyle
         */
         public static final int AppCompatTheme_actionOverflowMenuStyle = 16;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#activityChooserViewStyle}
+=======
+          @attr name com.amazon.styln:actionOverflowMenuStyle
+        */
+        public static final int AppCompatTheme_actionOverflowMenuStyle = 16;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#activityChooserViewStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:activityChooserViewStyle
         */
         public static final int AppCompatTheme_activityChooserViewStyle = 57;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#alertDialogButtonGroupStyle}
+=======
+          @attr name com.amazon.styln:activityChooserViewStyle
+        */
+        public static final int AppCompatTheme_activityChooserViewStyle = 57;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#alertDialogButtonGroupStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:alertDialogButtonGroupStyle
         */
         public static final int AppCompatTheme_alertDialogButtonGroupStyle = 92;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#alertDialogCenterButtons}
+=======
+          @attr name com.amazon.styln:alertDialogButtonGroupStyle
+        */
+        public static final int AppCompatTheme_alertDialogButtonGroupStyle = 92;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#alertDialogCenterButtons}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4915,27 +5735,47 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:alertDialogCenterButtons
         */
         public static final int AppCompatTheme_alertDialogCenterButtons = 93;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#alertDialogStyle}
+=======
+          @attr name com.amazon.styln:alertDialogCenterButtons
+        */
+        public static final int AppCompatTheme_alertDialogCenterButtons = 93;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#alertDialogStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:alertDialogStyle
         */
         public static final int AppCompatTheme_alertDialogStyle = 91;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#alertDialogTheme}
+=======
+          @attr name com.amazon.styln:alertDialogStyle
+        */
+        public static final int AppCompatTheme_alertDialogStyle = 91;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#alertDialogTheme}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:alertDialogTheme
+=======
+          @attr name com.amazon.styln:alertDialogTheme
+>>>>>>> master
         */
         public static final int AppCompatTheme_alertDialogTheme = 94;
         /**
@@ -4951,117 +5791,209 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_android_windowIsFloating = 0;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#autoCompleteTextViewStyle}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#autoCompleteTextViewStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:autoCompleteTextViewStyle
         */
         public static final int AppCompatTheme_autoCompleteTextViewStyle = 99;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#borderlessButtonStyle}
+=======
+          @attr name com.amazon.styln:autoCompleteTextViewStyle
+        */
+        public static final int AppCompatTheme_autoCompleteTextViewStyle = 99;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#borderlessButtonStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:borderlessButtonStyle
         */
         public static final int AppCompatTheme_borderlessButtonStyle = 54;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#buttonBarButtonStyle}
+=======
+          @attr name com.amazon.styln:borderlessButtonStyle
+        */
+        public static final int AppCompatTheme_borderlessButtonStyle = 54;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#buttonBarButtonStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:buttonBarButtonStyle
         */
         public static final int AppCompatTheme_buttonBarButtonStyle = 51;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#buttonBarNegativeButtonStyle}
+=======
+          @attr name com.amazon.styln:buttonBarButtonStyle
+        */
+        public static final int AppCompatTheme_buttonBarButtonStyle = 51;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#buttonBarNegativeButtonStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:buttonBarNegativeButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNegativeButtonStyle = 97;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#buttonBarNeutralButtonStyle}
+=======
+          @attr name com.amazon.styln:buttonBarNegativeButtonStyle
+        */
+        public static final int AppCompatTheme_buttonBarNegativeButtonStyle = 97;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#buttonBarNeutralButtonStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:buttonBarNeutralButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNeutralButtonStyle = 98;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#buttonBarPositiveButtonStyle}
+=======
+          @attr name com.amazon.styln:buttonBarNeutralButtonStyle
+        */
+        public static final int AppCompatTheme_buttonBarNeutralButtonStyle = 98;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#buttonBarPositiveButtonStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:buttonBarPositiveButtonStyle
         */
         public static final int AppCompatTheme_buttonBarPositiveButtonStyle = 96;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#buttonBarStyle}
+=======
+          @attr name com.amazon.styln:buttonBarPositiveButtonStyle
+        */
+        public static final int AppCompatTheme_buttonBarPositiveButtonStyle = 96;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#buttonBarStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:buttonBarStyle
         */
         public static final int AppCompatTheme_buttonBarStyle = 50;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#buttonStyle}
+=======
+          @attr name com.amazon.styln:buttonBarStyle
+        */
+        public static final int AppCompatTheme_buttonBarStyle = 50;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#buttonStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:buttonStyle
         */
         public static final int AppCompatTheme_buttonStyle = 100;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#buttonStyleSmall}
+=======
+          @attr name com.amazon.styln:buttonStyle
+        */
+        public static final int AppCompatTheme_buttonStyle = 100;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#buttonStyleSmall}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:buttonStyleSmall
         */
         public static final int AppCompatTheme_buttonStyleSmall = 101;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#checkboxStyle}
+=======
+          @attr name com.amazon.styln:buttonStyleSmall
+        */
+        public static final int AppCompatTheme_buttonStyleSmall = 101;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#checkboxStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:checkboxStyle
         */
         public static final int AppCompatTheme_checkboxStyle = 102;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#checkedTextViewStyle}
+=======
+          @attr name com.amazon.styln:checkboxStyle
+        */
+        public static final int AppCompatTheme_checkboxStyle = 102;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#checkedTextViewStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:checkedTextViewStyle
         */
         public static final int AppCompatTheme_checkedTextViewStyle = 103;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#colorAccent}
+=======
+          @attr name com.amazon.styln:checkedTextViewStyle
+        */
+        public static final int AppCompatTheme_checkedTextViewStyle = 103;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#colorAccent}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5072,11 +6004,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:colorAccent
         */
         public static final int AppCompatTheme_colorAccent = 84;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#colorButtonNormal}
+=======
+          @attr name com.amazon.styln:colorAccent
+        */
+        public static final int AppCompatTheme_colorAccent = 84;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#colorButtonNormal}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5087,11 +6027,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:colorButtonNormal
         */
         public static final int AppCompatTheme_colorButtonNormal = 88;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#colorControlActivated}
+=======
+          @attr name com.amazon.styln:colorButtonNormal
+        */
+        public static final int AppCompatTheme_colorButtonNormal = 88;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#colorControlActivated}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5102,11 +6050,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:colorControlActivated
         */
         public static final int AppCompatTheme_colorControlActivated = 86;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#colorControlHighlight}
+=======
+          @attr name com.amazon.styln:colorControlActivated
+        */
+        public static final int AppCompatTheme_colorControlActivated = 86;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#colorControlHighlight}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5117,11 +6073,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:colorControlHighlight
         */
         public static final int AppCompatTheme_colorControlHighlight = 87;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#colorControlNormal}
+=======
+          @attr name com.amazon.styln:colorControlHighlight
+        */
+        public static final int AppCompatTheme_colorControlHighlight = 87;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#colorControlNormal}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5132,11 +6096,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:colorControlNormal
         */
         public static final int AppCompatTheme_colorControlNormal = 85;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#colorPrimary}
+=======
+          @attr name com.amazon.styln:colorControlNormal
+        */
+        public static final int AppCompatTheme_colorControlNormal = 85;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#colorPrimary}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5147,11 +6119,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:colorPrimary
         */
         public static final int AppCompatTheme_colorPrimary = 82;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#colorPrimaryDark}
+=======
+          @attr name com.amazon.styln:colorPrimary
+        */
+        public static final int AppCompatTheme_colorPrimary = 82;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#colorPrimaryDark}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5162,11 +6142,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:colorPrimaryDark
         */
         public static final int AppCompatTheme_colorPrimaryDark = 83;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#colorSwitchThumbNormal}
+=======
+          @attr name com.amazon.styln:colorPrimaryDark
+        */
+        public static final int AppCompatTheme_colorPrimaryDark = 83;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#colorSwitchThumbNormal}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5177,21 +6165,37 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:colorSwitchThumbNormal
         */
         public static final int AppCompatTheme_colorSwitchThumbNormal = 89;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#controlBackground}
+=======
+          @attr name com.amazon.styln:colorSwitchThumbNormal
+        */
+        public static final int AppCompatTheme_colorSwitchThumbNormal = 89;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#controlBackground}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:controlBackground
         */
         public static final int AppCompatTheme_controlBackground = 90;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#dialogPreferredPadding}
+=======
+          @attr name com.amazon.styln:controlBackground
+        */
+        public static final int AppCompatTheme_controlBackground = 90;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#dialogPreferredPadding}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5203,51 +6207,91 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:dialogPreferredPadding
         */
         public static final int AppCompatTheme_dialogPreferredPadding = 43;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#dialogTheme}
+=======
+          @attr name com.amazon.styln:dialogPreferredPadding
+        */
+        public static final int AppCompatTheme_dialogPreferredPadding = 43;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#dialogTheme}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:dialogTheme
         */
         public static final int AppCompatTheme_dialogTheme = 42;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#dividerHorizontal}
+=======
+          @attr name com.amazon.styln:dialogTheme
+        */
+        public static final int AppCompatTheme_dialogTheme = 42;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#dividerHorizontal}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:dividerHorizontal
         */
         public static final int AppCompatTheme_dividerHorizontal = 56;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#dividerVertical}
+=======
+          @attr name com.amazon.styln:dividerHorizontal
+        */
+        public static final int AppCompatTheme_dividerHorizontal = 56;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#dividerVertical}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:dividerVertical
         */
         public static final int AppCompatTheme_dividerVertical = 55;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#dropDownListViewStyle}
+=======
+          @attr name com.amazon.styln:dividerVertical
+        */
+        public static final int AppCompatTheme_dividerVertical = 55;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#dropDownListViewStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:dropDownListViewStyle
         */
         public static final int AppCompatTheme_dropDownListViewStyle = 74;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#dropdownListPreferredItemHeight}
+=======
+          @attr name com.amazon.styln:dropDownListViewStyle
+        */
+        public static final int AppCompatTheme_dropDownListViewStyle = 74;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#dropdownListPreferredItemHeight}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5259,21 +6303,37 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:dropdownListPreferredItemHeight
         */
         public static final int AppCompatTheme_dropdownListPreferredItemHeight = 46;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#editTextBackground}
+=======
+          @attr name com.amazon.styln:dropdownListPreferredItemHeight
+        */
+        public static final int AppCompatTheme_dropdownListPreferredItemHeight = 46;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#editTextBackground}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:editTextBackground
         */
         public static final int AppCompatTheme_editTextBackground = 63;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#editTextColor}
+=======
+          @attr name com.amazon.styln:editTextBackground
+        */
+        public static final int AppCompatTheme_editTextBackground = 63;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#editTextColor}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5281,71 +6341,127 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:editTextColor
         */
         public static final int AppCompatTheme_editTextColor = 62;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#editTextStyle}
+=======
+          @attr name com.amazon.styln:editTextColor
+        */
+        public static final int AppCompatTheme_editTextColor = 62;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#editTextStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:editTextStyle
         */
         public static final int AppCompatTheme_editTextStyle = 104;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#homeAsUpIndicator}
+=======
+          @attr name com.amazon.styln:editTextStyle
+        */
+        public static final int AppCompatTheme_editTextStyle = 104;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#homeAsUpIndicator}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:homeAsUpIndicator
         */
         public static final int AppCompatTheme_homeAsUpIndicator = 48;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#imageButtonStyle}
+=======
+          @attr name com.amazon.styln:homeAsUpIndicator
+        */
+        public static final int AppCompatTheme_homeAsUpIndicator = 48;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#imageButtonStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:imageButtonStyle
         */
         public static final int AppCompatTheme_imageButtonStyle = 64;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#listChoiceBackgroundIndicator}
+=======
+          @attr name com.amazon.styln:imageButtonStyle
+        */
+        public static final int AppCompatTheme_imageButtonStyle = 64;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#listChoiceBackgroundIndicator}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:listChoiceBackgroundIndicator
         */
         public static final int AppCompatTheme_listChoiceBackgroundIndicator = 81;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#listDividerAlertDialog}
+=======
+          @attr name com.amazon.styln:listChoiceBackgroundIndicator
+        */
+        public static final int AppCompatTheme_listChoiceBackgroundIndicator = 81;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#listDividerAlertDialog}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:listDividerAlertDialog
         */
         public static final int AppCompatTheme_listDividerAlertDialog = 44;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#listPopupWindowStyle}
+=======
+          @attr name com.amazon.styln:listDividerAlertDialog
+        */
+        public static final int AppCompatTheme_listDividerAlertDialog = 44;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#listPopupWindowStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:listPopupWindowStyle
         */
         public static final int AppCompatTheme_listPopupWindowStyle = 75;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#listPreferredItemHeight}
+=======
+          @attr name com.amazon.styln:listPopupWindowStyle
+        */
+        public static final int AppCompatTheme_listPopupWindowStyle = 75;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#listPreferredItemHeight}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5357,11 +6473,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:listPreferredItemHeight
         */
         public static final int AppCompatTheme_listPreferredItemHeight = 69;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#listPreferredItemHeightLarge}
+=======
+          @attr name com.amazon.styln:listPreferredItemHeight
+        */
+        public static final int AppCompatTheme_listPreferredItemHeight = 69;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#listPreferredItemHeightLarge}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5373,11 +6497,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:listPreferredItemHeightLarge
         */
         public static final int AppCompatTheme_listPreferredItemHeightLarge = 71;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#listPreferredItemHeightSmall}
+=======
+          @attr name com.amazon.styln:listPreferredItemHeightLarge
+        */
+        public static final int AppCompatTheme_listPreferredItemHeightLarge = 71;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#listPreferredItemHeightSmall}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5389,11 +6521,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:listPreferredItemHeightSmall
         */
         public static final int AppCompatTheme_listPreferredItemHeightSmall = 70;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#listPreferredItemPaddingLeft}
+=======
+          @attr name com.amazon.styln:listPreferredItemHeightSmall
+        */
+        public static final int AppCompatTheme_listPreferredItemHeightSmall = 70;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#listPreferredItemPaddingLeft}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5405,11 +6545,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:listPreferredItemPaddingLeft
         */
         public static final int AppCompatTheme_listPreferredItemPaddingLeft = 72;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#listPreferredItemPaddingRight}
+=======
+          @attr name com.amazon.styln:listPreferredItemPaddingLeft
+        */
+        public static final int AppCompatTheme_listPreferredItemPaddingLeft = 72;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#listPreferredItemPaddingRight}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5421,31 +6569,55 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:listPreferredItemPaddingRight
         */
         public static final int AppCompatTheme_listPreferredItemPaddingRight = 73;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#panelBackground}
+=======
+          @attr name com.amazon.styln:listPreferredItemPaddingRight
+        */
+        public static final int AppCompatTheme_listPreferredItemPaddingRight = 73;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#panelBackground}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:panelBackground
         */
         public static final int AppCompatTheme_panelBackground = 78;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#panelMenuListTheme}
+=======
+          @attr name com.amazon.styln:panelBackground
+        */
+        public static final int AppCompatTheme_panelBackground = 78;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#panelMenuListTheme}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:panelMenuListTheme
         */
         public static final int AppCompatTheme_panelMenuListTheme = 80;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#panelMenuListWidth}
+=======
+          @attr name com.amazon.styln:panelMenuListTheme
+        */
+        public static final int AppCompatTheme_panelMenuListTheme = 80;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#panelMenuListWidth}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5457,201 +6629,361 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:panelMenuListWidth
         */
         public static final int AppCompatTheme_panelMenuListWidth = 79;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#popupMenuStyle}
+=======
+          @attr name com.amazon.styln:panelMenuListWidth
+        */
+        public static final int AppCompatTheme_panelMenuListWidth = 79;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#popupMenuStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:popupMenuStyle
         */
         public static final int AppCompatTheme_popupMenuStyle = 60;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#popupWindowStyle}
+=======
+          @attr name com.amazon.styln:popupMenuStyle
+        */
+        public static final int AppCompatTheme_popupMenuStyle = 60;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#popupWindowStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:popupWindowStyle
         */
         public static final int AppCompatTheme_popupWindowStyle = 61;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#radioButtonStyle}
+=======
+          @attr name com.amazon.styln:popupWindowStyle
+        */
+        public static final int AppCompatTheme_popupWindowStyle = 61;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#radioButtonStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:radioButtonStyle
         */
         public static final int AppCompatTheme_radioButtonStyle = 105;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#ratingBarStyle}
+=======
+          @attr name com.amazon.styln:radioButtonStyle
+        */
+        public static final int AppCompatTheme_radioButtonStyle = 105;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#ratingBarStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:ratingBarStyle
         */
         public static final int AppCompatTheme_ratingBarStyle = 106;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#ratingBarStyleIndicator}
+=======
+          @attr name com.amazon.styln:ratingBarStyle
+        */
+        public static final int AppCompatTheme_ratingBarStyle = 106;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#ratingBarStyleIndicator}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:ratingBarStyleIndicator
         */
         public static final int AppCompatTheme_ratingBarStyleIndicator = 107;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#ratingBarStyleSmall}
+=======
+          @attr name com.amazon.styln:ratingBarStyleIndicator
+        */
+        public static final int AppCompatTheme_ratingBarStyleIndicator = 107;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#ratingBarStyleSmall}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:ratingBarStyleSmall
         */
         public static final int AppCompatTheme_ratingBarStyleSmall = 108;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#searchViewStyle}
+=======
+          @attr name com.amazon.styln:ratingBarStyleSmall
+        */
+        public static final int AppCompatTheme_ratingBarStyleSmall = 108;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#searchViewStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:searchViewStyle
         */
         public static final int AppCompatTheme_searchViewStyle = 68;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#seekBarStyle}
+=======
+          @attr name com.amazon.styln:searchViewStyle
+        */
+        public static final int AppCompatTheme_searchViewStyle = 68;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#seekBarStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:seekBarStyle
         */
         public static final int AppCompatTheme_seekBarStyle = 109;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#selectableItemBackground}
+=======
+          @attr name com.amazon.styln:seekBarStyle
+        */
+        public static final int AppCompatTheme_seekBarStyle = 109;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#selectableItemBackground}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:selectableItemBackground
         */
         public static final int AppCompatTheme_selectableItemBackground = 52;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#selectableItemBackgroundBorderless}
+=======
+          @attr name com.amazon.styln:selectableItemBackground
+        */
+        public static final int AppCompatTheme_selectableItemBackground = 52;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#selectableItemBackgroundBorderless}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:selectableItemBackgroundBorderless
         */
         public static final int AppCompatTheme_selectableItemBackgroundBorderless = 53;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#spinnerDropDownItemStyle}
+=======
+          @attr name com.amazon.styln:selectableItemBackgroundBorderless
+        */
+        public static final int AppCompatTheme_selectableItemBackgroundBorderless = 53;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#spinnerDropDownItemStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:spinnerDropDownItemStyle
         */
         public static final int AppCompatTheme_spinnerDropDownItemStyle = 47;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#spinnerStyle}
+=======
+          @attr name com.amazon.styln:spinnerDropDownItemStyle
+        */
+        public static final int AppCompatTheme_spinnerDropDownItemStyle = 47;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#spinnerStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:spinnerStyle
         */
         public static final int AppCompatTheme_spinnerStyle = 110;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#switchStyle}
+=======
+          @attr name com.amazon.styln:spinnerStyle
+        */
+        public static final int AppCompatTheme_spinnerStyle = 110;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#switchStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:switchStyle
         */
         public static final int AppCompatTheme_switchStyle = 111;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#textAppearanceLargePopupMenu}
+=======
+          @attr name com.amazon.styln:switchStyle
+        */
+        public static final int AppCompatTheme_switchStyle = 111;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#textAppearanceLargePopupMenu}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:textAppearanceLargePopupMenu
         */
         public static final int AppCompatTheme_textAppearanceLargePopupMenu = 40;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#textAppearanceListItem}
+=======
+          @attr name com.amazon.styln:textAppearanceLargePopupMenu
+        */
+        public static final int AppCompatTheme_textAppearanceLargePopupMenu = 40;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#textAppearanceListItem}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:textAppearanceListItem
         */
         public static final int AppCompatTheme_textAppearanceListItem = 76;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#textAppearanceListItemSmall}
+=======
+          @attr name com.amazon.styln:textAppearanceListItem
+        */
+        public static final int AppCompatTheme_textAppearanceListItem = 76;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#textAppearanceListItemSmall}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:textAppearanceListItemSmall
         */
         public static final int AppCompatTheme_textAppearanceListItemSmall = 77;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#textAppearanceSearchResultSubtitle}
+=======
+          @attr name com.amazon.styln:textAppearanceListItemSmall
+        */
+        public static final int AppCompatTheme_textAppearanceListItemSmall = 77;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#textAppearanceSearchResultSubtitle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:textAppearanceSearchResultSubtitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultSubtitle = 66;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#textAppearanceSearchResultTitle}
+=======
+          @attr name com.amazon.styln:textAppearanceSearchResultSubtitle
+        */
+        public static final int AppCompatTheme_textAppearanceSearchResultSubtitle = 66;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#textAppearanceSearchResultTitle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:textAppearanceSearchResultTitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultTitle = 65;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#textAppearanceSmallPopupMenu}
+=======
+          @attr name com.amazon.styln:textAppearanceSearchResultTitle
+        */
+        public static final int AppCompatTheme_textAppearanceSearchResultTitle = 65;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#textAppearanceSmallPopupMenu}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:textAppearanceSmallPopupMenu
         */
         public static final int AppCompatTheme_textAppearanceSmallPopupMenu = 41;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#textColorAlertDialogListItem}
+=======
+          @attr name com.amazon.styln:textAppearanceSmallPopupMenu
+        */
+        public static final int AppCompatTheme_textAppearanceSmallPopupMenu = 41;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#textColorAlertDialogListItem}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5659,11 +6991,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:textColorAlertDialogListItem
         */
         public static final int AppCompatTheme_textColorAlertDialogListItem = 95;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#textColorSearchUrl}
+=======
+          @attr name com.amazon.styln:textColorAlertDialogListItem
+        */
+        public static final int AppCompatTheme_textColorAlertDialogListItem = 95;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#textColorSearchUrl}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5671,31 +7011,55 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:textColorSearchUrl
         */
         public static final int AppCompatTheme_textColorSearchUrl = 67;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#toolbarNavigationButtonStyle}
+=======
+          @attr name com.amazon.styln:textColorSearchUrl
+        */
+        public static final int AppCompatTheme_textColorSearchUrl = 67;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#toolbarNavigationButtonStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:toolbarNavigationButtonStyle
         */
         public static final int AppCompatTheme_toolbarNavigationButtonStyle = 59;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#toolbarStyle}
+=======
+          @attr name com.amazon.styln:toolbarNavigationButtonStyle
+        */
+        public static final int AppCompatTheme_toolbarNavigationButtonStyle = 59;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#toolbarStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:toolbarStyle
         */
         public static final int AppCompatTheme_toolbarStyle = 58;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#windowActionBar}
+=======
+          @attr name com.amazon.styln:toolbarStyle
+        */
+        public static final int AppCompatTheme_toolbarStyle = 58;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#windowActionBar}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5705,11 +7069,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:windowActionBar
         */
         public static final int AppCompatTheme_windowActionBar = 2;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#windowActionBarOverlay}
+=======
+          @attr name com.amazon.styln:windowActionBar
+        */
+        public static final int AppCompatTheme_windowActionBar = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#windowActionBarOverlay}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5719,11 +7091,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:windowActionBarOverlay
         */
         public static final int AppCompatTheme_windowActionBarOverlay = 4;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#windowActionModeOverlay}
+=======
+          @attr name com.amazon.styln:windowActionBarOverlay
+        */
+        public static final int AppCompatTheme_windowActionBarOverlay = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#windowActionModeOverlay}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5733,11 +7113,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:windowActionModeOverlay
         */
         public static final int AppCompatTheme_windowActionModeOverlay = 5;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#windowFixedHeightMajor}
+=======
+          @attr name com.amazon.styln:windowActionModeOverlay
+        */
+        public static final int AppCompatTheme_windowActionModeOverlay = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#windowFixedHeightMajor}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5752,11 +7140,19 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:windowFixedHeightMajor
         */
         public static final int AppCompatTheme_windowFixedHeightMajor = 9;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#windowFixedHeightMinor}
+=======
+          @attr name com.amazon.styln:windowFixedHeightMajor
+        */
+        public static final int AppCompatTheme_windowFixedHeightMajor = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#windowFixedHeightMinor}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5771,11 +7167,19 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:windowFixedHeightMinor
         */
         public static final int AppCompatTheme_windowFixedHeightMinor = 7;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#windowFixedWidthMajor}
+=======
+          @attr name com.amazon.styln:windowFixedHeightMinor
+        */
+        public static final int AppCompatTheme_windowFixedHeightMinor = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#windowFixedWidthMajor}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5790,11 +7194,19 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:windowFixedWidthMajor
         */
         public static final int AppCompatTheme_windowFixedWidthMajor = 6;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#windowFixedWidthMinor}
+=======
+          @attr name com.amazon.styln:windowFixedWidthMajor
+        */
+        public static final int AppCompatTheme_windowFixedWidthMajor = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#windowFixedWidthMinor}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5809,11 +7221,19 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:windowFixedWidthMinor
         */
         public static final int AppCompatTheme_windowFixedWidthMinor = 8;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#windowMinWidthMajor}
+=======
+          @attr name com.amazon.styln:windowFixedWidthMinor
+        */
+        public static final int AppCompatTheme_windowFixedWidthMinor = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#windowMinWidthMajor}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5828,11 +7248,19 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:windowMinWidthMajor
         */
         public static final int AppCompatTheme_windowMinWidthMajor = 10;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#windowMinWidthMinor}
+=======
+          @attr name com.amazon.styln:windowMinWidthMajor
+        */
+        public static final int AppCompatTheme_windowMinWidthMajor = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#windowMinWidthMinor}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5847,11 +7275,19 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:windowMinWidthMinor
         */
         public static final int AppCompatTheme_windowMinWidthMinor = 11;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#windowNoTitle}
+=======
+          @attr name com.amazon.styln:windowMinWidthMinor
+        */
+        public static final int AppCompatTheme_windowMinWidthMinor = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#windowNoTitle}
+>>>>>>> master
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5861,7 +7297,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:windowNoTitle
+=======
+          @attr name com.amazon.styln:windowNoTitle
+>>>>>>> master
         */
         public static final int AppCompatTheme_windowNoTitle = 3;
         /** Attributes that can be used with a BottomSheetBehavior_Params.
@@ -5870,8 +7310,13 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_hideable com.amazon.mysampleapp:behavior_hideable}</code></td><td></td></tr>
            <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_peekHeight com.amazon.mysampleapp:behavior_peekHeight}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_hideable com.amazon.styln:behavior_hideable}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_peekHeight com.amazon.styln:behavior_peekHeight}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #BottomSheetBehavior_Params_behavior_hideable
            @see #BottomSheetBehavior_Params_behavior_peekHeight
@@ -5880,7 +7325,11 @@ containing a value of this type.
             0x7f010097, 0x7f010098
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#behavior_hideable}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#behavior_hideable}
+>>>>>>> master
           attribute's value can be found in the {@link #BottomSheetBehavior_Params} array.
 
 
@@ -5890,11 +7339,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:behavior_hideable
         */
         public static final int BottomSheetBehavior_Params_behavior_hideable = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#behavior_peekHeight}
+=======
+          @attr name com.amazon.styln:behavior_hideable
+        */
+        public static final int BottomSheetBehavior_Params_behavior_hideable = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#behavior_peekHeight}
+>>>>>>> master
           attribute's value can be found in the {@link #BottomSheetBehavior_Params} array.
 
 
@@ -5906,7 +7363,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:behavior_peekHeight
+=======
+          @attr name com.amazon.styln:behavior_peekHeight
+>>>>>>> master
         */
         public static final int BottomSheetBehavior_Params_behavior_peekHeight = 0;
         /** Attributes that can be used with a ButtonBarContainerTheme.
@@ -5915,8 +7376,13 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #ButtonBarContainerTheme_metaButtonBarButtonStyle com.amazon.mysampleapp:metaButtonBarButtonStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #ButtonBarContainerTheme_metaButtonBarStyle com.amazon.mysampleapp:metaButtonBarStyle}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #ButtonBarContainerTheme_metaButtonBarButtonStyle com.amazon.styln:metaButtonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarContainerTheme_metaButtonBarStyle com.amazon.styln:metaButtonBarStyle}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #ButtonBarContainerTheme_metaButtonBarButtonStyle
            @see #ButtonBarContainerTheme_metaButtonBarStyle
@@ -5925,23 +7391,39 @@ containing a value of this type.
             0x7f010099, 0x7f01009a
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#metaButtonBarButtonStyle}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#metaButtonBarButtonStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:metaButtonBarButtonStyle
         */
         public static final int ButtonBarContainerTheme_metaButtonBarButtonStyle = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#metaButtonBarStyle}
+=======
+          @attr name com.amazon.styln:metaButtonBarButtonStyle
+        */
+        public static final int ButtonBarContainerTheme_metaButtonBarButtonStyle = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#metaButtonBarStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:metaButtonBarStyle
+=======
+          @attr name com.amazon.styln:metaButtonBarStyle
+>>>>>>> master
         */
         public static final int ButtonBarContainerTheme_metaButtonBarStyle = 0;
         /** Attributes that can be used with a ButtonBarLayout.
@@ -5950,7 +7432,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #ButtonBarLayout_allowStacking com.amazon.mysampleapp:allowStacking}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #ButtonBarLayout_allowStacking com.amazon.styln:allowStacking}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #ButtonBarLayout_allowStacking
          */
@@ -5958,7 +7444,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01009b
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#allowStacking}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#allowStacking}
+>>>>>>> master
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -5968,7 +7458,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:allowStacking
+=======
+          @attr name com.amazon.styln:allowStacking
+>>>>>>> master
         */
         public static final int ButtonBarLayout_allowStacking = 0;
         /** Attributes that can be used with a CollapsingAppBarLayout_LayoutParams.
@@ -5977,8 +7471,13 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode com.amazon.mysampleapp:layout_collapseMode}</code></td><td></td></tr>
            <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier com.amazon.mysampleapp:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode com.amazon.styln:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier com.amazon.styln:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseMode
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier
@@ -5987,7 +7486,11 @@ containing a value of this type.
             0x7f01009c, 0x7f01009d
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#layout_collapseMode}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#layout_collapseMode}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -6001,11 +7504,19 @@ containing a value of this type.
 <tr><td><code>pin</code></td><td>1</td><td></td></tr>
 <tr><td><code>parallax</code></td><td>2</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:layout_collapseMode
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseMode = 0;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#layout_collapseParallaxMultiplier}
+=======
+          @attr name com.amazon.styln:layout_collapseMode
+        */
+        public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseMode = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#layout_collapseParallaxMultiplier}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -6015,7 +7526,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:layout_collapseParallaxMultiplier
+=======
+          @attr name com.amazon.styln:layout_collapseParallaxMultiplier
+>>>>>>> master
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = 1;
         /** Attributes that can be used with a CollapsingToolbarLayout.
@@ -6024,6 +7539,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.amazon.mysampleapp:collapsedTitleGravity}</code></td><td></td></tr>
            <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.amazon.mysampleapp:collapsedTitleTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.amazon.mysampleapp:contentScrim}</code></td><td></td></tr>
@@ -6038,6 +7554,22 @@ containing a value of this type.
            <tr><td><code>{@link #CollapsingToolbarLayout_title com.amazon.mysampleapp:title}</code></td><td></td></tr>
            <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.amazon.mysampleapp:titleEnabled}</code></td><td></td></tr>
            <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.amazon.mysampleapp:toolbarId}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.amazon.styln:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.amazon.styln:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.amazon.styln:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.amazon.styln:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.amazon.styln:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.amazon.styln:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.amazon.styln:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.amazon.styln:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.amazon.styln:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.amazon.styln:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.amazon.styln:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title com.amazon.styln:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.amazon.styln:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.amazon.styln:toolbarId}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #CollapsingToolbarLayout_collapsedTitleGravity
            @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -6061,7 +7593,11 @@ containing a value of this type.
             0x7f0100a9, 0x7f0100aa
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#collapsedTitleGravity}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#collapsedTitleGravity}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6082,21 +7618,37 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:collapsedTitleGravity
         */
         public static final int CollapsingToolbarLayout_collapsedTitleGravity = 11;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#collapsedTitleTextAppearance}
+=======
+          @attr name com.amazon.styln:collapsedTitleGravity
+        */
+        public static final int CollapsingToolbarLayout_collapsedTitleGravity = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#collapsedTitleTextAppearance}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:collapsedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#contentScrim}
+=======
+          @attr name com.amazon.styln:collapsedTitleTextAppearance
+        */
+        public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#contentScrim}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6107,11 +7659,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:contentScrim
         */
         public static final int CollapsingToolbarLayout_contentScrim = 8;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#expandedTitleGravity}
+=======
+          @attr name com.amazon.styln:contentScrim
+        */
+        public static final int CollapsingToolbarLayout_contentScrim = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#expandedTitleGravity}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6132,11 +7692,19 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:expandedTitleGravity
         */
         public static final int CollapsingToolbarLayout_expandedTitleGravity = 12;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#expandedTitleMargin}
+=======
+          @attr name com.amazon.styln:expandedTitleGravity
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleGravity = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#expandedTitleMargin}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6148,11 +7716,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:expandedTitleMargin
         */
         public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#expandedTitleMarginBottom}
+=======
+          @attr name com.amazon.styln:expandedTitleMargin
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#expandedTitleMarginBottom}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6164,11 +7740,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:expandedTitleMarginBottom
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#expandedTitleMarginEnd}
+=======
+          @attr name com.amazon.styln:expandedTitleMarginBottom
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#expandedTitleMarginEnd}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6180,11 +7764,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:expandedTitleMarginEnd
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#expandedTitleMarginStart}
+=======
+          @attr name com.amazon.styln:expandedTitleMarginEnd
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#expandedTitleMarginStart}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6196,11 +7788,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:expandedTitleMarginStart
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#expandedTitleMarginTop}
+=======
+          @attr name com.amazon.styln:expandedTitleMarginStart
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#expandedTitleMarginTop}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6212,21 +7812,37 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:expandedTitleMarginTop
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#expandedTitleTextAppearance}
+=======
+          @attr name com.amazon.styln:expandedTitleMarginTop
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#expandedTitleTextAppearance}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:expandedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#statusBarScrim}
+=======
+          @attr name com.amazon.styln:expandedTitleTextAppearance
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#statusBarScrim}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6237,11 +7853,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:statusBarScrim
         */
         public static final int CollapsingToolbarLayout_statusBarScrim = 9;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#title}
+=======
+          @attr name com.amazon.styln:statusBarScrim
+        */
+        public static final int CollapsingToolbarLayout_statusBarScrim = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#title}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6251,11 +7875,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:title
         */
         public static final int CollapsingToolbarLayout_title = 0;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#titleEnabled}
+=======
+          @attr name com.amazon.styln:title
+        */
+        public static final int CollapsingToolbarLayout_title = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#titleEnabled}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6265,17 +7897,29 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:titleEnabled
         */
         public static final int CollapsingToolbarLayout_titleEnabled = 13;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#toolbarId}
+=======
+          @attr name com.amazon.styln:titleEnabled
+        */
+        public static final int CollapsingToolbarLayout_titleEnabled = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#toolbarId}
+>>>>>>> master
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:toolbarId
+=======
+          @attr name com.amazon.styln:toolbarId
+>>>>>>> master
         */
         public static final int CollapsingToolbarLayout_toolbarId = 10;
         /** Attributes that can be used with a CompoundButton.
@@ -6285,8 +7929,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #CompoundButton_buttonTint com.amazon.mysampleapp:buttonTint}</code></td><td></td></tr>
            <tr><td><code>{@link #CompoundButton_buttonTintMode com.amazon.mysampleapp:buttonTintMode}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #CompoundButton_buttonTint com.amazon.styln:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode com.amazon.styln:buttonTintMode}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
@@ -6302,7 +7951,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CompoundButton_android_button = 0;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#buttonTint}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#buttonTint}
+>>>>>>> master
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -6313,11 +7966,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:buttonTint
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#buttonTintMode}
+=======
+          @attr name com.amazon.styln:buttonTint
+        */
+        public static final int CompoundButton_buttonTint = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#buttonTintMode}
+>>>>>>> master
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -6333,7 +7994,11 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:buttonTintMode
+=======
+          @attr name com.amazon.styln:buttonTintMode
+>>>>>>> master
         */
         public static final int CompoundButton_buttonTintMode = 2;
         /** Attributes that can be used with a CoordinatorLayout.
@@ -6342,8 +8007,13 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #CoordinatorLayout_keylines com.amazon.mysampleapp:keylines}</code></td><td></td></tr>
            <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.amazon.mysampleapp:statusBarBackground}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #CoordinatorLayout_keylines com.amazon.styln:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.amazon.styln:statusBarBackground}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #CoordinatorLayout_keylines
            @see #CoordinatorLayout_statusBarBackground
@@ -6352,23 +8022,39 @@ containing a value of this type.
             0x7f0100ad, 0x7f0100ae
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#keylines}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#keylines}
+>>>>>>> master
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:keylines
         */
         public static final int CoordinatorLayout_keylines = 0;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#statusBarBackground}
+=======
+          @attr name com.amazon.styln:keylines
+        */
+        public static final int CoordinatorLayout_keylines = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#statusBarBackground}
+>>>>>>> master
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:statusBarBackground
+=======
+          @attr name com.amazon.styln:statusBarBackground
+>>>>>>> master
         */
         public static final int CoordinatorLayout_statusBarBackground = 1;
         /** Attributes that can be used with a CoordinatorLayout_LayoutParams.
@@ -6378,10 +8064,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CoordinatorLayout_LayoutParams_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor com.amazon.mysampleapp:layout_anchor}</code></td><td></td></tr>
            <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity com.amazon.mysampleapp:layout_anchorGravity}</code></td><td></td></tr>
            <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior com.amazon.mysampleapp:layout_behavior}</code></td><td></td></tr>
            <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline com.amazon.mysampleapp:layout_keyline}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor com.amazon.styln:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity com.amazon.styln:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior com.amazon.styln:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline com.amazon.styln:layout_keyline}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #CoordinatorLayout_LayoutParams_android_layout_gravity
            @see #CoordinatorLayout_LayoutParams_layout_anchor
@@ -6400,17 +8093,29 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_LayoutParams_android_layout_gravity = 0;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#layout_anchor}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#layout_anchor}
+>>>>>>> master
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:layout_anchor
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchor = 2;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#layout_anchorGravity}
+=======
+          @attr name com.amazon.styln:layout_anchor
+        */
+        public static final int CoordinatorLayout_LayoutParams_layout_anchor = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#layout_anchorGravity}
+>>>>>>> master
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -6435,11 +8140,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:layout_anchorGravity
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchorGravity = 4;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#layout_behavior}
+=======
+          @attr name com.amazon.styln:layout_anchorGravity
+        */
+        public static final int CoordinatorLayout_LayoutParams_layout_anchorGravity = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#layout_behavior}
+>>>>>>> master
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -6449,11 +8162,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:layout_behavior
         */
         public static final int CoordinatorLayout_LayoutParams_layout_behavior = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#layout_keyline}
+=======
+          @attr name com.amazon.styln:layout_behavior
+        */
+        public static final int CoordinatorLayout_LayoutParams_layout_behavior = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#layout_keyline}
+>>>>>>> master
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -6463,7 +8184,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:layout_keyline
+=======
+          @attr name com.amazon.styln:layout_keyline
+>>>>>>> master
         */
         public static final int CoordinatorLayout_LayoutParams_layout_keyline = 3;
         /** Attributes that can be used with a DesignTheme.
@@ -6472,9 +8197,15 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.amazon.mysampleapp:bottomSheetDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.amazon.mysampleapp:bottomSheetStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #DesignTheme_textColorError com.amazon.mysampleapp:textColorError}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.amazon.styln:bottomSheetDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.amazon.styln:bottomSheetStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_textColorError com.amazon.styln:textColorError}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #DesignTheme_bottomSheetDialogTheme
            @see #DesignTheme_bottomSheetStyle
@@ -6484,27 +8215,47 @@ containing a value of this type.
             0x7f0100b3, 0x7f0100b4, 0x7f0100b5
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#bottomSheetDialogTheme}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#bottomSheetDialogTheme}
+>>>>>>> master
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:bottomSheetDialogTheme
         */
         public static final int DesignTheme_bottomSheetDialogTheme = 0;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#bottomSheetStyle}
+=======
+          @attr name com.amazon.styln:bottomSheetDialogTheme
+        */
+        public static final int DesignTheme_bottomSheetDialogTheme = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#bottomSheetStyle}
+>>>>>>> master
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:bottomSheetStyle
         */
         public static final int DesignTheme_bottomSheetStyle = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#textColorError}
+=======
+          @attr name com.amazon.styln:bottomSheetStyle
+        */
+        public static final int DesignTheme_bottomSheetStyle = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#textColorError}
+>>>>>>> master
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
@@ -6515,7 +8266,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:textColorError
+=======
+          @attr name com.amazon.styln:textColorError
+>>>>>>> master
         */
         public static final int DesignTheme_textColorError = 2;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -6524,6 +8279,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.amazon.mysampleapp:arrowHeadLength}</code></td><td></td></tr>
            <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.amazon.mysampleapp:arrowShaftLength}</code></td><td></td></tr>
            <tr><td><code>{@link #DrawerArrowToggle_barLength com.amazon.mysampleapp:barLength}</code></td><td></td></tr>
@@ -6532,6 +8288,16 @@ containing a value of this type.
            <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.amazon.mysampleapp:gapBetweenBars}</code></td><td></td></tr>
            <tr><td><code>{@link #DrawerArrowToggle_spinBars com.amazon.mysampleapp:spinBars}</code></td><td></td></tr>
            <tr><td><code>{@link #DrawerArrowToggle_thickness com.amazon.mysampleapp:thickness}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.amazon.styln:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.amazon.styln:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength com.amazon.styln:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color com.amazon.styln:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.amazon.styln:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.amazon.styln:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.amazon.styln:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness com.amazon.styln:thickness}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -6547,7 +8313,11 @@ containing a value of this type.
             0x7f0100ba, 0x7f0100bb, 0x7f0100bc, 0x7f0100bd
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#arrowHeadLength}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#arrowHeadLength}
+>>>>>>> master
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6559,11 +8329,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:arrowHeadLength
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#arrowShaftLength}
+=======
+          @attr name com.amazon.styln:arrowHeadLength
+        */
+        public static final int DrawerArrowToggle_arrowHeadLength = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#arrowShaftLength}
+>>>>>>> master
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6575,11 +8353,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:arrowShaftLength
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#barLength}
+=======
+          @attr name com.amazon.styln:arrowShaftLength
+        */
+        public static final int DrawerArrowToggle_arrowShaftLength = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#barLength}
+>>>>>>> master
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6591,11 +8377,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:barLength
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#color}
+=======
+          @attr name com.amazon.styln:barLength
+        */
+        public static final int DrawerArrowToggle_barLength = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#color}
+>>>>>>> master
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6606,11 +8400,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#drawableSize}
+=======
+          @attr name com.amazon.styln:color
+        */
+        public static final int DrawerArrowToggle_color = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#drawableSize}
+>>>>>>> master
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6622,11 +8424,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#gapBetweenBars}
+=======
+          @attr name com.amazon.styln:drawableSize
+        */
+        public static final int DrawerArrowToggle_drawableSize = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#gapBetweenBars}
+>>>>>>> master
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6638,11 +8448,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#spinBars}
+=======
+          @attr name com.amazon.styln:gapBetweenBars
+        */
+        public static final int DrawerArrowToggle_gapBetweenBars = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#spinBars}
+>>>>>>> master
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6652,11 +8470,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#thickness}
+=======
+          @attr name com.amazon.styln:spinBars
+        */
+        public static final int DrawerArrowToggle_spinBars = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#thickness}
+>>>>>>> master
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6668,7 +8494,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:thickness
+=======
+          @attr name com.amazon.styln:thickness
+>>>>>>> master
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /** Attributes that can be used with a FloatingActionButton.
@@ -6677,6 +8507,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #FloatingActionButton_backgroundTint com.amazon.mysampleapp:backgroundTint}</code></td><td></td></tr>
            <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.amazon.mysampleapp:backgroundTintMode}</code></td><td></td></tr>
            <tr><td><code>{@link #FloatingActionButton_borderWidth com.amazon.mysampleapp:borderWidth}</code></td><td></td></tr>
@@ -6685,6 +8516,16 @@ containing a value of this type.
            <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.amazon.mysampleapp:pressedTranslationZ}</code></td><td></td></tr>
            <tr><td><code>{@link #FloatingActionButton_rippleColor com.amazon.mysampleapp:rippleColor}</code></td><td></td></tr>
            <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.amazon.mysampleapp:useCompatPadding}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint com.amazon.styln:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.amazon.styln:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth com.amazon.styln:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation com.amazon.styln:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize com.amazon.styln:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.amazon.styln:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor com.amazon.styln:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.amazon.styln:useCompatPadding}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #FloatingActionButton_backgroundTint
            @see #FloatingActionButton_backgroundTintMode
@@ -6700,7 +8541,11 @@ containing a value of this type.
             0x7f0100c1, 0x7f0100c2, 0x7f010120, 0x7f010121
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#backgroundTint}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#backgroundTint}
+>>>>>>> master
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6711,11 +8556,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:backgroundTint
         */
         public static final int FloatingActionButton_backgroundTint = 6;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#backgroundTintMode}
+=======
+          @attr name com.amazon.styln:backgroundTint
+        */
+        public static final int FloatingActionButton_backgroundTint = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#backgroundTintMode}
+>>>>>>> master
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6731,11 +8584,19 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:backgroundTintMode
         */
         public static final int FloatingActionButton_backgroundTintMode = 7;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#borderWidth}
+=======
+          @attr name com.amazon.styln:backgroundTintMode
+        */
+        public static final int FloatingActionButton_backgroundTintMode = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#borderWidth}
+>>>>>>> master
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6747,11 +8608,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:borderWidth
         */
         public static final int FloatingActionButton_borderWidth = 4;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#elevation}
+=======
+          @attr name com.amazon.styln:borderWidth
+        */
+        public static final int FloatingActionButton_borderWidth = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#elevation}
+>>>>>>> master
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6763,11 +8632,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:elevation
         */
         public static final int FloatingActionButton_elevation = 0;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#fabSize}
+=======
+          @attr name com.amazon.styln:elevation
+        */
+        public static final int FloatingActionButton_elevation = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#fabSize}
+>>>>>>> master
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6780,11 +8657,19 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:fabSize
         */
         public static final int FloatingActionButton_fabSize = 2;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#pressedTranslationZ}
+=======
+          @attr name com.amazon.styln:fabSize
+        */
+        public static final int FloatingActionButton_fabSize = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#pressedTranslationZ}
+>>>>>>> master
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6796,11 +8681,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:pressedTranslationZ
         */
         public static final int FloatingActionButton_pressedTranslationZ = 3;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#rippleColor}
+=======
+          @attr name com.amazon.styln:pressedTranslationZ
+        */
+        public static final int FloatingActionButton_pressedTranslationZ = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#rippleColor}
+>>>>>>> master
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6811,11 +8704,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:rippleColor
         */
         public static final int FloatingActionButton_rippleColor = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#useCompatPadding}
+=======
+          @attr name com.amazon.styln:rippleColor
+        */
+        public static final int FloatingActionButton_rippleColor = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#useCompatPadding}
+>>>>>>> master
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6825,7 +8726,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:useCompatPadding
+=======
+          @attr name com.amazon.styln:useCompatPadding
+>>>>>>> master
         */
         public static final int FloatingActionButton_useCompatPadding = 5;
         /** Attributes that can be used with a ForegroundLinearLayout.
@@ -6836,7 +8741,11 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.amazon.mysampleapp:foregroundInsidePadding}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.amazon.styln:foregroundInsidePadding}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #ForegroundLinearLayout_android_foreground
            @see #ForegroundLinearLayout_android_foregroundGravity
@@ -6858,7 +8767,11 @@ containing a value of this type.
         */
         public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#foregroundInsidePadding}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#foregroundInsidePadding}
+>>>>>>> master
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -6868,7 +8781,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:foregroundInsidePadding
+=======
+          @attr name com.amazon.styln:foregroundInsidePadding
+>>>>>>> master
         */
         public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -6882,10 +8799,17 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #LinearLayoutCompat_divider com.amazon.mysampleapp:divider}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.amazon.mysampleapp:dividerPadding}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.amazon.mysampleapp:measureWithLargestChild}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_showDividers com.amazon.mysampleapp:showDividers}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #LinearLayoutCompat_divider com.amazon.styln:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.amazon.styln:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.amazon.styln:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.amazon.styln:showDividers}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -6933,17 +8857,29 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#divider}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#divider}
+>>>>>>> master
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#dividerPadding}
+=======
+          @attr name com.amazon.styln:divider
+        */
+        public static final int LinearLayoutCompat_divider = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#dividerPadding}
+>>>>>>> master
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -6955,11 +8891,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#measureWithLargestChild}
+=======
+          @attr name com.amazon.styln:dividerPadding
+        */
+        public static final int LinearLayoutCompat_dividerPadding = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#measureWithLargestChild}
+>>>>>>> master
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -6969,11 +8913,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#showDividers}
+=======
+          @attr name com.amazon.styln:measureWithLargestChild
+        */
+        public static final int LinearLayoutCompat_measureWithLargestChild = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#showDividers}
+>>>>>>> master
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -6988,7 +8940,11 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:showDividers
+=======
+          @attr name com.amazon.styln:showDividers
+>>>>>>> master
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -7067,9 +9023,15 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #LoadingImageView_circleCrop com.amazon.mysampleapp:circleCrop}</code></td><td></td></tr>
            <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.amazon.mysampleapp:imageAspectRatio}</code></td><td></td></tr>
            <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.amazon.mysampleapp:imageAspectRatioAdjust}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #LoadingImageView_circleCrop com.amazon.styln:circleCrop}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.amazon.styln:imageAspectRatio}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.amazon.styln:imageAspectRatioAdjust}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #LoadingImageView_circleCrop
            @see #LoadingImageView_imageAspectRatio
@@ -7079,7 +9041,11 @@ containing a value of this type.
             0x7f0100c7, 0x7f0100c8, 0x7f0100c9
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#circleCrop}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#circleCrop}
+>>>>>>> master
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -7089,11 +9055,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:circleCrop
         */
         public static final int LoadingImageView_circleCrop = 2;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#imageAspectRatio}
+=======
+          @attr name com.amazon.styln:circleCrop
+        */
+        public static final int LoadingImageView_circleCrop = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#imageAspectRatio}
+>>>>>>> master
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -7103,11 +9077,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:imageAspectRatio
         */
         public static final int LoadingImageView_imageAspectRatio = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#imageAspectRatioAdjust}
+=======
+          @attr name com.amazon.styln:imageAspectRatio
+        */
+        public static final int LoadingImageView_imageAspectRatio = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#imageAspectRatioAdjust}
+>>>>>>> master
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -7121,7 +9103,11 @@ containing a value of this type.
 <tr><td><code>adjust_width</code></td><td>1</td><td></td></tr>
 <tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:imageAspectRatioAdjust
+=======
+          @attr name com.amazon.styln:imageAspectRatioAdjust
+>>>>>>> master
         */
         public static final int LoadingImageView_imageAspectRatioAdjust = 0;
         /** Attributes that can be used with a MenuGroup.
@@ -7190,9 +9176,15 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #MenuItem_actionLayout com.amazon.mysampleapp:actionLayout}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_actionProviderClass com.amazon.mysampleapp:actionProviderClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_actionViewClass com.amazon.mysampleapp:actionViewClass}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #MenuItem_actionLayout com.amazon.styln:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass com.amazon.styln:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass com.amazon.styln:actionViewClass}</code></td><td></td></tr>
+>>>>>>> master
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -7206,7 +9198,11 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #MenuItem_showAsAction com.amazon.mysampleapp:showAsAction}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #MenuItem_showAsAction com.amazon.styln:showAsAction}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -7234,17 +9230,29 @@ containing a value of this type.
             0x7f0100cd
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionLayout}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionLayout}
+>>>>>>> master
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionProviderClass}
+=======
+          @attr name com.amazon.styln:actionLayout
+        */
+        public static final int MenuItem_actionLayout = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionProviderClass}
+>>>>>>> master
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -7254,11 +9262,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#actionViewClass}
+=======
+          @attr name com.amazon.styln:actionProviderClass
+        */
+        public static final int MenuItem_actionProviderClass = 16;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#actionViewClass}
+>>>>>>> master
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -7268,7 +9284,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:actionViewClass
+=======
+          @attr name com.amazon.styln:actionViewClass
+>>>>>>> master
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -7350,7 +9370,11 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#showAsAction}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#showAsAction}
+>>>>>>> master
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -7366,7 +9390,11 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:showAsAction
+=======
+          @attr name com.amazon.styln:showAsAction
+>>>>>>> master
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -7382,7 +9410,11 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #MenuView_preserveIconSpacing com.amazon.mysampleapp:preserveIconSpacing}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #MenuView_preserveIconSpacing com.amazon.styln:preserveIconSpacing}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -7440,7 +9472,11 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#preserveIconSpacing}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#preserveIconSpacing}
+>>>>>>> master
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -7450,7 +9486,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:preserveIconSpacing
+=======
+          @attr name com.amazon.styln:preserveIconSpacing
+>>>>>>> master
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a NavigationView.
@@ -7462,6 +9502,7 @@ containing a value of this type.
            <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #NavigationView_elevation com.amazon.mysampleapp:elevation}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_headerLayout com.amazon.mysampleapp:headerLayout}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_itemBackground com.amazon.mysampleapp:itemBackground}</code></td><td></td></tr>
@@ -7469,6 +9510,15 @@ containing a value of this type.
            <tr><td><code>{@link #NavigationView_itemTextAppearance com.amazon.mysampleapp:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_itemTextColor com.amazon.mysampleapp:itemTextColor}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_menu com.amazon.mysampleapp:menu}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #NavigationView_elevation com.amazon.styln:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout com.amazon.styln:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground com.amazon.styln:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint com.amazon.styln:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance com.amazon.styln:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor com.amazon.styln:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu com.amazon.styln:menu}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #NavigationView_android_background
            @see #NavigationView_android_fitsSystemWindows
@@ -7505,7 +9555,11 @@ containing a value of this type.
         */
         public static final int NavigationView_android_maxWidth = 2;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#elevation}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#elevation}
+>>>>>>> master
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -7517,31 +9571,55 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:elevation
         */
         public static final int NavigationView_elevation = 3;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#headerLayout}
+=======
+          @attr name com.amazon.styln:elevation
+        */
+        public static final int NavigationView_elevation = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#headerLayout}
+>>>>>>> master
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:headerLayout
         */
         public static final int NavigationView_headerLayout = 9;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#itemBackground}
+=======
+          @attr name com.amazon.styln:headerLayout
+        */
+        public static final int NavigationView_headerLayout = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#itemBackground}
+>>>>>>> master
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:itemBackground
         */
         public static final int NavigationView_itemBackground = 7;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#itemIconTint}
+=======
+          @attr name com.amazon.styln:itemBackground
+        */
+        public static final int NavigationView_itemBackground = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#itemIconTint}
+>>>>>>> master
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -7552,21 +9630,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:itemIconTint
         */
         public static final int NavigationView_itemIconTint = 5;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#itemTextAppearance}
+=======
+          @attr name com.amazon.styln:itemIconTint
+        */
+        public static final int NavigationView_itemIconTint = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#itemTextAppearance}
+>>>>>>> master
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:itemTextAppearance
         */
         public static final int NavigationView_itemTextAppearance = 8;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#itemTextColor}
+=======
+          @attr name com.amazon.styln:itemTextAppearance
+        */
+        public static final int NavigationView_itemTextAppearance = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#itemTextColor}
+>>>>>>> master
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -7577,17 +9671,29 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:itemTextColor
         */
         public static final int NavigationView_itemTextColor = 6;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#menu}
+=======
+          @attr name com.amazon.styln:itemTextColor
+        */
+        public static final int NavigationView_itemTextColor = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#menu}
+>>>>>>> master
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:menu
+=======
+          @attr name com.amazon.styln:menu
+>>>>>>> master
         */
         public static final int NavigationView_menu = 4;
         /** Attributes that can be used with a PopupWindow.
@@ -7597,7 +9703,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #PopupWindow_overlapAnchor com.amazon.mysampleapp:overlapAnchor}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #PopupWindow_overlapAnchor com.amazon.styln:overlapAnchor}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -7612,7 +9722,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#overlapAnchor}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#overlapAnchor}
+>>>>>>> master
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -7622,7 +9736,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:overlapAnchor
+=======
+          @attr name com.amazon.styln:overlapAnchor
+>>>>>>> master
         */
         public static final int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -7631,7 +9749,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.amazon.mysampleapp:state_above_anchor}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.amazon.styln:state_above_anchor}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -7639,7 +9761,11 @@ containing a value of this type.
             0x7f0100d6
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#state_above_anchor}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#state_above_anchor}
+>>>>>>> master
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -7649,7 +9775,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:state_above_anchor
+=======
+          @attr name com.amazon.styln:state_above_anchor
+>>>>>>> master
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RecyclerView.
@@ -7659,10 +9789,17 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #RecyclerView_layoutManager com.amazon.mysampleapp:layoutManager}</code></td><td></td></tr>
            <tr><td><code>{@link #RecyclerView_reverseLayout com.amazon.mysampleapp:reverseLayout}</code></td><td></td></tr>
            <tr><td><code>{@link #RecyclerView_spanCount com.amazon.mysampleapp:spanCount}</code></td><td></td></tr>
            <tr><td><code>{@link #RecyclerView_stackFromEnd com.amazon.mysampleapp:stackFromEnd}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #RecyclerView_layoutManager com.amazon.styln:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout com.amazon.styln:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount com.amazon.styln:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd com.amazon.styln:stackFromEnd}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #RecyclerView_android_orientation
            @see #RecyclerView_layoutManager
@@ -7681,7 +9818,11 @@ containing a value of this type.
         */
         public static final int RecyclerView_android_orientation = 0;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#layoutManager}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#layoutManager}
+>>>>>>> master
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -7691,11 +9832,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:layoutManager
         */
         public static final int RecyclerView_layoutManager = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#reverseLayout}
+=======
+          @attr name com.amazon.styln:layoutManager
+        */
+        public static final int RecyclerView_layoutManager = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#reverseLayout}
+>>>>>>> master
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -7705,11 +9854,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:reverseLayout
         */
         public static final int RecyclerView_reverseLayout = 3;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#spanCount}
+=======
+          @attr name com.amazon.styln:reverseLayout
+        */
+        public static final int RecyclerView_reverseLayout = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#spanCount}
+>>>>>>> master
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -7719,11 +9876,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:spanCount
         */
         public static final int RecyclerView_spanCount = 2;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#stackFromEnd}
+=======
+          @attr name com.amazon.styln:spanCount
+        */
+        public static final int RecyclerView_spanCount = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#stackFromEnd}
+>>>>>>> master
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -7733,7 +9898,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:stackFromEnd
+=======
+          @attr name com.amazon.styln:stackFromEnd
+>>>>>>> master
         */
         public static final int RecyclerView_stackFromEnd = 4;
         /** Attributes that can be used with a ScrimInsetsFrameLayout.
@@ -7742,7 +9911,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.amazon.mysampleapp:insetForeground}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.amazon.styln:insetForeground}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #ScrimInsetsFrameLayout_insetForeground
          */
@@ -7750,7 +9923,11 @@ containing a value of this type.
             0x7f0100db
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#insetForeground}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#insetForeground}
+>>>>>>> master
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -7758,7 +9935,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:insetForeground
+=======
+          @attr name com.amazon.styln:insetForeground
+>>>>>>> master
         */
         public static final int ScrimInsetsFrameLayout_insetForeground = 0;
         /** Attributes that can be used with a ScrollingViewBehavior_Params.
@@ -7767,7 +9948,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop com.amazon.mysampleapp:behavior_overlapTop}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop com.amazon.styln:behavior_overlapTop}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #ScrollingViewBehavior_Params_behavior_overlapTop
          */
@@ -7775,7 +9960,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100dc
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#behavior_overlapTop}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#behavior_overlapTop}
+>>>>>>> master
           attribute's value can be found in the {@link #ScrollingViewBehavior_Params} array.
 
 
@@ -7787,7 +9976,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:behavior_overlapTop
+=======
+          @attr name com.amazon.styln:behavior_overlapTop
+>>>>>>> master
         */
         public static final int ScrollingViewBehavior_Params_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
@@ -7800,6 +9993,7 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #SearchView_closeIcon com.amazon.mysampleapp:closeIcon}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_commitIcon com.amazon.mysampleapp:commitIcon}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_defaultQueryHint com.amazon.mysampleapp:defaultQueryHint}</code></td><td></td></tr>
@@ -7813,6 +10007,21 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_submitBackground com.amazon.mysampleapp:submitBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_suggestionRowLayout com.amazon.mysampleapp:suggestionRowLayout}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_voiceIcon com.amazon.mysampleapp:voiceIcon}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #SearchView_closeIcon com.amazon.styln:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon com.amazon.styln:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint com.amazon.styln:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon com.amazon.styln:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault com.amazon.styln:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout com.amazon.styln:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground com.amazon.styln:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint com.amazon.styln:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon com.amazon.styln:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon com.amazon.styln:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground com.amazon.styln:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout com.amazon.styln:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon com.amazon.styln:voiceIcon}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -7864,27 +10073,47 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#closeIcon}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#closeIcon}
+>>>>>>> master
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:closeIcon
         */
         public static final int SearchView_closeIcon = 8;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#commitIcon}
+=======
+          @attr name com.amazon.styln:closeIcon
+        */
+        public static final int SearchView_closeIcon = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#commitIcon}
+>>>>>>> master
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:commitIcon
         */
         public static final int SearchView_commitIcon = 13;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#defaultQueryHint}
+=======
+          @attr name com.amazon.styln:commitIcon
+        */
+        public static final int SearchView_commitIcon = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#defaultQueryHint}
+>>>>>>> master
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -7894,21 +10123,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:defaultQueryHint
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#goIcon}
+=======
+          @attr name com.amazon.styln:defaultQueryHint
+        */
+        public static final int SearchView_defaultQueryHint = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#goIcon}
+>>>>>>> master
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:goIcon
         */
         public static final int SearchView_goIcon = 9;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#iconifiedByDefault}
+=======
+          @attr name com.amazon.styln:goIcon
+        */
+        public static final int SearchView_goIcon = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#iconifiedByDefault}
+>>>>>>> master
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -7918,31 +10163,55 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#layout}
+=======
+          @attr name com.amazon.styln:iconifiedByDefault
+        */
+        public static final int SearchView_iconifiedByDefault = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#layout}
+>>>>>>> master
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:layout
         */
         public static final int SearchView_layout = 4;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#queryBackground}
+=======
+          @attr name com.amazon.styln:layout
+        */
+        public static final int SearchView_layout = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#queryBackground}
+>>>>>>> master
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:queryBackground
         */
         public static final int SearchView_queryBackground = 15;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#queryHint}
+=======
+          @attr name com.amazon.styln:queryBackground
+        */
+        public static final int SearchView_queryBackground = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#queryHint}
+>>>>>>> master
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -7952,57 +10221,101 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#searchHintIcon}
+=======
+          @attr name com.amazon.styln:queryHint
+        */
+        public static final int SearchView_queryHint = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#searchHintIcon}
+>>>>>>> master
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:searchHintIcon
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#searchIcon}
+=======
+          @attr name com.amazon.styln:searchHintIcon
+        */
+        public static final int SearchView_searchHintIcon = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#searchIcon}
+>>>>>>> master
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:searchIcon
         */
         public static final int SearchView_searchIcon = 10;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#submitBackground}
+=======
+          @attr name com.amazon.styln:searchIcon
+        */
+        public static final int SearchView_searchIcon = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#submitBackground}
+>>>>>>> master
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:submitBackground
         */
         public static final int SearchView_submitBackground = 16;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#suggestionRowLayout}
+=======
+          @attr name com.amazon.styln:submitBackground
+        */
+        public static final int SearchView_submitBackground = 16;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#suggestionRowLayout}
+>>>>>>> master
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#voiceIcon}
+=======
+          @attr name com.amazon.styln:suggestionRowLayout
+        */
+        public static final int SearchView_suggestionRowLayout = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#voiceIcon}
+>>>>>>> master
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:voiceIcon
+=======
+          @attr name com.amazon.styln:voiceIcon
+>>>>>>> master
         */
         public static final int SearchView_voiceIcon = 12;
         /** Attributes that can be used with a SignInButton.
@@ -8011,9 +10324,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #SignInButton_buttonSize com.amazon.mysampleapp:buttonSize}</code></td><td></td></tr>
            <tr><td><code>{@link #SignInButton_colorScheme com.amazon.mysampleapp:colorScheme}</code></td><td></td></tr>
            <tr><td><code>{@link #SignInButton_scopeUris com.amazon.mysampleapp:scopeUris}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #SignInButton_buttonSize com.amazon.styln:buttonSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_colorScheme com.amazon.styln:colorScheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_scopeUris com.amazon.styln:scopeUris}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #SignInButton_buttonSize
            @see #SignInButton_colorScheme
@@ -8023,7 +10342,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100ea, 0x7f0100eb, 0x7f0100ec
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#buttonSize}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#buttonSize}
+>>>>>>> master
           attribute's value can be found in the {@link #SignInButton} array.
 
 
@@ -8039,11 +10362,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>wide</code></td><td>1</td><td></td></tr>
 <tr><td><code>icon_only</code></td><td>2</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:buttonSize
         */
         public static final int SignInButton_buttonSize = 0;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#colorScheme}
+=======
+          @attr name com.amazon.styln:buttonSize
+        */
+        public static final int SignInButton_buttonSize = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#colorScheme}
+>>>>>>> master
           attribute's value can be found in the {@link #SignInButton} array.
 
 
@@ -8059,18 +10390,30 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>light</code></td><td>1</td><td></td></tr>
 <tr><td><code>auto</code></td><td>2</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:colorScheme
         */
         public static final int SignInButton_colorScheme = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#scopeUris}
+=======
+          @attr name com.amazon.styln:colorScheme
+        */
+        public static final int SignInButton_colorScheme = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#scopeUris}
+>>>>>>> master
           attribute's value can be found in the {@link #SignInButton} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:scopeUris
+=======
+          @attr name com.amazon.styln:scopeUris
+>>>>>>> master
         */
         public static final int SignInButton_scopeUris = 2;
         /** Attributes that can be used with a SnackbarLayout.
@@ -8080,8 +10423,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #SnackbarLayout_elevation com.amazon.mysampleapp:elevation}</code></td><td></td></tr>
            <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.amazon.mysampleapp:maxActionInlineWidth}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #SnackbarLayout_elevation com.amazon.styln:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.amazon.styln:maxActionInlineWidth}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #SnackbarLayout_android_maxWidth
            @see #SnackbarLayout_elevation
@@ -8097,7 +10445,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SnackbarLayout_android_maxWidth = 0;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#elevation}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#elevation}
+>>>>>>> master
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -8109,11 +10461,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:elevation
         */
         public static final int SnackbarLayout_elevation = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#maxActionInlineWidth}
+=======
+          @attr name com.amazon.styln:elevation
+        */
+        public static final int SnackbarLayout_elevation = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#maxActionInlineWidth}
+>>>>>>> master
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -8125,7 +10485,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:maxActionInlineWidth
+=======
+          @attr name com.amazon.styln:maxActionInlineWidth
+>>>>>>> master
         */
         public static final int SnackbarLayout_maxActionInlineWidth = 2;
         /** Attributes that can be used with a Spinner.
@@ -8138,7 +10502,11 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_entries android:entries}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #Spinner_popupTheme com.amazon.mysampleapp:popupTheme}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #Spinner_popupTheme com.amazon.styln:popupTheme}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_entries
@@ -8175,13 +10543,21 @@ containing a value of this type.
         */
         public static final int Spinner_android_prompt = 2;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#popupTheme}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#popupTheme}
+>>>>>>> master
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:popupTheme
+=======
+          @attr name com.amazon.styln:popupTheme
+>>>>>>> master
         */
         public static final int Spinner_popupTheme = 4;
         /** Attributes that can be used with a SwitchCompat.
@@ -8193,6 +10569,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #SwitchCompat_showText com.amazon.mysampleapp:showText}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_splitTrack com.amazon.mysampleapp:splitTrack}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_switchMinWidth com.amazon.mysampleapp:switchMinWidth}</code></td><td></td></tr>
@@ -8200,6 +10577,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.amazon.mysampleapp:switchTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.amazon.mysampleapp:thumbTextPadding}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_track com.amazon.mysampleapp:track}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #SwitchCompat_showText com.amazon.styln:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack com.amazon.styln:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.amazon.styln:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding com.amazon.styln:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.amazon.styln:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.amazon.styln:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track com.amazon.styln:track}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -8236,7 +10622,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#showText}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#showText}
+>>>>>>> master
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8246,11 +10636,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#splitTrack}
+=======
+          @attr name com.amazon.styln:showText
+        */
+        public static final int SwitchCompat_showText = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#splitTrack}
+>>>>>>> master
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8260,11 +10658,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#switchMinWidth}
+=======
+          @attr name com.amazon.styln:splitTrack
+        */
+        public static final int SwitchCompat_splitTrack = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#switchMinWidth}
+>>>>>>> master
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8276,11 +10682,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#switchPadding}
+=======
+          @attr name com.amazon.styln:switchMinWidth
+        */
+        public static final int SwitchCompat_switchMinWidth = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#switchPadding}
+>>>>>>> master
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8292,21 +10706,37 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#switchTextAppearance}
+=======
+          @attr name com.amazon.styln:switchPadding
+        */
+        public static final int SwitchCompat_switchPadding = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#switchTextAppearance}
+>>>>>>> master
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#thumbTextPadding}
+=======
+          @attr name com.amazon.styln:switchTextAppearance
+        */
+        public static final int SwitchCompat_switchTextAppearance = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#thumbTextPadding}
+>>>>>>> master
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8318,17 +10748,29 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#track}
+=======
+          @attr name com.amazon.styln:thumbTextPadding
+        */
+        public static final int SwitchCompat_thumbTextPadding = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#track}
+>>>>>>> master
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:track
+=======
+          @attr name com.amazon.styln:track
+>>>>>>> master
         */
         public static final int SwitchCompat_track = 3;
         /** Attributes that can be used with a TabItem.
@@ -8372,6 +10814,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #TabLayout_tabBackground com.amazon.mysampleapp:tabBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #TabLayout_tabContentStart com.amazon.mysampleapp:tabContentStart}</code></td><td></td></tr>
            <tr><td><code>{@link #TabLayout_tabGravity com.amazon.mysampleapp:tabGravity}</code></td><td></td></tr>
@@ -8388,6 +10831,24 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.amazon.mysampleapp:tabSelectedTextColor}</code></td><td></td></tr>
            <tr><td><code>{@link #TabLayout_tabTextAppearance com.amazon.mysampleapp:tabTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #TabLayout_tabTextColor com.amazon.mysampleapp:tabTextColor}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #TabLayout_tabBackground com.amazon.styln:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart com.amazon.styln:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity com.amazon.styln:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor com.amazon.styln:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.amazon.styln:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth com.amazon.styln:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth com.amazon.styln:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode com.amazon.styln:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding com.amazon.styln:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom com.amazon.styln:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd com.amazon.styln:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart com.amazon.styln:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop com.amazon.styln:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.amazon.styln:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance com.amazon.styln:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor com.amazon.styln:tabTextColor}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #TabLayout_tabBackground
            @see #TabLayout_tabContentStart
@@ -8413,17 +10874,29 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010101, 0x7f010102, 0x7f010103, 0x7f010104
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabBackground}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabBackground}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabBackground
         */
         public static final int TabLayout_tabBackground = 3;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabContentStart}
+=======
+          @attr name com.amazon.styln:tabBackground
+        */
+        public static final int TabLayout_tabBackground = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabContentStart}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8435,11 +10908,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabContentStart
         */
         public static final int TabLayout_tabContentStart = 2;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabGravity}
+=======
+          @attr name com.amazon.styln:tabContentStart
+        */
+        public static final int TabLayout_tabContentStart = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabGravity}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8452,11 +10933,19 @@ containing a value of this type.
 <tr><td><code>fill</code></td><td>0</td><td></td></tr>
 <tr><td><code>center</code></td><td>1</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabGravity
         */
         public static final int TabLayout_tabGravity = 5;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabIndicatorColor}
+=======
+          @attr name com.amazon.styln:tabGravity
+        */
+        public static final int TabLayout_tabGravity = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabIndicatorColor}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8467,11 +10956,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabIndicatorColor
         */
         public static final int TabLayout_tabIndicatorColor = 0;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabIndicatorHeight}
+=======
+          @attr name com.amazon.styln:tabIndicatorColor
+        */
+        public static final int TabLayout_tabIndicatorColor = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabIndicatorHeight}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8483,11 +10980,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabIndicatorHeight
         */
         public static final int TabLayout_tabIndicatorHeight = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabMaxWidth}
+=======
+          @attr name com.amazon.styln:tabIndicatorHeight
+        */
+        public static final int TabLayout_tabIndicatorHeight = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabMaxWidth}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8499,11 +11004,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabMaxWidth
         */
         public static final int TabLayout_tabMaxWidth = 7;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabMinWidth}
+=======
+          @attr name com.amazon.styln:tabMaxWidth
+        */
+        public static final int TabLayout_tabMaxWidth = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabMinWidth}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8515,11 +11028,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabMinWidth
         */
         public static final int TabLayout_tabMinWidth = 6;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabMode}
+=======
+          @attr name com.amazon.styln:tabMinWidth
+        */
+        public static final int TabLayout_tabMinWidth = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabMode}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8532,11 +11053,19 @@ containing a value of this type.
 <tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
 <tr><td><code>fixed</code></td><td>1</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabMode
         */
         public static final int TabLayout_tabMode = 4;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabPadding}
+=======
+          @attr name com.amazon.styln:tabMode
+        */
+        public static final int TabLayout_tabMode = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabPadding}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8548,11 +11077,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabPadding
         */
         public static final int TabLayout_tabPadding = 15;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabPaddingBottom}
+=======
+          @attr name com.amazon.styln:tabPadding
+        */
+        public static final int TabLayout_tabPadding = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabPaddingBottom}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8564,11 +11101,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabPaddingBottom
         */
         public static final int TabLayout_tabPaddingBottom = 14;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabPaddingEnd}
+=======
+          @attr name com.amazon.styln:tabPaddingBottom
+        */
+        public static final int TabLayout_tabPaddingBottom = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabPaddingEnd}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8580,11 +11125,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabPaddingEnd
         */
         public static final int TabLayout_tabPaddingEnd = 13;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabPaddingStart}
+=======
+          @attr name com.amazon.styln:tabPaddingEnd
+        */
+        public static final int TabLayout_tabPaddingEnd = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabPaddingStart}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8596,11 +11149,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabPaddingStart
         */
         public static final int TabLayout_tabPaddingStart = 11;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabPaddingTop}
+=======
+          @attr name com.amazon.styln:tabPaddingStart
+        */
+        public static final int TabLayout_tabPaddingStart = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabPaddingTop}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8612,11 +11173,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabPaddingTop
         */
         public static final int TabLayout_tabPaddingTop = 12;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabSelectedTextColor}
+=======
+          @attr name com.amazon.styln:tabPaddingTop
+        */
+        public static final int TabLayout_tabPaddingTop = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabSelectedTextColor}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8627,21 +11196,37 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabSelectedTextColor
         */
         public static final int TabLayout_tabSelectedTextColor = 10;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabTextAppearance}
+=======
+          @attr name com.amazon.styln:tabSelectedTextColor
+        */
+        public static final int TabLayout_tabSelectedTextColor = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabTextAppearance}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabTextAppearance
         */
         public static final int TabLayout_tabTextAppearance = 8;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#tabTextColor}
+=======
+          @attr name com.amazon.styln:tabTextAppearance
+        */
+        public static final int TabLayout_tabTextAppearance = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#tabTextColor}
+>>>>>>> master
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8652,7 +11237,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:tabTextColor
+=======
+          @attr name com.amazon.styln:tabTextColor
+>>>>>>> master
         */
         public static final int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
@@ -8669,7 +11258,11 @@ containing a value of this type.
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #TextAppearance_textAllCaps com.amazon.mysampleapp:textAllCaps}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #TextAppearance_textAllCaps com.amazon.styln:textAllCaps}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #TextAppearance_android_shadowColor
            @see #TextAppearance_android_shadowDx
@@ -8735,14 +11328,22 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#textAllCaps}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#textAllCaps}
+>>>>>>> master
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:textAllCaps
+=======
+          @attr name com.amazon.styln:textAllCaps
+>>>>>>> master
         */
         public static final int TextAppearance_textAllCaps = 8;
         /** Attributes that can be used with a TextInputLayout.
@@ -8753,6 +11354,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #TextInputLayout_counterEnabled com.amazon.mysampleapp:counterEnabled}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_counterMaxLength com.amazon.mysampleapp:counterMaxLength}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.amazon.mysampleapp:counterOverflowTextAppearance}</code></td><td></td></tr>
@@ -8762,6 +11364,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.amazon.mysampleapp:hintAnimationEnabled}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_hintEnabled com.amazon.mysampleapp:hintEnabled}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.amazon.mysampleapp:hintTextAppearance}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #TextInputLayout_counterEnabled com.amazon.styln:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength com.amazon.styln:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.amazon.styln:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.amazon.styln:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled com.amazon.styln:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.amazon.styln:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.amazon.styln:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintEnabled com.amazon.styln:hintEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.amazon.styln:hintTextAppearance}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #TextInputLayout_android_hint
            @see #TextInputLayout_android_textColorHint
@@ -8793,7 +11406,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_android_textColorHint = 0;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#counterEnabled}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#counterEnabled}
+>>>>>>> master
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -8803,11 +11420,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:counterEnabled
         */
         public static final int TextInputLayout_counterEnabled = 6;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#counterMaxLength}
+=======
+          @attr name com.amazon.styln:counterEnabled
+        */
+        public static final int TextInputLayout_counterEnabled = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#counterMaxLength}
+>>>>>>> master
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -8817,31 +11442,55 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:counterMaxLength
         */
         public static final int TextInputLayout_counterMaxLength = 7;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#counterOverflowTextAppearance}
+=======
+          @attr name com.amazon.styln:counterMaxLength
+        */
+        public static final int TextInputLayout_counterMaxLength = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#counterOverflowTextAppearance}
+>>>>>>> master
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:counterOverflowTextAppearance
         */
         public static final int TextInputLayout_counterOverflowTextAppearance = 9;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#counterTextAppearance}
+=======
+          @attr name com.amazon.styln:counterOverflowTextAppearance
+        */
+        public static final int TextInputLayout_counterOverflowTextAppearance = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#counterTextAppearance}
+>>>>>>> master
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:counterTextAppearance
         */
         public static final int TextInputLayout_counterTextAppearance = 8;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#errorEnabled}
+=======
+          @attr name com.amazon.styln:counterTextAppearance
+        */
+        public static final int TextInputLayout_counterTextAppearance = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#errorEnabled}
+>>>>>>> master
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -8851,21 +11500,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:errorEnabled
         */
         public static final int TextInputLayout_errorEnabled = 4;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#errorTextAppearance}
+=======
+          @attr name com.amazon.styln:errorEnabled
+        */
+        public static final int TextInputLayout_errorEnabled = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#errorTextAppearance}
+>>>>>>> master
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:errorTextAppearance
         */
         public static final int TextInputLayout_errorTextAppearance = 5;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#hintAnimationEnabled}
+=======
+          @attr name com.amazon.styln:errorTextAppearance
+        */
+        public static final int TextInputLayout_errorTextAppearance = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#hintAnimationEnabled}
+>>>>>>> master
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -8875,11 +11540,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:hintAnimationEnabled
         */
         public static final int TextInputLayout_hintAnimationEnabled = 10;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#hintEnabled}
+=======
+          @attr name com.amazon.styln:hintAnimationEnabled
+        */
+        public static final int TextInputLayout_hintAnimationEnabled = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#hintEnabled}
+>>>>>>> master
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -8889,17 +11562,29 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:hintEnabled
         */
         public static final int TextInputLayout_hintEnabled = 3;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#hintTextAppearance}
+=======
+          @attr name com.amazon.styln:hintEnabled
+        */
+        public static final int TextInputLayout_hintEnabled = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#hintTextAppearance}
+>>>>>>> master
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:hintTextAppearance
+=======
+          @attr name com.amazon.styln:hintTextAppearance
+>>>>>>> master
         */
         public static final int TextInputLayout_hintTextAppearance = 2;
         /** Attributes that can be used with a Toolbar.
@@ -8910,6 +11595,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #Toolbar_collapseContentDescription com.amazon.mysampleapp:collapseContentDescription}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_collapseIcon com.amazon.mysampleapp:collapseIcon}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_contentInsetEnd com.amazon.mysampleapp:contentInsetEnd}</code></td><td></td></tr>
@@ -8933,6 +11619,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #Toolbar_titleMargins com.amazon.mysampleapp:titleMargins}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_titleTextAppearance com.amazon.mysampleapp:titleTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_titleTextColor com.amazon.mysampleapp:titleTextColor}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #Toolbar_collapseContentDescription com.amazon.styln:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon com.amazon.styln:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd com.amazon.styln:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft com.amazon.styln:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight com.amazon.styln:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart com.amazon.styln:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo com.amazon.styln:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription com.amazon.styln:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight com.amazon.styln:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription com.amazon.styln:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon com.amazon.styln:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme com.amazon.styln:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle com.amazon.styln:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.amazon.styln:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor com.amazon.styln:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title com.amazon.styln:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom com.amazon.styln:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd com.amazon.styln:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart com.amazon.styln:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop com.amazon.styln:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins com.amazon.styln:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance com.amazon.styln:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor com.amazon.styln:titleTextColor}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -8982,7 +11693,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#collapseContentDescription}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#collapseContentDescription}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8992,21 +11707,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 19;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#collapseIcon}
+=======
+          @attr name com.amazon.styln:collapseContentDescription
+        */
+        public static final int Toolbar_collapseContentDescription = 19;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#collapseIcon}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 18;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#contentInsetEnd}
+=======
+          @attr name com.amazon.styln:collapseIcon
+        */
+        public static final int Toolbar_collapseIcon = 18;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#contentInsetEnd}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9018,11 +11749,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#contentInsetLeft}
+=======
+          @attr name com.amazon.styln:contentInsetEnd
+        */
+        public static final int Toolbar_contentInsetEnd = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#contentInsetLeft}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9034,11 +11773,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#contentInsetRight}
+=======
+          @attr name com.amazon.styln:contentInsetLeft
+        */
+        public static final int Toolbar_contentInsetLeft = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#contentInsetRight}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9050,11 +11797,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#contentInsetStart}
+=======
+          @attr name com.amazon.styln:contentInsetRight
+        */
+        public static final int Toolbar_contentInsetRight = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#contentInsetStart}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9066,21 +11821,37 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#logo}
+=======
+          @attr name com.amazon.styln:contentInsetStart
+        */
+        public static final int Toolbar_contentInsetStart = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#logo}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:logo
         */
         public static final int Toolbar_logo = 4;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#logoDescription}
+=======
+          @attr name com.amazon.styln:logo
+        */
+        public static final int Toolbar_logo = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#logoDescription}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9090,11 +11861,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:logoDescription
         */
         public static final int Toolbar_logoDescription = 22;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#maxButtonHeight}
+=======
+          @attr name com.amazon.styln:logoDescription
+        */
+        public static final int Toolbar_logoDescription = 22;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#maxButtonHeight}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9106,11 +11885,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 17;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#navigationContentDescription}
+=======
+          @attr name com.amazon.styln:maxButtonHeight
+        */
+        public static final int Toolbar_maxButtonHeight = 17;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#navigationContentDescription}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9120,31 +11907,55 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#navigationIcon}
+=======
+          @attr name com.amazon.styln:navigationContentDescription
+        */
+        public static final int Toolbar_navigationContentDescription = 21;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#navigationIcon}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#popupTheme}
+=======
+          @attr name com.amazon.styln:navigationIcon
+        */
+        public static final int Toolbar_navigationIcon = 20;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#popupTheme}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:popupTheme
         */
         public static final int Toolbar_popupTheme = 9;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#subtitle}
+=======
+          @attr name com.amazon.styln:popupTheme
+        */
+        public static final int Toolbar_popupTheme = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#subtitle}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9154,21 +11965,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#subtitleTextAppearance}
+=======
+          @attr name com.amazon.styln:subtitle
+        */
+        public static final int Toolbar_subtitle = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#subtitleTextAppearance}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 11;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#subtitleTextColor}
+=======
+          @attr name com.amazon.styln:subtitleTextAppearance
+        */
+        public static final int Toolbar_subtitleTextAppearance = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#subtitleTextColor}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9179,11 +12006,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:subtitleTextColor
         */
         public static final int Toolbar_subtitleTextColor = 24;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#title}
+=======
+          @attr name com.amazon.styln:subtitleTextColor
+        */
+        public static final int Toolbar_subtitleTextColor = 24;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#title}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9193,11 +12028,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:title
         */
         public static final int Toolbar_title = 2;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#titleMarginBottom}
+=======
+          @attr name com.amazon.styln:title
+        */
+        public static final int Toolbar_title = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#titleMarginBottom}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9209,11 +12052,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 16;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#titleMarginEnd}
+=======
+          @attr name com.amazon.styln:titleMarginBottom
+        */
+        public static final int Toolbar_titleMarginBottom = 16;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#titleMarginEnd}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9225,11 +12076,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 14;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#titleMarginStart}
+=======
+          @attr name com.amazon.styln:titleMarginEnd
+        */
+        public static final int Toolbar_titleMarginEnd = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#titleMarginStart}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9241,11 +12100,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 13;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#titleMarginTop}
+=======
+          @attr name com.amazon.styln:titleMarginStart
+        */
+        public static final int Toolbar_titleMarginStart = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#titleMarginTop}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9257,11 +12124,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 15;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#titleMargins}
+=======
+          @attr name com.amazon.styln:titleMarginTop
+        */
+        public static final int Toolbar_titleMarginTop = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#titleMargins}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9273,21 +12148,37 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:titleMargins
         */
         public static final int Toolbar_titleMargins = 12;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#titleTextAppearance}
+=======
+          @attr name com.amazon.styln:titleMargins
+        */
+        public static final int Toolbar_titleMargins = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#titleTextAppearance}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 10;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#titleTextColor}
+=======
+          @attr name com.amazon.styln:titleTextAppearance
+        */
+        public static final int Toolbar_titleTextAppearance = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#titleTextColor}
+>>>>>>> master
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9298,7 +12189,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:titleTextColor
+=======
+          @attr name com.amazon.styln:titleTextColor
+>>>>>>> master
         */
         public static final int Toolbar_titleTextColor = 23;
         /** Attributes that can be used with a View.
@@ -9309,9 +12204,15 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #View_paddingEnd com.amazon.mysampleapp:paddingEnd}</code></td><td></td></tr>
            <tr><td><code>{@link #View_paddingStart com.amazon.mysampleapp:paddingStart}</code></td><td></td></tr>
            <tr><td><code>{@link #View_theme com.amazon.mysampleapp:theme}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #View_paddingEnd com.amazon.styln:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart com.amazon.styln:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme com.amazon.styln:theme}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -9336,7 +12237,11 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#paddingEnd}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#paddingEnd}
+>>>>>>> master
           attribute's value can be found in the {@link #View} array.
 
 
@@ -9348,11 +12253,19 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:paddingEnd
         */
         public static final int View_paddingEnd = 3;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#paddingStart}
+=======
+          @attr name com.amazon.styln:paddingEnd
+        */
+        public static final int View_paddingEnd = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#paddingStart}
+>>>>>>> master
           attribute's value can be found in the {@link #View} array.
 
 
@@ -9364,17 +12277,29 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:paddingStart
         */
         public static final int View_paddingStart = 2;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#theme}
+=======
+          @attr name com.amazon.styln:paddingStart
+        */
+        public static final int View_paddingStart = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#theme}
+>>>>>>> master
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:theme
+=======
+          @attr name com.amazon.styln:theme
+>>>>>>> master
         */
         public static final int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -9384,8 +12309,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.amazon.mysampleapp:backgroundTint}</code></td><td></td></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.amazon.mysampleapp:backgroundTintMode}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.amazon.styln:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.amazon.styln:backgroundTintMode}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
@@ -9401,7 +12331,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#backgroundTint}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#backgroundTint}
+>>>>>>> master
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -9412,11 +12346,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:backgroundTint
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#backgroundTintMode}
+=======
+          @attr name com.amazon.styln:backgroundTint
+        */
+        public static final int ViewBackgroundHelper_backgroundTint = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#backgroundTintMode}
+>>>>>>> master
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -9432,7 +12374,11 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:backgroundTintMode
+=======
+          @attr name com.amazon.styln:backgroundTintMode
+>>>>>>> master
         */
         public static final int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.
@@ -9476,12 +12422,21 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #com_facebook_like_view_com_facebook_auxiliary_view_position com.amazon.mysampleapp:com_facebook_auxiliary_view_position}</code></td><td></td></tr>
            <tr><td><code>{@link #com_facebook_like_view_com_facebook_foreground_color com.amazon.mysampleapp:com_facebook_foreground_color}</code></td><td></td></tr>
            <tr><td><code>{@link #com_facebook_like_view_com_facebook_horizontal_alignment com.amazon.mysampleapp:com_facebook_horizontal_alignment}</code></td><td></td></tr>
            <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_id com.amazon.mysampleapp:com_facebook_object_id}</code></td><td></td></tr>
            <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_type com.amazon.mysampleapp:com_facebook_object_type}</code></td><td></td></tr>
            <tr><td><code>{@link #com_facebook_like_view_com_facebook_style com.amazon.mysampleapp:com_facebook_style}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_auxiliary_view_position com.amazon.styln:com_facebook_auxiliary_view_position}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_foreground_color com.amazon.styln:com_facebook_foreground_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_horizontal_alignment com.amazon.styln:com_facebook_horizontal_alignment}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_id com.amazon.styln:com_facebook_object_id}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_type com.amazon.styln:com_facebook_object_type}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_style com.amazon.styln:com_facebook_style}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #com_facebook_like_view_com_facebook_auxiliary_view_position
            @see #com_facebook_like_view_com_facebook_foreground_color
@@ -9495,7 +12450,11 @@ containing a value of this type.
             0x7f010126, 0x7f010127
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#com_facebook_auxiliary_view_position}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#com_facebook_auxiliary_view_position}
+>>>>>>> master
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -9509,11 +12468,19 @@ containing a value of this type.
 <tr><td><code>inline</code></td><td>1</td><td></td></tr>
 <tr><td><code>top</code></td><td>2</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:com_facebook_auxiliary_view_position
         */
         public static final int com_facebook_like_view_com_facebook_auxiliary_view_position = 4;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#com_facebook_foreground_color}
+=======
+          @attr name com.amazon.styln:com_facebook_auxiliary_view_position
+        */
+        public static final int com_facebook_like_view_com_facebook_auxiliary_view_position = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#com_facebook_foreground_color}
+>>>>>>> master
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -9524,11 +12491,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:com_facebook_foreground_color
         */
         public static final int com_facebook_like_view_com_facebook_foreground_color = 0;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#com_facebook_horizontal_alignment}
+=======
+          @attr name com.amazon.styln:com_facebook_foreground_color
+        */
+        public static final int com_facebook_like_view_com_facebook_foreground_color = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#com_facebook_horizontal_alignment}
+>>>>>>> master
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -9542,11 +12517,19 @@ containing a value of this type.
 <tr><td><code>left</code></td><td>1</td><td></td></tr>
 <tr><td><code>right</code></td><td>2</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:com_facebook_horizontal_alignment
         */
         public static final int com_facebook_like_view_com_facebook_horizontal_alignment = 5;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#com_facebook_object_id}
+=======
+          @attr name com.amazon.styln:com_facebook_horizontal_alignment
+        */
+        public static final int com_facebook_like_view_com_facebook_horizontal_alignment = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#com_facebook_object_id}
+>>>>>>> master
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -9556,11 +12539,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:com_facebook_object_id
         */
         public static final int com_facebook_like_view_com_facebook_object_id = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#com_facebook_object_type}
+=======
+          @attr name com.amazon.styln:com_facebook_object_id
+        */
+        public static final int com_facebook_like_view_com_facebook_object_id = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#com_facebook_object_type}
+>>>>>>> master
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -9574,11 +12565,19 @@ containing a value of this type.
 <tr><td><code>open_graph</code></td><td>1</td><td></td></tr>
 <tr><td><code>page</code></td><td>2</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:com_facebook_object_type
         */
         public static final int com_facebook_like_view_com_facebook_object_type = 2;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#com_facebook_style}
+=======
+          @attr name com.amazon.styln:com_facebook_object_type
+        */
+        public static final int com_facebook_like_view_com_facebook_object_type = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#com_facebook_style}
+>>>>>>> master
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -9592,7 +12591,11 @@ containing a value of this type.
 <tr><td><code>button</code></td><td>1</td><td></td></tr>
 <tr><td><code>box_count</code></td><td>2</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:com_facebook_style
+=======
+          @attr name com.amazon.styln:com_facebook_style
+>>>>>>> master
         */
         public static final int com_facebook_like_view_com_facebook_style = 3;
         /** Attributes that can be used with a com_facebook_login_view.
@@ -9601,10 +12604,17 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #com_facebook_login_view_com_facebook_confirm_logout com.amazon.mysampleapp:com_facebook_confirm_logout}</code></td><td></td></tr>
            <tr><td><code>{@link #com_facebook_login_view_com_facebook_login_text com.amazon.mysampleapp:com_facebook_login_text}</code></td><td></td></tr>
            <tr><td><code>{@link #com_facebook_login_view_com_facebook_logout_text com.amazon.mysampleapp:com_facebook_logout_text}</code></td><td></td></tr>
            <tr><td><code>{@link #com_facebook_login_view_com_facebook_tooltip_mode com.amazon.mysampleapp:com_facebook_tooltip_mode}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_confirm_logout com.amazon.styln:com_facebook_confirm_logout}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_login_text com.amazon.styln:com_facebook_login_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_logout_text com.amazon.styln:com_facebook_logout_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_tooltip_mode com.amazon.styln:com_facebook_tooltip_mode}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #com_facebook_login_view_com_facebook_confirm_logout
            @see #com_facebook_login_view_com_facebook_login_text
@@ -9615,7 +12625,11 @@ containing a value of this type.
             0x7f010128, 0x7f010129, 0x7f01012a, 0x7f01012b
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#com_facebook_confirm_logout}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#com_facebook_confirm_logout}
+>>>>>>> master
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -9625,11 +12639,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:com_facebook_confirm_logout
         */
         public static final int com_facebook_login_view_com_facebook_confirm_logout = 0;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#com_facebook_login_text}
+=======
+          @attr name com.amazon.styln:com_facebook_confirm_logout
+        */
+        public static final int com_facebook_login_view_com_facebook_confirm_logout = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#com_facebook_login_text}
+>>>>>>> master
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -9639,11 +12661,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:com_facebook_login_text
         */
         public static final int com_facebook_login_view_com_facebook_login_text = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#com_facebook_logout_text}
+=======
+          @attr name com.amazon.styln:com_facebook_login_text
+        */
+        public static final int com_facebook_login_view_com_facebook_login_text = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#com_facebook_logout_text}
+>>>>>>> master
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -9653,11 +12683,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:com_facebook_logout_text
         */
         public static final int com_facebook_login_view_com_facebook_logout_text = 2;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#com_facebook_tooltip_mode}
+=======
+          @attr name com.amazon.styln:com_facebook_logout_text
+        */
+        public static final int com_facebook_login_view_com_facebook_logout_text = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#com_facebook_tooltip_mode}
+>>>>>>> master
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -9671,7 +12709,11 @@ containing a value of this type.
 <tr><td><code>display_always</code></td><td>1</td><td></td></tr>
 <tr><td><code>never_display</code></td><td>2</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:com_facebook_tooltip_mode
+=======
+          @attr name com.amazon.styln:com_facebook_tooltip_mode
+>>>>>>> master
         */
         public static final int com_facebook_login_view_com_facebook_tooltip_mode = 3;
         /** Attributes that can be used with a com_facebook_profile_picture_view.
@@ -9680,8 +12722,13 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+<<<<<<< HEAD
            <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_is_cropped com.amazon.mysampleapp:com_facebook_is_cropped}</code></td><td></td></tr>
            <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_preset_size com.amazon.mysampleapp:com_facebook_preset_size}</code></td><td></td></tr>
+=======
+           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_is_cropped com.amazon.styln:com_facebook_is_cropped}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_preset_size com.amazon.styln:com_facebook_preset_size}</code></td><td></td></tr>
+>>>>>>> master
            </table>
            @see #com_facebook_profile_picture_view_com_facebook_is_cropped
            @see #com_facebook_profile_picture_view_com_facebook_preset_size
@@ -9690,7 +12737,11 @@ containing a value of this type.
             0x7f01012c, 0x7f01012d
         };
         /**
+<<<<<<< HEAD
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#com_facebook_is_cropped}
+=======
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#com_facebook_is_cropped}
+>>>>>>> master
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
@@ -9700,11 +12751,19 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:com_facebook_is_cropped
         */
         public static final int com_facebook_profile_picture_view_com_facebook_is_cropped = 1;
         /**
           <p>This symbol is the offset where the {@link com.amazon.mysampleapp.R.attr#com_facebook_preset_size}
+=======
+          @attr name com.amazon.styln:com_facebook_is_cropped
+        */
+        public static final int com_facebook_profile_picture_view_com_facebook_is_cropped = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.amazon.styln.R.attr#com_facebook_preset_size}
+>>>>>>> master
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
@@ -9718,7 +12777,11 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>-3</td><td></td></tr>
 <tr><td><code>large</code></td><td>-4</td><td></td></tr>
 </table>
+<<<<<<< HEAD
           @attr name com.amazon.mysampleapp:com_facebook_preset_size
+=======
+          @attr name com.amazon.styln:com_facebook_preset_size
+>>>>>>> master
         */
         public static final int com_facebook_profile_picture_view_com_facebook_preset_size = 0;
     };

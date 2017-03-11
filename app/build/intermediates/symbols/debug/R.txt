@@ -760,7 +760,10 @@ int id box_count 0x7f0c0047
 int id browse 0x7f0c008a
 int id browseBox 0x7f0c0085
 int id button 0x7f0c0048
+<<<<<<< HEAD
 int id button2 0x7f0c00af
+=======
+>>>>>>> master
 int id buttonPanel 0x7f0c0059
 int id button_insert_sample_data 0x7f0c00d5
 int id button_remove_sample_data 0x7f0c00d6
@@ -913,6 +916,10 @@ int id shortcut 0x7f0c0068
 int id showCustom 0x7f0c0013
 int id showHome 0x7f0c0014
 int id showTitle 0x7f0c0015
+<<<<<<< HEAD
+=======
+int id signIn 0x7f0c00af
+>>>>>>> master
 int id small 0x7f0c004e
 int id snackbar_action 0x7f0c00c6
 int id snackbar_text 0x7f0c00c5

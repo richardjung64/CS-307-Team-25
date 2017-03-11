@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //
 // Copyright 2017 Amazon.com, Inc. or its affiliates (Amazon). All Rights Reserved.
 //
@@ -6,14 +7,23 @@
 //
 // Source code generated from template: aws-my-sample-app-android v0.15
 //
+=======
+>>>>>>> master
 apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
+<<<<<<< HEAD
     buildToolsVersion '24.0.2'
 
     defaultConfig {
         applicationId "com.amazon.mysampleapp"
+=======
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.amazon.styln"
+>>>>>>> master
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
@@ -45,11 +55,19 @@ dependencies {
 
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:support-v4:23.4.0'
+<<<<<<< HEAD
+=======
+    compile 'com.android.support:multidex:1.0.1'
+>>>>>>> master
     compile 'com.amazonaws:aws-android-sdk-core:2.3.9'
     compile 'com.amazonaws:aws-android-sdk-ddb:2.3.9'
     compile 'com.amazonaws:aws-android-sdk-ddb-mapper:2.3.9'
     compile 'com.facebook.android:facebook-android-sdk:4.6.0'
     compile 'com.google.android.gms:play-services-plus:10.2.0'
+<<<<<<< HEAD
+=======
+    compile 'com.google.android.gms:play-services-auth:10.2.0'
+>>>>>>> master
     compile 'com.google.code.gson:gson:2.7'
     compile 'com.android.support:design:23.4.0'
 }

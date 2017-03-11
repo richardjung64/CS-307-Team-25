@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //
 // Copyright 2017 Amazon.com, Inc. or its affiliates (Amazon). All Rights Reserved.
 //
@@ -6,6 +7,8 @@
 //
 // Source code generated from template: aws-my-sample-app-android v0.15
 //
+=======
+>>>>>>> master
 package com.amazonaws.mobile;
 
 import com.amazonaws.regions.Regions;
@@ -26,7 +29,11 @@ public class AWSConfiguration {
         "us-east-1:43cde55a-51f7-4d7a-a2ab-f77c948eed21";
     // Google Client ID for Web application
     public static final String GOOGLE_CLIENT_ID =
+<<<<<<< HEAD
         "AIzaSyDqeR6edRSHVGMYFBiFpTeFtNdNJoI7cbc";
+=======
+            "710056015402-mvb5r0ilp48gicet7c5il7emneqpvqav.apps.googleusercontent.com";
+>>>>>>> master
     public static final Regions AMAZON_DYNAMODB_REGION =
        Regions.fromName("us-east-1");
 }

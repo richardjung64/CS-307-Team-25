@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 package com.amazonaws.mobile.user.signin;
 //
@@ -8,6 +9,10 @@ package com.amazonaws.mobile.user.signin;
 //
 // Source code generated from template: aws-my-sample-app-android v0.15
 //
+=======
+
+package com.amazonaws.mobile.user.signin;
+>>>>>>> master
 
 import android.accounts.Account;
 import android.app.Activity;
@@ -21,8 +26,13 @@ import android.view.View;
 import com.amazonaws.mobile.AWSConfiguration;
 import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobile.util.ThreadUtils;
+<<<<<<< HEAD
 //import com.google.android.gms.auth.GoogleAuthException;
 //import com.google.android.gms.auth.GoogleAuthUtil;
+=======
+import com.google.android.gms.auth.GoogleAuthException;
+import com.google.android.gms.auth.GoogleAuthUtil;
+>>>>>>> master
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.Scopes;
@@ -33,6 +43,7 @@ import com.google.android.gms.plus.model.people.Person;
 
 import java.io.IOException;
 
+<<<<<<< HEAD
 */
 /**
  * Sign in Provider for Google.
@@ -46,6 +57,19 @@ public class GoogleSignInProvider implements SignInProvider {
 
     */
 /** The Cognito login key for Google+ to be used in the Cognito login Map. *//*
+=======
+
+/**
+ * Sign in Provider for Google.
+ */
+
+public class GoogleSignInProvider implements SignInProvider {
+/** Log tag. */
+
+    private static final String LOG_TAG = GoogleSignInProvider.class.getSimpleName();
+
+/** The Cognito login key for Google+ to be used in the Cognito login Map. */
+>>>>>>> master
 
     public static final String COGNITO_LOGIN_KEY_GOOGLE = "accounts.google.com";
 
@@ -53,6 +77,7 @@ public class GoogleSignInProvider implements SignInProvider {
     // if you want to take action when a google services result is received.
     private static final int REQUEST_GOOGLE_PLAY_SERVICES = 1363;
 
+<<<<<<< HEAD
     */
 /* Request code used to invoke sign in user interactions. *//*
 
@@ -105,6 +130,50 @@ public class GoogleSignInProvider implements SignInProvider {
      * @param context context.
      *//*
 
+=======
+/* Request code used to invoke sign in user interactions. */
+
+    private static final int RC_SIGN_IN = 900913;
+
+/** Client used to interact with Google APIs. */
+
+    private final GoogleApiClient mGoogleApiClient;
+
+/** Android context. */
+
+    private Context context;
+
+/** Flag indicating Google is handling an intent to connect (sign-in). */
+
+    private boolean mIntentInProgress = false;
+
+/** The sign-in results adapter from the SignInManager. */
+
+    private IdentityManager.SignInResultsHandler resultsHandler;
+
+/** The sign-in activity. */
+
+    private Activity signInActivity = null;
+
+
+/** The auth token retrieved when signed-in.  It is good for 6-months from the last service
+      * call. */
+
+    private volatile String authToken = null;
+
+/** User's name. */
+
+    private String userName;
+
+/** User's image Url. */
+
+    private String userImageUrl;
+
+/**
+     * Constuctor. Builds the Google Api Client.
+     * @param context context.
+     */
+>>>>>>> master
     public GoogleSignInProvider(final Context context) {
         this.context = context;
 
@@ -119,17 +188,25 @@ public class GoogleSignInProvider implements SignInProvider {
             .build();
         mGoogleApiClient.connect();
     }
+<<<<<<< HEAD
 
     */
 /** {@inheritDoc} *//*
+=======
+/** {@inheritDoc} */
+>>>>>>> master
 
     @Override
     public String getDisplayName() {
         return "Google";
     }
+<<<<<<< HEAD
 
     */
 /** {@inheritDoc} *//*
+=======
+/** {@inheritDoc} */
+>>>>>>> master
 
     @Override
     public boolean isUserSignedIn() {
@@ -144,17 +221,25 @@ public class GoogleSignInProvider implements SignInProvider {
         }
         return false;
     }
+<<<<<<< HEAD
 
     */
 /** {@inheritDoc} *//*
+=======
+/** {@inheritDoc} */
+>>>>>>> master
 
     @Override
     public String getCognitoLoginKey() {
         return COGNITO_LOGIN_KEY_GOOGLE;
     }
+<<<<<<< HEAD
 
     */
 /** {@inheritDoc} *//*
+=======
+/** {@inheritDoc} */
+>>>>>>> master
 
     @Override
     public String getToken() {
@@ -173,11 +258,17 @@ public class GoogleSignInProvider implements SignInProvider {
         }
         return authToken;
     }
+<<<<<<< HEAD
 
     */
 /**
      * Initiate sign-in with Google.
      *//*
+=======
+/**
+     * Initiate sign-in with Google.
+     */
+>>>>>>> master
 
     private void signIn() {
         new Thread(new Runnable() {
@@ -216,9 +307,13 @@ public class GoogleSignInProvider implements SignInProvider {
             }
         }).start();
     }
+<<<<<<< HEAD
 
     */
 /*private String getGoogleAuthToken() throws GoogleAuthException, IOException {
+=======
+private String getGoogleAuthToken() throws GoogleAuthException, IOException {
+>>>>>>> master
         Log.d(LOG_TAG, "Google provider getting token...");
 
         final String accountName = Plus.AccountApi.getAccountName(mGoogleApiClient);
@@ -233,11 +328,16 @@ public class GoogleSignInProvider implements SignInProvider {
         }
 
         return token;
+<<<<<<< HEAD
     }*//*
 
 
     */
 /** {@inheritDoc} *//*
+=======
+    }
+/** {@inheritDoc} */
+>>>>>>> master
 
     @Override
     public void signOut() {
@@ -251,17 +351,25 @@ public class GoogleSignInProvider implements SignInProvider {
             mGoogleApiClient.disconnect();
         }
     }
+<<<<<<< HEAD
 
     */
 /** {@inheritDoc} *//*
+=======
+/** {@inheritDoc} */
+>>>>>>> master
 
     @Override
     public boolean isRequestCodeOurs(final int requestCode) {
         return (requestCode == RC_SIGN_IN);
     }
+<<<<<<< HEAD
 
     */
 /** {@inheritDoc} *//*
+=======
+/** {@inheritDoc} */
+>>>>>>> master
 
     @Override
     public void handleActivityResult(final int requestCode, final int resultCode, final Intent data) {
@@ -278,8 +386,12 @@ public class GoogleSignInProvider implements SignInProvider {
         }
     }
 
+<<<<<<< HEAD
     */
 /** {@inheritDoc} *//*
+=======
+/** {@inheritDoc} */
+>>>>>>> master
 
     @Override
     public View.OnClickListener initializeSignInButton(final Activity signInActivity, final View buttonView,
@@ -318,13 +430,20 @@ public class GoogleSignInProvider implements SignInProvider {
         buttonView.setOnClickListener(listener);
         return listener;
     }
+<<<<<<< HEAD
 
     */
+=======
+>>>>>>> master
 /**
      * Handler method for connection to Google failed.
      * @param result Contains all possible error codes for when a client fails to connect to
      *               Google Play services.
+<<<<<<< HEAD
      *//*
+=======
+     */
+>>>>>>> master
 
     public void onConnectionFailed(final ConnectionResult result) {
         if (!mIntentInProgress) {
@@ -351,25 +470,37 @@ public class GoogleSignInProvider implements SignInProvider {
         userName = null;
         userImageUrl = null;
     }
+<<<<<<< HEAD
 
     */
 /** {@inheritDoc} *//*
+=======
+/** {@inheritDoc} */
+>>>>>>> master
 
     @Override
     public String getUserName() {
         return userName;
     }
+<<<<<<< HEAD
 
     */
 /** {@inheritDoc} *//*
+=======
+/** {@inheritDoc} */
+>>>>>>> master
 
     @Override
     public String getUserImageUrl() {
         return userImageUrl;
     }
 
+<<<<<<< HEAD
     */
 /** {@inheritDoc} *//*
+=======
+/** {@inheritDoc} */
+>>>>>>> master
 
     public void reloadUserInfo() {
         mGoogleApiClient.blockingConnect();
@@ -380,4 +511,7 @@ public class GoogleSignInProvider implements SignInProvider {
         }
     }
 }
+<<<<<<< HEAD
 */
+=======
+>>>>>>> master

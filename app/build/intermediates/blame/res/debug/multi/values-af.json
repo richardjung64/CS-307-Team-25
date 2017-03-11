@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "outputFile": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-af\\values-af.xml",
+=======
+        "outputFile": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25-testing/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml",
+>>>>>>> master
         "map": [
             {
                 "to": {
@@ -11,7 +15,11 @@
                     "endOffset": 204
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +38,11 @@
                     "endOffset": 312
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +61,11 @@
                     "endOffset": 435
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +84,11 @@
                     "endOffset": 535
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -87,7 +107,11 @@
                     "endOffset": 641
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -106,7 +130,11 @@
                     "endOffset": 726
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -125,7 +153,11 @@
                     "endOffset": 829
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -144,7 +176,11 @@
                     "endOffset": 947
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -163,7 +199,11 @@
                     "endOffset": 1023
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -182,7 +222,11 @@
                     "endOffset": 1100
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -201,7 +245,11 @@
                     "endOffset": 1181
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -220,7 +268,11 @@
                     "endOffset": 1288
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -239,7 +291,11 @@
                     "endOffset": 1391
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -258,7 +314,11 @@
                     "endOffset": 1488
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -277,7 +337,11 @@
                     "endOffset": 1596
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -296,7 +360,11 @@
                     "endOffset": 1698
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -315,7 +383,11 @@
                     "endOffset": 1800
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -334,7 +406,11 @@
                     "endOffset": 1917
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -353,7 +429,11 @@
                     "endOffset": 2015
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -373,7 +453,11 @@
                     "endOffset": 2135
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -393,7 +477,11 @@
                     "endOffset": 2260
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -412,7 +500,11 @@
                     "endOffset": 2354
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -431,7 +523,11 @@
                     "endOffset": 2421
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -450,7 +546,11 @@
                     "endOffset": 2492
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -469,7 +569,11 @@
                     "endOffset": 2554
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -488,7 +592,11 @@
                     "endOffset": 2630
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -507,7 +615,11 @@
                     "endOffset": 2704
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -526,7 +638,11 @@
                     "endOffset": 2796
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -545,7 +661,11 @@
                     "endOffset": 2870
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -564,7 +684,11 @@
                     "endOffset": 2944
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -583,7 +707,11 @@
                     "endOffset": 3027
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -602,7 +730,11 @@
                     "endOffset": 3126
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -621,7 +753,11 @@
                     "endOffset": 3190
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -640,7 +776,11 @@
                     "endOffset": 3254
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -659,7 +799,11 @@
                     "endOffset": 3386
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -678,7 +822,11 @@
                     "endOffset": 3495
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -697,7 +845,11 @@
                     "endOffset": 3683
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -716,7 +868,11 @@
                     "endOffset": 3811
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -735,7 +891,11 @@
                     "endOffset": 3923
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 7,
                         "startColumn": 0,
@@ -754,7 +914,11 @@
                     "endOffset": 4132
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 8,
                         "startColumn": 0,
@@ -773,7 +937,11 @@
                     "endOffset": 4256
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 9,
                         "startColumn": 0,
@@ -792,7 +960,11 @@
                     "endOffset": 4387
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 10,
                         "startColumn": 0,
@@ -811,7 +983,11 @@
                     "endOffset": 4589
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/b022fc92a9bc74e333e284675f6671b6fd5840d1/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -830,7 +1006,11 @@
                     "endOffset": 4814
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 11,
                         "startColumn": 0,
@@ -849,7 +1029,11 @@
                     "endOffset": 4924
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 12,
                         "startColumn": 0,
@@ -868,7 +1052,11 @@
                     "endOffset": 5112
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 13,
                         "startColumn": 0,
@@ -887,7 +1075,11 @@
                     "endOffset": 5241
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 14,
                         "startColumn": 0,
@@ -906,7 +1098,11 @@
                     "endOffset": 5439
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 15,
                         "startColumn": 0,
@@ -925,7 +1121,11 @@
                     "endOffset": 5623
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 16,
                         "startColumn": 0,
@@ -944,7 +1144,11 @@
                     "endOffset": 5719
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 17,
                         "startColumn": 0,
@@ -963,7 +1167,11 @@
                     "endOffset": 5812
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 18,
                         "startColumn": 0,
@@ -982,7 +1190,11 @@
                     "endOffset": 5920
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\values-af\\values.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/values-af/values.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 19,
                         "startColumn": 0,
@@ -1001,7 +1213,11 @@
                     "endOffset": 5981
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.6.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -1020,7 +1236,11 @@
                     "endOffset": 6082
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "D:\\Github\\CS-307-Team-25\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-af\\values-af.xml",
+=======
+                    "file": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/values-af/values-af.xml",
+>>>>>>> master
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,

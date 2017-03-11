@@ -5,3 +5,7 @@
 .DS_Store
 /build
 /captures
+<<<<<<< HEAD
+=======
+.pdf
+>>>>>>> master

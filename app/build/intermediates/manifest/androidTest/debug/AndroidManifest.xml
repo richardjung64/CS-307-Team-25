@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.amazon.mysampleapp.test" >
+=======
+    package="com.amazon.styln.test" >
+>>>>>>> master
 
     <uses-sdk
         android:minSdkVersion="15"
@@ -10,8 +14,13 @@
         android:name="com.android.test.runner.MultiDexTestRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
+<<<<<<< HEAD
         android:label="Tests for com.amazon.mysampleapp"
         android:targetPackage="com.amazon.mysampleapp" />
+=======
+        android:label="Tests for com.amazon.styln"
+        android:targetPackage="com.amazon.styln" />
+>>>>>>> master
 
     <application>
         <uses-library android:name="android.test.runner" />

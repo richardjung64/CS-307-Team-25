@@ -50,8 +50,13 @@ public class SignInManager {
         addSignInProvider(facebookSignInProvider);
 
         // Initialize Google SDK.
+<<<<<<< HEAD
        /* final GoogleSignInProvider googleSignInProvider = new GoogleSignInProvider(context);
         addSignInProvider(googleSignInProvider);*/
+=======
+        final GoogleSignInProvider googleSignInProvider = new GoogleSignInProvider(context);
+        addSignInProvider(googleSignInProvider);
+>>>>>>> master
 
     }
 

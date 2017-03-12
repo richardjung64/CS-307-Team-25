@@ -21,6 +21,7 @@ import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.amazonaws.mobile.user.signin.SignInManager;
 
 public class SignInActivity extends Activity {
+    public static char signin_opt = ' ';
     private static final String LOG_TAG = SignInActivity.class.getSimpleName();
     private SignInManager signInManager;
 
@@ -116,6 +117,7 @@ public class SignInActivity extends Activity {
         // Initialize sign-in buttons.
         signInManager.initializeSignInButton(FacebookSignInProvider.class,
             this.findViewById(R.id.fb_login_button));
+        signin_opt = 'f';
 
        googleOnClickListener =
            signInManager.initializeSignInButton(GoogleSignInProvider.class, findViewById(R.id.g_login_button));
@@ -138,6 +140,7 @@ public class SignInActivity extends Activity {
                     googleOnClickListener.onClick(view);
                 }
             });
+            signin_opt = 'g';
         }
     }
 

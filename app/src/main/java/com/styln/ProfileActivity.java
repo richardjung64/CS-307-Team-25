@@ -24,6 +24,8 @@ import android.widget.TextView;
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
+import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
+import com.amazonaws.mobile.user.signin.SignInManager;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -46,11 +48,18 @@ public class ProfileActivity extends AppCompatActivity {
         final AWSMobileClient awsMobileClient = AWSMobileClient.defaultMobileClient();
         identityManager = awsMobileClient.getIdentityManager();
         userName = (TextView)findViewById(R.id.userName);
-        userName.setText(FacebookSignInProvider.userName);
-
         profilePic = (ImageView)findViewById(R.id.profilePicture);
-        String address = FacebookSignInProvider.userImageUrl;
-        new LoadURLImage(address, profilePic).execute();
+
+        if (SignInActivity.signin_opt == 'f') {
+            String address = FacebookSignInProvider.userImageUrl;
+            new LoadURLImage(address, profilePic).execute();
+            userName.setText(FacebookSignInProvider.userName);
+        }
+        else {
+            String address = GoogleSignInProvider.userImageUrl;
+            new LoadURLImage(address, profilePic).execute();
+            userName.setText(GoogleSignInProvider.userName);
+        }
 
         CompoundButton cb = (CheckBox)findViewById(R.id.AccPrivBox);
         if(checked){

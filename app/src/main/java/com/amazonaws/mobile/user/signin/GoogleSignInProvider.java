@@ -70,10 +70,10 @@ public class GoogleSignInProvider implements SignInProvider {
     private volatile String authToken = null;
 
     /** User's name. */
-    private String userName;
+    public static  String userName;
 
     /** User's image Url. */
-    private String userImageUrl;
+    public static String userImageUrl;
 
     /**
      * Constuctor. Builds the Google Api Client.
@@ -303,6 +303,7 @@ public class GoogleSignInProvider implements SignInProvider {
         userName = null;
         userImageUrl = null;
     }
+
 
     /** {@inheritDoc} */
     @Override

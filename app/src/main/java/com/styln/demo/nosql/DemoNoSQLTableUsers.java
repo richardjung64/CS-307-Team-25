@@ -234,7 +234,7 @@ public class DemoNoSQLTableUsers extends DemoNoSQLTableBase {
         Log.d(LOG_TAG, "Inserting Sample data.");
         final UsersDO firstItem = new UsersDO();
 
-        firstItem.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+        //firstItem.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
         firstItem.setUserAge(DemoSampleDataGenerator.getRandomSampleNumber());
         firstItem.setUserGender(
             DemoSampleDataGenerator.getRandomSampleString("User_Gender"));
@@ -257,7 +257,7 @@ public class DemoNoSQLTableUsers extends DemoNoSQLTableBase {
         final UsersDO[] items = new UsersDO[SAMPLE_DATA_ENTRIES_PER_INSERT-1];
         for (int count = 0; count < SAMPLE_DATA_ENTRIES_PER_INSERT-1; count++) {
             final UsersDO item = new UsersDO();
-            item.setUserId(DemoSampleDataGenerator.getRandomSampleString("userId"));
+            //item.setUserId(DemoSampleDataGenerator.getRandomSampleString("userId"));
             item.setUserAge(DemoSampleDataGenerator.getRandomSampleNumber());
             item.setUserGender(DemoSampleDataGenerator.getRandomSampleString("User_Gender"));
             item.setUserPhoto(DemoSampleDataGenerator.getRandomSampleString("User_Photo"));
@@ -285,7 +285,7 @@ public class DemoNoSQLTableUsers extends DemoNoSQLTableBase {
     public void removeSampleData() throws AmazonClientException {
 
         final UsersDO itemToFind = new UsersDO();
-        itemToFind.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+        //itemToFind.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
 
         final DynamoDBQueryExpression<UsersDO> queryExpression = new DynamoDBQueryExpression<UsersDO>()
             .withHashKeyValues(itemToFind)

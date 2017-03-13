@@ -1,5 +1,6 @@
 package com.amazonaws.models.nosql;
 
+import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBAttribute;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBHashKey;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBIndexHashKey;
@@ -31,8 +32,8 @@ public class UsersDO {
         return _userId;
     }
 
-    public void setUserId(final String _userId) {
-        this._userId = _userId;
+    public void setUserId() {
+        this._userId = IdentityManager.getUser_id();
     }
     @DynamoDBAttribute(attributeName = "User_Age")
     public Double getUserAge() {

@@ -49,7 +49,6 @@ public class ProfileActivity extends AppCompatActivity {
         identityManager = awsMobileClient.getIdentityManager();
         userName = (TextView)findViewById(R.id.userName);
         profilePic = (ImageView)findViewById(R.id.profilePicture);
-
         if (SignInActivity.signin_opt == 'f') {
             String address = FacebookSignInProvider.userImageUrl;
             new LoadURLImage(address, profilePic).execute();

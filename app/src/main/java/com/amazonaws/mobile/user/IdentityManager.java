@@ -111,6 +111,8 @@ public class IdentityManager {
     /** Keep tract of the currently registered SignInStateChangeListiners. */
     private final HashSet<SignInStateChangeListener> signInStateChangeListeners = new HashSet<>();
 
+    private static String user_id = new String();
+
     /**
      * Custom Cognito Identity Provider to handle refreshing the individual provider's tokens.
      */
@@ -252,6 +254,7 @@ public class IdentityManager {
                 try {
                     // Retrieve the user identity on the background thread.
                     identityId = credentialsProviderHolder.getUnderlyingProvider().getIdentityId();
+                    user_id = identityId;
                 } catch (final Exception exception) {
                     this.exception = exception;
                     Log.e(LOG_TAG, exception.getMessage(), exception);
@@ -446,6 +449,10 @@ public class IdentityManager {
         }
     }
 
+    public static String getUser_id() {
+        return user_id;
+    }
+
     private void refreshCredentialWithLogins(final Map<String, String> loginMap) {
         final CognitoCachingCredentialsProvider credentialsProvider =
             credentialsProviderHolder.getUnderlyingProvider();
@@ -455,6 +462,8 @@ public class IdentityManager {
         Log.d(getClass().getSimpleName(), "refresh credentials");
         credentialsProvider.refresh();
         Log.d(getClass().getSimpleName(), "Cognito ID: " + credentialsProvider.getIdentityId());
+        user_id = credentialsProvider.getIdentityId();
+
         Log.d(getClass().getSimpleName(), "Cognito Credentials: " + credentialsProvider.getCredentials());
     }
 

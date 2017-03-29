@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-android-1.2.0_e3c47cf9bd2b0ec28cb44a0698e768fde82b5845/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-core/2.3.9/2fa9ee0e95329912656c8ccd98991b195a3ea539/aws-android-sdk-core-2.3.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2fa9ee0e95329912656c8ccd98991b195a3ea539">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/aws-android-sdk-core-2.3.9_7431c1fe6e3e0ec6c6cf0c9adde4bad03ab472c1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_3c8c4edc15900ddec15ec1bfb3e5400b07ace95a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.4.0_12c03f0012c8d524a73f75fd3efbeb26f150077d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_af3b81e5f9c177ce84103fef5c352ae65e88bce4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_b914a9b200b6f428d99e65dc99df1c7010fd0449/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.4.0_42b193d2b8d65c3c513e306fdba0a0ec745416b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_c385b7fba2199e61b644eb575ada22ee3ad8ca68/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_ca72eabb6cf4837dbc6118c62c19d4e9da8295b5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-10.2.0_2776fd9a13cf1890fc21e3f174a868c3a2aa4984/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_790602cb95dc2e39f1c0cb9b9a0d01b52e869504/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.2.0_48e48f12b83d3ed9119b5b4c045fd80e46ae073d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-ddb-mapper/2.3.9/b64f410bf2f4d4db5642f066d9bad54d2ea4608c/aws-android-sdk-ddb-mapper-2.3.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b64f410bf2f4d4db5642f066d9bad54d2ea4608c">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/aws-android-sdk-ddb-mapper-2.3.9_ea5c2a350c3069977777afbb1cd091132ca86397/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-s3/2.3.9/8b4d1ccbb09daafd17aa3eba99af31ad8aecf505/aws-android-sdk-s3-2.3.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8b4d1ccbb09daafd17aa3eba99af31ad8aecf505">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/aws-android-sdk-s3-2.3.9_2f8e7c847b3d7a7805b72e0bd611e2d6ef7467f4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.2.0_3e6327c9e3b560c3936aa6792a8c6a29cd431070/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_e8aa5ed9d488e991040167e6ecd0258efa1a6bcb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7157a9577c983651d6c6ee313813424fe2d8ab6">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-10.2.0_b81e427f2ba88ade01f932dc76373ff05b1414fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="dec52995aae3e8022d3e9d76430339a2873afd89">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_44af75e8dd5624cb55660ffcd0a88aabd43431db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_ddc605d085283bcb7319c75e2047d6a7ebdbfce5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1c1afa0ab2a8197a5da1b36c4167a9e479cb74d9">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.android-facebook-android-sdk-4.6.0_3f2459dcc75747a851e2bc0a7c4b9bdd976344cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-ddb/2.3.9/5d12b8c7c10b169cdddb3d6c09c800a42dfba6b7/aws-android-sdk-ddb-2.3.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5d12b8c7c10b169cdddb3d6c09c800a42dfba6b7">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/aws-android-sdk-ddb-2.3.9_880b63a387612920348c81620aaeb8e50feafe23/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4a271a456db43f3c29a7b22290d6f77bf6d82a1a">
+        <dex dex="/Users/jungr/AndroidStudioProjects/CS-307-Team-25-testing-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2d0f5d09b45fb94c6a262906b5631f3e14b95b31/classes.dex" />
+    </item>
+
+</items>

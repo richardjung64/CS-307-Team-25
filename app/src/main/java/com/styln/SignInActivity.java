@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.amazonaws.AmazonClientException;
+import com.amazonaws.auth.CognitoCachingCredentialsProvider;
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobile.user.IdentityProvider;
@@ -19,11 +21,19 @@ import com.amazonaws.mobile.user.IdentityProvider;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.amazonaws.mobile.user.signin.SignInManager;
+import com.amazonaws.mobile.util.ThreadUtils;
+import com.amazonaws.regions.Regions;
 
 public class SignInActivity extends Activity {
     public static char signin_opt = ' ';
     private static final String LOG_TAG = SignInActivity.class.getSimpleName();
     private SignInManager signInManager;
+    CognitoCachingCredentialsProvider credentialsProvider = new CognitoCachingCredentialsProvider(
+            getApplicationContext(),
+            "us-east-1:2eca9d05-196e-41a2-bdf1-e92ba721b260", // Identity Pool ID
+    Regions.US_EAST_1 // Region
+    );
+    AddToUsersTable obj;
 
     /** Permission Request Code (Must be < 256). */
     private static final int GET_ACCOUNTS_PERMISSION_REQUEST_CODE = 93;
@@ -37,6 +47,31 @@ public class SignInActivity extends Activity {
                 .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         // finish should always be called on the main thread.
         finish();
+    }
+
+    public void addItemTable() {
+        obj = new AddToUsersTable(credentialsProvider);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    obj.addItem();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getApplicationContext());
+                        //dialogBuilder.setTitle(R.string.nosql_dialog_title_added_sample_data_text);
+                        //dialogBuilder.setMessage("Add successful");
+                        //dialogBuilder.setNegativeButton(R.string.nosql_dialog_ok_text, null);
+                        dialogBuilder.show();
+                    }
+                });
+            }
+        }).start();
     }
 
     /**
@@ -141,6 +176,8 @@ public class SignInActivity extends Activity {
                 }
             });
             signin_opt = 'g';
+            addItemTable();
+            System.out.println("ADD SUCCESSFUL");
         }
     }
 

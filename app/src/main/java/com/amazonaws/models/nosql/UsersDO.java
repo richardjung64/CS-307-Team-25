@@ -33,7 +33,7 @@ public class UsersDO {
     }
 
     public void setUserId() {
-        this._userId = IdentityManager.getUser_id();
+        this._userId = "usr101";
     }
     @DynamoDBAttribute(attributeName = "User_Age")
     public Double getUserAge() {

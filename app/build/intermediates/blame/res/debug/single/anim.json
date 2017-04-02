@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/Users/jungr/.android/build-cache/17cdd8e8a8e1350e24ee6b66382487a239f85aed/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/Users/jungr/.android/build-cache/17cdd8e8a8e1350e24ee6b66382487a239f85aed/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/jungr/.android/build-cache/17cdd8e8a8e1350e24ee6b66382487a239f85aed/output/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
+        "source": "/Users/jungr/.android/build-cache/17cdd8e8a8e1350e24ee6b66382487a239f85aed/output/res/anim/design_fab_in.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/jungr/.android/build-cache/17cdd8e8a8e1350e24ee6b66382487a239f85aed/output/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
+        "source": "/Users/jungr/.android/build-cache/17cdd8e8a8e1350e24ee6b66382487a239f85aed/output/res/anim/design_fab_out.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/mipmap-mdpi/splash_icon.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/mipmap-mdpi/splash_icon.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    }
+]

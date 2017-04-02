@@ -1,0 +1,298 @@
+[
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_normal.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/item_1.jpg",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/item_1.jpg"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_selector.xml",
+        "source": "/Users/jungr/.android/build-cache/cd05b0d4bcb7ed5395f69cfaa43de3d68597a165/output/res/drawable/messenger_button_blue_bg_selector.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_me.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_me.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_box_post.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_box_post.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/test_empty.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/test_empty.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_box_upper.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_box_upper.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/me_textbg.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/me_textbg.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_add.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_add.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/test_kevin.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/test_kevin.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_send_background.xml",
+        "source": "/Users/jungr/.android/build-cache/cd05b0d4bcb7ed5395f69cfaa43de3d68597a165/output/res/drawable/com_facebook_button_send_background.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_comment.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_comment.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_silver_background.xml",
+        "source": "/Users/jungr/.android/build-cache/cd05b0d4bcb7ed5395f69cfaa43de3d68597a165/output/res/drawable/com_facebook_button_login_silver_background.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/Users/jungr/.android/build-cache/17cdd8e8a8e1350e24ee6b66382487a239f85aed/output/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_browse.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_browse.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_trend.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_trend.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_line.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_line.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_like_background.xml",
+        "source": "/Users/jungr/.android/build-cache/cd05b0d4bcb7ed5395f69cfaa43de3d68597a165/output/res/drawable/com_facebook_button_like_background.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_logo_small.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_logo_small.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_like_1.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_like_1.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_background.xml",
+        "source": "/Users/jungr/.android/build-cache/cd05b0d4bcb7ed5395f69cfaa43de3d68597a165/output/res/drawable/com_facebook_button_background.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_settings.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_settings.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_box_lower.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_box_lower.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_round.xml",
+        "source": "/Users/jungr/.android/build-cache/cd05b0d4bcb7ed5395f69cfaa43de3d68597a165/output/res/drawable/messenger_button_blue_bg_round.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_background.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_background.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_home.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_home.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/selector_button_google.xml",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/selector_button_google.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/item_2.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/item_2.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_post.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_post.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/Users/jungr/.android/build-cache/17cdd8e8a8e1350e24ee6b66382487a239f85aed/output/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_selector.xml",
+        "source": "/Users/jungr/.android/build-cache/cd05b0d4bcb7ed5395f69cfaa43de3d68597a165/output/res/drawable/messenger_button_white_bg_selector.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_logo.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_logo.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_round.xml",
+        "source": "/Users/jungr/.android/build-cache/cd05b0d4bcb7ed5395f69cfaa43de3d68597a165/output/res/drawable/messenger_button_white_bg_round.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_like_0.png",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/main_like_0.png"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_normal.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/selector_button_facebook.xml",
+        "source": "/Users/jungr/CS-307-Team-25/app/src/main/res/drawable/selector_button_facebook.xml"
+    },
+    {
+        "merged": "/Users/jungr/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    }
+]

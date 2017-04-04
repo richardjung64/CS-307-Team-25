@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/angie/Downloads/latest_work/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_standard_off_client.png",
+        "source": "/home/angie/.android/build-cache/67c9617198b266eed6c9e0b6222baba96e51a9d3/output/res/drawable-tvdpi-v4/ic_plusone_standard_off_client.png"
+    },
+    {
+        "merged": "/home/angie/Downloads/latest_work/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_medium_off_client.png",
+        "source": "/home/angie/.android/build-cache/67c9617198b266eed6c9e0b6222baba96e51a9d3/output/res/drawable-tvdpi-v4/ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "/home/angie/Downloads/latest_work/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_tall_off_client.png",
+        "source": "/home/angie/.android/build-cache/67c9617198b266eed6c9e0b6222baba96e51a9d3/output/res/drawable-tvdpi-v4/ic_plusone_tall_off_client.png"
+    },
+    {
+        "merged": "/home/angie/Downloads/latest_work/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_small_off_client.png",
+        "source": "/home/angie/.android/build-cache/67c9617198b266eed6c9e0b6222baba96e51a9d3/output/res/drawable-tvdpi-v4/ic_plusone_small_off_client.png"
+    }
+]

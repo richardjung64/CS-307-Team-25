@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/angie/Downloads/latest_work/app/build/intermediates/res/merged/debug/mipmap-mdpi/splash_icon.png",
+        "source": "/home/angie/Downloads/latest_work/app/src/main/res/mipmap-mdpi/splash_icon.png"
+    },
+    {
+        "merged": "/home/angie/Downloads/latest_work/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/home/angie/Downloads/latest_work/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    }
+]

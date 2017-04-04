@@ -3,9 +3,11 @@ package com.styln;
 import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
@@ -28,11 +30,8 @@ public class SignInActivity extends Activity {
     public static char signin_opt = ' ';
     private static final String LOG_TAG = SignInActivity.class.getSimpleName();
     private SignInManager signInManager;
-    CognitoCachingCredentialsProvider credentialsProvider = new CognitoCachingCredentialsProvider(
-            getApplicationContext(),
-            "us-east-1:2eca9d05-196e-41a2-bdf1-e92ba721b260", // Identity Pool ID
-    Regions.US_EAST_1 // Region
-    );
+    private static Context app_context;
+    CognitoCachingCredentialsProvider credentialsProvider;
     AddToUsersTable obj;
 
     /** Permission Request Code (Must be < 256). */
@@ -50,7 +49,7 @@ public class SignInActivity extends Activity {
     }
 
     public void addItemTable() {
-        obj = new AddToUsersTable(credentialsProvider);
+        obj = new AddToUsersTable(getApp_context());
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -140,8 +139,20 @@ public class SignInActivity extends Activity {
         }
     }
 
+    public static Context getApp_context() {
+        return app_context;
+    }
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
+        app_context = getApplicationContext();
+        if (app_context == null)
+            Log.e(LOG_TAG, "CONTEXT IS NULL");
+        credentialsProvider = new CognitoCachingCredentialsProvider(
+                app_context,
+                "us-east-1:2eca9d05-196e-41a2-bdf1-e92ba721b260", // Identity Pool ID
+                Regions.US_EAST_1 // Region
+        );
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 

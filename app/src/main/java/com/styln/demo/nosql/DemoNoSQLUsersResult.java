@@ -212,7 +212,7 @@ public class DemoNoSQLUsersResult implements DemoNoSQLResult {
         usersFollowersKeyTextView.setText("Users_Followers");
         usersFollowersValueTextView.setText(result.getUsersFollowers().toString());
         usersFollowingKeyTextView.setText("Users_Following");
-        usersFollowingValueTextView.setText(result.getUsersFollowing().toString());
+        //usersFollowingValueTextView.setText(result.getUsersFollowing().toString());
         return layout;
     }
 }

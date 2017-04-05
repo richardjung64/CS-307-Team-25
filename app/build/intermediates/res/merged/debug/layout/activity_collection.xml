@@ -68,6 +68,17 @@
                 android:onClick="refreshWishlist"/>
         </LinearLayout>
 
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/textbg"
+            android:layout_alignEnd="@+id/textbg"
+            android:layout_alignLeft="@+id/textbg"
+            android:layout_alignRight="@+id/textbg"
+            android:layout_alignStart="@+id/textbg"
+            android:layout_weight="1" />
+
     </LinearLayout>
 
 

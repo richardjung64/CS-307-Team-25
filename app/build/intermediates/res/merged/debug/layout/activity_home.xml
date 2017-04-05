@@ -275,27 +275,26 @@
     <Button
         android:text="FOLLOW"
         android:layout_width="80dp"
-        android:layout_height="50dp"
-        android:textSize="12sp"
-        android:layout_alignBottom="@+id/kevin"
-        android:layout_alignRight="@+id/dummyPostBG"
-        android:layout_marginRight="10dp"
-        android:layout_alignEnd="@+id/dummyPostBG"
-        android:id="@+id/homefollow"
+        android:layout_height="40dp"
+        android:textSize="10sp"
+        android:id="@+id/home_follow"
         android:onClick="follow"
-        android:clickable="true"/>
+        android:clickable="true"
+        android:layout_alignTop="@+id/dummyPostBG"
+        android:layout_alignRight="@+id/dummyPostBG"
+        android:layout_alignEnd="@+id/dummyPostBG" />
 
     <Button
-        android:id="@+id/followme"
+        android:id="@+id/home_followMe"
         android:layout_width="80dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:clickable="true"
         android:onClick="followMe"
         android:text="FOLLOW ME"
-        android:textSize="12sp"
-        android:layout_below="@+id/homefollow"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:textSize="10sp"
+        android:layout_below="@+id/home_follow"
+        android:layout_alignLeft="@+id/home_follow"
+        android:layout_alignStart="@+id/home_follow" />
 
     <ImageView
         android:layout_width="150dp"

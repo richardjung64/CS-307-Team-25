@@ -14,6 +14,7 @@ public class Item {
     private String name;
     private int image;
     private int sku;
+    private String brand;
     private String description;
     private double price;
     private boolean availability;
@@ -29,8 +30,9 @@ public class Item {
     public Item() {
     }
 
-    public Item(String name, int image) {
+    public Item(String name, String brand, int image) {
         this.name = name;
+        this.brand = brand;
         this.image = image;
     }
 
@@ -38,8 +40,16 @@ public class Item {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String brand) {
+        this.brand = brand;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     public int getImage() {

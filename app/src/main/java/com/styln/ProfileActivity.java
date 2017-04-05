@@ -15,11 +15,12 @@ import android.widget.TextView;
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
-import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import jp.wasabeef.glide.transformations.CropCircleTransformation;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -32,7 +33,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     private List<Item> itemList = new ArrayList<>();
     private RecyclerView recyclerView;
-    private ItemsAdapter iAdapter;
+    private ProfileItemsAdapter iAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,10 +48,11 @@ public class ProfileActivity extends AppCompatActivity {
         profilePic = (ImageView)findViewById(R.id.profilePicture);
 
         String address = FacebookSignInProvider.userImageUrl;
-        Glide.with(this).load(address).into(profilePic);
+        Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                thumbnail(0.2f).into(profilePic);
         userName.setText(FacebookSignInProvider.userName);
 
-        description.setText("HAHASHSAHHASHHHSHASHOASHDIASHIUHAIUSHXIUASHXIUHASIUHIUAHSIUXHIUXAHSXIUASHXIUASHXIASHXIU");
+        description.setText("CardView is another major element introduced in Material Design. Using CardView you can represent the information in a card manner with a drop shadow (elevation) and corner radius which looks consistent across the platform. ");
 
         //TELL GROUP the issue about auto login, doesnt change 'opt' because "onCreate" not called
         /*if (SignInActivity.signin_opt == 'f') {
@@ -66,7 +68,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
-        iAdapter = new ItemsAdapter(this,itemList);
+        iAdapter = new ProfileItemsAdapter(this,itemList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
 
         recyclerView.setLayoutManager(mLayoutManager);
@@ -78,21 +80,21 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     private void prepareCollectionData() {
-        Item item = new Item("Tshirt 1",R.drawable.item_1);
+        Item item = new Item("Tshirt 1", "Adidas",R.drawable.item_1);
         itemList.add(item);
 
-        item = new Item("Tshirt 2",R.drawable.item_1);
+        item = new Item("Tshirt 2", "Adidas",R.drawable.item_1);
         itemList.add(item);
-        item = new Item("Tshirt 3",R.drawable.item_1);
+        item = new Item("Tshirt 3", "Adidas",R.drawable.item_1);
         itemList.add(item);
-        item = new Item("Tshirt 4",R.drawable.item_1);
+        item = new Item("Tshirt 4", "Adidas",R.drawable.item_1);
         itemList.add(item);
-        item = new Item("Tshirt 5",R.drawable.item_1);
+        item = new Item("Tshirt 5", "Adidas",R.drawable.item_1);
         itemList.add(item);
-        item = new Item("Tshirt 6",R.drawable.item_1);
+        item = new Item("Tshirt 6", "Adidas",R.drawable.item_1);
         itemList.add(item);
 
-        item = new Item("Shoe 1",R.drawable.item_2);
+        item = new Item("Shoe 1", "Adidas",R.drawable.item_2);
         itemList.add(item);
 
         iAdapter.notifyDataSetChanged();

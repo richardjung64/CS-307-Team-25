@@ -3,17 +3,13 @@ package com.styln;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -23,18 +19,8 @@ import com.amazonaws.AmazonClientException;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.amazonaws.mobile.util.ThreadUtils;
-import com.styln.demo.nosql.DemoNoSQLOperationListAdapter;
 import com.styln.demo.nosql.DemoNoSQLOperationListItem;
 import com.styln.demo.nosql.DemoNoSQLTableBase;
-import com.styln.demo.nosql.DemoNoSQLTableFactory;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.List;
-
-import static java.security.AccessController.getContext;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -42,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
     private ImageView imageLike;
     private TextView textLikes;
     private ImageView profilePic;
-    private Button follow;
+    private Button follow,followMe;
     private String userName;
     private AddToUsersTable addToUsersTable;
     DemoNoSQLTableBase table;
@@ -53,6 +39,7 @@ public class HomeActivity extends AppCompatActivity {
     static boolean liked = false;
     static int numLikes = 0;
     static boolean followed = false;
+    static boolean followedMe = false;
 
     private void addItemTable() {
         new Thread(new Runnable() {
@@ -85,7 +72,8 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         imageLike = (ImageView)findViewById(R.id.like);
         textLikes = (TextView)findViewById(R.id.numLikes);
-        follow = (Button)findViewById(R.id.homefollow);
+        follow = (Button)findViewById(R.id.home_follow);
+        followMe = (Button)findViewById(R.id.home_followMe);
 
         profilePic = (ImageView)findViewById(R.id.profilePicture);
         String address = FacebookSignInProvider.userImageUrl;
@@ -104,7 +92,7 @@ public class HomeActivity extends AppCompatActivity {
             follow.setTextSize(10);
     } else {
             follow.setText("FOLLOW");
-            follow.setTextSize(12);
+            follow.setTextSize(10);
     }
         if (SignInActivity.signin_opt == 'f') {
             //String address = FacebookSignInProvider.userImageUrl;
@@ -224,7 +212,7 @@ public class HomeActivity extends AppCompatActivity {
         if(followed){
             followed = false;
             follow.setText("FOLLOW");
-            follow.setTextSize(12);
+            follow.setTextSize(10);
         } else {
             followed = true;
             follow.setText("UNFOLLOW");
@@ -234,5 +222,14 @@ public class HomeActivity extends AppCompatActivity {
 
 
     public void followMe(View view) {
+        if(followedMe){
+            followedMe = false;
+            followMe.setText("FOLLOW ME");
+            followMe.setTextSize(10);
+        } else {
+            followedMe = true;
+            followMe.setText("UNFOLLOW ME");
+            followMe.setTextSize(8);
+        }
     }
 }

@@ -183,6 +183,8 @@ MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/shalingyi/.android/
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/shalingyi/.android/build-cache/00b521eaa32db30919e6fdfe086c2b7482a944c2/output/AndroidManifest.xml:5:5-44
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/shalingyi/.android/build-cache/d09d181761b1fb202f725cc77d3d34fb66df7f84/output/AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:24.0.0] /Users/shalingyi/.android/build-cache/a4a8303340124c2972cb1c0f33640e8d0ca2571e/output/AndroidManifest.xml:21:5-23:54
+MERGED from [jp.wasabeef:glide-transformations:2.0.2] /Users/shalingyi/.android/build-cache/75e8cdd74a16bc6837e1ab1e2faf7a9ccb9373e7/output/AndroidManifest.xml:8:5-10:41
+MERGED from [jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1] /Users/shalingyi/.android/build-cache/043ff15b84e7907c8535130b1744f4837bcaf358/output/AndroidManifest.xml:8:5-10:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion

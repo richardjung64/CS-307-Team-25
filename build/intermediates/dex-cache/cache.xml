@@ -3,30 +3,21 @@
 
     <item
         is-multidex="true"
+        jar="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3e0370fc753d8413d5b98d9b8542e7ffbd23d0b9">
+        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_67a6dc0ad29d998dac57761c2cba01ddc604cf9e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
         <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_abdc9cafb702a707e74eadf54a51bc53994a7219/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shalingyi/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
-        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_b1f772a95a13a248eeb6c06fc572193ae121ecf0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="37ee3906d8835c44b29d044987fb220a3da57542">
-        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_67a6dc0ad29d998dac57761c2cba01ddc604cf9e/classes.dex" />
     </item>
 
 </items>

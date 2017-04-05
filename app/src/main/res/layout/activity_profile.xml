@@ -209,23 +209,24 @@
         android:id="@+id/userName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/profilePicture"
-        android:layout_alignTop="@id/profilePicture"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="110dp"
         android:text="User Name"
         android:textColor="@android:color/black"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/profilePicture"
+        android:layout_alignRight="@+id/post"
+        android:layout_alignEnd="@+id/post" />
 
     <TextView
         android:id="@+id/followers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="followers"
-        android:layout_marginLeft="200dp"
-        android:layout_alignBottom="@id/profilePicture"
+        android:layout_below="@+id/numFollowers"
+        android:layout_alignLeft="@id/profilePicture"
+        android:layout_marginLeft="210dp"
+        android:textSize="11dp"
         android:clickable="true"
-        android:onClick="openFollowers"/>
+        android:onClick="openFollower"/>
 
     <TextView
         android:id="@+id/following"
@@ -236,7 +237,8 @@
         android:layout_alignBottom="@+id/followers"
         android:layout_toRightOf="@+id/followers"
         android:layout_toEndOf="@+id/followers"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="11dp"
         android:clickable="true"
         android:onClick="openFollowing"/>
 
@@ -244,25 +246,28 @@
         android:id="@+id/numFollowers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/following"
-        android:layout_alignLeft="@id/followers"
-        android:layout_marginLeft="25dp"
         android:text="0"
         android:textColor="@android:color/black"
         android:clickable="true"
-        android:onClick="openFollowers"/>
+        android:onClick="openFollowers"
+        android:layout_alignBaseline="@+id/userName"
+        android:layout_alignBottom="@+id/userName"
+        android:layout_alignRight="@+id/textWishlist"
+        android:layout_alignEnd="@+id/textWishlist" />
 
     <TextView
         android:id="@+id/numFollowing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/following"
-        android:layout_alignLeft="@id/following"
-        android:layout_marginLeft="25dp"
         android:text="0"
         android:textColor="@android:color/black"
         android:clickable="true"
-        android:onClick="openFollowing"/>
+        android:onClick="openFollowing"
+        android:layout_alignBaseline="@+id/numFollowers"
+        android:layout_alignBottom="@+id/numFollowers"
+        android:layout_toRightOf="@id/numFollowers"
+        android:layout_marginLeft="50dp"
+         />
 
     <TextView
         android:id="@+id/textCollection"
@@ -365,6 +370,37 @@
         </LinearLayout>
     </HorizontalScrollView>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/userName"
+        android:layout_alignStart="@+id/userName"
+        android:layout_alignRight="@+id/following"
+        android:layout_alignEnd="@+id/following"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/followers">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/profilePicture"
+                android:layout_alignEnd="@+id/following"
+                android:layout_alignLeft="@+id/userName"
+                android:layout_alignRight="@+id/following"
+                android:layout_alignStart="@+id/userName"
+                android:layout_below="@+id/followers"
+                android:layout_marginTop="12dp"
+                android:text="description"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:orientation="horizontal"
@@ -373,7 +409,9 @@
         android:layout_alignLeft="@+id/textbg"
         android:layout_alignStart="@+id/textbg"
         android:layout_below="@+id/linearLayout2"
-        android:layout_above="@+id/lowerBox" >
+        android:layout_above="@+id/lowerBox"
+        android:layout_alignRight="@+id/textbg"
+        android:layout_alignEnd="@+id/textbg">
 
     </android.support.v7.widget.RecyclerView>
 

@@ -16,6 +16,7 @@ import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +26,7 @@ public class ProfileActivity extends AppCompatActivity {
     private static final String LOG_TAG = ProfileActivity.class.getSimpleName();
 
     private IdentityManager identityManager;
-    private TextView userName;
+    private TextView userName,description;
     static boolean checked = false;
     private ImageView profilePic;
 
@@ -42,15 +43,20 @@ public class ProfileActivity extends AppCompatActivity {
         final AWSMobileClient awsMobileClient = AWSMobileClient.defaultMobileClient();
         identityManager = awsMobileClient.getIdentityManager();
         userName = (TextView)findViewById(R.id.userName);
+        description = (TextView)findViewById(R.id.description);
         profilePic = (ImageView)findViewById(R.id.profilePicture);
+
+        description.setText("HAHASHSAHHASHHHSHASHOASHDIASHIUHAIUSHXIUASHXIUHASIUHIUAHSIUXHIUXAHSXIUASHXIUASHXIASHXIU");
+
+        //TELL GROUP the issue about auto login, doesnt change 'opt' because "onCreate" not called
         if (SignInActivity.signin_opt == 'f') {
             String address = FacebookSignInProvider.userImageUrl;
-            new LoadURLImage(address, profilePic).execute();
+            Glide.with(this).load(address).into(profilePic);
             userName.setText(FacebookSignInProvider.userName);
         }
         else {
             String address = GoogleSignInProvider.userImageUrl;
-            new LoadURLImage(address, profilePic).execute();
+            Glide.with(this).load(address).into(profilePic);
             userName.setText(GoogleSignInProvider.userName);
         }
 

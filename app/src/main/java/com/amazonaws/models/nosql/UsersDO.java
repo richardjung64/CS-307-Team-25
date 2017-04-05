@@ -80,9 +80,9 @@ public class UsersDO {
         return _userPosts;
     }
 
-//    public void setUserPosts(final List<String> _userPosts) {
-//        this._userPosts = _userPosts;
-//    }
+    public void setUserPosts(final List<String> _userPosts) {
+        this._userPosts = _userPosts;
+    }
     @DynamoDBAttribute(attributeName = "User_Privacy")
     public byte[] getUserPrivacy() {
         return _userPrivacy;
@@ -96,16 +96,16 @@ public class UsersDO {
         return _usersFollowers;
     }
 
-//    public void setUsersFollowers(final Set<String> _usersFollowers) {
-//        this._usersFollowers = _usersFollowers;
-//    }
-//    @DynamoDBAttribute(attributeName = "Users_Following")
-//    public Set<String> getUsersFollowing() {
-//        return _usersFollowing;
-//    }
-//
-//    public void setUsersFollowing(final Set<String> _usersFollowing) {
-//        this._usersFollowing = _usersFollowing;
-//    }
+    public void setUsersFollowers(final Set<String> _usersFollowers) {
+        this._usersFollowers = _usersFollowers;
+    }
+    @DynamoDBAttribute(attributeName = "Users_Following")
+    public Set<String> getUsersFollowing() {
+        return _usersFollowing;
+    }
+
+    public void setUsersFollowing(final Set<String> _usersFollowing) {
+        this._usersFollowing = _usersFollowing;
+    }
 
 }

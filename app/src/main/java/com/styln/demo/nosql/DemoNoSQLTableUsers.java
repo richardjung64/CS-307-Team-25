@@ -231,20 +231,22 @@ public class DemoNoSQLTableUsers extends DemoNoSQLTableBase {
 
     @Override
     public void insertSampleData() throws AmazonClientException {
-        Log.d(LOG_TAG, "Inserting Sample data.");
+        Log.d(LOG_TAG, "Inserting data.");
         final UsersDO firstItem = new UsersDO();
 
-        //firstItem.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+        firstItem.setUserId();
         firstItem.setUserAge(DemoSampleDataGenerator.getRandomSampleNumber());
+        firstItem.setUserDescription(
+                DemoSampleDataGenerator.getRandomSampleString("User_Description"));
         firstItem.setUserGender(
-            DemoSampleDataGenerator.getRandomSampleString("User_Gender"));
+                DemoSampleDataGenerator.getRandomSampleString("User_Gender"));
+        firstItem.setUserName("Fucking John");
         firstItem.setUserPhoto(
-            DemoSampleDataGenerator.getRandomSampleString("User_Photo"));
-//        firstItem.setUserPost(
-//            DemoSampleDataGenerator.getRandomSampleString("User_Post"));
-//        firstItem.setUserPrivacy(DemoSampleDataGenerator.getRandomSampleBinary());
-//        firstItem.setUsersFollowers(DemoSampleDataGenerator.getSampleList());
-//        firstItem.setUsersFollowing(DemoSampleDataGenerator.getSampleList());
+                DemoSampleDataGenerator.getRandomSampleString("User_Photo"));
+        firstItem.setUserPosts(DemoSampleDataGenerator.getSampleList());
+        firstItem.setUserPrivacy(DemoSampleDataGenerator.getRandomSampleBinary());
+        firstItem.setUsersFollowers(DemoSampleDataGenerator.getSampleStringSet());
+        firstItem.setUsersFollowing(DemoSampleDataGenerator.getSampleStringSet());
         AmazonClientException lastException = null;
 
         try {
@@ -254,27 +256,27 @@ public class DemoNoSQLTableUsers extends DemoNoSQLTableBase {
             lastException = ex;
         }
 
-        final UsersDO[] items = new UsersDO[SAMPLE_DATA_ENTRIES_PER_INSERT-1];
-        for (int count = 0; count < SAMPLE_DATA_ENTRIES_PER_INSERT-1; count++) {
-            final UsersDO item = new UsersDO();
-            //item.setUserId(DemoSampleDataGenerator.getRandomSampleString("userId"));
-            item.setUserAge(DemoSampleDataGenerator.getRandomSampleNumber());
-            item.setUserGender(DemoSampleDataGenerator.getRandomSampleString("User_Gender"));
-            item.setUserPhoto(DemoSampleDataGenerator.getRandomSampleString("User_Photo"));
-//            item.setUserPost(DemoSampleDataGenerator.getRandomSampleString("User_Post"));
-//            item.setUserPrivacy(DemoSampleDataGenerator.getRandomSampleBinary());
-//            item.setUsersFollowers(DemoSampleDataGenerator.getSampleList());
-//            item.setUsersFollowing(DemoSampleDataGenerator.getSampleList());
-
-            items[count] = item;
-        }
-        try {
-            mapper.batchSave(Arrays.asList(items));
-        } catch (final AmazonClientException ex) {
-            Log.e(LOG_TAG, "Failed saving item batch : " + ex.getMessage(), ex);
-            lastException = ex;
-        }
-
+//        final UsersDO[] items = new UsersDO[SAMPLE_DATA_ENTRIES_PER_INSERT-1];
+//        for (int count = 0; count < SAMPLE_DATA_ENTRIES_PER_INSERT-1; count++) {
+//            final UsersDO item = new UsersDO();
+//            //item.setUserId(DemoSampleDataGenerator.getRandomSampleString("userId"));
+//            item.setUserAge(DemoSampleDataGenerator.getRandomSampleNumber());
+//            item.setUserGender(DemoSampleDataGenerator.getRandomSampleString("User_Gender"));
+//            item.setUserPhoto(DemoSampleDataGenerator.getRandomSampleString("User_Photo"));
+////            item.setUserPost(DemoSampleDataGenerator.getRandomSampleString("User_Post"));
+////            item.setUserPrivacy(DemoSampleDataGenerator.getRandomSampleBinary());
+////            item.setUsersFollowers(DemoSampleDataGenerator.getSampleList());
+////            item.setUsersFollowing(DemoSampleDataGenerator.getSampleList());
+//
+//            items[count] = item;
+//        }
+//        try {
+//            mapper.batchSave(Arrays.asList(items));
+//        } catch (final AmazonClientException ex) {
+//            Log.e(LOG_TAG, "Failed saving item batch : " + ex.getMessage(), ex);
+//            lastException = ex;
+//        }
+//
         if (lastException != null) {
             // Re-throw the last exception encountered to alert the user.
             throw lastException;

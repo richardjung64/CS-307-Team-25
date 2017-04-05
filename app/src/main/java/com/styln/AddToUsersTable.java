@@ -24,12 +24,11 @@ import java.util.Map;
 
 
 public class AddToUsersTable {
-    public Context context;
     private CognitoCachingCredentialsProvider credentialsProvider;
     //CognitoCachingCredentialsProvider credentialsProvider;
     private AmazonDynamoDBClient ddbClient;
     private DynamoDBMapper mapper;
-    public UsersDO users_table;
+    //public UsersDO users_table;
     public AmazonClientException lastException;
     final String LOG_TAG = AddToUsersTable.class.getSimpleName();
     public AddToUsersTable() {
@@ -41,7 +40,8 @@ public class AddToUsersTable {
     }
      // adding to user table
     public void addItem() {
-        users_table = new UsersDO();
+        Log.i (LOG_TAG, "Adding item...");
+        final UsersDO users_table = new UsersDO();
         users_table.setUserId();
         users_table.setUserName("John");
         users_table.setUserAge((double)23);
@@ -50,6 +50,7 @@ public class AddToUsersTable {
         users_table.setUserPhoto("NO PHOTO");
         users_table.setUserPrivacy("public".getBytes());
         try {
+            Log.i (LOG_TAG, "Adding for real now...");
             mapper.save(users_table);
         }
         catch (final AmazonClientException ex) {
@@ -59,6 +60,7 @@ public class AddToUsersTable {
         if (lastException != null) {
             throw lastException;
         }
+        Log.i (LOG_TAG, "Looks a success...");
     }
 
     public void onCancel(final IdentityProvider provider) {

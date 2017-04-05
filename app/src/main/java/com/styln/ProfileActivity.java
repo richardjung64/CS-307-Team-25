@@ -56,8 +56,8 @@ public class ProfileActivity extends AppCompatActivity {
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
-        iAdapter = new ItemsAdapter(itemList);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+        iAdapter = new ItemsAdapter(this,itemList);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true);
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(iAdapter);
@@ -67,13 +67,17 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     private void prepareCollectionData() {
-        Item item = new Item("Adidas Shirt");
+        Item item = new Item("Adidas Shirt",R.drawable.item_1);
         itemList.add(item);
 
-        item = new Item("Adidas Shirt");
+        item = new Item("Adidas Shirt",R.drawable.item_1);
+        itemList.add(item);
+        item = new Item("Adidas Shirt",R.drawable.item_1);
+        itemList.add(item);
+        item = new Item("Adidas Shirt",R.drawable.item_1);
         itemList.add(item);
 
-        item = new Item("Adidas Shirt");
+        item = new Item("Adidas Shoes",R.drawable.item_2);
         itemList.add(item);
 
         iAdapter.notifyDataSetChanged();

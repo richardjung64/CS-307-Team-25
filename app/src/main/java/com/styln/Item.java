@@ -12,7 +12,7 @@ import java.net.URL;
 
 public class Item {
     private String name;
-    private ImageView image;
+    private int image;
     private int sku;
     private String description;
     private double price;
@@ -29,9 +29,9 @@ public class Item {
     public Item() {
     }
 
-    public Item(String name) {
+    public Item(String name, int image) {
         this.name = name;
-        this.image.setImageResource(R.drawable.item_1);
+        this.image = image;
     }
 
     public String getName() {
@@ -42,11 +42,11 @@ public class Item {
         this.name = name;
     }
 
-    public ImageView getImage() {
+    public int getImage() {
         return image;
     }
 
-    public void setImage(ImageView image) {
+    public void setImage(int image) {
         this.image = image;
     }
 

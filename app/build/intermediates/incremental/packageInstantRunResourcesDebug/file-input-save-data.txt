@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Apr 05 15:23:55 EDT 2017
+#Wed Apr 05 15:52:08 EDT 2017
 210.set=ANDROID_RESOURCE
 282.file=/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/resources-debug.ap_/res/layout/demo_nosql_select_table_list_item.xml
 14.set=ANDROID_RESOURCE

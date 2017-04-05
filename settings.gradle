@@ -6,4 +6,4 @@
 //
 // Source code generated from template: aws-my-sample-app-android v0.15
 //
-include ':app'
+include ':app', ':glide-3.7.0'

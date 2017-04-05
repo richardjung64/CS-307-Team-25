@@ -11,4 +11,12 @@
     <color name="nav_drawer_no_user_background">#AAAAAA</color>
     <color name="dark_content_text">#333333</color>
     <color name="instructions_list_border_color">#FFDDDDDD</color>
+
+    <color name="name">#222222</color>
+    //NOT USED
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
 </resources>

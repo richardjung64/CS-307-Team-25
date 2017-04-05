@@ -72,17 +72,18 @@ public class ProfileActivity extends AppCompatActivity {
     public void openFollowers(View view) {
         Log.d(LOG_TAG, "Launching Followers Activity...");
         startActivity(new Intent(ProfileActivity.this, FollowActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","followers"));
         // finish should always be called on the main thread.
         finish();
     }
 
     public void openFollowing(View view) {
         Log.d(LOG_TAG, "Launching Following Activity...");
-        startActivity(new Intent(ProfileActivity.this, FollowingActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        startActivity(new Intent(ProfileActivity.this, FollowActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","following"));
         // finish should always be called on the main thread.
         finish();
     }
+
 
 }

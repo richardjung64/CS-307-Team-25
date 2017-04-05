@@ -6,23 +6,26 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.0"
-    timestamp="1491380412262"
+    timestamp="1491381277446"
     token="-8717216059319077461"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="509" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="34" />
     <task
         name="verifier"
-        duration="0" />
+        duration="10" />
 
+    <artifact
+        location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
     <artifact
         location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/outputs/apk/app-debug.apk"
         type="SPLIT_MAIN" />
@@ -70,7 +73,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1491380228749"
+        timestamp="1491380861236"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
@@ -82,13 +85,16 @@
             location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1491380412262"
+        timestamp="1491381277446"
         verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />

@@ -223,7 +223,9 @@
         android:layout_height="wrap_content"
         android:text="followers"
         android:layout_marginLeft="200dp"
-        android:layout_alignBottom="@id/profilePicture" />
+        android:layout_alignBottom="@id/profilePicture"
+        android:clickable="true"
+        android:onClick="openFollowers"/>
 
     <TextView
         android:id="@+id/following"
@@ -234,7 +236,9 @@
         android:layout_alignBottom="@+id/followers"
         android:layout_toRightOf="@+id/followers"
         android:layout_toEndOf="@+id/followers"
-        android:layout_marginLeft="20dp"/>
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        android:onClick="openFollowing"/>
 
     <TextView
         android:id="@+id/numFollowers"

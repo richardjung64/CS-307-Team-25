@@ -75,7 +75,7 @@
             android:label="SettingsActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.styln.FollowerActivity"
+            android:name="com.styln.FollowActivity"
             android:label="FollowerActivity"
             android:theme="@style/AppTheme" >
         </activity>

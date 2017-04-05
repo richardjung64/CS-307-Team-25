@@ -46,10 +46,14 @@ public class ProfileActivity extends AppCompatActivity {
         description = (TextView)findViewById(R.id.description);
         profilePic = (ImageView)findViewById(R.id.profilePicture);
 
+        String address = FacebookSignInProvider.userImageUrl;
+        Glide.with(this).load(address).into(profilePic);
+        userName.setText(FacebookSignInProvider.userName);
+
         description.setText("HAHASHSAHHASHHHSHASHOASHDIASHIUHAIUSHXIUASHXIUHASIUHIUAHSIUXHIUXAHSXIUASHXIUASHXIASHXIU");
 
         //TELL GROUP the issue about auto login, doesnt change 'opt' because "onCreate" not called
-        if (SignInActivity.signin_opt == 'f') {
+        /*if (SignInActivity.signin_opt == 'f') {
             String address = FacebookSignInProvider.userImageUrl;
             Glide.with(this).load(address).into(profilePic);
             userName.setText(FacebookSignInProvider.userName);
@@ -58,12 +62,13 @@ public class ProfileActivity extends AppCompatActivity {
             String address = GoogleSignInProvider.userImageUrl;
             Glide.with(this).load(address).into(profilePic);
             userName.setText(GoogleSignInProvider.userName);
-        }
+        }*/
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         iAdapter = new ItemsAdapter(this,itemList);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(iAdapter);
@@ -73,17 +78,21 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     private void prepareCollectionData() {
-        Item item = new Item("Adidas Shirt",R.drawable.item_1);
+        Item item = new Item("Tshirt 1",R.drawable.item_1);
         itemList.add(item);
 
-        item = new Item("Adidas Shirt",R.drawable.item_1);
+        item = new Item("Tshirt 2",R.drawable.item_1);
         itemList.add(item);
-        item = new Item("Adidas Shirt",R.drawable.item_1);
+        item = new Item("Tshirt 3",R.drawable.item_1);
         itemList.add(item);
-        item = new Item("Adidas Shirt",R.drawable.item_1);
+        item = new Item("Tshirt 4",R.drawable.item_1);
+        itemList.add(item);
+        item = new Item("Tshirt 5",R.drawable.item_1);
+        itemList.add(item);
+        item = new Item("Tshirt 6",R.drawable.item_1);
         itemList.add(item);
 
-        item = new Item("Adidas Shoes",R.drawable.item_2);
+        item = new Item("Shoe 1",R.drawable.item_2);
         itemList.add(item);
 
         iAdapter.notifyDataSetChanged();

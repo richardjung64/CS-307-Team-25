@@ -212,9 +212,10 @@
         android:text="User Name"
         android:textColor="@android:color/black"
         android:textSize="20sp"
+        android:layout_marginTop="10dp"
         android:layout_alignTop="@+id/profilePicture"
-        android:layout_alignRight="@+id/post"
-        android:layout_alignEnd="@+id/post" />
+        android:layout_toRightOf="@id/profilePicture"
+         />
 
     <TextView
         android:id="@+id/followers"
@@ -276,7 +277,7 @@
         android:layout_alignLeft="@id/textbg"
         android:layout_alignStart="@+id/item1"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="370dp"
         android:text="Collection"
         android:textColor="@android:color/black"
         android:textSize="20sp"
@@ -288,9 +289,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/textbg"
-        android:layout_alignStart="@+id/item1"
         android:layout_marginLeft="175dp"
-        android:layout_marginTop="350dp"
+        android:layout_alignTop="@id/textCollection"
         android:text="Wishlist"
         android:textColor="@android:color/black"
         android:textSize="20sp"
@@ -305,6 +305,7 @@
         android:layout_alignStart="@+id/item1"
 
         android:layout_below="@+id/profilePicture"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
         android:text="Posts"
         android:textColor="@android:color/black"
@@ -371,8 +372,8 @@
     </HorizontalScrollView>
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/userName"
         android:layout_alignStart="@+id/userName"
         android:layout_alignRight="@+id/following"
@@ -389,12 +390,6 @@
                 android:id="@+id/description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/profilePicture"
-                android:layout_alignEnd="@+id/following"
-                android:layout_alignLeft="@+id/userName"
-                android:layout_alignRight="@+id/following"
-                android:layout_alignStart="@+id/userName"
-                android:layout_below="@+id/followers"
                 android:layout_marginTop="12dp"
                 android:text="description"
                 android:textSize="12sp" />
@@ -411,7 +406,8 @@
         android:layout_below="@+id/linearLayout2"
         android:layout_above="@+id/lowerBox"
         android:layout_alignRight="@+id/textbg"
-        android:layout_alignEnd="@+id/textbg">
+        android:layout_alignEnd="@+id/textbg"
+        >
 
     </android.support.v7.widget.RecyclerView>
 

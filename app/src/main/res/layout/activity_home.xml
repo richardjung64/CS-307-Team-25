@@ -19,7 +19,7 @@
         android:layout_marginBottom="100dp"
         android:layout_marginLeft="35dp"
         android:layout_marginRight="35dp"
-        android:id="@+id/dummyPostBG"
+        android:id="@+id/itemBG"
         android:scaleType="fitXY"
         />
 
@@ -183,9 +183,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/messenger_button_send_round_shadow"
-        android:layout_alignTop="@+id/dummyPostBG"
-        android:layout_alignLeft="@+id/dummyPostBG"
-        android:layout_alignStart="@+id/dummyPostBG"
+        android:layout_alignTop="@+id/itemBG"
+        android:layout_alignLeft="@+id/itemBG"
+        android:layout_alignStart="@+id/itemBG"
         android:layout_marginLeft="18dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="15dp"
@@ -210,9 +210,9 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/main_line"
         android:layout_below="@+id/dummyPictureBox"
-        android:layout_alignLeft="@+id/dummyPostBG"
+        android:layout_alignLeft="@+id/itemBG"
         android:layout_marginTop="0dp"
-        android:layout_alignRight="@id/dummyPostBG"
+        android:layout_alignRight="@id/itemBG"
         android:scaleType="fitXY"
         android:id="@+id/seperator" />
 
@@ -220,7 +220,7 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         app:srcCompat="@drawable/main_like_0"
-        android:layout_alignBottom="@+id/dummyPostBG"
+        android:layout_alignBottom="@+id/itemBG"
         android:layout_alignLeft="@+id/dummyPictureBox"
         android:layout_alignStart="@+id/dummyPictureBox"
         android:layout_marginBottom="10dp"
@@ -257,8 +257,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/like"
-        android:layout_alignLeft="@+id/dummyPostBG"
-        android:layout_alignBottom="@id/dummyPostBG"
+        android:layout_alignLeft="@+id/itemBG"
+        android:layout_alignBottom="@id/itemBG"
         android:layout_marginBottom="65dp"
         android:layout_marginLeft="15dp"
         android:id="@+id/numLikes"
@@ -281,9 +281,9 @@
         android:id="@+id/home_follow"
         android:onClick="follow"
         android:clickable="true"
-        android:layout_alignTop="@+id/dummyPostBG"
-        android:layout_alignRight="@+id/dummyPostBG"
-        android:layout_alignEnd="@+id/dummyPostBG" />
+        android:layout_alignTop="@+id/itemBG"
+        android:layout_alignRight="@+id/itemBG"
+        android:layout_alignEnd="@+id/itemBG" />
 
     <Button
         android:id="@+id/home_followMe"
@@ -303,7 +303,7 @@
         app:srcCompat="@drawable/item_1"
         android:id="@+id/item1"
         android:layout_below="@+id/seperator"
-        android:layout_alignLeft="@id/dummyPostBG" />
+        android:layout_alignLeft="@id/itemBG" />
     <ImageView
         android:layout_width="120dp"
         android:layout_height="120dp"

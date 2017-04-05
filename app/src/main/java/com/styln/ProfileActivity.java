@@ -27,11 +27,15 @@ public class ProfileActivity extends AppCompatActivity {
     private static final String LOG_TAG = ProfileActivity.class.getSimpleName();
 
     private IdentityManager identityManager;
-    private TextView userName,description;
+    private TextView userName,description,numFollowers,numFollowing;
     static boolean checked = false;
     private ImageView profilePic;
 
     private List<Item> itemList = new ArrayList<>();
+    private List<Item> followerList = new ArrayList<>();
+    private List<Item> followingList = new ArrayList<>();
+
+
     private RecyclerView recyclerView;
     private ProfileItemsAdapter iAdapter;
 
@@ -46,6 +50,9 @@ public class ProfileActivity extends AppCompatActivity {
         userName = (TextView)findViewById(R.id.userName);
         description = (TextView)findViewById(R.id.description);
         profilePic = (ImageView)findViewById(R.id.profilePicture);
+        numFollowers = (TextView)findViewById(R.id.numFollowers);
+        numFollowing = (TextView)findViewById(R.id.numFollowing);
+
 
         String address = FacebookSignInProvider.userImageUrl;
         Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).

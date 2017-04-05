@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w500dp-v13/values-w500dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 54,
+                    "endOffset": 105
+                },
+                "from": {
+                    "file": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/values-w500dp-v13/values-w500dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 54,
+                        "endOffset": 105
+                    }
+                }
+            }
+        ]
+    }
+]

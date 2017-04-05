@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/Users/jungr/.android/build-cache/f88b6a1b9e5b172f238f7a36f45ba183ae84be54/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/jungr/.android/build-cache/8fb76b8f0369e7a9eb32c64fc2b859b303f7fb22/output/res/color/common_google_signin_btn_text_light.xml"
+    }
+]

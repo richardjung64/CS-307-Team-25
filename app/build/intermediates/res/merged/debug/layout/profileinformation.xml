@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Age"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:textSize="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Gender"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:textSize="45dp"
+        android:layout_below="@id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:imeOptions="actionNext"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Private/Public"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:textSize="45dp"
+        android:layout_below="@id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:imeOptions="actionNext"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="User Description"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:textSize="45dp"
+        android:layout_below="@id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:imeOptions="actionDone"
+        android:imeActionLabel="Over and out!"
+        />
+</RelativeLayout>

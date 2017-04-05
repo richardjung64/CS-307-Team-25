@@ -179,7 +179,6 @@ public class HomeActivity extends AppCompatActivity {
 
         // Setting Dialog Title
         alertDialog.setTitle("Add To...");
-
         // Setting Dialog Message
         //alertDialog.setMessage("Do you want to save this file?");
 

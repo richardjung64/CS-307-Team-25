@@ -19,8 +19,11 @@ import com.amazonaws.AmazonClientException;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.amazonaws.mobile.util.ThreadUtils;
+import com.bumptech.glide.Glide;
 import com.styln.demo.nosql.DemoNoSQLOperationListItem;
 import com.styln.demo.nosql.DemoNoSQLTableBase;
+
+import jp.wasabeef.glide.transformations.CropCircleTransformation;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -77,8 +80,8 @@ public class HomeActivity extends AppCompatActivity {
 
         profilePic = (ImageView)findViewById(R.id.profilePicture);
         String address = FacebookSignInProvider.userImageUrl;
-        new LoadURLImage(address, profilePic).execute();
-
+        Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                thumbnail(0.1f).into(profilePic);
 
         if(liked){
             imageLike.setImageResource(R.drawable.main_like_1);
@@ -182,7 +185,7 @@ public class HomeActivity extends AppCompatActivity {
         alertDialog.setPositiveButton("Wardrobe", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 //Response Here
-                Toast.makeText(getApplicationContext(), "You clicked on Wardrobe",
+                Toast.makeText(getApplicationContext(), "Added to Wardrobe",
                         Toast.LENGTH_SHORT).show();
             }
         });
@@ -191,7 +194,7 @@ public class HomeActivity extends AppCompatActivity {
         alertDialog.setNegativeButton("Wishlist", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 //Response Here
-                Toast.makeText(getApplicationContext(), "You clicked on Wishlist",
+                Toast.makeText(getApplicationContext(), "Added to Wishlist",
                         Toast.LENGTH_SHORT).show();
             }
         });
@@ -199,7 +202,7 @@ public class HomeActivity extends AppCompatActivity {
         // Setting Netural "Cancel" Button
         alertDialog.setNeutralButton("Cancel", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(getApplicationContext(), "You clicked on Cancel",
+                Toast.makeText(getApplicationContext(), "Canceled",
                         Toast.LENGTH_SHORT).show();
             }
         });

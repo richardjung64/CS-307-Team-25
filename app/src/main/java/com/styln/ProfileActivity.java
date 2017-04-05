@@ -49,7 +49,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         String address = FacebookSignInProvider.userImageUrl;
         Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
-                thumbnail(0.2f).into(profilePic);
+                thumbnail(0.1f).into(profilePic);
         userName.setText(FacebookSignInProvider.userName);
 
         description.setText("CardView is another major element introduced in Material Design. Using CardView you can represent the information in a card manner with a drop shadow (elevation) and corner radius which looks consistent across the platform. ");

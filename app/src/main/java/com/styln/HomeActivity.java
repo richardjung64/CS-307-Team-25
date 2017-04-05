@@ -121,14 +121,7 @@ public class HomeActivity extends AppCompatActivity {
     addItemTable();
 
     }
-
-    public void openHome(View view) {
-        Log.d(LOG_TAG, "Launching Main Activity...");
-        startActivity(new Intent(HomeActivity.this, HomeActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        // finish should always be called on the main thread.
-        finish();
-    }
+    
 
     public void openTrend(View view) {
         Log.d(LOG_TAG, "Launching Trend Activity...");
@@ -153,6 +146,11 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void openSettings(View view) {
+            Log.d(LOG_TAG, "Launching Settings Activity...");
+            startActivity(new Intent(HomeActivity.this, SettingsActivity.class)
+                    .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+            // finish should always be called on the main thread.
+            finish();
     }
 
     public void likePost(View view) {

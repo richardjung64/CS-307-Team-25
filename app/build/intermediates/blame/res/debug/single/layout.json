@@ -8,16 +8,16 @@
         "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/activity_home.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
-        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_layout_tab_icon.xml"
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_navigation_menu_item.xml"
     },
     {
         "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
         "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_screen_content_include.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
-        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_navigation_menu_item.xml"
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_layout_tab_icon.xml"
     },
     {
         "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",

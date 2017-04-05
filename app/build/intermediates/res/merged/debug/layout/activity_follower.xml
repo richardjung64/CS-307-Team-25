@@ -25,7 +25,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Back"
-        android:onClick="back"/>
+        android:onClick="back"
+        android:layout_alignTop="@+id/textbg"
+        android:layout_alignLeft="@+id/textbg"
+        android:layout_alignStart="@+id/textbg"
+        android:layout_alignRight="@+id/textbg"
+        android:layout_alignEnd="@+id/textbg" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,7 +41,34 @@
         android:orientation="vertical"
         android:layout_alignBottom="@+id/textbg"
         android:layout_alignRight="@+id/textbg"
-        android:layout_alignEnd="@+id/textbg"></LinearLayout>
+        android:layout_alignEnd="@+id/textbg"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Followers"
+                android:clickable="true"
+                android:onClick="refreshFollowers"/>
+
+            <Button
+                android:id="@+id/following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Following"
+                android:clickable="true"
+                android:onClick="refreshFollowing"/>
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </RelativeLayout>

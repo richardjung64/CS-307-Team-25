@@ -69,6 +69,14 @@
         <activity
             android:name="com.styln.ProfileActivity"
             android:label="ProfileActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.styln.SettingsActivity"
+            android:label="SettingsActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.styln.FollowerActivity"
+            android:label="FollowerActivity"
             android:theme="@style/AppTheme" >
         </activity>
         <activity

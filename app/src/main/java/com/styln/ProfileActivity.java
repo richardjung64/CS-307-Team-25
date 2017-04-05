@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -42,21 +40,15 @@ public class ProfileActivity extends AppCompatActivity {
         }
         else {
             String address = GoogleSignInProvider.userImageUrl;
-            new LoadURLImage(address, profilePic).execute();
+           new LoadURLImage(address, profilePic).execute();
             userName.setText(GoogleSignInProvider.userName);
         }
 
-        CompoundButton cb = (CheckBox)findViewById(R.id.AccPrivBox);
-        if(checked){
-           cb.setChecked(true);
-        } else {
-            cb.setChecked(false);
-        }
 
     }
 
     public void openHome(View view) {
-        Log.d(LOG_TAG, "Launching Main Activity...");
+        Log.d(LOG_TAG, "Launching Home Activity...");
         startActivity(new Intent(ProfileActivity.this, HomeActivity.class)
                 .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         // finish should always be called on the main thread.
@@ -79,7 +71,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     public void openFollowers(View view) {
         Log.d(LOG_TAG, "Launching Followers Activity...");
-        startActivity(new Intent(ProfileActivity.this, FollowerActivity.class)
+        startActivity(new Intent(ProfileActivity.this, FollowActivity.class)
                 .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         // finish should always be called on the main thread.
         finish();

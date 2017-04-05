@@ -81,8 +81,8 @@
         <activity
             android:name="com.styln.CollectionActivity"
             android:label="CollectionActivity"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.styln.BrowseActivity" />
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"

@@ -67,6 +67,11 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     public void openBrowse(View view) {
+        Log.d(LOG_TAG, "Launching Browse Activity...");
+        startActivity(new Intent(ProfileActivity.this, BrowseActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        // finish should always be called on the main thread.
+        finish();
     }
 
     public void openProfile(View view) {

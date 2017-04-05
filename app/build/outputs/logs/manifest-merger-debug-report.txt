@@ -155,17 +155,21 @@ ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/Andr
 	android:name
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:71:13-43
 activity#com.styln.CollectionActivity
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:74:9-78:20
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:74:9-77:56
 	android:label
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:76:13-47
 	android:theme
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:77:13-44
 	android:name
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:75:13-47
+activity#com.styln.BrowseActivity
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:78:9-61
+	android:name
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:78:19-49
 uses-sdk
 INJECTED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shalingyi/.android/build-cache/51ebfe72a2ef0a0bec0b4e6213a8d59a093546c2/output/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:multidex:1.0.1] /Users/shalingyi/.android/build-cache/04d907c9519c29170a8fcbbade31e7547a5a7712/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shalingyi/.android/build-cache/51ebfe72a2ef0a0bec0b4e6213a8d59a093546c2/output/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] /Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/AndroidManifest.xml:24:5-26:41
 MERGED from [com.google.android.gms:play-services-plus:10.2.0] /Users/shalingyi/.android/build-cache/5d449b22a4acbdf26c7c4f67d31e2e6f15ec02ad/output/AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-auth:10.2.0] /Users/shalingyi/.android/build-cache/6fcb50b8684530cdfdb1e88cc27935b2e9ebf4fb/output/AndroidManifest.xml:17:5-43

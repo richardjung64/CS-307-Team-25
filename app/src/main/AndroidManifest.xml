@@ -74,8 +74,8 @@
         <activity
             android:name=".CollectionActivity"
             android:label="CollectionActivity"
-            android:theme="@style/AppTheme">
-        </activity>
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".BrowseActivity"></activity>
     </application>
 
 </manifest>

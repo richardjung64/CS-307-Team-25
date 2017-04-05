@@ -1,5 +1,6 @@
 package com.styln;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -12,7 +13,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.amazonaws.AmazonClientException;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
+import com.amazonaws.mobile.util.ThreadUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -30,6 +33,31 @@ public class HomeActivity extends AppCompatActivity {
     static boolean liked = false;
     static int numLikes = 0;
     static boolean followed = false;
+
+    public void addItemTable() {
+        //obj = new AddToUsersTable();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    //obj.addItem();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getApplicationContext());
+                        //dialogBuilder.setTitle(R.string.nosql_dialog_title_added_sample_data_text);
+                        //dialogBuilder.setMessage("Add successful");
+                        //dialogBuilder.setNegativeButton(R.string.nosql_dialog_ok_text, null);
+                        dialogBuilder.show();
+                    }
+                });
+            }
+        }).start();
+    }
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

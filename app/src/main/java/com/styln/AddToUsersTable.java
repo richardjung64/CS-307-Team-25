@@ -32,15 +32,16 @@ public class AddToUsersTable {
     public UsersDO users_table;
     public AmazonClientException lastException;
     final String LOG_TAG = AddToUsersTable.class.getSimpleName();
-    public AddToUsersTable(Context context) {
-        this.context = context;
-        credentialsProvider = new CognitoCachingCredentialsProvider(context, "us-east-1:43cde55a-51f7-4d7a-a2ab-f77c948eed21", Regions.US_EAST_1);
-        ddbClient = new AmazonDynamoDBClient(credentialsProvider);
-        mapper = new DynamoDBMapper(ddbClient);
-        users_table = new UsersDO();
+    public AddToUsersTable() {
+        //this.context = context;
+        //credentialsProvider = new CognitoCachingCredentialsProvider(context, "us-east-1:43cde55a-51f7-4d7a-a2ab-f77c948eed21", Regions.US_EAST_1);
+        //ddbClient = new AmazonDynamoDBClient(credentialsProvider);
+       // mapper = new DynamoDBMapper(ddbClient);
+        mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
     }
      // adding to user table
     public void addItem() {
+        users_table = new UsersDO();
         users_table.setUserId();
         users_table.setUserName("John");
         users_table.setUserAge((double)23);

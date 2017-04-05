@@ -48,31 +48,6 @@ public class SignInActivity extends Activity {
         finish();
     }
 
-    public void addItemTable() {
-        obj = new AddToUsersTable(getApp_context());
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    obj.addItem();
-                } catch (final AmazonClientException ex) {
-                    Log.e(LOG_TAG, "failed to add");
-                    return;
-                }
-                ThreadUtils.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getApplicationContext());
-                        //dialogBuilder.setTitle(R.string.nosql_dialog_title_added_sample_data_text);
-                        //dialogBuilder.setMessage("Add successful");
-                        //dialogBuilder.setNegativeButton(R.string.nosql_dialog_ok_text, null);
-                        dialogBuilder.show();
-                    }
-                });
-            }
-        }).start();
-    }
-
     /**
      * SignInResultsHandler handles the final result from sign in. Making it static is a best
      * practice since it may outlive the SplashActivity's life span.
@@ -187,7 +162,7 @@ public class SignInActivity extends Activity {
                 }
             });
             signin_opt = 'g';
-            addItemTable();
+            //addItemTable();
             System.out.println("ADD SUCCESSFUL");
         }
     }

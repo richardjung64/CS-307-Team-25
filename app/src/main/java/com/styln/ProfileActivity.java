@@ -69,6 +69,9 @@ public class ProfileActivity extends AppCompatActivity {
     public void openBrowse(View view) {
     }
 
+    public void openProfile(View view) {
+    }
+
     public void openFollowers(View view) {
         Log.d(LOG_TAG, "Launching Followers Activity...");
         startActivity(new Intent(ProfileActivity.this, FollowActivity.class)

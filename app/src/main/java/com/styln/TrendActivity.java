@@ -26,11 +26,6 @@ public class TrendActivity extends AppCompatActivity {
     }
 
     public void openTrend(View view) {
-        Log.d(LOG_TAG, "Launching Trend Activity...");
-        startActivity(new Intent(TrendActivity.this, HomeActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        // finish should always be called on the main thread.
-        finish();
     }
 
     public void openPost(View view) {

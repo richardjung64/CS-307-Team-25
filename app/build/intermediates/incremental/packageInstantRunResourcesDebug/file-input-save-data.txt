@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Apr 05 04:49:44 EDT 2017
+#Wed Apr 05 05:21:08 EDT 2017
 210.set=ANDROID_RESOURCE
 282.file=/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/resources-debug.ap_/res/mipmap-xhdpi-v4/ic_launcher.png
 14.set=ANDROID_RESOURCE

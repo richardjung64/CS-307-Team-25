@@ -121,7 +121,9 @@ public class HomeActivity extends AppCompatActivity {
     addItemTable();
 
     }
-    
+
+    public void openHome(View view) {
+    }
 
     public void openTrend(View view) {
         Log.d(LOG_TAG, "Launching Trend Activity...");

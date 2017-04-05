@@ -285,6 +285,18 @@
         android:onClick="follow"
         android:clickable="true"/>
 
+    <Button
+        android:id="@+id/followme"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:onClick="followMe"
+        android:text="FOLLOW ME"
+        android:textSize="12sp"
+        android:layout_below="@+id/follow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -301,29 +313,6 @@
         android:layout_toRightOf="@id/item1"
          />
 
-    <Button
-        android:text="Addidas Shirt"
-        android:layout_width="120dp"
-        android:layout_height="30dp"
-        android:textSize="10sp"
-        android:layout_alignTop="@+id/add"
-        android:layout_toRightOf="@id/add"
-        android:id="@+id/Bitem1"
-        android:visibility="gone"
-        android:onClick="addItem"
-        android:clickable="true"/>
-
-    <Button
-        android:text="Gonz Shoes"
-        android:textSize="10sp"
-        android:layout_width="120dp"
-        android:layout_height="30dp"
-        android:layout_below="@id/Bitem1"
-        android:layout_toRightOf="@id/add"
-        android:id="@+id/Bitem2"
-        android:visibility="gone"
-        android:onClick="addItem"
-        android:clickable="true"/>
 
 
 </RelativeLayout>

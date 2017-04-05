@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
+import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.amazonaws.mobile.util.ThreadUtils;
 import com.styln.demo.nosql.DemoNoSQLOperationListAdapter;
 import com.styln.demo.nosql.DemoNoSQLOperationListItem;
@@ -38,6 +39,7 @@ public class HomeActivity extends AppCompatActivity {
     private TextView textLikes;
     private ImageView profilePic;
     private Button follow;
+    private String userName;
     private AddToUsersTable addToUsersTable;
     DemoNoSQLTableBase table;
     ListView operationsListView;
@@ -77,8 +79,6 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        addToUsersTable = new AddToUsersTable();
-        addItemTable();
         imageLike = (ImageView)findViewById(R.id.like);
         textLikes = (TextView)findViewById(R.id.numLikes);
         follow = (Button)findViewById(R.id.follow);
@@ -102,6 +102,22 @@ public class HomeActivity extends AppCompatActivity {
             follow.setText("FOLLOW");
             follow.setTextSize(12);
     }
+        if (SignInActivity.signin_opt == 'f') {
+            //String address = FacebookSignInProvider.userImageUrl;
+            //new LoadURLImage(address, profilePic).execute();
+            //userName.setText(FacebookSignInProvider.userName);
+            userName = FacebookSignInProvider.userName;
+            //Log.i(LOG_TAG,FacebookSignInProvider.userName);
+        }
+        else {
+            //String address = GoogleSignInProvider.userImageUrl;
+            //new LoadURLImage(address, profilePic).execute();
+            //userName.setText(GoogleSignInProvider.userName);
+            userName = GoogleSignInProvider.userName;
+            //Log.i(LOG_TAG,GoogleSignInProvider.userName);
+
+        }
+        addToUsersTable = new AddToUsersTable(userName);
     addItemTable();
 
     }

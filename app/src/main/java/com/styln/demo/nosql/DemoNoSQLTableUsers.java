@@ -234,13 +234,14 @@ public class DemoNoSQLTableUsers extends DemoNoSQLTableBase {
         Log.d(LOG_TAG, "Inserting data.");
         final UsersDO firstItem = new UsersDO();
 
-        firstItem.setUserId();
+        //firstItem.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
         firstItem.setUserAge(DemoSampleDataGenerator.getRandomSampleNumber());
         firstItem.setUserDescription(
                 DemoSampleDataGenerator.getRandomSampleString("User_Description"));
         firstItem.setUserGender(
                 DemoSampleDataGenerator.getRandomSampleString("User_Gender"));
-        firstItem.setUserName("Fucking John");
+        firstItem.setUserName(
+                DemoSampleDataGenerator.getRandomSampleString("User_Name"));
         firstItem.setUserPhoto(
                 DemoSampleDataGenerator.getRandomSampleString("User_Photo"));
         firstItem.setUserPosts(DemoSampleDataGenerator.getSampleList());
@@ -277,10 +278,10 @@ public class DemoNoSQLTableUsers extends DemoNoSQLTableBase {
 //            lastException = ex;
 //        }
 //
-        if (lastException != null) {
-            // Re-throw the last exception encountered to alert the user.
-            throw lastException;
-        }
+//        if (lastException != null) {
+//            // Re-throw the last exception encountered to alert the user.
+//            throw lastException;
+//        }
     }
 
     @Override

@@ -24,14 +24,17 @@ import java.util.Map;
 
 
 public class AddToUsersTable {
-    private CognitoCachingCredentialsProvider credentialsProvider;
+    //private CognitoCachingCredentialsProvider credentialsProvider;
     //CognitoCachingCredentialsProvider credentialsProvider;
     private AmazonDynamoDBClient ddbClient;
     private DynamoDBMapper mapper;
     //public UsersDO users_table;
     public AmazonClientException lastException;
     final String LOG_TAG = AddToUsersTable.class.getSimpleName();
-    public AddToUsersTable() {
+    private String userName;
+
+    public AddToUsersTable(String userName) {
+        this.userName = userName;
         //this.context = context;
         //credentialsProvider = new CognitoCachingCredentialsProvider(context, "us-east-1:43cde55a-51f7-4d7a-a2ab-f77c948eed21", Regions.US_EAST_1);
         //ddbClient = new AmazonDynamoDBClient(credentialsProvider);
@@ -42,11 +45,8 @@ public class AddToUsersTable {
     public void addItem() {
         Log.i (LOG_TAG, "Adding item...");
         final UsersDO users_table = new UsersDO();
-        users_table.setUserId();
-        users_table.setUserName("John");
-        users_table.setUserAge((double)23);
-        users_table.setUserDescription("First user yo");
-        users_table.setUserGender("Trans");
+        users_table.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+        users_table.setUserName(userName);
         users_table.setUserPhoto("NO PHOTO");
         users_table.setUserPrivacy("public".getBytes());
         try {

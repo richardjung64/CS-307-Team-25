@@ -1,19 +1,23 @@
 package com.styln;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
@@ -169,18 +173,47 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
-    public void addItem(View view) {
-        int id = view.getId();
-        Button a = (Button) findViewById(R.id.Bitem1);
-        Button b = (Button) findViewById(R.id.Bitem2);
-        a.setVisibility(View.INVISIBLE);
-        b.setVisibility(View.INVISIBLE);
-    }
+
     public void addTo(View view) {
-        Button a = (Button) findViewById(R.id.Bitem1);
-        Button b = (Button) findViewById(R.id.Bitem2);
-       a.setVisibility(View.VISIBLE);
-        b.setVisibility(View.VISIBLE);
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(HomeActivity.this);
+
+        // Setting Dialog Title
+        alertDialog.setTitle("Add To...");
+
+        // Setting Dialog Message
+        //alertDialog.setMessage("Do you want to save this file?");
+
+        // Setting Icon to Dialog
+        alertDialog.setIcon(R.drawable.main_add);
+
+        // Setting Positive "Yes" Button
+        alertDialog.setPositiveButton("Wardrobe", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                //Response Here
+                Toast.makeText(getApplicationContext(), "You clicked on Wardrobe",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // Setting Negative "NO" Button
+        alertDialog.setNegativeButton("Wishlist", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                //Response Here
+                Toast.makeText(getApplicationContext(), "You clicked on Wishlist",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // Setting Netural "Cancel" Button
+        alertDialog.setNeutralButton("Cancel", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(getApplicationContext(), "You clicked on Cancel",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // Showing Alert Message
+        alertDialog.show();
     }
 
     public void follow(View view) {
@@ -196,4 +229,6 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
+    public void followMe(View view) {
+    }
 }

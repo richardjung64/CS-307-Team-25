@@ -1,5 +1,6 @@
 package com.styln;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -8,16 +9,28 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import com.amazonaws.AmazonClientException;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
+import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
+import com.amazonaws.mobile.util.ThreadUtils;
+import com.styln.demo.nosql.DemoNoSQLOperationListAdapter;
+import com.styln.demo.nosql.DemoNoSQLOperationListItem;
+import com.styln.demo.nosql.DemoNoSQLTableBase;
+import com.styln.demo.nosql.DemoNoSQLTableFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.List;
+
+import static java.security.AccessController.getContext;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -26,10 +39,40 @@ public class HomeActivity extends AppCompatActivity {
     private TextView textLikes;
     private ImageView profilePic;
     private Button follow;
+    private String userName;
+    private AddToUsersTable addToUsersTable;
+    DemoNoSQLTableBase table;
+    ListView operationsListView;
+    private ArrayAdapter<DemoNoSQLOperationListItem> operationsListAdapter;
+
 
     static boolean liked = false;
     static int numLikes = 0;
     static boolean followed = false;
+
+    private void addItemTable() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    addToUsersTable.addItem();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+//                        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getApplicationContext());
+//                        dialogBuilder.setTitle(R.string.nosql_dialog_title_added_sample_data_text);
+//                        dialogBuilder.setMessage("Add successful");
+//                        dialogBuilder.setNegativeButton(R.string.nosql_dialog_ok_text, null);
+//                        dialogBuilder.show();
+                    }
+                });
+            }
+        }).start();
+    }
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,10 +102,25 @@ public class HomeActivity extends AppCompatActivity {
             follow.setText("FOLLOW");
             follow.setTextSize(12);
     }
+        if (SignInActivity.signin_opt == 'f') {
+            //String address = FacebookSignInProvider.userImageUrl;
+            //new LoadURLImage(address, profilePic).execute();
+            //userName.setText(FacebookSignInProvider.userName);
+            userName = FacebookSignInProvider.userName;
+            //Log.i(LOG_TAG,FacebookSignInProvider.userName);
+        }
+        else {
+            //String address = GoogleSignInProvider.userImageUrl;
+            //new LoadURLImage(address, profilePic).execute();
+            //userName.setText(GoogleSignInProvider.userName);
+            userName = GoogleSignInProvider.userName;
+            //Log.i(LOG_TAG,GoogleSignInProvider.userName);
+
+        }
+        addToUsersTable = new AddToUsersTable(userName);
+    addItemTable();
 
     }
-
-
 
     public void openHome(View view) {
         Log.d(LOG_TAG, "Launching Main Activity...");

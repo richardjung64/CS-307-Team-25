@@ -39,6 +39,7 @@ public class ProfileActivity extends AppCompatActivity {
     private ImageView myCol2;
     static boolean checked = false;
     private ImageView profilePic;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -271,10 +271,12 @@
         android:layout_alignLeft="@id/textbg"
         android:layout_alignStart="@+id/item1"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="350dp"
         android:text="Collection"
         android:textColor="@android:color/black"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:clickable="true"
+        android:onClick="openWardrobe"/>
 
     <TextView
         android:id="@+id/textWishlist"
@@ -283,10 +285,12 @@
         android:layout_alignLeft="@id/textbg"
         android:layout_alignStart="@+id/item1"
         android:layout_marginLeft="175dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="350dp"
         android:text="Wishlist"
         android:textColor="@android:color/black"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:clickable="true"
+        android:onClick="openWishlist"/>
 
     <TextView
         android:id="@+id/textPosts"

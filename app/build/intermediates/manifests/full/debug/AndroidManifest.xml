@@ -77,6 +77,10 @@
         <activity
             android:name="com.styln.FollowActivity"
             android:label="FollowerActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.styln.CollectionActivity"
+            android:label="CollectionActivity"
             android:theme="@style/AppTheme" >
         </activity>
         <activity

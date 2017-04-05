@@ -20,6 +20,7 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -57,18 +58,22 @@
         <activity
             android:name=".TrendActivity"
             android:label="TrendActivity"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ProfileActivity"
             android:label="ProfileActivity"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".SettingsActivity"
             android:label="SettingsActivity"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".FollowActivity"
             android:label="FollowerActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".CollectionActivity"
+            android:label="CollectionActivity"
             android:theme="@style/AppTheme">
         </activity>
     </application>

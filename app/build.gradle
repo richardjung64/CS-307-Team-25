@@ -8,6 +8,9 @@
 //
 apply plugin: 'com.android.application'
 
+dependencies {
+    compile 'com.android.support.constraint:constraint-layout:+'
+}
 android {
     compileSdkVersion 23
     buildToolsVersion '24.0.2'

@@ -40,7 +40,7 @@ public class ProfileActivity extends AppCompatActivity {
         }
         else {
             String address = GoogleSignInProvider.userImageUrl;
-           new LoadURLImage(address, profilePic).execute();
+            new LoadURLImage(address, profilePic).execute();
             userName.setText(GoogleSignInProvider.userName);
         }
 
@@ -85,5 +85,20 @@ public class ProfileActivity extends AppCompatActivity {
         finish();
     }
 
+    public void openWardrobe(View view) {
+        Log.d(LOG_TAG, "Launching Wardrobe Activity...");
+        startActivity(new Intent(ProfileActivity.this, CollectionActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wardrobe"));
+        // finish should always be called on the main thread.
+        finish();
+    }
+
+    public void openWishlist(View view) {
+        Log.d(LOG_TAG, "Launching Wishlist Activity...");
+        startActivity(new Intent(ProfileActivity.this, CollectionActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wishlist"));
+        // finish should always be called on the main thread.
+        finish();
+    }
 
 }

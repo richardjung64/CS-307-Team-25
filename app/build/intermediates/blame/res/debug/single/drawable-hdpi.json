@@ -4,12 +4,12 @@
         "source": "/Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/res/drawable-hdpi/messenger_bubble_small_blue.png"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-hdpi/com_facebook_tooltip_blue_background.9.png",
-        "source": "/Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/res/drawable-hdpi/com_facebook_tooltip_blue_background.9.png"
-    },
-    {
         "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-hdpi/com_facebook_button_like_icon_selected.png",
         "source": "/Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/res/drawable-hdpi/com_facebook_button_like_icon_selected.png"
+    },
+    {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-hdpi/com_facebook_tooltip_blue_background.9.png",
+        "source": "/Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/res/drawable-hdpi/com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-hdpi/messenger_bubble_large_white.png",

@@ -281,7 +281,7 @@
         android:layout_alignRight="@+id/dummyPostBG"
         android:layout_marginRight="10dp"
         android:layout_alignEnd="@+id/dummyPostBG"
-        android:id="@+id/follow"
+        android:id="@+id/homefollow"
         android:onClick="follow"
         android:clickable="true"/>
 
@@ -293,7 +293,7 @@
         android:onClick="followMe"
         android:text="FOLLOW ME"
         android:textSize="12sp"
-        android:layout_below="@+id/follow"
+        android:layout_below="@+id/homefollow"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 

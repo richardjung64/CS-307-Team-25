@@ -365,21 +365,17 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <HorizontalScrollView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignLeft="@+id/textbg"
         android:layout_alignStart="@+id/textbg"
         android:layout_below="@+id/linearLayout2"
-        android:layout_above="@+id/postBox"
-        android:layout_alignRight="@+id/textbg"
-        android:layout_alignEnd="@+id/textbg">
+        android:layout_above="@+id/lowerBox" >
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical" />
-    </HorizontalScrollView>
+    </android.support.v7.widget.RecyclerView>
 
 
 </RelativeLayout>

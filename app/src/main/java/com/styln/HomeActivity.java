@@ -85,7 +85,7 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         imageLike = (ImageView)findViewById(R.id.like);
         textLikes = (TextView)findViewById(R.id.numLikes);
-        follow = (Button)findViewById(R.id.follow);
+        follow = (Button)findViewById(R.id.homefollow);
 
         profilePic = (ImageView)findViewById(R.id.profilePicture);
         String address = FacebookSignInProvider.userImageUrl;

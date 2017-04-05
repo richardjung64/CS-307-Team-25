@@ -3,6 +3,9 @@ package com.styln;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
@@ -14,6 +17,9 @@ import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ProfileActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = ProfileActivity.class.getSimpleName();
@@ -22,6 +28,10 @@ public class ProfileActivity extends AppCompatActivity {
     private TextView userName;
     static boolean checked = false;
     private ImageView profilePic;
+
+    private List<Item> itemList = new ArrayList<>();
+    private RecyclerView recyclerView;
+    private ItemsAdapter iAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +54,29 @@ public class ProfileActivity extends AppCompatActivity {
             userName.setText(GoogleSignInProvider.userName);
         }
 
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
+        iAdapter = new ItemsAdapter(itemList);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+        recyclerView.setLayoutManager(mLayoutManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setAdapter(iAdapter);
+
+        prepareCollectionData();
+
+    }
+
+    private void prepareCollectionData() {
+        Item item = new Item("Adidas Shirt");
+        itemList.add(item);
+
+        item = new Item("Adidas Shirt");
+        itemList.add(item);
+
+        item = new Item("Adidas Shirt");
+        itemList.add(item);
+
+        iAdapter.notifyDataSetChanged();
     }
 
     public void openHome(View view) {

@@ -10,16 +10,13 @@ import android.widget.TextView;
 
 import java.util.List;
 
-/**
- * Created by shalingyi on 4/5/17.
- */
-
 public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.MyViewHolder> {
 
     private List<User> userList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView name, follow;
+        public TextView name;
+        public Button follow;
 
         public MyViewHolder(View view) {
             super(view);
@@ -45,7 +42,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.MyViewHolder
     public void onBindViewHolder(MyViewHolder holder, int position) {
         User user = userList.get(position);
         holder.name.setText(user.getName());
-
+        holder.follow.setText("Follow");
     }
 
     @Override

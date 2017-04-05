@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/shalingyi/.android/build-cache/91a0ec905ca6412cbf837bb73b3de7299af01e11/output/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/shalingyi/.android/build-cache/91a0ec905ca6412cbf837bb73b3de7299af01e11/output/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/shalingyi/.android/build-cache/91a0ec905ca6412cbf837bb73b3de7299af01e11/output/res/color/common_google_signin_btn_tint.xml"
+    }
+]

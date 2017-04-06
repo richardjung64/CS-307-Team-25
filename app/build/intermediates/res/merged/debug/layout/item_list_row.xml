@@ -51,6 +51,12 @@
         android:layout_centerVertical="true"
         app:srcCompat="@drawable/main_add" />
 
+    <ImageView
+        android:id="@+id/itemSpace"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        />
+
     />
 
 </RelativeLayout>

@@ -5,12 +5,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Space;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +29,7 @@ public class CollectionItemsAdapter extends RecyclerView.Adapter<CollectionItems
         public TextView name,brand;
         public ImageView image,action;
         public int sku;
+        public ImageView space;
 
         public MyViewHolder(View view) {
             super(view);
@@ -35,6 +38,7 @@ public class CollectionItemsAdapter extends RecyclerView.Adapter<CollectionItems
             image = (ImageView) view.findViewById(R.id.itemImage);
             action = (ImageView) view.findViewById(R.id.itemAction);
             sku = -1;
+            space = (ImageView) view.findViewById(R.id.itemSpace);
         }
     }
 
@@ -59,13 +63,13 @@ public class CollectionItemsAdapter extends RecyclerView.Adapter<CollectionItems
         holder.name.setText(item.getName());
         holder.brand.setText(item.getBrand());
         Glide.with(mContext).load(item.getImage()).into(holder.image);
-        holder.image.setOnClickListener(new View.OnClickListener() {
+        holder.space.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.d("HHAHA","HAHHA opening");
                 Intent intent= new Intent(mContext, ItemActivity.class);
                 intent.putExtra("SKU",""+holder.sku);
                 mContext.startActivity(intent);
-
             }
         });
         holder.action.setOnClickListener(new View.OnClickListener() {

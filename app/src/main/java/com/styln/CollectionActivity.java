@@ -62,25 +62,24 @@ public class CollectionActivity extends AppCompatActivity {
 
 
     private void prepareWardrobeData() {
-        Item item = new Item("Tshirt 1", "Adidas", R.drawable.item_1);
+        Item item = new Item("Tshirt 1", "Adidas",1,R.drawable.item_1);
         Wardrobe.add(item);
 
-        item = new Item("Tshirt 2", "Adidas", R.drawable.item_1);
+        item = new Item("Tshirt 2", "Adidas",1,R.drawable.item_1);
         Wardrobe.add(item);
-        item = new Item("Tshirt 3", "Adidas", R.drawable.item_1);
+        item = new Item("Tshirt 3", "Adidas",1,R.drawable.item_1);
         Wardrobe.add(item);
-        item = new Item("Tshirt 4", "Adidas", R.drawable.item_1);
+        item = new Item("Tshirt 4", "Adidas",1,R.drawable.item_1);
         Wardrobe.add(item);
-        item = new Item("Tshirt 5", "Adidas", R.drawable.item_1);
+        item = new Item("Tshirt 5", "Adidas",1,R.drawable.item_1);
         Wardrobe.add(item);
-        item = new Item("Tshirt 6", "Adidas", R.drawable.item_1);
+        item = new Item("Tshirt 6", "Adidas",1,R.drawable.item_1);
         Wardrobe.add(item);
-        item = new Item("Tshirt 7", "Adidas", R.drawable.item_1);
+        item = new Item("Tshirt 7", "Adidas",1,R.drawable.item_1);
         Wardrobe.add(item);
-        item = new Item("Tshirt 8", "Adidas", R.drawable.item_1);
+        item = new Item("Tshirt 8", "Adidas",1,R.drawable.item_1);
         Wardrobe.add(item);
-
-        item = new Item("Shoe 1", "Adidas", R.drawable.item_2);
+        item = new Item("Shoe 1", "Adidas",2,R.drawable.item_2);
         Wardrobe.add(item);
 
         iAdapter.notifyDataSetChanged();
@@ -88,7 +87,7 @@ public class CollectionActivity extends AppCompatActivity {
 
 
     private void prepareWishlistData() {
-        Item item = new Item("Shoe 1", "Adidas", R.drawable.item_2);
+        Item item = new Item("Shoe 1", "Adidas",2, R.drawable.item_2);
         Wishlist.add(item);
         iAdapter.notifyDataSetChanged();
     }

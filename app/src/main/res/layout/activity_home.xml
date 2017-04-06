@@ -301,7 +301,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         app:srcCompat="@drawable/item_1"
-        android:id="@+id/item1"
+        android:id="@+id/itemImage"
         android:layout_below="@+id/seperator"
         android:layout_alignLeft="@id/itemBG" />
     <ImageView
@@ -310,7 +310,7 @@
         app:srcCompat="@drawable/item_2"
         android:id="@+id/item2"
         android:layout_below="@+id/seperator"
-        android:layout_toRightOf="@id/item1"
+        android:layout_toRightOf="@id/itemImage"
          />
 
 

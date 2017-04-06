@@ -278,7 +278,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/textbg"
-        android:layout_alignStart="@+id/item1"
+        android:layout_alignStart="@+id/itemImage"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="370dp"
         android:text="Wardrobe"
@@ -305,7 +305,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/textbg"
-        android:layout_alignStart="@+id/item1"
+        android:layout_alignStart="@+id/itemImage"
 
         android:layout_below="@+id/profilePicture"
         android:layout_marginTop="20dp"

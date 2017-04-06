@@ -19,9 +19,9 @@ public class Item {
     private double price;
     private boolean availability;
 
-    private String[] colors;
+    private String Tag;
 
-    private int numLikes, numOwned;
+    private int numLikes, numOwned, rank;
     private URL storeLink;
 
     private String[] comments;
@@ -30,9 +30,10 @@ public class Item {
     public Item() {
     }
 
-    public Item(String name, String brand, int image) {
+    public Item(String name, String brand,int sku, int image) {
         this.name = name;
         this.brand = brand;
+        this.sku = sku;
         this.image = image;
     }
 
@@ -52,6 +53,14 @@ public class Item {
         this.brand = brand;
     }
 
+    public int getSKU() {
+        return sku;
+    }
+
+    public void setSKU(int sku) {
+        this.sku = sku;
+    }
+
     public int getImage() {
         return image;
     }
@@ -59,5 +68,7 @@ public class Item {
     public void setImage(int image) {
         this.image = image;
     }
+
+
 
 }

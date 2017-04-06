@@ -87,21 +87,21 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     private void prepareCollectionData() {
-        Item item = new Item("Tshirt 1", "Adidas",R.drawable.item_1);
+        Item item = new Item("Tshirt 1", "Adidas",1,R.drawable.item_1);
         itemList.add(item);
 
-        item = new Item("Tshirt 2", "Adidas",R.drawable.item_1);
+        item = new Item("Tshirt 2", "Adidas",1,R.drawable.item_1);
         itemList.add(item);
-        item = new Item("Tshirt 3", "Adidas",R.drawable.item_1);
+        item = new Item("Tshirt 3", "Adidas",1,R.drawable.item_1);
         itemList.add(item);
-        item = new Item("Tshirt 4", "Adidas",R.drawable.item_1);
+        item = new Item("Tshirt 4", "Adidas",1,R.drawable.item_1);
         itemList.add(item);
-        item = new Item("Tshirt 5", "Adidas",R.drawable.item_1);
+        item = new Item("Tshirt 5", "Adidas",1,R.drawable.item_1);
         itemList.add(item);
-        item = new Item("Tshirt 6", "Adidas",R.drawable.item_1);
+        item = new Item("Tshirt 6", "Adidas",1,R.drawable.item_1);
         itemList.add(item);
 
-        item = new Item("Shoe 1", "Adidas",R.drawable.item_2);
+        item = new Item("Shoe 1", "Adidas",2,R.drawable.item_2);
         itemList.add(item);
 
         iAdapter.notifyDataSetChanged();

@@ -146,23 +146,26 @@
 
 
     <ImageView
-        android:layout_width="220dp"
-        android:layout_height="220dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="15dp"
         app:srcCompat="@drawable/item_1"
-        android:id="@+id/item1"
-        android:layout_alignTop="@id/itemBG"/>
+        android:scaleType="centerCrop"
+        android:id="@+id/itemImage"
+        android:layout_alignTop="@id/itemBG"
+        android:layout_alignLeft="@id/itemBG"/>
 
     <TextView
         android:id="@+id/itemName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/item1"
-        android:layout_toEndOf="@+id/item1"
-        android:layout_toRightOf="@+id/item1"
+        android:layout_alignTop="@+id/itemImage"
+        android:layout_toEndOf="@+id/itemImage"
+        android:layout_toRightOf="@+id/itemImage"
         android:text="ItemName"
         android:textSize="25dp"
+        android:layout_marginLeft="10dp"
         android:textColor="@color/black_text"/>
 
     <TextView
@@ -181,7 +184,8 @@
         android:layout_alignLeft="@id/itemName"
         android:layout_below="@+id/sku"
         android:text="brand"
-        android:textSize="15dp"/>
+        android:textColor="@color/com_facebook_button_like_background_color_selected"
+        android:textSize="15dp" />
 
     <TextView
         android:id="@+id/itemPrice"
@@ -218,10 +222,10 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_toRightOf="@+id/item1"
         android:layout_alignRight="@+id/itemBG"
+        android:layout_alignLeft="@id/itemName"
         android:layout_alignEnd="@+id/itemBG"
-        android:layout_alignBottom="@+id/item1"
+        android:layout_alignBottom="@+id/itemImage"
         android:layout_below="@+id/itemAvailability">
 
         <LinearLayout
@@ -243,7 +247,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/item1"
+        android:layout_below="@+id/itemImage"
+        android:layout_marginTop="10dp"
         android:layout_alignEnd="@+id/itemBG"
         android:layout_alignLeft="@+id/itemBG"
         android:layout_alignRight="@+id/itemBG"
@@ -342,7 +347,9 @@
         android:text="StoreLink"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
-        android:textSize="15dp"/>
+        android:textSize="15dp"
+        android:clickable="true"
+        android:onClick="openLink"/>
 
     <TextView
         android:id="@+id/tags"

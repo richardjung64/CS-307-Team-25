@@ -216,22 +216,20 @@
         android:text="Available: Yes"
         android:textSize="15dp"/>
 
-
-
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignRight="@+id/itemBG"
-        android:layout_alignLeft="@id/itemName"
-        android:layout_alignEnd="@+id/itemBG"
         android:layout_alignBottom="@+id/itemImage"
+        android:layout_alignEnd="@+id/itemBG"
+        android:layout_alignLeft="@id/itemName"
+        android:layout_alignRight="@+id/itemBG"
+        android:layout_marginTop="10dp"
         android:layout_below="@+id/itemAvailability">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/itemDescription"
@@ -241,91 +239,107 @@
                 android:layout_below="@+id/itemPrice"
                 android:text="Description Will be very long"
                 android:textColor="@color/black_text" />
+
         </LinearLayout>
     </ScrollView>
 
+
     <LinearLayout
+        android:id="@+id/horizontalLayout"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
         android:layout_below="@+id/itemImage"
-        android:layout_marginTop="10dp"
-        android:layout_alignEnd="@+id/itemBG"
-        android:layout_alignLeft="@+id/itemBG"
+        android:layout_alignLeft="@+id/itemImage"
+        android:layout_alignStart="@+id/itemImage"
         android:layout_alignRight="@+id/itemBG"
-        android:layout_alignStart="@+id/itemBG"
-        android:orientation="vertical"
-        android:id="@+id/linearLayout3">
+        android:layout_marginTop="10dp"
+        android:layout_alignEnd="@+id/itemBG">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:orientation="horizontal">
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/numLikes"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:gravity="center"
-                android:textSize="20dp"
-                android:textColor="@color/black_text"/>
+                <TextView
+                    android:id="@+id/numLikes"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/black_text"
+                    android:textSize="20dp" />
 
-            <TextView
-                android:id="@+id/numOwned"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:gravity="center"
-                android:textSize="20dp"
-                android:textColor="@color/black_text"/>
+                <TextView
+                    android:id="@+id/numOwned"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/black_text"
+                    android:textSize="20dp" />
 
-            <TextView
-                android:id="@+id/rank"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Rank"
-                android:gravity="center"
-                android:textSize="15dp"/>
+                <TextView
+                    android:id="@+id/rank"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Rank"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/likes"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="likes"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/owned"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="owned"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/numRank"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/black_text"
+                    android:textSize="20dp" />
+            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/likes"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="likes"
-                android:gravity="center"
-                android:textSize="15dp"/>
-
-            <TextView
-                android:id="@+id/owned"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="owned"
-                android:gravity="center"
-                android:textSize="15dp"/>
-
-            <TextView
-                android:id="@+id/numRank"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:gravity="center"
-                android:textSize="20dp"
-                android:textColor="@color/black_text"/>
-        </LinearLayout>
-
+        <ImageView
+            android:id="@+id/itmeAction"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/main_add"
+            android:clickable="true"
+            android:onClick="itemAction"/>
     </LinearLayout>
+
+
 
     <ImageView
         android:id="@+id/storeLinkBG"
@@ -341,8 +355,8 @@
         android:id="@+id/storeLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout3"
-        android:layout_marginTop="15dp"
+        android:layout_below="@+id/horizontalLayout"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         android:text="StoreLink"
         android:textColor="@color/colorPrimary"

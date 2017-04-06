@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_like"
+        android:title="Like"/>
+
+    <item
+        android:id="@+id/menu_add_to_wishlist"
+        android:title="Add to Wishlist"/>
+    <item
+        android:id="@+id/menu_add_to_wardrobe"
+        android:title="Add to Wadrobe"/>
+
+
+</menu>

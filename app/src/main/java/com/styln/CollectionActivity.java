@@ -27,10 +27,10 @@ public class CollectionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collection);
+
         pageKey = getIntent().getStringExtra("KEY");
         Log.d(LOG_TAG, "Opened from " + pageKey);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         if(pageKey.equals("wardrobe")){
             iAdapter = new CollectionItemsAdapter(this, Wardrobe);
@@ -40,13 +40,12 @@ public class CollectionActivity extends AppCompatActivity {
             prepareWishlistData();
         }
 
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(iAdapter);
-
-
 
     }
 

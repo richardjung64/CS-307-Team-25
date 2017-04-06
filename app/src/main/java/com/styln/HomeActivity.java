@@ -5,8 +5,11 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -171,44 +174,41 @@ public class HomeActivity extends AppCompatActivity {
 
 
     public void addTo(View view) {
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(HomeActivity.this);
+        showPopupMenu(view);
+    }
 
-        // Setting Dialog Title
-        alertDialog.setTitle("Add To...");
-        // Setting Dialog Message
-        //alertDialog.setMessage("Do you want to save this file?");
+    private void showPopupMenu(View view) {
+        // inflate menu
+        PopupMenu popup = new PopupMenu(this, view);
+        MenuInflater inflater = popup.getMenuInflater();
+        inflater.inflate(R.menu.item_action_menu, popup.getMenu());
+        popup.setOnMenuItemClickListener(new HomeActivity.MyMenuItemClickListener());
+        popup.show();
+    }
 
-        // Setting Icon to Dialog
-        alertDialog.setIcon(R.drawable.main_add);
+    /**
+     * Click listener for popup menu items
+     */
+    class MyMenuItemClickListener implements PopupMenu.OnMenuItemClickListener {
 
-        // Setting Positive "Yes" Button
-        alertDialog.setPositiveButton("Wardrobe", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                //Response Here
-                Toast.makeText(getApplicationContext(), "Added to Wardrobe",
-                        Toast.LENGTH_SHORT).show();
+        public MyMenuItemClickListener() {
+        }
+        @Override
+        public boolean onMenuItemClick(MenuItem menuItem) {
+            switch (menuItem.getItemId()) {
+                case R.id.menu_like:
+                    Toast.makeText(getApplicationContext(), "Liked", Toast.LENGTH_SHORT).show();
+                    return true;
+                case R.id.menu_add_to_wardrobe:
+                    Toast.makeText(getApplicationContext(), "Added to Wardrobe", Toast.LENGTH_SHORT).show();
+                    return true;
+                case R.id.menu_add_to_wishlist:
+                    Toast.makeText(getApplicationContext(), "Added to Wishlist", Toast.LENGTH_SHORT).show();
+                    return true;
+                default:
             }
-        });
-
-        // Setting Negative "NO" Button
-        alertDialog.setNegativeButton("Wishlist", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                //Response Here
-                Toast.makeText(getApplicationContext(), "Added to Wishlist",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        // Setting Netural "Cancel" Button
-        alertDialog.setNeutralButton("Cancel", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(getApplicationContext(), "Canceled",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        // Showing Alert Message
-        alertDialog.show();
+            return false;
+        }
     }
 
     public void follow(View view) {

@@ -6,8 +6,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,6 +20,8 @@ import android.widget.Toast;
  */
 
 public class ProfileInformationActivity extends AppCompatActivity{
+    CheckBox ch1;
+    Button b1;
 
     private static String LOG_TAG = ProfileInformationActivity.class.getSimpleName();
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,22 +57,28 @@ public class ProfileInformationActivity extends AppCompatActivity{
             });
 
         //super.onCreate(savedInstanceState);
-        EditText editTextName3 = (EditText) findViewById(R.id.editText3);
-        editTextName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+        setContentView(R.layout.profileinformation);
+        ch1=(CheckBox)findViewById(R.id.checkBox1);
+        b1=(Button)findViewById(R.id.button);
+        b1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
-                boolean handled = false;
-                if (i == EditorInfo.IME_ACTION_NEXT) {
-                    String inputText = textView.getText().toString();
-                    Toast.makeText(ProfileInformationActivity.this, "You inputted: " + inputText, Toast.LENGTH_SHORT);
-                }
-                return handled;
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                StringBuffer result = new StringBuffer();
+                result.append("Thanks : ").append(ch1.isChecked());
+                Toast.makeText(ProfileInformationActivity.this, result.toString(),
+                        Toast.LENGTH_LONG).show();
             }
         });
 
 
         //super.onCreate(savedInstanceState);
-        EditText editTextName4 = (EditText) findViewById(R.id.editText4);
+        EditText editTextName3 = (EditText) findViewById(R.id.editText3);
         editTextName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
@@ -84,6 +95,8 @@ public class ProfileInformationActivity extends AppCompatActivity{
                 return handled;
             }
         });
+
+
 
 //        Log.d(LOG_TAG,"Launching Home Activity");
 //        startActivity(new Intent(ProfileInformationActivity.this, HomeActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));

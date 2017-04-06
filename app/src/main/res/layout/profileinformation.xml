@@ -30,19 +30,31 @@
         android:imeOptions="actionNext"
         />
 
-    <EditText
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="text"-->
+        <!--android:hint="Private/Public"-->
+        <!--android:ems="10"-->
+        <!--android:id="@+id/editText3"-->
+        <!--android:textSize="45dp"-->
+        <!--android:layout_below="@id/editText2"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:imeOptions="actionNext"-->
+        <!--/>-->
+
+    <CheckBox
+        android:id="@+id/checkBox1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="Private/Public"
-        android:ems="10"
-        android:id="@+id/editText3"
         android:textSize="45dp"
+        android:text="Private"
         android:layout_below="@id/editText2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:imeOptions="actionNext"
         />
+
 
     <EditText
         android:layout_width="wrap_content"
@@ -50,12 +62,13 @@
         android:inputType="text"
         android:hint="User Description"
         android:ems="10"
-        android:id="@+id/editText4"
+        android:id="@+id/editText3"
         android:textSize="45dp"
-        android:layout_below="@id/editText3"
+        android:layout_below="@id/checkBox1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:imeOptions="actionDone"
         android:imeActionLabel="Over and out!"
         />
 </RelativeLayout>
+

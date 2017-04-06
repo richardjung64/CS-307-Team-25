@@ -1,4 +1,4 @@
-#Wed Apr 05 00:25:27 EDT 2017
+#Wed Apr 05 23:19:03 EDT 2017
 file.9=/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/transforms/dex/debug/folders/1000/1/debug_e955ec6fa2b6d5ff4708faac8b3a7a2aca8c7a15/classes.dex
 base.10=/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-android-1.2.0_e3c47cf9bd2b0ec28cb44a0698e768fde82b5845
 file.8=/Users/jungr/Downloads/CS-307-Team-25-database_congif-2/app/build/intermediates/transforms/dex/debug/folders/1000/10/aws-android-sdk-ddb-2.3.9_880b63a387612920348c81620aaeb8e50feafe23/classes.dex

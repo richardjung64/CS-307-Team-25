@@ -2638,6 +2638,7 @@ containing a value of this type.
         public static final int center_horizontal=0x7f0c0021;
         public static final int center_vertical=0x7f0c0022;
         public static final int changeName=0x7f0c00a9;
+        public static final int checkBox1=0x7f0c00ee;
         public static final int checkbox=0x7f0c0067;
         public static final int chronometer=0x7f0c00e6;
         public static final int clip_horizontal=0x7f0c002e;
@@ -2671,8 +2672,7 @@ containing a value of this type.
         public static final int dummyPostBG=0x7f0c0081;
         public static final int editText=0x7f0c00ec;
         public static final int editText2=0x7f0c00ed;
-        public static final int editText3=0x7f0c00ee;
-        public static final int editText4=0x7f0c00ef;
+        public static final int editText3=0x7f0c00ef;
         public static final int edit_query=0x7f0c0071;
         public static final int end=0x7f0c0023;
         public static final int end_padder=0x7f0c00eb;

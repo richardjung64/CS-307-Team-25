@@ -48,7 +48,7 @@ public class AddToUsersTable {
         users_table.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
         users_table.setUserName(userName);
         users_table.setUserPhoto("NO PHOTO");
-        users_table.setUserPrivacy("public".getBytes());
+        users_table.setUserPrivacy(false);
         try {
             Log.i (LOG_TAG, "Adding for real now...");
             mapper.save(users_table);

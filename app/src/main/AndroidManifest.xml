@@ -81,7 +81,7 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".BrowseActivity" />
         <activity android:name=".ItemActivity"/>
-            <activity android:name=".ProfileInformationActivity" >
+            <activity android:name=".InformationActivity" >
         </activity>
     </application>
 

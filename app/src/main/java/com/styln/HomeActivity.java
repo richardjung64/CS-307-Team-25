@@ -22,9 +22,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.amazonaws.AmazonClientException;
+import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.amazonaws.mobile.util.ThreadUtils;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.models.nosql.UsersDO;
 import com.bumptech.glide.Glide;
 import com.styln.demo.nosql.DemoNoSQLOperationListItem;
 import com.styln.demo.nosql.DemoNoSQLTableBase;
@@ -51,6 +54,7 @@ public class HomeActivity extends AppCompatActivity {
 
     ListView operationsListView;
     private ArrayAdapter<DemoNoSQLOperationListItem> operationsListAdapter;
+    private boolean a = false;
 
     private List<Item> itemList = new ArrayList<>();
     private RecyclerView recyclerView;
@@ -195,6 +199,7 @@ public class HomeActivity extends AppCompatActivity {
             follow.setText("FOLLOW");
             follow.setTextSize(10);
     }
+    //TODO get our servers username
         if (Application.getSign_opt() == 'f') {
             profilePic = (ImageView)findViewById(R.id.profilePicture);
             String address = FacebookSignInProvider.userImageUrl;
@@ -239,6 +244,33 @@ public class HomeActivity extends AppCompatActivity {
         Item item = new Item("Tshirt 1", "Adidas",1,R.drawable.item_1);
         itemList.add(item);
         iAdapter.notifyDataSetChanged();
+    }
+
+    public void checkLogin()
+    {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        UsersDO user = mapper.load(UsersDO.class, AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+        if(user == null)
+            a =  true;
+    }
+    public void checkLoginHelper()
+    {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    checkLogin();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                    }
+                });
+            }
+        }).start();
     }
 
     public void openHome(View view) {

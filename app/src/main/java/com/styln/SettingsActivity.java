@@ -43,65 +43,20 @@ public class SettingsActivity extends AppCompatActivity {
         finish();
     }
 
-    String change = "";
-    public void changeName(View view) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("New Username");
-
-// Specify input
-        final EditText input = new EditText(this);
-        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_CLASS_TEXT);
-        builder.setView(input);
-
-//Confirm button
-        builder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                change = input.getText().toString();
-                userName.setText(change);
-            }
-        });
-//Cancel button
-        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
-
-        builder.show();
-
-    }
-
-
-
-    public void setPrivacy(View view) {
-        CompoundButton cb = (CheckBox) findViewById(R.id.AccPrivBox);
-        if(view.getId() == R.id.AccPrivBox){
-            checked = cb.isChecked();
-            if(checked){
-                //Set Account Private
-            } else {
-                //Set Account Public
-
-            }
-        }
-    }
 
     public void signOut(View view) {
-
         identityManager.signOut();
         startActivity(new Intent(SettingsActivity.this, SignInActivity.class));
         finish();
         return;
     }
 
-    public void changeAge(View view) {
-    }
 
-    public void changeGender(View view) {
-    }
-
-    public void changeDescription(View view) {
+    public void changeProfile(View view) {
+        Intent intent= new Intent(SettingsActivity.this, InformationActivity.class);
+        intent.putExtra("ID",AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+        Log.d(LOG_TAG,AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+        startActivity(intent);
+        return;
     }
 }

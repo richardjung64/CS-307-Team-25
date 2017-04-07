@@ -22,9 +22,9 @@ public class UsersDO {
     private String _userName;
     private String _userPhoto;
     private List<String> _userPosts;
-    private byte[] _userPrivacy;
-    private Set<String> _usersFollowers;
-    private Set<String> _usersFollowing;
+    private boolean _userPrivacy;
+    private List<String> _usersFollowers;
+    private List<String> _usersFollowing;
 
     @DynamoDBHashKey(attributeName = "userId")
     @DynamoDBAttribute(attributeName = "userId")
@@ -84,27 +84,27 @@ public class UsersDO {
         this._userPosts = _userPosts;
     }
     @DynamoDBAttribute(attributeName = "User_Privacy")
-    public byte[] getUserPrivacy() {
+    public boolean getUserPrivacy() {
         return _userPrivacy;
     }
 
-    public void setUserPrivacy(final byte[] _userPrivacy) {
+    public void setUserPrivacy(final boolean _userPrivacy) {
         this._userPrivacy = _userPrivacy;
     }
     @DynamoDBAttribute(attributeName = "Users_Followers")
-    public Set<String> getUsersFollowers() {
+    public List<String> getUsersFollowers() {
         return _usersFollowers;
     }
 
-    public void setUsersFollowers(final Set<String> _usersFollowers) {
+    public void setUsersFollowers(final List<String> _usersFollowers) {
         this._usersFollowers = _usersFollowers;
     }
     @DynamoDBAttribute(attributeName = "Users_Following")
-    public Set<String> getUsersFollowing() {
+    public List<String> getUsersFollowing() {
         return _usersFollowing;
     }
 
-    public void setUsersFollowing(final Set<String> _usersFollowing) {
+    public void setUsersFollowing(final List<String> _usersFollowing) {
         this._usersFollowing = _usersFollowing;
     }
 

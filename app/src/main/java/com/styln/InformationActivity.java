@@ -13,12 +13,21 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.RadioGroup;
 
+import com.amazonaws.mobile.AWSMobileClient;
+import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.models.nosql.UsersDO;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by jungr on 4/4/17.
  */
 
 public class InformationActivity extends AppCompatActivity{
-    CheckBox ch1;
+    String userID = "NOT_VALID";
+    CheckBox privacy;
     ImageView picture;
     Button confirm,cancel,changePic;
     EditText nameText,ageText,descriptionText;
@@ -30,6 +39,8 @@ public class InformationActivity extends AppCompatActivity{
     int privateCounter = 0;
     boolean isPrivate;
 
+
+
     String name,age;
     String genderIdentity;
     String userDescription;
@@ -39,33 +50,66 @@ public class InformationActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //user age
-        setContentView(R.layout.activity_Information);
+        setContentView(R.layout.activity_information);
+
         confirm = (Button) findViewById(R.id.change_confirm);
         cancel = (Button) findViewById(R.id.change_cancel);
+        picture = (ImageView)findViewById(R.id.change_picture);
+        changePic = (Button)findViewById(R.id.change_picture_button);
+        nameText = (EditText)findViewById(R.id.change_name);
+        ageText = (EditText)findViewById(R.id.change_age);
+        descriptionText = (EditText)findViewById(R.id.change_description);
 
+        //TODO loads userinfo
+        userID = getIntent().getStringExtra("ID");
+        if(userID == null){
+
+        } else {
+            /*//LOADS user info;
+            //UsersDO currentUser = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            nameText.setText(currentUser.getUserName());
+            ageText.setText(""+currentUser.getUserAge());
+            descriptionText.setText(currentUser.getUserDescription());
+            privacy = (CheckBox) findViewById(R.id.change_privacy);
+            if (currentUser.getUserPrivacy()) {
+                privateCounter++;
+            }
+            if(currentUser.getUserGender() == "male"){
+                radioSexButton = (RadioButton)findViewById(R.id.radio_male);
+            } else if (currentUser.getUserGender() == "female"){
+                radioSexButton = (RadioButton)findViewById(R.id.radio_female);
+            } else {
+                radioSexButton = (RadioButton)findViewById(R.id.radio_other);
+            }
+            radioSexButton.setChecked(true);
+*/
+        }
 
         //gender drop down list
         radioSexGroup = (RadioGroup) findViewById(R.id.genderGroup);
 
-
-        //private button
-        setContentView(R.layout.activity_Information);
-        ch1 = (CheckBox) findViewById(R.id.change_privacy);
-        if (ch1.isChecked()) {
-            privateCounter++;
-        }
-
     }
 
+    public UsersDO getUser(){
+        final DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        final java.util.List<com.amazonaws.models.nosql.UsersDO> loadresult = new ArrayList<com.amazonaws.models.nosql.UsersDO>();
+
+        com.amazonaws.models.nosql.UsersDO currentUser = null;
+        Runnable runnable = new Runnable() {
+            public void run() {
+                com.amazonaws.models.nosql.UsersDO currentUser = new com.amazonaws.models.nosql.UsersDO();
+            }
+        };
+        Thread mythread = new Thread(runnable);
+        mythread.start();
+        return currentUser;
+    }
 
     public void Confirm(View view) {
-        picture = (ImageView)findViewById(R.id.change_picture);
-        changePic = (Button)findViewById(R.id.change_picture_button);
-        nameText = (EditText)findViewById(R.id.change_name);
+        //TODO upload changes
+
         name = nameText.getText().toString();
-        ageText = (EditText)findViewById(R.id.change_age);
         age = ageText.getText().toString();
-        descriptionText = (EditText)findViewById(R.id.change_description);
         userDescription = descriptionText.getText().toString();
 
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.genderGroup);

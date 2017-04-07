@@ -245,9 +245,9 @@ public class DemoNoSQLTableUsers extends DemoNoSQLTableBase {
         firstItem.setUserPhoto(
                 DemoSampleDataGenerator.getRandomSampleString("User_Photo"));
         firstItem.setUserPosts(DemoSampleDataGenerator.getSampleList());
-        firstItem.setUserPrivacy(DemoSampleDataGenerator.getRandomSampleBinary());
-        firstItem.setUsersFollowers(DemoSampleDataGenerator.getSampleStringSet());
-        firstItem.setUsersFollowing(DemoSampleDataGenerator.getSampleStringSet());
+        firstItem.setUserPrivacy(false);
+        //firstItem.setUsersFollowers(DemoSampleDataGenerator.getSampleStringSet());
+        //firstItem.setUsersFollowing(DemoSampleDataGenerator.getSampleStringSet());
         AmazonClientException lastException = null;
 
         try {

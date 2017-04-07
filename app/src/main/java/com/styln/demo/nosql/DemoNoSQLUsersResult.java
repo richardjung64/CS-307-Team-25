@@ -208,7 +208,7 @@ public class DemoNoSQLUsersResult implements DemoNoSQLResult {
         userPostKeyTextView.setText("User_Post");
         //userPostValueTextView.setText(result.getUserPost());
         userPrivacyKeyTextView.setText("User_Privacy");
-        userPrivacyValueTextView.setText(bytesToHexString(result.getUserPrivacy()));
+       // userPrivacyValueTextView.setText(booleanToHexString(result.getUserPrivacy()));
         usersFollowersKeyTextView.setText("Users_Followers");
         usersFollowersValueTextView.setText(result.getUsersFollowers().toString());
         usersFollowingKeyTextView.setText("Users_Following");

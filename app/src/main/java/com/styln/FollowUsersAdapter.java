@@ -11,12 +11,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.amazonaws.models.nosql.UsersDO;
+
 import java.util.List;
 
 public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.MyViewHolder> {
 
     private Context mContext;
-    private List<User> userList;
+    private List<UsersDO> userList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView name;
@@ -32,7 +34,7 @@ public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.
     }
 
 
-    public FollowUsersAdapter(Context context, List<User> userList) {
+    public FollowUsersAdapter(Context context, List<UsersDO> userList) {
         mContext = context;
         this.userList = userList;
     }
@@ -46,8 +48,8 @@ public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
-        User user = userList.get(position);
-        holder.name.setText(user.getName());
+        UsersDO user = userList.get(position);
+        holder.name.setText(user.getUserName());
         holder.following = false;
 
         if(holder.following == false) {
@@ -57,6 +59,7 @@ public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.
             holder.following = false;
             holder.follow.setText("Unfollow");
         }
+
         holder.follow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

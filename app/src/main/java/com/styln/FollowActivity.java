@@ -9,16 +9,19 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 
+import com.amazonaws.mobile.AWSMobileClient;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.models.nosql.UsersDO;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class FollowActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = FollowActivity.class.getSimpleName();
     private String pageKey;
 
-    private List<User> followerList = new ArrayList<>();
-    private List<User> followingList = new ArrayList<>();
     private RecyclerView recyclerView;
     private FollowUsersAdapter uAdapter;
 
@@ -31,13 +34,7 @@ public class FollowActivity extends AppCompatActivity {
         pageKey = getIntent().getStringExtra("KEY");
         Log.d(LOG_TAG, "Opened from " + pageKey);
 
-        if(pageKey.equals("followers")){
-            uAdapter = new FollowUsersAdapter(this, followerList);
-            prepareFollowerData();
-        } else {
-            uAdapter = new FollowUsersAdapter(this, followingList);
-            prepareFollowingData();
-        }
+        uAdapter = new FollowUsersAdapter(this, getFollowList(pageKey));
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
@@ -45,6 +42,8 @@ public class FollowActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(uAdapter);
+
+        uAdapter.notifyDataSetChanged();
 
     }
 
@@ -56,35 +55,40 @@ public class FollowActivity extends AppCompatActivity {
         finish();
     }
 
-    private void prepareFollowerData() {
-        //TODO load followers list
-        User user = new User("Tiger");
-        followerList.add(user);
+    public List<UsersDO> getFollowList(final String str){
 
-        user = new User("Tiger 2");
-        followerList.add(user);
+        final DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        final List<UsersDO> loadresult = new ArrayList<UsersDO>();
 
-        user = new User("Tiger 3");
-        followerList.add(user);
+        Runnable runnable = new Runnable() {
+            public void run() {
+                UsersDO currentUser = new UsersDO();
+                String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+                currentUser = mapper.load(UsersDO.class, userID);
+                List<String> tempSet;
 
-        user = new User("Tiger 4");
-        followerList.add(user);
+                if (str.equals("followers")) {
+                    tempSet = currentUser.getUsersFollowers();
+                } else {
+                    tempSet = currentUser.getUsersFollowing();
+                }
+                currentUser.getUsersFollowers().add(5,"dd");
 
-        uAdapter.notifyDataSetChanged();
+                if(currentUser.getUsersFollowers() == null){
+                    Log.d(LOG_TAG,"NULLLLL");
+                }
+                List<String> result = new ArrayList<String>(tempSet);
+
+                for (String str : result) {
+                    UsersDO iterator = mapper.load(UsersDO.class, str);
+                    loadresult.add(iterator);
+                }
+            }
+        };
+        Thread mythread = new Thread(runnable);
+        mythread.start();
+        return loadresult;
     }
-
-
-    private void prepareFollowingData() {
-        //TODO load following list
-        User user = new User("Tiger");
-        followingList.add(user);
-
-        user = new User("Tiger 2");
-        followingList.add(user);
-
-        uAdapter.notifyDataSetChanged();
-    }
-
 
     public void refreshFollowers(View view) {
         Log.d(LOG_TAG, "Refresh Followers");

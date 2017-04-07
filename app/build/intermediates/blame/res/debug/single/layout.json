@@ -288,6 +288,10 @@
         "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/profileinformation.xml"
     },
     {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_information.xml",
+        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/activity_information.xml"
+    },
+    {
         "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
         "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_list_menu_item_icon.xml"
     },

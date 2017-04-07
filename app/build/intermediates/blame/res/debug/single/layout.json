@@ -1,342 +1,682 @@
 [
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_action_menu_layout.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_demo_identity.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\fragment_demo_identity.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_splash.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_splash.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/item_list_row.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/item_list_row.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_round.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\layout\\messenger_button_send_white_round.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/com_facebook_activity_layout.xml",
-        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/com_facebook_activity_layout.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_large.xml",
-        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/messenger_button_send_blue_large.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_small.xml",
-        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/messenger_button_send_blue_small.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_login_fragment.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\layout\\com_facebook_login_fragment.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/select_dialog_singlechoice_material.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_splash.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/support_simple_spinner_dropdown_item.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_template_part_time.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_menu_item_action_area.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_grid_row.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\item_grid_row.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_layout_snackbar.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_trend.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_trend.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_layout_tab_icon.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_list_menu_item_icon.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_template_part_chronometer.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_action_menu_item_layout.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_layout_snackbar_include.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_list_row.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\user_list_row.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_round.xml",
-        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/messenger_button_send_white_round.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_template_big_media.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\layout\\design_layout_snackbar.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_sign_in.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_sign_in.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\notification_template_lines.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_screen_simple.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\notification_template_big_media.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/list_item_icon_text_with_subtitle.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/list_item_icon_text_with_subtitle.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/com_facebook_login_fragment.xml",
-        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/com_facebook_login_fragment.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\layout\\design_layout_snackbar.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_item.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_item.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_demo_nosql_select_operation.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\fragment_demo_nosql_select_operation.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_navigation_menu_item.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_demo_identity.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\fragment_demo_identity.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/content_home.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/content_home.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_screen_toolbar.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_demo_nosql_select_operation.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\fragment_demo_nosql_select_operation.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_activity_chooser_view_list_item.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_demo_nosql_show_results.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\fragment_demo_nosql_show_results.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_home.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/fragment_demo_home.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\layout\\design_navigation_menu.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_nosql_select_operation.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/fragment_demo_nosql_select_operation.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_icon_text_with_subtitle.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\list_item_icon_text_with_subtitle.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_alert_dialog_button_bar_material.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_action_bar_up_container.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_action_bar_title_item.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_demo_instruction.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\fragment_demo_instruction.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_expanded_menu_layout.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_profile.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_profile.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/list_item_demo_button_icon_text.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/list_item_demo_button_icon_text.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_drawer_item.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\nav_drawer_item.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_select_dialog_material.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\demo_nosql_select_table_list_item.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\demo_nosql_select_table_list_item.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_layout_tab_text.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_follow.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_follow.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_browse.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_browse.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_collection.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_collection.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_navigation_item.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/demo_nosql_select_operation_list_item.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/demo_nosql_select_operation_list_item.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_demo_button_icon_text.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\list_item_demo_button_icon_text.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_identity.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/fragment_demo_identity.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_alert_dialog_material.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_search_view.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_list_menu_item_checkbox.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_settings.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_settings.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_navigation_item_header.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/user_list_row.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/user_list_row.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_demo_home.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\fragment_demo_home.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_list_menu_item_layout.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_collection.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_collection.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_dialog_title_material.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_follow.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_follow.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_template_lines.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_splash.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/demo_nosql_select_operation_list_header.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/demo_nosql_select_operation_list_header.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/demo_nosql_select_table_list_item.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/demo_nosql_select_table_list_item.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_navigation_item_subheader.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_list_menu_item_radio.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\notification_template_big_media.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_small.xml",
-        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/messenger_button_send_white_small.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_small.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\0353afd173d8f0a5cac49606b483077135fd2a93\\output\\res\\layout\\messenger_button_send_blue_small.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_media_cancel_action.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\layout\\design_navigation_item.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_trend.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_trend.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_profile.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_profile.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_large.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\layout\\messenger_button_send_white_large.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/item_grid_row.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/item_grid_row.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_main.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_tooltip_bubble.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\layout\\com_facebook_tooltip_bubble.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_popup_menu_item_layout.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_action_mode_close_item_material.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_home.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_home.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_activity_chooser_view.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_nosql_select_table.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/fragment_demo_nosql_select_table.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_round.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\0353afd173d8f0a5cac49606b483077135fd2a93\\output\\res\\layout\\messenger_button_send_blue_round.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_large.xml",
-        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/messenger_button_send_white_large.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_icon_text_with_subtitle.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\list_item_icon_text_with_subtitle.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/select_dialog_multichoice_material.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_action_mode_bar.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_round.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\0353afd173d8f0a5cac49606b483077135fd2a93\\output\\res\\layout\\messenger_button_send_white_round.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_bottom_sheet_dialog.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_demo_nosql_show_results.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\fragment_demo_nosql_show_results.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_nosql_show_results.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/fragment_demo_nosql_show_results.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_list_row.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\user_list_row.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_screen_content_include.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\notification_template_lines.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_template_media.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_template_big_media_narrow.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\notification_media_action.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_navigation_item_separator.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sign_in.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_sign_in.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/select_dialog_item_material.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_round.xml",
-        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/messenger_button_send_blue_round.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_demo_home.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\fragment_demo_home.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_collection.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_collection.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_activity_layout.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\layout\\com_facebook_activity_layout.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_home.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/com_facebook_tooltip_bubble.xml",
-        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/com_facebook_tooltip_bubble.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_navigation_menu.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_large.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\0353afd173d8f0a5cac49606b483077135fd2a93\\output\\res\\layout\\messenger_button_send_white_large.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_media_action.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sign_in.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_sign_in.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/nav_drawer_item.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/nav_drawer_item.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_instruction.xml",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/fragment_demo_instruction.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_list_row.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\item_list_row.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_browse.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_browse.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_activity_layout.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\0353afd173d8f0a5cac49606b483077135fd2a93\\output\\res\\layout\\com_facebook_activity_layout.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_small.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\0353afd173d8f0a5cac49606b483077135fd2a93\\output\\res\\layout\\messenger_button_send_white_small.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_large.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\layout\\messenger_button_send_blue_large.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_drawer_item.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\nav_drawer_item.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_demo_button_icon_text.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\list_item_demo_button_icon_text.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_small.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\layout\\messenger_button_send_blue_small.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_home.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\content_home.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\demo_nosql_select_operation_list_header.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\demo_nosql_select_operation_list_header.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_follow.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_follow.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\demo_nosql_select_operation_list_item.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\demo_nosql_select_operation_list_item.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_round.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\layout\\messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_item.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_item.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_tooltip_bubble.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\0353afd173d8f0a5cac49606b483077135fd2a93\\output\\res\\layout\\com_facebook_tooltip_bubble.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\demo_nosql_select_table_list_item.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\demo_nosql_select_table_list_item.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_large.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\0353afd173d8f0a5cac49606b483077135fd2a93\\output\\res\\layout\\messenger_button_send_blue_large.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_demo_nosql_select_table.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\fragment_demo_nosql_select_table.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_home.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\content_home.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_profile.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_grid_row.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\item_grid_row.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_item.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_item.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_login_fragment.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\0353afd173d8f0a5cac49606b483077135fd2a93\\output\\res\\layout\\com_facebook_login_fragment.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_demo_nosql_select_table.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\fragment_demo_nosql_select_table.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_small.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\layout\\messenger_button_send_white_small.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\demo_nosql_select_operation_list_item.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\demo_nosql_select_operation_list_item.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_browse.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_browse.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_list_row.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\item_list_row.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\demo_nosql_select_operation_list_header.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\demo_nosql_select_operation_list_header.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_trend.xml",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_trend.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_demo_instruction.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\layout\\fragment_demo_instruction.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\layout\\design_menu_item_action_area.xml"
     }
 ]

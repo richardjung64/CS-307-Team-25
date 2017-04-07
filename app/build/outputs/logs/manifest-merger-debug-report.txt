@@ -1,225 +1,225 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:2:1-82:12
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:2:1-82:12
 	package
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:3:5-24
-		INJECTED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml
-		INJECTED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:3:5-24
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml
-		INJECTED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml
-		INJECTED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:6:5-79
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:6:22-76
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:7:5-76
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:7:5-76
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:7:22-73
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:7:22-73
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:8:5-71
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:8:5-71
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:8:22-68
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:8:22-68
 uses-permission#android.permission.USE_CREDENTIALS
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:9:5-74
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:9:5-74
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:9:22-71
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:9:22-71
 application
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:11:5-80:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/angie/.android/build-cache/9bc5759c31d141c07172ee2e48b3434f2c1a8011/output/AndroidManifest.xml:9:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] /home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/AndroidManifest.xml:28:5-20
-MERGED from [com.google.android.gms:play-services-plus:10.2.0] /home/angie/.android/build-cache/67c9617198b266eed6c9e0b6222baba96e51a9d3/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-auth:10.2.0] /home/angie/.android/build-cache/a79d49056ebf820275ac87c3fdf31f04ef69b7ea/output/AndroidManifest.xml:19:5-25:19
-MERGED from [com.google.android.gms:play-services-base:10.2.0] /home/angie/.android/build-cache/9162ef78332bad0b3436370d831d942a794a662b/output/AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:10.2.0] /home/angie/.android/build-cache/b16593b2787cec581141f1859de5ee867cf3b9ce/output/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:10.2.0] /home/angie/.android/build-cache/4ba2336a237043c57025ea38a1e9afc24de18d26/output/AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:design:23.4.0] /home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] /home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/angie/.android/build-cache/a7a049971f058f377190bbd4bc1facc9140ed4b3/output/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/angie/.android/build-cache/2cb037db0f29768ce4d2cb28517b588ec5a5cb19/output/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:24.0.0] /home/angie/.android/build-cache/c46ed6ab309d04c6796697f3dda2ce09fc7f536d/output/AndroidManifest.xml:25:5-20
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:11:5-80:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Kevin Jiang\.android\build-cache\9595312a9493d7f595d106b15a7cde7c050dac03\output\AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] C:\Users\Kevin Jiang\.android\build-cache\39deb89e8ef41c536ef4212976ab38cf27045362\output\AndroidManifest.xml:28:5-20
+MERGED from [com.google.android.gms:play-services-plus:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\10b891b6a6a01cd488e172a26ab1c0ad02e83485\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-auth:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\b40b51b88660fcbb33e3f20461ddbd03553e8f78\output\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-base:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\5123edf7b4758aa1ed0a73520fdd4009edceeff6\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\55c0a7d99ca350f08d8976c6c81dd264c7e782ab\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\1bb28ec90cc483cd02a6e2b9491477e2e62eae82\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:design:23.4.0] C:\Users\Kevin Jiang\.android\build-cache\fb2e6ec1e7334a9169012a346f737db6a00215ed\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Kevin Jiang\.android\build-cache\18f6d3692b60abcf5d4316c2355f390d850729ca\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Kevin Jiang\.android\build-cache\1f8e1d4103a50e9dcd04d290b29490f8a394a03a\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Kevin Jiang\.android\build-cache\9b0c55851a3c3bec410e80f1e1fda786bb6b91c5\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Kevin Jiang\.android\build-cache\e96579d863a50c026661f84867ce7c8c040de908\output\AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:15:9-41
 	android:allowBackup
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:13:9-35
 	android:icon
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:14:9-43
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:14:9-43
 	android:theme
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:16:9-40
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:16:9-40
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:12:9-36
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:12:9-36
 activity#com.styln.SplashActivity
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:17:9-26:20
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:17:9-26:20
 	android:label
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:20:13-45
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:20:13-45
 	android:configChanges
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:19:13-83
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:19:13-83
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:18:13-43
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:18:13-43
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:21:13-25:29
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:22:17-69
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:22:25-66
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:24:17-77
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:24:27-74
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:24:27-74
 activity#com.styln.SignInActivity
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:27:9-30:62
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:27:9-30:62
 	android:label
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:30:13-59
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:30:13-59
 	android:configChanges
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:29:13-83
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:29:13-83
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:28:13-43
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:28:13-43
 activity#com.styln.MainActivity
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:31:9-34:51
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:31:9-34:51
 	android:label
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:33:13-56
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:33:13-56
 	android:launchMode
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:34:13-48
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:34:13-48
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:32:13-41
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:32:13-41
 activity#com.facebook.FacebookActivity
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:38:9-42:75
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:38:9-42:75
 	android:label
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:41:13-45
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:41:13-45
 	android:configChanges
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:40:13-96
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:40:13-96
 	android:theme
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:42:13-72
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:42:13-72
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:39:13-57
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:39:13-57
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:44:9-46:55
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:44:9-46:55
 	android:value
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:46:13-52
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:46:13-52
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:45:13-58
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:45:13-58
 meta-data#com.google.android.gms.version
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:50:9-52:69
-MERGED from [com.google.android.gms:play-services-basement:10.2.0] /home/angie/.android/build-cache/4ba2336a237043c57025ea38a1e9afc24de18d26/output/AndroidManifest.xml:20:9-121
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:50:9-52:69
+MERGED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\1bb28ec90cc483cd02a6e2b9491477e2e62eae82\output\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:52:13-66
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:52:13-66
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:51:13-58
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:51:13-58
 activity#com.styln.HomeActivity
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:54:9-57:47
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:54:9-57:47
 	android:label
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:56:13-56
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:56:13-56
 	android:theme
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:57:13-44
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:57:13-44
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:55:13-41
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:55:13-41
 activity#com.styln.TrendActivity
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:58:9-61:47
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:58:9-61:47
 	android:label
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:60:13-42
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:60:13-42
 	android:theme
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:61:13-44
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:61:13-44
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:59:13-42
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:59:13-42
 activity#com.styln.ProfileActivity
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:62:9-65:47
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:62:9-65:47
 	android:label
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:64:13-44
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:64:13-44
 	android:theme
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:65:13-44
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:65:13-44
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:63:13-44
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:63:13-44
 activity#com.styln.SettingsActivity
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:66:9-69:47
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:66:9-69:47
 	android:label
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:68:13-45
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:68:13-45
 	android:theme
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:69:13-44
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:69:13-44
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:67:13-45
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:67:13-45
 activity#com.styln.FollowActivity
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:70:9-73:47
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:70:9-73:47
 	android:label
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:72:13-45
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:72:13-45
 	android:theme
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:73:13-44
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:73:13-44
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:71:13-43
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:71:13-43
 activity#com.styln.CollectionActivity
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:74:9-77:47
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:74:9-77:47
 	android:label
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:76:13-47
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:76:13-47
 	android:theme
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:77:13-44
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:77:13-44
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:75:13-47
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:75:13-47
 activity#com.styln.BrowseActivity
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:78:9-52
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:78:9-52
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:78:19-49
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:78:19-49
 activity#com.styln.ItemActivity
-ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:79:9-59
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:79:9-59
 	android:name
-		ADDED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml:79:19-47
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:79:19-47
 uses-sdk
-INJECTED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:multidex:1.0.1] /home/angie/.android/build-cache/953b9abdc435748959bc441a1a63d33ec0aba138/output/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/angie/.android/build-cache/9bc5759c31d141c07172ee2e48b3434f2c1a8011/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] /home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/AndroidManifest.xml:24:5-26:41
-MERGED from [com.google.android.gms:play-services-plus:10.2.0] /home/angie/.android/build-cache/67c9617198b266eed6c9e0b6222baba96e51a9d3/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-auth:10.2.0] /home/angie/.android/build-cache/a79d49056ebf820275ac87c3fdf31f04ef69b7ea/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-auth-base:10.2.0] /home/angie/.android/build-cache/6e9ffb6eb4498c61ea4dd53a5d0330b3da25c23a/output/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-base:10.2.0] /home/angie/.android/build-cache/9162ef78332bad0b3436370d831d942a794a662b/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tasks:10.2.0] /home/angie/.android/build-cache/b16593b2787cec581141f1859de5ee867cf3b9ce/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:10.2.0] /home/angie/.android/build-cache/4ba2336a237043c57025ea38a1e9afc24de18d26/output/AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:design:23.4.0] /home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.4.0] /home/angie/.android/build-cache/272b6a4acd4c61cf074951b15c019d8ea1994075/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.4.0] /home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/angie/.android/build-cache/a7a049971f058f377190bbd4bc1facc9140ed4b3/output/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/angie/.android/build-cache/2cb037db0f29768ce4d2cb28517b588ec5a5cb19/output/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:24.0.0] /home/angie/.android/build-cache/c46ed6ab309d04c6796697f3dda2ce09fc7f536d/output/AndroidManifest.xml:21:5-23:54
-MERGED from [jp.wasabeef:glide-transformations:2.0.2] /home/angie/.android/build-cache/6d92fffdd5497384afcffe8711fbf81230a9f607/output/AndroidManifest.xml:8:5-10:41
-MERGED from [jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1] /home/angie/.android/build-cache/219b70cbdbc2e305623a941d7ce6c69908d55afa/output/AndroidManifest.xml:8:5-10:41
+INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Kevin Jiang\.android\build-cache\9595312a9493d7f595d106b15a7cde7c050dac03\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\Kevin Jiang\.android\build-cache\7a5fb343ee0bc75f172bf9a9a3c5595432faa4b5\output\AndroidManifest.xml:18:5-42
+MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] C:\Users\Kevin Jiang\.android\build-cache\39deb89e8ef41c536ef4212976ab38cf27045362\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.google.android.gms:play-services-plus:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\10b891b6a6a01cd488e172a26ab1c0ad02e83485\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\b40b51b88660fcbb33e3f20461ddbd03553e8f78\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\144a5983e6572f9675a41fe4d27aea8154a63640\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\5123edf7b4758aa1ed0a73520fdd4009edceeff6\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\55c0a7d99ca350f08d8976c6c81dd264c7e782ab\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\1bb28ec90cc483cd02a6e2b9491477e2e62eae82\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:design:23.4.0] C:\Users\Kevin Jiang\.android\build-cache\fb2e6ec1e7334a9169012a346f737db6a00215ed\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\Kevin Jiang\.android\build-cache\f79979407ce385602dfe4e4f8a3a868e1d51ebce\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Kevin Jiang\.android\build-cache\18f6d3692b60abcf5d4316c2355f390d850729ca\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Kevin Jiang\.android\build-cache\1f8e1d4103a50e9dcd04d290b29490f8a394a03a\output\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Kevin Jiang\.android\build-cache\9b0c55851a3c3bec410e80f1e1fda786bb6b91c5\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Kevin Jiang\.android\build-cache\e96579d863a50c026661f84867ce7c8c040de908\output\AndroidManifest.xml:21:5-23:54
+MERGED from [jp.wasabeef:glide-transformations:2.0.2] C:\Users\Kevin Jiang\.android\build-cache\a0dccc447af79bc4dd251e688154c84ea3e1a771\output\AndroidManifest.xml:8:5-10:41
+MERGED from [jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1] C:\Users\Kevin Jiang\.android\build-cache\02e4e9d7d454cfbc85c9bf34cdbb77548b871443\output\AndroidManifest.xml:8:5-10:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.4.0] /home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Kevin Jiang\.android\build-cache\18f6d3692b60abcf5d4316c2355f390d850729ca\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml
-		INJECTED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml
-		INJECTED from /home/angie/AYGC/CS-307-Team-25/app/src/main/AndroidManifest.xml
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/angie/.android/build-cache/a79d49056ebf820275ac87c3fdf31f04ef69b7ea/output/AndroidManifest.xml:20:9-189
+ADDED from [com.google.android.gms:play-services-auth:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\b40b51b88660fcbb33e3f20461ddbd03553e8f78\output\AndroidManifest.xml:20:9-189
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/angie/.android/build-cache/a79d49056ebf820275ac87c3fdf31f04ef69b7ea/output/AndroidManifest.xml:20:129-162
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\b40b51b88660fcbb33e3f20461ddbd03553e8f78\output\AndroidManifest.xml:20:129-162
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/angie/.android/build-cache/a79d49056ebf820275ac87c3fdf31f04ef69b7ea/output/AndroidManifest.xml:20:163-187
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\b40b51b88660fcbb33e3f20461ddbd03553e8f78\output\AndroidManifest.xml:20:163-187
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/angie/.android/build-cache/a79d49056ebf820275ac87c3fdf31f04ef69b7ea/output/AndroidManifest.xml:20:69-128
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\b40b51b88660fcbb33e3f20461ddbd03553e8f78\output\AndroidManifest.xml:20:69-128
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/angie/.android/build-cache/a79d49056ebf820275ac87c3fdf31f04ef69b7ea/output/AndroidManifest.xml:20:19-68
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\b40b51b88660fcbb33e3f20461ddbd03553e8f78\output\AndroidManifest.xml:20:19-68
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/angie/.android/build-cache/a79d49056ebf820275ac87c3fdf31f04ef69b7ea/output/AndroidManifest.xml:24:9-184
+ADDED from [com.google.android.gms:play-services-auth:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\b40b51b88660fcbb33e3f20461ddbd03553e8f78\output\AndroidManifest.xml:24:9-184
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/angie/.android/build-cache/a79d49056ebf820275ac87c3fdf31f04ef69b7ea/output/AndroidManifest.xml:24:64-87
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\b40b51b88660fcbb33e3f20461ddbd03553e8f78\output\AndroidManifest.xml:24:64-87
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/angie/.android/build-cache/a79d49056ebf820275ac87c3fdf31f04ef69b7ea/output/AndroidManifest.xml:24:88-182
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\b40b51b88660fcbb33e3f20461ddbd03553e8f78\output\AndroidManifest.xml:24:88-182
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/angie/.android/build-cache/a79d49056ebf820275ac87c3fdf31f04ef69b7ea/output/AndroidManifest.xml:24:18-63
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\b40b51b88660fcbb33e3f20461ddbd03553e8f78\output\AndroidManifest.xml:24:18-63
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/angie/.android/build-cache/9162ef78332bad0b3436370d831d942a794a662b/output/AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\5123edf7b4758aa1ed0a73520fdd4009edceeff6\output\AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/angie/.android/build-cache/9162ef78332bad0b3436370d831d942a794a662b/output/AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\5123edf7b4758aa1ed0a73520fdd4009edceeff6\output\AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/angie/.android/build-cache/9162ef78332bad0b3436370d831d942a794a662b/output/AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\5123edf7b4758aa1ed0a73520fdd4009edceeff6\output\AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/angie/.android/build-cache/9162ef78332bad0b3436370d831d942a794a662b/output/AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\5123edf7b4758aa1ed0a73520fdd4009edceeff6\output\AndroidManifest.xml:19:19-85

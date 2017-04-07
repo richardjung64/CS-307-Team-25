@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/color-v23/abc_color_highlight_material.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\color-v23\\abc_color_highlight_material.xml"
     }
 ]

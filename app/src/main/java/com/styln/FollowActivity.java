@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import com.amazonaws.models.nosql.UsersDO;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,8 +18,8 @@ public class FollowActivity extends AppCompatActivity {
     private static final String LOG_TAG = FollowActivity.class.getSimpleName();
     private String pageKey;
 
-    private List<User> followerList = new ArrayList<>();
-    private List<User> followingList = new ArrayList<>();
+    private List<UsersDO> followerList = new ArrayList<>();
+    private List<UsersDO> followingList = new ArrayList<>();
     private RecyclerView recyclerView;
     private FollowUsersAdapter uAdapter;
 
@@ -57,16 +58,16 @@ public class FollowActivity extends AppCompatActivity {
     }
 
     private void prepareFollowerData() {
-        User user = new User("Tiger");
+        UsersDO user = new UsersDO("Tiger");
         followerList.add(user);
 
-        user = new User("Tiger 2");
+        user = new UsersDO("Tiger 2");
         followerList.add(user);
 
-        user = new User("Tiger 3");
+        user = new UsersDO("Tiger 3");
         followerList.add(user);
 
-        user = new User("Tiger 4");
+        user = new UsersDO("Tiger 4");
         followerList.add(user);
 
         uAdapter.notifyDataSetChanged();
@@ -74,10 +75,10 @@ public class FollowActivity extends AppCompatActivity {
 
 
     private void prepareFollowingData() {
-        User user = new User("Tiger");
+        UsersDO user = new UsersDO("Tiger");
         followingList.add(user);
 
-        user = new User("Tiger 2");
+        user = new UsersDO("Tiger 2");
         followingList.add(user);
 
         uAdapter.notifyDataSetChanged();

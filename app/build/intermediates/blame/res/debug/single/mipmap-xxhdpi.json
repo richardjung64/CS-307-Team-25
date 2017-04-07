@@ -1,10 +1,18 @@
 [
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/splash_icon.png",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/mipmap-xxhdpi/splash_icon.png"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
-        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\splash_icon.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-xxhdpi\\splash_icon.png"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\splash_icon.png",
+        "source": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-xxhdpi\\splash_icon.png"
     }
 ]

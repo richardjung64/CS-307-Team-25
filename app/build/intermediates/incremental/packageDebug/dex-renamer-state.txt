@@ -1,0 +1,7 @@
+#Fri Apr 07 13:59:10 EDT 2017
+base.0=D\:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_d0897ab172418380662ab79023f9e2052decb0a5
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_f4769a3817c492306e9f8e4539ebd9d17f94fd63\\classes.dex
+base.1=D\:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_f4769a3817c492306e9f8e4539ebd9d17f94fd63
+file.0=D\:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_d0897ab172418380662ab79023f9e2052decb0a5\\classes.dex

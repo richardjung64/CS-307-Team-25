@@ -8,6 +8,8 @@ import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBIndexRan
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBRangeKey;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBTable;
 
+import org.w3c.dom.UserDataHandler;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -26,6 +28,13 @@ public class UsersDO {
     private Set<String> _usersFollowers;
     private Set<String> _usersFollowing;
 
+    public UsersDO()
+    {
+    }
+    public UsersDO(String name)
+    {
+        _userName   = name;
+    }
     @DynamoDBHashKey(attributeName = "userId")
     @DynamoDBAttribute(attributeName = "userId")
     public String getUserId() {

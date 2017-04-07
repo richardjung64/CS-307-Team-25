@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w720dp-v13/values-w720dp-v13.xml",
+        "outputFile": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w720dp-v13\\values-w720dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,31 @@
                     "endOffset": 127
                 },
                 "from": {
-                    "file": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/values-w720dp-v13/values-w720dp-v13.xml",
+                    "file": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\values-w720dp-v13\\values-w720dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 76,
+                        "endOffset": 127
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w720dp-v13\\values-w720dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 76,
+                    "endOffset": 127
+                },
+                "from": {
+                    "file": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\values-w720dp-v13\\values-w720dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

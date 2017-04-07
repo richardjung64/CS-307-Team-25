@@ -3,66 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
-        <dex dex="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_aa9c54c9591f65babc2cd6b35f2e58ea3d29dc32/classes.dex" />
+        <dex dex="D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_d0897ab172418380662ab79023f9e2052decb0a5\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/angie/.android/build-cache/219b70cbdbc2e305623a941d7ce6c69908d55afa/output/jars/classes.jar"
+        jar="D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="eb9f1cef6b29492df701111c555908cb53dece35">
-        <dex dex="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ea8e655da229c472981705b5a70892c4ef2f6cbb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/angie/.android/build-cache/6d92fffdd5497384afcffe8711fbf81230a9f607/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3305fe8fabbf56b45fa503d29d691bc84290ff23">
-        <dex dex="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ad52f91aaa5025fc2bda4d0106f9b9ead6aa936d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/angie/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_eede2781c0ae4593e3e1bd3fcf875f5310cafbc9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/angie/.android/build-cache/9bc5759c31d141c07172ee2e48b3434f2c1a8011/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0e00a26db56e94672e288640e3f442cee5380d0e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="36135ea1dfb3775557c754aaf574568997b2f33d">
-        <dex dex="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c0b524718398100ea713d062cbb35d94fee09ef4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/angie/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
-        <dex dex="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_755f8833f36b285c9618baae23d216fe51c241a4/classes.dex" />
+        sha1="265c2743b5de20827482e5b56fd0f84acbe6fb5f">
+        <dex dex="D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f4769a3817c492306e9f8e4539ebd9d17f94fd63\classes.dex" />
     </item>
 
 </items>

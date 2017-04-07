@@ -1,66 +1,130 @@
 [
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/anim/design_snackbar_out.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\anim\\abc_slide_in_top.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/anim/design_snackbar_in.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\anim\\abc_popup_exit.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/anim/design_bottom_sheet_slide_out.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/anim/abc_popup_exit.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/anim/abc_fade_in.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/anim/abc_slide_out_bottom.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\anim\\design_snackbar_out.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/anim/abc_slide_in_bottom.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/anim/abc_fade_out.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/anim/design_fab_out.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\anim\\abc_fade_in.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\anim\\abc_fade_out.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/anim/abc_slide_in_top.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\anim\\design_snackbar_in.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/anim/design_fab_in.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
-        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/anim/design_bottom_sheet_slide_in.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\anim\\design_fab_out.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/anim/abc_popup_enter.xml"
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
-        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/anim/abc_slide_out_top.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\anim\\design_fab_in.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\anim\\design_fab_out.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\781ed48e97664bfa3e5ecd5e8404f6ff2525aaef\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\anim\\design_fab_in.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "D:\\home\\angie\\AYGC\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "D:\\home\\angie\\.android\\build-cache\\3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
     }
 ]

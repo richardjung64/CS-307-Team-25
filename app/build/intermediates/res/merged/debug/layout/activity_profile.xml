@@ -381,7 +381,9 @@
         android:layout_alignRight="@+id/following"
         android:layout_alignEnd="@+id/following"
         android:layout_above="@+id/linearLayout"
-        android:layout_below="@+id/followers">
+        android:layout_below="@+id/followers"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -394,7 +396,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:text="description"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 android:textColor="@color/lighter_text"/>
         </LinearLayout>
     </ScrollView>

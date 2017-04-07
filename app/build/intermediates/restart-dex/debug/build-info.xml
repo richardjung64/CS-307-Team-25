@@ -6,26 +6,26 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.1"
-    timestamp="1491599023621"
+    timestamp="1491599697651"
     token="-8717216059319077461"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="724" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="47" />
+        duration="0" />
     <task
         name="verifier"
-        duration="4" />
+        duration="0" />
 
     <artifact
-        location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
+        location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/outputs/apk/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
@@ -87,19 +87,19 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1491598742497"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
         timestamp="1491599023621"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1491599697651"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

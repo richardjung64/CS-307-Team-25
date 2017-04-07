@@ -46,6 +46,8 @@ public class AddToUsersTable {
         List<String> a = new ArrayList<String>();
         List<String> b = new ArrayList<String>();
         List<String> c = new ArrayList<String>();
+        List<String> d = new ArrayList<String>();
+        List<String> e = new ArrayList<String>();
         users_table.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
         users_table.setUserName(userName);
         users_table.setUserPhoto("NO PHOTO");
@@ -54,6 +56,8 @@ public class AddToUsersTable {
         users_table.setUserPosts(a);
         users_table.setUsersFollowers(b);
         users_table.setUsersFollowing(c);
+        users_table.set_UserWardrobe(d);
+        users_table.set_UserWishList(e);
 
         try {
             Log.i (LOG_TAG, "Adding for real now...");

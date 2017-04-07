@@ -9,6 +9,10 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 
+import com.amazonaws.mobile.AWSMobileClient;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.models.nosql.UsersDO;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -58,7 +62,11 @@ public class CollectionActivity extends AppCompatActivity {
         // finish should always be called on the main thread.
         finish();
     }
-
+    private void getUserWardrobe(){
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        UsersDO me = mapper.load(UsersDO.class, AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+        ;
+    }
 
     private void prepareWardrobeData() {
         Item item = new Item("Tshirt 1", "Adidas",1,R.drawable.item_1);

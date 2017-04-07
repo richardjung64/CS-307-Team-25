@@ -172,8 +172,8 @@ ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidMan
 		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml:79:19-47
 uses-sdk
 INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Kevin Jiang\.android\build-cache\9595312a9493d7f595d106b15a7cde7c050dac03\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:multidex:1.0.1] C:\Users\Kevin Jiang\.android\build-cache\7a5fb343ee0bc75f172bf9a9a3c5595432faa4b5\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Kevin Jiang\.android\build-cache\9595312a9493d7f595d106b15a7cde7c050dac03\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] C:\Users\Kevin Jiang\.android\build-cache\39deb89e8ef41c536ef4212976ab38cf27045362\output\AndroidManifest.xml:24:5-26:41
 MERGED from [com.google.android.gms:play-services-plus:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\10b891b6a6a01cd488e172a26ab1c0ad02e83485\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-auth:10.2.0] C:\Users\Kevin Jiang\.android\build-cache\b40b51b88660fcbb33e3f20461ddbd03553e8f78\output\AndroidManifest.xml:17:5-43

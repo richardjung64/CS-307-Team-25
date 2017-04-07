@@ -8,6 +8,10 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+
+import com.amazonaws.mobile.AWSMobileClient;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBAttribute;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.UsersDO;
 
 import java.util.ArrayList;
@@ -17,6 +21,7 @@ public class FollowActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = FollowActivity.class.getSimpleName();
     private String pageKey;
+    private DynamoDBMapper Mapper;
 
     private List<UsersDO> followerList = new ArrayList<>();
     private List<UsersDO> followingList = new ArrayList<>();
@@ -58,7 +63,9 @@ public class FollowActivity extends AppCompatActivity {
     }
 
     private void prepareFollowerData() {
-        UsersDO user = new UsersDO("Tiger");
+        Mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        UsersDO user = new UsersDO();
+        user = Mapper.load(UsersDO.class, AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
         followerList.add(user);
 
         user = new UsersDO("Tiger 2");

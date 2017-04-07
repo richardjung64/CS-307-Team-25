@@ -29,7 +29,7 @@ public class UsersDO {
     private Set<String> _usersFollowing;
 
     public UsersDO()
-    {
+    {;
     }
     public UsersDO(String name)
     {

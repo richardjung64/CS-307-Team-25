@@ -250,6 +250,8 @@
         android:layout_alignLeft="@+id/home"
         android:layout_marginTop="3dp"
         android:layout_marginLeft="3dp"
+        android:clickable="true"
+        android:onClick="openProfile"
         />
 
     <TextView

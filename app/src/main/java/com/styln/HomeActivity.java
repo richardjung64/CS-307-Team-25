@@ -19,14 +19,19 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.amazonaws.AmazonClientException;
+import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.amazonaws.mobile.util.ThreadUtils;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.models.nosql.UsersDO;
 import com.bumptech.glide.Glide;
 import com.styln.demo.nosql.DemoNoSQLOperationListItem;
 import com.styln.demo.nosql.DemoNoSQLTableBase;
 
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
+
+
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -42,6 +47,7 @@ public class HomeActivity extends AppCompatActivity {
     DemoNoSQLTableBase table;
     ListView operationsListView;
     private ArrayAdapter<DemoNoSQLOperationListItem> operationsListAdapter;
+    private boolean a = false;
 
 
     static boolean liked = false;
@@ -167,11 +173,41 @@ public class HomeActivity extends AppCompatActivity {
             //Log.i(LOG_TAG,GoogleSignInProvider.userName);
 
         }
-        addToUsersTable = new AddToUsersTable(userName);
-    addItemTable();
+        checkLoginHelper();
+        if(a == true) {
+            addToUsersTable = new AddToUsersTable(userName);
+            addItemTable();
+        }
         addPost = new AddPostsTable();
         addPostTable();
 
+    }
+
+    public void checkLogin()
+    {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        UsersDO user = mapper.load(UsersDO.class, AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+        if(user == null)
+        a =  true;
+    }
+    public void checkLoginHelper()
+    {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    checkLogin();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                    }
+                });
+            }
+        }).start();
     }
 
     public void openHome(View view) {

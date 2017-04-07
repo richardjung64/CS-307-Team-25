@@ -231,7 +231,7 @@ public class DemoNoSQLTableUsers extends DemoNoSQLTableBase {
 
     @Override
     public void insertSampleData() throws AmazonClientException {
-        Log.d(LOG_TAG, "Inserting data.");
+        /*Log.d(LOG_TAG, "Inserting data.");
         final UsersDO firstItem = new UsersDO();
 
         //firstItem.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
@@ -281,7 +281,7 @@ public class DemoNoSQLTableUsers extends DemoNoSQLTableBase {
 //        if (lastException != null) {
 //            // Re-throw the last exception encountered to alert the user.
 //            throw lastException;
-//        }
+//        }*/
     }
 
     @Override

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_d0897ab172418380662ab79023f9e2052decb0a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cbef23facbb92dbe9db7d55ca28d47a78d7f5c3d">
+        <dex dex="D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f4769a3817c492306e9f8e4539ebd9d17f94fd63\classes.dex" />
+    </item>
+
+</items>

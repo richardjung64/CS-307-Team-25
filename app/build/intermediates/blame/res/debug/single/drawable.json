@@ -1,298 +1,594 @@
 [
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_like_background.xml",
-        "source": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/drawable/com_facebook_button_like_background.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_disabled.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\5123edf7b4758aa1ed0a73520fdd4009edceeff6\\output\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
-        "source": "/Users/shanu/.android/build-cache/26d8630bf0d1932b30706cb9297927176c3dcaeb/output/res/drawable/design_snackbar_background.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_box_lower.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_box_lower.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
-        "source": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/drawable/common_google_signin_btn_text_dark.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\5123edf7b4758aa1ed0a73520fdd4009edceeff6\\output\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_browse.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_browse.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_box_post.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_box_post.png"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_silver_background.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\drawable\\com_facebook_button_login_silver_background.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_item_background_holo_light.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_item_background_holo_dark.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_logo_small.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_logo_small.png"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_spinner_textfield_background_material.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_ratingbar_full_material.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_btn_borderless_material.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_disabled.xml",
-        "source": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/drawable/common_google_signin_btn_icon_disabled.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_textfield_search_material.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_settings.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_settings.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_browse.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_browse.png"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_round.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22\\output\\res\\drawable\\messenger_button_blue_bg_round.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_silver_background.xml",
-        "source": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/drawable/com_facebook_button_login_silver_background.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\5123edf7b4758aa1ed0a73520fdd4009edceeff6\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_background.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_background.png"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_trend.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_trend.png"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\me_textbg.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\me_textbg.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
-        "source": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/selector_button_facebook.xml",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/selector_button_facebook.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_settings.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_settings.png"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_send_background.xml",
-        "source": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/drawable/com_facebook_button_send_background.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_logo_small.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_logo_small.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_home.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_home.png"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_post.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_post.png"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_me.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_me.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_dialog_material_background_light.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\5123edf7b4758aa1ed0a73520fdd4009edceeff6\\output\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_selector.xml",
-        "source": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/drawable/messenger_button_white_bg_selector.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_send_background.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22\\output\\res\\drawable\\com_facebook_button_send_background.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_tab_indicator_material.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\c8792de3a71ab1218ea8c49a0bc3812a602b159c\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_logo.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_logo.png"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_logo.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_logo.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_box_upper.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_box_upper.png"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\5123edf7b4758aa1ed0a73520fdd4009edceeff6\\output\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_background.xml",
-        "source": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/drawable/com_facebook_button_background.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_send_background.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\drawable\\com_facebook_button_send_background.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_btn_colored_material.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_normal.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\c8792de3a71ab1218ea8c49a0bc3812a602b159c\\output\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_comment.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_comment.png"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_me.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_me.png"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_line.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_line.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_like_1.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_like_1.png"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/test_kevin.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/test_kevin.png"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/test_empty.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/test_empty.png"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/item_2.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/item_2.png"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_add.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_add.png"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\c8792de3a71ab1218ea8c49a0bc3812a602b159c\\output\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
-        "source": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/drawable/common_google_signin_btn_icon_light.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
-        "source": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_normal.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\c8792de3a71ab1218ea8c49a0bc3812a602b159c\\output\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_cab_background_top_material.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_line.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_line.png"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_round.xml",
-        "source": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/drawable/messenger_button_blue_bg_round.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_ratingbar_small_material.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_line.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_line.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_btn_default_mtrl_shape.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_disabled.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\5123edf7b4758aa1ed0a73520fdd4009edceeff6\\output\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_switch_thumb_material.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_trend.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_trend.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/item_1.jpg",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/item_1.jpg"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\item_1.jpg",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\item_1.jpg"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_normal.xml",
-        "source": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/drawable/common_google_signin_btn_text_light_normal.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_selector.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\drawable\\messenger_button_white_bg_selector.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_list_selector_holo_dark.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\drawable\\design_fab_background.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_list_selector_holo_light.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\c8792de3a71ab1218ea8c49a0bc3812a602b159c\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
-        "source": "/Users/shanu/.android/build-cache/26d8630bf0d1932b30706cb9297927176c3dcaeb/output/res/drawable/design_fab_background.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\26d8630bf0d1932b30706cb9297927176c3dcaeb\\output\\res\\drawable\\design_fab_background.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_text_cursor_material.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_box_upper.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_box_upper.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
-        "source": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/drawable/common_google_signin_btn_text_light_focused.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\5123edf7b4758aa1ed0a73520fdd4009edceeff6\\output\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_focused.xml",
-        "source": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_selector.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22\\output\\res\\drawable\\messenger_button_blue_bg_selector.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_box_lower.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_box_lower.png"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_background.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\drawable\\com_facebook_button_background.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/main_like_0.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/main_like_0.png"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\item_2.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\item_2.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_seekbar_track_material.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/selector_button_google.xml",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/selector_button_google.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_round.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22\\output\\res\\drawable\\messenger_button_white_bg_round.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_normal.xml",
-        "source": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
-        "source": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/drawable/common_google_signin_btn_text_light.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\test_empty.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\test_empty.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_round.xml",
-        "source": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/drawable/messenger_button_white_bg_round.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_ratingbar_indicator_material.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_disabled.xml",
-        "source": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/drawable/common_google_signin_btn_text_disabled.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_normal.xml",
-        "source": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_home.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_home.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_dialog_material_background_dark.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_post.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_post.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_btn_radio_material.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_box_post.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_box_post.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
-        "source": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/drawable/common_google_signin_btn_icon_dark.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_btn_check_material.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_round.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\drawable\\messenger_button_white_bg_round.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_cab_background_internal_bg.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_round.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\drawable\\messenger_button_blue_bg_round.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/me_textbg.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/drawable/me_textbg.png"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_button_facebook.xml",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\selector_button_facebook.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_edit_text_material.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_normal.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\5123edf7b4758aa1ed0a73520fdd4009edceeff6\\output\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable/abc_seekbar_thumb_material.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_normal.xml",
-        "source": "/Users/shanu/.android/build-cache/c8792de3a71ab1218ea8c49a0bc3812a602b159c/output/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\test_kevin.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\test_kevin.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_selector.xml",
-        "source": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/drawable/messenger_button_blue_bg_selector.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_me.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_me.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_like_1.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_like_1.png"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\me_textbg.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\me_textbg.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_trend.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_trend.png"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\5123edf7b4758aa1ed0a73520fdd4009edceeff6\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_post.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_post.png"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_disabled.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\c8792de3a71ab1218ea8c49a0bc3812a602b159c\\output\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\c8792de3a71ab1218ea8c49a0bc3812a602b159c\\output\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_like_1.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_like_1.png"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\test_empty.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\test_empty.png"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_normal.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\c8792de3a71ab1218ea8c49a0bc3812a602b159c\\output\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_box_post.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_box_post.png"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\5123edf7b4758aa1ed0a73520fdd4009edceeff6\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_selector.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\drawable\\messenger_button_blue_bg_selector.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_background.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22\\output\\res\\drawable\\com_facebook_button_background.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_box_upper.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_box_upper.png"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_box_lower.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_box_lower.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_comment.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_comment.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_like_0.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_like_0.png"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\c8792de3a71ab1218ea8c49a0bc3812a602b159c\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\26d8630bf0d1932b30706cb9297927176c3dcaeb\\output\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\c8792de3a71ab1218ea8c49a0bc3812a602b159c\\output\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_logo_small.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_logo_small.png"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_normal.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\5123edf7b4758aa1ed0a73520fdd4009edceeff6\\output\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_comment.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_comment.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\item_1.jpg",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\item_1.jpg"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\test_kevin.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\test_kevin.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_button_google.xml",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\selector_button_google.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\5123edf7b4758aa1ed0a73520fdd4009edceeff6\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_disabled.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\c8792de3a71ab1218ea8c49a0bc3812a602b159c\\output\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_like_0.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_like_0.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\c8792de3a71ab1218ea8c49a0bc3812a602b159c\\output\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_normal.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\5123edf7b4758aa1ed0a73520fdd4009edceeff6\\output\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_button_google.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\selector_button_google.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_home.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_home.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_normal.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\c8792de3a71ab1218ea8c49a0bc3812a602b159c\\output\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_browse.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_browse.png"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_add.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_add.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\item_2.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\item_2.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_background.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_background.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_logo.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_logo.png"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_button_facebook.xml",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\selector_button_facebook.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_normal.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\5123edf7b4758aa1ed0a73520fdd4009edceeff6\\output\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\18f6d3692b60abcf5d4316c2355f390d850729ca\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_background.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22\\output\\res\\drawable\\com_facebook_button_like_background.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\c8792de3a71ab1218ea8c49a0bc3812a602b159c\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\9174208beea285655684ce54049426ff9e82492d\\output\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_settings.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_settings.png"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_background.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\39deb89e8ef41c536ef4212976ab38cf27045362\\output\\res\\drawable\\com_facebook_button_like_background.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_background.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\drawable\\main_background.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_silver_background.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22\\output\\res\\drawable\\com_facebook_button_login_silver_background.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_selector.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22\\output\\res\\drawable\\messenger_button_white_bg_selector.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_add.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\drawable\\main_add.png"
     }
 ]

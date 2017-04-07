@@ -1,10 +1,18 @@
 [
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\splash_icon.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-xhdpi\\splash_icon.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/mipmap-xhdpi/splash_icon.png",
-        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/mipmap-xhdpi/splash_icon.png"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\splash_icon.png",
+        "source": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\src\\main\\res\\mipmap-xhdpi\\splash_icon.png"
     }
 ]

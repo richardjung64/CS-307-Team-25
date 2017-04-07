@@ -1,10 +1,18 @@
 [
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
-        "source": "/Users/shanu/.android/build-cache/26d8630bf0d1932b30706cb9297927176c3dcaeb/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
-        "source": "/Users/shanu/.android/build-cache/26d8630bf0d1932b30706cb9297927176c3dcaeb/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\26d8630bf0d1932b30706cb9297927176c3dcaeb\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\CS-307-Team-25-master\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\26d8630bf0d1932b30706cb9297927176c3dcaeb\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\fb2e6ec1e7334a9169012a346f737db6a00215ed\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     }
 ]

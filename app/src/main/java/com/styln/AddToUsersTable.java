@@ -19,7 +19,9 @@ import com.amazonaws.services.dynamodbv2.model.PutItemRequest;
 import com.amazonaws.services.dynamodbv2.model.TableDescription;
 import com.amazonaws.services.dynamodbv2.model.UpdateItemRequest;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -41,10 +43,18 @@ public class AddToUsersTable {
     public void addItem() {
         Log.i (LOG_TAG, "Adding item...");
         final UsersDO users_table = new UsersDO();
+        List<String> a = new ArrayList<String>();
+        List<String> b = new ArrayList<String>();
+        List<String> c = new ArrayList<String>();
         users_table.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
         users_table.setUserName(userName);
         users_table.setUserPhoto("NO PHOTO");
         users_table.setUserPrivacy("public".getBytes());
+        users_table.setUserDescription("No Description");
+        users_table.setUserPosts(a);
+        users_table.setUsersFollowers(b);
+        users_table.setUsersFollowing(c);
+
         try {
             Log.i (LOG_TAG, "Adding for real now...");
             mapper.save(users_table);

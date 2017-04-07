@@ -70,12 +70,7 @@ public class SettingsActivity extends AppCompatActivity {
 
     }
 
-    public void signOut(View view) {
-        identityManager.signOut();
-        startActivity(new Intent(SettingsActivity.this, SignInActivity.class));
-        finish();
-        return;
-    }
+
 
     public void setPrivacy(View view) {
         CompoundButton cb = (CheckBox) findViewById(R.id.AccPrivBox);
@@ -90,4 +85,10 @@ public class SettingsActivity extends AppCompatActivity {
         }
     }
 
+    public void signOut(View view) {
+        identityManager.signOut();
+        startActivity(new Intent(SettingsActivity.this, SignInActivity.class));
+        finish();
+        return;
+    }
 }

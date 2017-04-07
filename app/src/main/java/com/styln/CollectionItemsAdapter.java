@@ -59,9 +59,10 @@ public class CollectionItemsAdapter extends RecyclerView.Adapter<CollectionItems
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
-        Item item  = itemList.get(position);
+        Item item = itemList.get(position);
         holder.name.setText(item.getName());
         holder.brand.setText(item.getBrand());
+        holder.sku = item.getSKU();
         Glide.with(mContext).load(item.getImage()).into(holder.image);
         holder.space.setOnClickListener(new View.OnClickListener() {
             @Override

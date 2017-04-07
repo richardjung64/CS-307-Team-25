@@ -3151,7 +3151,6 @@ containing a value of this type.
         public static final int fill_horizontal=0x7f0c0039;
         public static final int fill_vertical=0x7f0c002c;
         public static final int fixed=0x7f0c004a;
-        public static final int follow=0x7f0c0123;
         public static final int followers=0x7f0c009b;
         public static final int following=0x7f0c009c;
         public static final int g_login_button=0x7f0c00e1;
@@ -3170,7 +3169,7 @@ containing a value of this type.
         public static final int info=0x7f0c0120;
         public static final int inline=0x7f0c0051;
         public static final int item2=0x7f0c00ad;
-        public static final int itemAction=0x7f0c010d;
+        public static final int itemAction=0x7f0c010e;
         public static final int itemAvailability=0x7f0c00b4;
         public static final int itemAvailabilityBG=0x7f0c00b3;
         public static final int itemBG=0x7f0c009f;
@@ -3179,7 +3178,7 @@ containing a value of this type.
         public static final int itemImage=0x7f0c00ac;
         public static final int itemName=0x7f0c00af;
         public static final int itemPrice=0x7f0c00b2;
-        public static final int itemSpace=0x7f0c010e;
+        public static final int itemSpace=0x7f0c010d;
         public static final int item_touch_helper_previous_elevation=0x7f0c0005;
         public static final int itmeAction=0x7f0c00bc;
         public static final int kevin=0x7f0c00a9;
@@ -3194,6 +3193,7 @@ containing a value of this type.
         public static final int linearLayout=0x7f0c00cc;
         public static final int linearLayout2=0x7f0c00cf;
         public static final int listMode=0x7f0c0016;
+        public static final int list_follow=0x7f0c0125;
         public static final int list_item=0x7f0c005e;
         public static final int list_item_icon=0x7f0c010f;
         public static final int list_item_subtitle=0x7f0c0111;
@@ -3206,17 +3206,17 @@ containing a value of this type.
         public static final int me=0x7f0c0091;
         public static final int meBox=0x7f0c008c;
         public static final int media_actions=0x7f0c0118;
-        public static final int menu_add_to_wardrobe=0x7f0c0126;
-        public static final int menu_add_to_wishlist=0x7f0c0125;
-        public static final int menu_like=0x7f0c0124;
-        public static final int menu_post=0x7f0c0127;
-        public static final int menu_remove=0x7f0c0128;
+        public static final int menu_add_to_wardrobe=0x7f0c0128;
+        public static final int menu_add_to_wishlist=0x7f0c0127;
+        public static final int menu_like=0x7f0c0126;
+        public static final int menu_post=0x7f0c0129;
+        public static final int menu_remove=0x7f0c012a;
         public static final int messenger_send_button=0x7f0c0112;
         public static final int middle=0x7f0c003c;
         public static final int mini=0x7f0c003a;
         public static final int miniDivider=0x7f0c00d1;
         public static final int multiply=0x7f0c0031;
-        public static final int name=0x7f0c0122;
+        public static final int name=0x7f0c0124;
         public static final int nav_drawer=0x7f0c00c4;
         public static final int nav_drawer_items=0x7f0c00c9;
         public static final int navigation_header_container=0x7f0c00fb;
@@ -3253,7 +3253,9 @@ containing a value of this type.
         public static final int parentPanel=0x7f0c0063;
         public static final int pin=0x7f0c0026;
         public static final int post=0x7f0c008f;
+        public static final int postBG=0x7f0c0123;
         public static final int postBox=0x7f0c008e;
+        public static final int post_feed=0x7f0c0122;
         public static final int postbg=0x7f0c00cd;
         public static final int profilePicture=0x7f0c00a7;
         public static final int progress_circular=0x7f0c0008;
@@ -3436,11 +3438,12 @@ containing a value of this type.
         public static final int notification_template_media=0x7f04004d;
         public static final int notification_template_part_chronometer=0x7f04004e;
         public static final int notification_template_part_time=0x7f04004f;
-        public static final int select_dialog_item_material=0x7f040050;
-        public static final int select_dialog_multichoice_material=0x7f040051;
-        public static final int select_dialog_singlechoice_material=0x7f040052;
-        public static final int support_simple_spinner_dropdown_item=0x7f040053;
-        public static final int user_list_row=0x7f040054;
+        public static final int post_feed=0x7f040050;
+        public static final int select_dialog_item_material=0x7f040051;
+        public static final int select_dialog_multichoice_material=0x7f040052;
+        public static final int select_dialog_singlechoice_material=0x7f040053;
+        public static final int support_simple_spinner_dropdown_item=0x7f040054;
+        public static final int user_list_row=0x7f040055;
     }
     public static final class menu {
         public static final int item_action_menu=0x7f0d0000;

@@ -244,6 +244,10 @@
         "source": "/Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/res/layout/messenger_button_send_white_small.xml"
     },
     {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/post_feed.xml",
+        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/post_feed.xml"
+    },
+    {
         "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/demo_nosql_select_operation_list_item.xml",
         "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/demo_nosql_select_operation_list_item.xml"
     },

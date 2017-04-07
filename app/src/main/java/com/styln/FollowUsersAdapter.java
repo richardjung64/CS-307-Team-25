@@ -1,8 +1,10 @@
 package com.styln;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Movie;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +26,7 @@ public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.
         public MyViewHolder(View view) {
             super(view);
             name = (TextView) view.findViewById(R.id.name);
-            follow = (Button) view.findViewById(R.id.follow);
+            follow = (Button) view.findViewById(R.id.list_follow);
             following = false;
         }
     }
@@ -43,15 +45,44 @@ public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
+    public void onBindViewHolder(final MyViewHolder holder, int position) {
         User user = userList.get(position);
         holder.name.setText(user.getName());
+        holder.following = false;
+
         if(holder.following == false) {
+            holder.following = true;
             holder.follow.setText("Follow");
         } else {
+            holder.following = false;
             holder.follow.setText("Unfollow");
-
         }
+        holder.follow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(holder.following){
+                    unfollow(holder.follow);
+                    Intent intent= new Intent(mContext, FollowActivity.class);
+                    mContext.startActivity(intent);
+                } else {
+                    follow(holder.follow);
+                    Intent intent= new Intent(mContext, FollowActivity.class);
+                    mContext.startActivity(intent);
+                }
+            }
+        });
+    }
+
+    private void follow(View view){
+        Log.d("DD","DD");
+
+        Button followButton = (Button)view.findViewById(R.id.list_follow);
+        followButton.setText("Unfollow");
+    }
+    private void unfollow(View view){
+        Log.d("DD","DD");
+        Button followButton = (Button)view.findViewById(R.id.list_follow);
+        followButton.setText("Follow");
     }
 
     @Override

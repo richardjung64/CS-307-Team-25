@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/post_feed"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/me_textbg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/postBG"
+        android:scaleType="fitXY"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/messenger_button_send_round_shadow"
+        android:layout_alignTop="@+id/postBG"
+        android:layout_alignLeft="@+id/postBG"
+        android:layout_alignStart="@+id/postBG"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/dummyPictureBox" />
+
+    <TextView
+        android:text="Kevin Jiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dummyPictureBox"
+        android:layout_toRightOf="@+id/dummyPictureBox"
+        android:layout_toEndOf="@+id/dummyPictureBox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/kevinName"
+        android:textSize="20sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        app:srcCompat="@drawable/main_line"
+        android:layout_below="@+id/dummyPictureBox"
+        android:layout_alignLeft="@+id/postBG"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@id/postBG"
+        android:scaleType="fitXY"
+        android:id="@+id/seperator" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/main_like_0"
+        android:layout_alignBottom="@+id/postBG"
+        android:layout_alignLeft="@+id/dummyPictureBox"
+        android:layout_alignStart="@+id/dummyPictureBox"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/like"
+        android:clickable="true"
+        android:onClick="likePost"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/main_add"
+        android:id="@+id/add"
+        android:layout_alignTop="@+id/like"
+        android:layout_toRightOf="@+id/like"
+        android:layout_toEndOf="@+id/like"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:onClick="addTo"/>
+
+    <TextView
+        android:text="0 likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/like"
+        android:layout_alignLeft="@+id/postBG"
+        android:layout_alignBottom="@id/postBG"
+        android:layout_marginBottom="65dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/numLikes"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/test_kevin"
+        android:layout_alignTop="@id/dummyPictureBox"
+        android:layout_alignLeft="@id/dummyPictureBox"
+        android:scaleType="fitCenter"
+        android:id="@+id/kevin" />
+
+    <Button
+        android:text="FOLLOW"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:textSize="10sp"
+        android:id="@+id/home_follow"
+        android:onClick="follow"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@+id/postBG"
+        android:layout_alignRight="@+id/postBG"
+        android:layout_alignEnd="@+id/postBG" />
+
+    <Button
+        android:id="@+id/home_followMe"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:onClick="followMe"
+        android:text="FOLLOW ME"
+        android:textSize="10sp"
+        android:layout_below="@+id/home_follow"
+        android:layout_alignLeft="@+id/home_follow"
+        android:layout_alignStart="@+id/home_follow" />
+
+</RelativeLayout>

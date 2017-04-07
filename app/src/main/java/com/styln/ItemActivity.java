@@ -39,6 +39,7 @@ public class ItemActivity extends AppCompatActivity {
 
         if(SKUKey.equals("1")){
             name.setText("Shirt");
+            price.setText("$ " + 5);
             brand.setText("Adidas");
             sku.setText("SKU: 1");
             itemImage.setImageResource(R.drawable.item_1);
@@ -46,6 +47,7 @@ public class ItemActivity extends AppCompatActivity {
         }
         if(SKUKey.equals("2")){
             name.setText("Shoe");
+            price.setText("$ " + 5);
             brand.setText("Adidas");
             sku.setText("SKU: 2");
             itemImage.setImageResource(R.drawable.item_2);

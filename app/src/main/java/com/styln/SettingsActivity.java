@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.IdentityManager;
 
 public class SettingsActivity extends AppCompatActivity {
@@ -30,6 +31,8 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+        final AWSMobileClient awsMobileClient = AWSMobileClient.defaultMobileClient();
+        identityManager = awsMobileClient.getIdentityManager();
     }
 
     public void back(View view) {
@@ -86,9 +89,19 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     public void signOut(View view) {
+
         identityManager.signOut();
         startActivity(new Intent(SettingsActivity.this, SignInActivity.class));
         finish();
         return;
+    }
+
+    public void changeAge(View view) {
+    }
+
+    public void changeGender(View view) {
+    }
+
+    public void changeDescription(View view) {
     }
 }

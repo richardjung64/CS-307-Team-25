@@ -69,6 +69,29 @@
             android:clickable="true"/>
 
         <Button
+            android:id="@+id/button_changeGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="changeGender"
+            android:text="Change Gender" />
+        <Button
+            android:id="@+id/button_changeAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="changeAge"
+            android:text="Change Age" />
+
+        <Button
+            android:id="@+id/button_changeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="changeDescription"
+            android:text="Change Description" />
+
+        <Button
             android:id="@+id/button_signout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

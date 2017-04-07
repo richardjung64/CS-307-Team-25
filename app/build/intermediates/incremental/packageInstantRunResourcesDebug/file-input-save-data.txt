@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Apr 07 14:42:18 EDT 2017
+#Fri Apr 07 16:33:40 EDT 2017
 210.set=ANDROID_RESOURCE
 282.file=/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_list_selector_holo_dark.xml
 14.set=ANDROID_RESOURCE

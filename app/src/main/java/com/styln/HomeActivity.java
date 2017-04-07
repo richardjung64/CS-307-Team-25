@@ -85,23 +85,11 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        imageLike = (ImageView)findViewById(R.id.like);
         textLikes = (TextView)findViewById(R.id.numLikes);
         follow = (Button)findViewById(R.id.home_follow);
         followMe = (Button)findViewById(R.id.home_followMe);
 
-        profilePic = (ImageView)findViewById(R.id.profilePicture);
-        String address = FacebookSignInProvider.userImageUrl;
-        Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
-                thumbnail(0.1f).into(profilePic);
 
-        if(liked){
-            imageLike.setImageResource(R.drawable.main_like_1);
-            textLikes.setText(numLikes+" likes");
-        } else {
-            imageLike.setImageResource(R.drawable.main_like_0);
-            textLikes.setText(numLikes+" likes");
-        }
         if(followed){
             follow.setText("UNFOLLOW");
             follow.setTextSize(10);
@@ -110,19 +98,20 @@ public class HomeActivity extends AppCompatActivity {
             follow.setTextSize(10);
     }
         if (SignInActivity.signin_opt == 'f') {
-            //String address = FacebookSignInProvider.userImageUrl;
-            //new LoadURLImage(address, profilePic).execute();
-            //userName.setText(FacebookSignInProvider.userName);
+            profilePic = (ImageView)findViewById(R.id.profilePicture);
+            String address = FacebookSignInProvider.userImageUrl;
+            Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                    thumbnail(0.1f).into(profilePic);
             userName = FacebookSignInProvider.userName;
-            //Log.i(LOG_TAG,FacebookSignInProvider.userName);
+            Log.i(LOG_TAG,FacebookSignInProvider.userName);
         }
         else {
-            //String address = GoogleSignInProvider.userImageUrl;
-            //new LoadURLImage(address, profilePic).execute();
-            //userName.setText(GoogleSignInProvider.userName);
+            profilePic = (ImageView)findViewById(R.id.profilePicture);
+            String address = GoogleSignInProvider.userImageUrl;
+            Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                    thumbnail(0.1f).into(profilePic);
             userName = GoogleSignInProvider.userName;
-            //Log.i(LOG_TAG,GoogleSignInProvider.userName);
-
+            Log.i(LOG_TAG,GoogleSignInProvider.userName);
         }
         addToUsersTable = new AddToUsersTable(userName);
     addItemTable();

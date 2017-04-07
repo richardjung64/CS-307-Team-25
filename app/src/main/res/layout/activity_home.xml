@@ -216,27 +216,16 @@
         android:scaleType="fitXY"
         android:id="@+id/seperator" />
 
-    <ImageView
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        app:srcCompat="@drawable/main_like_0"
-        android:layout_alignBottom="@+id/itemBG"
-        android:layout_alignLeft="@+id/dummyPictureBox"
-        android:layout_alignStart="@+id/dummyPictureBox"
-        android:layout_marginBottom="10dp"
-        android:id="@+id/like"
-        android:clickable="true"
-        android:onClick="likePost"/>
 
     <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
         app:srcCompat="@drawable/main_add"
         android:id="@+id/add"
-        android:layout_alignTop="@+id/like"
-        android:layout_toRightOf="@+id/like"
-        android:layout_toEndOf="@+id/like"
-        android:paddingLeft="10dp"
+        android:layout_alignBottom="@+id/itemBG"
+        android:layout_alignLeft="@+id/dummyPictureBox"
+        android:layout_alignStart="@+id/dummyPictureBox"
+        android:layout_marginBottom="10dp"
         android:clickable="true"
         android:onClick="addTo"/>
 
@@ -253,18 +242,6 @@
         android:clickable="true"
         android:onClick="openProfile"
         />
-
-    <TextView
-        android:text="0 likes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/like"
-        android:layout_alignLeft="@+id/itemBG"
-        android:layout_alignBottom="@id/itemBG"
-        android:layout_marginBottom="65dp"
-        android:layout_marginLeft="15dp"
-        android:id="@+id/numLikes"
-        android:textSize="18sp" />
 
     <ImageView
         android:layout_width="60dp"
@@ -303,7 +280,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/seperator"
-        android:layout_above="@+id/like"
+        android:layout_above="@+id/add"
         android:layout_toRightOf="@+id/profilePicture"
         android:layout_alignRight="@+id/itemBG"
         android:layout_alignEnd="@+id/itemBG"

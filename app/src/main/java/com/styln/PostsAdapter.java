@@ -40,6 +40,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.MyViewHolder
             action = (ImageView) view.findViewById(R.id.post_action);
             follow = (Button)view.findViewById(R.id.post_follow);
             id = -1;
+            recyclerView = (RecyclerView)view.findViewById(R.id.recycler_view);
         }
     }
 
@@ -54,11 +55,9 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.MyViewHolder
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.post_feed, parent, false);
-        recyclerView = (RecyclerView) parent.findViewById(R.id.recycler_view);
 
         iAdapter = new PostItemsAdapter(parent.getContext(),itemList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(parent.getContext(), LinearLayoutManager.HORIZONTAL, false);
-
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(iAdapter);
@@ -70,7 +69,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.MyViewHolder
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         Post post = postList.get(position);
         holder.name.setText("");
-
+        
        /* Glide.with(mContext).load(item.getImage()).into(holder.image);
         holder.image.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,0 +1,55 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml:1:1-10:12
+	package
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml:2:5-39
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml:1:11-69
+	android:versionCode
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml
+application
+ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml:4:5-8:19
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\75bfc072641e9fc2b624f32b10989a5a561ea1d9\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\164caa805250185a35b900781a5ab887eb8c965b\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\ffd7eb799dc0654e53191d02de6f9a75319647c2\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\c6c2c53de861627933f51458a3222ca3a2a7b51e\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\b3043cde2436e77effdccad293bd62f47bb93068\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\6be05cad2bafa93062f95147568f78dc44d7bf60\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\1cfdfcc979e44e9c31c0325d2d9769447b5a8a12\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\83a3772482e60fdaa3f5b562e2bc4b6f3fc205a5\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\62f682e6143684182a9740eb4cab0b4248ffd220\output\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml:5:9-41
+	android:supportsRtl
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml:5:42-68
+	android:allowBackup
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml:4:18-44
+	android:icon
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml:4:45-79
+	android:theme
+		ADDED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml:6:9-40
+uses-sdk
+INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\75bfc072641e9fc2b624f32b10989a5a561ea1d9\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\164caa805250185a35b900781a5ab887eb8c965b\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\ffd7eb799dc0654e53191d02de6f9a75319647c2\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\c6c2c53de861627933f51458a3222ca3a2a7b51e\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\b3043cde2436e77effdccad293bd62f47bb93068\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\6be05cad2bafa93062f95147568f78dc44d7bf60\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\1cfdfcc979e44e9c31c0325d2d9769447b5a8a12\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\83a3772482e60fdaa3f5b562e2bc4b6f3fc205a5\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\62f682e6143684182a9740eb4cab0b4248ffd220\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Kevin Jiang\.android\build-cache\75bfc072641e9fc2b624f32b10989a5a561ea1d9\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml
+		INJECTED from D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\AWSMobileHelper\src\main\AndroidManifest.xml

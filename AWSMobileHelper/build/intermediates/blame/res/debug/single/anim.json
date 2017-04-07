@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\AWSMobileHelper\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\75bfc072641e9fc2b624f32b10989a5a561ea1d9\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\AWSMobileHelper\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\75bfc072641e9fc2b624f32b10989a5a561ea1d9\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\AWSMobileHelper\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\75bfc072641e9fc2b624f32b10989a5a561ea1d9\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\AWSMobileHelper\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\75bfc072641e9fc2b624f32b10989a5a561ea1d9\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\AWSMobileHelper\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\75bfc072641e9fc2b624f32b10989a5a561ea1d9\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\AWSMobileHelper\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\75bfc072641e9fc2b624f32b10989a5a561ea1d9\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\AWSMobileHelper\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\75bfc072641e9fc2b624f32b10989a5a561ea1d9\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\AWSMobileHelper\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\75bfc072641e9fc2b624f32b10989a5a561ea1d9\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\AWSMobileHelper\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\75bfc072641e9fc2b624f32b10989a5a561ea1d9\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\KevinJiangCS\\PurdueCS\\cs307\\CS-307-Team-25\\AWSMobileHelper\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Kevin Jiang\\.android\\build-cache\\75bfc072641e9fc2b624f32b10989a5a561ea1d9\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    }
+]

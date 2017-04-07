@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+        "outputFile": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 327
                 },
                 "from": {
-                    "file": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "file": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

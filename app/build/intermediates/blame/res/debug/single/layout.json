@@ -1,342 +1,342 @@
 [
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/item_grid_row.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/item_grid_row.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/com_facebook_activity_layout.xml",
-        "source": "/Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/res/layout/com_facebook_activity_layout.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_home.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/activity_home.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_splash.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_splash.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
-        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_layout_tab_icon.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/item_list_row.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/item_list_row.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_screen_content_include.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/com_facebook_activity_layout.xml",
+        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/com_facebook_activity_layout.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
-        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_navigation_menu_item.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_large.xml",
+        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/messenger_button_send_blue_large.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_screen_toolbar.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_small.xml",
+        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/messenger_button_send_blue_small.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/content_home.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/content_home.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_collection.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/activity_collection.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
-        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_layout_snackbar.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_template_part_time.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_screen_simple.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
+        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_menu_item_action_area.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_list_menu_item_radio.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
+        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_layout_snackbar.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_expanded_menu_layout.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_layout_tab_icon.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/notification_template_media.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/com_facebook_login_fragment.xml",
-        "source": "/Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/res/layout/com_facebook_login_fragment.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_action_menu_item_layout.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
-        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_layout_snackbar_include.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_layout_snackbar_include.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_action_menu_layout.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_round.xml",
+        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/messenger_button_send_white_round.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_action_mode_bar.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_template_big_media.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_profile.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/activity_profile.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_sign_in.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_sign_in.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/user_list_row.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/user_list_row.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_screen_simple.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_nosql_show_results.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/fragment_demo_nosql_show_results.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/list_item_icon_text_with_subtitle.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/list_item_icon_text_with_subtitle.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_select_dialog_material.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/com_facebook_login_fragment.xml",
+        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/com_facebook_login_fragment.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_action_mode_close_item_material.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_item.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_item.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/list_item_icon_text_with_subtitle.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/list_item_icon_text_with_subtitle.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_navigation_menu_item.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/notification_template_lines.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/content_home.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/content_home.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/notification_template_big_media.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_screen_toolbar.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/activity_main.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_list_menu_item_checkbox.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_home.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/fragment_demo_home.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_nosql_select_operation.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/fragment_demo_nosql_select_operation.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_nosql_select_operation.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/fragment_demo_nosql_select_operation.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_browse.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/activity_browse.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/item_list_row.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/item_list_row.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_action_bar_title_item.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/notification_template_part_time.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_large.xml",
-        "source": "/Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/res/layout/messenger_button_send_white_large.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/list_item_demo_button_icon_text.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/list_item_demo_button_icon_text.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_alert_dialog_material.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_select_dialog_material.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
-        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_navigation_item_separator.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_layout_tab_text.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/com_facebook_tooltip_bubble.xml",
-        "source": "/Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/res/layout/com_facebook_tooltip_bubble.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_follow.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_follow.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
-        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_bottom_sheet_dialog.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_browse.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_browse.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/select_dialog_item_material.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_navigation_item.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/demo_nosql_select_operation_list_item.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/demo_nosql_select_operation_list_item.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_popup_menu_item_layout.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_identity.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/fragment_demo_identity.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_search_view.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_alert_dialog_material.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
-        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_navigation_menu.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_search_view.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/demo_nosql_select_operation_list_header.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/demo_nosql_select_operation_list_header.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/notification_template_part_chronometer.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_settings.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_settings.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_follow.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/activity_follow.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_navigation_item_header.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_action_bar_up_container.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/user_list_row.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/user_list_row.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_trend.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/activity_trend.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/select_dialog_singlechoice_material.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_dialog_title_material.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/support_simple_spinner_dropdown_item.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_template_lines.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/list_item_demo_button_icon_text.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/list_item_demo_button_icon_text.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/demo_nosql_select_operation_list_header.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/demo_nosql_select_operation_list_header.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_action_bar_title_item.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/demo_nosql_select_table_list_item.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/demo_nosql_select_table_list_item.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_alert_dialog_button_bar_material.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
+        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_navigation_item_subheader.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
-        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_navigation_item_subheader.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_activity_chooser_view.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_small.xml",
+        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/messenger_button_send_white_small.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_round.xml",
-        "source": "/Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/res/layout/messenger_button_send_blue_round.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_media_cancel_action.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/notification_template_big_media_narrow.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_trend.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_trend.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_item.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/activity_item.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_profile.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_profile.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/item_grid_row.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/item_grid_row.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_small.xml",
-        "source": "/Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/res/layout/messenger_button_send_white_small.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/demo_nosql_select_operation_list_item.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/demo_nosql_select_operation_list_item.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/demo_nosql_select_table_list_item.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/demo_nosql_select_table_list_item.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_dialog_title_material.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_home.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_home.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_sign_in.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/activity_sign_in.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_activity_chooser_view.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_settings.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/activity_settings.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_nosql_select_table.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/fragment_demo_nosql_select_table.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/notification_media_cancel_action.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_large.xml",
+        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/messenger_button_send_white_large.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_activity_chooser_view_list_item.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_nosql_select_table.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/fragment_demo_nosql_select_table.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
-        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_navigation_item.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_action_mode_bar.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_list_menu_item_icon.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
+        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_home.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/fragment_demo_home.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_nosql_show_results.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/fragment_demo_nosql_show_results.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_large.xml",
-        "source": "/Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/res/layout/messenger_button_send_blue_large.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_screen_content_include.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/select_dialog_multichoice_material.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_template_media.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_instruction.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/fragment_demo_instruction.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/abc_list_menu_item_layout.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
+        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_navigation_item_separator.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_small.xml",
-        "source": "/Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/res/layout/messenger_button_send_blue_small.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/res/layout/notification_media_action.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_round.xml",
+        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/messenger_button_send_blue_round.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_splash.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/activity_splash.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_collection.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/activity_collection.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_identity.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/fragment_demo_identity.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_round.xml",
-        "source": "/Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/res/layout/messenger_button_send_white_round.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/com_facebook_tooltip_bubble.xml",
+        "source": "/home/angie/.android/build-cache/0353afd173d8f0a5cac49606b483077135fd2a93/output/res/layout/com_facebook_tooltip_bubble.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_navigation_item_header.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
+        "source": "/home/angie/.android/build-cache/3a0be08d53f1ab8bc19551a0b6b8e0d659e51d66/output/res/layout/design_navigation_menu.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/nav_drawer_item.xml",
-        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/layout/nav_drawer_item.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/home/angie/.android/build-cache/781ed48e97664bfa3e5ecd5e8404f6ff2525aaef/output/res/layout/notification_media_action.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
-        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_menu_item_action_area.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/nav_drawer_item.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/nav_drawer_item.xml"
     },
     {
-        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
-        "source": "/Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/res/layout/design_layout_tab_text.xml"
+        "merged": "/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/fragment_demo_instruction.xml",
+        "source": "/home/angie/AYGC/CS-307-Team-25/app/src/main/res/layout/fragment_demo_instruction.xml"
     }
 ]

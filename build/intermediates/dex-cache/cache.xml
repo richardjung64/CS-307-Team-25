@@ -3,39 +3,66 @@
 
     <item
         is-multidex="true"
-        jar="/Users/shalingyi/.android/build-cache/75e8cdd74a16bc6837e1ab1e2faf7a9ccb9373e7/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3305fe8fabbf56b45fa503d29d691bc84290ff23">
-        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_02000e4d83b37fea2dc66d0259c4730d6925bd59/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shalingyi/.android/build-cache/043ff15b84e7907c8535130b1744f4837bcaf358/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="eb9f1cef6b29492df701111c555908cb53dece35">
-        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e7e7358e22c30674a12be89e4d01e04188e5f929/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="cd8503df09fdb2da06a220fe3dc97b2155c5b326">
-        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_67a6dc0ad29d998dac57761c2cba01ddc604cf9e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
-        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_abdc9cafb702a707e74eadf54a51bc53994a7219/classes.dex" />
+        <dex dex="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_aa9c54c9591f65babc2cd6b35f2e58ea3d29dc32/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/angie/.android/build-cache/219b70cbdbc2e305623a941d7ce6c69908d55afa/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="eb9f1cef6b29492df701111c555908cb53dece35">
+        <dex dex="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ea8e655da229c472981705b5a70892c4ef2f6cbb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/angie/.android/build-cache/6d92fffdd5497384afcffe8711fbf81230a9f607/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3305fe8fabbf56b45fa503d29d691bc84290ff23">
+        <dex dex="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ad52f91aaa5025fc2bda4d0106f9b9ead6aa936d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/angie/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_eede2781c0ae4593e3e1bd3fcf875f5310cafbc9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/angie/.android/build-cache/9bc5759c31d141c07172ee2e48b3434f2c1a8011/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0e00a26db56e94672e288640e3f442cee5380d0e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="36135ea1dfb3775557c754aaf574568997b2f33d">
+        <dex dex="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c0b524718398100ea713d062cbb35d94fee09ef4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/angie/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/home/angie/AYGC/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_755f8833f36b285c9618baae23d216fe51c241a4/classes.dex" />
     </item>
 
 </items>

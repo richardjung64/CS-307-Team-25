@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><!-- http://tools.android.com/tech-docs/new-build-system/applicationid-vs-packagename -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.styln">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignInActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_sign_in" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleInstance" />
+
+        <!-- BEGIN - FACEBOOK SIGN-IN -->
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <!-- END - FACEBOOK SIGN-IN -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TrendActivity"
+            android:label="TrendActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="ProfileActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="SettingsActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FollowActivity"
+            android:label="FollowerActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".CollectionActivity"
+            android:label="CollectionActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".BrowseActivity" />
+        <activity android:name=".ItemActivity"></activity>
+    </application>
+
+</manifest>

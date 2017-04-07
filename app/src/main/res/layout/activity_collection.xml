@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_collection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.styln.CollectionActivity"
+    android:background="@drawable/main_background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/me_textbg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="fitXY"
+        android:id="@+id/textbg"
+        />
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="back"
+        android:layout_alignTop="@+id/textbg"
+        android:layout_alignLeft="@+id/textbg"
+        android:layout_alignStart="@+id/textbg"
+        android:layout_alignRight="@+id/textbg"
+        android:layout_alignEnd="@+id/textbg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/textbg"
+        android:layout_alignStart="@+id/textbg"
+        android:layout_below="@+id/BackButton"
+        android:orientation="vertical"
+        android:layout_alignBottom="@+id/textbg"
+        android:layout_alignRight="@+id/textbg"
+        android:layout_alignEnd="@+id/textbg"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Wardrobe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Wardrobe"
+                android:clickable="true"
+                android:onClick="refreshWardrobe"/>
+
+            <Button
+                android:id="@+id/Wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Wishlist"
+                android:clickable="true"
+                android:onClick="refreshWishlist"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/textbg"
+            android:layout_alignEnd="@+id/textbg"
+            android:layout_alignLeft="@+id/textbg"
+            android:layout_alignRight="@+id/textbg"
+            android:layout_alignStart="@+id/textbg"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

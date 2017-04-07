@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/menu/item_list_action_menu.xml",
+        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/menu/item_list_action_menu.xml"
+    },
+    {
+        "merged": "/Users/shanu/Desktop/CS-307-Team-25-master/app/build/intermediates/res/merged/debug/menu/item_action_menu.xml",
+        "source": "/Users/shanu/Desktop/CS-307-Team-25-master/app/src/main/res/menu/item_action_menu.xml"
+    }
+]

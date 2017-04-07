@@ -42,8 +42,13 @@ public class HomeActivity extends AppCompatActivity {
     private ImageView profilePic;
     private Button follow,followMe;
     private String userName;
+
     private AddToUsersTable addToUsersTable;
+    private AddClothesTable addClothesTable;
+    private DummyPostUser dummy;
+    private AddPostsTable addPost;
     DemoNoSQLTableBase table;
+
     ListView operationsListView;
     private ArrayAdapter<DemoNoSQLOperationListItem> operationsListAdapter;
 
@@ -55,6 +60,32 @@ public class HomeActivity extends AppCompatActivity {
     static int numLikes = 0;
     static boolean followed = false;
     static boolean followedMe = false;
+
+
+
+    private void getUserTable() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    //addToUsersTable.getUser();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to retrieve");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+//                        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getApplicationContext());
+//                        dialogBuilder.setTitle(R.string.nosql_dialog_title_added_sample_data_text);
+//                        dialogBuilder.setMessage("Add successful");
+//                        dialogBuilder.setNegativeButton(R.string.nosql_dialog_ok_text, null);
+//                        dialogBuilder.show();
+                    }
+                });
+            }
+        }).start();
+    }
 
     private void addItemTable() {
         new Thread(new Runnable() {
@@ -74,6 +105,73 @@ public class HomeActivity extends AppCompatActivity {
 //                        dialogBuilder.setMessage("Add successful");
 //                        dialogBuilder.setNegativeButton(R.string.nosql_dialog_ok_text, null);
 //                        dialogBuilder.show();
+                    }
+                });
+            }
+        }).start();
+    }
+
+    private void addDummyItemTable() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    dummy.addDummyItem();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+//                        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getApplicationContext());
+//                        dialogBuilder.setTitle(R.string.nosql_dialog_title_added_sample_data_text);
+//                        dialogBuilder.setMessage("Add successful");
+//                        dialogBuilder.setNegativeButton(R.string.nosql_dialog_ok_text, null);
+//                        dialogBuilder.show();
+                    }
+                });
+            }
+        }).start();
+    }
+
+    private void addPostTable() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    addPost.addPost();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+//                        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getApplicationContext());
+//                        dialogBuilder.setTitle(R.string.nosql_dialog_title_added_sample_data_text);
+//                        dialogBuilder.setMessage("Add successful");
+//                        dialogBuilder.setNegativeButton(R.string.nosql_dialog_ok_text, null);
+//                        dialogBuilder.show();
+                    }
+                });
+            }
+        }).start();
+    }
+
+    private void addClothesTable() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    addClothesTable.addClothes();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
                     }
                 });
             }
@@ -113,8 +211,14 @@ public class HomeActivity extends AppCompatActivity {
             userName = GoogleSignInProvider.userName;
             Log.i(LOG_TAG,GoogleSignInProvider.userName);
         }
+
         addToUsersTable = new AddToUsersTable(userName);
-    addItemTable();
+        addItemTable();
+        addPost = new AddPostsTable();
+        addPostTable();
+        addClothesTable = new AddClothesTable();
+        addClothesTable();
+        getUserTable();
 
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -175,19 +279,6 @@ public class HomeActivity extends AppCompatActivity {
             finish();
     }
 
-    public void likePost(View view) {
-        if(liked == false){
-            liked = true;
-            numLikes++;
-            imageLike.setImageResource(R.drawable.main_like_1);
-            textLikes.setText(numLikes+" likes");
-        } else {
-            liked = false;
-            numLikes--;
-            imageLike.setImageResource(R.drawable.main_like_0);
-            textLikes.setText(numLikes+" likes");
-        }
-    }
 
 
     public void addTo(View view) {

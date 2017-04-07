@@ -46,8 +46,6 @@ public class FollowActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(uAdapter);
 
-        followerList
-
     }
 
 

@@ -80,7 +80,9 @@
             android:label="CollectionActivity"
             android:theme="@style/AppTheme" />
         <activity android:name=".BrowseActivity" />
-        <activity android:name=".ItemActivity"></activity>
+        <activity android:name=".ItemActivity"/>
+            <activity android:name=".ProfileInformationActivity" >
+        </activity>
     </application>
 
 </manifest>

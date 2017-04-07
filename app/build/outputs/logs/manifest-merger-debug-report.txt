@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:2:1-86:12
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:2:1-88:12
 	package
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:3:5-24
 		INJECTED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml
@@ -40,7 +40,7 @@ ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/Andr
 	android:name
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:12:9-89
 application
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:15:5-84:19
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:15:5-86:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shalingyi/.android/build-cache/51ebfe72a2ef0a0bec0b4e6213a8d59a093546c2/output/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] /Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/AndroidManifest.xml:28:5-20
 MERGED from [com.google.android.gms:play-services-plus:10.2.1] /Users/shalingyi/.android/build-cache/62b77246f2aaf2f38f19d437604c3b6a9f7d49d8/output/AndroidManifest.xml:18:5-19
@@ -173,9 +173,13 @@ ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/Andr
 	android:name
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:82:19-49
 activity#com.styln.ItemActivity
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:83:9-59
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:83:9-49
 	android:name
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:83:19-47
+activity#com.styln.ProfileInformationActivity
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:84:13-85:20
+	android:name
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:84:23-65
 uses-sdk
 INJECTED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shalingyi/.android/build-cache/51ebfe72a2ef0a0bec0b4e6213a8d59a093546c2/output/AndroidManifest.xml:5:5-7:41

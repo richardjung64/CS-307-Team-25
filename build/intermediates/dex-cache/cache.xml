@@ -48,21 +48,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/shalingyi/.android/build-cache/6e71a710cead63298415ef42c8a9fed7abde2102/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
-        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_42d02afadad72a50523de01defd47a5c910a27f8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
         <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_abdc9cafb702a707e74eadf54a51bc53994a7219/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shalingyi/.android/build-cache/6e71a710cead63298415ef42c8a9fed7abde2102/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_42d02afadad72a50523de01defd47a5c910a27f8/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -88,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3d8fd7346c56f1f8019fca90ed0448e49ec5ab08">
+        sha1="cd4a539d9dafff9d98ccfa5de7b13a1cd86370ec">
         <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_67a6dc0ad29d998dac57761c2cba01ddc604cf9e/classes.dex" />
     </item>
 

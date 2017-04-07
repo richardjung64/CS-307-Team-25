@@ -81,9 +81,8 @@ public class SignInActivity extends Activity {
                 .getIdentityManager().loadUserInfoAndImage(provider, new Runnable() {
                 @Override
                 public void run() {
-                    //TODO change this to Profile Information
                     Log.d(LOG_TAG, "Launching Home Activity...");
-                    startActivity(new Intent(SignInActivity.this, HomeActivity.class)
+                    startActivity(new Intent(SignInActivity.this, InformationActivity.class)
                         .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                     // finish should always be called on the main thread.
                     finish();

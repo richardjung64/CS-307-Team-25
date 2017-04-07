@@ -61,6 +61,7 @@ public class CollectionActivity extends AppCompatActivity {
 
 
     private void prepareWardrobeData() {
+        //TODO load user's wardrobe
         Item item = new Item("Tshirt 1", "Adidas",1,R.drawable.item_1);
         Wardrobe.add(item);
 

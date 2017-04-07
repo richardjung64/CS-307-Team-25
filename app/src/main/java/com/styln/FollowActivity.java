@@ -57,6 +57,7 @@ public class FollowActivity extends AppCompatActivity {
     }
 
     private void prepareFollowerData() {
+        //TODO load followers list
         User user = new User("Tiger");
         followerList.add(user);
 
@@ -74,6 +75,7 @@ public class FollowActivity extends AppCompatActivity {
 
 
     private void prepareFollowingData() {
+        //TODO load following list
         User user = new User("Tiger");
         followingList.add(user);
 

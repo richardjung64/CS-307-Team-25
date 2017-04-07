@@ -40,7 +40,7 @@ public class TrendActivity extends AppCompatActivity {
     }
 
     private void prepareTrendData() {
-        //Load the RANK here
+        //TODO Load the RANK here
         Item item = new Item("Tshirt 1", "Adidas",1,R.drawable.item_1);
         rank.add(item);
         item = new Item("Tshirt 2", "Adidas",1,R.drawable.item_1);

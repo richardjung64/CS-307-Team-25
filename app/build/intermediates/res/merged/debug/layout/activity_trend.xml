@@ -208,7 +208,7 @@
                     android:id="@+id/rankFour"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:text="4"
                     android:textColor="@color/black_text"
                     android:textSize="24sp" />

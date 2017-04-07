@@ -37,6 +37,7 @@ public class ItemActivity extends AppCompatActivity {
         description = (TextView)findViewById(R.id.itemDescription);
         price = (TextView)findViewById(R.id.itemPrice);
 
+        //TODO load item's information
         if(SKUKey.equals("1")){
             name.setText("Shirt");
             price.setText("$ " + 5);

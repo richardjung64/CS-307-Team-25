@@ -61,6 +61,7 @@ public class ProfileActivity extends AppCompatActivity {
             Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
                     thumbnail(0.1f).into(profilePic);
             userName.setText(FacebookSignInProvider.userName);
+            //TODO load user description, num followers following
         }
         else {
             String address = GoogleSignInProvider.userImageUrl;
@@ -78,11 +79,12 @@ public class ProfileActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(iAdapter);
 
-        prepareCollectionData();
+        prepareWardrobeData();
 
     }
 
-    private void prepareCollectionData() {
+    private void prepareWardrobeData() {
+        //TODO load wardrobe
         Item item = new Item("Tshirt 1", "Adidas",1,R.drawable.item_1);
         itemList.add(item);
 

@@ -5,7 +5,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.PopupMenu;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuInflater;
@@ -26,6 +29,9 @@ import com.bumptech.glide.Glide;
 import com.styln.demo.nosql.DemoNoSQLOperationListItem;
 import com.styln.demo.nosql.DemoNoSQLTableBase;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
 
 public class HomeActivity extends AppCompatActivity {
@@ -41,6 +47,9 @@ public class HomeActivity extends AppCompatActivity {
     ListView operationsListView;
     private ArrayAdapter<DemoNoSQLOperationListItem> operationsListAdapter;
 
+    private List<Item> itemList = new ArrayList<>();
+    private RecyclerView recyclerView;
+    private PostItemsAdapter iAdapter;
 
     static boolean liked = false;
     static int numLikes = 0;
@@ -118,6 +127,25 @@ public class HomeActivity extends AppCompatActivity {
         addToUsersTable = new AddToUsersTable(userName);
     addItemTable();
 
+
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+
+        iAdapter = new PostItemsAdapter(this,itemList);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+
+        recyclerView.setLayoutManager(mLayoutManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setAdapter(iAdapter);
+
+        prepareCollectionData();
+
+    }
+
+    private void prepareCollectionData() {
+        //TODO item load
+        Item item = new Item("Tshirt 1", "Adidas",1,R.drawable.item_1);
+        itemList.add(item);
+        iAdapter.notifyDataSetChanged();
     }
 
     public void openHome(View view) {

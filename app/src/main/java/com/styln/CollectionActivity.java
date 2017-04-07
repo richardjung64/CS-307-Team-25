@@ -65,7 +65,7 @@ public class CollectionActivity extends AppCompatActivity {
     private void getUserWardrobe(){
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
         UsersDO me = mapper.load(UsersDO.class, AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
-        ;
+        //Wardrobe = me.get_UsersWardrobe()
     }
 
     private void prepareWardrobeData() {

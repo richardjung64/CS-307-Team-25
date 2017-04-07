@@ -1,0 +1,32 @@
+//Put this in the FollowingActivity
+
+
+
+public List<UsersDO> getFollowList(final String str){
+
+        final DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        final List<UsersDO> loadresult = new ArrayList<UsersDO>();
+
+        Runnable runnable = new Runnable() {
+            public void run() {
+                UsersDO currentUser = new UsersDO();
+                String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+                currentUser = mapper.load(UsersDO.class, userID);
+                Set<String> tempSet = null;
+                if (str.equals("followers")) {
+                    tempSet = currentUser.getUsersFollowers();
+                } else {
+                    tempSet = currentUser.getUsersFollowing();
+                }
+                List<String> result = new ArrayList<String>(tempSet);
+
+                for (String str : result) {
+                    UsersDO iterator = mapper.load(UsersDO.class, str);
+                    loadresult.add(iterator);
+                }
+            }
+        };
+        Thread mythread = new Thread(runnable);
+        mythread.start();
+        return loadresult;
+    }

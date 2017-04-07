@@ -65,6 +65,13 @@ public class SignInActivity extends Activity {
 
             // The sign-in manager is no longer needed once signed in.
             SignInManager.dispose();
+            if(provider.getDisplayName().equals("Facebook")){
+                Application app = ((Application)getApplicationContext());
+                app.setSign_opt('f');
+            } else {
+                Application app = ((Application)getApplicationContext());
+                app.setSign_opt('g');
+            }
 
             Toast.makeText(SignInActivity.this, String.format("Sign-in with %s succeeded.",
                 provider.getDisplayName()), Toast.LENGTH_LONG).show();

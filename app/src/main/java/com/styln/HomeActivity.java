@@ -195,7 +195,7 @@ public class HomeActivity extends AppCompatActivity {
             follow.setText("FOLLOW");
             follow.setTextSize(10);
     }
-        if (SignInActivity.signin_opt == 'f') {
+        if (Application.getSign_opt() == 'f') {
             profilePic = (ImageView)findViewById(R.id.profilePicture);
             String address = FacebookSignInProvider.userImageUrl;
             Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).

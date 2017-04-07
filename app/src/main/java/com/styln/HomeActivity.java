@@ -37,6 +37,7 @@ public class HomeActivity extends AppCompatActivity {
     private Button follow,followMe;
     private String userName;
     private AddToUsersTable addToUsersTable;
+    private AddClothesTable addClothesTable;
     private DummyPostUser dummy;
     private AddPostsTable addPost;
     DemoNoSQLTableBase table;
@@ -48,6 +49,30 @@ public class HomeActivity extends AppCompatActivity {
     static int numLikes = 0;
     static boolean followed = false;
     static boolean followedMe = false;
+
+    private void getUserTable() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    addToUsersTable.getUser();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to retrieve");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+//                        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getApplicationContext());
+//                        dialogBuilder.setTitle(R.string.nosql_dialog_title_added_sample_data_text);
+//                        dialogBuilder.setMessage("Add successful");
+//                        dialogBuilder.setNegativeButton(R.string.nosql_dialog_ok_text, null);
+//                        dialogBuilder.show();
+                    }
+                });
+            }
+        }).start();
+    }
 
     private void addItemTable() {
         new Thread(new Runnable() {
@@ -121,6 +146,25 @@ public class HomeActivity extends AppCompatActivity {
         }).start();
     }
 
+    private void addClothesTable() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    addClothesTable.addClothes();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                    }
+                });
+            }
+        }).start();
+    }
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
@@ -152,6 +196,7 @@ public class HomeActivity extends AppCompatActivity {
             follow.setText("FOLLOW");
             follow.setTextSize(10);
     }
+
         if (SignInActivity.signin_opt == 'f') {
             //String address = FacebookSignInProvider.userImageUrl;
             //new LoadURLImage(address, profilePic).execute();
@@ -171,7 +216,9 @@ public class HomeActivity extends AppCompatActivity {
     addItemTable();
         addPost = new AddPostsTable();
         addPostTable();
-
+        addClothesTable = new AddClothesTable();
+        addClothesTable();
+        getUserTable();
     }
 
     public void openHome(View view) {

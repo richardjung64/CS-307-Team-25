@@ -37,6 +37,15 @@ public class AddToUsersTable {
         this.userName = userName;
         mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
     }
+
+    public void getUser() {
+        UsersDO usr = mapper.load(UsersDO.class, AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+        if (usr != null)
+            Log.i(LOG_TAG, "USER NAME: " + usr.getUserName());
+        else
+            Log.e(LOG_TAG, "FAILED TO RETRIEVE");
+    }
+
      // adding to user table
     public void addItem() {
         Log.i (LOG_TAG, "Adding item...");

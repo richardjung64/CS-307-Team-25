@@ -257,7 +257,7 @@ public class DemoNoSQLTableUsers extends DemoNoSQLTableBase {
             lastException = ex;
         }
 
-//        final UsersDO[] items = new UsersDO[SAMPLE_DATA_ENTRIES_PER_INSERT-1];
+//       final UsersDO[] items = new UsersDO[SAMPLE_DATA_ENTRIES_PER_INSERT-1];
 //        for (int count = 0; count < SAMPLE_DATA_ENTRIES_PER_INSERT-1; count++) {
 //            final UsersDO item = new UsersDO();
 //            //item.setUserId(DemoSampleDataGenerator.getRandomSampleString("userId"));

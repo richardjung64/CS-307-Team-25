@@ -37,11 +37,11 @@ application
 ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:11:5-80:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shalingyi/.android/build-cache/51ebfe72a2ef0a0bec0b4e6213a8d59a093546c2/output/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] /Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/AndroidManifest.xml:28:5-20
-MERGED from [com.google.android.gms:play-services-plus:10.2.0] /Users/shalingyi/.android/build-cache/5d449b22a4acbdf26c7c4f67d31e2e6f15ec02ad/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-auth:10.2.0] /Users/shalingyi/.android/build-cache/6fcb50b8684530cdfdb1e88cc27935b2e9ebf4fb/output/AndroidManifest.xml:19:5-25:19
-MERGED from [com.google.android.gms:play-services-base:10.2.0] /Users/shalingyi/.android/build-cache/91a0ec905ca6412cbf837bb73b3de7299af01e11/output/AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:10.2.0] /Users/shalingyi/.android/build-cache/69a393290a2e7c59661dd6d5490d45a00f3fb8a4/output/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:10.2.0] /Users/shalingyi/.android/build-cache/c77eaa8aae9b527c7ced07cffede4b8e82bc90df/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-plus:10.2.1] /Users/shalingyi/.android/build-cache/62b77246f2aaf2f38f19d437604c3b6a9f7d49d8/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shalingyi/.android/build-cache/39b28c00b946dddbc56b92b07bc682b9104951ad/output/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-base:10.2.1] /Users/shalingyi/.android/build-cache/114911bc62e92219e7050ddc7de59e77a9bc1633/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] /Users/shalingyi/.android/build-cache/6e71a710cead63298415ef42c8a9fed7abde2102/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/shalingyi/.android/build-cache/7335a4889607b329484c4a2b0d0e9d7b09a15df3/output/AndroidManifest.xml:19:5-21:19
 MERGED from [com.android.support:design:23.4.0] /Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/shalingyi/.android/build-cache/00b521eaa32db30919e6fdfe086c2b7482a944c2/output/AndroidManifest.xml:7:5-20
@@ -109,7 +109,7 @@ ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/Andr
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:45:13-58
 meta-data#com.google.android.gms.version
 ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:50:9-52:69
-MERGED from [com.google.android.gms:play-services-basement:10.2.0] /Users/shalingyi/.android/build-cache/c77eaa8aae9b527c7ced07cffede4b8e82bc90df/output/AndroidManifest.xml:20:9-121
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/shalingyi/.android/build-cache/7335a4889607b329484c4a2b0d0e9d7b09a15df3/output/AndroidManifest.xml:20:9-121
 	android:value
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:52:13-66
 	android:name
@@ -175,12 +175,12 @@ INJECTED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/A
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shalingyi/.android/build-cache/51ebfe72a2ef0a0bec0b4e6213a8d59a093546c2/output/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:multidex:1.0.1] /Users/shalingyi/.android/build-cache/04d907c9519c29170a8fcbbade31e7547a5a7712/output/AndroidManifest.xml:18:5-42
 MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] /Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/AndroidManifest.xml:24:5-26:41
-MERGED from [com.google.android.gms:play-services-plus:10.2.0] /Users/shalingyi/.android/build-cache/5d449b22a4acbdf26c7c4f67d31e2e6f15ec02ad/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-auth:10.2.0] /Users/shalingyi/.android/build-cache/6fcb50b8684530cdfdb1e88cc27935b2e9ebf4fb/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-auth-base:10.2.0] /Users/shalingyi/.android/build-cache/7beb3b1fb31e2978ac12b0f6a163768c361d19a5/output/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-base:10.2.0] /Users/shalingyi/.android/build-cache/91a0ec905ca6412cbf837bb73b3de7299af01e11/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tasks:10.2.0] /Users/shalingyi/.android/build-cache/69a393290a2e7c59661dd6d5490d45a00f3fb8a4/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:10.2.0] /Users/shalingyi/.android/build-cache/c77eaa8aae9b527c7ced07cffede4b8e82bc90df/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-plus:10.2.1] /Users/shalingyi/.android/build-cache/62b77246f2aaf2f38f19d437604c3b6a9f7d49d8/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shalingyi/.android/build-cache/39b28c00b946dddbc56b92b07bc682b9104951ad/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:10.2.1] /Users/shalingyi/.android/build-cache/c3023164ce4dd4a610c07d07e472b35c84f9471d/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.1] /Users/shalingyi/.android/build-cache/114911bc62e92219e7050ddc7de59e77a9bc1633/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] /Users/shalingyi/.android/build-cache/6e71a710cead63298415ef42c8a9fed7abde2102/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/shalingyi/.android/build-cache/7335a4889607b329484c4a2b0d0e9d7b09a15df3/output/AndroidManifest.xml:17:5-43
 MERGED from [com.android.support:design:23.4.0] /Users/shalingyi/.android/build-cache/d674d21fcf6ad977c25471565294edd42d817e8b/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:23.4.0] /Users/shalingyi/.android/build-cache/2dfd826cbca4ac2bc75aa4e8f9d6c16541c264ff/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/shalingyi/.android/build-cache/ee77a44d0dcc929ea5044ab51687adfa8ee8d6a6/output/AndroidManifest.xml:21:5-23:78
@@ -198,28 +198,28 @@ MERGED from [jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1] /Users/sh
 		INJECTED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:10.2.0] /Users/shalingyi/.android/build-cache/6fcb50b8684530cdfdb1e88cc27935b2e9ebf4fb/output/AndroidManifest.xml:20:9-189
+ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shalingyi/.android/build-cache/39b28c00b946dddbc56b92b07bc682b9104951ad/output/AndroidManifest.xml:20:9-189
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /Users/shalingyi/.android/build-cache/6fcb50b8684530cdfdb1e88cc27935b2e9ebf4fb/output/AndroidManifest.xml:20:129-162
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shalingyi/.android/build-cache/39b28c00b946dddbc56b92b07bc682b9104951ad/output/AndroidManifest.xml:20:129-162
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /Users/shalingyi/.android/build-cache/6fcb50b8684530cdfdb1e88cc27935b2e9ebf4fb/output/AndroidManifest.xml:20:163-187
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shalingyi/.android/build-cache/39b28c00b946dddbc56b92b07bc682b9104951ad/output/AndroidManifest.xml:20:163-187
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /Users/shalingyi/.android/build-cache/6fcb50b8684530cdfdb1e88cc27935b2e9ebf4fb/output/AndroidManifest.xml:20:69-128
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shalingyi/.android/build-cache/39b28c00b946dddbc56b92b07bc682b9104951ad/output/AndroidManifest.xml:20:69-128
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /Users/shalingyi/.android/build-cache/6fcb50b8684530cdfdb1e88cc27935b2e9ebf4fb/output/AndroidManifest.xml:20:19-68
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shalingyi/.android/build-cache/39b28c00b946dddbc56b92b07bc682b9104951ad/output/AndroidManifest.xml:20:19-68
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:10.2.0] /Users/shalingyi/.android/build-cache/6fcb50b8684530cdfdb1e88cc27935b2e9ebf4fb/output/AndroidManifest.xml:24:9-184
+ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shalingyi/.android/build-cache/39b28c00b946dddbc56b92b07bc682b9104951ad/output/AndroidManifest.xml:24:9-184
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /Users/shalingyi/.android/build-cache/6fcb50b8684530cdfdb1e88cc27935b2e9ebf4fb/output/AndroidManifest.xml:24:64-87
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shalingyi/.android/build-cache/39b28c00b946dddbc56b92b07bc682b9104951ad/output/AndroidManifest.xml:24:64-87
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /Users/shalingyi/.android/build-cache/6fcb50b8684530cdfdb1e88cc27935b2e9ebf4fb/output/AndroidManifest.xml:24:88-182
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shalingyi/.android/build-cache/39b28c00b946dddbc56b92b07bc682b9104951ad/output/AndroidManifest.xml:24:88-182
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /Users/shalingyi/.android/build-cache/6fcb50b8684530cdfdb1e88cc27935b2e9ebf4fb/output/AndroidManifest.xml:24:18-63
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shalingyi/.android/build-cache/39b28c00b946dddbc56b92b07bc682b9104951ad/output/AndroidManifest.xml:24:18-63
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:10.2.0] /Users/shalingyi/.android/build-cache/91a0ec905ca6412cbf837bb73b3de7299af01e11/output/AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/shalingyi/.android/build-cache/114911bc62e92219e7050ddc7de59e77a9bc1633/output/AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:10.2.0] /Users/shalingyi/.android/build-cache/91a0ec905ca6412cbf837bb73b3de7299af01e11/output/AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/shalingyi/.android/build-cache/114911bc62e92219e7050ddc7de59e77a9bc1633/output/AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:10.2.0] /Users/shalingyi/.android/build-cache/91a0ec905ca6412cbf837bb73b3de7299af01e11/output/AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/shalingyi/.android/build-cache/114911bc62e92219e7050ddc7de59e77a9bc1633/output/AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:10.2.0] /Users/shalingyi/.android/build-cache/91a0ec905ca6412cbf837bb73b3de7299af01e11/output/AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/shalingyi/.android/build-cache/114911bc62e92219e7050ddc7de59e77a9bc1633/output/AndroidManifest.xml:19:19-85

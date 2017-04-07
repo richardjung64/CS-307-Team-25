@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
+import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
@@ -53,25 +54,20 @@ public class ProfileActivity extends AppCompatActivity {
         numFollowers = (TextView)findViewById(R.id.numFollowers);
         numFollowing = (TextView)findViewById(R.id.numFollowing);
 
-
-        String address = FacebookSignInProvider.userImageUrl;
-        Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
-                thumbnail(0.1f).into(profilePic);
-        userName.setText(FacebookSignInProvider.userName);
-
         description.setText("CardView is another major element introduced in Material Design. Using CardView you can represent the information in a card manner with a drop shadow (elevation) and corner radius which looks consistent across the platform. ");
 
-        //TELL GROUP the issue about auto login, doesnt change 'opt' because "onCreate" not called
-        /*if (SignInActivity.signin_opt == 'f') {
+        if (Application.getSign_opt() == 'f') {
             String address = FacebookSignInProvider.userImageUrl;
-            Glide.with(this).load(address).into(profilePic);
+            Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                    thumbnail(0.1f).into(profilePic);
             userName.setText(FacebookSignInProvider.userName);
         }
         else {
             String address = GoogleSignInProvider.userImageUrl;
-            Glide.with(this).load(address).into(profilePic);
+            Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                    thumbnail(0.1f).into(profilePic);
             userName.setText(GoogleSignInProvider.userName);
-        }*/
+        }
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 

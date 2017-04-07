@@ -3,12 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/Users/shalingyi/.android/build-cache/75e8cdd74a16bc6837e1ab1e2faf7a9ccb9373e7/output/jars/classes.jar"
+        jar="/Users/shalingyi/.android/build-cache/39b28c00b946dddbc56b92b07bc682b9104951ad/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3305fe8fabbf56b45fa503d29d691bc84290ff23">
-        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_02000e4d83b37fea2dc66d0259c4730d6925bd59/classes.dex" />
+        sha1="25f55515117e14a658120a7b01a9ea5170409db4">
+        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d399bcdd6e9b735f39e140e2f782dafd7c4e6b90/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -21,12 +21,39 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/shalingyi/.android/build-cache/7335a4889607b329484c4a2b0d0e9d7b09a15df3/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="1f90246d18fb40bfe927579f367a41054b657148">
-        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_67a6dc0ad29d998dac57761c2cba01ddc604cf9e/classes.dex" />
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c985fd5c2756d8633e27b5658bcd16a2fa9a9b11/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shalingyi/.android/build-cache/114911bc62e92219e7050ddc7de59e77a9bc1633/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d359b2c2549e86079bd8dd3738fc6eef6f537ec0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shalingyi/.android/build-cache/c3023164ce4dd4a610c07d07e472b35c84f9471d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="12032271e6be735e811ad529cb08ff066c381640">
+        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a9d26f1626d93a0b85c4a71a8fcb5ddc729a50f4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shalingyi/.android/build-cache/6e71a710cead63298415ef42c8a9fed7abde2102/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_42d02afadad72a50523de01defd47a5c910a27f8/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -36,6 +63,33 @@
         revision="25.0.0"
         sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
         <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_abdc9cafb702a707e74eadf54a51bc53994a7219/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shalingyi/.android/build-cache/62b77246f2aaf2f38f19d437604c3b6a9f7d49d8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b32372f6821e003ae24cd3389bdd7925247f100">
+        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ed678c7f4b84bde3534c5f3b51eb36b818f3d211/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shalingyi/.android/build-cache/75e8cdd74a16bc6837e1ab1e2faf7a9ccb9373e7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3305fe8fabbf56b45fa503d29d691bc84290ff23">
+        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_02000e4d83b37fea2dc66d0259c4730d6925bd59/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1f90246d18fb40bfe927579f367a41054b657148">
+        <dex dex="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_67a6dc0ad29d998dac57761c2cba01ddc604cf9e/classes.dex" />
     </item>
 
 </items>

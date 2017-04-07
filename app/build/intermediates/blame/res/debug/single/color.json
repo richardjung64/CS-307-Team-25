@@ -25,7 +25,7 @@
     },
     {
         "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
-        "source": "/Users/shalingyi/.android/build-cache/91a0ec905ca6412cbf837bb73b3de7299af01e11/output/res/color/common_google_signin_btn_text_light.xml"
+        "source": "/Users/shalingyi/.android/build-cache/114911bc62e92219e7050ddc7de59e77a9bc1633/output/res/color/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
@@ -33,7 +33,7 @@
     },
     {
         "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
-        "source": "/Users/shalingyi/.android/build-cache/91a0ec905ca6412cbf837bb73b3de7299af01e11/output/res/color/common_google_signin_btn_text_dark.xml"
+        "source": "/Users/shalingyi/.android/build-cache/114911bc62e92219e7050ddc7de59e77a9bc1633/output/res/color/common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
@@ -45,6 +45,6 @@
     },
     {
         "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
-        "source": "/Users/shalingyi/.android/build-cache/91a0ec905ca6412cbf837bb73b3de7299af01e11/output/res/color/common_google_signin_btn_tint.xml"
+        "source": "/Users/shalingyi/.android/build-cache/114911bc62e92219e7050ddc7de59e77a9bc1633/output/res/color/common_google_signin_btn_tint.xml"
     }
 ]

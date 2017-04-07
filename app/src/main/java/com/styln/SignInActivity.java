@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -138,7 +139,8 @@ public class SignInActivity extends Activity {
         // Initialize sign-in buttons.
         signInManager.initializeSignInButton(FacebookSignInProvider.class,
             this.findViewById(R.id.fb_login_button));
-        signin_opt = 'f';
+        Application app = ((Application)getApplicationContext());
+        app.setSign_opt('f');
 
        googleOnClickListener =
            signInManager.initializeSignInButton(GoogleSignInProvider.class, findViewById(R.id.g_login_button));
@@ -161,7 +163,7 @@ public class SignInActivity extends Activity {
                     googleOnClickListener.onClick(view);
                 }
             });
-            signin_opt = 'g';
+            app.setSign_opt('g');
             //addItemTable();
             System.out.println("ADD SUCCESSFUL");
         }

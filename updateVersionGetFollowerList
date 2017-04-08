@@ -1,0 +1,25 @@
+    public List<UsersDO> getFollowList(String str) throws AmazonServiceException{
+
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        List<UsersDO> loadResult = new ArrayList<UsersDO>();
+        UsersDO currentUser;
+        String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+        currentUser = mapper.load(UsersDO.class, userID);
+        if (currentUser == null){
+            Log.d(LOG_TAG, "currentUser == null from mapper.load");
+            return null;
+        }
+        Set<String> tempSet;
+        if (str.equals("followers")) {
+            tempSet = currentUser.getUsersFollowers();
+        } else {
+                    tempSet = currentUser.getUsersFollowing();
+                }
+        List<String> result = new ArrayList<String>(tempSet);
+
+        for (String abc : result) {
+            UsersDO iterator = mapper.load(UsersDO.class, abc);
+            loadResult.add(iterator);
+        }
+        return loadResult;
+    }

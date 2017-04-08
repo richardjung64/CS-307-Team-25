@@ -78,7 +78,6 @@ public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.
 
     private void follow(View view){
         Log.d("DD","DD");
-
         Button followButton = (Button)view.findViewById(R.id.list_follow);
         followButton.setText("Unfollow");
     }

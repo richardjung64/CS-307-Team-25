@@ -195,7 +195,7 @@ public class HomeActivity extends AppCompatActivity {
         if(followed){
             follow.setText("UNFOLLOW");
             follow.setTextSize(10);
-    } else {
+        } else {
             follow.setText("FOLLOW");
             follow.setTextSize(10);
     }

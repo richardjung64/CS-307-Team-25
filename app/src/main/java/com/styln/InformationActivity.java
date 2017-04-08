@@ -1,6 +1,7 @@
 package com.styln;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -21,6 +22,7 @@ import com.amazonaws.models.nosql.UsersDO;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 /**
  * Created by jungr on 4/4/17.
@@ -68,7 +70,17 @@ public class InformationActivity extends AppCompatActivity{
         } else {
             //LOADS user info;
 
-            UsersDO currentUser = grabuserbyID(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+
+            grabUser task = new grabUser();
+            UsersDO currentUser = new UsersDO();
+            try {
+                currentUser = task.execute("String").get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
+
             nameText.setText(currentUser.getUserName());
             ageText.setText(""+currentUser.getUserAge());
             descriptionText.setText(currentUser.getUserDescription());
@@ -91,19 +103,18 @@ public class InformationActivity extends AppCompatActivity{
 
     }
 
-    public UsersDO grabuserbyID(final String userID){
-        UsersDO someone = new UsersDO();
-        try{
-//DynamoDB calls go here
-            DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
-            someone = mapper.load(UsersDO.class, userID);
-        }catch(AmazonServiceException ex){
-            Log.d(LOG_TAG, "grabuser fail");
-        };
+    private class grabUser extends AsyncTask<String, Void, UsersDO> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        UsersDO loadresult = new UsersDO();
+        @Override
+        protected UsersDO doInBackground(String... strings) {
+            UsersDO currentUser = new UsersDO();
 
-        if(someone != null) { return someone;}
-        Log.d(LOG_TAG, "grabuser == null");
-        return null;
+            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            currentUser = mapper.load(UsersDO.class, userID);
+
+            return loadresult;
+        }
     }
 
 

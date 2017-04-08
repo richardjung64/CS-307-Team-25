@@ -38,7 +38,7 @@ public class FollowActivity extends AppCompatActivity {
         pageKey = getIntent().getStringExtra("KEY");
         Log.d(LOG_TAG, "Opened from " + pageKey);
 
-        getFol task = new getFol();
+        getFollower task = new getFollower();
         List<UsersDO> us = null;
         try {
             us = task.execute(pageKey).get();
@@ -70,7 +70,7 @@ public class FollowActivity extends AppCompatActivity {
         finish();
     }
 
-    private class getFol extends AsyncTask<String, Void, List<UsersDO>> {
+    private class getFollower extends AsyncTask<String, Void, List<UsersDO>> {
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
         List<UsersDO> loadresult = new ArrayList<UsersDO>();
         @Override
@@ -80,24 +80,49 @@ public class FollowActivity extends AppCompatActivity {
                     currentUser = mapper.load(UsersDO.class, userID);
                     List<String> tempSet;
 
-                    if (strings.equals("followers")) {
-                        tempSet = currentUser.getUsersFollowers();
-                    } else {
-                        tempSet = currentUser.getUsersFollowing();
-                    }
-                    if(currentUser.getUsersFollowers() == null){
-                        Log.d(LOG_TAG,"NULLLLL");
-                    }
-                    List<String> result = new ArrayList<String>(tempSet);
+            if(currentUser.getUsersFollowers() == null){
+                Log.d(LOG_TAG,"NULLLLL");
+                currentUser.setUsersFollowers(new ArrayList<String>());
 
-                    Log.d("pls","size"+result.toString());
+            }
+            tempSet = currentUser.getUsersFollowers();
+
+                    List<String> result = new ArrayList<String>(tempSet);
 
                     for (String str : result) {
                         UsersDO iterator = mapper.load(UsersDO.class, str);
                         loadresult.add(iterator);
-                        Log.d("das","size"+loadresult.toString());
 
                     }
+            return loadresult;
+        }
+    }
+
+    private class getFollowing extends AsyncTask<String, Void, List<UsersDO>> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        List<UsersDO> loadresult = new ArrayList<UsersDO>();
+        @Override
+        protected List<UsersDO> doInBackground(String... strings) {
+            UsersDO currentUser = new UsersDO();
+
+            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            currentUser = mapper.load(UsersDO.class, userID);
+
+            List<String> tempSet;
+            if(currentUser.getUsersFollowing() == null){
+                Log.d(LOG_TAG,"NULLLLL");
+                currentUser.setUsersFollowing(new ArrayList<String>());
+
+            }
+            tempSet = currentUser.getUsersFollowing();
+
+            List<String> result = new ArrayList<String>(tempSet);
+
+            for (String str : result) {
+                UsersDO iterator = mapper.load(UsersDO.class, str);
+                loadresult.add(iterator);
+
+            }
             return loadresult;
         }
     }

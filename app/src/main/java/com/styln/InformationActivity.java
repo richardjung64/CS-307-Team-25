@@ -61,12 +61,13 @@ public class InformationActivity extends AppCompatActivity{
         descriptionText = (EditText)findViewById(R.id.change_description);
 
         //TODO loads userinfo
-        userID = getIntent().getStringExtra("ID");
+        userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
         if(userID == null){
 
         } else {
-            /*//LOADS user info;
-            //UsersDO currentUser = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            //LOADS user info;
+
+            /*UsersDO currentUser = getUser();
             nameText.setText(currentUser.getUserName());
             ageText.setText(""+currentUser.getUserAge());
             descriptionText.setText(currentUser.getUserDescription());
@@ -81,8 +82,7 @@ public class InformationActivity extends AppCompatActivity{
             } else {
                 radioSexButton = (RadioButton)findViewById(R.id.radio_other);
             }
-            radioSexButton.setChecked(true);
-*/
+            radioSexButton.setChecked(true);*/
         }
 
         //gender drop down list
@@ -90,20 +90,6 @@ public class InformationActivity extends AppCompatActivity{
 
     }
 
-    public UsersDO getUser(){
-        final DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
-        final java.util.List<com.amazonaws.models.nosql.UsersDO> loadresult = new ArrayList<com.amazonaws.models.nosql.UsersDO>();
-
-        com.amazonaws.models.nosql.UsersDO currentUser = null;
-        Runnable runnable = new Runnable() {
-            public void run() {
-                com.amazonaws.models.nosql.UsersDO currentUser = new com.amazonaws.models.nosql.UsersDO();
-            }
-        };
-        Thread mythread = new Thread(runnable);
-        mythread.start();
-        return currentUser;
-    }
 
     public void Confirm(View view) {
         //TODO upload changes

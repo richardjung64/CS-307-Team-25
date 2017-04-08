@@ -6,22 +6,22 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.1"
-    timestamp="1491609154470"
+    timestamp="1491609783394"
     token="-8717216059319077461"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="612" />
+        duration="625" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="32" />
+        duration="21" />
     <task
         name="verifier"
-        duration="1" />
+        duration="7" />
 
     <artifact
         location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
@@ -100,7 +100,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1491609154470"
+        timestamp="1491609783394"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_3.apk"

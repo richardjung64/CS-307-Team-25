@@ -352,14 +352,21 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void follow(View view) {
+        follow.setText("FOLLOW");
+        follow.setTextSize(10);
+        FollowAction fl = new FollowAction();
+        fl.followSomeone(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+
         if(followed){
             followed = false;
-            follow.setText("FOLLOW");
-            follow.setTextSize(10);
+
         } else {
-            followed = true;
+           /* followed = true;
             follow.setText("UNFOLLOW");
             follow.setTextSize(10);
+            FollowAction fl = new FollowAction();
+            fl.unfollowSomeone(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());*/
+
         }
     }
 

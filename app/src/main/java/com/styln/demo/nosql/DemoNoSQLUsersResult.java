@@ -26,13 +26,13 @@ public class DemoNoSQLUsersResult implements DemoNoSQLResult {
     @Override
     public void updateItem() {
         final DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
-        final double originalValue = result.getUserAge();
-        result.setUserAge(DemoSampleDataGenerator.getRandomSampleNumber());
+        //final double originalValue = result.getUserAge();
+        //result.setUserAge(DemoSampleDataGenerator.getRandomSampleNumber());
         try {
             mapper.save(result);
         } catch (final AmazonClientException ex) {
             // Restore original data if save fails, and re-throw.
-            result.setUserAge(originalValue);
+            //result.setUserAge(originalValue);
             throw ex;
         }
     }
@@ -200,7 +200,7 @@ public class DemoNoSQLUsersResult implements DemoNoSQLResult {
         userIdKeyTextView.setText("userId");
         userIdValueTextView.setText(result.getUserId());
         userAgeKeyTextView.setText("User_Age");
-        userAgeValueTextView.setText("" + result.getUserAge().longValue());
+        //userAgeValueTextView.setText("" + result.getUserAge().longValue());
         userGenderKeyTextView.setText("User_Gender");
         userGenderValueTextView.setText(result.getUserGender());
         userPhotoKeyTextView.setText("User_Photo");

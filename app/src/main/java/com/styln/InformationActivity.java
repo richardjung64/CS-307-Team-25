@@ -70,7 +70,6 @@ public class InformationActivity extends AppCompatActivity{
         } else {
             //LOADS user info;
 
-
             grabUser task = new grabUser();
             UsersDO currentUser = new UsersDO();
             try {
@@ -81,9 +80,11 @@ public class InformationActivity extends AppCompatActivity{
                 e.printStackTrace();
             }
 
-            nameText.setText(currentUser.getUserName());
-            ageText.setText(""+currentUser.getUserAge());
-            descriptionText.setText(currentUser.getUserDescription());
+
+
+            nameText.setHint(currentUser.getUserName());
+            ageText.setHint(""+currentUser.getUserAge());
+            descriptionText.setHint(currentUser.getUserDescription());
             privacy = (CheckBox) findViewById(R.id.change_privacy);
             if (currentUser.getUserPrivacy()) {
                 privateCounter++;
@@ -109,10 +110,9 @@ public class InformationActivity extends AppCompatActivity{
         @Override
         protected UsersDO doInBackground(String... strings) {
             UsersDO currentUser = new UsersDO();
-
             String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
             currentUser = mapper.load(UsersDO.class, userID);
-
+            loadresult = currentUser;
             return loadresult;
         }
     }
@@ -140,6 +140,9 @@ public class InformationActivity extends AppCompatActivity{
         Log.d(LOG_TAG, "" + age);
         Log.d(LOG_TAG, "" + userDescription);
         Log.d(LOG_TAG, "" + genderIdentity);
+
+        FollowAction fl = new FollowAction();
+        fl.UserChanges(name,age,isPrivate,userDescription);
 
         Log.d(LOG_TAG, "Saved, Launching Home Activity...");
         startActivity(new Intent(InformationActivity.this, HomeActivity.class)

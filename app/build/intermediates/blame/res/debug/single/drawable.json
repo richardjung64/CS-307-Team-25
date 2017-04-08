@@ -288,6 +288,10 @@
         "source": "/Users/shalingyi/.android/build-cache/114911bc62e92219e7050ddc7de59e77a9bc1633/output/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
+        "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/shirt1.jpg",
+        "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/drawable/shirt1.jpg"
+    },
+    {
         "merged": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable/main_me.png",
         "source": "/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/res/drawable/main_me.png"
     },

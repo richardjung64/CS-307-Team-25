@@ -235,7 +235,7 @@ public class DemoNoSQLTableUsers extends DemoNoSQLTableBase {
         final UsersDO firstItem = new UsersDO();
 
         //firstItem.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
-        firstItem.setUserAge(DemoSampleDataGenerator.getRandomSampleNumber());
+        //firstItem.setUserAge(DemoSampleDataGenerator.getRandomSampleNumber());
         firstItem.setUserDescription(
                 DemoSampleDataGenerator.getRandomSampleString("User_Description"));
         firstItem.setUserGender(

@@ -38,15 +38,31 @@ public class FollowActivity extends AppCompatActivity {
         pageKey = getIntent().getStringExtra("KEY");
         Log.d(LOG_TAG, "Opened from " + pageKey);
 
-        getFollower task = new getFollower();
+
         List<UsersDO> us = null;
-        try {
-            us = task.execute(pageKey).get();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
+
+        if(pageKey.equals("followers")){
+            getFollower task;
+            task = new getFollower();
+            try {
+                us = task.execute(pageKey).get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
+        } else {
+            getFollowing task;
+            task = new getFollowing();
+            try {
+                us = task.execute(pageKey).get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
         }
+
         Log.d("THIS IS IT",us.toString());
 
         uAdapter = new FollowUsersAdapter(this, us);

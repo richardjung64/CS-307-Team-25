@@ -3,6 +3,7 @@ package com.styln;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -34,6 +35,7 @@ import com.styln.demo.nosql.DemoNoSQLTableBase;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
 
@@ -189,32 +191,41 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         textLikes = (TextView)findViewById(R.id.numLikes);
         follow = (Button)findViewById(R.id.home_follow);
-        followMe = (Button)findViewById(R.id.home_followMe);
 
 
-        if(followed){
-            follow.setText("UNFOLLOW");
-            follow.setTextSize(10);
-        } else {
-            follow.setText("FOLLOW");
-            follow.setTextSize(10);
-    }
+
     //TODO get our servers username
         if (Application.getSign_opt() == 'f') {
             profilePic = (ImageView)findViewById(R.id.profilePicture);
             String address = FacebookSignInProvider.userImageUrl;
             Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
                     thumbnail(0.1f).into(profilePic);
-            userName = FacebookSignInProvider.userName;
             Log.i(LOG_TAG,FacebookSignInProvider.userName);
+            grabUser task = new grabUser();
+
+            try {
+                userName = task.execute().get().getUserName();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
         }
         else {
             profilePic = (ImageView)findViewById(R.id.profilePicture);
             String address = GoogleSignInProvider.userImageUrl;
             Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
                     thumbnail(0.1f).into(profilePic);
-            userName = GoogleSignInProvider.userName;
             Log.i(LOG_TAG,GoogleSignInProvider.userName);
+            grabUser task = new grabUser();
+
+            try {
+                userName = task.execute().get().getUserName();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
         }
 
         addToUsersTable = new AddToUsersTable(userName);
@@ -224,6 +235,7 @@ public class HomeActivity extends AppCompatActivity {
         addClothesTable = new AddClothesTable();
         addClothesTable();
         getUserTable();
+
 
 
 
@@ -240,9 +252,23 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
+    private class grabUser extends AsyncTask<String, Void, UsersDO> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        UsersDO loadresult = new UsersDO();
+        @Override
+        protected UsersDO doInBackground(String... strings) {
+            UsersDO currentUser = new UsersDO();
+            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            currentUser = mapper.load(UsersDO.class, userID);
+            loadresult = currentUser;
+            return loadresult;
+        }
+    }
+
+
     private void prepareCollectionData() {
         //TODO item load
-        Item item = new Item("Tshirt 1", "Adidas",1,R.drawable.item_1);
+        Item item = new Item("Tshirt 1", "Hollister",1,R.drawable.shirt1);
         itemList.add(item);
         iAdapter.notifyDataSetChanged();
     }
@@ -353,7 +379,6 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void follow(View view) {
-
         if(followed){
             followed = false;
             follow.setText("FOLLOW");
@@ -373,22 +398,4 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
-    public void followMe(View view) {
-        if(followedMe){
-            followedMe = false;
-            follow.setText("FOLLOW ME");
-            follow.setTextSize(10);
-            FollowAction fl = new FollowAction();
-            fl.followSomeone("us-east-1:66c73c49-93fc-49f1-8212-accbcb213056");
-            Log.d("d","Follow");
-
-        } else {
-            followedMe = true;
-            follow.setText("UNFOLLOW ME");
-            follow.setTextSize(10);
-            FollowAction fl = new FollowAction();
-            fl.unfollowSomeone("us-east-1:66c73c49-93fc-49f1-8212-accbcb213056");
-            Log.d("d","UNFollow");
-        }
-    }
 }

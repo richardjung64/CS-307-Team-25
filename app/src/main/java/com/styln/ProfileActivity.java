@@ -1,6 +1,7 @@
 package com.styln;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -16,10 +17,13 @@ import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.models.nosql.UsersDO;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
 
@@ -60,15 +64,35 @@ public class ProfileActivity extends AppCompatActivity {
             String address = FacebookSignInProvider.userImageUrl;
             Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
                     thumbnail(0.1f).into(profilePic);
-            userName.setText(FacebookSignInProvider.userName);
-            //TODO load user description, num followers following
         }
         else {
             String address = GoogleSignInProvider.userImageUrl;
             Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
                     thumbnail(0.1f).into(profilePic);
-            userName.setText(GoogleSignInProvider.userName);
         }
+
+
+        grabUser task = new grabUser();
+        UsersDO currentUser = new UsersDO();
+        try {
+            currentUser = task.execute("String").get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        //currentUser.setUserDescription("ASHIUASHI");
+        userName.setText(currentUser.getUserName());
+        description.setText(currentUser.getUserDescription());
+        /*if(currentUser.getUsersFollowers() == null){
+            numFollowers.setText("0");
+        }
+        numFollowers.setText(currentUser.getUsersFollowers().size());
+        if(currentUser.getUsersFollowing() == null){
+            numFollowing.setText("0");
+        }
+        numFollowing.setText(currentUser.getUsersFollowing().size());*/
+
 
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -83,25 +107,32 @@ public class ProfileActivity extends AppCompatActivity {
         prepareWardrobeData();
 
     }
+    private class grabUser extends AsyncTask<String, Void, UsersDO> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        UsersDO loadresult = new UsersDO();
+        @Override
+        protected UsersDO doInBackground(String... strings) {
+            UsersDO currentUser = new UsersDO();
+
+            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            currentUser = mapper.load(UsersDO.class, userID);
+            loadresult = currentUser;
+            return loadresult;
+        }
+    }
 
     private void prepareWardrobeData() {
         //TODO load wardrobe
-        Item item = new Item("Tshirt 1", "Adidas",1,R.drawable.item_1);
+        Item item = new Item("Tshirt 1", "Hollister",1,R.drawable.shirt1);
         itemList.add(item);
 
-        item = new Item("Tshirt 2", "Adidas",1,R.drawable.item_1);
+        item = new Item("Tshirt 2", "Hollister",1,R.drawable.shirt1);
         itemList.add(item);
-        item = new Item("Tshirt 3", "Adidas",1,R.drawable.item_1);
+        item = new Item("Tshirt 3", "Hollister",1,R.drawable.shirt1);
         itemList.add(item);
-        item = new Item("Tshirt 4", "Adidas",1,R.drawable.item_1);
-        itemList.add(item);
-        item = new Item("Tshirt 5", "Adidas",1,R.drawable.item_1);
-        itemList.add(item);
-        item = new Item("Tshirt 6", "Adidas",1,R.drawable.item_1);
+        item = new Item("Tshirt 4", "Hollister",1,R.drawable.shirt1);
         itemList.add(item);
 
-        item = new Item("Shoe 1", "Adidas",2,R.drawable.item_2);
-        itemList.add(item);
 
         iAdapter.notifyDataSetChanged();
     }

@@ -192,7 +192,7 @@
         android:id="@+id/dummyPictureBox" />
 
     <TextView
-        android:text="Kevin Jiang"
+        android:text="Richard Jung"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/dummyPictureBox"
@@ -254,6 +254,7 @@
 
     <Button
         android:text="FOLLOW"
+        android:layout_marginTop="20dp"
         android:layout_width="80dp"
         android:layout_height="40dp"
         android:textSize="10sp"
@@ -263,18 +264,6 @@
         android:layout_alignTop="@+id/itemBG"
         android:layout_alignRight="@+id/itemBG"
         android:layout_alignEnd="@+id/itemBG" />
-
-    <Button
-        android:id="@+id/home_followMe"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:clickable="true"
-        android:onClick="followMe"
-        android:text="FOLLOW ME"
-        android:textSize="10sp"
-        android:layout_below="@+id/home_follow"
-        android:layout_alignLeft="@+id/home_follow"
-        android:layout_alignStart="@+id/home_follow" />
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"

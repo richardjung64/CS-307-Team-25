@@ -68,6 +68,16 @@ public class CollectionActivity extends AppCompatActivity {
                 DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
                 UsersDO me = mapper.load(UsersDO.class, AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
 
+         Item item = new Item("Tshirt 1", "Hollister",1,R.drawable.shirt1);
+         Wardrobe.add(item);
+         item = new Item("Tshirt 2", "Hollister",1,R.drawable.shirt1);
+         Wardrobe.add(item);
+
+         item = new Item("Tshirt 3", "Hollister",1,R.drawable.shirt1);
+         Wardrobe.add(item);
+         item = new Item("Tshirt 4", "Hollister",1,R.drawable.shirt1);
+         Wardrobe.add(item);
+
             }
 
     private void prepareWishlistData() {

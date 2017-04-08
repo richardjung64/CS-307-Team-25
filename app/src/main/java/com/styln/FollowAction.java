@@ -70,4 +70,37 @@ public class FollowAction {
         thr.start();
     }
 
+    public void UserChanges(final String username, final String age, final boolean isPrivate, final String description){
+        final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+        Runnable runnable = new Runnable() {
+            public void run() {
+                //DynamoDB calls go here
+                DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+                UsersDO curr = mapper.load(UsersDO.class, currUserID);
+//                if(curr.getUsersFollowing() == null){
+//                    curr.setUsersFollowing(new ArrayList<String>());
+//                }
+                //curr.getUsersFollowing().remove(someone);
+                curr.getUserAge();
+                curr.setUserAge(age);
+                mapper.save(curr);
+                curr.getUserDescription();
+                curr.setUserDescription(description);
+                curr.getUserPrivacy();
+                curr.setUserPrivacy(isPrivate);
+                mapper.save(curr);
+                curr.getUserName();
+                curr.setUserName(username);
+                mapper.save(curr);
+                //UsersDO sb = mapper.load(UsersDO.class, someone);
+//                if(sb.getUsersFollowers() == null){
+//                    sb.setUsersFollowers(new ArrayList<String>());
+//                }
+                //sb.getUsersFollowers().remove(currUserID);
+                //mapper.save(sb);
+            }
+        };
+        Thread thr = new Thread(runnable);
+        thr.start();
+    }
 }

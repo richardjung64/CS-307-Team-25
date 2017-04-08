@@ -16,7 +16,7 @@ import java.util.Set;
 
 public class UsersDO {
     private String _userId;
-    private Double _userAge;
+    private String _userAge;
     private String _userDescription;
     private String _userGender;
     private String _userName;
@@ -38,11 +38,11 @@ public class UsersDO {
         this._userId = userId;
     }
     @DynamoDBAttribute(attributeName = "User_Age")
-    public Double getUserAge() {
+    public String getUserAge() {
         return _userAge;
     }
 
-    public void setUserAge(final Double _userAge) {
+    public void setUserAge(final String _userAge) {
         this._userAge = _userAge;
     }
     @DynamoDBAttribute(attributeName = "User_Description")

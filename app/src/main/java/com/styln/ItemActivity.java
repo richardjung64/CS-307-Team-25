@@ -2,6 +2,7 @@ package com.styln;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.PopupMenu;
@@ -13,13 +14,23 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.amazonaws.mobile.AWSMobileClient;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.models.nosql.ClothingDO;
+import com.amazonaws.models.nosql.UsersDO;
+import com.bumptech.glide.Glide;
+
+import java.util.concurrent.ExecutionException;
+
+import jp.wasabeef.glide.transformations.CropCircleTransformation;
+
 
 public class ItemActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = ItemActivity.class.getSimpleName();
 
     private ImageView itemImage;
-    private TextView name,sku,brand,price,description,numLikes,numOwned,rank,availability;
+    private TextView name,sku,brand,price,description,numLikes,numOwned,rank,availability,storeLink;
     private String SKUKey = "";
 
 
@@ -36,28 +47,45 @@ public class ItemActivity extends AppCompatActivity {
         itemImage = (ImageView)findViewById(R.id.itemImage);
         description = (TextView)findViewById(R.id.itemDescription);
         price = (TextView)findViewById(R.id.itemPrice);
+        numLikes = (TextView)findViewById(R.id.itemNumLikes);
+        numOwned = (TextView)findViewById(R.id.itemNumOwned);
 
-        //TODO load item's information
-        if(SKUKey.equals("1")){
-            name.setText("Shirt");
-            price.setText("$ " + 5);
-            brand.setText("Adidas");
-            sku.setText("SKU: 1");
-            itemImage.setImageResource(R.drawable.item_1);
-            description.setText("Hey its a black tshirt.");
-        }
-        if(SKUKey.equals("2")){
-            name.setText("Shoe");
-            price.setText("$ " + 5);
-            brand.setText("Adidas");
-            sku.setText("SKU: 2");
-            itemImage.setImageResource(R.drawable.item_2);
-            description.setText("Hey its a white shoe.");
-
+        grabItem task = new grabItem();
+        ClothingDO currentItem = new ClothingDO();
+        try {
+            task.id = "tshirt";
+            currentItem = task.execute("String").get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
         }
 
+        String address = currentItem.getClothingPhotoLink();
+        name.setText(currentItem.getUserId());
+        price.setText("$ "+currentItem.getClothingPrice());
+        brand.setText(currentItem.getClothingBrand());
+        numLikes.setText(""+currentItem.getClothingLikes());
+        numOwned.setText(""+currentItem.getClothingDislikes());
+        Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                thumbnail(0.1f).into(itemImage);
 
 
+    }
+
+    private class grabItem extends AsyncTask<String, Void, ClothingDO> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        ClothingDO loadresult = new ClothingDO();
+        String id;
+
+        protected ClothingDO doInBackground(String... strings) {
+            ClothingDO currentItem;
+
+            String itemID = ""+id;
+            currentItem = mapper.load(ClothingDO.class, itemID);
+            loadresult = currentItem;
+            return loadresult;
+        }
     }
 
     public void openHome(View view) {
@@ -96,7 +124,7 @@ public class ItemActivity extends AppCompatActivity {
     }
 
     public void openLink(View view) {
-        Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
+        Uri uri = Uri.parse("https://www.hollisterco.com/shop/us"); // missing 'http://' will cause crashed
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }

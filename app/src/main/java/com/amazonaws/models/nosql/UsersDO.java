@@ -25,6 +25,8 @@ public class UsersDO {
     private boolean _userPrivacy;
     private List<String> _usersFollowers;
     private List<String> _usersFollowing;
+    private List<String> _userWardrobe;
+    private List<String> _userWishList;
 
     @DynamoDBHashKey(attributeName = "userId")
     @DynamoDBAttribute(attributeName = "userId")
@@ -83,6 +85,7 @@ public class UsersDO {
     public void setUserPosts(final List<String> _userPosts) {
         this._userPosts = _userPosts;
     }
+
     @DynamoDBAttribute(attributeName = "User_Privacy")
     public boolean getUserPrivacy() {
         return _userPrivacy;
@@ -106,6 +109,22 @@ public class UsersDO {
 
     public void setUsersFollowing(final List<String> _usersFollowing) {
         this._usersFollowing = _usersFollowing;
+    }
+    @DynamoDBAttribute(attributeName = "User_Wardrobe")
+    public List<String> get_UsersWardrobe() {
+        return _userWardrobe;
+    }
+
+    public void set_UserWardrobe(final List<String> _userWardrobe) {
+        this._userWardrobe = _userWardrobe;
+    }
+    @DynamoDBAttribute(attributeName = "Users_Wishlist")
+    public List<String> get_UserWishList() {
+        return _userWishList;
+    }
+
+    public void set_UserWishList(final List<String> _userWishList) {
+        this._userWishList = _userWishList;
     }
 
 }

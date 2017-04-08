@@ -13,6 +13,7 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.RadioGroup;
 
+import com.amazonaws.AmazonServiceException;
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
@@ -67,7 +68,7 @@ public class InformationActivity extends AppCompatActivity{
         } else {
             //LOADS user info;
 
-            /*UsersDO currentUser = getUser();
+            UsersDO currentUser = grabuserbyID(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
             nameText.setText(currentUser.getUserName());
             ageText.setText(""+currentUser.getUserAge());
             descriptionText.setText(currentUser.getUserDescription());
@@ -82,12 +83,27 @@ public class InformationActivity extends AppCompatActivity{
             } else {
                 radioSexButton = (RadioButton)findViewById(R.id.radio_other);
             }
-            radioSexButton.setChecked(true);*/
+            radioSexButton.setChecked(true);
         }
 
         //gender drop down list
         radioSexGroup = (RadioGroup) findViewById(R.id.genderGroup);
 
+    }
+
+    public UsersDO grabuserbyID(final String userID){
+        UsersDO someone = new UsersDO();
+        try{
+//DynamoDB calls go here
+            DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+            someone = mapper.load(UsersDO.class, userID);
+        }catch(AmazonServiceException ex){
+            Log.d(LOG_TAG, "grabuser fail");
+        };
+
+        if(someone != null) { return someone;}
+        Log.d(LOG_TAG, "grabuser == null");
+        return null;
     }
 
 

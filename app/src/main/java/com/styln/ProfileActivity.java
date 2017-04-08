@@ -70,6 +70,7 @@ public class ProfileActivity extends AppCompatActivity {
             userName.setText(GoogleSignInProvider.userName);
         }
 
+
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         iAdapter = new ProfileItemsAdapter(this,itemList);

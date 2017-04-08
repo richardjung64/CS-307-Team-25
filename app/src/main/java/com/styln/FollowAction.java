@@ -1,8 +1,13 @@
 package com.styln;
 
+import android.util.Log;
+
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.UsersDO;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by shalingyi on 4/7/17.
@@ -23,9 +28,15 @@ public class FollowAction {
                 //DynamoDB calls go here
                 DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
                 UsersDO curr = mapper.load(UsersDO.class, currUserID);
+                if(curr.getUsersFollowing() == null){
+                    curr.setUsersFollowing(new ArrayList<String>());
+                }
                 curr.getUsersFollowing().add(someone);
                 mapper.save(curr);
                 UsersDO sb = mapper.load(UsersDO.class, someone);
+                if(sb.getUsersFollowers() == null){
+                    sb.setUsersFollowers(new ArrayList<String>());
+                }
                 sb.getUsersFollowers().add(currUserID);
                 mapper.save(sb);
             }
@@ -42,9 +53,15 @@ public class FollowAction {
                 //DynamoDB calls go here
                 DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
                 UsersDO curr = mapper.load(UsersDO.class, currUserID);
+                if(curr.getUsersFollowing() == null){
+                    curr.setUsersFollowing(new ArrayList<String>());
+                }
                 curr.getUsersFollowing().remove(someone);
                 mapper.save(curr);
                 UsersDO sb = mapper.load(UsersDO.class, someone);
+                if(sb.getUsersFollowers() == null){
+                    sb.setUsersFollowers(new ArrayList<String>());
+                }
                 sb.getUsersFollowers().remove(currUserID);
                 mapper.save(sb);
             }

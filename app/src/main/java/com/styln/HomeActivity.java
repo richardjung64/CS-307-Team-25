@@ -226,6 +226,7 @@ public class HomeActivity extends AppCompatActivity {
         getUserTable();
 
 
+
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         iAdapter = new PostItemsAdapter(this,itemList);
@@ -352,21 +353,22 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void follow(View view) {
-        follow.setText("FOLLOW");
-        follow.setTextSize(10);
-        FollowAction fl = new FollowAction();
-        fl.followSomeone(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
 
         if(followed){
             followed = false;
+            follow.setText("FOLLOW");
+            follow.setTextSize(10);
+            FollowAction fl = new FollowAction();
+            fl.followSomeone("us-east-1:3254e0fa-3613-45b2-aa81-6ad73c765f0e");
+            Log.d("d","Follow");
 
         } else {
-           /* followed = true;
+            followed = true;
             follow.setText("UNFOLLOW");
             follow.setTextSize(10);
             FollowAction fl = new FollowAction();
-            fl.unfollowSomeone(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());*/
-
+            fl.unfollowSomeone("us-east-1:3254e0fa-3613-45b2-aa81-6ad73c765f0e");
+            Log.d("d","UNFollow");
         }
     }
 
@@ -374,12 +376,19 @@ public class HomeActivity extends AppCompatActivity {
     public void followMe(View view) {
         if(followedMe){
             followedMe = false;
-            followMe.setText("FOLLOW ME");
-            followMe.setTextSize(10);
+            follow.setText("FOLLOW ME");
+            follow.setTextSize(10);
+            FollowAction fl = new FollowAction();
+            fl.followSomeone("us-east-1:66c73c49-93fc-49f1-8212-accbcb213056");
+            Log.d("d","Follow");
+
         } else {
             followedMe = true;
-            followMe.setText("UNFOLLOW ME");
-            followMe.setTextSize(8);
+            follow.setText("UNFOLLOW ME");
+            follow.setTextSize(10);
+            FollowAction fl = new FollowAction();
+            fl.unfollowSomeone("us-east-1:66c73c49-93fc-49f1-8212-accbcb213056");
+            Log.d("d","UNFollow");
         }
     }
 }

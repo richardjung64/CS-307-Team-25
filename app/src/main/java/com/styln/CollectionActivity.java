@@ -9,6 +9,10 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 
+import com.amazonaws.mobile.AWSMobileClient;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.models.nosql.UsersDO;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,7 +38,7 @@ public class CollectionActivity extends AppCompatActivity {
 
         if(pageKey.equals("wardrobe")){
             iAdapter = new CollectionItemsAdapter(this, Wardrobe);
-            prepareWardrobeData();
+            getUserWardrobe();
         } else {
             iAdapter = new CollectionItemsAdapter(this,Wishlist);
             prepareWishlistData();
@@ -60,31 +64,11 @@ public class CollectionActivity extends AppCompatActivity {
     }
 
 
-    private void prepareWardrobeData() {
-        //TODO load user's wardrobe
-        Item item = new Item("Tshirt 1", "Adidas",1,R.drawable.item_1);
-        Wardrobe.add(item);
+     private void getUserWardrobe(){
+                DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+                UsersDO me = mapper.load(UsersDO.class, AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
 
-        item = new Item("Tshirt 2", "Adidas",1,R.drawable.item_1);
-        Wardrobe.add(item);
-        item = new Item("Tshirt 3", "Adidas",1,R.drawable.item_1);
-        Wardrobe.add(item);
-        item = new Item("Tshirt 4", "Adidas",1,R.drawable.item_1);
-        Wardrobe.add(item);
-        item = new Item("Tshirt 5", "Adidas",1,R.drawable.item_1);
-        Wardrobe.add(item);
-        item = new Item("Tshirt 6", "Adidas",1,R.drawable.item_1);
-        Wardrobe.add(item);
-        item = new Item("Tshirt 7", "Adidas",1,R.drawable.item_1);
-        Wardrobe.add(item);
-        item = new Item("Tshirt 8", "Adidas",1,R.drawable.item_1);
-        Wardrobe.add(item);
-        item = new Item("Shoe 1", "Adidas",2,R.drawable.item_2);
-        Wardrobe.add(item);
-
-        iAdapter.notifyDataSetChanged();
-    }
-
+            }
 
     private void prepareWishlistData() {
         Item item = new Item("Shoe 1", "Adidas",2, R.drawable.item_2);

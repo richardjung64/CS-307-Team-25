@@ -163,8 +163,14 @@ public class SplashActivity extends Activity {
      * Go to the main activity after the splash timeout has expired.
      */
     protected void goMain() {
-        Log.d(LOG_TAG, "Launching Main Activity...");
-        goAfterSplashTimeout(new Intent(this, HomeActivity.class));
+        if (!SignInActivity.was_the_first_form_filled) {
+            Log.d(LOG_TAG, "Launching Home Activity...");
+            goAfterSplashTimeout(new Intent(this, InformationActivity.class));
+        }
+        else {
+            Log.d(LOG_TAG, "Launching Home Activity...");
+            goAfterSplashTimeout(new Intent(this, HomeActivity.class));
+        }
     }
 
     /**

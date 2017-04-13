@@ -1,12 +1,16 @@
 package com.styln;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -40,7 +44,7 @@ public class InformationActivity extends AppCompatActivity {
     String userID = "NOT_VALID";
     CheckBox privacy;
     ImageView picture;
-    Button confirm, cancel, changePic;
+    Button confirm, cancel,changePic;
     EditText nameText, ageText, descriptionText;
     String userGender;
     Spinner gender;
@@ -57,6 +61,7 @@ public class InformationActivity extends AppCompatActivity {
     public final static String USER_GENDER = "User gender to activity";
 
     public static final int GET_FROM_GALLERY = 3;
+
 
 
     String name, age;
@@ -78,7 +83,54 @@ public class InformationActivity extends AppCompatActivity {
         nameText = (EditText) findViewById(R.id.change_name);
         ageText = (EditText) findViewById(R.id.change_age);
         descriptionText = (EditText) findViewById(R.id.change_description);
-        
+
+//        changePic.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(final View view) {
+//                final Activity thisActivity = InformationActivity.this;
+//                if (ContextCompat.checkSelfPermission(thisActivity,
+//                        Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+//                    ActivityCompat.requestPermissions(InformationActivity.this,
+//                            new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+//                            GET_FROM_GALLERY);
+//                    return;
+//                }
+//            }
+//        });
+
+//        changePic.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // Here, thisActivity is the current activity
+//                if (ContextCompat.checkSelfPermission(getBaseContext(),
+//                        Manifest.permission.READ_EXTERNAL_STORAGE)
+//                        != PackageManager.PERMISSION_GRANTED) {
+//
+//                    // Should we show an explanation?
+//                    if (ActivityCompat.shouldShowRequestPermissionRationale(InformationActivity.this,
+//                            Manifest.permission.READ_EXTERNAL_STORAGE)) {
+//
+//                        // Show an explanation to the user *asynchronously* -- don't block
+//                        // this thread waiting for the user's response! After the user
+//                        // sees the explanation, try again to request the permission.
+//
+//                    } else {
+//
+//                        // No explanation needed, we can request the permission.
+//
+//                        ActivityCompat.requestPermissions(InformationActivity.this,
+//                                new String[]{Manifest.permission.READ_CONTACTS},
+//                                GET_FROM_GALLERY);
+//
+//                        // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+//                        // app-defined int constant. The callback method gets the
+//                        // result of the request.
+//                    }
+//                }
+//                Intent gallery_i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+//                startActivityForResult(gallery_i, GET_FROM_GALLERY);
+//            }
+//        });
 
         //TODO loads userinfo
         userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
@@ -187,9 +239,20 @@ public class InformationActivity extends AppCompatActivity {
 
     public void Confirm(View view) {
         //TODO upload changes
+        int flag = 0;
+        if (nameText.getText().toString().trim().equals("")) {
+            flag++;
+            nameText.setError("Name is required");
+        }
+        else
+            name = nameText.getText().toString();
+        if (ageText.getText().toString().trim().equals("")) {
+            flag++;
+            ageText.setError("Name is required");
+        }
+        else
+            age = ageText.getText().toString();
 
-        name = nameText.getText().toString();
-        age = ageText.getText().toString();
         userDescription = descriptionText.getText().toString();
 
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.genderGroup);
@@ -204,30 +267,33 @@ public class InformationActivity extends AppCompatActivity {
             isPrivate = true;
         }
 
+        Log.d(LOG_TAG, "" + name);
         Log.d(LOG_TAG, "" + age);
         Log.d(LOG_TAG, "" + userDescription);
         Log.d(LOG_TAG, "" + genderIdentity);
         Log.d(LOG_TAG, "" + isPrivate);
 
-        FollowAction fl = new FollowAction();
-        if (SignInActivity.firstTime)
-            fl.UserChanges(name, age, isPrivate, userDescription);
-
-        if (SignInActivity.firstTime)
-            SignInActivity.firstTime = false;
-        Log.d(LOG_TAG, "Saved, Launching Home Activity...");
-        Intent i = new Intent(getBaseContext(), HomeActivity.class);
-        i.putExtra(USER_NAME, name);
-        i.putExtra(USER_AGE, age);
-        i.putExtra(USER_DESCRIPTION, userDescription);
-        i.putExtra(USER_PRIVACY, isPrivate);
-        i.putExtra(USER_GENDER, genderIdentity);
+        if (flag == 0) {
+            FollowAction fl = new FollowAction();
+            Log.d(LOG_TAG, "" + isPrivate + "");
+            if (!SignInActivity.firstTime)
+                fl.UserChanges(name, age, isPrivate, userDescription, genderIdentity);
+            SignInActivity.was_the_first_form_filled = true;
+            if (SignInActivity.firstTime)
+                SignInActivity.firstTime = false;
+            Log.d(LOG_TAG, "Saved, Launching Home Activity...");
+            Intent i = new Intent(getBaseContext(), HomeActivity.class);
+            i.putExtra(USER_NAME, name);
+            i.putExtra(USER_AGE, age);
+            i.putExtra(USER_DESCRIPTION, userDescription);
+            i.putExtra(USER_PRIVACY, isPrivate);
+            i.putExtra(USER_GENDER, genderIdentity);
 //        startActivity(new Intent(InformationActivity.this, HomeActivity.class)
 //                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        startActivity(i);
-        // finish should always be called on the main thread.
-        finish();
-
+            startActivity(i);
+            // finish should always be called on the main thread.
+            finish();
+        }
     }
 
     public void Cancel(View view) {
@@ -254,6 +320,18 @@ public class InformationActivity extends AppCompatActivity {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
+            }
+        }
+    }
+
+    public void onRequestPermissionsResult(int requestCode,
+                                           String permissions[], int[] grantResults) {
+        if (requestCode == GET_FROM_GALLERY) {
+            if (grantResults.length > 0
+                    && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                this.findViewById(R.id.change_picture_button).callOnClick();
+            } else {
+                Log.i(LOG_TAG, "Permissions not granted for Gallery upload");
             }
         }
     }

@@ -70,7 +70,7 @@ public class FollowAction {
         thr.start();
     }
 
-    public void UserChanges(final String username, final String age, final boolean isPrivate, final String description){
+    public void UserChanges(final String username, final String age, final boolean isPrivate, final String description, final String gender){
         final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
         Runnable runnable = new Runnable() {
             public void run() {
@@ -92,6 +92,8 @@ public class FollowAction {
                     mapper.save(curr);
                     curr.getUserName();
                     curr.setUserName(username);
+                    curr.getUserGender();
+                    curr.setUserGender(gender);
                     mapper.save(curr);
                 }
                 //UsersDO sb = mapper.load(UsersDO.class, someone);

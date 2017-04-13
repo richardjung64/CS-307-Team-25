@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:2:1-88:12
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:2:1-92:12
 	package
 		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:3:5-24
 		INJECTED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml
@@ -33,14 +33,26 @@ uses-permission#android.permission.USE_CREDENTIALS
 ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:9:5-74
 	android:name
 		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:9:22-71
-service#com.amazonaws.mobileconnectors.s3.transferutility.TransferService
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:11:5-13:34
-	android:enabled
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:13:9-31
+uses-permission#android.permission.MEDIA_CONTENT_CONTROL
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:12:9-89
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:10:22-77
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:11:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:12:22-78
+service#com.amazonaws.mobileconnectors.s3.transferutility.TransferService
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:15:5-17:34
+	android:enabled
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:17:9-31
+	android:name
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:16:9-89
 application
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:15:5-86:19
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:19:5-90:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shanu/.android/build-cache/1cde5ab890b8ca1d22746754ea6b7e1b2a42ec06/output/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] /Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/AndroidManifest.xml:28:5-20
 MERGED from [com.google.android.gms:play-services-plus:10.2.1] /Users/shanu/.android/build-cache/87dcac3a8c488adfc03e0406500b91aa1a5a5974/output/AndroidManifest.xml:18:5-19
@@ -54,132 +66,132 @@ MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/shanu/.
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/shanu/.android/build-cache/89b99c2b4b51b5d7b203e3832ba687e6541ccb09/output/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:24.0.0] /Users/shanu/.android/build-cache/fd61541cd9d18936d11b2822335dc05d74311c64/output/AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:19:9-41
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:23:9-41
 	android:allowBackup
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:17:9-35
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:21:9-35
 	android:icon
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:18:9-43
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:22:9-43
 	android:theme
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:20:9-40
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:24:9-40
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:16:9-36
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:20:9-36
 activity#com.styln.SplashActivity
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:21:9-30:20
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:25:9-34:20
 	android:label
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:24:13-45
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:28:13-45
 	android:configChanges
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:23:13-83
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:27:13-83
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:22:13-43
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:26:13-43
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:25:13-29:29
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:26:17-69
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:26:25-66
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:28:17-77
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:28:27-74
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:32:27-74
 activity#com.styln.SignInActivity
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:31:9-34:62
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:35:9-38:62
 	android:label
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:34:13-59
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:38:13-59
 	android:configChanges
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:33:13-83
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:37:13-83
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:32:13-43
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:36:13-43
 activity#com.styln.MainActivity
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:35:9-38:51
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:39:9-42:51
 	android:label
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:37:13-56
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:41:13-56
 	android:launchMode
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:38:13-48
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:42:13-48
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:36:13-41
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:40:13-41
 activity#com.facebook.FacebookActivity
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:42:9-46:75
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:46:9-50:75
 	android:label
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:45:13-45
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:49:13-45
 	android:configChanges
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:44:13-96
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:48:13-96
 	android:theme
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:46:13-72
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:50:13-72
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:43:13-57
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:47:13-57
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:48:9-50:55
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:52:9-54:55
 	android:value
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:50:13-52
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:54:13-52
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:49:13-58
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:53:13-58
 meta-data#com.google.android.gms.version
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:54:9-56:69
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:58:9-60:69
 MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/shanu/.android/build-cache/b517d053ac144db737c9ca083855015200a1106d/output/AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:56:13-66
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:60:13-66
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:55:13-58
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:59:13-58
 activity#com.styln.HomeActivity
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:58:9-61:47
-	android:label
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:60:13-56
-	android:theme
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:61:13-44
-	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:59:13-41
-activity#com.styln.TrendActivity
 ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:62:9-65:47
 	android:label
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:64:13-42
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:64:13-56
 	android:theme
 		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:65:13-44
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:63:13-42
-activity#com.styln.ProfileActivity
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:63:13-41
+activity#com.styln.TrendActivity
 ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:66:9-69:47
 	android:label
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:68:13-44
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:68:13-42
 	android:theme
 		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:69:13-44
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:67:13-44
-activity#com.styln.SettingsActivity
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:67:13-42
+activity#com.styln.ProfileActivity
 ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:70:9-73:47
 	android:label
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:72:13-45
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:72:13-44
 	android:theme
 		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:73:13-44
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:71:13-45
-activity#com.styln.FollowActivity
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:71:13-44
+activity#com.styln.SettingsActivity
 ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:74:9-77:47
 	android:label
 		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:76:13-45
 	android:theme
 		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:77:13-44
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:75:13-43
-activity#com.styln.CollectionActivity
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:75:13-45
+activity#com.styln.FollowActivity
 ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:78:9-81:47
 	android:label
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:80:13-47
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:80:13-45
 	android:theme
 		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:81:13-44
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:79:13-47
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:79:13-43
+activity#com.styln.CollectionActivity
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:82:9-85:47
+	android:label
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:84:13-47
+	android:theme
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:85:13-44
+	android:name
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:83:13-47
 activity#com.styln.BrowseActivity
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:82:9-52
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:86:9-52
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:82:19-49
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:86:19-49
 activity#com.styln.ItemActivity
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:83:9-49
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:87:9-49
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:83:19-47
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:87:19-47
 activity#com.styln.InformationActivity
-ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:84:13-85:20
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:88:13-89:20
 	android:name
-		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:84:23-58
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:88:23-58
 uses-sdk
 INJECTED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shanu/.android/build-cache/1cde5ab890b8ca1d22746754ea6b7e1b2a42ec06/output/AndroidManifest.xml:5:5-7:41

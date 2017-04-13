@@ -255,6 +255,7 @@ public class HomeActivity extends AppCompatActivity {
         }
 
         if (SignInActivity.isFirstTimeAddToDataBase) {
+            Log.d(LOG_TAG, "Adding to database");
             addToUsersTable = new AddToUsersTable(usr_name, str_age, userDescr, gender, isPrivate);
             addItemTable();
             addPost = new AddPostsTable();

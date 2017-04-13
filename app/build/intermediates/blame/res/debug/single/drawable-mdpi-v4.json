@@ -16,12 +16,12 @@
         "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
-        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
         "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
         "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "/Users/shanu/.android/build-cache/9174208beea285655684ce54049426ff9e82492d/output/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_go_search_api_mtrl_alpha.png",

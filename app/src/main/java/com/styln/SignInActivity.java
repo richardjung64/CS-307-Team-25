@@ -42,6 +42,7 @@ public class SignInActivity extends Activity {
 
     public static boolean firstTime = true;
     public static boolean isFirstTimeAddToDataBase = true;
+    public static boolean was_the_first_form_filled = false;
 
     /** Permission Request Code (Must be < 256). */
     private static final int GET_ACCOUNTS_PERMISSION_REQUEST_CODE = 93;

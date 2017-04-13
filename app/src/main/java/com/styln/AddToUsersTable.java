@@ -31,10 +31,21 @@ public class AddToUsersTable {
     //public UsersDO users_table;
     public AmazonClientException lastException;
     final String LOG_TAG = AddToUsersTable.class.getSimpleName();
-    private String userName;
 
-    public AddToUsersTable(String userName) {
-        this.userName = userName;
+    private String usr_name;
+
+    private String userDescr;
+
+    private String gender;
+    private boolean isPrivate;
+    private String age;
+
+    public AddToUsersTable(String userName, String age, String userDescr, String gender, boolean isPrivate) {
+        this.usr_name = userName;
+        this.age = age;
+        this.userDescr = userDescr;
+        this.gender = gender;
+        this.isPrivate = isPrivate;
         //this.context = context;
         //credentialsProvider = new CognitoCachingCredentialsProvider(context, "us-east-1:43cde55a-51f7-4d7a-a2ab-f77c948eed21", Regions.US_EAST_1);
         //ddbClient = new AmazonDynamoDBClient(credentialsProvider);
@@ -46,9 +57,12 @@ public class AddToUsersTable {
         Log.i (LOG_TAG, "Adding item...");
         final UsersDO users_table = new UsersDO();
         users_table.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
-        users_table.setUserName(userName);
+        users_table.setUserName(usr_name);
         users_table.setUserPhoto("NO PHOTO");
-        users_table.setUserPrivacy(false);
+        users_table.setUserPrivacy(isPrivate);
+        users_table.setUserAge(age);
+        users_table.setUserDescription(userDescr);
+        users_table.setUserGender(gender);
         try {
             Log.i (LOG_TAG, "Adding for real now...");
             mapper.save(users_table);

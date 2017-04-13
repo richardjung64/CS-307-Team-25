@@ -81,17 +81,19 @@ public class FollowAction {
 //                    curr.setUsersFollowing(new ArrayList<String>());
 //                }
                 //curr.getUsersFollowing().remove(someone);
-                curr.getUserAge();
-                curr.setUserAge(age);
-                mapper.save(curr);
-                curr.getUserDescription();
-                curr.setUserDescription(description);
-                curr.getUserPrivacy();
-                curr.setUserPrivacy(isPrivate);
-                mapper.save(curr);
-                curr.getUserName();
-                curr.setUserName(username);
-                mapper.save(curr);
+                if (curr != null) {
+                    curr.getUserAge();
+                    curr.setUserAge(age);
+                    mapper.save(curr);
+                    curr.getUserDescription();
+                    curr.setUserDescription(description);
+                    curr.getUserPrivacy();
+                    curr.setUserPrivacy(isPrivate);
+                    mapper.save(curr);
+                    curr.getUserName();
+                    curr.setUserName(username);
+                    mapper.save(curr);
+                }
                 //UsersDO sb = mapper.load(UsersDO.class, someone);
 //                if(sb.getUsersFollowers() == null){
 //                    sb.setUsersFollowers(new ArrayList<String>());

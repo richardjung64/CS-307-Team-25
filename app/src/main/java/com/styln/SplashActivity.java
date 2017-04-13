@@ -164,7 +164,7 @@ public class SplashActivity extends Activity {
      */
     protected void goMain() {
         Log.d(LOG_TAG, "Launching Main Activity...");
-        goAfterSplashTimeout(new Intent(this, MainActivity.class));
+        goAfterSplashTimeout(new Intent(this, HomeActivity.class));
     }
 
     /**

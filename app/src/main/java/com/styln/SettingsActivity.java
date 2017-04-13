@@ -36,7 +36,7 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     public void back(View view) {
-        Log.d(LOG_TAG, "Launching Main Activity...");
+        Log.d(LOG_TAG, "Launching Home Activity...");
         startActivity(new Intent(SettingsActivity.this, HomeActivity.class)
                 .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         // finish should always be called on the main thread.

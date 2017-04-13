@@ -67,6 +67,19 @@ public class HomeActivity extends AppCompatActivity {
     static boolean followed = false;
     static boolean followedMe = false;
 
+    String usr_name;
+    String str_age;
+    String userDescr;
+    String str_privacy;
+    String gender;
+    boolean isPrivate;
+
+    public final static String USER_NAME = "User name to activity";
+    public final static String USER_AGE = "User age to activity";
+    public final static String USER_DESCRIPTION = "User descr to activity";
+    public final static String USER_PRIVACY = "User privacy to activity";
+    public final static String USER_GENDER = "User gender to activity";
+
 
 
     private void getUserTable() {
@@ -191,50 +204,65 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         textLikes = (TextView)findViewById(R.id.numLikes);
         follow = (Button)findViewById(R.id.home_follow);
-
+        Intent i = getIntent();
+        usr_name = i.getStringExtra(InformationActivity.USER_NAME);
+        str_age = i.getStringExtra(InformationActivity.USER_AGE);
+        userDescr = i.getStringExtra(InformationActivity.USER_DESCRIPTION);
+        isPrivate = i.getBooleanExtra(InformationActivity.USER_PRIVACY, false);
+            //Log.d(LOG_TAG, "PRIVACY" + isPrivate);
+        gender = i.getStringExtra(InformationActivity.USER_GENDER);
+        Log.d(LOG_TAG, "RESTORED NAME " + usr_name);
+        Log.d(LOG_TAG, "RESTORED AGE " + str_age);
+        Log.d(LOG_TAG, "RESTORED DESCRIPTION " + userDescr);
+        Log.d(LOG_TAG, "RESTORED IDENTITY " + gender);
+        Log.d(LOG_TAG, "RESTORED PRIVACY " + isPrivate);
+        //isPrivate = Boolean.getBoolean(str_privacy);
 
 
     //TODO get our servers username
+        Log.d(LOG_TAG, "Login Option " + Application.getSign_opt());
         if (Application.getSign_opt() == 'f') {
             profilePic = (ImageView)findViewById(R.id.profilePicture);
             String address = FacebookSignInProvider.userImageUrl;
             Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
                     thumbnail(0.1f).into(profilePic);
-            Log.i(LOG_TAG,FacebookSignInProvider.userName);
+            //Log.i(LOG_TAG,FacebookSignInProvider.userName);
             grabUser task = new grabUser();
 
-            try {
-                userName = task.execute().get().getUserName();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (ExecutionException e) {
-                e.printStackTrace();
-            }
+//            try {
+//                userName = task.execute().get().getUserName();
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            } catch (ExecutionException e) {
+//                e.printStackTrace();
+//            }
         }
         else {
             profilePic = (ImageView)findViewById(R.id.profilePicture);
             String address = GoogleSignInProvider.userImageUrl;
             Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
                     thumbnail(0.1f).into(profilePic);
-            Log.i(LOG_TAG,GoogleSignInProvider.userName);
+            //Log.i(LOG_TAG,GoogleSignInProvider.userName);
             grabUser task = new grabUser();
 
-            try {
-                userName = task.execute().get().getUserName();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (ExecutionException e) {
-                e.printStackTrace();
-            }
+//            try {
+//                userName = task.execute().get().getUserName();
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            } catch (ExecutionException e) {
+//                e.printStackTrace();
+//            }
         }
 
-        addToUsersTable = new AddToUsersTable(userName);
-        addItemTable();
-        addPost = new AddPostsTable();
-        addPostTable();
-        addClothesTable = new AddClothesTable();
-        addClothesTable();
-        getUserTable();
+        if (SignInActivity.isFirstTimeAddToDataBase) {
+            addToUsersTable = new AddToUsersTable(usr_name, str_age, userDescr, gender, isPrivate);
+            addItemTable();
+            addPost = new AddPostsTable();
+            addPostTable();
+            addClothesTable = new AddClothesTable();
+            addClothesTable();
+            SignInActivity.isFirstTimeAddToDataBase = false;
+        }
 
 
 
@@ -251,6 +279,25 @@ public class HomeActivity extends AppCompatActivity {
         prepareCollectionData();
 
     }
+
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        savedInstanceState.putString(USER_NAME, usr_name);
+        savedInstanceState.putString(USER_AGE, str_age);
+        savedInstanceState.putBoolean(USER_PRIVACY, isPrivate);
+        savedInstanceState.putString(USER_DESCRIPTION, userDescr);
+        savedInstanceState.putString(USER_GENDER, gender);
+
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
+//    public void onRestoreInstanceState(Bundle savedInstanceState) {
+//        super.onRestoreInstanceState(savedInstanceState);
+//        usr_name = savedInstanceState.getString(InformationActivity.USER_NAME);
+//        str_age = savedInstanceState.getString(InformationActivity.USER_AGE);
+//        isPrivate = savedInstanceState.getBoolean(InformationActivity.USER_PRIVACY);
+//        userDescr = savedInstanceState.getString(InformationActivity.USER_DESCRIPTION);
+//        gender = savedInstanceState.getString(InformationActivity.USER_GENDER);
+//    }
 
     private class grabUser extends AsyncTask<String, Void, UsersDO> {
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
@@ -394,6 +441,17 @@ public class HomeActivity extends AppCompatActivity {
             FollowAction fl = new FollowAction();
             fl.unfollowSomeone("us-east-1:3254e0fa-3613-45b2-aa81-6ad73c765f0e");
             Log.d("d","UNFollow");
+        }
+    }
+
+    protected void onResume(Bundle savedInstanceState) {
+        super.onResume();
+        if (savedInstanceState != null) {
+            usr_name = savedInstanceState.getString(USER_NAME);
+            str_age = savedInstanceState.getString(USER_AGE);
+            isPrivate = savedInstanceState.getBoolean(USER_PRIVACY);
+            userDescr = savedInstanceState.getString(USER_DESCRIPTION);
+            gender = savedInstanceState.getString(USER_GENDER);
         }
     }
 

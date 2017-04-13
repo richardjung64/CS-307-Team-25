@@ -25,7 +25,11 @@ import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.amazonaws.mobile.user.signin.SignInManager;
 import com.amazonaws.mobile.util.ThreadUtils;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.models.nosql.UsersDO;
 import com.amazonaws.regions.Regions;
+
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class SignInActivity extends Activity {
     public static char signin_opt = ' ';
@@ -34,12 +38,80 @@ public class SignInActivity extends Activity {
     private static Context app_context;
     CognitoCachingCredentialsProvider credentialsProvider;
     AddToUsersTable obj;
+    AtomicBoolean isUserThere = new AtomicBoolean();
+
+    public static boolean firstTime = true;
+    public static boolean isFirstTimeAddToDataBase = true;
 
     /** Permission Request Code (Must be < 256). */
     private static final int GET_ACCOUNTS_PERMISSION_REQUEST_CODE = 93;
 
     /** The Google OnClick listener, since we must override it to get permissions on Marshmallow and above. */
     private View.OnClickListener googleOnClickListener;
+
+    private void getUser() {
+        Log.d(LOG_TAG, "Enter getUser() method");
+        final DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        final UsersDO this_user = mapper.load(UsersDO.class,
+                AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+        if (this_user == null) {
+            isUserThere.set(false);
+            Log.i(LOG_TAG, "User check method " + "false");
+            return;
+        }
+        isUserThere.set(true);
+    }
+
+    private void getUser_run(final IdentityProvider provider) {
+        Log.d(LOG_TAG, "Enter getUser_run() method");
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    getUser();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to retrieve");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (isUserThere.get())
+                            Log.i(LOG_TAG, "User check wtf " + "true");
+                        else
+                            Log.i(LOG_TAG, "User check wtf " + "false");
+                        if (!isUserThere.get()) {
+                            AWSMobileClient.defaultMobileClient()
+                                    .getIdentityManager().loadUserInfoAndImage(provider, new Runnable() {
+                                @Override
+                                public void run() {
+                                    Log.d(LOG_TAG, "Launching Information Activity...");
+                                    startActivity(new Intent(SignInActivity.this, InformationActivity.class)
+                                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                                    // finish should always be called on the main thread.
+                                    finish();
+                                }
+                            });
+                        }
+                        else {
+                            AWSMobileClient.defaultMobileClient()
+                                    .getIdentityManager().loadUserInfoAndImage(provider, new Runnable() {
+                                @Override
+                                public void run() {
+                                    Log.d(LOG_TAG, "Launching Home Activity...");
+                                    startActivity(new Intent(SignInActivity.this, HomeActivity.class)
+                                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                                    // finish should always be called on the main thread.
+                                    finish();
+                                }
+                            });
+                        }
+                        finish();
+                    }
+                });
+            }
+        }).start();
+    }
 
     public void openHome(View view) {
         Log.d(LOG_TAG, "Launching Home Activity...");
@@ -65,29 +137,52 @@ public class SignInActivity extends Activity {
 
             // The sign-in manager is no longer needed once signed in.
             SignInManager.dispose();
+
             if(provider.getDisplayName().equals("Facebook")){
-                Application app = ((Application)getApplicationContext());
-                app.setSign_opt('f');
+                //Application app = ((Application)getApplicationContext());
+                Application.setSign_opt('f');
             } else {
-                Application app = ((Application)getApplicationContext());
-                app.setSign_opt('g');
+                //Application app = ((Application)getApplicationContext());
+                Application.setSign_opt('g');
             }
 
             Toast.makeText(SignInActivity.this, String.format("Sign-in with %s succeeded.",
                 provider.getDisplayName()), Toast.LENGTH_LONG).show();
 
+            getUser_run(provider);
+
+//            if (isUserThere.get())
+//                Log.i(LOG_TAG, "User check MAIN THREAD " + "true");
+//            else
+//                Log.i(LOG_TAG, "User check MAIN THREAD " + "false");
+
             // Load user name and image.
-            AWSMobileClient.defaultMobileClient()
-                .getIdentityManager().loadUserInfoAndImage(provider, new Runnable() {
-                @Override
-                public void run() {
-                    Log.d(LOG_TAG, "Launching Home Activity...");
-                    startActivity(new Intent(SignInActivity.this, InformationActivity.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-                    // finish should always be called on the main thread.
-                    finish();
-                }
-            });
+//            if (!isUserThere.get()) {
+//                AWSMobileClient.defaultMobileClient()
+//                        .getIdentityManager().loadUserInfoAndImage(provider, new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        Log.d(LOG_TAG, "Launching Information Activity...");
+//                        startActivity(new Intent(SignInActivity.this, InformationActivity.class)
+//                                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+//                        // finish should always be called on the main thread.
+//                        finish();
+//                    }
+//                });
+//            }
+//            else {
+//                AWSMobileClient.defaultMobileClient()
+//                        .getIdentityManager().loadUserInfoAndImage(provider, new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        Log.d(LOG_TAG, "Launching Home Activity...");
+//                        startActivity(new Intent(SignInActivity.this, HomeActivity.class)
+//                                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+//                        // finish should always be called on the main thread.
+//                        finish();
+//                    }
+//                });
+//            }
         }
 
         /**
@@ -146,8 +241,8 @@ public class SignInActivity extends Activity {
         // Initialize sign-in buttons.
         signInManager.initializeSignInButton(FacebookSignInProvider.class,
             this.findViewById(R.id.fb_login_button));
-        Application app = ((Application)getApplicationContext());
-        app.setSign_opt('f');
+        //Application app = ((Application)getApplicationContext());
+        //Application.setSign_opt('f');
 
        googleOnClickListener =
            signInManager.initializeSignInButton(GoogleSignInProvider.class, findViewById(R.id.g_login_button));
@@ -170,9 +265,10 @@ public class SignInActivity extends Activity {
                     googleOnClickListener.onClick(view);
                 }
             });
-            app.setSign_opt('g');
+            //getUser_run();
+            //Application.setSign_opt('g');
             //addItemTable();
-            System.out.println("ADD SUCCESSFUL");
+            //System.out.println("ADD SUCCESSFUL");
         }
     }
 

@@ -131,25 +131,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onResume() {
         super.onResume();
 
-        Log.e(LOG_TAG, SignInActivity.was_the_first_form_filled + "");
-
-        if (!AWSMobileClient.defaultMobileClient().getIdentityManager().isUserSignedIn()) {
-// In the case that the activity is restarted by the OS after the application
-// is killed we must redirect to the splash activity to handle the sign-in flow.
-            Intent intent = new Intent(this, SplashActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
-        } else if (!SignInActivity.was_the_first_form_filled) {
-            Intent intent = new Intent(this, InformationActivity.class);
-            startActivity(intent);
-            setContentView(R.layout.activity_information);
-        }
-        else {
-            Intent intent = new Intent(this, HomeActivity.class);
-            startActivity(intent);
-            setContentView(R.layout.activity_home);
-        }
-        return;
+        //Log.e(LOG_TAG, SignInActivity.was_the_first_form_filled + "");
+//
+//        if (!AWSMobileClient.defaultMobileClient().getIdentityManager().isUserSignedIn()) {
+//// In the case that the activity is restarted by the OS after the application
+//// is killed we must redirect to the splash activity to handle the sign-in flow.
+//            Intent intent = new Intent(this, SplashActivity.class);
+//            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//            startActivity(intent);
+//        } else if () {
+//            Intent intent = new Intent(this, InformationActivity.class);
+//            startActivity(intent);
+//            setContentView(R.layout.activity_information);
+//        }
+//        else {
+//            Intent intent = new Intent(this, HomeActivity.class);
+//            startActivity(intent);
+//            setContentView(R.layout.activity_home);
+//        }
+//        return;
     }
 
     @Override

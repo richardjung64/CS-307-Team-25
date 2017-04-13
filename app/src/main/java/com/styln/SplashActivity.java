@@ -10,17 +10,24 @@ package com.styln;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.Toast;
+
+import com.amazonaws.AmazonClientException;
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.signin.SignInManager;
 import com.amazonaws.mobile.user.signin.SignInProvider;
 import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobile.user.IdentityProvider;
+import com.amazonaws.mobile.util.ThreadUtils;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.models.nosql.UsersDO;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutionException;
 
 /**
  * Splash Activity is the start-up activity that appears until a delay is expired
@@ -159,12 +166,34 @@ public class SplashActivity extends Activity {
         thread.start();
     }
 
+    private class GrabUser extends AsyncTask<String, Void, UsersDO> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        UsersDO loadresult = new UsersDO();
+        @Override
+        protected UsersDO doInBackground(String... strings) {
+            UsersDO currentUser = new UsersDO();
+            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            currentUser = mapper.load(UsersDO.class, userID);
+            loadresult = currentUser;
+            return loadresult;
+        }
+    }
+
     /**
      * Go to the main activity after the splash timeout has expired.
      */
     protected void goMain() {
-        if (!SignInActivity.was_the_first_form_filled) {
-            Log.d(LOG_TAG, "Launching Home Activity...");
+        GrabUser grabUser = new GrabUser();
+        UsersDO currUser = null;
+        try {
+              currUser = grabUser.execute("String").get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
+        if (currUser == null || (currUser != null && currUser.isFirstTime())) {
+            Log.d(LOG_TAG, "Launching Information Activity...");
             goAfterSplashTimeout(new Intent(this, InformationActivity.class));
         }
         else {

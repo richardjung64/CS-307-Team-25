@@ -63,6 +63,7 @@ public class AddToUsersTable {
         users_table.setUserAge(age);
         users_table.setUserDescription(userDescr);
         users_table.setUserGender(gender);
+        users_table.setFirstTime(false);
         try {
             Log.i (LOG_TAG, "Adding for real now...");
             mapper.save(users_table);

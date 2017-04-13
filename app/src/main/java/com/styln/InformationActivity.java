@@ -278,7 +278,7 @@ public class InformationActivity extends AppCompatActivity {
             Log.d(LOG_TAG, "" + isPrivate + "");
             if (!SignInActivity.firstTime)
                 fl.UserChanges(name, age, isPrivate, userDescription, genderIdentity);
-            SignInActivity.was_the_first_form_filled = true;
+            //SignInActivity.was_the_first_form_filled = true;
             if (SignInActivity.firstTime)
                 SignInActivity.firstTime = false;
             Log.d(LOG_TAG, "Saved, Launching Home Activity...");

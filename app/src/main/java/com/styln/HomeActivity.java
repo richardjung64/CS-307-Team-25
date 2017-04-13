@@ -221,6 +221,7 @@ public class HomeActivity extends AppCompatActivity {
 
     //TODO get our servers username
         Log.d(LOG_TAG, "Login Option " + Application.getSign_opt());
+        UsersDO thisUser = null;
         if (Application.getSign_opt() == 'f') {
             profilePic = (ImageView)findViewById(R.id.profilePicture);
             String address = FacebookSignInProvider.userImageUrl;
@@ -229,13 +230,13 @@ public class HomeActivity extends AppCompatActivity {
             //Log.i(LOG_TAG,FacebookSignInProvider.userName);
             grabUser task = new grabUser();
 
-//            try {
-//                userName = task.execute().get().getUserName();
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            } catch (ExecutionException e) {
-//                e.printStackTrace();
-//            }
+            try {
+                thisUser = task.execute().get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
         }
         else {
             profilePic = (ImageView)findViewById(R.id.profilePicture);
@@ -245,16 +246,16 @@ public class HomeActivity extends AppCompatActivity {
             //Log.i(LOG_TAG,GoogleSignInProvider.userName);
             grabUser task = new grabUser();
 
-//            try {
-//                userName = task.execute().get().getUserName();
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            } catch (ExecutionException e) {
-//                e.printStackTrace();
-//            }
+            try {
+                thisUser = task.execute().get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
         }
 
-        if (SignInActivity.isFirstTimeAddToDataBase) {
+        if ((thisUser == null) || (thisUser.isFirstTime())) {
             Log.d(LOG_TAG, "Adding to database");
             addToUsersTable = new AddToUsersTable(usr_name, str_age, userDescr, gender, isPrivate);
             addItemTable();
@@ -262,11 +263,7 @@ public class HomeActivity extends AppCompatActivity {
             addPostTable();
             addClothesTable = new AddClothesTable();
             addClothesTable();
-            SignInActivity.isFirstTimeAddToDataBase = false;
         }
-
-
-
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 

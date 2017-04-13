@@ -27,6 +27,16 @@ public class UsersDO {
     private List<String> _usersFollowing;
     private List<String> _userWardrobe;
     private List<String> _userWishList;
+    private boolean isFirstTime;
+
+    @DynamoDBAttribute(attributeName = "isFirstTime")
+    public boolean isFirstTime() {
+        return isFirstTime;
+    }
+
+    public void setFirstTime(boolean firstTime) {
+        isFirstTime = firstTime;
+    }
 
     @DynamoDBHashKey(attributeName = "userId")
     @DynamoDBAttribute(attributeName = "userId")

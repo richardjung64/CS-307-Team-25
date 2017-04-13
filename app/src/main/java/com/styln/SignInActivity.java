@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.v4.app.ActivityCompat;
@@ -41,8 +42,7 @@ public class SignInActivity extends Activity {
     AtomicBoolean isUserThere = new AtomicBoolean();
 
     public static boolean firstTime = true;
-    public static boolean isFirstTimeAddToDataBase = true;
-    public static boolean was_the_first_form_filled = false;
+   // public static boolean was_the_first_form_filled = false;
 
     /** Permission Request Code (Must be < 256). */
     private static final int GET_ACCOUNTS_PERMISSION_REQUEST_CODE = 93;

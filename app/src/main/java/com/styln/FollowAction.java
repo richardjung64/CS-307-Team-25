@@ -71,6 +71,7 @@ public class FollowAction {
     }
 
     public void UserChanges(final String username, final String age, final boolean isPrivate, final String description, final String gender){
+        Log.d(FollowAction.class.getSimpleName(), "UserChanges method...");
         final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
         Runnable runnable = new Runnable() {
             public void run() {

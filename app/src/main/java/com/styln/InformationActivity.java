@@ -33,6 +33,7 @@ import android.widget.RadioGroup;
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.mobile.AWSMobileClient;
+import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.util.ThreadUtils;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
@@ -84,6 +85,7 @@ public class InformationActivity extends AppCompatActivity {
     Uri selectedImage;
     String filePath;
     private String s3_link;
+    private IdentityManager identityManager;
 
     private AmazonS3Client s3;
     private TransferUtility transferUtility;
@@ -124,6 +126,8 @@ public class InformationActivity extends AppCompatActivity {
         nameText = (EditText) findViewById(R.id.change_name);
         ageText = (EditText) findViewById(R.id.change_age);
         descriptionText = (EditText) findViewById(R.id.change_description);
+        final AWSMobileClient awsMobileClient = AWSMobileClient.defaultMobileClient();
+        identityManager = awsMobileClient.getIdentityManager();
         //s3 = new AmazonS3Client(AWSMobileClient.defaultMobileClient().getIdentityManager().getCredentialsProvider());
         //transferUtility = new TransferUtility(s3, getBaseContext());
 
@@ -156,6 +160,8 @@ public class InformationActivity extends AppCompatActivity {
                         // Show an explanation to the user *asynchronously* -- don't block
                         // this thread waiting for the user's response! After the user
                         // sees the explanation, try again to request the permission.
+                        Intent gallery_i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                        startActivityForResult(gallery_i, GET_FROM_GALLERY);
 
                     } else {
 
@@ -168,10 +174,10 @@ public class InformationActivity extends AppCompatActivity {
                         // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
                         // app-defined int constant. The callback method gets the
                         // result of the request.
+                        Intent gallery_i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                        startActivityForResult(gallery_i, GET_FROM_GALLERY);
                     }
                 }
-                Intent gallery_i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                startActivityForResult(gallery_i, GET_FROM_GALLERY);
             }
         });
 
@@ -281,6 +287,13 @@ public class InformationActivity extends AppCompatActivity {
         }
     }
 
+    public void signOut(View view) {
+        identityManager.signOut();
+        startActivity(new Intent(InformationActivity.this, SignInActivity.class));
+        finish();
+        return;
+    }
+
 
     public void Confirm(View view) {
         //TODO upload changes
@@ -356,9 +369,10 @@ public class InformationActivity extends AppCompatActivity {
         }
         if (curr_usr == null || curr_usr.isFirstTime()) {
             Log.d(LOG_TAG, "Canceled, Launching Sign in Activity...");
-            startActivity(new Intent(InformationActivity.this, SignInActivity.class)
-                    .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+//            startActivity(new Intent(InformationActivity.this, SignInActivity.class)
+//                    .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
             // finish should always be called on the main thread.
+            signOut(view);
             finish();
         } else {
             onBackPressed();

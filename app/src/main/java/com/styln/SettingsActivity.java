@@ -88,6 +88,7 @@ public class SettingsActivity extends AppCompatActivity {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-        startActivity(new Intent(SettingsActivity.this, SignInActivity.class));
+        signOut(view);
+        //startActivity(new Intent(SettingsActivity.this, SignInActivity.class));
     }
 }

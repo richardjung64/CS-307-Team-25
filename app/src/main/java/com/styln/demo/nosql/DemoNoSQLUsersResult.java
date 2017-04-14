@@ -210,9 +210,9 @@ public class DemoNoSQLUsersResult implements DemoNoSQLResult {
         userPrivacyKeyTextView.setText("User_Privacy");
        // userPrivacyValueTextView.setText(booleanToHexString(result.getUserPrivacy()));
         usersFollowersKeyTextView.setText("Users_Followers");
-        usersFollowersValueTextView.setText(result.getUsersFollowers().toString());
+        usersFollowersValueTextView.setText(result.getUserFollower().toString());
         usersFollowingKeyTextView.setText("Users_Following");
-        //usersFollowingValueTextView.setText(result.getUsersFollowing().toString());
+        usersFollowingValueTextView.setText(result.getUserFollowing().toString());
         return layout;
     }
 }

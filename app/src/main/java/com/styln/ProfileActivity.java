@@ -18,6 +18,7 @@ import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.models.nosql.ClothingDO;
 import com.amazonaws.models.nosql.UsersDO;
 import com.bumptech.glide.Glide;
 
@@ -36,9 +37,7 @@ public class ProfileActivity extends AppCompatActivity {
     static boolean checked = false;
     private ImageView profilePic;
 
-    private List<Item> itemList = new ArrayList<>();
-    private List<Item> followerList = new ArrayList<>();
-    private List<Item> followingList = new ArrayList<>();
+    private List<ClothingDO> itemList = new ArrayList<>();
 
 
     private RecyclerView recyclerView;
@@ -57,8 +56,6 @@ public class ProfileActivity extends AppCompatActivity {
         profilePic = (ImageView)findViewById(R.id.profilePicture);
         numFollowers = (TextView)findViewById(R.id.numFollowers);
         numFollowing = (TextView)findViewById(R.id.numFollowing);
-
-        description.setText("CardView is another major element introduced in Material Design. Using CardView you can represent the information in a card manner with a drop shadow (elevation) and corner radius which looks consistent across the platform. ");
 
         UsersDO thisUser = null;
         grabUser _task = new grabUser();
@@ -101,7 +98,6 @@ public class ProfileActivity extends AppCompatActivity {
             }
         }
 
-
         grabUser task = new grabUser();
         UsersDO currentUser = new UsersDO();
         try {
@@ -111,19 +107,29 @@ public class ProfileActivity extends AppCompatActivity {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-        //currentUser.setUserDescription("ASHIUASHI");
+
         userName.setText(currentUser.getUserName());
         description.setText(currentUser.getUserDescription());
-        /*if(currentUser.getUsersFollowers() == null){
+        if(currentUser.getUserFollower() == null){
             numFollowers.setText("0");
+        } else {
+            numFollowers.setText(""+currentUser.getUserFollower().size());
         }
-        numFollowers.setText(currentUser.getUsersFollowers().size());
-        if(currentUser.getUsersFollowing() == null){
+        if(currentUser.getUserFollowing() == null){
             numFollowing.setText("0");
+        } else {
+            numFollowing.setText(""+currentUser.getUserFollowing().size());
         }
-        numFollowing.setText(currentUser.getUsersFollowing().size());*/
 
+        getWardrobe task2 = new getWardrobe();
 
+        try {
+            itemList = task2.execute("").get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
@@ -134,8 +140,7 @@ public class ProfileActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(iAdapter);
 
-        prepareWardrobeData();
-
+        iAdapter.notifyDataSetChanged();
     }
     private class grabUser extends AsyncTask<String, Void, UsersDO> {
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
@@ -151,21 +156,33 @@ public class ProfileActivity extends AppCompatActivity {
         }
     }
 
-    private void prepareWardrobeData() {
-        //TODO load wardrobe
-        Item item = new Item("Tshirt 1", "Hollister",1,R.drawable.shirt1);
-        itemList.add(item);
+    private class getWardrobe extends AsyncTask<String, Void, List<ClothingDO>> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        List<ClothingDO> loadresult = new ArrayList<ClothingDO>();
+        @Override
+        protected List<ClothingDO> doInBackground(String... strings) {
+            UsersDO currentUser;
+            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            currentUser = mapper.load(UsersDO.class, userID);
+            List<String> tempSet;
 
-        item = new Item("Tshirt 2", "Hollister",1,R.drawable.shirt1);
-        itemList.add(item);
-        item = new Item("Tshirt 3", "Hollister",1,R.drawable.shirt1);
-        itemList.add(item);
-        item = new Item("Tshirt 4", "Hollister",1,R.drawable.shirt1);
-        itemList.add(item);
+            if(currentUser.getUserWardrobe() == null){
+                Log.d(LOG_TAG,"NULLLLL");
+                currentUser.setUserWardrobe(new ArrayList<String>());
+            }
 
+            tempSet = currentUser.getUserWardrobe();
+            List<String> result = new ArrayList<String>(tempSet);
 
-        iAdapter.notifyDataSetChanged();
+            for (String str : result) {
+                ClothingDO iterator = mapper.load(ClothingDO.class, str);
+                loadresult.add(iterator);
+
+            }
+            return loadresult;
+        }
     }
+
 
     public void openHome(View view) {
         Log.d(LOG_TAG, "Launching Home Activity...");

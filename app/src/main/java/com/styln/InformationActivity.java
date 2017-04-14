@@ -6,9 +6,6 @@ import android.content.ContentUris;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.graphics.Matrix;
-import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -16,7 +13,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
-import android.provider.OpenableColumns;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -30,40 +26,22 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.RadioGroup;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.AmazonServiceException;
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.IdentityManager;
-import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.util.ThreadUtils;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
-import com.amazonaws.mobileconnectors.s3.transferutility.TransferListener;
-import com.amazonaws.mobileconnectors.s3.transferutility.TransferObserver;
-import com.amazonaws.mobileconnectors.s3.transferutility.TransferState;
 import com.amazonaws.mobileconnectors.s3.transferutility.TransferUtility;
 import com.amazonaws.models.nosql.UsersDO;
-import com.amazonaws.regions.Region;
-import com.amazonaws.regions.Regions;
-import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.model.CannedAccessControlList;
-import com.amazonaws.services.s3.model.GetObjectRequest;
 import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.bumptech.glide.Glide;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.ExecutionException;
 
-import jp.wasabeef.glide.transformations.CropCircleTransformation;
 import jp.wasabeef.glide.transformations.CropSquareTransformation;
-
-import static android.R.attr.data;
 
 /**
  * Created by jungr on 4/4/17.
@@ -335,7 +313,7 @@ public class InformationActivity extends AppCompatActivity {
 
         if (flag == 0) {
             beginUpload(filePath);
-            FollowAction fl = new FollowAction();
+            DataAction fl = new DataAction();
             Log.d(LOG_TAG, "" + isPrivate + "");
             if (!SignInActivity.firstTime)
                 fl.UserChanges(name, age, isPrivate, userDescription, genderIdentity);
@@ -436,7 +414,7 @@ public class InformationActivity extends AppCompatActivity {
                 s3 = new AmazonS3Client(AWSMobileClient.defaultMobileClient().getIdentityManager().getCredentialsProvider());
                 s3.putObject(obj.withCannedAcl(CannedAccessControlList.PublicRead));
                 s3_link = "https://s3.amazonaws.com/" + BUCKET_NAME + "/" + file.getName();
-                FollowAction fl = new FollowAction();
+                DataAction fl = new DataAction();
                 fl.user_dp(s3_link);
                 Log.d(LOG_TAG, s3_link);
                 ThreadUtils.runOnUiThread(new Runnable() {

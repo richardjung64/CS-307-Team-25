@@ -1,9 +1,6 @@
 package com.styln;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -469,16 +466,16 @@ public class HomeActivity extends AppCompatActivity {
             followed = false;
             follow.setText("FOLLOW");
             follow.setTextSize(10);
-            FollowAction fl = new FollowAction();
-            fl.followSomeone("us-east-1:3254e0fa-3613-45b2-aa81-6ad73c765f0e");
+            DataAction fl = new DataAction();
+            fl.followSomeone("us-east-1:6266ddac-b3e7-403c-a2e0-bb5b7c861b60");
             Log.d("d","Follow");
 
         } else {
             followed = true;
             follow.setText("UNFOLLOW");
             follow.setTextSize(10);
-            FollowAction fl = new FollowAction();
-            fl.unfollowSomeone("us-east-1:3254e0fa-3613-45b2-aa81-6ad73c765f0e");
+            DataAction fl = new DataAction();
+            fl.unfollowSomeone("us-east-1:6266ddac-b3e7-403c-a2e0-bb5b7c861b60");
             Log.d("d","UNFollow");
         }
     }

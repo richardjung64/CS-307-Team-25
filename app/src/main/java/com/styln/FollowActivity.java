@@ -39,13 +39,13 @@ public class FollowActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "Opened from " + pageKey);
 
 
-        List<UsersDO> us = null;
+        List<UsersDO> userList = null;
 
         if(pageKey.equals("followers")){
             getFollower task;
             task = new getFollower();
             try {
-                us = task.execute(pageKey).get();
+                userList = task.execute(pageKey).get();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
@@ -55,7 +55,7 @@ public class FollowActivity extends AppCompatActivity {
             getFollowing task;
             task = new getFollowing();
             try {
-                us = task.execute(pageKey).get();
+                userList = task.execute(pageKey).get();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
@@ -63,9 +63,9 @@ public class FollowActivity extends AppCompatActivity {
             }
         }
 
-        Log.d("THIS IS IT",us.toString());
+        Log.d("THIS IS IT",userList.toString());
 
-        uAdapter = new FollowUsersAdapter(this, us);
+        uAdapter = new FollowUsersAdapter(this, userList);
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
@@ -96,20 +96,18 @@ public class FollowActivity extends AppCompatActivity {
                     currentUser = mapper.load(UsersDO.class, userID);
                     List<String> tempSet;
 
-            if(currentUser.getUsersFollowers() == null){
+            if(currentUser.getUserFollower() == null){
                 Log.d(LOG_TAG,"NULLLLL");
-                currentUser.setUsersFollowers(new ArrayList<String>());
-
+                currentUser.setUserFollower(new ArrayList<String>());
             }
-            tempSet = currentUser.getUsersFollowers();
+            tempSet = currentUser.getUserFollower();
 
-                    List<String> result = new ArrayList<String>(tempSet);
+            List<String> result = new ArrayList<String>(tempSet);
 
-                    for (String str : result) {
-                        UsersDO iterator = mapper.load(UsersDO.class, str);
-                        loadresult.add(iterator);
-
-                    }
+            for (String str : result) {
+                UsersDO iterator = mapper.load(UsersDO.class, str);
+                loadresult.add(iterator);
+            }
             return loadresult;
         }
     }
@@ -125,12 +123,12 @@ public class FollowActivity extends AppCompatActivity {
             currentUser = mapper.load(UsersDO.class, userID);
 
             List<String> tempSet;
-            if(currentUser.getUsersFollowing() == null){
+            if(currentUser.getUserFollowing() == null){
                 Log.d(LOG_TAG,"NULLLLL");
-                currentUser.setUsersFollowing(new ArrayList<String>());
+                currentUser.setUserFollowing(new ArrayList<String>());
 
             }
-            tempSet = currentUser.getUsersFollowing();
+            tempSet = currentUser.getUserFollowing();
 
             List<String> result = new ArrayList<String>(tempSet);
 

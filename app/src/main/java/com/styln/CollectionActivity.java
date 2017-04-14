@@ -1,6 +1,7 @@
 package com.styln;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -11,10 +12,12 @@ import android.view.View;
 
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.models.nosql.ClothingDO;
 import com.amazonaws.models.nosql.UsersDO;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 public class CollectionActivity extends AppCompatActivity {
 
@@ -22,8 +25,8 @@ public class CollectionActivity extends AppCompatActivity {
     private static final String LOG_TAG = FollowActivity.class.getSimpleName();
     private String pageKey;
 
-    private List<Item> Wardrobe = new ArrayList<>();
-    private List<Item> Wishlist = new ArrayList<>();
+    private List<ClothingDO> Wardrobe = new ArrayList<>();
+    private List<ClothingDO> Wishlist = new ArrayList<>();
     private RecyclerView recyclerView;
     private CollectionItemsAdapter iAdapter;
 
@@ -36,12 +39,30 @@ public class CollectionActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "Opened from " + pageKey);
 
 
+
         if(pageKey.equals("wardrobe")){
+
+            getWardrobe task = new getWardrobe();
+            try {
+                Wardrobe = task.execute("").get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
+
             iAdapter = new CollectionItemsAdapter(this, Wardrobe);
-            getUserWardrobe();
         } else {
+
+            getWishlist task = new getWishlist();
+            try {
+                Wardrobe = task.execute("").get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
             iAdapter = new CollectionItemsAdapter(this,Wishlist);
-            prepareWishlistData();
         }
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -64,27 +85,60 @@ public class CollectionActivity extends AppCompatActivity {
     }
 
 
-     private void getUserWardrobe(){
-                DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
-                UsersDO me = mapper.load(UsersDO.class, AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+    private class getWardrobe extends AsyncTask<String, Void, List<ClothingDO>> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        List<ClothingDO> loadresult = new ArrayList<ClothingDO>();
+        @Override
+        protected List<ClothingDO> doInBackground(String... strings) {
+            UsersDO currentUser;
+            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            currentUser = mapper.load(UsersDO.class, userID);
+            List<String> tempSet;
 
-         Item item = new Item("Tshirt 1", "Hollister",1,R.drawable.shirt1);
-         Wardrobe.add(item);
-         item = new Item("Tshirt 2", "Hollister",1,R.drawable.shirt1);
-         Wardrobe.add(item);
-
-         item = new Item("Tshirt 3", "Hollister",1,R.drawable.shirt1);
-         Wardrobe.add(item);
-         item = new Item("Tshirt 4", "Hollister",1,R.drawable.shirt1);
-         Wardrobe.add(item);
-
+            if(currentUser.getUserWardrobe() == null){
+                Log.d(LOG_TAG,"NULLLLL");
+                currentUser.setUserWardrobe(new ArrayList<String>());
             }
 
-    private void prepareWishlistData() {
-        Item item = new Item("Shoe 1", "Adidas",2, R.drawable.item_2);
-        Wishlist.add(item);
-        iAdapter.notifyDataSetChanged();
+            tempSet = currentUser.getUserWardrobe();
+            List<String> result = new ArrayList<String>(tempSet);
+
+            for (String str : result) {
+                ClothingDO iterator = mapper.load(ClothingDO.class, str);
+                loadresult.add(iterator);
+
+            }
+            return loadresult;
+        }
     }
+
+    private class getWishlist extends AsyncTask<String, Void, List<ClothingDO>> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        List<ClothingDO> loadresult = new ArrayList<ClothingDO>();
+        @Override
+        protected List<ClothingDO> doInBackground(String... strings) {
+            UsersDO currentUser;
+            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            currentUser = mapper.load(UsersDO.class, userID);
+            List<String> tempSet;
+
+            if(currentUser.getUserWishList() == null){
+                Log.d(LOG_TAG,"NULLLLL");
+                currentUser.setUserWishList(new ArrayList<String>());
+            }
+
+            tempSet = currentUser.getUserWishList();
+            List<String> result = new ArrayList<String>(tempSet);
+
+            for (String str : result) {
+                ClothingDO iterator = mapper.load(ClothingDO.class, str);
+                loadresult.add(iterator);
+
+            }
+            return loadresult;
+        }
+    }
+
 
     public void refreshWardrobe(View view) {
         startActivity(new Intent(CollectionActivity.this, CollectionActivity.class)

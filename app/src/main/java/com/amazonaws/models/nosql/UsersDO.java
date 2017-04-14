@@ -1,16 +1,10 @@
 package com.amazonaws.models.nosql;
 
-import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBAttribute;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBHashKey;
-import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBIndexHashKey;
-import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBIndexRangeKey;
-import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBRangeKey;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBTable;
 
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 @DynamoDBTable(tableName = "stylin-mobilehub-1048106400-Users")
 
@@ -23,8 +17,8 @@ public class UsersDO {
     private String _userPhoto;
     private List<String> _userPosts;
     private boolean _userPrivacy;
-    private List<String> _usersFollowers;
-    private List<String> _usersFollowing;
+    private List<String> _userFollower;
+    private List<String> _userFollowing;
     private List<String> _userWardrobe;
     private List<String> _userWishList;
     private boolean isFirstTime;
@@ -125,36 +119,36 @@ public class UsersDO {
     public void setUserPrivacy(final boolean _userPrivacy) {
         this._userPrivacy = _userPrivacy;
     }
-    @DynamoDBAttribute(attributeName = "Users_Followers")
-    public List<String> getUsersFollowers() {
-        return _usersFollowers;
+    @DynamoDBAttribute(attributeName = "User_Follower")
+    public List<String> getUserFollower() {
+        return _userFollower;
     }
 
-    public void setUsersFollowers(final List<String> _usersFollowers) {
-        this._usersFollowers = _usersFollowers;
+    public void setUserFollower(final List<String> _userFollower) {
+        this._userFollower = _userFollower;
     }
-    @DynamoDBAttribute(attributeName = "Users_Following")
-    public List<String> getUsersFollowing() {
-        return _usersFollowing;
+    @DynamoDBAttribute(attributeName = "User_Following")
+    public List<String> getUserFollowing() {
+        return _userFollowing;
     }
 
-    public void setUsersFollowing(final List<String> _usersFollowing) {
-        this._usersFollowing = _usersFollowing;
+    public void setUserFollowing(final List<String> _userFollowing) {
+        this._userFollowing = _userFollowing;
     }
     @DynamoDBAttribute(attributeName = "User_Wardrobe")
-    public List<String> get_UsersWardrobe() {
+    public List<String> getUserWardrobe() {
         return _userWardrobe;
     }
 
-    public void set_UserWardrobe(final List<String> _userWardrobe) {
+    public void setUserWardrobe(final List<String> _userWardrobe) {
         this._userWardrobe = _userWardrobe;
     }
-    @DynamoDBAttribute(attributeName = "Users_Wishlist")
-    public List<String> get_UserWishList() {
+    @DynamoDBAttribute(attributeName = "User_Wishlist")
+    public List<String> getUserWishList() {
         return _userWishList;
     }
 
-    public void set_UserWishList(final List<String> _userWishList) {
+    public void setUserWishList(final List<String> _userWishList) {
         this._userWishList = _userWishList;
     }
 

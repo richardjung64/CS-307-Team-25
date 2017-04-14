@@ -16,6 +16,7 @@ import android.widget.Space;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.amazonaws.models.nosql.ClothingDO;
 import com.bumptech.glide.Glide;
 
 import java.util.List;
@@ -23,7 +24,7 @@ import java.util.List;
 public class CollectionItemsAdapter extends RecyclerView.Adapter<CollectionItemsAdapter.MyViewHolder> {
 
     private Context mContext;
-    private List<Item> itemList;
+    private List<ClothingDO> itemList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView name,brand;
@@ -37,13 +38,12 @@ public class CollectionItemsAdapter extends RecyclerView.Adapter<CollectionItems
             brand = (TextView) view.findViewById(R.id.itemBrand);
             image = (ImageView) view.findViewById(R.id.itemImage);
             action = (ImageView) view.findViewById(R.id.itemAction);
-            sku = -1;
             space = (ImageView) view.findViewById(R.id.itemSpace);
         }
     }
 
 
-    public CollectionItemsAdapter(Context mContext, List<Item> itemList) {
+    public CollectionItemsAdapter(Context mContext, List<ClothingDO> itemList) {
         this.mContext = mContext;
         this.itemList = itemList;
     }
@@ -59,17 +59,16 @@ public class CollectionItemsAdapter extends RecyclerView.Adapter<CollectionItems
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
-        Item item = itemList.get(position);
-        holder.name.setText(item.getName());
-        holder.brand.setText(item.getBrand());
-        holder.sku = item.getSKU();
-        Glide.with(mContext).load(item.getImage()).into(holder.image);
+        ClothingDO item  = itemList.get(position);
+        holder.name.setText(item.getUserId());
+        holder.brand.setText(item.getClothingBrand());
+        Glide.with(mContext).load(item.getClothingPhotoLink()).into(holder.image);
         holder.space.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.d("HHAHA","HAHHA opening");
                 Intent intent= new Intent(mContext, ItemActivity.class);
-                intent.putExtra("SKU",""+holder.sku);
+                intent.putExtra("SKU",""+holder.name.getText());
                 mContext.startActivity(intent);
             }
         });

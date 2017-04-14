@@ -2,6 +2,7 @@ package com.styln;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +17,10 @@ import android.widget.TextView;
 
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.IdentityManager;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.models.nosql.UsersDO;
+
+import java.util.concurrent.ExecutionException;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -26,6 +31,19 @@ public class SettingsActivity extends AppCompatActivity {
     static boolean checked = false;
     private ImageView profilePic;
 
+    private class GrabUser extends AsyncTask<String, Void, UsersDO> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        UsersDO loadresult = new UsersDO();
+        @Override
+        protected UsersDO doInBackground(String... strings) {
+            UsersDO currentUser = new UsersDO();
+            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            currentUser = mapper.load(UsersDO.class, userID);
+            loadresult = currentUser;
+            mapper.delete(loadresult);
+            return loadresult;
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,5 +76,18 @@ public class SettingsActivity extends AppCompatActivity {
         Log.d(LOG_TAG,AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
         startActivity(intent);
         return;
+    }
+
+    public void deleteAccount(View view) {
+        GrabUser grabUser = new GrabUser();
+        UsersDO thisUser;
+        try {
+             thisUser = grabUser.execute().get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        startActivity(new Intent(SettingsActivity.this, SignInActivity.class));
     }
 }

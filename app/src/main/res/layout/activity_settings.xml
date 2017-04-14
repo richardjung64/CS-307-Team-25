@@ -55,6 +55,13 @@
             android:text="Signout"
             android:onClick="signOut"/>
 
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_button"
+            android:onClick="deleteAccount"/>
+
     </LinearLayout>
 
 

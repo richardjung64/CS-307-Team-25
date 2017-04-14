@@ -28,6 +28,27 @@ public class UsersDO {
     private List<String> _userWardrobe;
     private List<String> _userWishList;
     private boolean isFirstTime;
+    private boolean hasCustomDp;
+    private boolean login_opt;
+
+    @DynamoDBAttribute(attributeName = "login_opt")
+    public boolean isLogin_opt() {
+        return login_opt;
+    }
+
+    public void setLogin_opt(boolean login_opt) {
+        this.login_opt = login_opt;
+    }
+
+    @DynamoDBAttribute(attributeName = "hasCustomDp")
+    public boolean isHasCustomDp() {
+        return hasCustomDp;
+    }
+
+    public void setHasCustomDp(boolean hasCustomDp) {
+
+        this.hasCustomDp = hasCustomDp;
+    }
 
     @DynamoDBAttribute(attributeName = "isFirstTime")
     public boolean isFirstTime() {

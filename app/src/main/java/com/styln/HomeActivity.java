@@ -3,6 +3,7 @@ package com.styln;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -73,6 +74,8 @@ public class HomeActivity extends AppCompatActivity {
     String str_privacy;
     String gender;
     boolean isPrivate;
+    String filePath;
+    String s3_link;
 
     public final static String USER_NAME = "User name to activity";
     public final static String USER_AGE = "User age to activity";
@@ -80,31 +83,6 @@ public class HomeActivity extends AppCompatActivity {
     public final static String USER_PRIVACY = "User privacy to activity";
     public final static String USER_GENDER = "User gender to activity";
 
-
-
-    private void getUserTable() {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    //addToUsersTable.getUser();
-                } catch (final AmazonClientException ex) {
-                    Log.e(LOG_TAG, "failed to retrieve");
-                    return;
-                }
-                ThreadUtils.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-//                        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getApplicationContext());
-//                        dialogBuilder.setTitle(R.string.nosql_dialog_title_added_sample_data_text);
-//                        dialogBuilder.setMessage("Add successful");
-//                        dialogBuilder.setNegativeButton(R.string.nosql_dialog_ok_text, null);
-//                        dialogBuilder.show();
-                    }
-                });
-            }
-        }).start();
-    }
 
     private void addItemTable() {
         new Thread(new Runnable() {
@@ -119,11 +97,6 @@ public class HomeActivity extends AppCompatActivity {
                 ThreadUtils.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-//                        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getApplicationContext());
-//                        dialogBuilder.setTitle(R.string.nosql_dialog_title_added_sample_data_text);
-//                        dialogBuilder.setMessage("Add successful");
-//                        dialogBuilder.setNegativeButton(R.string.nosql_dialog_ok_text, null);
-//                        dialogBuilder.show();
                     }
                 });
             }
@@ -143,11 +116,6 @@ public class HomeActivity extends AppCompatActivity {
                 ThreadUtils.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-//                        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getApplicationContext());
-//                        dialogBuilder.setTitle(R.string.nosql_dialog_title_added_sample_data_text);
-//                        dialogBuilder.setMessage("Add successful");
-//                        dialogBuilder.setNegativeButton(R.string.nosql_dialog_ok_text, null);
-//                        dialogBuilder.show();
                     }
                 });
             }
@@ -209,55 +177,65 @@ public class HomeActivity extends AppCompatActivity {
         str_age = i.getStringExtra(InformationActivity.USER_AGE);
         userDescr = i.getStringExtra(InformationActivity.USER_DESCRIPTION);
         isPrivate = i.getBooleanExtra(InformationActivity.USER_PRIVACY, false);
-            //Log.d(LOG_TAG, "PRIVACY" + isPrivate);
         gender = i.getStringExtra(InformationActivity.USER_GENDER);
-        Log.d(LOG_TAG, "RESTORED NAME " + usr_name);
-        Log.d(LOG_TAG, "RESTORED AGE " + str_age);
-        Log.d(LOG_TAG, "RESTORED DESCRIPTION " + userDescr);
-        Log.d(LOG_TAG, "RESTORED IDENTITY " + gender);
-        Log.d(LOG_TAG, "RESTORED PRIVACY " + isPrivate);
+        filePath = i.getStringExtra(InformationActivity.USER_DP);
+        s3_link = i.getStringExtra(InformationActivity.S3_LINK);
+
+        //selectedImage = Uri.parse(i.getStringExtra(InformationActivity.USER_DP));
+//        Log.d(LOG_TAG, "RESTORED NAME " + usr_name);
+//        Log.d(LOG_TAG, "RESTORED AGE " + str_age);
+//        Log.d(LOG_TAG, "RESTORED DESCRIPTION " + userDescr);
+//        Log.d(LOG_TAG, "RESTORED IDENTITY " + gender);
+//        Log.d(LOG_TAG, "RESTORED PRIVACY " + isPrivate);
         //isPrivate = Boolean.getBoolean(str_privacy);
 
 
     //TODO get our servers username
-        Log.d(LOG_TAG, "Login Option " + Application.getSign_opt());
+        //Log.d(LOG_TAG, "Login Option " + Application.getSign_opt());
         UsersDO thisUser = null;
-        if (Application.getSign_opt() == 'f') {
-            profilePic = (ImageView)findViewById(R.id.profilePicture);
-            String address = FacebookSignInProvider.userImageUrl;
-            Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
-                    thumbnail(0.1f).into(profilePic);
-            //Log.i(LOG_TAG,FacebookSignInProvider.userName);
-            grabUser task = new grabUser();
+        GrabUser task = new GrabUser();
 
-            try {
-                thisUser = task.execute().get();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (ExecutionException e) {
-                e.printStackTrace();
+        try {
+            thisUser = task.execute().get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        if (thisUser != null && !thisUser.isLogin_opt()) {
+            if (thisUser.isHasCustomDp()) {
+                profilePic = (ImageView) findViewById(R.id.profilePicture);
+                String address = thisUser.getUserPhoto();
+                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                        thumbnail(0.1f).into(profilePic);
             }
+            else {
+                profilePic = (ImageView) findViewById(R.id.profilePicture);
+                String address = FacebookSignInProvider.userImageUrl;
+                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                        thumbnail(0.1f).into(profilePic);
+            }
+            //Log.i(LOG_TAG,FacebookSignInProvider.userName);
         }
         else {
-            profilePic = (ImageView)findViewById(R.id.profilePicture);
-            String address = GoogleSignInProvider.userImageUrl;
-            Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
-                    thumbnail(0.1f).into(profilePic);
-            //Log.i(LOG_TAG,GoogleSignInProvider.userName);
-            grabUser task = new grabUser();
-
-            try {
-                thisUser = task.execute().get();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (ExecutionException e) {
-                e.printStackTrace();
+            if (thisUser != null && thisUser.isHasCustomDp()) {
+                profilePic = (ImageView) findViewById(R.id.profilePicture);
+                String address = thisUser.getUserPhoto();
+                Log.d(LOG_TAG, "Profile DP " + address);
+                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                        thumbnail(0.1f).into(profilePic);
+            }
+            else {
+                profilePic = (ImageView) findViewById(R.id.profilePicture);
+                String address = GoogleSignInProvider.userImageUrl;
+                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                        thumbnail(0.1f).into(profilePic);
             }
         }
 
         if ((thisUser == null) || (thisUser.isFirstTime())) {
             Log.d(LOG_TAG, "Adding to database");
-            addToUsersTable = new AddToUsersTable(usr_name, str_age, userDescr, gender, isPrivate);
+            addToUsersTable = new AddToUsersTable(usr_name, str_age, userDescr, gender, isPrivate, filePath);
             addItemTable();
             addPost = new AddPostsTable();
             addPostTable();
@@ -297,7 +275,7 @@ public class HomeActivity extends AppCompatActivity {
 //        gender = savedInstanceState.getString(InformationActivity.USER_GENDER);
 //    }
 
-    private class grabUser extends AsyncTask<String, Void, UsersDO> {
+    private class GrabUser extends AsyncTask<String, Void, UsersDO> {
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
         UsersDO loadresult = new UsersDO();
         @Override

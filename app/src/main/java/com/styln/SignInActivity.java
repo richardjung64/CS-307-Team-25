@@ -291,4 +291,11 @@ public class SignInActivity extends Activity {
         super.onActivityResult(requestCode, resultCode, data);
         signInManager.handleActivityResult(requestCode, resultCode, data);
     }
+
+    private boolean add_login_to_table() {
+        if (Application.getSign_opt() == 'g')
+            return true; // True is google
+        else
+            return false;
+    }
 }

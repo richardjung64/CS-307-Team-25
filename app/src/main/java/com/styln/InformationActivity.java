@@ -2,13 +2,21 @@ package com.styln;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.ContentUris;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.Matrix;
+import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.DocumentsContract;
 import android.provider.MediaStore;
+import android.provider.OpenableColumns;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -22,17 +30,37 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.RadioGroup;
 
+import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
+import com.amazonaws.mobile.util.ThreadUtils;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.mobileconnectors.s3.transferutility.TransferListener;
+import com.amazonaws.mobileconnectors.s3.transferutility.TransferObserver;
+import com.amazonaws.mobileconnectors.s3.transferutility.TransferState;
+import com.amazonaws.mobileconnectors.s3.transferutility.TransferUtility;
 import com.amazonaws.models.nosql.UsersDO;
+import com.amazonaws.regions.Region;
+import com.amazonaws.regions.Regions;
+import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.AmazonS3Client;
+import com.amazonaws.services.s3.model.CannedAccessControlList;
+import com.amazonaws.services.s3.model.GetObjectRequest;
+import com.amazonaws.services.s3.model.PutObjectRequest;
+import com.bumptech.glide.Glide;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+
+import jp.wasabeef.glide.transformations.CropCircleTransformation;
+import jp.wasabeef.glide.transformations.CropSquareTransformation;
 
 import static android.R.attr.data;
 
@@ -53,12 +81,23 @@ public class InformationActivity extends AppCompatActivity {
     private RadioButton radioSexButton;
     int privateCounter = 0;
     boolean isPrivate;
+    Uri selectedImage;
+    String filePath;
+    private String s3_link;
+
+    private AmazonS3Client s3;
+    private TransferUtility transferUtility;
 
     public final static String USER_NAME = "User name to activity";
     public final static String USER_AGE = "User age to activity";
     public final static String USER_DESCRIPTION = "User descr to activity";
     public final static String USER_PRIVACY = "User privacy to activity";
     public final static String USER_GENDER = "User gender to activity";
+    public final static String USER_DP = "User DP to activity";
+    public final static String S3_LINK = "S3 Link to activity";
+
+    public final static String BUCKET_NAME = "stylin-userfiles-mobilehub-1048106400/uploads";
+    //public final static String BUCKET_NAME = "cs307stylin";
 
     public static final int GET_FROM_GALLERY = 3;
 
@@ -70,6 +109,8 @@ public class InformationActivity extends AppCompatActivity {
 
 
     private static String LOG_TAG = InformationActivity.class.getSimpleName();
+
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,6 +124,8 @@ public class InformationActivity extends AppCompatActivity {
         nameText = (EditText) findViewById(R.id.change_name);
         ageText = (EditText) findViewById(R.id.change_age);
         descriptionText = (EditText) findViewById(R.id.change_description);
+        //s3 = new AmazonS3Client(AWSMobileClient.defaultMobileClient().getIdentityManager().getCredentialsProvider());
+        //transferUtility = new TransferUtility(s3, getBaseContext());
 
 //        changePic.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -98,39 +141,39 @@ public class InformationActivity extends AppCompatActivity {
 //            }
 //        });
 
-//        changePic.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                // Here, thisActivity is the current activity
-//                if (ContextCompat.checkSelfPermission(getBaseContext(),
-//                        Manifest.permission.READ_EXTERNAL_STORAGE)
-//                        != PackageManager.PERMISSION_GRANTED) {
-//
-//                    // Should we show an explanation?
-//                    if (ActivityCompat.shouldShowRequestPermissionRationale(InformationActivity.this,
-//                            Manifest.permission.READ_EXTERNAL_STORAGE)) {
-//
-//                        // Show an explanation to the user *asynchronously* -- don't block
-//                        // this thread waiting for the user's response! After the user
-//                        // sees the explanation, try again to request the permission.
-//
-//                    } else {
-//
-//                        // No explanation needed, we can request the permission.
-//
-//                        ActivityCompat.requestPermissions(InformationActivity.this,
-//                                new String[]{Manifest.permission.READ_CONTACTS},
-//                                GET_FROM_GALLERY);
-//
-//                        // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
-//                        // app-defined int constant. The callback method gets the
-//                        // result of the request.
-//                    }
-//                }
-//                Intent gallery_i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-//                startActivityForResult(gallery_i, GET_FROM_GALLERY);
-//            }
-//        });
+        changePic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Here, thisActivity is the current activity
+                if (ContextCompat.checkSelfPermission(getBaseContext(),
+                        Manifest.permission.READ_EXTERNAL_STORAGE)
+                        != PackageManager.PERMISSION_GRANTED) {
+
+                    // Should we show an explanation?
+                    if (ActivityCompat.shouldShowRequestPermissionRationale(InformationActivity.this,
+                            Manifest.permission.READ_EXTERNAL_STORAGE)) {
+
+                        // Show an explanation to the user *asynchronously* -- don't block
+                        // this thread waiting for the user's response! After the user
+                        // sees the explanation, try again to request the permission.
+
+                    } else {
+
+                        // No explanation needed, we can request the permission.
+
+                        ActivityCompat.requestPermissions(InformationActivity.this,
+                                new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                                GET_FROM_GALLERY);
+
+                        // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                        // app-defined int constant. The callback method gets the
+                        // result of the request.
+                    }
+                }
+                Intent gallery_i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                startActivityForResult(gallery_i, GET_FROM_GALLERY);
+            }
+        });
 
         //TODO loads userinfo
         userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
@@ -157,6 +200,8 @@ public class InformationActivity extends AppCompatActivity {
             userDescription = currentUser.getUserDescription();
             descriptionText.setText(currentUser.getUserDescription());
             //descriptionText.setHint("Tell us something about you");
+            Glide.with(this).load(currentUser.getUserPhoto()).bitmapTransform(new CropSquareTransformation(getBaseContext())).
+                    thumbnail(0.1f).into(picture);
             privacy = (CheckBox) findViewById(R.id.change_privacy);
             if (currentUser.getUserPrivacy()) {
                 privacy.setChecked(true);
@@ -248,7 +293,7 @@ public class InformationActivity extends AppCompatActivity {
             name = nameText.getText().toString();
         if (ageText.getText().toString().trim().equals("")) {
             flag++;
-            ageText.setError("Name is required");
+            ageText.setError("Age is required");
         }
         else
             age = ageText.getText().toString();
@@ -274,6 +319,7 @@ public class InformationActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "" + isPrivate);
 
         if (flag == 0) {
+            beginUpload(filePath);
             FollowAction fl = new FollowAction();
             Log.d(LOG_TAG, "" + isPrivate + "");
             if (!SignInActivity.firstTime)
@@ -288,6 +334,8 @@ public class InformationActivity extends AppCompatActivity {
             i.putExtra(USER_DESCRIPTION, userDescription);
             i.putExtra(USER_PRIVACY, isPrivate);
             i.putExtra(USER_GENDER, genderIdentity);
+            i.putExtra(USER_DP, filePath);
+            i.putExtra(S3_LINK, s3_link);
 //        startActivity(new Intent(InformationActivity.this, HomeActivity.class)
 //                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
             startActivity(i);
@@ -297,14 +345,23 @@ public class InformationActivity extends AppCompatActivity {
     }
 
     public void Cancel(View view) {
-        if (SignInActivity.firstTime) {
+        GrabUser grabUser = new GrabUser();
+        UsersDO curr_usr = null;
+        try {
+            curr_usr = grabUser.execute().get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        if (curr_usr == null || curr_usr.isFirstTime()) {
             Log.d(LOG_TAG, "Canceled, Launching Sign in Activity...");
             startActivity(new Intent(InformationActivity.this, SignInActivity.class)
                     .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
             // finish should always be called on the main thread.
             finish();
         } else {
-            return;
+            onBackPressed();
         }
     }
 
@@ -312,13 +369,13 @@ public class InformationActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         //Detects request codes
         if (requestCode == GET_FROM_GALLERY && resultCode == Activity.RESULT_OK) {
-            Uri selectedImage = data.getData();
-            Bitmap bitmap = null;
+             selectedImage = data.getData();
             try {
-                bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImage);
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
+                filePath = getPath(selectedImage);
+                Glide.with(this).load(selectedImage).bitmapTransform(new CropSquareTransformation(getBaseContext())).
+                        thumbnail(0.1f).into(picture);
+            }
+            catch (URISyntaxException e) {
                 e.printStackTrace();
             }
         }
@@ -329,10 +386,110 @@ public class InformationActivity extends AppCompatActivity {
         if (requestCode == GET_FROM_GALLERY) {
             if (grantResults.length > 0
                     && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                this.findViewById(R.id.change_picture_button).callOnClick();
+                changePic.callOnClick();
             } else {
                 Log.i(LOG_TAG, "Permissions not granted for Gallery upload");
             }
         }
+    }
+
+
+    private void beginUpload(final String filePath) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Log.d(LOG_TAG, "Begin Upload Method");
+                GrabUser grabUser = new GrabUser();
+                UsersDO curr_usr = null;
+                try {
+                    curr_usr = grabUser.execute().get();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
+                if (filePath == null) {
+                    Log.e(LOG_TAG, "filePath error");
+                    return;
+                }
+                Log.i(LOG_TAG, "File path " + filePath);
+                File file = new File(filePath);
+                PutObjectRequest obj = new PutObjectRequest(BUCKET_NAME, file.getName(), file);
+                //obj.setCannedAcl(CannedAccessControlList.PublicRead);
+                s3 = new AmazonS3Client(AWSMobileClient.defaultMobileClient().getIdentityManager().getCredentialsProvider());
+                s3.putObject(obj.withCannedAcl(CannedAccessControlList.PublicRead));
+                s3_link = "https://s3.amazonaws.com/" + BUCKET_NAME + "/" + file.getName();
+                FollowAction fl = new FollowAction();
+                fl.user_dp(s3_link);
+                Log.d(LOG_TAG, s3_link);
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                    }
+                });
+            }
+        }).start();
+    }
+
+
+    private String getPath(Uri uri) throws URISyntaxException {
+        final boolean needToCheckUri = Build.VERSION.SDK_INT >= 19;
+        String selection = null;
+        String[] selectionArgs = null;
+        // Uri is different in versions after KITKAT (Android 4.4), we need to
+        // deal with different Uris.
+        if (needToCheckUri && DocumentsContract.isDocumentUri(getApplicationContext(), uri)) {
+            if (isExternalStorageDocument(uri)) {
+                final String docId = DocumentsContract.getDocumentId(uri);
+                final String[] split = docId.split(":");
+                return Environment.getExternalStorageDirectory() + "/" + split[1];
+            } else if (isDownloadsDocument(uri)) {
+                final String id = DocumentsContract.getDocumentId(uri);
+                uri = ContentUris.withAppendedId(
+                        Uri.parse("content://downloads/public_downloads"), Long.valueOf(id));
+            } else if (isMediaDocument(uri)) {
+                final String docId = DocumentsContract.getDocumentId(uri);
+                final String[] split = docId.split(":");
+                final String type = split[0];
+                if ("image".equals(type)) {
+                    uri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
+                } else if ("video".equals(type)) {
+                    uri = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
+                } else if ("audio".equals(type)) {
+                    uri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
+                }
+                selection = "_id=?";
+                selectionArgs = new String[] {
+                        split[1]
+                };
+            }
+        }
+        if ("content".equalsIgnoreCase(uri.getScheme())) {
+            String[] projection = {
+                    MediaStore.Images.Media.DATA
+            };
+            Cursor cursor = null;
+            try {
+                cursor = getContentResolver()
+                        .query(uri, projection, selection, selectionArgs, null);
+                int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+                if (cursor.moveToFirst()) {
+                    return cursor.getString(column_index);
+                }
+            } catch (Exception e) {
+            }
+        } else if ("file".equalsIgnoreCase(uri.getScheme())) {
+            return uri.getPath();
+        }
+        return null;
+    }
+    public static boolean isExternalStorageDocument(Uri uri) {
+        return "com.android.externalstorage.documents".equals(uri.getAuthority());
+    }
+    public static boolean isDownloadsDocument(Uri uri) {
+        return "com.android.providers.downloads.documents".equals(uri.getAuthority());
+    }
+    public static boolean isMediaDocument(Uri uri) {
+        return "com.android.providers.media.documents".equals(uri.getAuthority());
     }
 }

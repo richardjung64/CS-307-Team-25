@@ -2,6 +2,7 @@ package com.styln;
 
 import android.app.Activity;
 import android.content.*;
+import android.net.Uri;
 import android.util.Log;
 
 import com.amazonaws.AmazonClientException;
@@ -39,13 +40,15 @@ public class AddToUsersTable {
     private String gender;
     private boolean isPrivate;
     private String age;
+    private String filePath;
 
-    public AddToUsersTable(String userName, String age, String userDescr, String gender, boolean isPrivate) {
+    public AddToUsersTable(String userName, String age, String userDescr, String gender, boolean isPrivate, String filePath) {
         this.usr_name = userName;
         this.age = age;
         this.userDescr = userDescr;
         this.gender = gender;
         this.isPrivate = isPrivate;
+        this.filePath = filePath;
         //this.context = context;
         //credentialsProvider = new CognitoCachingCredentialsProvider(context, "us-east-1:43cde55a-51f7-4d7a-a2ab-f77c948eed21", Regions.US_EAST_1);
         //ddbClient = new AmazonDynamoDBClient(credentialsProvider);
@@ -58,12 +61,16 @@ public class AddToUsersTable {
         final UsersDO users_table = new UsersDO();
         users_table.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
         users_table.setUserName(usr_name);
-        users_table.setUserPhoto("NO PHOTO");
+        users_table.setUserPhoto("");
         users_table.setUserPrivacy(isPrivate);
         users_table.setUserAge(age);
         users_table.setUserDescription(userDescr);
         users_table.setUserGender(gender);
         users_table.setFirstTime(false);
+//        if (Application.getSign_opt() == 'g')
+//            users_table.setLogin_opt(true); // True is google
+//        else
+//            users_table.setLogin_opt(false);
         try {
             Log.i (LOG_TAG, "Adding for real now...");
             mapper.save(users_table);

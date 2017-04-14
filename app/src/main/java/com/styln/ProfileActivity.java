@@ -60,15 +60,45 @@ public class ProfileActivity extends AppCompatActivity {
 
         description.setText("CardView is another major element introduced in Material Design. Using CardView you can represent the information in a card manner with a drop shadow (elevation) and corner radius which looks consistent across the platform. ");
 
-        if (Application.getSign_opt() == 'f') {
-            String address = FacebookSignInProvider.userImageUrl;
-            Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
-                    thumbnail(0.1f).into(profilePic);
+        UsersDO thisUser = null;
+        grabUser _task = new grabUser();
+
+        try {
+            thisUser = _task.execute().get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        if (thisUser != null && !thisUser.isLogin_opt()) {
+            if (thisUser.isHasCustomDp()) {
+                profilePic = (ImageView) findViewById(R.id.profilePicture);
+                String address = thisUser.getUserPhoto();
+                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                        thumbnail(0.1f).into(profilePic);
+            }
+            else {
+                profilePic = (ImageView) findViewById(R.id.profilePicture);
+                String address = FacebookSignInProvider.userImageUrl;
+                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                        thumbnail(0.1f).into(profilePic);
+            }
+            //Log.i(LOG_TAG,FacebookSignInProvider.userName);
         }
         else {
-            String address = GoogleSignInProvider.userImageUrl;
-            Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
-                    thumbnail(0.1f).into(profilePic);
+            if (thisUser != null && thisUser.isHasCustomDp()) {
+                profilePic = (ImageView) findViewById(R.id.profilePicture);
+                String address = thisUser.getUserPhoto();
+                Log.d(LOG_TAG, "Profile DP " + address);
+                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                        thumbnail(0.1f).into(profilePic);
+            }
+            else {
+                profilePic = (ImageView) findViewById(R.id.profilePicture);
+                String address = GoogleSignInProvider.userImageUrl;
+                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                        thumbnail(0.1f).into(profilePic);
+            }
         }
 
 

@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -48,6 +50,8 @@ public class HomeActivity extends AppCompatActivity {
     private ImageView profilePic;
     private Button follow,followMe;
     private String userName;
+    private SwipeRefreshLayout mySwipeRefreshLayout;
+    private ListView mListView;
 
     private AddToUsersTable addToUsersTable;
     private AddClothesTable addClothesTable;
@@ -165,6 +169,52 @@ public class HomeActivity extends AppCompatActivity {
         }).start();
     }
 
+    private void refreshContent() {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                UsersDO thisUser = null;
+                GrabUser task = new GrabUser();
+
+                try {
+                    thisUser = task.execute().get();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
+                if (thisUser != null && !thisUser.isLogin_opt()) {
+                    if (thisUser.isHasCustomDp()) {
+                        profilePic = (ImageView) findViewById(R.id.profilePicture);
+                        String address = thisUser.getUserPhoto();
+                        Glide.with(getBaseContext()).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                                thumbnail(0.1f).into(profilePic);
+                    } else {
+                        profilePic = (ImageView) findViewById(R.id.profilePicture);
+                        String address = FacebookSignInProvider.userImageUrl;
+                        Glide.with(getBaseContext()).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                                thumbnail(0.1f).into(profilePic);
+                    }
+                    //Log.i(LOG_TAG,FacebookSignInProvider.userName);
+                } else {
+                    if (thisUser != null && thisUser.isHasCustomDp()) {
+                        profilePic = (ImageView) findViewById(R.id.profilePicture);
+                        String address = thisUser.getUserPhoto();
+                        Log.d(LOG_TAG, "Profile DP " + address);
+                        Glide.with(getBaseContext()).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                                thumbnail(0.1f).into(profilePic);
+                    } else {
+                        profilePic = (ImageView) findViewById(R.id.profilePicture);
+                        String address = GoogleSignInProvider.userImageUrl;
+                        Glide.with(getBaseContext()).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                                thumbnail(0.1f).into(profilePic);
+                    }
+                }
+                mySwipeRefreshLayout.setRefreshing(false);
+            }
+        }, 2000);
+    }
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
@@ -172,6 +222,19 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         textLikes = (TextView)findViewById(R.id.numLikes);
         follow = (Button)findViewById(R.id.home_follow);
+        mySwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swiperefresh);
+        mListView = (ListView) findViewById(R.id.list_view);
+
+        mySwipeRefreshLayout.setOnRefreshListener(
+                new SwipeRefreshLayout.OnRefreshListener() {
+                    @Override
+                    public void onRefresh() {
+                        Log.i(LOG_TAG, "onRefresh called from SwipeRefreshLayout");
+                        refreshContent();
+                    }
+                }
+        );
+
         Intent i = getIntent();
         usr_name = i.getStringExtra(InformationActivity.USER_NAME);
         str_age = i.getStringExtra(InformationActivity.USER_AGE);

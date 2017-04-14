@@ -177,6 +177,10 @@ public class InformationActivity extends AppCompatActivity {
                         // result of the request.
                     }
                 }
+                else {
+                    Intent gallery_i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                    startActivityForResult(gallery_i, GET_FROM_GALLERY);
+                }
             }
         });
 

@@ -97,6 +97,7 @@ public class InformationActivity extends AppCompatActivity {
     public final static String USER_GENDER = "User gender to activity";
     public final static String USER_DP = "User DP to activity";
     public final static String S3_LINK = "S3 Link to activity";
+    public final static String INFO_TO_HOME = "Is app going from " + InformationActivity.class.getSimpleName() + " to " + HomeActivity.class.getSimpleName();
 
     public final static String BUCKET_NAME = "stylin-userfiles-mobilehub-1048106400/uploads";
     //public final static String BUCKET_NAME = "cs307stylin";
@@ -153,20 +154,20 @@ public class InformationActivity extends AppCompatActivity {
                         Manifest.permission.READ_EXTERNAL_STORAGE)
                         != PackageManager.PERMISSION_GRANTED) {
 
+                    Log.d(LOG_TAG, "Permission not granted");
+
                     // Should we show an explanation?
                     if (ActivityCompat.shouldShowRequestPermissionRationale(InformationActivity.this,
                             Manifest.permission.READ_EXTERNAL_STORAGE)) {
 
+                        Log.d(LOG_TAG, "Need Explanation");
                         // Show an explanation to the user *asynchronously* -- don't block
                         // this thread waiting for the user's response! After the user
                         // sees the explanation, try again to request the permission.
-                        Intent gallery_i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                        startActivityForResult(gallery_i, GET_FROM_GALLERY);
-
                     } else {
 
                         // No explanation needed, we can request the permission.
-
+                        Log.d(LOG_TAG, "No explanation ");
                         ActivityCompat.requestPermissions(InformationActivity.this,
                                 new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
                                 GET_FROM_GALLERY);
@@ -174,8 +175,6 @@ public class InformationActivity extends AppCompatActivity {
                         // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
                         // app-defined int constant. The callback method gets the
                         // result of the request.
-                        Intent gallery_i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                        startActivityForResult(gallery_i, GET_FROM_GALLERY);
                     }
                 }
             }
@@ -294,7 +293,6 @@ public class InformationActivity extends AppCompatActivity {
         return;
     }
 
-
     public void Confirm(View view) {
         //TODO upload changes
         int flag = 0;
@@ -400,7 +398,8 @@ public class InformationActivity extends AppCompatActivity {
         if (requestCode == GET_FROM_GALLERY) {
             if (grantResults.length > 0
                     && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                changePic.callOnClick();
+                Intent gallery_i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                startActivityForResult(gallery_i, GET_FROM_GALLERY);
             } else {
                 Log.i(LOG_TAG, "Permissions not granted for Gallery upload");
             }

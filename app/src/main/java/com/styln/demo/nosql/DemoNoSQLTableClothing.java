@@ -243,8 +243,8 @@ public class DemoNoSQLTableClothing extends DemoNoSQLTableBase {
             DemoSampleDataGenerator.getRandomSampleString("Clothing_Color"));
 //        firstItem.setClothingWebLink(
 //            DemoSampleDataGenerator.getRandomSampleString("Clothing_WebLink"));
-        firstItem.setClothingDislikes(DemoSampleDataGenerator.getRandomSampleNumber());
-        firstItem.setClothingLikes(DemoSampleDataGenerator.getRandomSampleNumber());
+    /*    firstItem.setClothingDislikes(DemoSampleDataGenerator.getRandomSampleNumber());
+        firstItem.setClothingLikes(DemoSampleDataGenerator.getRandomSampleNumber());*/
         AmazonClientException lastException = null;
 
         try {
@@ -262,7 +262,7 @@ public class DemoNoSQLTableClothing extends DemoNoSQLTableBase {
             item.setClothingBrand(DemoSampleDataGenerator.getRandomSampleString("Clothing_Brand"));
             item.setClothingColor(DemoSampleDataGenerator.getRandomSampleString("Clothing_Color"));
             //item.setClothingWebLink(DemoSampleDataGenerator.getRandomSampleString("Clothing_WebLink"));
-            item.setClothingDislikes(DemoSampleDataGenerator.getRandomSampleNumber());
+           // item.setClothingDislikes(DemoSampleDataGenerator.getRandomSampleNumber());
             item.setClothingLikes(DemoSampleDataGenerator.getRandomSampleNumber());
 
             items[count] = item;

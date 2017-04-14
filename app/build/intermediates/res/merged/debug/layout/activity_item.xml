@@ -163,18 +163,27 @@
         android:layout_alignTop="@+id/itemImage"
         android:layout_toEndOf="@+id/itemImage"
         android:layout_toRightOf="@+id/itemImage"
-        android:text="ItemName"
+        android:text="ITEMNAME"
         android:textSize="25dp"
         android:layout_marginLeft="10dp"
         android:textColor="@color/black_text"/>
 
     <TextView
-        android:id="@+id/sku"
-        android:layout_width="wrap_content"
+        android:id="@+id/itemType"
+        android:layout_width="85dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/itemName"
         android:layout_below="@+id/itemName"
-        android:text="SKU: 000000"
+        android:text="TYPE"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/itemYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/itemType"
+        android:layout_below="@+id/itemName"
+        android:layout_marginLeft="3dp"
+        android:text="Year"
         android:textSize="15dp"/>
 
     <TextView
@@ -182,8 +191,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/itemName"
-        android:layout_below="@+id/sku"
-        android:text="brand"
+        android:layout_below="@+id/itemType"
+        android:text="BRAND"
         android:textColor="@color/com_facebook_button_like_background_color_selected"
         android:textSize="15dp" />
 
@@ -193,7 +202,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/itemBrand"
         android:layout_marginLeft="30dp"
-        android:layout_below="@+id/sku"
+        android:layout_below="@+id/itemType"
         android:text="$ Price"
         android:textSize="15dp"/>
 

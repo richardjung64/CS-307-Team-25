@@ -30,7 +30,7 @@ public class ItemActivity extends AppCompatActivity {
     private static final String LOG_TAG = ItemActivity.class.getSimpleName();
 
     private ImageView itemImage;
-    private TextView name,sku,brand,price,description,numLikes,numOwned,rank,availability,storeLink;
+    private TextView name,brand,price,description,type,year,color,numLikes,numOwned,rank,availability,storeLink;
     private String SKUKey = "";
 
 
@@ -42,8 +42,9 @@ public class ItemActivity extends AppCompatActivity {
         SKUKey = getIntent().getStringExtra("SKU");
 
         name = (TextView)findViewById(R.id.itemName);
+        type = (TextView)findViewById(R.id.itemType);
+        year = (TextView)findViewById(R.id.itemYear);
         brand = (TextView)findViewById(R.id.itemBrand);
-        sku = (TextView)findViewById(R.id.sku);
         itemImage = (ImageView)findViewById(R.id.itemImage);
         description = (TextView)findViewById(R.id.itemDescription);
         price = (TextView)findViewById(R.id.itemPrice);
@@ -63,6 +64,8 @@ public class ItemActivity extends AppCompatActivity {
 
         String address = currentItem.getClothingPhotoLink();
         name.setText(currentItem.getUserId());
+        type.setText(currentItem.getClothingType());
+        year.setText(currentItem.getClothingYear());
         price.setText("$ "+currentItem.getClothingPrice());
         brand.setText(currentItem.getClothingBrand());
         numLikes.setText(""+currentItem.getClothingLikes());

@@ -68,9 +68,9 @@ public final class R {
         public static final int normal = 0x7f0c0017;
         public static final int radio = 0x7f0c0071;
         public static final int standard = 0x7f0c0045;
-        public static final int text = 0x7f0c0130;
-        public static final int text2 = 0x7f0c012e;
-        public static final int toolbar = 0x7f0c00cf;
+        public static final int text = 0x7f0c0131;
+        public static final int text2 = 0x7f0c012f;
+        public static final int toolbar = 0x7f0c00d0;
         public static final int wide = 0x7f0c0046;
         public static final int wrap_content = 0x7f0c0024;
     }

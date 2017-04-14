@@ -18,14 +18,14 @@ public class ClothingDO {
     private String _clothingBrand;
     private String _clothingColor;
     private Map<String, String> _clothingComments;
-    private Double _clothingDislikes;
+    private Double _clothingOwned;
     private Double _clothingLikes;
     private String _clothingPhotoLink;
     private String _clothingPrice;
     private String _clothingStore;
     private Map<String, String> _clothingTags;
     private String _clothingType;
-    private Double _clothingYear;
+    private String _clothingYear;
 
     @DynamoDBHashKey(attributeName = "userId")
     @DynamoDBAttribute(attributeName = "userId")
@@ -60,13 +60,13 @@ public class ClothingDO {
     public void setClothingComments(final Map<String, String> _clothingComments) {
         this._clothingComments = _clothingComments;
     }
-    @DynamoDBAttribute(attributeName = "Clothing_Dislikes")
+    @DynamoDBAttribute(attributeName = "Clothing_Owned")
     public Double getClothingDislikes() {
-        return _clothingDislikes;
+        return _clothingOwned;
     }
 
-    public void setClothingDislikes(final Double _clothingDislikes) {
-        this._clothingDislikes = _clothingDislikes;
+    public void setClothingOwned(final Double _clothingOwned) {
+        this._clothingOwned = _clothingOwned;
     }
     @DynamoDBAttribute(attributeName = "Clothing_Likes")
     public Double getClothingLikes() {
@@ -117,11 +117,11 @@ public class ClothingDO {
         this._clothingType = _clothingType;
     }
     @DynamoDBAttribute(attributeName = "Clothing_Year")
-    public Double getClothingYear() {
+    public String getClothingYear() {
         return _clothingYear;
     }
 
-    public void setClothingYear(final Double _clothingYear) {
+    public void setClothingYear(final String _clothingYear) {
         this._clothingYear = _clothingYear;
     }
 

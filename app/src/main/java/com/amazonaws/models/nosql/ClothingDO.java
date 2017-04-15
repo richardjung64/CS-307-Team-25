@@ -26,6 +26,9 @@ public class ClothingDO {
     private Map<String, String> _clothingTags;
     private String _clothingType;
     private String _clothingYear;
+    private List<String> _likedUser;
+    private List<String> _ownedUser;
+
 
     @DynamoDBHashKey(attributeName = "userId")
     @DynamoDBAttribute(attributeName = "userId")
@@ -124,5 +127,22 @@ public class ClothingDO {
     public void setClothingYear(final String _clothingYear) {
         this._clothingYear = _clothingYear;
     }
+    @DynamoDBAttribute(attributeName = "Liked_User")
+    public List<String> getLikedUser() {
+        return _likedUser;
+    }
+
+    public void setLikedUser(final List<String> _likedUser) {
+        this._likedUser = _likedUser;
+    }
+    @DynamoDBAttribute(attributeName = "Owned_User")
+    public List<String> getOwnedUser() {
+        return _ownedUser;
+    }
+
+    public void setOwnedUser(final List<String> _ownedUser) {
+        this._ownedUser = _ownedUser;
+    }
+
 
 }

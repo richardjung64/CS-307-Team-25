@@ -154,9 +154,9 @@ public class ItemActivity extends AppCompatActivity {
         }
         @Override
         public boolean onMenuItemClick(MenuItem menuItem) {
+            DataAction da = new DataAction();
             switch (menuItem.getItemId()) {
                 case R.id.menu_like:
-                    DataAction da = new DataAction();
                     da.likeClothing(getIntent().getStringExtra("SKU"));
                     Toast.makeText(getApplicationContext(), "Liked", Toast.LENGTH_SHORT).show();
 
@@ -164,10 +164,16 @@ public class ItemActivity extends AppCompatActivity {
                     startActivity(new Intent(ItemActivity.this, ItemActivity.class)
                             .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("SKU",getIntent().getStringExtra("SKU")));
                     finish();
-
                     return true;
                 case R.id.menu_add_to_wardrobe:
+                    da.ownClothing(getIntent().getStringExtra("SKU"));
                     Toast.makeText(getApplicationContext(), "Added to Wardrobe", Toast.LENGTH_SHORT).show();
+
+                    Log.d(LOG_TAG, "Refresh Item");
+                    startActivity(new Intent(ItemActivity.this, ItemActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("SKU",getIntent().getStringExtra("SKU")));
+                    finish();
+
                     return true;
                 case R.id.menu_add_to_wishlist:
                     Toast.makeText(getApplicationContext(), "Added to Wishlist", Toast.LENGTH_SHORT).show();

@@ -162,8 +162,20 @@ public class DataAction {
             public void run() {
                 //DynamoDB calls go here
                 DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+
+                UsersDO curr = mapper.load(UsersDO.class, currUserID);
                 ClothingDO sth = mapper.load(ClothingDO.class, someItem);
-                sth.setClothingLikes(sth.getClothingLikes()+1);
+
+                if(sth.getLikedUser() == null){
+                    sth.setLikedUser(new ArrayList<String>());
+                }
+                if(sth.getLikedUser().contains(currUserID)){
+                    sth.setClothingLikes(sth.getClothingLikes()-1);
+                    sth.getLikedUser().remove(currUserID);
+                } else {
+                    sth.setClothingLikes(sth.getClothingLikes()+1);
+                    sth.getLikedUser().add(currUserID);
+                }
                 mapper.save(sth);
             }
         };
@@ -178,8 +190,27 @@ public class DataAction {
             public void run() {
                 //DynamoDB calls go here
                 DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+
+                UsersDO curr = mapper.load(UsersDO.class, currUserID);
                 ClothingDO sth = mapper.load(ClothingDO.class, someItem);
-                sth.setClothingOwned(sth.getClothingOwned()+1);
+
+                if(sth.getOwnedUser() == null){
+                    sth.setOwnedUser(new ArrayList<String>());
+                }
+
+                if(curr.getUserWardrobe() == null){
+                    curr.setUserWishList(new ArrayList<String>());
+                }
+                
+
+                if(sth.getOwnedUser().contains(currUserID)){
+                    sth.setClothingOwned(sth.getClothingLikes() - 1);
+                    sth.getOwnedUser().remove(currUserID);
+                } else {
+                    sth.setClothingOwned(sth.getClothingLikes() + 1);
+                    sth.getOwnedUser().add(currUserID);
+
+                }
                 mapper.save(sth);
             }
         };

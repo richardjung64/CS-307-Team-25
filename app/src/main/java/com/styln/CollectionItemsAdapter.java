@@ -106,6 +106,7 @@ public class CollectionItemsAdapter extends RecyclerView.Adapter<CollectionItems
                     Toast.makeText(mContext, "Opening Post Page", Toast.LENGTH_SHORT).show();
                     return true;
                 case R.id.menu_remove:
+                    //TODO make remove
                     Toast.makeText(mContext, "Removed", Toast.LENGTH_SHORT).show();
                     return true;
                 default:

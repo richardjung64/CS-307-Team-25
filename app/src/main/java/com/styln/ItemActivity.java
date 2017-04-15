@@ -1,6 +1,9 @@
 package com.styln;
 
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -31,6 +34,7 @@ public class ItemActivity extends AppCompatActivity {
 
     private ImageView itemImage;
     private TextView name,brand,price,description,type,year,color,numLikes,numOwned,rank,availability,storeLink;
+    private ImageView availabilityColor;
     private String SKUKey = "";
 
 
@@ -50,6 +54,8 @@ public class ItemActivity extends AppCompatActivity {
         price = (TextView)findViewById(R.id.itemPrice);
         numLikes = (TextView)findViewById(R.id.itemNumLikes);
         numOwned = (TextView)findViewById(R.id.itemNumOwned);
+        availability = (TextView)findViewById(R.id.itemAvailability);
+        availabilityColor = (ImageView)findViewById(R.id.itemAvailabilityBG);
 
         grabItem task = new grabItem();
         ClothingDO currentItem = new ClothingDO();
@@ -70,11 +76,23 @@ public class ItemActivity extends AppCompatActivity {
         brand.setText(currentItem.getClothingBrand());
         numLikes.setText(""+currentItem.getClothingLikes());
         numOwned.setText(""+currentItem.getClothingOwned());
+        description.setText(currentItem.getClothingDescription());
+
+        if(currentItem.getClothingAvailability()) {
+            availabilityColor.setImageDrawable(getResources().getDrawable(R.color.green));
+            availability.setText("Available: Yes");
+        } else {
+            availabilityColor.setImageDrawable(getResources().getDrawable(R.color.red));
+            availability.setText("Available: NO");
+        }
+
         Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
                 thumbnail(0.1f).into(itemImage);
 
 
     }
+
+
 
     private class grabItem extends AsyncTask<String, Void, ClothingDO> {
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
@@ -176,7 +194,13 @@ public class ItemActivity extends AppCompatActivity {
 
                     return true;
                 case R.id.menu_add_to_wishlist:
+                    da.wishClothing(getIntent().getStringExtra("SKU"));
                     Toast.makeText(getApplicationContext(), "Added to Wishlist", Toast.LENGTH_SHORT).show();
+
+                    Log.d(LOG_TAG, "Refresh Item");
+                    startActivity(new Intent(ItemActivity.this, ItemActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("SKU",getIntent().getStringExtra("SKU")));
+                    finish();
                     return true;
                 default:
             }

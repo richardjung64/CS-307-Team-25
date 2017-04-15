@@ -162,7 +162,6 @@ public class InformationActivity extends AppCompatActivity {
             }
         });
 
-        //TODO loads userinfo
         userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
         //LOADS user info;
 

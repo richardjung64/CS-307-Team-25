@@ -41,7 +41,6 @@ public class CollectionActivity extends AppCompatActivity {
 
 
         if(pageKey.equals("wardrobe")){
-
             getWardrobe task = new getWardrobe();
             try {
                 Wardrobe = task.execute("").get();
@@ -53,10 +52,9 @@ public class CollectionActivity extends AppCompatActivity {
 
             iAdapter = new CollectionItemsAdapter(this, Wardrobe);
         } else {
-
             getWishlist task = new getWishlist();
             try {
-                Wardrobe = task.execute("").get();
+                Wishlist = task.execute("").get();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {

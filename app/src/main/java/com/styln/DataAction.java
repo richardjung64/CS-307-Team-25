@@ -199,18 +199,49 @@ public class DataAction {
                 }
 
                 if(curr.getUserWardrobe() == null){
-                    curr.setUserWishList(new ArrayList<String>());
+                    curr.setUserWardrobe(new ArrayList<String>());
                 }
-                
+
 
                 if(sth.getOwnedUser().contains(currUserID)){
-                    sth.setClothingOwned(sth.getClothingLikes() - 1);
+                    sth.setClothingOwned(sth.getClothingOwned() - 1);
                     sth.getOwnedUser().remove(currUserID);
+                    curr.getUserWardrobe().remove(sth.getUserId());
                 } else {
-                    sth.setClothingOwned(sth.getClothingLikes() + 1);
+                    sth.setClothingOwned(sth.getClothingOwned() + 1);
                     sth.getOwnedUser().add(currUserID);
+                    curr.getUserWardrobe().add(sth.getUserId());
 
                 }
+               mapper.save(curr);
+                mapper.save(sth);
+            }
+        };
+        Thread thr = new Thread(runnable);
+        thr.start();
+
+    }
+
+    public void wishClothing(final String someItem){
+        final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+        Runnable runnable = new Runnable() {
+            public void run() {
+                //DynamoDB calls go here
+                DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+
+                UsersDO curr = mapper.load(UsersDO.class, currUserID);
+                ClothingDO sth = mapper.load(ClothingDO.class, someItem);
+
+
+                if(curr.getUserWishList() == null){
+                    curr.setUserWishList(new ArrayList<String>());
+                }
+
+                if(!curr.getUserWishList().contains(sth.getUserId())){
+                    curr.getUserWishList().add(sth.getUserId());
+                }
+
+                mapper.save(curr);
                 mapper.save(sth);
             }
         };

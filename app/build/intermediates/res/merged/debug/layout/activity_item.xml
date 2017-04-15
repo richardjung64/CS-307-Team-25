@@ -214,7 +214,7 @@
         android:layout_alignRight="@+id/itemAvailability"
         android:layout_alignStart="@+id/itemAvailability"
         android:layout_alignTop="@+id/itemAvailability"
-        app:srcCompat="@android:color/holo_green_light" />
+        android:src="@color/green" />
 
     <TextView
         android:id="@+id/itemAvailability"

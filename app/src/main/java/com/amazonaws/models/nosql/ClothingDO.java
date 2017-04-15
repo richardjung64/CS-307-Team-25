@@ -17,12 +17,14 @@ public class ClothingDO {
     private String _userId;
     private String _clothingBrand;
     private String _clothingColor;
+    private String _clothingDescription;
     private Map<String, String> _clothingComments;
     private Double _clothingOwned;
     private Double _clothingLikes;
     private String _clothingPhotoLink;
     private String _clothingPrice;
     private String _clothingStore;
+    private boolean _clothingAvailability;
     private Map<String, String> _clothingTags;
     private String _clothingType;
     private String _clothingYear;
@@ -143,6 +145,20 @@ public class ClothingDO {
     public void setOwnedUser(final List<String> _ownedUser) {
         this._ownedUser = _ownedUser;
     }
+    @DynamoDBAttribute(attributeName = "Clothing_Availability")
+    public boolean getClothingAvailability() {
+        return _clothingAvailability;
+    }
 
+    public void setClothingAvailability(boolean _clothingAvailability) {
+        this._clothingAvailability = _clothingAvailability;
+    }
+    @DynamoDBAttribute(attributeName = "Clothing_Description")
+    public String getClothingDescription() {
+        return _clothingDescription;
+    }
 
+    public void setClothingDescription(String _clothingDescription) {
+        this._clothingDescription = _clothingDescription;
+    }
 }

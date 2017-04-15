@@ -20,5 +20,8 @@
     <color name="light_text">#666666</color>
     <color name="lighter_text">#999999</color>
 
+    <color name="green">	#32CD32</color>
+    <color name="red">#FA8072</color>
+
 
 </resources>

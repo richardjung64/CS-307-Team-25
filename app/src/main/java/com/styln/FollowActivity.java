@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.mobile.AWSMobileClient;
@@ -28,7 +29,7 @@ public class FollowActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private FollowUsersAdapter uAdapter;
-
+    private TextView title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +39,12 @@ public class FollowActivity extends AppCompatActivity {
         pageKey = getIntent().getStringExtra("KEY");
         Log.d(LOG_TAG, "Opened from " + pageKey);
 
+        title = (TextView)findViewById(R.id.title);
 
         List<UsersDO> userList = null;
 
         if(pageKey.equals("followers")){
+            title.setText("FOLLOWERS");
             getFollower task;
             task = new getFollower();
             try {
@@ -52,6 +55,7 @@ public class FollowActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         } else {
+            title.setText("FOLLOWING");
             getFollowing task;
             task = new getFollowing();
             try {

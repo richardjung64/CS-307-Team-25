@@ -1,5 +1,6 @@
 package com.styln;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Movie;
@@ -65,11 +66,16 @@ public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.
             public void onClick(View view) {
                 if(holder.following){
                     unfollow(holder.follow);
+                    Intent intentCurrent = ((Activity) mContext).getIntent();
                     Intent intent= new Intent(mContext, FollowActivity.class);
+                    intent.putExtra("KEY",intentCurrent.getStringExtra("KEY"));
                     mContext.startActivity(intent);
                 } else {
                     follow(holder.follow);
+                    Intent intentCurrent = ((Activity) mContext).getIntent();
                     Intent intent= new Intent(mContext, FollowActivity.class);
+                    intent.putExtra("KEY",intentCurrent.getStringExtra("KEY"));
+                    mContext.startActivity(intent);
                     mContext.startActivity(intent);
                 }
             }

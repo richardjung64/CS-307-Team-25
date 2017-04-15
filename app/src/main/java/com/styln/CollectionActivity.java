@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
@@ -29,6 +30,7 @@ public class CollectionActivity extends AppCompatActivity {
     private List<ClothingDO> Wishlist = new ArrayList<>();
     private RecyclerView recyclerView;
     private CollectionItemsAdapter iAdapter;
+    private TextView title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,9 +40,10 @@ public class CollectionActivity extends AppCompatActivity {
         pageKey = getIntent().getStringExtra("KEY");
         Log.d(LOG_TAG, "Opened from " + pageKey);
 
-
+        title = (TextView)findViewById(R.id.title);
 
         if(pageKey.equals("wardrobe")){
+            title.setText("WARDROBE");
             getWardrobe task = new getWardrobe();
             try {
                 Wardrobe = task.execute("").get();
@@ -52,6 +55,8 @@ public class CollectionActivity extends AppCompatActivity {
 
             iAdapter = new CollectionItemsAdapter(this, Wardrobe);
         } else {
+            title.setText("WISHLIST");
+
             getWishlist task = new getWishlist();
             try {
                 Wishlist = task.execute("").get();

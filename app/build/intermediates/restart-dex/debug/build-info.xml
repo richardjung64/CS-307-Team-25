@@ -6,26 +6,41 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.1"
-    timestamp="1492288171330"
+    timestamp="1492291616311"
     token="-8717216059319077461"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1349" />
+        duration="1815" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="64" />
+        duration="512" />
     <task
         name="verifier"
-        duration="7" />
+        duration="50" />
 
+    <artifact
+        location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
     <artifact
         location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
         type="SPLIT" />
+    <artifact
+        location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/outputs/apk/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
@@ -70,13 +85,19 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1492287806260"
+        timestamp="1492291616311"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -84,14 +105,6 @@
         <artifact
             location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1492288171330"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
     </build>
 
 </instant-run>

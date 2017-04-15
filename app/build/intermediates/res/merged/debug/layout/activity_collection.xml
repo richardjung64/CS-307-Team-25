@@ -32,14 +32,51 @@
         android:layout_alignRight="@+id/textbg"
         android:layout_alignEnd="@+id/textbg" />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/linearLayout_col"
+        android:text="TITLE"
+        android:layout_alignStart="@+id/textbg"
+        android:layout_alignEnd="@+id/textbg"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:textColor="@color/black_text"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        app:srcCompat="@color/black_text"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="fitXY"
+        android:id="@+id/divider"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/textbg"
+        android:layout_alignEnd="@+id/textbg"
+        android:layout_alignLeft="@+id/textbg"
+        android:layout_alignRight="@+id/textbg"
+        android:layout_alignStart="@+id/textbg"
+        android:layout_below="@id/divider"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_col"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textbg"
         android:layout_alignStart="@+id/textbg"
         android:layout_below="@+id/BackButton"
         android:orientation="vertical"
-        android:layout_alignBottom="@+id/textbg"
         android:layout_alignRight="@+id/textbg"
         android:layout_alignEnd="@+id/textbg"
         android:weightSum="1">
@@ -54,30 +91,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Wardrobe"
                 android:clickable="true"
-                android:onClick="refreshWardrobe"/>
+                android:onClick="refreshWardrobe"
+                android:text="Wardrobe" />
 
             <Button
                 android:id="@+id/Wishlist"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Wishlist"
                 android:clickable="true"
-                android:onClick="refreshWishlist"/>
-        </LinearLayout>
+                android:onClick="refreshWishlist"
+                android:text="Wishlist" />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignBottom="@+id/textbg"
-            android:layout_alignEnd="@+id/textbg"
-            android:layout_alignLeft="@+id/textbg"
-            android:layout_alignRight="@+id/textbg"
-            android:layout_alignStart="@+id/textbg"
-            android:layout_weight="1" />
+        </LinearLayout>
 
     </LinearLayout>
 

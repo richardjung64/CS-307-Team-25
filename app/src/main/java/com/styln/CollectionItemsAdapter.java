@@ -1,6 +1,7 @@
 package com.styln;
 
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.PopupMenu;
@@ -19,6 +20,7 @@ import android.widget.Toast;
 import com.amazonaws.models.nosql.ClothingDO;
 import com.bumptech.glide.Glide;
 
+import java.util.Collection;
 import java.util.List;
 
 public class CollectionItemsAdapter extends RecyclerView.Adapter<CollectionItemsAdapter.MyViewHolder> {
@@ -75,7 +77,23 @@ public class CollectionItemsAdapter extends RecyclerView.Adapter<CollectionItems
         holder.action.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showPopupMenu(holder.action);
+                //remove
+                Intent intentCurrent = ((Activity) mContext).getIntent();
+
+                DataAction da = new DataAction();
+                if(intentCurrent.getStringExtra("KEY").equals("wardrobe")){
+                    da.ownClothing(""+holder.name.getText());
+                } else {
+                    da.wishClothing(""+holder.name.getText());
+                }
+
+                Toast.makeText(mContext, "Removed", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(mContext, CollectionActivity.class);
+                intent.putExtra("KEY",intentCurrent.getStringExtra("KEY"));
+                mContext.startActivity(intent);
+
+                //showPopupMenu(holder.action);
             }
         });
     }
@@ -101,13 +119,14 @@ public class CollectionItemsAdapter extends RecyclerView.Adapter<CollectionItems
         }
         @Override
         public boolean onMenuItemClick(MenuItem menuItem) {
+            DataAction da = new DataAction();
             switch (menuItem.getItemId()) {
                 case R.id.menu_post:
                     Toast.makeText(mContext, "Opening Post Page", Toast.LENGTH_SHORT).show();
                     return true;
                 case R.id.menu_remove:
-                    //TODO make remove
-                    Toast.makeText(mContext, "Removed", Toast.LENGTH_SHORT).show();
+
+
                     return true;
                 default:
             }

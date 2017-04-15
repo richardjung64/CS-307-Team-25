@@ -202,7 +202,6 @@ public class DataAction {
                     curr.setUserWardrobe(new ArrayList<String>());
                 }
 
-
                 if(sth.getOwnedUser().contains(currUserID)){
                     sth.setClothingOwned(sth.getClothingOwned() - 1);
                     sth.getOwnedUser().remove(currUserID);
@@ -239,6 +238,8 @@ public class DataAction {
 
                 if(!curr.getUserWishList().contains(sth.getUserId())){
                     curr.getUserWishList().add(sth.getUserId());
+                } else {
+                    curr.getUserWishList().remove(sth.getUserId());
                 }
 
                 mapper.save(curr);

@@ -54,7 +54,7 @@ public class ItemActivity extends AppCompatActivity {
         grabItem task = new grabItem();
         ClothingDO currentItem = new ClothingDO();
         try {
-            task.id = "tshirt";
+            task.id = SKUKey;
             currentItem = task.execute("String").get();
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -69,7 +69,7 @@ public class ItemActivity extends AppCompatActivity {
         price.setText("$ "+currentItem.getClothingPrice());
         brand.setText(currentItem.getClothingBrand());
         numLikes.setText(""+currentItem.getClothingLikes());
-        numOwned.setText(""+currentItem.getClothingDislikes());
+        numOwned.setText(""+currentItem.getClothingOwned());
         Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
                 thumbnail(0.1f).into(itemImage);
 
@@ -156,7 +156,15 @@ public class ItemActivity extends AppCompatActivity {
         public boolean onMenuItemClick(MenuItem menuItem) {
             switch (menuItem.getItemId()) {
                 case R.id.menu_like:
+                    DataAction da = new DataAction();
+                    da.likeClothing(getIntent().getStringExtra("SKU"));
                     Toast.makeText(getApplicationContext(), "Liked", Toast.LENGTH_SHORT).show();
+
+                    Log.d(LOG_TAG, "Refresh Item");
+                    startActivity(new Intent(ItemActivity.this, ItemActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("SKU",getIntent().getStringExtra("SKU")));
+                    finish();
+
                     return true;
                 case R.id.menu_add_to_wardrobe:
                     Toast.makeText(getApplicationContext(), "Added to Wardrobe", Toast.LENGTH_SHORT).show();

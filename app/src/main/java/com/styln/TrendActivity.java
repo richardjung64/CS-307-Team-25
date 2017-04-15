@@ -11,6 +11,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.amazonaws.models.nosql.ClothingDO;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +21,7 @@ public class TrendActivity extends AppCompatActivity {
     private static final String LOG_TAG = TrendActivity.class.getSimpleName();
 
     private RecyclerView recyclerView;
-    private List<Item> rank = new ArrayList<>();
+    private List<ClothingDO> rank = new ArrayList<>();
     private TrendItemsAdapter iAdapter;
 
     @Override
@@ -41,10 +43,7 @@ public class TrendActivity extends AppCompatActivity {
 
     private void prepareTrendData() {
         //TODO Load the RANK here
-        Item item = new Item("Tshirt 1", "Adidas",1,R.drawable.item_1);
-        rank.add(item);
-        item = new Item("Tshirt 2", "Adidas",1,R.drawable.item_1);
-        rank.add(item);
+
 
         iAdapter.notifyDataSetChanged();
     }

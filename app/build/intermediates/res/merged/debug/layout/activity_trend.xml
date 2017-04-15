@@ -145,7 +145,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_alignLeft="@id/textBackground"
-        android:layout_alignTop="@id/textBackground">
+        android:layout_alignTop="@id/textBackground"
+        android:layout_alignEnd="@+id/textBackground">
 
         <TextView
             android:id="@+id/textView"

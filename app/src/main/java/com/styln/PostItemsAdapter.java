@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.amazonaws.models.nosql.ClothingDO;
 import com.bumptech.glide.Glide;
 
 import java.util.List;
@@ -17,7 +18,7 @@ import java.util.List;
 public class PostItemsAdapter extends RecyclerView.Adapter<PostItemsAdapter.MyViewHolder> {
 
     private Context mContext;
-    private List<Item> itemList;
+    private List<ClothingDO> itemList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView name,brand;
@@ -33,14 +34,14 @@ public class PostItemsAdapter extends RecyclerView.Adapter<PostItemsAdapter.MyVi
     }
 
 
-    public PostItemsAdapter(Context mContext, List<Item> itemList) {
+    public PostItemsAdapter(Context mContext, List<ClothingDO> itemList) {
         this.mContext = mContext;
         this.itemList = itemList;
     }
 
 
     @Override
-    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public PostItemsAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_grid_row, parent, false);
         return new PostItemsAdapter.MyViewHolder(itemView);
@@ -48,16 +49,16 @@ public class PostItemsAdapter extends RecyclerView.Adapter<PostItemsAdapter.MyVi
 
 
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, int position) {
-        Item item  = itemList.get(position);
-        holder.name.setText(item.getName());
-        holder.sku = item.getSKU();
-        Glide.with(mContext).load(item.getImage()).into(holder.image);
+    public void onBindViewHolder(final PostItemsAdapter.MyViewHolder holder, int position) {
+        ClothingDO item  = itemList.get(position);
+        holder.name.setText(item.getUserId());
+        //holder.sku = item.getSKU();
+        Glide.with(mContext).load(item.getClothingPhotoLink()).into(holder.image);
         holder.image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(mContext, ItemActivity.class);
-                intent.putExtra("SKU",""+holder.sku);
+                intent.putExtra("SKU",holder.name.getText());
                 mContext.startActivity(intent);
 
             }

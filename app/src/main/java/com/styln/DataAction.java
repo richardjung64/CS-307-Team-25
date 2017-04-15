@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.models.nosql.ClothingDO;
 import com.amazonaws.models.nosql.UsersDO;
 
 import java.util.ArrayList;
@@ -153,4 +154,38 @@ public class DataAction {
         Thread thr = new Thread(runnable);
         thr.start();
     }
+
+
+    public void likeClothing(final String someItem){
+        final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+        Runnable runnable = new Runnable() {
+            public void run() {
+                //DynamoDB calls go here
+                DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+                ClothingDO sth = mapper.load(ClothingDO.class, someItem);
+                sth.setClothingLikes(sth.getClothingLikes()+1);
+                mapper.save(sth);
+            }
+        };
+        Thread thr = new Thread(runnable);
+        thr.start();
+
+    }
+
+    public void ownClothing(final String someItem){
+        final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+        Runnable runnable = new Runnable() {
+            public void run() {
+                //DynamoDB calls go here
+                DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+                ClothingDO sth = mapper.load(ClothingDO.class, someItem);
+                sth.setClothingOwned(sth.getClothingOwned()+1);
+                mapper.save(sth);
+            }
+        };
+        Thread thr = new Thread(runnable);
+        thr.start();
+
+    }
+
 }

@@ -61,7 +61,7 @@ public class ClothingDO {
         this._clothingComments = _clothingComments;
     }
     @DynamoDBAttribute(attributeName = "Clothing_Owned")
-    public Double getClothingDislikes() {
+    public Double getClothingOwned() {
         return _clothingOwned;
     }
 

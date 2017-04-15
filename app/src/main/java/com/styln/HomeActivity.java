@@ -28,6 +28,7 @@ import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.amazonaws.mobile.util.ThreadUtils;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.models.nosql.ClothingDO;
 import com.amazonaws.models.nosql.UsersDO;
 import com.bumptech.glide.Glide;
 import com.styln.demo.nosql.DemoNoSQLOperationListItem;
@@ -60,7 +61,7 @@ public class HomeActivity extends AppCompatActivity {
     private ArrayAdapter<DemoNoSQLOperationListItem> operationsListAdapter;
     private boolean a = false;
 
-    private List<Item> itemList = new ArrayList<>();
+    private List<ClothingDO> itemList = new ArrayList<>();
     private RecyclerView recyclerView;
     private PostItemsAdapter iAdapter;
 
@@ -351,7 +352,9 @@ public class HomeActivity extends AppCompatActivity {
 
     private void prepareCollectionData() {
         //TODO item load
-        Item item = new Item("Tshirt 1", "Hollister",1,R.drawable.shirt1);
+        ClothingDO item = new ClothingDO();
+        item.setUserId("tshirt");
+        item.setClothingBrand("Hollister");
         itemList.add(item);
         iAdapter.notifyDataSetChanged();
     }

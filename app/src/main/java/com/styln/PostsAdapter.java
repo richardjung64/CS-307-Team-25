@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.amazonaws.models.nosql.ClothingDO;
+import com.amazonaws.models.nosql.PostTableDO;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
@@ -21,9 +23,9 @@ import java.util.List;
 public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.MyViewHolder> {
 
     private Context mContext;
-    private List<Post> postList;
+    private List<PostTableDO> postList;
 
-    private List<Item> itemList = new ArrayList<>();
+    private List<ClothingDO> itemList = new ArrayList<>();
     private RecyclerView recyclerView;
     private PostItemsAdapter iAdapter;
 
@@ -45,7 +47,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.MyViewHolder
     }
 
 
-    public PostsAdapter(Context mContext, List<Post> postList) {
+    public PostsAdapter(Context mContext, List<PostTableDO> postList) {
         this.mContext = mContext;
         this.postList = postList;
     }
@@ -67,7 +69,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.MyViewHolder
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
-        Post post = postList.get(position);
+        PostTableDO post = postList.get(position);
         holder.name.setText("");
         
        /* Glide.with(mContext).load(item.getImage()).into(holder.image);

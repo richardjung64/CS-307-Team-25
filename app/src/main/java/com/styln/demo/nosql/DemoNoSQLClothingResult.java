@@ -195,7 +195,7 @@ public class DemoNoSQLClothingResult implements DemoNoSQLResult {
         clothingWebLinkKeyTextView.setText("Clothing_WebLink");
         clothingWebLinkValueTextView.setText(result.getClothingPhotoLink());
         clothingDislikesKeyTextView.setText("Clothing_dislikes");
-        clothingDislikesValueTextView.setText("" + result.getClothingDislikes().longValue());
+        //clothingDislikesValueTextView.setText("" + result.getClothingDislikes().longValue());
         clothingLikesKeyTextView.setText("Clothing_likes");
         clothingLikesValueTextView.setText("" + result.getClothingLikes().longValue());
         return layout;

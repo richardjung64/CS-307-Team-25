@@ -327,6 +327,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onSaveInstanceState(savedInstanceState);
     }
 
+
 //    public void onRestoreInstanceState(Bundle savedInstanceState) {
 //        super.onRestoreInstanceState(savedInstanceState);
 //        usr_name = savedInstanceState.getString(InformationActivity.USER_NAME);
@@ -492,6 +493,14 @@ public class HomeActivity extends AppCompatActivity {
             userDescr = savedInstanceState.getString(USER_DESCRIPTION);
             gender = savedInstanceState.getString(USER_GENDER);
         }
+    }
+
+    public void openSuggest(View view) {
+        Log.d(LOG_TAG, "Launching Suggested Followers Activity...");
+        startActivity(new Intent(HomeActivity.this, SettingsActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        // finish should always be called on the main thread.
+        finish();
     }
 
 

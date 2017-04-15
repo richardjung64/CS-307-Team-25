@@ -92,46 +92,8 @@ public class CollectionItemsAdapter extends RecyclerView.Adapter<CollectionItems
                 Intent intent = new Intent(mContext, CollectionActivity.class);
                 intent.putExtra("KEY",intentCurrent.getStringExtra("KEY"));
                 mContext.startActivity(intent);
-
-                //showPopupMenu(holder.action);
             }
         });
-    }
-
-    /**
-     * Showing popup menu when tapping on 3 dots
-     */
-    private void showPopupMenu(View view) {
-        // inflate menu
-        PopupMenu popup = new PopupMenu(mContext, view);
-        MenuInflater inflater = popup.getMenuInflater();
-        inflater.inflate(R.menu.item_list_action_menu, popup.getMenu());
-        popup.setOnMenuItemClickListener(new MyMenuItemClickListener());
-        popup.show();
-    }
-
-    /**
-     * Click listener for popup menu items
-     */
-    class MyMenuItemClickListener implements PopupMenu.OnMenuItemClickListener {
-
-        public MyMenuItemClickListener() {
-        }
-        @Override
-        public boolean onMenuItemClick(MenuItem menuItem) {
-            DataAction da = new DataAction();
-            switch (menuItem.getItemId()) {
-                case R.id.menu_post:
-                    Toast.makeText(mContext, "Opening Post Page", Toast.LENGTH_SHORT).show();
-                    return true;
-                case R.id.menu_remove:
-
-
-                    return true;
-                default:
-            }
-            return false;
-        }
     }
 
 

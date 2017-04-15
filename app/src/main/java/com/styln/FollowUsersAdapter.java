@@ -10,11 +10,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.amazonaws.mobile.AWSMobileClient;
+import com.amazonaws.mobile.util.StringFormatUtils;
 import com.amazonaws.models.nosql.UsersDO;
+import com.bumptech.glide.Glide;
 
 import java.util.List;
+
+import jp.wasabeef.glide.transformations.CropCircleTransformation;
 
 public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.MyViewHolder> {
 
@@ -25,12 +32,19 @@ public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.
         public TextView name;
         public boolean following;
         public Button follow;
+        public ImageView picture,space;
+        private String id;
+
+
 
         public MyViewHolder(View view) {
             super(view);
             name = (TextView) view.findViewById(R.id.name);
             follow = (Button) view.findViewById(R.id.list_follow);
             following = false;
+            picture = (ImageView)view.findViewById(R.id.list_picture);
+            space = (ImageView)view.findViewById(R.id.userSpace);
+            id = "";
         }
     }
 
@@ -51,27 +65,32 @@ public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         UsersDO user = userList.get(position);
         holder.name.setText(user.getUserName());
-        holder.following = false;
+        holder.id = user.getUserId();
 
-        if(holder.following == false) {
-            holder.following = true;
+        Glide.with(mContext).load(user.getUserPhoto()).bitmapTransform(new CropCircleTransformation(mContext)).
+                thumbnail(0.1f).into(holder.picture);
+
+        String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+        holder.following = user.getUserFollower().contains(currUserID);
+
+        if(!holder.following) {
             holder.follow.setText("Follow");
         } else {
-            holder.following = false;
             holder.follow.setText("Unfollow");
         }
 
         holder.follow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DataAction da = new DataAction();
                 if(holder.following){
-                    unfollow(holder.follow);
+                    da.unfollowSomeone(""+holder.id);
                     Intent intentCurrent = ((Activity) mContext).getIntent();
                     Intent intent= new Intent(mContext, FollowActivity.class);
                     intent.putExtra("KEY",intentCurrent.getStringExtra("KEY"));
                     mContext.startActivity(intent);
                 } else {
-                    follow(holder.follow);
+                    da.followSomeone(""+holder.id);
                     Intent intentCurrent = ((Activity) mContext).getIntent();
                     Intent intent= new Intent(mContext, FollowActivity.class);
                     intent.putExtra("KEY",intentCurrent.getStringExtra("KEY"));
@@ -80,18 +99,15 @@ public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.
                 }
             }
         });
+
+        holder.space.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+           //TODO open other people's profile
+            }
+        });
     }
 
-    private void follow(View view){
-        Log.d("DD","DD");
-        Button followButton = (Button)view.findViewById(R.id.list_follow);
-        followButton.setText("Unfollow");
-    }
-    private void unfollow(View view){
-        Log.d("DD","DD");
-        Button followButton = (Button)view.findViewById(R.id.list_follow);
-        followButton.setText("Follow");
-    }
 
     @Override
     public int getItemCount() {

@@ -7,10 +7,9 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
-    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
 
     <service
         android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
@@ -84,9 +83,9 @@
             android:label="CollectionActivity"
             android:theme="@style/AppTheme" />
         <activity android:name=".BrowseActivity" />
-        <activity android:name=".ItemActivity"/>
-            <activity android:name=".InformationActivity" >
-        </activity>
+        <activity android:name=".ItemActivity" />
+        <activity android:name=".InformationActivity"></activity>
+        <activity android:name=".SuggestActivity"></activity>
     </application>
 
 </manifest>

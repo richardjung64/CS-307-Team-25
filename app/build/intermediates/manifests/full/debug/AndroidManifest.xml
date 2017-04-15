@@ -91,8 +91,8 @@
             android:theme="@style/AppTheme" />
         <activity android:name="com.styln.BrowseActivity" />
         <activity android:name="com.styln.ItemActivity" />
-        <activity android:name="com.styln.InformationActivity" >
-        </activity>
+        <activity android:name="com.styln.InformationActivity" />
+        <activity android:name="com.styln.SuggestActivity" />
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"

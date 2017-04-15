@@ -289,5 +289,15 @@
         android:id="@id/recycler_view"
         />
 
+    <Button
+        android:id="@+id/button_suggest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recycler_view"
+        android:layout_toStartOf="@+id/me"
+        android:text="Suggested Followers"
+         android:clickable="true"
+        android:onClick="openSuggest"/>
+
 
 </RelativeLayout>

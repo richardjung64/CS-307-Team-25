@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:2:1-92:12
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:2:1-91:12
 	package
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:3:5-24
 		INJECTED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml
@@ -34,11 +34,11 @@ ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/Andr
 	android:name
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:9:22-71
 uses-permission#android.permission.MEDIA_CONTENT_CONTROL
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:10:5-79
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:10:5-80
 	android:name
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:10:22-77
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:11:5-79
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:11:5-80
 	android:name
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:11:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
@@ -46,13 +46,13 @@ ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/Andr
 	android:name
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:12:22-78
 service#com.amazonaws.mobileconnectors.s3.transferutility.TransferService
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:15:5-17:34
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:14:5-16:34
 	android:enabled
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:17:9-31
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:16:9-31
 	android:name
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:16:9-89
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:15:9-89
 application
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:19:5-90:19
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:18:5-89:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shalingyi/.android/build-cache/51ebfe72a2ef0a0bec0b4e6213a8d59a093546c2/output/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] /Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/AndroidManifest.xml:28:5-20
 MERGED from [com.google.android.gms:play-services-plus:10.2.1] /Users/shalingyi/.android/build-cache/62b77246f2aaf2f38f19d437604c3b6a9f7d49d8/output/AndroidManifest.xml:18:5-19
@@ -66,136 +66,140 @@ MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/shaling
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/shalingyi/.android/build-cache/d09d181761b1fb202f725cc77d3d34fb66df7f84/output/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:24.0.0] /Users/shalingyi/.android/build-cache/a4a8303340124c2972cb1c0f33640e8d0ca2571e/output/AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:23:9-41
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:22:9-41
 	android:allowBackup
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:21:9-35
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:20:9-35
 	android:icon
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:22:9-43
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:21:9-43
 	android:theme
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:24:9-40
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:23:9-40
 	android:name
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:20:9-36
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:19:9-36
 activity#com.styln.SplashActivity
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:25:9-34:20
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:24:9-33:20
 	android:label
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:28:13-45
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:27:13-45
 	android:configChanges
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:27:13-83
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:26:13-83
 	android:name
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:26:13-43
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:25:13-43
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:29:13-33:29
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:30:17-69
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:30:25-66
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:32:17-77
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:32:27-74
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:31:27-74
 activity#com.styln.SignInActivity
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:35:9-38:62
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:34:9-37:62
 	android:label
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:38:13-59
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:37:13-59
 	android:configChanges
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:37:13-83
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:36:13-83
 	android:name
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:36:13-43
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:35:13-43
 activity#com.styln.MainActivity
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:39:9-42:51
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:38:9-41:51
 	android:label
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:41:13-56
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:40:13-56
 	android:launchMode
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:42:13-48
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:41:13-48
 	android:name
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:40:13-41
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:39:13-41
 activity#com.facebook.FacebookActivity
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:46:9-50:75
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:45:9-49:75
 	android:label
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:49:13-45
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:48:13-45
 	android:configChanges
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:48:13-96
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:47:13-96
 	android:theme
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:50:13-72
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:49:13-72
 	android:name
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:47:13-57
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:46:13-57
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:52:9-54:55
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:51:9-53:55
 	android:value
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:54:13-52
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:53:13-52
 	android:name
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:53:13-58
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:52:13-58
 meta-data#com.google.android.gms.version
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:58:9-60:69
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:57:9-59:69
 MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/shalingyi/.android/build-cache/7335a4889607b329484c4a2b0d0e9d7b09a15df3/output/AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:60:13-66
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:59:13-66
 	android:name
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:59:13-58
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:58:13-58
 activity#com.styln.HomeActivity
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:62:9-65:47
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:61:9-64:47
 	android:label
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:64:13-56
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:63:13-56
 	android:theme
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:65:13-44
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:64:13-44
 	android:name
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:63:13-41
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:62:13-41
 activity#com.styln.TrendActivity
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:66:9-69:47
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:65:9-68:47
 	android:label
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:68:13-42
-	android:theme
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:69:13-44
-	android:name
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:67:13-42
+	android:theme
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:68:13-44
+	android:name
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:66:13-42
 activity#com.styln.ProfileActivity
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:70:9-73:47
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:69:9-72:47
 	android:label
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:72:13-44
-	android:theme
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:73:13-44
-	android:name
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:71:13-44
+	android:theme
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:72:13-44
+	android:name
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:70:13-44
 activity#com.styln.SettingsActivity
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:74:9-77:47
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:73:9-76:47
 	android:label
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:76:13-45
-	android:theme
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:77:13-44
-	android:name
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:75:13-45
+	android:theme
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:76:13-44
+	android:name
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:74:13-45
 activity#com.styln.FollowActivity
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:78:9-81:47
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:77:9-80:47
 	android:label
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:80:13-45
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:79:13-45
 	android:theme
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:81:13-44
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:80:13-44
 	android:name
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:79:13-43
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:78:13-43
 activity#com.styln.CollectionActivity
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:82:9-85:47
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:81:9-84:47
 	android:label
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:84:13-47
-	android:theme
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:85:13-44
-	android:name
 		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:83:13-47
+	android:theme
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:84:13-44
+	android:name
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:82:13-47
 activity#com.styln.BrowseActivity
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:86:9-52
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:85:9-52
 	android:name
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:86:19-49
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:85:19-49
 activity#com.styln.ItemActivity
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:87:9-49
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:86:9-50
 	android:name
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:87:19-47
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:86:19-47
 activity#com.styln.InformationActivity
-ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:88:13-89:20
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:87:9-66
 	android:name
-		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:88:23-58
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:87:19-54
+activity#com.styln.SuggestActivity
+ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:88:9-62
+	android:name
+		ADDED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml:88:19-50
 uses-sdk
 INJECTED from /Users/shalingyi/Desktop/TigerStroll/CS-307-Team-25/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shalingyi/.android/build-cache/51ebfe72a2ef0a0bec0b4e6213a8d59a093546c2/output/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:multidex:1.0.1] /Users/shalingyi/.android/build-cache/04d907c9519c29170a8fcbbade31e7547a5a7712/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shalingyi/.android/build-cache/51ebfe72a2ef0a0bec0b4e6213a8d59a093546c2/output/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] /Users/shalingyi/.android/build-cache/e1da740a6519a87b91cd50fef6de76d2085a7760/output/AndroidManifest.xml:24:5-26:41
 MERGED from [com.google.android.gms:play-services-plus:10.2.1] /Users/shalingyi/.android/build-cache/62b77246f2aaf2f38f19d437604c3b6a9f7d49d8/output/AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shalingyi/.android/build-cache/39b28c00b946dddbc56b92b07bc682b9104951ad/output/AndroidManifest.xml:17:5-43

@@ -48,7 +48,7 @@ public class CollectionActivity extends AppCompatActivity {
             getWardrobe task = new getWardrobe();
             task.id = pageID;
             try {
-                Wardrobe = task.execute("").get();
+                Wardrobe = task.execute(pageKey).get();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
@@ -58,11 +58,10 @@ public class CollectionActivity extends AppCompatActivity {
             iAdapter = new CollectionItemsAdapter(this, Wardrobe);
         } else {
             title.setText("WISHLIST");
-
             getWishlist task = new getWishlist();
             task.id = pageID;
             try {
-                Wishlist = task.execute("").get();
+                Wishlist = task.execute(pageKey).get();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
@@ -150,12 +149,12 @@ public class CollectionActivity extends AppCompatActivity {
 
     public void refreshWardrobe(View view) {
         startActivity(new Intent(CollectionActivity.this, CollectionActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wardrobe"));
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wardrobe").putExtra("ID",getIntent().getStringExtra("ID")));
         finish();
     }
     public void refreshWishlist(View view) {
         startActivity(new Intent(CollectionActivity.this, CollectionActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wishlist"));
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wishlist").putExtra("ID",getIntent().getStringExtra("ID")));
         finish();
     }
 }

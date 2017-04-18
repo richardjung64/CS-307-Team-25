@@ -24,7 +24,7 @@ public class CollectionActivity extends AppCompatActivity {
 
 
     private static final String LOG_TAG = FollowActivity.class.getSimpleName();
-    private String pageKey;
+    private String pageKey,pageID;
 
     private List<ClothingDO> Wardrobe = new ArrayList<>();
     private List<ClothingDO> Wishlist = new ArrayList<>();
@@ -37,6 +37,7 @@ public class CollectionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collection);
 
+        pageID = getIntent().getStringExtra("ID");
         pageKey = getIntent().getStringExtra("KEY");
         Log.d(LOG_TAG, "Opened from " + pageKey);
 
@@ -45,6 +46,7 @@ public class CollectionActivity extends AppCompatActivity {
         if(pageKey.equals("wardrobe")){
             title.setText("WARDROBE");
             getWardrobe task = new getWardrobe();
+            task.id = pageID;
             try {
                 Wardrobe = task.execute("").get();
             } catch (InterruptedException e) {
@@ -58,6 +60,7 @@ public class CollectionActivity extends AppCompatActivity {
             title.setText("WISHLIST");
 
             getWishlist task = new getWishlist();
+            task.id = pageID;
             try {
                 Wishlist = task.execute("").get();
             } catch (InterruptedException e) {
@@ -91,10 +94,11 @@ public class CollectionActivity extends AppCompatActivity {
     private class getWardrobe extends AsyncTask<String, Void, List<ClothingDO>> {
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
         List<ClothingDO> loadresult = new ArrayList<ClothingDO>();
+        String id;
         @Override
         protected List<ClothingDO> doInBackground(String... strings) {
             UsersDO currentUser;
-            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            String userID = id;
             currentUser = mapper.load(UsersDO.class, userID);
             List<String> tempSet;
 
@@ -118,10 +122,11 @@ public class CollectionActivity extends AppCompatActivity {
     private class getWishlist extends AsyncTask<String, Void, List<ClothingDO>> {
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
         List<ClothingDO> loadresult = new ArrayList<ClothingDO>();
+        String id;
         @Override
         protected List<ClothingDO> doInBackground(String... strings) {
             UsersDO currentUser;
-            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            String userID = id;
             currentUser = mapper.load(UsersDO.class, userID);
             List<String> tempSet;
 

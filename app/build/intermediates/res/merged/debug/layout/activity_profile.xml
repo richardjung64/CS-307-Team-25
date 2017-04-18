@@ -212,7 +212,6 @@
         android:text="User Name"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        android:layout_marginTop="10dp"
         android:layout_alignTop="@+id/profilePicture"
         android:layout_toRightOf="@id/profilePicture"
         android:layout_marginLeft="10dp"
@@ -373,16 +372,27 @@
         </LinearLayout>
     </HorizontalScrollView>
 
+    <Button
+        android:id="@+id/editProfile"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Edit Profile"
+        android:textSize="10sp"
+        android:layout_below="@+id/userName"
+        android:layout_alignLeft="@+id/userName"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:onClick="editProfile"/>
+
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignLeft="@+id/userName"
         android:layout_alignStart="@+id/userName"
         android:layout_alignRight="@+id/following"
         android:layout_alignEnd="@+id/following"
         android:layout_above="@+id/linearLayout"
-        android:layout_below="@+id/followers"
-        android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp">
 
         <LinearLayout
@@ -394,7 +404,6 @@
                 android:id="@+id/description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
                 android:text="description"
                 android:textSize="10sp"
                 android:textColor="@color/lighter_text"/>

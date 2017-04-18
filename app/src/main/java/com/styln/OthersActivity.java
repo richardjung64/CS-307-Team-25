@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -36,6 +37,8 @@ public class OthersActivity extends AppCompatActivity {
     private TextView userName,description,numFollowers,numFollowing;
     static boolean checked = false;
     private ImageView profilePic;
+    private String pageID;
+    private Button follow;
 
     private List<ClothingDO> itemList = new ArrayList<>();
 
@@ -46,31 +49,37 @@ public class OthersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_others);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         final AWSMobileClient awsMobileClient = AWSMobileClient.defaultMobileClient();
         identityManager = awsMobileClient.getIdentityManager();
-        userName = (TextView)findViewById(R.id.userName);
-        description = (TextView)findViewById(R.id.description);
-        profilePic = (ImageView)findViewById(R.id.profilePicture);
-        numFollowers = (TextView)findViewById(R.id.numFollowers);
-        numFollowing = (TextView)findViewById(R.id.numFollowing);
 
-        UsersDO thisUser = null;
-        grabUser _task = new grabUser();
+        pageID = getIntent().getStringExtra("ID");
 
+        grabUser task = new grabUser();
+        UsersDO loadUser = new UsersDO();
         try {
-            thisUser = _task.execute().get();
+            task.id = pageID;
+            loadUser = task.execute("String").get();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-        if (thisUser != null && !thisUser.isLogin_opt()) {
-            if (thisUser.isHasCustomDp()) {
+
+        userName = (TextView)findViewById(R.id.userName);
+        description = (TextView)findViewById(R.id.description);
+        profilePic = (ImageView)findViewById(R.id.profilePicture);
+        numFollowers = (TextView)findViewById(R.id.numFollowers);
+        numFollowing = (TextView)findViewById(R.id.numFollowing);
+        follow = (Button)findViewById(R.id.others_follow);
+        boolean following = false;
+
+        if (loadUser != null && !loadUser.isLogin_opt()) {
+            if (loadUser.isHasCustomDp()) {
                 profilePic = (ImageView) findViewById(R.id.profilePicture);
-                String address = thisUser.getUserPhoto();
+                String address = loadUser.getUserPhoto();
                 Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
                         thumbnail(0.1f).into(profilePic);
             }
@@ -83,9 +92,9 @@ public class OthersActivity extends AppCompatActivity {
             //Log.i(LOG_TAG,FacebookSignInProvider.userName);
         }
         else {
-            if (thisUser != null && thisUser.isHasCustomDp()) {
+            if (loadUser != null && loadUser.isHasCustomDp()) {
                 profilePic = (ImageView) findViewById(R.id.profilePicture);
-                String address = thisUser.getUserPhoto();
+                String address = loadUser.getUserPhoto();
                 Log.d(LOG_TAG, "Profile DP " + address);
                 Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
                         thumbnail(0.1f).into(profilePic);
@@ -98,30 +107,32 @@ public class OthersActivity extends AppCompatActivity {
             }
         }
 
-        grabUser task = new grabUser();
-        UsersDO currentUser = new UsersDO();
-        try {
-            currentUser = task.execute("String").get();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
+        String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+        if(loadUser.getUserFollower() != null) {
+            following = loadUser.getUserFollower().contains(currUserID);
         }
 
-        userName.setText(currentUser.getUserName());
-        description.setText(currentUser.getUserDescription());
-        if(currentUser.getUserFollower() == null){
+        userName.setText(loadUser.getUserName());
+        description.setText(loadUser.getUserDescription());
+        if(loadUser.getUserFollower() == null){
             numFollowers.setText("0");
         } else {
-            numFollowers.setText(""+currentUser.getUserFollower().size());
+            numFollowers.setText(""+loadUser.getUserFollower().size());
         }
-        if(currentUser.getUserFollowing() == null){
+        if(loadUser.getUserFollowing() == null){
             numFollowing.setText("0");
         } else {
-            numFollowing.setText(""+currentUser.getUserFollowing().size());
+            numFollowing.setText(""+loadUser.getUserFollowing().size());
+        }
+
+        if(following){
+            follow.setText("UNFOLLOW");
+        } else {
+            follow.setText("FOLLOW");
         }
 
         getWardrobe task2 = new getWardrobe();
+        task2.id = pageID;
 
         try {
             itemList = task2.execute("").get();
@@ -142,16 +153,46 @@ public class OthersActivity extends AppCompatActivity {
 
         iAdapter.notifyDataSetChanged();
     }
+
+    public void followOthers(View view) {
+        DataAction da = new DataAction();
+        Boolean following;
+        String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+
+        grabUser task = new grabUser();
+        UsersDO loadUser = new UsersDO();
+        try {
+            task.id = pageID;
+            loadUser = task.execute("String").get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+
+        following = loadUser.getUserFollower().contains(currUserID);
+        if(following){
+            da.unfollowSomeone(getIntent().getStringExtra("ID"));
+        } else {
+            da.followSomeone(getIntent().getStringExtra("ID"));
+        }
+
+        startActivity(new Intent(OthersActivity.this, OthersActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("ID",getIntent().getStringExtra("ID")));
+        // finish should always be called on the main thread.
+        finish();
+    }
+
     private class grabUser extends AsyncTask<String, Void, UsersDO> {
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
         UsersDO loadresult = new UsersDO();
+        String id = "";
         @Override
         protected UsersDO doInBackground(String... strings) {
-            UsersDO currentUser = new UsersDO();
-
-            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
-            currentUser = mapper.load(UsersDO.class, userID);
-            loadresult = currentUser;
+            UsersDO loadUser = new UsersDO();
+            String userID = ""+id;
+            loadUser = mapper.load(UsersDO.class, userID);
+            loadresult = loadUser;
             return loadresult;
         }
     }
@@ -159,10 +200,11 @@ public class OthersActivity extends AppCompatActivity {
     private class getWardrobe extends AsyncTask<String, Void, List<ClothingDO>> {
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
         List<ClothingDO> loadresult = new ArrayList<ClothingDO>();
+        String id = "";
         @Override
         protected List<ClothingDO> doInBackground(String... strings) {
             UsersDO currentUser;
-            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            String userID = ""+id;
             currentUser = mapper.load(UsersDO.class, userID);
             List<String> tempSet;
 
@@ -212,12 +254,17 @@ public class OthersActivity extends AppCompatActivity {
     }
 
     public void openProfile(View view) {
+        Log.d(LOG_TAG, "Launching Profile Activity...");
+        startActivity(new Intent(OthersActivity.this, ProfileActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        // finish should always be called on the main thread.
+        finish();
     }
 
     public void openFollowers(View view) {
         Log.d(LOG_TAG, "Launching Followers Activity...");
         startActivity(new Intent(OthersActivity.this, FollowActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","followers"));
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","followers").putExtra("ID",getIntent().getStringExtra("ID")));
         // finish should always be called on the main thread.
         finish();
     }
@@ -225,7 +272,7 @@ public class OthersActivity extends AppCompatActivity {
     public void openFollowing(View view) {
         Log.d(LOG_TAG, "Launching Following Activity...");
         startActivity(new Intent(OthersActivity.this, FollowActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","following"));
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","following").putExtra("ID",getIntent().getStringExtra("ID")));
         // finish should always be called on the main thread.
         finish();
     }
@@ -233,17 +280,10 @@ public class OthersActivity extends AppCompatActivity {
     public void openWardrobe(View view) {
         Log.d(LOG_TAG, "Launching Wardrobe Activity...");
         startActivity(new Intent(OthersActivity.this, CollectionActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wardrobe"));
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wardrobe").putExtra("ID",getIntent().getStringExtra("ID")));
         // finish should always be called on the main thread.
         finish();
     }
 
-    public void openWishlist(View view) {
-        Log.d(LOG_TAG, "Launching Wishlist Activity...");
-        startActivity(new Intent(OthersActivity.this, CollectionActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wishlist"));
-        // finish should always be called on the main thread.
-        finish();
-    }
 
 }

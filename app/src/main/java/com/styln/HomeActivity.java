@@ -172,7 +172,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void run() {
                 UsersDO thisUser = null;
-                GrabUser task = new GrabUser();
+                grabUser task = new grabUser();
 
                 try {
                     thisUser = task.execute().get();
@@ -254,7 +254,7 @@ public class HomeActivity extends AppCompatActivity {
     //TODO get our servers username
         //Log.d(LOG_TAG, "Login Option " + Application.getSign_opt());
         UsersDO thisUser = null;
-        GrabUser task = new GrabUser();
+        grabUser task = new grabUser();
 
         try {
             thisUser = task.execute().get();
@@ -327,6 +327,15 @@ public class HomeActivity extends AppCompatActivity {
         super.onSaveInstanceState(savedInstanceState);
     }
 
+    public void openUser(View view) {
+        String userid = "us-east-1:6266ddac-b3e7-403c-a2e0-bb5b7c861b60";
+        Log.d(LOG_TAG, "Launching Other User Activity...");
+        startActivity(new Intent(HomeActivity.this, OthersActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("ID",userid));
+        // finish should always be called on the main thread.
+        finish();
+    }
+
 
 //    public void onRestoreInstanceState(Bundle savedInstanceState) {
 //        super.onRestoreInstanceState(savedInstanceState);
@@ -337,7 +346,7 @@ public class HomeActivity extends AppCompatActivity {
 //        gender = savedInstanceState.getString(InformationActivity.USER_GENDER);
 //    }
 
-    private class GrabUser extends AsyncTask<String, Void, UsersDO> {
+    private class grabUser extends AsyncTask<String, Void, UsersDO> {
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
         UsersDO loadresult = new UsersDO();
         @Override

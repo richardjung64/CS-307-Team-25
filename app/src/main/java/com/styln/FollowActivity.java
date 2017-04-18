@@ -25,7 +25,7 @@ import java.util.concurrent.ExecutionException;
 public class FollowActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = FollowActivity.class.getSimpleName();
-    private String pageKey;
+    private String pageKey, pageID;
 
     private RecyclerView recyclerView;
     private FollowUsersAdapter uAdapter;
@@ -36,6 +36,7 @@ public class FollowActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_follow);
 
+        pageID = getIntent().getStringExtra("ID");
         pageKey = getIntent().getStringExtra("KEY");
         Log.d(LOG_TAG, "Opened from " + pageKey);
 
@@ -45,8 +46,8 @@ public class FollowActivity extends AppCompatActivity {
 
         if(pageKey.equals("followers")){
             title.setText("FOLLOWERS");
-            getFollower task;
-            task = new getFollower();
+            getFollower task = new getFollower();
+            task.id = pageID;
             try {
                 userList = task.execute(pageKey).get();
             } catch (InterruptedException e) {
@@ -56,8 +57,8 @@ public class FollowActivity extends AppCompatActivity {
             }
         } else {
             title.setText("FOLLOWING");
-            getFollowing task;
-            task = new getFollowing();
+            getFollowing task = new getFollowing();
+            task.id = pageID;
             try {
                 userList = task.execute(pageKey).get();
             } catch (InterruptedException e) {
@@ -66,8 +67,6 @@ public class FollowActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-
-        Log.d("THIS IS IT",userList.toString());
 
         uAdapter = new FollowUsersAdapter(this, userList);
 
@@ -84,19 +83,29 @@ public class FollowActivity extends AppCompatActivity {
 
 
     public void back(View view) {
-        Log.d(LOG_TAG, "Launching Profile Activity...");
-        startActivity(new Intent(FollowActivity.this, ProfileActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        finish();
+        String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+
+        if(getIntent().getStringExtra("ID").equals(currUserID)){
+            Log.d(LOG_TAG, "Launching Profile Activity...");
+            startActivity(new Intent(FollowActivity.this, ProfileActivity.class)
+                    .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+            finish();
+        } else {
+            Log.d(LOG_TAG, "Launching Others Activity...");
+            startActivity(new Intent(FollowActivity.this, OthersActivity.class)
+                    .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("ID",getIntent().getStringExtra("ID")));
+            finish();
+        }
     }
 
     private class getFollower extends AsyncTask<String, Void, List<UsersDO>> {
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
         List<UsersDO> loadresult = new ArrayList<UsersDO>();
+        String id;
         @Override
         protected List<UsersDO> doInBackground(String... strings) {
                     UsersDO currentUser = new UsersDO();
-                    String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+                    String userID = id;
                     currentUser = mapper.load(UsersDO.class, userID);
                     List<String> tempSet;
 
@@ -119,11 +128,12 @@ public class FollowActivity extends AppCompatActivity {
     private class getFollowing extends AsyncTask<String, Void, List<UsersDO>> {
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
         List<UsersDO> loadresult = new ArrayList<UsersDO>();
+        String id;
         @Override
         protected List<UsersDO> doInBackground(String... strings) {
             UsersDO currentUser = new UsersDO();
 
-            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            String userID = id;
             currentUser = mapper.load(UsersDO.class, userID);
 
             List<String> tempSet;
@@ -149,14 +159,14 @@ public class FollowActivity extends AppCompatActivity {
     public void refreshFollowers(View view) {
         Log.d(LOG_TAG, "Refresh Followers");
         startActivity(new Intent(FollowActivity.this, FollowActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","followers"));
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","followers").putExtra("ID",getIntent().getStringExtra("ID")));
         finish();
     }
 
     public void refreshFollowing(View view) {
         Log.d(LOG_TAG, "Refresh Following");
         startActivity(new Intent(FollowActivity.this, FollowActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","following"));
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","following").putExtra("ID",getIntent().getStringExtra("ID")));
         finish();
     }
 }

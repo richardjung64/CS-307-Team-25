@@ -215,7 +215,9 @@
         android:layout_marginTop="20dp"
         android:id="@+id/kevinName"
         android:textSize="20sp"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:clickable="true"
+        android:onClick="openUser"/>
 
     <ImageView
         android:layout_width="wrap_content"

@@ -101,7 +101,6 @@ public class ItemActivity extends AppCompatActivity {
 
         protected ClothingDO doInBackground(String... strings) {
             ClothingDO currentItem;
-
             String itemID = ""+id;
             currentItem = mapper.load(ClothingDO.class, itemID);
             loadresult = currentItem;

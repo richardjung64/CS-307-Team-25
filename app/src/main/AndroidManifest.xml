@@ -86,6 +86,7 @@
         <activity android:name=".ItemActivity" />
         <activity android:name=".InformationActivity"></activity>
         <activity android:name=".SuggestActivity"></activity>
+        <activity android:name=".OthersActivity"></activity>
     </application>
 
 </manifest>

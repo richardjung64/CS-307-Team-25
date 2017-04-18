@@ -36,6 +36,7 @@ public class ProfileActivity extends AppCompatActivity {
     private TextView userName,description,numFollowers,numFollowing;
     static boolean checked = false;
     private ImageView profilePic;
+    String currUserID;
 
     private List<ClothingDO> itemList = new ArrayList<>();
 
@@ -45,6 +46,8 @@ public class ProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -142,13 +145,21 @@ public class ProfileActivity extends AppCompatActivity {
 
         iAdapter.notifyDataSetChanged();
     }
+
+    public void editProfile(View view) {
+        Intent intent= new Intent(ProfileActivity.this, InformationActivity.class);
+        intent.putExtra("ID",AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+        Log.d(LOG_TAG,AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
+        startActivity(intent);
+        return;
+    }
+
     private class grabUser extends AsyncTask<String, Void, UsersDO> {
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
         UsersDO loadresult = new UsersDO();
         @Override
         protected UsersDO doInBackground(String... strings) {
             UsersDO currentUser = new UsersDO();
-
             String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
             currentUser = mapper.load(UsersDO.class, userID);
             loadresult = currentUser;
@@ -217,7 +228,7 @@ public class ProfileActivity extends AppCompatActivity {
     public void openFollowers(View view) {
         Log.d(LOG_TAG, "Launching Followers Activity...");
         startActivity(new Intent(ProfileActivity.this, FollowActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","followers"));
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","followers").putExtra("ID",currUserID));
         // finish should always be called on the main thread.
         finish();
     }
@@ -225,7 +236,7 @@ public class ProfileActivity extends AppCompatActivity {
     public void openFollowing(View view) {
         Log.d(LOG_TAG, "Launching Following Activity...");
         startActivity(new Intent(ProfileActivity.this, FollowActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","following"));
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","following").putExtra("ID",currUserID));
         // finish should always be called on the main thread.
         finish();
     }
@@ -233,7 +244,7 @@ public class ProfileActivity extends AppCompatActivity {
     public void openWardrobe(View view) {
         Log.d(LOG_TAG, "Launching Wardrobe Activity...");
         startActivity(new Intent(ProfileActivity.this, CollectionActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wardrobe"));
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wardrobe").putExtra("ID",currUserID));
         // finish should always be called on the main thread.
         finish();
     }
@@ -241,7 +252,7 @@ public class ProfileActivity extends AppCompatActivity {
     public void openWishlist(View view) {
         Log.d(LOG_TAG, "Launching Wishlist Activity...");
         startActivity(new Intent(ProfileActivity.this, CollectionActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wishlist"));
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wishlist").putExtra("ID",currUserID));
         // finish should always be called on the main thread.
         finish();
     }

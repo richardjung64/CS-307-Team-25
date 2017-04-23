@@ -344,5 +344,29 @@
 
     </android.support.v7.widget.RecyclerView>
 
+    <TextView
+        android:id="@+id/isPrivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="This Account is Private"
+        android:textSize="40sp"
+        android:layout_alignStart="@+id/textbg"
+        android:layout_alignEnd="@+id/textbg"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_below="@+id/isPrivatePicture"/>
+
+    <ImageView
+        android:id="@+id/isPrivatePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/lock_icon"
+        android:layout_below="@+id/textPosts"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"/>
+
 
 </RelativeLayout>

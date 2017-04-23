@@ -2,14 +2,10 @@ package com.amazonaws.models.nosql;
 
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBAttribute;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBHashKey;
-import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBIndexHashKey;
-import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBIndexRangeKey;
-import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBRangeKey;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBTable;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 @DynamoDBTable(tableName = "stylin-mobilehub-1048106400-Post_Table")
 
@@ -17,9 +13,9 @@ public class PostTableDO {
     private String _userId;
     private String _postDescription;
     private Double _postLikes;
-    private String _postPhotoLink;
-    private String _postPoster;
-    private Map<String, String> _postTags;
+    private String _postUser;
+    private List<String> _postClothing;
+    private List<String> _likedUser;
 
     @DynamoDBHashKey(attributeName = "userId")
     @DynamoDBAttribute(attributeName = "userId")
@@ -46,29 +42,28 @@ public class PostTableDO {
     public void setPostLikes(final Double _postLikes) {
         this._postLikes = _postLikes;
     }
-    @DynamoDBAttribute(attributeName = "Post_PhotoLink")
-    public String getPostPhotoLink() {
-        return _postPhotoLink;
-    }
-
-    public void setPostPhotoLink(final String _postPhotoLink) {
-        this._postPhotoLink = _postPhotoLink;
-    }
-    @DynamoDBAttribute(attributeName = "Post_Poster")
+    @DynamoDBAttribute(attributeName = "Post_User")
     public String getPostPoster() {
-        return _postPoster;
+        return _postUser;
     }
 
     public void setPostPoster(final String _postPoster) {
-        this._postPoster = _postPoster;
+        this._postUser = _postPoster;
     }
-    @DynamoDBAttribute(attributeName = "Post_Tags")
-    public Map<String, String> getPostTags() {
-        return _postTags;
-    }
-
-    public void setPostTags(final Map<String, String> _postTags) {
-        this._postTags = _postTags;
+    @DynamoDBAttribute(attributeName = "Liked_User")
+    public List<String> getLikedUser() {
+        return _likedUser;
     }
 
+    public void setLikedUser(final List<String> _likedUser) {
+        this._likedUser = _likedUser;
+    }
+    @DynamoDBAttribute(attributeName = "Post_Clothing")
+    public List<String> getPostClothing() {
+        return _postClothing;
+    }
+
+    public void setPostClothing(final List<String> _postClothing) {
+        this._postClothing = _postClothing;
+    }
 }

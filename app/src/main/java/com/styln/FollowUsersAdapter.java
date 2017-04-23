@@ -35,8 +35,6 @@ public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.
         public ImageView picture,space;
         private String id;
 
-
-
         public MyViewHolder(View view) {
             super(view);
             name = (TextView) view.findViewById(R.id.name);
@@ -105,7 +103,8 @@ public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.
         holder.space.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-           //TODO open other people's profile
+                Log.d("DDD","DASHIUASHISAU");
+                //TODO open other people's profile
                 String userid = holder.id;
                 if(userid.equals(currUserID)){
                     Intent intent = new Intent(mContext, ProfileActivity.class);

@@ -6,34 +6,14 @@
     android:layout_height="match_parent"
     android:background="@drawable/main_background">
 
-    <android.support.v4.widget.SwipeRefreshLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/swiperefresh"
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ListView
-            android:id="@+id/list_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </android.support.v4.widget.SwipeRefreshLayout>
-
-    //Dummy Post
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/me_textbg"
-        android:layout_below="@+id/upperBox"
-        android:layout_alignLeft="@+id/textBackground"
-        android:layout_alignTop="@+id/textBackground"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="100dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
-        android:id="@+id/itemBG"
-        android:scaleType="fitXY"
-        />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/settings"
+        android:layout_toStartOf="@+id/logo"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/lowerBox" />
 
     <ImageView
         android:layout_width="500dp"
@@ -191,57 +171,6 @@
         android:layout_alignEnd="@+id/postBox"
         android:paddingTop="5dp"/>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/messenger_button_send_round_shadow"
-        android:layout_alignTop="@+id/itemBG"
-        android:layout_alignLeft="@+id/itemBG"
-        android:layout_alignStart="@+id/itemBG"
-        android:layout_marginLeft="18dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="15dp"
-        android:id="@+id/dummyPictureBox" />
-
-    <TextView
-        android:text="Richard Jung"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/dummyPictureBox"
-        android:layout_toRightOf="@+id/dummyPictureBox"
-        android:layout_toEndOf="@+id/dummyPictureBox"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/kevinName"
-        android:textSize="20sp"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
-        android:clickable="true"
-        android:onClick="openUser"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/main_line"
-        android:layout_below="@+id/dummyPictureBox"
-        android:layout_alignLeft="@+id/itemBG"
-        android:layout_marginTop="0dp"
-        android:layout_alignRight="@id/itemBG"
-        android:scaleType="fitXY"
-        android:id="@+id/seperator" />
-
-
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:srcCompat="@drawable/main_add"
-        android:id="@+id/add"
-        android:layout_alignBottom="@+id/itemBG"
-        android:layout_alignLeft="@+id/dummyPictureBox"
-        android:layout_alignStart="@+id/dummyPictureBox"
-        android:layout_marginBottom="10dp"
-        android:clickable="true"
-        android:onClick="addTo"/>
 
     <ImageView
         android:layout_width="60dp"
@@ -256,50 +185,6 @@
         android:clickable="true"
         android:onClick="openProfile"
         />
-
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:srcCompat="@drawable/test_kevin"
-        android:layout_alignTop="@id/dummyPictureBox"
-        android:layout_alignLeft="@id/dummyPictureBox"
-        android:scaleType="fitCenter"
-        android:id="@+id/kevin" />
-
-    <Button
-        android:text="FOLLOW"
-        android:layout_marginTop="20dp"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:textSize="10sp"
-        android:id="@+id/home_follow"
-        android:onClick="follow"
-        android:clickable="true"
-        android:layout_alignTop="@+id/itemBG"
-        android:layout_alignRight="@+id/itemBG"
-        android:layout_alignEnd="@+id/itemBG" />
-
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/seperator"
-        android:layout_above="@+id/add"
-        android:layout_toRightOf="@+id/profilePicture"
-        android:layout_alignRight="@+id/itemBG"
-        android:layout_alignEnd="@+id/itemBG"
-        android:layout_marginRight="20dp"
-        android:id="@id/recycler_view"
-        />
-
-    <Button
-        android:id="@+id/button_suggest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/recycler_view"
-        android:layout_toStartOf="@+id/me"
-        android:text="Suggested Followers"
-         android:clickable="true"
-        android:onClick="openSuggest"/>
 
 
 </RelativeLayout>

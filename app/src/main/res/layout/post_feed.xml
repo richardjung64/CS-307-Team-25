@@ -2,19 +2,27 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/post_feed"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="375dp"
     >
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
         app:srcCompat="@drawable/me_textbg"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:id="@+id/postBG"
         android:scaleType="fitXY"
         />
+
+    <ImageView
+        android:id="@+id/post_user_space"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:layout_alignTop="@+id/userPicture"
+        android:layout_alignStart="@+id/userPicture" />
 
     <ImageView
         android:layout_width="50dp"
@@ -26,27 +34,27 @@
         android:layout_marginLeft="18dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="15dp"
-        android:id="@+id/dummyPictureBox" />
+        android:id="@+id/userPicture" />
 
     <TextView
-        android:text="Kevin Jiang"
+        android:id="@+id/post_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/dummyPictureBox"
-        android:layout_toRightOf="@+id/dummyPictureBox"
-        android:layout_toEndOf="@+id/dummyPictureBox"
+        android:layout_alignTop="@+id/userPicture"
         android:layout_marginLeft="10dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:id="@+id/post_name"
-        android:textSize="20sp"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+        android:layout_toEndOf="@+id/userPicture"
+        android:layout_toRightOf="@+id/userPicture"
+        android:text="User Name"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="20sp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="15dp"
         app:srcCompat="@drawable/main_line"
-        android:layout_below="@+id/dummyPictureBox"
+        android:layout_below="@+id/userPicture"
         android:layout_alignLeft="@+id/postBG"
         android:layout_marginTop="5dp"
         android:layout_alignRight="@id/postBG"
@@ -54,20 +62,20 @@
         android:id="@+id/seperator" />
 
     <ImageView
-        android:layout_width="55dp"
-        android:layout_height="55dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:srcCompat="@drawable/main_like_0"
         android:layout_alignBottom="@+id/postBG"
-        android:layout_alignLeft="@+id/dummyPictureBox"
-        android:layout_alignStart="@+id/dummyPictureBox"
+        android:layout_alignLeft="@+id/userPicture"
+        android:layout_alignStart="@+id/userPicture"
         android:layout_marginBottom="10dp"
         android:id="@+id/post_like"
         android:clickable="true"
         android:onClick="likePost"/>
 
     <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:srcCompat="@drawable/main_add"
         android:id="@+id/post_action"
         android:layout_alignTop="@+id/post_like"
@@ -81,22 +89,12 @@
         android:text="0 likes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/post_like"
-        android:layout_alignLeft="@+id/postBG"
-        android:layout_alignBottom="@id/postBG"
-        android:layout_marginBottom="65dp"
         android:layout_marginLeft="15dp"
         android:id="@+id/numLikes"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_above="@+id/post_like"
+        android:layout_toStartOf="@+id/post_action" />
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/test_kevin"
-        android:layout_alignTop="@id/dummyPictureBox"
-        android:layout_alignLeft="@id/dummyPictureBox"
-        android:scaleType="fitCenter"
-        android:id="@+id/kevin" />
 
     <Button
         android:text="FOLLOW"
@@ -115,13 +113,29 @@
     <android.support.v7.widget.RecyclerView
         android:id="@id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="140dp"
         android:layout_below="@+id/seperator"
         android:layout_alignLeft="@+id/post_like"
         android:layout_alignStart="@+id/post_like"
         android:layout_alignRight="@+id/post_follow"
         android:layout_alignEnd="@+id/post_follow"
-        android:layout_above="@+id/numLikes" />
+        android:layout_alignTop="@id/seperator"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/postDescription"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="TextView"
+        android:layout_below="@id/recycler_view"
+        android:layout_alignStart="@+id/recycler_view"
+        android:layout_alignRight="@id/postBG"
+        android:layout_marginRight="25dp"
+        android:textColor="@color/black_text"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"/>
+
 
 
 </RelativeLayout>

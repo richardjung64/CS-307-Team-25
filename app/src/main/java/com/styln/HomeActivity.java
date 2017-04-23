@@ -29,6 +29,7 @@ import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.amazonaws.mobile.util.ThreadUtils;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.ClothingDO;
+import com.amazonaws.models.nosql.PostTableDO;
 import com.amazonaws.models.nosql.UsersDO;
 import com.bumptech.glide.Glide;
 import com.styln.demo.nosql.DemoNoSQLOperationListItem;
@@ -43,13 +44,9 @@ import jp.wasabeef.glide.transformations.CropCircleTransformation;
 public class HomeActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = HomeActivity.class.getSimpleName();
-    private ImageView imageLike;
-    private TextView textLikes;
+
     private ImageView profilePic;
-    private Button follow,followMe;
     private String userName;
-    private SwipeRefreshLayout mySwipeRefreshLayout;
-    private ListView mListView;
 
     private AddToUsersTable addToUsersTable;
     private AddClothesTable addClothesTable;
@@ -61,9 +58,9 @@ public class HomeActivity extends AppCompatActivity {
     private ArrayAdapter<DemoNoSQLOperationListItem> operationsListAdapter;
     private boolean a = false;
 
-    private List<ClothingDO> itemList = new ArrayList<>();
+    private List<PostTableDO> postList = new ArrayList<>();
     private RecyclerView recyclerView;
-    private PostItemsAdapter iAdapter;
+    private PostsAdapter pAdapter;
 
     static boolean liked = false;
     static int numLikes = 0;
@@ -167,71 +164,13 @@ public class HomeActivity extends AppCompatActivity {
         }).start();
     }
 
-    private void refreshContent() {
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                UsersDO thisUser = null;
-                grabUser task = new grabUser();
-
-                try {
-                    thisUser = task.execute().get();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } catch (ExecutionException e) {
-                    e.printStackTrace();
-                }
-                if (thisUser != null && !thisUser.isLogin_opt()) {
-                    if (thisUser.isHasCustomDp()) {
-                        profilePic = (ImageView) findViewById(R.id.profilePicture);
-                        String address = thisUser.getUserPhoto();
-                        Glide.with(getBaseContext()).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
-                                thumbnail(0.1f).into(profilePic);
-                    } else {
-                        profilePic = (ImageView) findViewById(R.id.profilePicture);
-                        String address = FacebookSignInProvider.userImageUrl;
-                        Glide.with(getBaseContext()).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
-                                thumbnail(0.1f).into(profilePic);
-                    }
-                    //Log.i(LOG_TAG,FacebookSignInProvider.userName);
-                } else {
-                    if (thisUser != null && thisUser.isHasCustomDp()) {
-                        profilePic = (ImageView) findViewById(R.id.profilePicture);
-                        String address = thisUser.getUserPhoto();
-                        Log.d(LOG_TAG, "Profile DP " + address);
-                        Glide.with(getBaseContext()).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
-                                thumbnail(0.1f).into(profilePic);
-                    } else {
-                        profilePic = (ImageView) findViewById(R.id.profilePicture);
-                        String address = GoogleSignInProvider.userImageUrl;
-                        Glide.with(getBaseContext()).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
-                                thumbnail(0.1f).into(profilePic);
-                    }
-                }
-                mySwipeRefreshLayout.setRefreshing(false);
-            }
-        }, 2000);
-    }
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        textLikes = (TextView)findViewById(R.id.numLikes);
-        follow = (Button)findViewById(R.id.home_follow);
-        mySwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swiperefresh);
-        mListView = (ListView) findViewById(R.id.list_view);
 
-        mySwipeRefreshLayout.setOnRefreshListener(
-                new SwipeRefreshLayout.OnRefreshListener() {
-                    @Override
-                    public void onRefresh() {
-                        Log.i(LOG_TAG, "onRefresh called from SwipeRefreshLayout");
-                        refreshContent();
-                    }
-                }
-        );
+        recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
 
         Intent i = getIntent();
         usr_name = i.getStringExtra(InformationActivity.USER_NAME);
@@ -249,7 +188,6 @@ public class HomeActivity extends AppCompatActivity {
 //        Log.d(LOG_TAG, "RESTORED IDENTITY " + gender);
 //        Log.d(LOG_TAG, "RESTORED PRIVACY " + isPrivate);
         //isPrivate = Boolean.getBoolean(str_privacy);
-
 
     //TODO get our servers username
         //Log.d(LOG_TAG, "Login Option " + Application.getSign_opt());
@@ -304,16 +242,17 @@ public class HomeActivity extends AppCompatActivity {
             addClothesTable();
         }
 
+
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
-        iAdapter = new PostItemsAdapter(this,itemList);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        pAdapter = new PostsAdapter(this,postList);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(iAdapter);
+        recyclerView.setAdapter(pAdapter);
 
-        prepareCollectionData();
+        preparePostData();
 
     }
 
@@ -359,14 +298,26 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
+    private void preparePostData() {
+        PostTableDO post = new PostTableDO();
+        post.setUserId("post_101");
+        post.setPostPoster("us-east-1:6266ddac-b3e7-403c-a2e0-bb5b7c861b60");
+        post.setPostDescription("HELLO MY NAME IS ");
 
-    private void prepareCollectionData() {
-        //TODO item load
-        ClothingDO item = new ClothingDO();
-        item.setUserId("tshirt");
-        item.setClothingBrand("Hollister");
-        itemList.add(item);
-        iAdapter.notifyDataSetChanged();
+        List<String> userList = new ArrayList<>();
+        userList.add("us-east-1:66c73c49-93fc-49f1-8212-accbcb213056");
+        post.setPostLikes((double)userList.size());
+
+        post.setLikedUser(userList);
+
+        List<String> itemList = new ArrayList<>();
+        itemList.add("tshirt");
+
+        post.setPostClothing(itemList);
+
+        postList.add(post);
+
+        pAdapter.notifyDataSetChanged();
     }
 
     public void checkLogin()
@@ -474,24 +425,6 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
-    public void follow(View view) {
-        if(followed){
-            followed = false;
-            follow.setText("FOLLOW");
-            follow.setTextSize(10);
-            DataAction fl = new DataAction();
-            fl.followSomeone("us-east-1:6266ddac-b3e7-403c-a2e0-bb5b7c861b60");
-            Log.d("d","Follow");
-
-        } else {
-            followed = true;
-            follow.setText("UNFOLLOW");
-            follow.setTextSize(10);
-            DataAction fl = new DataAction();
-            fl.unfollowSomeone("us-east-1:6266ddac-b3e7-403c-a2e0-bb5b7c861b60");
-            Log.d("d","UNFollow");
-        }
-    }
 
     protected void onResume(Bundle savedInstanceState) {
         super.onResume();

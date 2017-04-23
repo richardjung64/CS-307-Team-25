@@ -3,6 +3,7 @@ package com.styln;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -34,9 +35,9 @@ public class OthersActivity extends AppCompatActivity {
     private static final String LOG_TAG = OthersActivity.class.getSimpleName();
 
     private IdentityManager identityManager;
-    private TextView userName,description,numFollowers,numFollowing;
+    private TextView userName,description,numFollowers,numFollowing,isPrivate,textWard;
     static boolean checked = false;
-    private ImageView profilePic;
+    private ImageView profilePic,isPrivatePicture,wardBG;
     private String pageID;
     private Button follow;
 
@@ -67,6 +68,11 @@ public class OthersActivity extends AppCompatActivity {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
+
+        isPrivate = (TextView)findViewById(R.id.isPrivate);
+        isPrivatePicture = (ImageView)findViewById(R.id.isPrivatePicture);
+        textWard = (TextView)findViewById(R.id.textWardrobe);
+        wardBG = (ImageView)findViewById(R.id.collectionbg);
 
         userName = (TextView)findViewById(R.id.userName);
         description = (TextView)findViewById(R.id.description);
@@ -131,27 +137,36 @@ public class OthersActivity extends AppCompatActivity {
             follow.setText("FOLLOW");
         }
 
-        getWardrobe task2 = new getWardrobe();
-        task2.id = pageID;
+        //DONT LOAD Posts and Wardrobe if private
+        if(loadUser.getUserPrivacy() && (!loadUser.getUserFollower().contains(currUserID))){
+            isPrivate.setVisibility(View.VISIBLE);
+            isPrivatePicture.setVisibility(View.VISIBLE);
+            wardBG.setVisibility(View.GONE);
+            textWard.setVisibility(View.GONE);
 
-        try {
-            itemList = task2.execute("").get();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
+        } else {
+            getWardrobe task2 = new getWardrobe();
+            task2.id = pageID;
+
+            try {
+                itemList = task2.execute("").get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
+
+            recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+
+            iAdapter = new ProfileItemsAdapter(this,itemList);
+            RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+
+            recyclerView.setLayoutManager(mLayoutManager);
+            recyclerView.setItemAnimator(new DefaultItemAnimator());
+            recyclerView.setAdapter(iAdapter);
+
+            iAdapter.notifyDataSetChanged();
         }
-
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-
-        iAdapter = new ProfileItemsAdapter(this,itemList);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(iAdapter);
-
-        iAdapter.notifyDataSetChanged();
     }
 
     public void followOthers(View view) {

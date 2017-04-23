@@ -5,6 +5,7 @@ import android.util.Log;
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.ClothingDO;
+import com.amazonaws.models.nosql.PostTableDO;
 import com.amazonaws.models.nosql.UsersDO;
 
 import java.util.ArrayList;
@@ -244,6 +245,36 @@ public class DataAction {
 
                 mapper.save(curr);
                 mapper.save(sth);
+            }
+        };
+        Thread thr = new Thread(runnable);
+        thr.start();
+
+    }
+
+    public void likePost(final String somePost){
+        final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+        Runnable runnable = new Runnable() {
+            public void run() {
+                //DynamoDB calls go here
+                DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+
+                UsersDO curr = mapper.load(UsersDO.class, currUserID);
+                PostTableDO spost = mapper.load(PostTableDO.class, somePost);
+
+                if(spost.getLikedUser() == null){
+                    spost.setLikedUser(new ArrayList<String>());
+                }
+                if(spost.getLikedUser().contains(currUserID)){
+                    //Already liked, unlike
+                    spost.setPostLikes(spost.getPostLikes()-1);
+                    spost.getLikedUser().remove(currUserID);
+                } else {
+                    //Like
+                    spost.setPostLikes(spost.getPostLikes()+1);
+                    spost.getLikedUser().add(currUserID);
+                }
+                mapper.save(spost);
             }
         };
         Thread thr = new Thread(runnable);

@@ -56,23 +56,23 @@ public final class R {
         public static final int ic_plusone_tall_off_client = 0x7f020077;
     }
     public static final class id {
-        public static final int adjust_height = 0x7f0c003d;
-        public static final int adjust_width = 0x7f0c003e;
-        public static final int auto = 0x7f0c0047;
-        public static final int button = 0x7f0c0050;
-        public static final int center = 0x7f0c0028;
-        public static final int dark = 0x7f0c0048;
-        public static final int icon_only = 0x7f0c0044;
-        public static final int light = 0x7f0c0049;
-        public static final int none = 0x7f0c0015;
-        public static final int normal = 0x7f0c0017;
-        public static final int radio = 0x7f0c0071;
-        public static final int standard = 0x7f0c0045;
-        public static final int text = 0x7f0c0139;
-        public static final int text2 = 0x7f0c0137;
-        public static final int toolbar = 0x7f0c00d4;
-        public static final int wide = 0x7f0c0046;
-        public static final int wrap_content = 0x7f0c0024;
+        public static final int adjust_height = 0x7f0c003e;
+        public static final int adjust_width = 0x7f0c003f;
+        public static final int auto = 0x7f0c0048;
+        public static final int button = 0x7f0c0051;
+        public static final int center = 0x7f0c0029;
+        public static final int dark = 0x7f0c0049;
+        public static final int icon_only = 0x7f0c0045;
+        public static final int light = 0x7f0c004a;
+        public static final int none = 0x7f0c0016;
+        public static final int normal = 0x7f0c0018;
+        public static final int radio = 0x7f0c0072;
+        public static final int standard = 0x7f0c0046;
+        public static final int text = 0x7f0c013e;
+        public static final int text2 = 0x7f0c013c;
+        public static final int toolbar = 0x7f0c00d5;
+        public static final int wide = 0x7f0c0047;
+        public static final int wrap_content = 0x7f0c0025;
     }
     public static final class integer {
         public static final int google_play_services_version = 0x7f0a0006;

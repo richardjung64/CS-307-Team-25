@@ -1,17 +1,11 @@
 package com.styln;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.text.InputType;
 import android.util.Log;
 import android.view.View;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -90,5 +84,9 @@ public class SettingsActivity extends AppCompatActivity {
         }
         signOut(view);
         //startActivity(new Intent(SettingsActivity.this, SignInActivity.class));
+    }
+
+    public void notification_open(View view) {
+        startActivity(new Intent(getBaseContext(), NotificationListActivity.class));
     }
 }

@@ -96,6 +96,7 @@
         <activity android:name="com.styln.OthersActivity" />
         <activity android:name="com.styln.PostActivity" />
         <activity android:name="com.styln.PostPageActivity" />
+        <activity android:name="com.styln.NotificationListActivity" />
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"

@@ -19,9 +19,9 @@ public class DataAction {
 @Param: someone is the userid of the person current user want to follow;
  */
 
+    public static String postID;
     public DataAction() {
     }
-
     public void followSomeone(final String someone){
         final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
         Runnable runnable = new Runnable() {
@@ -279,7 +279,7 @@ public class DataAction {
         };
         Thread thr = new Thread(runnable);
         thr.start();
-
+        postID = somePost;
     }
 
 }

@@ -1,263 +1,267 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:2:1-94:12
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:2:1-95:12
 	package
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:3:5-24
-		INJECTED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml
-		INJECTED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:3:5-24
+		INJECTED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml
-		INJECTED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml
-		INJECTED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:6:5-79
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:7:5-76
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:7:5-76
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:7:22-73
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:7:22-73
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:8:5-71
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:8:5-71
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:8:22-68
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:8:22-68
 uses-permission#android.permission.USE_CREDENTIALS
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:9:5-74
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:9:5-74
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:9:22-71
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:9:22-71
 uses-permission#android.permission.MEDIA_CONTENT_CONTROL
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:10:5-80
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:10:5-80
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:10:22-77
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:10:22-77
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:11:5-80
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:11:22-77
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:11:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:12:5-81
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:12:22-78
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:12:22-78
 service#com.amazonaws.mobileconnectors.s3.transferutility.TransferService
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:14:5-16:34
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:14:5-16:34
 	android:enabled
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:16:9-31
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:16:9-31
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:15:9-89
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:15:9-89
 application
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:18:5-92:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\tiger\.android\build-cache\8b36e3a951390b1b18bdf5283b7746bc9efad2bd\output\AndroidManifest.xml:9:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] C:\Users\tiger\.android\build-cache\cfbbbdf4d6a57cf299e87b36b263221aa6f2d0a8\output\AndroidManifest.xml:28:5-20
-MERGED from [com.google.android.gms:play-services-plus:10.2.1] C:\Users\tiger\.android\build-cache\b6ababc2cd7559b9c930388c5813150e13b47915\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-auth:10.2.1] C:\Users\tiger\.android\build-cache\4c1aaec5a3638ca635f5cf28e0a38ac914f7eaab\output\AndroidManifest.xml:19:5-25:19
-MERGED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\tiger\.android\build-cache\ce72aff477b9b4cea3afe27050ae50a5c0c4ac34\output\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:10.2.1] C:\Users\tiger\.android\build-cache\01cbe41f973842d80929a279d3e0a156d88b85a5\output\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\tiger\.android\build-cache\784398105a10c564b319c5dca64e82ba775283c5\output\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:design:23.4.0] C:\Users\tiger\.android\build-cache\8f5a8e95ed9837f125ce52b57069d9441339f4f6\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\tiger\.android\build-cache\276be8b698e972ac00553a17445786998d0db300\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\tiger\.android\build-cache\db2b8db9d3716ae42162798900c2d84f769ebc95\output\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\tiger\.android\build-cache\5a874bcca44a15a83fdabe1f50c60479039dfae1\output\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:24.0.0] C:\Users\tiger\.android\build-cache\72b4b8d74f07b9b791c84644d83122680fb5701c\output\AndroidManifest.xml:25:5-20
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:18:5-93:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shanu/.android/build-cache/1cde5ab890b8ca1d22746754ea6b7e1b2a42ec06/output/AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] /Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/AndroidManifest.xml:28:5-20
+MERGED from [com.google.android.gms:play-services-plus:10.2.1] /Users/shanu/.android/build-cache/87dcac3a8c488adfc03e0406500b91aa1a5a5974/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shanu/.android/build-cache/62fc81fdc61f098f41c2d4493784c325bf462216/output/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-base:10.2.1] /Users/shanu/.android/build-cache/3370881ccc9f88cedd549db0be64c408481ac46f/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] /Users/shanu/.android/build-cache/443e1c56137fd41891ec4b3bddb2da3a622f539b/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/shanu/.android/build-cache/b517d053ac144db737c9ca083855015200a1106d/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:design:23.4.0] /Users/shanu/.android/build-cache/91b06de762a96370b82e2d3f06584031c7cb7094/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/shanu/.android/build-cache/4adfe91b751f6069a992c115541503356ef0d950/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/shanu/.android/build-cache/a585a2465e1685ecbf634f27f5c3ac39d49024fd/output/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/shanu/.android/build-cache/39b29fb7d503f0ac9021206d731d11cc8f90973b/output/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:24.0.0] /Users/shanu/.android/build-cache/e7979a1bdd09ad1ec670ebae5dd4c684a1c255be/output/AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:22:9-41
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:22:9-41
 	android:allowBackup
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:20:9-35
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:20:9-35
 	android:icon
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:21:9-43
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:21:9-43
 	android:theme
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:23:9-40
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:23:9-40
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:19:9-36
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:19:9-36
 activity#com.styln.SplashActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:24:9-33:20
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:24:9-33:20
 	android:label
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:27:13-45
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:27:13-45
 	android:configChanges
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:26:13-83
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:26:13-83
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:25:13-43
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:25:13-43
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:28:13-32:29
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:29:17-69
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:29:25-66
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:31:27-74
 activity#com.styln.SignInActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:34:9-37:62
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:34:9-37:62
 	android:label
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:37:13-59
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:37:13-59
 	android:configChanges
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:36:13-83
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:36:13-83
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:35:13-43
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:35:13-43
 activity#com.styln.MainActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:38:9-41:51
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:38:9-41:51
 	android:label
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:40:13-56
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:40:13-56
 	android:launchMode
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:41:13-48
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:41:13-48
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:39:13-41
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:39:13-41
 activity#com.facebook.FacebookActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:45:9-49:75
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:45:9-49:75
 	android:label
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:48:13-45
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:48:13-45
 	android:configChanges
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:47:13-96
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:47:13-96
 	android:theme
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:49:13-72
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:49:13-72
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:46:13-57
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:46:13-57
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:51:9-53:55
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:51:9-53:55
 	android:value
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:53:13-52
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:53:13-52
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:52:13-58
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:52:13-58
 meta-data#com.google.android.gms.version
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:57:9-59:69
-MERGED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\tiger\.android\build-cache\784398105a10c564b319c5dca64e82ba775283c5\output\AndroidManifest.xml:20:9-121
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:57:9-59:69
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/shanu/.android/build-cache/b517d053ac144db737c9ca083855015200a1106d/output/AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:59:13-66
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:59:13-66
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:58:13-58
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:58:13-58
 activity#com.styln.HomeActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:61:9-64:47
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:61:9-64:47
 	android:label
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:63:13-56
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:63:13-56
 	android:theme
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:64:13-44
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:64:13-44
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:62:13-41
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:62:13-41
 activity#com.styln.TrendActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:65:9-68:47
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:65:9-68:47
 	android:label
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:67:13-42
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:67:13-42
 	android:theme
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:68:13-44
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:68:13-44
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:66:13-42
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:66:13-42
 activity#com.styln.ProfileActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:69:9-72:47
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:69:9-72:47
 	android:label
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:71:13-44
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:71:13-44
 	android:theme
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:72:13-44
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:72:13-44
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:70:13-44
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:70:13-44
 activity#com.styln.SettingsActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:73:9-76:47
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:73:9-76:47
 	android:label
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:75:13-45
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:75:13-45
 	android:theme
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:76:13-44
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:76:13-44
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:74:13-45
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:74:13-45
 activity#com.styln.FollowActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:77:9-80:47
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:77:9-80:47
 	android:label
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:79:13-45
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:79:13-45
 	android:theme
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:80:13-44
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:80:13-44
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:78:13-43
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:78:13-43
 activity#com.styln.CollectionActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:81:9-84:47
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:81:9-84:47
 	android:label
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:83:13-47
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:83:13-47
 	android:theme
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:84:13-44
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:84:13-44
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:82:13-47
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:82:13-47
 activity#com.styln.BrowseActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:85:9-52
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:85:9-52
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:85:19-49
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:85:19-49
 activity#com.styln.ItemActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:86:9-50
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:86:9-50
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:86:19-47
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:86:19-47
 activity#com.styln.InformationActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:87:9-57
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:87:9-57
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:87:19-54
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:87:19-54
 activity#com.styln.SuggestActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:88:9-53
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:88:9-53
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:88:19-50
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:88:19-50
 activity#com.styln.OthersActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:89:9-52
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:89:9-52
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:89:19-49
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:89:19-49
 activity#com.styln.PostActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:90:9-50
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:90:9-50
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:90:19-47
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:90:19-47
 activity#com.styln.PostPageActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:91:9-63
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:91:9-63
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:91:19-51
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:91:19-51
+activity#com.styln.NotificationListActivity
+ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:92:9-71
+	android:name
+		ADDED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml:92:19-59
 uses-sdk
-INJECTED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\tiger\.android\build-cache\8b36e3a951390b1b18bdf5283b7746bc9efad2bd\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:multidex:1.0.1] C:\Users\tiger\.android\build-cache\f033a32885a901e03d213af492eb284a15d31533\output\AndroidManifest.xml:18:5-42
-MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] C:\Users\tiger\.android\build-cache\cfbbbdf4d6a57cf299e87b36b263221aa6f2d0a8\output\AndroidManifest.xml:24:5-26:41
-MERGED from [com.google.android.gms:play-services-plus:10.2.1] C:\Users\tiger\.android\build-cache\b6ababc2cd7559b9c930388c5813150e13b47915\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-auth:10.2.1] C:\Users\tiger\.android\build-cache\4c1aaec5a3638ca635f5cf28e0a38ac914f7eaab\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-auth-base:10.2.1] C:\Users\tiger\.android\build-cache\a91f5c73c659cdb11ca92116719c626b93a6ec93\output\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\tiger\.android\build-cache\ce72aff477b9b4cea3afe27050ae50a5c0c4ac34\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tasks:10.2.1] C:\Users\tiger\.android\build-cache\01cbe41f973842d80929a279d3e0a156d88b85a5\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\tiger\.android\build-cache\784398105a10c564b319c5dca64e82ba775283c5\output\AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:design:23.4.0] C:\Users\tiger\.android\build-cache\8f5a8e95ed9837f125ce52b57069d9441339f4f6\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\tiger\.android\build-cache\6b21e57995176c24a1d721f84639dc0e78d3e547\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\tiger\.android\build-cache\276be8b698e972ac00553a17445786998d0db300\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\tiger\.android\build-cache\db2b8db9d3716ae42162798900c2d84f769ebc95\output\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\tiger\.android\build-cache\5a874bcca44a15a83fdabe1f50c60479039dfae1\output\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:24.0.0] C:\Users\tiger\.android\build-cache\72b4b8d74f07b9b791c84644d83122680fb5701c\output\AndroidManifest.xml:21:5-23:54
-MERGED from [jp.wasabeef:glide-transformations:2.0.2] C:\Users\tiger\.android\build-cache\8aec31303916cd33e30d841c2beebc12d78ed4b2\output\AndroidManifest.xml:8:5-10:41
-MERGED from [jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1] C:\Users\tiger\.android\build-cache\fa631855a7342a95652650439318d4487a26331b\output\AndroidManifest.xml:8:5-10:41
+INJECTED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shanu/.android/build-cache/1cde5ab890b8ca1d22746754ea6b7e1b2a42ec06/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:multidex:1.0.1] /Users/shanu/.android/build-cache/54c58e42bae6d4257ad3f7046d1c1e7f74cb8089/output/AndroidManifest.xml:18:5-42
+MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] /Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.google.android.gms:play-services-plus:10.2.1] /Users/shanu/.android/build-cache/87dcac3a8c488adfc03e0406500b91aa1a5a5974/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shanu/.android/build-cache/62fc81fdc61f098f41c2d4493784c325bf462216/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:10.2.1] /Users/shanu/.android/build-cache/e95fc640d62b20fd1018a9865117bfd3e1658519/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.1] /Users/shanu/.android/build-cache/3370881ccc9f88cedd549db0be64c408481ac46f/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] /Users/shanu/.android/build-cache/443e1c56137fd41891ec4b3bddb2da3a622f539b/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/shanu/.android/build-cache/b517d053ac144db737c9ca083855015200a1106d/output/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:design:23.4.0] /Users/shanu/.android/build-cache/91b06de762a96370b82e2d3f06584031c7cb7094/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.4.0] /Users/shanu/.android/build-cache/71473ebf143ef0e61d7aa8df95f4f668556c17e0/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/shanu/.android/build-cache/4adfe91b751f6069a992c115541503356ef0d950/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/shanu/.android/build-cache/a585a2465e1685ecbf634f27f5c3ac39d49024fd/output/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/shanu/.android/build-cache/39b29fb7d503f0ac9021206d731d11cc8f90973b/output/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:24.0.0] /Users/shanu/.android/build-cache/e7979a1bdd09ad1ec670ebae5dd4c684a1c255be/output/AndroidManifest.xml:21:5-23:54
+MERGED from [jp.wasabeef:glide-transformations:2.0.2] /Users/shanu/.android/build-cache/f5370778a6629cb9fd7992df74ac41a50dfa6047/output/AndroidManifest.xml:8:5-10:41
+MERGED from [jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1] /Users/shanu/.android/build-cache/f6ff0f35d4673c739e174fcbe6297a72bed3678a/output/AndroidManifest.xml:8:5-10:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\tiger\.android\build-cache\276be8b698e972ac00553a17445786998d0db300\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/shanu/.android/build-cache/4adfe91b751f6069a992c115541503356ef0d950/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml
-		INJECTED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml
-		INJECTED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/AndroidManifest.xml
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:10.2.1] C:\Users\tiger\.android\build-cache\4c1aaec5a3638ca635f5cf28e0a38ac914f7eaab\output\AndroidManifest.xml:20:9-189
+ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shanu/.android/build-cache/62fc81fdc61f098f41c2d4493784c325bf462216/output/AndroidManifest.xml:20:9-189
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:10.2.1] C:\Users\tiger\.android\build-cache\4c1aaec5a3638ca635f5cf28e0a38ac914f7eaab\output\AndroidManifest.xml:20:129-162
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shanu/.android/build-cache/62fc81fdc61f098f41c2d4493784c325bf462216/output/AndroidManifest.xml:20:129-162
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:10.2.1] C:\Users\tiger\.android\build-cache\4c1aaec5a3638ca635f5cf28e0a38ac914f7eaab\output\AndroidManifest.xml:20:163-187
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shanu/.android/build-cache/62fc81fdc61f098f41c2d4493784c325bf462216/output/AndroidManifest.xml:20:163-187
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:10.2.1] C:\Users\tiger\.android\build-cache\4c1aaec5a3638ca635f5cf28e0a38ac914f7eaab\output\AndroidManifest.xml:20:69-128
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shanu/.android/build-cache/62fc81fdc61f098f41c2d4493784c325bf462216/output/AndroidManifest.xml:20:69-128
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:10.2.1] C:\Users\tiger\.android\build-cache\4c1aaec5a3638ca635f5cf28e0a38ac914f7eaab\output\AndroidManifest.xml:20:19-68
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shanu/.android/build-cache/62fc81fdc61f098f41c2d4493784c325bf462216/output/AndroidManifest.xml:20:19-68
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:10.2.1] C:\Users\tiger\.android\build-cache\4c1aaec5a3638ca635f5cf28e0a38ac914f7eaab\output\AndroidManifest.xml:24:9-184
+ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shanu/.android/build-cache/62fc81fdc61f098f41c2d4493784c325bf462216/output/AndroidManifest.xml:24:9-184
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:10.2.1] C:\Users\tiger\.android\build-cache\4c1aaec5a3638ca635f5cf28e0a38ac914f7eaab\output\AndroidManifest.xml:24:64-87
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shanu/.android/build-cache/62fc81fdc61f098f41c2d4493784c325bf462216/output/AndroidManifest.xml:24:64-87
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:10.2.1] C:\Users\tiger\.android\build-cache\4c1aaec5a3638ca635f5cf28e0a38ac914f7eaab\output\AndroidManifest.xml:24:88-182
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shanu/.android/build-cache/62fc81fdc61f098f41c2d4493784c325bf462216/output/AndroidManifest.xml:24:88-182
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:10.2.1] C:\Users\tiger\.android\build-cache\4c1aaec5a3638ca635f5cf28e0a38ac914f7eaab\output\AndroidManifest.xml:24:18-63
+		ADDED from [com.google.android.gms:play-services-auth:10.2.1] /Users/shanu/.android/build-cache/62fc81fdc61f098f41c2d4493784c325bf462216/output/AndroidManifest.xml:24:18-63
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\tiger\.android\build-cache\ce72aff477b9b4cea3afe27050ae50a5c0c4ac34\output\AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/shanu/.android/build-cache/3370881ccc9f88cedd549db0be64c408481ac46f/output/AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\tiger\.android\build-cache\ce72aff477b9b4cea3afe27050ae50a5c0c4ac34\output\AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/shanu/.android/build-cache/3370881ccc9f88cedd549db0be64c408481ac46f/output/AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\tiger\.android\build-cache\ce72aff477b9b4cea3afe27050ae50a5c0c4ac34\output\AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/shanu/.android/build-cache/3370881ccc9f88cedd549db0be64c408481ac46f/output/AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\tiger\.android\build-cache\ce72aff477b9b4cea3afe27050ae50a5c0c4ac34\output\AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/shanu/.android/build-cache/3370881ccc9f88cedd549db0be64c408481ac46f/output/AndroidManifest.xml:19:19-85

@@ -11,15 +11,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.amazonaws.AmazonServiceException;
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.UsersDO;
 
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 import java.util.concurrent.ExecutionException;
 
 public class FollowActivity extends AppCompatActivity {

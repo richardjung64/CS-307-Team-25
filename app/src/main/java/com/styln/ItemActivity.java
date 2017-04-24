@@ -1,9 +1,6 @@
 package com.styln;
 
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +17,6 @@ import android.widget.Toast;
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.ClothingDO;
-import com.amazonaws.models.nosql.UsersDO;
 import com.bumptech.glide.Glide;
 
 import java.util.concurrent.ExecutionException;

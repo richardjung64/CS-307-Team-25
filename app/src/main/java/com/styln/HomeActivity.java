@@ -268,7 +268,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void openUser(View view) {
-        String userid = "us-east-1:6266ddac-b3e7-403c-a2e0-bb5b7c861b60";
+        String userid = "us-east-1:66c73c49-93fc-49f1-8212-accbcb213056";
         Log.d(LOG_TAG, "Launching Other User Activity...");
         startActivity(new Intent(HomeActivity.this, OthersActivity.class)
                 .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("ID",userid));

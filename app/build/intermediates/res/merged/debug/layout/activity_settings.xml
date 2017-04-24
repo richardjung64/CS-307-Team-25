@@ -62,6 +62,13 @@
             android:text="@string/delete_button"
             android:onClick="deleteAccount"/>
 
+        <Button
+            android:id="@+id/not_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:onClick="notification_open"/>
+
     </LinearLayout>
 
 

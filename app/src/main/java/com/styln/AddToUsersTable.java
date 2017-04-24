@@ -1,27 +1,13 @@
 package com.styln;
 
-import android.app.Activity;
-import android.content.*;
-import android.net.Uri;
 import android.util.Log;
 
 import com.amazonaws.AmazonClientException;
-import com.amazonaws.auth.CognitoCachingCredentialsProvider;
 import com.amazonaws.mobile.AWSMobileClient;
-import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobile.user.IdentityProvider;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.UsersDO;
-import com.amazonaws.regions.Regions;
-import com.amazonaws.services.cognitoidentity.AmazonCognitoIdentityClient;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
-import com.amazonaws.services.dynamodbv2.model.AttributeValue;
-import com.amazonaws.services.dynamodbv2.model.PutItemRequest;
-import com.amazonaws.services.dynamodbv2.model.TableDescription;
-import com.amazonaws.services.dynamodbv2.model.UpdateItemRequest;
-
-import java.util.HashMap;
-import java.util.Map;
 
 
 public class AddToUsersTable {

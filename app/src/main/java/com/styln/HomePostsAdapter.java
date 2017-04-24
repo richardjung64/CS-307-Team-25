@@ -35,6 +35,8 @@ public class HomePostsAdapter extends RecyclerView.Adapter<HomePostsAdapter.MyVi
     private List<ClothingDO> itemList = new ArrayList<>();
     private RecyclerView recyclerView;
     private HomePostsItemsAdapter iAdapter;
+    private DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+    public static String post_id;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView name,numLikes,description,date;
@@ -81,6 +83,18 @@ public class HomePostsAdapter extends RecyclerView.Adapter<HomePostsAdapter.MyVi
         return new HomePostsAdapter.MyViewHolder(itemView);
     }
 
+    private class Grab_Curr_User extends AsyncTask<String, Void, UsersDO> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        UsersDO loadresult = new UsersDO();
+        @Override
+        protected UsersDO doInBackground(String... strings) {
+            UsersDO currentUser = new UsersDO();
+            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            currentUser = mapper.load(UsersDO.class, userID);
+            loadresult = currentUser;
+            return loadresult;
+        }
+    }
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
@@ -94,7 +108,7 @@ public class HomePostsAdapter extends RecyclerView.Adapter<HomePostsAdapter.MyVi
         holder.Pid = post.getUserId();
         holder.numLikesINT = post.getPostLikes().intValue();
 
-        grabUser task = new grabUser();
+        final grabUser task = new grabUser();
         UsersDO loadUser = new UsersDO();
         try {
             task.id = holder.Uid;
@@ -112,7 +126,7 @@ public class HomePostsAdapter extends RecyclerView.Adapter<HomePostsAdapter.MyVi
             @Override
             public void onClick(View view) {
                 Log.d("DDD","DASHIUASHISAU");
-                String userid = holder.Pid;
+                String userid = holder.Uid;
                 Intent intent = new Intent(mContext, OthersActivity.class);
                 intent.putExtra("ID", userid);
                 mContext.startActivity(intent);
@@ -130,6 +144,8 @@ public class HomePostsAdapter extends RecyclerView.Adapter<HomePostsAdapter.MyVi
             holder.like.setImageResource(R.drawable.main_like_1);
         }
 
+
+
         holder.like.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -138,6 +154,7 @@ public class HomePostsAdapter extends RecyclerView.Adapter<HomePostsAdapter.MyVi
                     //like post
                     holder.liked = true;
                     da.likePost(holder.Pid);
+                    post_id = holder.Pid;
                     holder.like.setImageResource(R.drawable.main_like_1);
                     holder.numLikesINT++;
                     holder.numLikes.setText(holder.numLikesINT+" likes");

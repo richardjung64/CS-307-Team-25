@@ -13,7 +13,6 @@ import android.view.View;
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.PostTableDO;
-import com.amazonaws.models.nosql.UsersDO;
 
 import java.util.ArrayList;
 import java.util.List;

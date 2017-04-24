@@ -7,7 +7,6 @@ import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.IdentityProvider;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.PostTableDO;
-import com.amazonaws.models.nosql.UsersDO;
 
 /**
  * Created on 4/7/17.

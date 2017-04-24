@@ -17,8 +17,8 @@ public class UsersDO {
     private String _userPhoto;
     private List<String> _userPosts;
     private boolean _userPrivacy;
-    private List<String> _userFollower;
-    private List<String> _userFollowing;
+    public List<String> _userFollower;
+    public List<String> _userFollowing;
     private List<String> _userWardrobe;
     private List<String> _userWishList;
     private boolean isFirstTime;

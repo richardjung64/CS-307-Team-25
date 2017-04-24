@@ -141,7 +141,7 @@ public class OthersActivity extends AppCompatActivity {
         }
 
         //DONT LOAD Posts and Wardrobe if private
-        if(loadUser.getUserPrivacy() && (!loadUser.getUserFollower().contains(currUserID))){
+        if(loadUser.getUserPrivacy()){
             isPrivate.setVisibility(View.VISIBLE);
             isPrivatePicture.setVisibility(View.VISIBLE);
             wardBG.setVisibility(View.GONE);

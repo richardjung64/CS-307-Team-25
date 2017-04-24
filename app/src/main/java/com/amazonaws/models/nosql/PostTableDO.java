@@ -14,6 +14,7 @@ public class PostTableDO {
     private String _postDescription;
     private Double _postLikes;
     private String _postUser;
+    private String _postDate;
     private List<String> _postClothing;
     private List<String> _likedUser;
 
@@ -49,6 +50,13 @@ public class PostTableDO {
 
     public void setPostPoster(final String _postPoster) {
         this._postUser = _postPoster;
+    }
+    @DynamoDBAttribute(attributeName = "Post_Date")
+    public String getPostDate() {
+        return _postDate;
+    }
+    public void setPostDate(final String _postDate) {
+        this._postDate = _postDate;
     }
     @DynamoDBAttribute(attributeName = "Liked_User")
     public List<String> getLikedUser() {

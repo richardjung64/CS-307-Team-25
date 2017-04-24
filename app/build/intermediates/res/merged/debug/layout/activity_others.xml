@@ -336,6 +336,22 @@
         android:layout_height="match_parent"
         android:layout_alignLeft="@+id/textbg"
         android:layout_alignStart="@+id/textbg"
+        android:layout_below="@id/textPosts"
+        android:layout_alignRight="@+id/textbg"
+        android:layout_alignBottom="@+id/textWardrobe"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/textbg"
+        android:layout_alignStart="@+id/textbg"
         android:layout_below="@+id/linearLayout2"
         android:layout_above="@+id/lowerBox"
         android:layout_alignRight="@+id/textbg"
@@ -343,6 +359,7 @@
         >
 
     </android.support.v7.widget.RecyclerView>
+
 
     <TextView
         android:id="@+id/isPrivate"

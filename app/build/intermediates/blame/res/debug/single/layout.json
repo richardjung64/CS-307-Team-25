@@ -20,6 +20,10 @@
         "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\fragment_demo_nosql_show_results.xml"
     },
     {
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\post_profile.xml",
+        "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\post_profile.xml"
+    },
+    {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
         "source": "C:\\Users\\tiger\\.android\\build-cache\\276be8b698e972ac00553a17445786998d0db300\\output\\res\\layout\\notification_media_cancel_action.xml"
     },
@@ -258,6 +262,10 @@
     {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "C:\\Users\\tiger\\.android\\build-cache\\276be8b698e972ac00553a17445786998d0db300\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_grid_post_home.xml",
+        "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\item_grid_post_home.xml"
     },
     {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",

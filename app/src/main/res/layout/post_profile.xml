@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/post_feed"
+    android:layout_width="200dp"
+    android:layout_height="170dp"
+    >
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="180dp"
+        app:srcCompat="@color/instructions_list_border_color"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/postBG"
+        android:scaleType="fitXY"
+        />
+
+
+    <TextView
+        android:text="0 likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/numLikes"
+        android:textSize="15sp"
+        android:layout_below="@id/postDescription"
+        android:layout_alignLeft="@id/postBG" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_alignTop="@id/postBG"
+        android:layout_alignLeft="@id/postBG"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_alignEnd="@+id/postBG" />
+
+    <TextView
+        android:id="@+id/postDescription"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="TextView"
+        android:layout_below="@id/recycler_view"
+        android:layout_alignStart="@+id/recycler_view"
+        android:layout_alignRight="@id/postBG"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black_text"
+        android:layout_marginTop="6dp"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/postDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017/04/08 08:30"
+        android:textSize="11sp"
+        android:layout_alignBaseline="@+id/numLikes"
+        android:layout_alignBottom="@+id/numLikes"
+        android:layout_alignEnd="@+id/postDescription" />
+
+
+</RelativeLayout>

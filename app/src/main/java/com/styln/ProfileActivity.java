@@ -19,6 +19,7 @@ import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.ClothingDO;
+import com.amazonaws.models.nosql.PostTableDO;
 import com.amazonaws.models.nosql.UsersDO;
 import com.bumptech.glide.Glide;
 
@@ -38,11 +39,13 @@ public class ProfileActivity extends AppCompatActivity {
     private ImageView profilePic;
     String currUserID;
 
+    private List<PostTableDO> postList = new ArrayList<>();
     private List<ClothingDO> itemList = new ArrayList<>();
 
 
-    private RecyclerView recyclerView;
+    private RecyclerView recyclerView,recyclerView2;
     private ProfileItemsAdapter iAdapter;
+    private ProfilePostsAdapter pAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,10 +127,9 @@ public class ProfileActivity extends AppCompatActivity {
             numFollowing.setText(""+currentUser.getUserFollowing().size());
         }
 
-        getWardrobe task2 = new getWardrobe();
-
+        getPostList task2 = new getPostList();
         try {
-            itemList = task2.execute("").get();
+            postList = task2.execute("").get();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
@@ -135,13 +137,30 @@ public class ProfileActivity extends AppCompatActivity {
         }
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-
-        iAdapter = new ProfileItemsAdapter(this,itemList);
+        pAdapter = new ProfilePostsAdapter(this,postList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(iAdapter);
+        recyclerView.setAdapter(pAdapter);
+
+        pAdapter.notifyDataSetChanged();
+
+
+        getWardrobe task3 = new getWardrobe();
+        try {
+            itemList = task3.execute("").get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+
+        recyclerView2 = (RecyclerView) findViewById(R.id.recycler_view2);
+        iAdapter = new ProfileItemsAdapter(this,itemList);
+        RecyclerView.LayoutManager mLayoutManager2 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        recyclerView2.setLayoutManager(mLayoutManager2);
+        recyclerView2.setItemAnimator(new DefaultItemAnimator());
+        recyclerView2.setAdapter(iAdapter);
 
         iAdapter.notifyDataSetChanged();
     }
@@ -187,6 +206,33 @@ public class ProfileActivity extends AppCompatActivity {
 
             for (String str : result) {
                 ClothingDO iterator = mapper.load(ClothingDO.class, str);
+                loadresult.add(iterator);
+
+            }
+            return loadresult;
+        }
+    }
+
+    private class getPostList extends AsyncTask<String, Void, List<PostTableDO>> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        List<PostTableDO> loadresult = new ArrayList<PostTableDO>();
+        @Override
+        protected List<PostTableDO> doInBackground(String... strings) {
+            UsersDO currentUser;
+            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            currentUser = mapper.load(UsersDO.class, userID);
+            List<String> tempSet;
+
+            if(currentUser.getUserPosts() == null){
+                Log.d(LOG_TAG,"NULLLLL");
+                currentUser.setUserPosts(new ArrayList<String>());
+            }
+
+            tempSet = currentUser.getUserPosts();
+            List<String> result = new ArrayList<String>(tempSet);
+
+            for (String str : result) {
+                PostTableDO iterator = mapper.load(PostTableDO.class, str);
                 loadresult.add(iterator);
 
             }

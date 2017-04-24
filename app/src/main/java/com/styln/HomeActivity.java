@@ -3,8 +3,6 @@ package com.styln;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -16,10 +14,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.amazonaws.AmazonClientException;
@@ -28,7 +24,6 @@ import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.amazonaws.mobile.util.ThreadUtils;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
-import com.amazonaws.models.nosql.ClothingDO;
 import com.amazonaws.models.nosql.PostTableDO;
 import com.amazonaws.models.nosql.UsersDO;
 import com.bumptech.glide.Glide;
@@ -60,7 +55,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private List<PostTableDO> postList = new ArrayList<>();
     private RecyclerView recyclerView;
-    private PostsAdapter pAdapter;
+    private HomePostsAdapter pAdapter;
 
     static boolean liked = false;
     static int numLikes = 0;
@@ -243,16 +238,25 @@ public class HomeActivity extends AppCompatActivity {
         }
 
 
+        getPostList task2 = new getPostList();
+        try {
+            postList = task2.execute("").get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        };
+
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
-        pAdapter = new PostsAdapter(this,postList);
+        pAdapter = new HomePostsAdapter(this,postList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(pAdapter);
 
-        preparePostData();
+        //preparePostData();
 
     }
 
@@ -298,26 +302,31 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
-    private void preparePostData() {
-        PostTableDO post = new PostTableDO();
-        post.setUserId("post_101");
-        post.setPostPoster("us-east-1:6266ddac-b3e7-403c-a2e0-bb5b7c861b60");
-        post.setPostDescription("HELLO MY NAME IS ");
+    private class getPostList extends AsyncTask<String, Void, List<PostTableDO>> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        List<PostTableDO> loadresult = new ArrayList<PostTableDO>();
+        @Override
+        protected List<PostTableDO> doInBackground(String... strings) {
+            UsersDO currentUser;
+            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            currentUser = mapper.load(UsersDO.class, userID);
+            List<String> tempSet;
 
-        List<String> userList = new ArrayList<>();
-        userList.add("us-east-1:66c73c49-93fc-49f1-8212-accbcb213056");
-        post.setPostLikes((double)userList.size());
+            if(currentUser.getUserPosts() == null){
+                Log.d(LOG_TAG,"NULLLLL");
+                currentUser.setUserPosts(new ArrayList<String>());
+            }
 
-        post.setLikedUser(userList);
+            tempSet = currentUser.getUserPosts();
+            List<String> result = new ArrayList<String>(tempSet);
 
-        List<String> itemList = new ArrayList<>();
-        itemList.add("tshirt");
+            for (String str : result) {
+                PostTableDO iterator = mapper.load(PostTableDO.class, str);
+                loadresult.add(iterator);
 
-        post.setPostClothing(itemList);
-
-        postList.add(post);
-
-        pAdapter.notifyDataSetChanged();
+            }
+            return loadresult;
+        }
     }
 
     public void checkLogin()

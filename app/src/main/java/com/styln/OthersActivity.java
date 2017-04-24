@@ -21,6 +21,7 @@ import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.ClothingDO;
+import com.amazonaws.models.nosql.PostTableDO;
 import com.amazonaws.models.nosql.UsersDO;
 import com.bumptech.glide.Glide;
 
@@ -42,10 +43,12 @@ public class OthersActivity extends AppCompatActivity {
     private Button follow;
 
     private List<ClothingDO> itemList = new ArrayList<>();
+    private List<PostTableDO> postList = new ArrayList<>();
 
 
-    private RecyclerView recyclerView;
+    private RecyclerView recyclerView,recyclerView2;
     private ProfileItemsAdapter iAdapter;
+    private ProfilePostsAdapter pAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -145,11 +148,10 @@ public class OthersActivity extends AppCompatActivity {
             textWard.setVisibility(View.GONE);
 
         } else {
-            getWardrobe task2 = new getWardrobe();
-            task2.id = pageID;
-
+            getPostList task2 = new getPostList();
+            task2.id = getIntent().getStringExtra("ID");
             try {
-                itemList = task2.execute("").get();
+                postList = task2.execute("").get();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
@@ -157,13 +159,31 @@ public class OthersActivity extends AppCompatActivity {
             }
 
             recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-
-            iAdapter = new ProfileItemsAdapter(this,itemList);
+            pAdapter = new ProfilePostsAdapter(this,postList);
             RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-
             recyclerView.setLayoutManager(mLayoutManager);
             recyclerView.setItemAnimator(new DefaultItemAnimator());
-            recyclerView.setAdapter(iAdapter);
+            recyclerView.setAdapter(pAdapter);
+
+            pAdapter.notifyDataSetChanged();
+
+
+            getWardrobe task3 = new getWardrobe();
+            task3.id = getIntent().getStringExtra("ID");
+            try {
+                itemList = task3.execute("").get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
+
+            recyclerView2 = (RecyclerView) findViewById(R.id.recycler_view2);
+            iAdapter = new ProfileItemsAdapter(this,itemList);
+            RecyclerView.LayoutManager mLayoutManager2 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+            recyclerView2.setLayoutManager(mLayoutManager2);
+            recyclerView2.setItemAnimator(new DefaultItemAnimator());
+            recyclerView2.setAdapter(iAdapter);
 
             iAdapter.notifyDataSetChanged();
         }
@@ -240,6 +260,33 @@ public class OthersActivity extends AppCompatActivity {
         }
     }
 
+    private class getPostList extends AsyncTask<String, Void, List<PostTableDO>> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        List<PostTableDO> loadresult = new ArrayList<PostTableDO>();
+        String id = "";
+        @Override
+        protected List<PostTableDO> doInBackground(String... strings) {
+            UsersDO currentUser;
+            String userID = id;
+            currentUser = mapper.load(UsersDO.class, userID);
+            List<String> tempSet;
+
+            if(currentUser.getUserPosts() == null){
+                Log.d(LOG_TAG,"NULLLLL");
+                currentUser.setUserPosts(new ArrayList<String>());
+            }
+
+            tempSet = currentUser.getUserPosts();
+            List<String> result = new ArrayList<String>(tempSet);
+
+            for (String str : result) {
+                PostTableDO iterator = mapper.load(PostTableDO.class, str);
+                loadresult.add(iterator);
+
+            }
+            return loadresult;
+        }
+    }
 
     public void openHome(View view) {
         Log.d(LOG_TAG, "Launching Home Activity...");

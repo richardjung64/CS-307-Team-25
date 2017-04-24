@@ -63,7 +63,7 @@ public class HomeActivityBACKUP extends AppCompatActivity {
 
     private List<ClothingDO> itemList = new ArrayList<>();
     private RecyclerView recyclerView;
-    private PostItemsAdapter iAdapter;
+    private ProfilePostsItemsAdapter iAdapter;
 
     static boolean liked = false;
     static int numLikes = 0;
@@ -306,7 +306,7 @@ public class HomeActivityBACKUP extends AppCompatActivity {
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
-        iAdapter = new PostItemsAdapter(this,itemList);
+        iAdapter = new ProfilePostsItemsAdapter(this,itemList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
 
         recyclerView.setLayoutManager(mLayoutManager);

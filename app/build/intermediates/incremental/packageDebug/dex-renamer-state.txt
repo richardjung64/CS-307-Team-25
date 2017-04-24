@@ -1,7 +1,7 @@
-#Sun Apr 23 21:08:53 EDT 2017
-base.0=D\:\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_9fab7b802bec8e79147633f0f8d71c687be7a807
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=D\:\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_bc269d4c1b8d2218cdb63e854c35826beb39845a\\classes.dex
-base.1=D\:\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_bc269d4c1b8d2218cdb63e854c35826beb39845a
-file.0=D\:\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_9fab7b802bec8e79147633f0f8d71c687be7a807\\classes.dex
+#Sun Apr 23 21:51:46 EDT 2017
+base.0=D\:\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_bc269d4c1b8d2218cdb63e854c35826beb39845a
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_9fab7b802bec8e79147633f0f8d71c687be7a807\\classes.dex
+base.1=D\:\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_9fab7b802bec8e79147633f0f8d71c687be7a807
+file.0=D\:\\CS-307-Team-25\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_bc269d4c1b8d2218cdb63e854c35826beb39845a\\classes.dex

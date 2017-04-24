@@ -188,6 +188,10 @@
         "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\user_list_row.xml"
     },
     {
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_post_page.xml",
+        "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_post_page.xml"
+    },
+    {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
         "source": "C:\\Users\\tiger\\.android\\build-cache\\8f5a8e95ed9837f125ce52b57069d9441339f4f6\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
@@ -310,6 +314,10 @@
     {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_home.xml",
         "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\content_home.xml"
+    },
+    {
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_post.xml",
+        "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_post.xml"
     },
     {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_grid_row.xml",

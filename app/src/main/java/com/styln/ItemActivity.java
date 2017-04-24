@@ -92,8 +92,6 @@ public class ItemActivity extends AppCompatActivity {
 
     }
 
-
-
     private class grabItem extends AsyncTask<String, Void, ClothingDO> {
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
         ClothingDO loadresult = new ClothingDO();

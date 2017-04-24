@@ -84,9 +84,11 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".BrowseActivity" />
         <activity android:name=".ItemActivity" />
-        <activity android:name=".InformationActivity"></activity>
-        <activity android:name=".SuggestActivity"></activity>
-        <activity android:name=".OthersActivity"></activity>
+        <activity android:name=".InformationActivity" />
+        <activity android:name=".SuggestActivity" />
+        <activity android:name=".OthersActivity" />
+        <activity android:name=".PostActivity" />
+        <activity android:name=".PostPageActivity"></activity>
     </application>
 
 </manifest>

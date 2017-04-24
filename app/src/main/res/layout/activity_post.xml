@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_background"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/me_textbg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="fitXY"
+        android:id="@+id/textBG"
+        />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter description"
+        android:id="@+id/post_description"
+        android:textSize="16dp"
+        android:layout_below="@id/recycler_view"
+        android:layout_alignLeft="@id/textBG"
+        android:layout_alignRight="@id/textBG"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionDone"
+        android:imeActionLabel="Over and out!"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:minLines="0"
+        />
+
+    <Button
+        android:text="Post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_confirm"
+        android:layout_alignBottom="@id/textBG"
+        android:layout_alignRight="@id/textBG"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:onClick="Post"/>
+
+    <Button
+        android:id="@+id/post_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textBG"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="15dp"
+        android:text="Cancel"
+        android:clickable="true"
+        android:onClick="Cancel"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignStart="@+id/textBG"
+        android:layout_alignTop="@+id/textBG"
+        android:layout_alignEnd="@+id/textBG" />
+
+    <TextView
+        android:id="@+id/post_text_wardobe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textBG"
+        android:text="Wardrobe" />
+
+
+</RelativeLayout>
+

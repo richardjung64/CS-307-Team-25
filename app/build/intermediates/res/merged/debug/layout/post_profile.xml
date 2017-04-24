@@ -63,5 +63,12 @@
         android:layout_alignBottom="@+id/numLikes"
         android:layout_alignEnd="@+id/postDescription" />
 
+    <ImageView
+        android:id="@+id/post_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+         />
+
 
 </RelativeLayout>

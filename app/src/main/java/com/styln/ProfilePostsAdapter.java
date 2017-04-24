@@ -2,6 +2,7 @@ package com.styln;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -34,7 +35,7 @@ public class ProfilePostsAdapter extends RecyclerView.Adapter<ProfilePostsAdapte
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView name,numLikes,description,date;
         public String Uid,Pid;
-        public ImageView userSpace;
+        public ImageView space;
 
         public MyViewHolder(View view) {
             super(view);
@@ -44,7 +45,7 @@ public class ProfilePostsAdapter extends RecyclerView.Adapter<ProfilePostsAdapte
             Uid = "";
             Pid = "";
             recyclerView = (RecyclerView)view.findViewById(R.id.recycler_view);
-            userSpace = (ImageView)view.findViewById(R.id.post_user_space);
+            space = (ImageView)view.findViewById(R.id.post_page);
             date = (TextView)view.findViewById(R.id.postDate);
         }
     }
@@ -86,15 +87,15 @@ public class ProfilePostsAdapter extends RecyclerView.Adapter<ProfilePostsAdapte
             e.printStackTrace();
         }
 
-   /*     holder.space.setOnClickListener(new View.OnClickListener() {
+        holder.space.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String userid = holder.Uid;
-                Intent intent = new Intent(mContext, OthersActivity.class);
-                intent.putExtra("ID", userid);
+                String id = holder.Pid;
+                Intent intent = new Intent(mContext, PostPageActivity.class);
+                intent.putExtra("ID", id);
                 mContext.startActivity(intent);
             }
-        });*/
+        });
 
        getList task2 = new getList();
         task2.id = holder.Pid;

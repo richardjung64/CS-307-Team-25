@@ -3,6 +3,7 @@ package com.styln;
 import android.app.ListFragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -33,7 +34,8 @@ public class NotificationListFragment extends ListFragment {
         }
 
         public View getView(int position, View convertView, ViewGroup parent) {
-            if (notifications == null && convertView == null) {
+            if (notifications == null) {
+                Log.d("LOG_TAG", "NO NOTIF");
                 convertView = getActivity().getLayoutInflater().inflate(R.layout.no_notf_layout,null);
             }
             else {

@@ -24,6 +24,10 @@ public class NotificationBanner {
             public void run() {
                 //DynamoDB calls go here
                 DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+                if (DataAction.postID == null) {
+                    notifyList = null;
+                    return;
+                }
                 PostTableDO spost = mapper.load(PostTableDO.class, DataAction.postID);
                 if (spost!= null && spost.getPostPoster().equals(AWSMobileClient.defaultMobileClient().
                         getIdentityManager().getCachedUserID())) {
@@ -43,6 +47,7 @@ public class NotificationBanner {
                 }
                 else {
                     notifyList = null;
+                    return;
                 }
 
             }

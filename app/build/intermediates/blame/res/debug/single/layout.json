@@ -16,12 +16,12 @@
         "source": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_home.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/shanu/.android/build-cache/4adfe91b751f6069a992c115541503356ef0d950/output/res/layout/abc_list_menu_item_radio.xml"
-    },
-    {
         "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_sign_in.xml",
         "source": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/res/layout/activity_sign_in.xml"
+    },
+    {
+        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/shanu/.android/build-cache/4adfe91b751f6069a992c115541503356ef0d950/output/res/layout/abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
@@ -288,28 +288,28 @@
         "source": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_browse.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\demo_nosql_select_table_list_item.xml",
-        "source": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\demo_nosql_select_table_list_item.xml"
+        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/shanu/.android/build-cache/4adfe91b751f6069a992c115541503356ef0d950/output/res/layout/abc_action_bar_title_item.xml"
     },
     {
         "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/activity_settings.xml",
         "source": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/res/layout/activity_settings.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/shanu/.android/build-cache/4adfe91b751f6069a992c115541503356ef0d950/output/res/layout/abc_action_bar_title_item.xml"
+        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\demo_nosql_select_table_list_item.xml",
+        "source": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\demo_nosql_select_table_list_item.xml"
     },
     {
         "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
         "source": "/Users/shanu/.android/build-cache/4adfe91b751f6069a992c115541503356ef0d950/output/res/layout/notification_template_part_time.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/list_fragment_notify.xml",
-        "source": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/res/layout/list_fragment_notify.xml"
-    },
-    {
         "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
         "source": "/Users/shanu/.android/build-cache/91b06de762a96370b82e2d3f06584031c7cb7094/output/res/layout/design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/list_fragment_notify.xml",
+        "source": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/res/layout/list_fragment_notify.xml"
     },
     {
         "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",

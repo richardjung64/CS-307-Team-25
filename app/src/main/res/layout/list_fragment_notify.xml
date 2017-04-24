@@ -11,14 +11,14 @@
         android:textStyle="bold"
         android:text="Notifications Title"/>
 
-    <TextView
-        android:id="@+id/notify_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/notify_title"
-        android:paddingLeft="4dp"
-        android:paddingRight="4dp"
-        android:paddingTop="4dp"
-        android:text = "Notification Date"/>
+    <!--<TextView-->
+        <!--android:id="@+id/notify_date"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/notify_title"-->
+        <!--android:paddingLeft="4dp"-->
+        <!--android:paddingRight="4dp"-->
+        <!--android:paddingTop="4dp"-->
+        <!--android:text = "Notification Date"/>-->
 
 </FrameLayout>

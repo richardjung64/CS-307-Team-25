@@ -16,6 +16,7 @@ import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.models.nosql.UsersDO;
 import com.bumptech.glide.Glide;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
@@ -66,6 +67,9 @@ public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.
                 thumbnail(0.1f).into(holder.picture);
 
         final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+        if(user.getUserFollower() == null){
+            user.setUserFollower(new ArrayList<String>());
+        }
         holder.following = user.getUserFollower().contains(currUserID);
         if(user.getUserId().equals(currUserID)){
             holder.follow.setVisibility(View.GONE);
@@ -85,12 +89,16 @@ public class FollowUsersAdapter extends RecyclerView.Adapter<FollowUsersAdapter.
                     da.unfollowSomeone(""+holder.id);
                     Intent intentCurrent = ((Activity) mContext).getIntent();
                     Intent intent= new Intent(mContext, FollowActivity.class);
+                    Log.d("DD","DDD");
+                    intent.putExtra("ID",intentCurrent.getStringExtra("ID"));
                     intent.putExtra("KEY",intentCurrent.getStringExtra("KEY"));
                     mContext.startActivity(intent);
                 } else {
                     da.followSomeone(""+holder.id);
+                    Log.d("DD","DDD");
                     Intent intentCurrent = ((Activity) mContext).getIntent();
                     Intent intent= new Intent(mContext, FollowActivity.class);
+                    intent.putExtra("ID",intentCurrent.getStringExtra("ID"));
                     intent.putExtra("KEY",intentCurrent.getStringExtra("KEY"));
                     mContext.startActivity(intent);
                 }

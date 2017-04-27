@@ -119,6 +119,11 @@ public class ItemActivity extends AppCompatActivity {
     }
 
     public void openPost(View view) {
+        Log.d(LOG_TAG, "Launching Post Activity...");
+        startActivity(new Intent(ItemActivity.this, PostActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        // finish should always be called on the main thread.
+        finish();
     }
 
     public void openBrowse(View view) {

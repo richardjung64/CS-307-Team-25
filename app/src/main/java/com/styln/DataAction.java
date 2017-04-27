@@ -8,7 +8,11 @@ import com.amazonaws.models.nosql.ClothingDO;
 import com.amazonaws.models.nosql.PostTableDO;
 import com.amazonaws.models.nosql.UsersDO;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 /**
  * Created by shalingyi on 4/7/17.
@@ -213,7 +217,7 @@ public class DataAction {
                     curr.getUserWardrobe().add(sth.getUserId());
 
                 }
-               mapper.save(curr);
+                mapper.save(curr);
                 mapper.save(sth);
             }
         };
@@ -280,6 +284,41 @@ public class DataAction {
         Thread thr = new Thread(runnable);
         thr.start();
         postID = somePost;
+    }
+
+    public void post(final String description, final List<String> list){
+        final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+        Runnable runnable = new Runnable() {
+            public void run() {
+                //DynamoDB calls go here
+                DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+                DateFormat df = new SimpleDateFormat("yy/MM/dd HH:mm:ss");
+                Date dateobj = new Date();
+                String postTime = df.format(dateobj);
+
+                PostTableDO post = mapper.load(PostTableDO.class,postTime);
+                UsersDO curr = mapper.load(UsersDO.class, currUserID);
+                if(post == null) {
+                    Log.d("", "POST");
+                    post = new PostTableDO();
+                    post.setUserId(df.format(dateobj));
+                    post.setPostPoster(curr.getUserId());
+                    post.setPostDate(df.format(dateobj));
+                    post.setPostDescription(description);
+                    list.toString();
+                    post.setPostClothing(list);
+                    post.setPostLikes(0.0);
+                    post.setLikedUser(new ArrayList<String>());
+                    mapper.save(post);
+
+                    curr.getUserPosts().add(post.getUserId());
+                    mapper.save(curr);
+                }
+
+            }
+        };
+        Thread thr = new Thread(runnable);
+        thr.start();
     }
 
 }

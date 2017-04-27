@@ -41,7 +41,7 @@ public class HomePostsAdapter extends RecyclerView.Adapter<HomePostsAdapter.MyVi
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView name,numLikes,description,date;
         public boolean liked;
-        public ImageView userPic,like,action;
+        public ImageView userPic,like;
         public String Uid,Pid;
         public int numLikesINT;
         public ImageView userSpace;
@@ -52,7 +52,6 @@ public class HomePostsAdapter extends RecyclerView.Adapter<HomePostsAdapter.MyVi
             description = (TextView)view.findViewById(R.id.postDescription);
             numLikes = (TextView)view.findViewById(R.id.numLikes);
             like = (ImageView) view.findViewById(R.id.post_like);
-            action = (ImageView) view.findViewById(R.id.post_action);
             date = (TextView)view.findViewById(R.id.postDate);
             Uid = "";
             Pid = "";

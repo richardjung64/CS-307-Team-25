@@ -205,13 +205,13 @@ public class InformationActivity extends AppCompatActivity {
                 }
             });
             if(currentUser.getUserGender().equals("male")){
-            radioSexButton = (RadioButton) findViewById(R.id.radio_male);
+                radioSexButton = (RadioButton) findViewById(R.id.radio_male);
                 genderIdentity = "male";
             } else if (currentUser.getUserGender().equals("female")){
-            radioSexButton = (RadioButton) findViewById(R.id.radio_female);
+                radioSexButton = (RadioButton) findViewById(R.id.radio_female);
                 genderIdentity = "female";
             } else {
-            radioSexButton = (RadioButton) findViewById(R.id.radio_other);
+                radioSexButton = (RadioButton) findViewById(R.id.radio_other);
                 genderIdentity = "other";
             }
 
@@ -362,7 +362,7 @@ public class InformationActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         //Detects request codes
         if (requestCode == GET_FROM_GALLERY && resultCode == Activity.RESULT_OK) {
-             selectedImage = data.getData();
+            selectedImage = data.getData();
             try {
                 filePath = getPath(selectedImage);
                 Glide.with(this).load(selectedImage).bitmapTransform(new CropSquareTransformation(getBaseContext())).

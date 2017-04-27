@@ -90,6 +90,7 @@ public class CollectionItemsAdapter extends RecyclerView.Adapter<CollectionItems
                 Toast.makeText(mContext, "Removed", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(mContext, CollectionActivity.class);
+                intent.putExtra("ID",intentCurrent.getStringExtra("ID"));
                 intent.putExtra("KEY",intentCurrent.getStringExtra("KEY"));
                 mContext.startActivity(intent);
             }

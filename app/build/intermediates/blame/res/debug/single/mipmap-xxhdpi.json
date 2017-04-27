@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\splash_icon.png",
+        "source": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\D:\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-xxhdpi\\splash_icon.png"
+    },
+    {
         "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\splash_icon.png",
         "source": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-xxhdpi\\splash_icon.png"
     },
@@ -8,19 +12,15 @@
         "source": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
-        "source": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\D:\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\splash_icon.png",
-        "source": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\D:\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-xxhdpi\\splash_icon.png"
-    },
-    {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\splash_icon.png",
         "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-xxhdpi\\splash_icon.png"
     },
     {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
         "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\D:\\CS-307-Team-25\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     }
 ]

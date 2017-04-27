@@ -146,6 +146,7 @@
         app:srcCompat="@drawable/main_post"
         android:id="@+id/post"
         android:clickable="true"
+        android:onClick="openPost"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_alignStart="@+id/postBox"

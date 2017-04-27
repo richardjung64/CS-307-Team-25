@@ -88,8 +88,8 @@
         <activity android:name=".SuggestActivity" />
         <activity android:name=".OthersActivity" />
         <activity android:name=".PostActivity" />
-        <activity android:name=".PostPageActivity"></activity>
-        <activity android:name=".NotificationListActivity"></activity>
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".PostPageActivity" />
     </application>
 
 </manifest>

@@ -61,7 +61,7 @@ public class CollectionItemsAdapter extends RecyclerView.Adapter<CollectionItems
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
-        ClothingDO item  = itemList.get(position);
+        ClothingDO item  = itemList.get( position);
         holder.name.setText(item.getUserId());
         holder.brand.setText(item.getClothingBrand());
         Glide.with(mContext).load(item.getClothingPhotoLink()).into(holder.image);

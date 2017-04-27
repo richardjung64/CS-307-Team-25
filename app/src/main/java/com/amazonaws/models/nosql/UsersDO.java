@@ -86,6 +86,7 @@ public class UsersDO {
     public void setUserGender(final String _userGender) {
         this._userGender = _userGender;
     }
+
     @DynamoDBAttribute(attributeName = "User_Name")
     public String getUserName() {
         return _userName;

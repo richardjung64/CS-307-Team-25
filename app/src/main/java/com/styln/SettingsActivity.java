@@ -1,5 +1,6 @@
 package com.styln;
 
+import android.app.Notification;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -87,6 +88,6 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     public void notification_open(View view) {
-        startActivity(new Intent(getBaseContext(), NotificationListActivity.class));
+        startActivity(new Intent(getBaseContext(), NotificationActivity.class));
     }
 }

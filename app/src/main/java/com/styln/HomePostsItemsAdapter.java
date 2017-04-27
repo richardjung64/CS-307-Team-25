@@ -51,6 +51,7 @@ public class HomePostsItemsAdapter extends RecyclerView.Adapter<HomePostsItemsAd
     @Override
     public void onBindViewHolder(final HomePostsItemsAdapter.MyViewHolder holder, int position) {
         ClothingDO item  = itemList.get(position);
+        holder.name.setText(item.getUserId());
         holder.sku = item.getUserId();
         Glide.with(mContext).load(item.getClothingPhotoLink()).into(holder.image);
         holder.image.setOnClickListener(new View.OnClickListener() {

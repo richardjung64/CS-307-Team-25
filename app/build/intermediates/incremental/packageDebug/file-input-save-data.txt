@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Apr 26 19:47:03 EDT 2017
+#Wed Apr 26 21:02:55 EDT 2017
 210.set=DEX
 282.file=D\:\\CS-307-Team-25\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\mipmap-xxhdpi-v4\\splash_icon.png
 14.set=ANDROID_RESOURCE

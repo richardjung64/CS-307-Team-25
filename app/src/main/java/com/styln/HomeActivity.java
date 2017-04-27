@@ -359,7 +359,7 @@ public class HomeActivity extends AppCompatActivity {
     public void openTrend(View view) {
         Log.d(LOG_TAG, "Launching Trend Activity...");
         startActivity(new Intent(HomeActivity.this, TrendActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","ITEM"));
         // finish should always be called on the main thread.
         finish();
     }

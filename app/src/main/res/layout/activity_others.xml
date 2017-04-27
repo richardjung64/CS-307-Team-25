@@ -275,8 +275,7 @@
         android:text="Wardrobe"
         android:textColor="@android:color/black"
         android:textSize="20sp"
-        android:clickable="true"
-        android:onClick="openWardrobe"/>
+       />
 
     <TextView
         android:id="@+id/textPosts"

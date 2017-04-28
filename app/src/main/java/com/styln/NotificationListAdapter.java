@@ -30,6 +30,9 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
     private List<String> users_who_liked;
     private List<UsersDO> users_list;
     private String curr_userId;
+    private UsersDO curr_user;
+    private double new_followers_count;
+    private List<String> followers;
     private static final String LOG_TAG = NotificationListAdapter.class.getSimpleName();
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
@@ -42,11 +45,21 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
     }
 
 
-    public NotificationListAdapter(Context mContext, PostTableDO post) {
+    public NotificationListAdapter(Context mContext, PostTableDO post, UsersDO user) {
         this.mContext = mContext;
-        this.post = post;
-        users_who_liked = post.getLikedUser();
+        users_who_liked = new ArrayList<>();
+        if (post != null) {
+            this.post = post;
+            users_who_liked = post.getLikedUser();
+        }
         users_list = new ArrayList<>();
+        if (user != null) {
+            this.curr_user = user;
+            Log.d(LOG_TAG, "MY USERNAME " + curr_user.getUserName());
+            this.new_followers_count = user.getNew_followers();
+            Log.d(LOG_TAG, "MY NEW FOLLOWERS " + new_followers_count);
+            followers = user.getUserFollower();
+        }
     }
 
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -59,6 +72,7 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
     @Override
     public void onBindViewHolder(final NotificationListAdapter.MyViewHolder holder, int position) {
 
+        Log.d(LOG_TAG, "List size: " + users_who_liked.size());
         for (int i = 0 ; i < users_who_liked.size(); i++) {
             curr_userId = users_who_liked.get(i);
             Log.d(LOG_TAG, "USER: " + curr_userId);
@@ -74,10 +88,38 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
             if (curr_user != null)
                 users_list.add(curr_user);
         }
-        UsersDO user = users_list.get(position);
-        String setText = user.getUserName() + " liked your post";
-        Log.d(LOG_TAG, "TO DISPLAY: " + setText);
-        holder.name.setText(setText);
+        if (users_list.size() > 0) {
+            UsersDO user = users_list.get(position);
+            String setText = user.getUserName() + " liked your post";
+            Log.d(LOG_TAG, "TO DISPLAY: " + setText);
+            holder.name.setText(setText);
+        }
+        Log.d(LOG_TAG, "new followers: " + new_followers_count);
+        if (new_followers_count > 0) {
+            users_list = new ArrayList<>();
+            List <String> new_followers = new ArrayList<>();
+            for (int i = 0 ; i < new_followers_count; i++)
+                new_followers.add(followers.get(followers.size() - i - 1));
+
+            for (int i = 0 ; i < new_followers.size(); i++) {
+                curr_userId = new_followers.get(i);
+                GetUsers users = new GetUsers();
+                UsersDO curr_user = null;
+                try {
+                    curr_user = users.execute().get();
+                    Log.d(LOG_TAG, "USER NAME FOLLOW: " + curr_user.getUserName());
+                }
+                catch (Exception e) {
+                    Log.e(LOG_TAG, "Failed to find user");
+                }
+                if (curr_user != null)
+                    users_list.add(curr_user);
+            }
+            UsersDO _user = users_list.get(position);
+            String _setText = _user.getUserName() + " is following you";
+            Log.d(LOG_TAG, "TO DISPLAY: " + _setText);
+            holder.name.setText(_setText);
+        }
         //holder.name.setText();
 //        holder.brand.setText(item.getClothingBrand());
 //        Glide.with(mContext).load(item.getClothingPhotoLink()).into(holder.image);
@@ -133,6 +175,8 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
     }
 
     public int getItemCount() {
-       return users_who_liked.size();
+        if (users_who_liked.size() > 0)
+            return users_who_liked.size();
+        return (int)(new_followers_count);
     }
 }

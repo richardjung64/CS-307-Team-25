@@ -43,6 +43,9 @@ public class DataAction {
                     sb.setUserFollower(new ArrayList<String>());
                 }
                 sb.getUserFollower().add(currUserID);
+                double new_followers = sb.getNew_followers();
+                new_followers++;
+                sb.setNew_followers(new_followers);
                 mapper.save(sb);
             }
         };

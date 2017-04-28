@@ -31,7 +31,7 @@ public class TrendActivity extends AppCompatActivity {
     private List<ClothingDO> itemRank = new ArrayList<>();
     private List<UsersDO> userRank = new ArrayList<>();
 
-    private SearchListItemsAdapter iAdapter;
+    private TrendItemsAdapter iAdapter;
     private TrendUsersAdapter uAdapter;
 
     private String pageKey;
@@ -77,14 +77,14 @@ public class TrendActivity extends AppCompatActivity {
             recyclerView.setAdapter(uAdapter);
         }
         else{
-            iAdapter = new SearchListItemsAdapter(this, itemRank);
+            iAdapter = new TrendItemsAdapter(this, itemRank);
 
-            recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-            RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
-            recyclerView.setLayoutManager(mLayoutManager);
-            recyclerView.setItemAnimator(new DefaultItemAnimator());
-            recyclerView.setAdapter(iAdapter);}
+        recyclerView.setLayoutManager(mLayoutManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setAdapter(iAdapter);}
 
     }
 
@@ -120,9 +120,9 @@ public class TrendActivity extends AppCompatActivity {
                 if(itemRank.isEmpty()){
                     Log.d(LOG_TAG, "userList is empty");
                 }
-                if(scanList.isEmpty()){
-                    Log.d(LOG_TAG, "scanList is empty");
-                }
+            if(scanList.isEmpty()){
+                Log.d(LOG_TAG, "scanList is empty");
+            }
                 /*for(ClothingDO c : rank) {
                     itemRank.add(c);
                 }*/
@@ -138,32 +138,32 @@ public class TrendActivity extends AppCompatActivity {
         protected Void doInBackground(Void...Params) {
             Log.d(LOG_TAG, "USERERADSF == null");
             //try{
-            DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
-            DynamoDBScanExpression scanR = new DynamoDBScanExpression();
-            List<UsersDO> scanList = mapper.scan(UsersDO.class, scanR);
-            if(scanList.isEmpty()) {
-                Log.d(LOG_TAG, "scanList == null");
-            }
-            scanList = new ArrayList<UsersDO>(scanList);
-            if(!scanList.isEmpty()) {
-                Log.d(LOG_TAG, "scanList =dfdsafdafdas= null");
-            }
-            Collections.sort(scanList, new FollowersComparator());
-            Collections.reverse(scanList);
-            //List<ClothingDO> rank = new ArrayList();
-            int count = 0;
-            for(UsersDO cloth : scanList){
-                count++;
-                if(count <= 5){
-                    userRank.add(cloth);
+                DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+                DynamoDBScanExpression scanR = new DynamoDBScanExpression();
+                List<UsersDO> scanList = mapper.scan(UsersDO.class, scanR);
+                if(scanList.isEmpty()) {
+                    Log.d(LOG_TAG, "scanList == null");
                 }
-            }
-            if(userRank.isEmpty()){
-                Log.d(LOG_TAG, "rankList is empty");
-            }
-            if(scanList.isEmpty()){
-                Log.d(LOG_TAG, "scanList is empty");
-            }
+                scanList = new ArrayList<UsersDO>(scanList);
+                if(!scanList.isEmpty()) {
+                    Log.d(LOG_TAG, "scanList =dfdsafdafdas= null");
+                }
+                Collections.sort(scanList, new FollowersComparator());
+                Collections.reverse(scanList);
+                //List<ClothingDO> rank = new ArrayList();
+                int count = 0;
+                for(UsersDO cloth : scanList){
+                    count++;
+                    if(count <= 5){
+                        userRank.add(cloth);
+                    }
+                }
+                if(userRank.isEmpty()){
+                    Log.d(LOG_TAG, "rankList is empty");
+                }
+                if(scanList.isEmpty()){
+                    Log.d(LOG_TAG, "scanList is empty");
+                }
                 /*for(ClothingDO c : rank) {
                     itemRank.add(c);
                 }*/

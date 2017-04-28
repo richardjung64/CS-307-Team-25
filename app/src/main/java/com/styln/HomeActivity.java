@@ -361,6 +361,7 @@ public class HomeActivity extends AppCompatActivity {
                 curr_user_id = users_following_list.get(i);
                 UsersDO thisUser;
                 thisUser = mapper.load(UsersDO.class, curr_user_id);
+                Log.d(LOG_TAG, "User name of following " + thisUser.getUserName());
                 List<String> tempSet;
 
                 if(thisUser.getUserPosts() == null){
@@ -369,12 +370,10 @@ public class HomeActivity extends AppCompatActivity {
                 }
                 tempSet = thisUser.getUserPosts();
                 result = new ArrayList<String>(tempSet);
-            }
-            if (result != null) {
-            for (String str : result) {
-                PostTableDO iterator = mapper.load(PostTableDO.class, str);
-                loadresult.add(iterator);
-            }
+                    for (String str : result) {
+                        PostTableDO iterator = mapper.load(PostTableDO.class, str);
+                        loadresult.add(iterator);
+                    }
             }
             return loadresult;
         }

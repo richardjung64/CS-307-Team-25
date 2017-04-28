@@ -105,26 +105,26 @@ public class NotificationActivity extends AppCompatActivity {
         }
     }
 
-    public void onResume() {
-        super.onResume();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    g_currUser.setNew_followers(0);
-                    g_mapper.save(g_currUser);
-                } catch (final AmazonClientException ex) {
-                    Log.e(LOG_TAG, "failed to add");
-                    return;
-                }
-                ThreadUtils.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                    }
-                });
-            }
-        }).start();
-    }
+//    public void onResume() {
+//        super.onResume();
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                try {
+//                    g_currUser.setNew_followers(0);
+//                    g_mapper.save(g_currUser);
+//                } catch (final AmazonClientException ex) {
+//                    Log.e(LOG_TAG, "failed to add");
+//                    return;
+//                }
+//                ThreadUtils.runOnUiThread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                    }
+//                });
+//            }
+//        }).start();
+//    }
 
     public void back(View view) {
         Log.d(LOG_TAG, "Launching Settings Activity...");

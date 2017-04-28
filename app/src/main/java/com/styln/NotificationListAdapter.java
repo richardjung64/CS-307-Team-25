@@ -231,12 +231,15 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
     }
 
     public int getItemCount() {
+        int sum = 0;
         if (users_who_liked.size() > 0)
-            return users_who_liked.size();
+            sum += users_who_liked.size();
         if (new_followers_count > 0)
-            return (int) (new_followers_count);
+            sum += (int) (new_followers_count);
         if (wishList_clothes.size() > 0)
-            return wishList_clothes.size();
-        return 1;
+            sum += wishList_clothes.size();
+        if (sum == 0)
+            return 2;
+        return sum;
     }
 }

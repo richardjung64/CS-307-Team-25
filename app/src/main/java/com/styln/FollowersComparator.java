@@ -1,4 +1,3 @@
-
 package com.styln;
 
 import android.util.Log;
@@ -12,10 +11,10 @@ import java.util.Comparator;
  */
 
 public class FollowersComparator implements Comparator<UsersDO> {
-    @Override
-    public int compare(UsersDO c1, UsersDO c2){
-        //Log.d("ASD", Integer.toString(c1.getUserFollower().size()));
-        return (c1.getUserFollower().size() - c2.getUserFollower().size());
+        @Override
+        public int compare(UsersDO c1, UsersDO c2){
+            //Log.d("ASD", Integer.toString(c1.getUserFollower().size()));
+            return (c1.getUserFollower().size() - c2.getUserFollower().size());
 
+        }
     }
-}

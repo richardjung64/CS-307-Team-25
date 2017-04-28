@@ -144,14 +144,17 @@ public class OthersActivity extends AppCompatActivity {
             follow.setText("FOLLOW");
         }
 
+        Log.d(LOG_TAG, "USER PRIVACY: " + loadUser.getUserPrivacy());
+
         //DONT LOAD Posts and Wardrobe if private
-        if(loadUser.getUserPrivacy()){
+        if(loadUser.getUserPrivacy() && !following){
             isPrivate.setVisibility(View.VISIBLE);
             isPrivatePicture.setVisibility(View.VISIBLE);
             wardBG.setVisibility(View.GONE);
             textWard.setVisibility(View.GONE);
 
-        } else {
+        } else if (!loadUser.getUserPrivacy() || (loadUser.getUserPrivacy() && following)) {
+            isPrivate.setVisibility(View.INVISIBLE);
             getPostList task2 = new getPostList();
             task2.id = getIntent().getStringExtra("ID");
             try {

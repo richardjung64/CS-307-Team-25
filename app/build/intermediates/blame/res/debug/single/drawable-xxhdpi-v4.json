@@ -44,12 +44,12 @@
         "source": "/Users/shanu/.android/build-cache/4adfe91b751f6069a992c115541503356ef0d950/output/res/drawable-xxhdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png",
-        "source": "/Users/shanu/.android/build-cache/4adfe91b751f6069a992c115541503356ef0d950/output/res/drawable-xxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
         "source": "/Users/shanu/.android/build-cache/3370881ccc9f88cedd549db0be64c408481ac46f/output/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "/Users/shanu/.android/build-cache/4adfe91b751f6069a992c115541503356ef0d950/output/res/drawable-xxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png"
     },
     {
         "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",

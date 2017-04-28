@@ -1,15 +1,19 @@
 package com.styln;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.amazonaws.AmazonClientException;
 import com.amazonaws.mobile.AWSMobileClient;
+import com.amazonaws.mobile.util.ThreadUtils;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBScanExpression;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.PaginatedScanList;
@@ -39,13 +43,16 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
     private List<String> wishList_clothes;
     private List<String> postsLiked;
     private static final String LOG_TAG = NotificationListAdapter.class.getSimpleName();
+    private DynamoDBMapper g_mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView name;
+        public ImageView space;
 
         public MyViewHolder(View view) {
             super(view);
             name = (TextView) view.findViewById(R.id.notify_list);
+            space = (ImageView) view.findViewById(R.id.notif_bg);
         }
     }
 
@@ -78,7 +85,6 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
 
     @Override
     public void onBindViewHolder(final NotificationListAdapter.MyViewHolder holder, int position) {
-
         Log.d(LOG_TAG, "List size: " + users_who_liked.size());
         if (postsLiked != null) {
             for (int j = 0; j < postsLiked.size(); j++) {
@@ -91,7 +97,13 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
                 } catch (Exception e) {
                     //Log.e(LOG_TAG, "Failed to find user");
                 }
-                users_who_liked = curr_post.getLikedUser();
+                try {
+                    users_who_liked = curr_post.getLikedUser();
+                    Log.d(LOG_TAG, "LIKED BY: " + users_who_liked.get(0));
+                }
+                catch (Exception e) {
+                    users_who_liked = new ArrayList<>();
+                }
                 for (int i = 0; i < users_who_liked.size(); i++) {
                     curr_userId = users_who_liked.get(i);
                     //Log.d(LOG_TAG, "USER: " + curr_userId);
@@ -109,10 +121,17 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
             }
         }
         if (users_list.size() > 0) {
-            UsersDO user = users_list.get(position);
+            List<UsersDO> temp = new ArrayList<>(users_list);
+            UsersDO user = temp.get(position);
             String setText = user.getUserName() + " liked your post";
             Log.d(LOG_TAG, "TO DISPLAY: " + setText);
             holder.name.setText(setText);
+            holder.space.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                }
+            });
         }
         Log.d(LOG_TAG, "new followers: " + new_followers_count);
         if (new_followers_count > 0) {
@@ -136,10 +155,35 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
             }
             if (users_list.size() > 0) {
                 try {
-                    UsersDO _user = users_list.get(position);
+                    final UsersDO _user = users_list.get(position);
                     String _setText = _user.getUserName() + " is following you";
                     Log.d(LOG_TAG, "TO DISPLAY: " + _setText);
                     holder.name.setText(_setText);
+                    holder.space.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    try {
+                                        curr_user.setNew_followers((double) (new_followers_count--));
+                                        g_mapper.save(curr_user);
+                                        UsersDO temp = g_mapper.load(UsersDO.class, curr_user.getUserId());
+                                        Log.d(LOG_TAG, temp.getNew_followers() + " was saved");
+
+                                    } catch (final AmazonClientException ex) {
+                                        Log.e(LOG_TAG, "failed to launch");
+                                        return;
+                                    }
+                                    ThreadUtils.runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                        }
+                                    });
+                                }
+                            }).start();
+                        }
+                    });
                 }
                 catch (Exception e) {
                     Log.e(LOG_TAG, "Damn son");
@@ -239,7 +283,8 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
         if (wishList_clothes.size() > 0)
             sum += wishList_clothes.size();
         if (sum == 0)
-            return 2;
+            return 1;
+        Log.d(LOG_TAG, "COUNT: " + sum);
         return sum;
     }
 }

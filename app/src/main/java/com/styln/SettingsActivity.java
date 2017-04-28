@@ -10,8 +10,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.amazonaws.AmazonClientException;
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.IdentityManager;
+import com.amazonaws.mobile.util.ThreadUtils;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.UsersDO;
 
@@ -88,6 +90,21 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     public void notification_open(View view) {
-        startActivity(new Intent(getBaseContext(), NotificationActivity.class));
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    startActivity(new Intent(getBaseContext(), NotificationActivity.class));
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to launch");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                    }
+                });
+            }
+        }).start();
     }
 }

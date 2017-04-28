@@ -31,6 +31,7 @@ import com.styln.demo.nosql.DemoNoSQLOperationListItem;
 import com.styln.demo.nosql.DemoNoSQLTableBase;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
@@ -234,6 +235,7 @@ public class HomeActivity extends AppCompatActivity {
             addClothesTable = new AddClothesTable();
             addClothesTable();
         }
+
         getPostList task2 = new getPostList();
         try {
             postList = task2.execute("").get();
@@ -243,19 +245,9 @@ public class HomeActivity extends AppCompatActivity {
             e.printStackTrace();
         };
 
-        getPostsF _task2 = new getPostsF();
-        try {
-            postListF = _task2.execute("").get();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        };
-        List<PostTableDO> final_post_list = new ArrayList<>(postListF);
-        final_post_list.addAll(postList);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
-        pAdapter = new HomePostsAdapter(this,final_post_list);
+        pAdapter = new HomePostsAdapter(this,postList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
         recyclerView.setLayoutManager(mLayoutManager);
@@ -281,16 +273,6 @@ public class HomeActivity extends AppCompatActivity {
         // finish should always be called on the main thread.
         finish();
     }
-
-
-//    public void onRestoreInstanceState(Bundle savedInstanceState) {
-//        super.onRestoreInstanceState(savedInstanceState);
-//        usr_name = savedInstanceState.getString(InformationActivity.USER_NAME);
-//        str_age = savedInstanceState.getString(InformationActivity.USER_AGE);
-//        isPrivate = savedInstanceState.getBoolean(InformationActivity.USER_PRIVACY);
-//        userDescr = savedInstanceState.getString(InformationActivity.USER_DESCRIPTION);
-//        gender = savedInstanceState.getString(InformationActivity.USER_GENDER);
-//    }
 
     private class grabUser extends AsyncTask<String, Void, UsersDO> {
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
@@ -344,6 +326,8 @@ public class HomeActivity extends AppCompatActivity {
                 loadresult.add(iterator);
 
             }
+            Collections.sort(loadresult, new ListComparer());
+            Collections.reverse(loadresult);
             return loadresult;
         }
     }
@@ -382,6 +366,8 @@ public class HomeActivity extends AppCompatActivity {
                         loadresult.add(iterator);
                     }
             }
+            Collections.sort(loadresult, new ListComparer());
+            Collections.reverse(loadresult);
             return loadresult;
         }
     }

@@ -31,6 +31,7 @@ import com.styln.demo.nosql.DemoNoSQLOperationListItem;
 import com.styln.demo.nosql.DemoNoSQLTableBase;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
@@ -337,6 +338,8 @@ public class HomeActivity extends AppCompatActivity {
                 loadresult.add(iterator);
 
             }
+            Collections.sort(loadresult, new ListComparer());
+            Collections.reverse(loadresult);
             return loadresult;
         }
     }

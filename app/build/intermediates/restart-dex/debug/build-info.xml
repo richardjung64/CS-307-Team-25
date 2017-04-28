@@ -6,22 +6,22 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.1"
-    timestamp="1493363009588"
+    timestamp="1493364290689"
     token="472064144958572092"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="4805" />
+        duration="4042" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="35" />
+        duration="142" />
     <task
         name="verifier"
-        duration="3" />
+        duration="32" />
 
     <artifact
         location="D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
@@ -70,7 +70,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1493363009588"
+        timestamp="1493364290689"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\KevinJiangCS\PurdueCS\cs307\CS-307-Team-25\app\build\intermediates\split-apk\debug\slices\slice_7.apk"

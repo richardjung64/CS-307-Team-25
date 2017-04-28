@@ -3,11 +3,13 @@ package com.styln;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,10 +33,14 @@ public class SearchListAdapter extends RecyclerView.Adapter<SearchListAdapter.My
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView name;
+        public ImageView space;
+        public String id;
 
         public MyViewHolder(View view) {
             super(view);
             name = (TextView) view.findViewById(R.id.search_result);
+            space = (ImageView) view.findViewById(R.id._itemSpace);
+            id = "";
         }
     }
 
@@ -63,10 +69,29 @@ public class SearchListAdapter extends RecyclerView.Adapter<SearchListAdapter.My
         if (isUser) {
             UsersDO user = users.get(position);
             holder.name.setText(user.getUserName());
+            holder.id = user.getUserId();
+            holder.space.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Log.d("HHAHA","HAHHA opening");
+                    Intent intent= new Intent(mContext, OthersActivity.class);
+                    intent.putExtra("ID",""+holder.id);
+                    mContext.startActivity(intent);
+                }
+            });
         }
         else {
             ClothingDO item = clothes.get(position);
             holder.name.setText(item.getUserId());
+            holder.space.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Log.d("HHAHA","HAHHA opening");
+                    Intent intent= new Intent(mContext, ItemActivity.class);
+                    intent.putExtra("SKU",""+holder.name.getText());
+                    mContext.startActivity(intent);
+                }
+            });
         }
 //        holder.brand.setText(item.getClothingBrand());
 //        Glide.with(mContext).load(item.getClothingPhotoLink()).into(holder.image);

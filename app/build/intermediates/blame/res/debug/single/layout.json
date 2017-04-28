@@ -148,12 +148,12 @@
         "source": "/Users/shanu/.android/build-cache/91b06de762a96370b82e2d3f06584031c7cb7094/output/res/layout/design_layout_snackbar.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/user_list_row.xml",
-        "source": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/res/layout/user_list_row.xml"
-    },
-    {
         "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_small.xml",
         "source": "/Users/shanu/.android/build-cache/1bac149ffbc4d094bb5d34468e3dc7eb22eb7e22/output/res/layout/messenger_button_send_blue_small.xml"
+    },
+    {
+        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/user_list_row.xml",
+        "source": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/src/main/res/layout/user_list_row.xml"
     },
     {
         "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/demo_nosql_select_operation_list_item.xml",
@@ -164,12 +164,12 @@
         "source": "/Users/shanu/.android/build-cache/4adfe91b751f6069a992c115541503356ef0d950/output/res/layout/abc_screen_simple.xml"
     },
     {
-        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
-        "source": "/Users/shanu/.android/build-cache/91b06de762a96370b82e2d3f06584031c7cb7094/output/res/layout/design_layout_tab_text.xml"
-    },
-    {
         "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
         "source": "/Users/shanu/.android/build-cache/4adfe91b751f6069a992c115541503356ef0d950/output/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/Users/shanu/.android/build-cache/91b06de762a96370b82e2d3f06584031c7cb7094/output/res/layout/design_layout_tab_text.xml"
     },
     {
         "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",

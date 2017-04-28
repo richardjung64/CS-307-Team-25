@@ -24,6 +24,16 @@ public class UsersDO {
     private boolean isFirstTime;
     private boolean hasCustomDp;
     private boolean login_opt;
+    private double new_followers;
+
+    @DynamoDBAttribute(attributeName = "new_followers")
+    public double getNew_followers() {
+        return new_followers;
+    }
+
+    public void setNew_followers(double new_followers) {
+        this.new_followers = new_followers;
+    }
 
     @DynamoDBAttribute(attributeName = "login_opt")
     public boolean isLogin_opt() {

@@ -20,13 +20,12 @@
         />
 
     <ImageView
-        android:layout_width="500dp"
+        android:layout_width="match_parent"
         android:layout_height="70dp"
         android:src="@drawable/main_box_lower"
         android:id="@+id/lowerBox"
         android:scaleType="fitXY"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Space
@@ -141,85 +140,92 @@
         android:scaleType="fitCenter"/>
 
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignStart="@+id/textBackground"
+        android:layout_alignEnd="@+id/textBackground"
         android:layout_alignTop="@+id/textBackground"
-        android:layout_alignStart="@+id/textBackground"> -->
+        android:weightSum="1"
+        android:layout_above="@+id/lowerBox">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="Browse"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:srcCompat="@android:color/black" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-smallcaps"
-                android:gravity="center"
-                android:text="Browse"
-                android:textAllCaps="true"
-                android:textColor="@android:color/black"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/Divider"
-                android:layout_width="match_parent"
-                android:layout_height="5dp"
-                app:srcCompat="@android:color/black" />
+            android:orientation="horizontal">
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/search_textbox"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:maxLines="1"
-                android:hint="Search here"/>
+                android:hint="Search here"
+                android:windowSoftInputMode="adjustNothing"
+                android:maxLines="1" />
 
-            <RadioGroup
+            <Button
+                android:id="@+id/_search_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/searchGroup"
-                android:orientation="horizontal"
-                android:layout_marginLeft="15dp">
+                android:layout_alignEnd="@+id/textBackground"
+                android:layout_alignTop="@id/search_textbox"
+                android:layout_weight="1"
+                android:onClick="search_item"
+                android:text="Search" />
 
-                <RadioButton android:id="@+id/radio_clothes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Clothing"
-                    android:checked="true"
-
-                    />
-
-                <RadioButton android:id="@+id/radio_user"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="User"
-                    />
-
-            </RadioGroup>
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/_recycler_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/searchGroup" />
         </LinearLayout>
-    </ScrollView>
 
-    <Button
-        android:id="@+id/_search_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textBackground"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignTop="@+id/textBackground"
-        android:layout_marginTop="66dp"
-        android:onClick="search_item"
-        android:text="Search" />
+        <RadioGroup
+            android:id="@+id/searchGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/radio_clothes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Clothing"
+
+                />
+
+            <RadioButton
+                android:id="@+id/radio_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User" />
+
+        </RadioGroup>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/searchGroup" />
+    </LinearLayout>
 
 
 </RelativeLayout>

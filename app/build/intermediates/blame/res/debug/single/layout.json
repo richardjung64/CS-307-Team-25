@@ -164,10 +164,6 @@
         "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_others.xml"
     },
     {
-        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_browse_bk.xml",
-        "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_browse_bk.xml"
-    },
-    {
         "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
         "source": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_home.xml"
     },
@@ -250,6 +246,10 @@
     {
         "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
         "source": "D:\\Users\\shanu\\.android\\build-cache\\4adfe91b751f6069a992c115541503356ef0d950\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_list_search_row.xml",
+        "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\item_list_search_row.xml"
     },
     {
         "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
@@ -538,6 +538,10 @@
     {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notify_activity_list.xml",
         "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\notify_activity_list.xml"
+    },
+    {
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_list_search_row.xml",
+        "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\user_list_search_row.xml"
     },
     {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",

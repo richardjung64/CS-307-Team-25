@@ -9,6 +9,8 @@ import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.UsersDO;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 
+import java.util.ArrayList;
+
 
 public class AddToUsersTable {
     //private CognitoCachingCredentialsProvider credentialsProvider;
@@ -53,6 +55,13 @@ public class AddToUsersTable {
         users_table.setUserDescription(userDescr);
         users_table.setUserGender(gender);
         users_table.setFirstTime(false);
+
+        users_table.setUserFollower(new ArrayList<String>());
+        users_table.setUserFollowing(new ArrayList<String>());
+        users_table.setUserPosts(new ArrayList<String>());
+        users_table.setUserWardrobe(new ArrayList<String>());
+        users_table.setUserWishList(new ArrayList<String>());
+
 //        if (Application.getSign_opt() == 'g')
 //            users_table.setLogin_opt(true); // True is google
 //        else

@@ -14,19 +14,12 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import com.amazonaws.AmazonClientException;
-import com.amazonaws.auth.policy.Condition;
 import com.amazonaws.mobile.AWSMobileClient;
-import com.amazonaws.mobile.util.ThreadUtils;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
-import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBQueryExpression;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBScanExpression;
-import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.PaginatedQueryList;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.PaginatedScanList;
 import com.amazonaws.models.nosql.ClothingDO;
 import com.amazonaws.models.nosql.UsersDO;
-import com.amazonaws.services.dynamodbv2.model.AttributeValue;
-import com.amazonaws.services.dynamodbv2.model.ComparisonOperator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +36,9 @@ public class BrowseActivity extends AppCompatActivity {
     private String query_string;
     private String search_choice;
     private RecyclerView recyclerView;
-    private SearchListAdapter iAdapter;
+    private SearchListItemsAdapter iAdapter;
+    private SearchListUsersAdapter uAdapter;
+
     private final DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
 
     @Override
@@ -152,11 +147,9 @@ public class BrowseActivity extends AppCompatActivity {
                     if (user.getUserName().toLowerCase().contains(query_string))
                         selected_users.add(user);
                 }
-                iAdapter = new SearchListAdapter(this, null, selected_users);
+                uAdapter = new SearchListUsersAdapter(this, selected_users);
             }
-        }
-
-        else {
+        } else {
             GetClothes _task = new GetClothes();
             PaginatedScanList<ClothingDO> clothes_result = null;
             try {
@@ -181,7 +174,7 @@ public class BrowseActivity extends AppCompatActivity {
                         continue;
                     }
                 }
-                iAdapter = new SearchListAdapter(this, selected_clothes, null);
+                iAdapter = new SearchListItemsAdapter(this, selected_clothes);
             }
         }
 

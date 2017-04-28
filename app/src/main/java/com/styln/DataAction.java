@@ -24,22 +24,24 @@ public class DataAction {
  */
 
     public static String postID;
+
     public DataAction() {
     }
-    public void followSomeone(final String someone){
+
+    public void followSomeone(final String someone) {
         final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
         Runnable runnable = new Runnable() {
             public void run() {
                 //DynamoDB calls go here
                 DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
                 UsersDO curr = mapper.load(UsersDO.class, currUserID);
-                if(curr.getUserFollowing() == null){
+                if (curr.getUserFollowing() == null) {
                     curr.setUserFollowing(new ArrayList<String>());
                 }
                 curr.getUserFollowing().add(someone);
                 mapper.save(curr);
                 UsersDO sb = mapper.load(UsersDO.class, someone);
-                if(sb.getUserFollower() == null){
+                if (sb.getUserFollower() == null) {
                     sb.setUserFollower(new ArrayList<String>());
                 }
                 sb.getUserFollower().add(currUserID);
@@ -54,20 +56,20 @@ public class DataAction {
 
     }
 
-    public void unfollowSomeone(final String someone){
+    public void unfollowSomeone(final String someone) {
         final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
         Runnable runnable = new Runnable() {
             public void run() {
                 //DynamoDB calls go here
                 DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
                 UsersDO curr = mapper.load(UsersDO.class, currUserID);
-                if(curr.getUserFollowing() == null){
+                if (curr.getUserFollowing() == null) {
                     curr.setUserFollowing(new ArrayList<String>());
                 }
                 curr.getUserFollowing().remove(someone);
                 mapper.save(curr);
                 UsersDO sb = mapper.load(UsersDO.class, someone);
-                if(sb.getUserFollower() == null){
+                if (sb.getUserFollower() == null) {
                     sb.setUserFollower(new ArrayList<String>());
                 }
                 sb.getUserFollower().remove(currUserID);
@@ -78,7 +80,7 @@ public class DataAction {
         thr.start();
     }
 
-    public void user_dp (final String s3_link) {
+    public void user_dp(final String s3_link) {
         if (s3_link == null)
             Log.e(DataAction.class.getSimpleName(), "No link");
         Log.d(DataAction.class.getSimpleName(), "user dp method...");
@@ -124,7 +126,7 @@ public class DataAction {
         thr.start();
     }
 
-    public void UserChanges(final String username, final String age, final boolean isPrivate, final String description, final String gender){
+    public void UserChanges(final String username, final String age, final boolean isPrivate, final String description, final String gender) {
         Log.d(DataAction.class.getSimpleName(), "UserChanges method...");
         final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
         Runnable runnable = new Runnable() {
@@ -164,7 +166,7 @@ public class DataAction {
     }
 
 
-    public void likeClothing(final String someItem){
+    public void likeClothing(final String someItem) {
         final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
         Runnable runnable = new Runnable() {
             public void run() {
@@ -174,14 +176,14 @@ public class DataAction {
                 UsersDO curr = mapper.load(UsersDO.class, currUserID);
                 ClothingDO sth = mapper.load(ClothingDO.class, someItem);
 
-                if(sth.getLikedUser() == null){
+                if (sth.getLikedUser() == null) {
                     sth.setLikedUser(new ArrayList<String>());
                 }
-                if(sth.getLikedUser().contains(currUserID)){
-                    sth.setClothingLikes(sth.getClothingLikes()-1);
+                if (sth.getLikedUser().contains(currUserID)) {
+                    sth.setClothingLikes(sth.getClothingLikes() - 1);
                     sth.getLikedUser().remove(currUserID);
                 } else {
-                    sth.setClothingLikes(sth.getClothingLikes()+1);
+                    sth.setClothingLikes(sth.getClothingLikes() + 1);
                     sth.getLikedUser().add(currUserID);
                 }
                 mapper.save(sth);
@@ -192,7 +194,7 @@ public class DataAction {
 
     }
 
-    public void ownClothing(final String someItem){
+    public void ownClothing(final String someItem) {
         final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
         Runnable runnable = new Runnable() {
             public void run() {
@@ -202,15 +204,15 @@ public class DataAction {
                 UsersDO curr = mapper.load(UsersDO.class, currUserID);
                 ClothingDO sth = mapper.load(ClothingDO.class, someItem);
 
-                if(sth.getOwnedUser() == null){
+                if (sth.getOwnedUser() == null) {
                     sth.setOwnedUser(new ArrayList<String>());
                 }
 
-                if(curr.getUserWardrobe() == null){
+                if (curr.getUserWardrobe() == null) {
                     curr.setUserWardrobe(new ArrayList<String>());
                 }
 
-                if(sth.getOwnedUser().contains(currUserID)){
+                if (sth.getOwnedUser().contains(currUserID)) {
                     sth.setClothingOwned(sth.getClothingOwned() - 1);
                     sth.getOwnedUser().remove(currUserID);
                     curr.getUserWardrobe().remove(sth.getUserId());
@@ -229,7 +231,7 @@ public class DataAction {
 
     }
 
-    public void wishClothing(final String someItem){
+    public void wishClothing(final String someItem) {
         final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
         Runnable runnable = new Runnable() {
             public void run() {
@@ -240,11 +242,11 @@ public class DataAction {
                 ClothingDO sth = mapper.load(ClothingDO.class, someItem);
 
 
-                if(curr.getUserWishList() == null){
+                if (curr.getUserWishList() == null) {
                     curr.setUserWishList(new ArrayList<String>());
                 }
 
-                if(!curr.getUserWishList().contains(sth.getUserId())){
+                if (!curr.getUserWishList().contains(sth.getUserId())) {
                     curr.getUserWishList().add(sth.getUserId());
                 } else {
                     curr.getUserWishList().remove(sth.getUserId());
@@ -259,7 +261,7 @@ public class DataAction {
 
     }
 
-    public void likePost(final String somePost){
+    public void likePost(final String somePost) {
         final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
         Runnable runnable = new Runnable() {
             public void run() {
@@ -269,16 +271,16 @@ public class DataAction {
                 UsersDO curr = mapper.load(UsersDO.class, currUserID);
                 PostTableDO spost = mapper.load(PostTableDO.class, somePost);
 
-                if(spost.getLikedUser() == null){
+                if (spost.getLikedUser() == null) {
                     spost.setLikedUser(new ArrayList<String>());
                 }
-                if(spost.getLikedUser().contains(currUserID)){
+                if (spost.getLikedUser().contains(currUserID)) {
                     //Already liked, unlike
-                    spost.setPostLikes(spost.getPostLikes()-1);
+                    spost.setPostLikes(spost.getPostLikes() - 1);
                     spost.getLikedUser().remove(currUserID);
                 } else {
                     //Like
-                    spost.setPostLikes(spost.getPostLikes()+1);
+                    spost.setPostLikes(spost.getPostLikes() + 1);
                     spost.getLikedUser().add(currUserID);
                 }
                 mapper.save(spost);
@@ -289,7 +291,7 @@ public class DataAction {
         postID = somePost;
     }
 
-    public void post(final String description, final List<String> list){
+    public void post(final String description, final List<String> list) {
         final String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
         Runnable runnable = new Runnable() {
             public void run() {
@@ -299,9 +301,9 @@ public class DataAction {
                 Date dateobj = new Date();
                 String postTime = df.format(dateobj);
 
-                PostTableDO post = mapper.load(PostTableDO.class,postTime);
+                PostTableDO post = mapper.load(PostTableDO.class, postTime);
                 UsersDO curr = mapper.load(UsersDO.class, currUserID);
-                if(post == null) {
+                if (post == null) {
                     Log.d("", "POST");
                     post = new PostTableDO();
                     post.setUserId(df.format(dateobj));
@@ -314,7 +316,14 @@ public class DataAction {
                     post.setLikedUser(new ArrayList<String>());
                     mapper.save(post);
 
-                    curr.getUserPosts().add(post.getUserId());
+                    try {
+                        curr.getUserPosts().add(post.getUserId());
+                    } catch (Exception e) {
+                        List<String> posts = new ArrayList<>();
+                        posts.add(post.getUserId());
+                        curr.setUserPosts(posts);
+                    }
+
                     mapper.save(curr);
                 }
 

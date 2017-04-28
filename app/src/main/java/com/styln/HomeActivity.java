@@ -54,18 +54,15 @@ public class HomeActivity extends AppCompatActivity {
     private boolean a = false;
 
     private List<PostTableDO> postList = new ArrayList<>();
+    private List<PostTableDO> postListF = new ArrayList<>();
     private RecyclerView recyclerView;
     private HomePostsAdapter pAdapter;
 
-    static boolean liked = false;
-    static int numLikes = 0;
-    static boolean followed = false;
-    static boolean followedMe = false;
+    private String curr_user_id;
 
     String usr_name;
     String str_age;
     String userDescr;
-    String str_privacy;
     String gender;
     boolean isPrivate;
     String filePath;
@@ -239,18 +236,19 @@ public class HomeActivity extends AppCompatActivity {
         }
 
 
-        getPostList task2 = new getPostList();
+        getPostsF _task2 = new getPostsF();
         try {
-            postList = task2.execute("").get();
+            postListF = _task2.execute("").get();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
         };
-
+        List<PostTableDO> final_post_list = new ArrayList<>(postList);
+        final_post_list.addAll(postListF);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
-        pAdapter = new HomePostsAdapter(this,postList);
+        pAdapter = new HomePostsAdapter(this,final_post_list);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
         recyclerView.setLayoutManager(mLayoutManager);
@@ -320,7 +318,52 @@ public class HomeActivity extends AppCompatActivity {
                 tempSet = currentUser.getUserPosts();
             }
             List<String> result = new ArrayList<String>(tempSet);
+            List<String> users = new ArrayList<String>(currentUser.getUserFollowing());
 
+            List<String> aaa;
+            for (String str : users) {
+                UsersDO iterator = mapper.load(UsersDO.class, str);
+                aaa = iterator.getUserPosts();
+                List<String> zzz = new ArrayList<String>(aaa);
+                for (String abc : zzz) {
+                    PostTableDO xyz = mapper.load(PostTableDO.class, abc);
+                    loadresult.add(xyz);
+                }
+
+            }
+
+            for (String str : result) {
+                PostTableDO iterator = mapper.load(PostTableDO.class, str);
+                loadresult.add(iterator);
+
+            }
+            return loadresult;
+        }
+    }
+
+    private class getPostsF extends AsyncTask<String, Void, List<PostTableDO>> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        List<PostTableDO> loadresult = new ArrayList<PostTableDO>();
+        List<String> result;
+        @Override
+        protected List<PostTableDO> doInBackground(String... strings) {
+            UsersDO currentUser;
+            String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
+            currentUser = mapper.load(UsersDO.class, userID);
+            List<String> users_following_list = currentUser.getUserFollowing();
+            for (int i = 0 ; i < users_following_list.size(); i++) {
+                curr_user_id = users_following_list.get(i);
+                UsersDO thisUser;
+                thisUser = mapper.load(UsersDO.class, curr_user_id);
+                List<String> tempSet;
+
+                if(thisUser.getUserPosts() == null){
+                    Log.d(LOG_TAG,"NULLLLL");
+                    currentUser.setUserPosts(new ArrayList<String>());
+                }
+                tempSet = thisUser.getUserPosts();
+                result = new ArrayList<String>(tempSet);
+            }
             for (String str : result) {
                 PostTableDO iterator = mapper.load(PostTableDO.class, str);
                 loadresult.add(iterator);

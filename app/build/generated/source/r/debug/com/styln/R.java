@@ -3513,6 +3513,7 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f040062;
         public static final int user_list_row=0x7f040063;
         public static final int user_list_search_row=0x7f040064;
+        public static final int user_list_trend_row=0x7f040065;
     }
     public static final class menu {
         public static final int item_action_menu=0x7f0d0000;

@@ -123,7 +123,7 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
             holder.name.setText(_setText);
         }
         List<ClothingDO> sale_items = new ArrayList<>();
-        for (int i = 0 ; i < wishList_clothes.size(); i++) {
+        for (int i = 0; i < wishList_clothes.size(); i++) {
             curr_clothId = wishList_clothes.get(i);
             GetClothes clothes = new GetClothes();
             ClothingDO curr_cloth = null;
@@ -148,10 +148,11 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
         String id;
 
-        public String getId () {
+        public String getId() {
             id = curr_userId;
             return id;
         }
+
         @Override
         protected UsersDO doInBackground(String... strings) {
             UsersDO loadUser = mapper.load(UsersDO.class, getId());
@@ -167,10 +168,11 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
         DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
         String id;
 
-        public String getId () {
+        public String getId() {
             id = curr_clothId;
             return id;
         }
+
         @Override
         protected ClothingDO doInBackground(String... strings) {
             ClothingDO loadClothes = mapper.load(ClothingDO.class, getId());
@@ -186,7 +188,9 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
         if (users_who_liked.size() > 0)
             return users_who_liked.size();
         if (new_followers_count > 0)
-            return (int)(new_followers_count);
-        return wishList_clothes.size();
+            return (int) (new_followers_count);
+        if (wishList_clothes.size() > 0)
+            return wishList_clothes.size();
+        return 1;
     }
 }

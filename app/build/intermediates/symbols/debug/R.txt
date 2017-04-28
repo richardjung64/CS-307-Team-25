@@ -1237,6 +1237,7 @@ int layout select_dialog_singlechoice_material 0x7f040061
 int layout support_simple_spinner_dropdown_item 0x7f040062
 int layout user_list_row 0x7f040063
 int layout user_list_search_row 0x7f040064
+int layout user_list_trend_row 0x7f040065
 int menu item_action_menu 0x7f0d0000
 int menu item_list_action_menu 0x7f0d0001
 int mipmap button_facebook 0x7f030000

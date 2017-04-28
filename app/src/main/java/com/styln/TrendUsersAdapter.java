@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.amazonaws.mobile.AWSMobileClient;
+import com.amazonaws.models.nosql.ClothingDO;
 import com.amazonaws.models.nosql.UsersDO;
 import com.bumptech.glide.Glide;
 
@@ -21,10 +22,13 @@ import java.util.List;
 
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
 
-public class TrendUsersAdapter extends RecyclerView.Adapter<TrendUsersAdapter.MyViewHolder> {
+/**
+ * Created by shanu on 4/27/17.
+ */
 
+public class TrendUsersAdapter extends RecyclerView.Adapter<TrendUsersAdapter.MyViewHolder> {
     private Context mContext;
-    private List<UsersDO> userList;
+    private List<UsersDO> users;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView name;
@@ -33,11 +37,10 @@ public class TrendUsersAdapter extends RecyclerView.Adapter<TrendUsersAdapter.My
         public ImageView picture,space;
         private String id;
 
+
         public MyViewHolder(View view) {
             super(view);
             name = (TextView) view.findViewById(R.id.name);
-            follow = (Button) view.findViewById(R.id.list_follow);
-            following = false;
             picture = (ImageView)view.findViewById(R.id.list_picture);
             space = (ImageView)view.findViewById(R.id.userSpace);
             id = "";
@@ -47,19 +50,19 @@ public class TrendUsersAdapter extends RecyclerView.Adapter<TrendUsersAdapter.My
 
     public TrendUsersAdapter(Context context, List<UsersDO> userList) {
         mContext = context;
-        this.userList = userList;
+        this.users = userList;
     }
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.user_list_row, parent, false);
+                .inflate(R.layout.user_list_trend_row, parent, false);
         return new MyViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, int position) {
-        UsersDO user = userList.get(position);
+    public void onBindViewHolder(final TrendUsersAdapter.MyViewHolder holder, int position) {
+        UsersDO user = users.get(position);
         holder.name.setText(user.getUserName());
         holder.id = user.getUserId();
 
@@ -70,40 +73,6 @@ public class TrendUsersAdapter extends RecyclerView.Adapter<TrendUsersAdapter.My
         if(user.getUserFollower() == null){
             user.setUserFollower(new ArrayList<String>());
         }
-        holder.following = user.getUserFollower().contains(currUserID);
-        if(user.getUserId().equals(currUserID)){
-            holder.follow.setVisibility(View.GONE);
-        }
-
-        if(!holder.following) {
-            holder.follow.setText("Follow");
-        } else {
-            holder.follow.setText("Unfollow");
-        }
-
-        holder.follow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                DataAction da = new DataAction();
-                if(holder.following){
-                    da.unfollowSomeone(""+holder.id);
-                    Intent intentCurrent = ((Activity) mContext).getIntent();
-                    Intent intent= new Intent(mContext, FollowActivity.class);
-                    Log.d("DD","DDD");
-                    intent.putExtra("ID",intentCurrent.getStringExtra("ID"));
-                    intent.putExtra("KEY",intentCurrent.getStringExtra("KEY"));
-                    mContext.startActivity(intent);
-                } else {
-                    da.followSomeone(""+holder.id);
-                    Log.d("DD","DDD");
-                    Intent intentCurrent = ((Activity) mContext).getIntent();
-                    Intent intent= new Intent(mContext, FollowActivity.class);
-                    intent.putExtra("ID",intentCurrent.getStringExtra("ID"));
-                    intent.putExtra("KEY",intentCurrent.getStringExtra("KEY"));
-                    mContext.startActivity(intent);
-                }
-            }
-        });
 
         holder.space.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -124,8 +93,7 @@ public class TrendUsersAdapter extends RecyclerView.Adapter<TrendUsersAdapter.My
     }
 
 
-    @Override
     public int getItemCount() {
-        return userList.size();
+        return users.size();
     }
 }

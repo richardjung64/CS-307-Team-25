@@ -234,7 +234,14 @@ public class HomeActivity extends AppCompatActivity {
             addClothesTable = new AddClothesTable();
             addClothesTable();
         }
-
+        getPostList task2 = new getPostList();
+        try {
+            postList = task2.execute("").get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        };
 
         getPostsF _task2 = new getPostsF();
         try {
@@ -244,8 +251,8 @@ public class HomeActivity extends AppCompatActivity {
         } catch (ExecutionException e) {
             e.printStackTrace();
         };
-        List<PostTableDO> final_post_list = new ArrayList<>(postList);
-        final_post_list.addAll(postListF);
+        List<PostTableDO> final_post_list = new ArrayList<>(postListF);
+        final_post_list.addAll(postList);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         pAdapter = new HomePostsAdapter(this,final_post_list);

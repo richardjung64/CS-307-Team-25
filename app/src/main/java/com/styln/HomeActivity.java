@@ -319,7 +319,19 @@ public class HomeActivity extends AppCompatActivity {
                 tempSet = currentUser.getUserPosts();
             }
             List<String> result = new ArrayList<String>(tempSet);
+            List<String> users = new ArrayList<String>(currentUser.getUserFollowing());
 
+            List<String> aaa;
+            for (String str : users) {
+                UsersDO iterator = mapper.load(UsersDO.class, str);
+                aaa = iterator.getUserPosts();
+                List<String> zzz = new ArrayList<String>(aaa);
+                for (String abc : zzz) {
+                    PostTableDO xyz = mapper.load(PostTableDO.class, abc);
+                    loadresult.add(xyz);
+                }
+
+            }
             for (String str : result) {
                 PostTableDO iterator = mapper.load(PostTableDO.class, str);
                 loadresult.add(iterator);

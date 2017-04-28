@@ -218,8 +218,8 @@ ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:94:9-54
 		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:94:19-51
 uses-sdk
 INJECTED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\tiger\.android\build-cache\8b36e3a951390b1b18bdf5283b7746bc9efad2bd\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:multidex:1.0.1] C:\Users\tiger\.android\build-cache\f033a32885a901e03d213af492eb284a15d31533\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\tiger\.android\build-cache\8b36e3a951390b1b18bdf5283b7746bc9efad2bd\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] C:\Users\tiger\.android\build-cache\cfbbbdf4d6a57cf299e87b36b263221aa6f2d0a8\output\AndroidManifest.xml:24:5-26:41
 MERGED from [com.google.android.gms:play-services-plus:10.2.1] C:\Users\tiger\.android\build-cache\b6ababc2cd7559b9c930388c5813150e13b47915\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-auth:10.2.1] C:\Users\tiger\.android\build-cache\4c1aaec5a3638ca635f5cf28e0a38ac914f7eaab\output\AndroidManifest.xml:17:5-43

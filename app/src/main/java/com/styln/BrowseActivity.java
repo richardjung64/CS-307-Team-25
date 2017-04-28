@@ -37,7 +37,7 @@ public class BrowseActivity extends AppCompatActivity {
     private String search_choice;
     private RecyclerView recyclerView;
     private SearchListItemsAdapter iAdapter;
-    private SearchListUsersAdapter uAdapter;
+    private TrendUsersAdapter uAdapter;
 
     private final DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
 
@@ -147,7 +147,7 @@ public class BrowseActivity extends AppCompatActivity {
                     if (user.getUserName().toLowerCase().contains(query_string))
                         selected_users.add(user);
                 }
-                uAdapter = new SearchListUsersAdapter(this, selected_users);
+                uAdapter = new TrendUsersAdapter(this, selected_users);
                 RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
                 recyclerView.setLayoutManager(mLayoutManager);
                 recyclerView.setItemAnimator(new DefaultItemAnimator());

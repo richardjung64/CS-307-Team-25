@@ -4,8 +4,8 @@
         "source": "C:\\Users\\tiger\\.android\\build-cache\\276be8b698e972ac00553a17445786998d0db300\\output\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "D:\\Users\\shanu\\.android\\build-cache\\4adfe91b751f6069a992c115541503356ef0d950\\output\\res\\color\\abc_secondary_text_material_light.xml"
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\tiger\\.android\\build-cache\\276be8b698e972ac00553a17445786998d0db300\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
@@ -20,20 +20,12 @@
         "source": "C:\\Users\\tiger\\.android\\build-cache\\276be8b698e972ac00553a17445786998d0db300\\output\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "D:\\Users\\shanu\\.android\\build-cache\\4adfe91b751f6069a992c115541503356ef0d950\\output\\res\\color\\abc_primary_text_material_dark.xml"
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\tiger\\.android\\build-cache\\276be8b698e972ac00553a17445786998d0db300\\output\\res\\color\\abc_search_url_text.xml"
     },
     {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "D:\\Users\\shanu\\.android\\build-cache\\4adfe91b751f6069a992c115541503356ef0d950\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
-    },
-    {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "D:\\Users\\shanu\\.android\\build-cache\\4adfe91b751f6069a992c115541503356ef0d950\\output\\res\\color\\abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "D:\\Users\\shanu\\.android\\build-cache\\4adfe91b751f6069a992c115541503356ef0d950\\output\\res\\color\\switch_thumb_material_dark.xml"
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\tiger\\.android\\build-cache\\276be8b698e972ac00553a17445786998d0db300\\output\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
@@ -50,46 +42,6 @@
     {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
         "source": "C:\\Users\\tiger\\.android\\build-cache\\276be8b698e972ac00553a17445786998d0db300\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "D:\\Users\\shanu\\.android\\build-cache\\4adfe91b751f6069a992c115541503356ef0d950\\output\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "D:\\Users\\shanu\\.android\\build-cache\\4adfe91b751f6069a992c115541503356ef0d950\\output\\res\\color\\switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "D:\\Users\\shanu\\.android\\build-cache\\4adfe91b751f6069a992c115541503356ef0d950\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "C:\\Users\\tiger\\.android\\build-cache\\276be8b698e972ac00553a17445786998d0db300\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
-    },
-    {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
-        "source": "D:\\Users\\shanu\\.android\\build-cache\\3370881ccc9f88cedd549db0be64c408481ac46f\\output\\res\\color\\common_google_signin_btn_tint.xml"
-    },
-    {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "D:\\Users\\shanu\\.android\\build-cache\\3370881ccc9f88cedd549db0be64c408481ac46f\\output\\res\\color\\common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "C:\\Users\\tiger\\.android\\build-cache\\276be8b698e972ac00553a17445786998d0db300\\output\\res\\color\\abc_search_url_text.xml"
-    },
-    {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "D:\\Users\\shanu\\.android\\build-cache\\4adfe91b751f6069a992c115541503356ef0d950\\output\\res\\color\\abc_search_url_text.xml"
-    },
-    {
-        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "C:\\Users\\tiger\\.android\\build-cache\\276be8b698e972ac00553a17445786998d0db300\\output\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "D:\\Users\\shanu\\.android\\build-cache\\3370881ccc9f88cedd549db0be64c408481ac46f\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",

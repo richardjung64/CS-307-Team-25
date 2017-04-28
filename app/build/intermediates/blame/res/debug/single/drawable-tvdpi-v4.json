@@ -1,18 +1,34 @@
 [
     {
-        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_standard_off_client.png",
-        "source": "/Users/shanu/.android/build-cache/87dcac3a8c488adfc03e0406500b91aa1a5a5974/output/res/drawable-tvdpi-v4/ic_plusone_standard_off_client.png"
+        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\87dcac3a8c488adfc03e0406500b91aa1a5a5974\\output\\res\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_medium_off_client.png",
-        "source": "/Users/shanu/.android/build-cache/87dcac3a8c488adfc03e0406500b91aa1a5a5974/output/res/drawable-tvdpi-v4/ic_plusone_medium_off_client.png"
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
+        "source": "C:\\Users\\tiger\\.android\\build-cache\\b6ababc2cd7559b9c930388c5813150e13b47915\\output\\res\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_tall_off_client.png",
-        "source": "/Users/shanu/.android/build-cache/87dcac3a8c488adfc03e0406500b91aa1a5a5974/output/res/drawable-tvdpi-v4/ic_plusone_tall_off_client.png"
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
+        "source": "C:\\Users\\tiger\\.android\\build-cache\\b6ababc2cd7559b9c930388c5813150e13b47915\\output\\res\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png"
     },
     {
-        "merged": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_small_off_client.png",
-        "source": "/Users/shanu/.android/build-cache/87dcac3a8c488adfc03e0406500b91aa1a5a5974/output/res/drawable-tvdpi-v4/ic_plusone_small_off_client.png"
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
+        "source": "C:\\Users\\tiger\\.android\\build-cache\\b6ababc2cd7559b9c930388c5813150e13b47915\\output\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\87dcac3a8c488adfc03e0406500b91aa1a5a5974\\output\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\87dcac3a8c488adfc03e0406500b91aa1a5a5974\\output\\res\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
+        "source": "C:\\Users\\tiger\\.android\\build-cache\\b6ababc2cd7559b9c930388c5813150e13b47915\\output\\res\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
+        "source": "D:\\Users\\shanu\\.android\\build-cache\\87dcac3a8c488adfc03e0406500b91aa1a5a5974\\output\\res\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png"
     }
 ]

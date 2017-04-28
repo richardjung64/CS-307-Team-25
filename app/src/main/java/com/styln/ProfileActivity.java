@@ -24,6 +24,7 @@ import com.amazonaws.models.nosql.UsersDO;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
@@ -136,6 +137,7 @@ public class ProfileActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        Collections.reverse(postList);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         pAdapter = new ProfilePostsAdapter(this,postList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
@@ -154,7 +156,7 @@ public class ProfileActivity extends AppCompatActivity {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-
+        Collections.reverse(itemList);
         recyclerView2 = (RecyclerView) findViewById(R.id.recycler_view2);
         iAdapter = new ProfileItemsAdapter(this,itemList);
         RecyclerView.LayoutManager mLayoutManager2 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);

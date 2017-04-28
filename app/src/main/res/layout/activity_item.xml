@@ -165,7 +165,8 @@
         android:layout_toEndOf="@+id/itemImage"
         android:layout_toRightOf="@+id/itemImage"
         android:text="ITEMNAME"
-        android:textSize="25dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="22sp"
         android:layout_marginLeft="10dp"
         android:textColor="@color/black_text"/>
 
@@ -175,6 +176,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/itemName"
         android:layout_below="@+id/itemName"
+        android:layout_marginTop="3dp"
         android:text="TYPE"
         android:textSize="15dp"/>
     <TextView
@@ -183,6 +185,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/itemType"
         android:layout_below="@+id/itemName"
+        android:layout_marginTop="3dp"
         android:layout_marginLeft="3dp"
         android:text="Year"
         android:textSize="15dp"/>
@@ -193,6 +196,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/itemName"
         android:layout_below="@+id/itemType"
+        android:layout_marginTop="3dp"
         android:text="BRAND"
         android:textColor="@color/com_facebook_button_like_background_color_selected"
         android:textSize="15dp" />
@@ -204,6 +208,7 @@
         android:layout_toRightOf="@id/itemBrand"
         android:layout_marginLeft="30dp"
         android:layout_below="@+id/itemType"
+        android:layout_marginTop="3dp"
         android:text="$ Price"
         android:textSize="15dp"/>
 
@@ -215,6 +220,8 @@
         android:layout_alignRight="@+id/itemAvailability"
         android:layout_alignStart="@+id/itemAvailability"
         android:layout_alignTop="@+id/itemAvailability"
+        android:layout_marginTop="3dp"
+
         android:src="@color/green" />
 
     <TextView
@@ -223,6 +230,8 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/itemName"
         android:layout_below="@+id/itemPrice"
+        android:layout_marginTop="3dp"
+
         android:text="Available: Yes"
         android:textSize="15dp"/>
 
@@ -340,7 +349,7 @@
             </LinearLayout>
         </LinearLayout>
         <ImageView
-            android:id="@+id/itmeAction"
+            android:id="@+id/itemAction"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_weight="1"
@@ -354,11 +363,12 @@
     <ImageView
         android:id="@+id/storeLinkBG"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="40dp"
         android:layout_alignLeft="@+id/itemBG"
         android:layout_alignRight="@+id/itemBG"
         android:layout_alignStart="@+id/itemBG"
-        android:layout_alignTop="@+id/storeLink"
+        android:layout_below="@id/horizontalLayout"
+        android:layout_marginTop="7dp"
         app:srcCompat="@color/com_facebook_button_background_color_disabled" />
 
     <TextView
@@ -366,37 +376,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/horizontalLayout"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_centerHorizontal="true"
         android:text="StoreLink"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
-        android:textSize="15dp"
+        android:textSize="21dp"
         android:clickable="true"
         android:onClick="openLink"/>
-
-    <TextView
-        android:id="@+id/tags"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/storeLink"
-        android:layout_marginTop="12dp"
-        android:layout_centerHorizontal="true"
-        android:text="Tshirt, Black, Stripes"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="bold"
-        android:textSize="15dp"/>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignLeft="@+id/itemBG"
-        android:layout_alignStart="@+id/itemBG"
-        android:layout_below="@+id/tags"
-        android:layout_above="@+id/lowerBox"
-        android:layout_alignRight="@+id/itemBG"
-        android:layout_alignEnd="@+id/itemBG" />
 
 
 </RelativeLayout>

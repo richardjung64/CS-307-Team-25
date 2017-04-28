@@ -66,6 +66,22 @@ public class PostActivityItemsAdapter extends RecyclerView.Adapter<PostActivityI
         holder.brand.setText(item.getClothingBrand());
         holder.id=item.getUserId();
         Glide.with(mContext).load(item.getClothingPhotoLink()).into(holder.image);
+
+
+        holder.checkBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(holder.checked){
+                    holder.checked = false;
+                    holder.checkBox.setChecked(false);
+                    postList.remove(holder.id);
+                } else {
+                    holder.checked = true;
+                    holder.checkBox.setChecked(true);
+                    postList.add(holder.id);
+                }
+            }
+        });
         holder.space.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

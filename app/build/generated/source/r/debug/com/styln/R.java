@@ -3043,13 +3043,12 @@ containing a value of this type.
         public static final int messenger_button_send_round_shadow=0x7f020093;
         public static final int messenger_button_white_bg_round=0x7f020094;
         public static final int messenger_button_white_bg_selector=0x7f020095;
-        public static final int notification_template_icon_bg=0x7f02009c;
-        public static final int search_button=0x7f020096;
-        public static final int selector_button_facebook=0x7f020097;
-        public static final int selector_button_google=0x7f020098;
-        public static final int shirt1=0x7f020099;
-        public static final int test_empty=0x7f02009a;
-        public static final int test_kevin=0x7f02009b;
+        public static final int notification_template_icon_bg=0x7f02009b;
+        public static final int selector_button_facebook=0x7f020096;
+        public static final int selector_button_google=0x7f020097;
+        public static final int shirt1=0x7f020098;
+        public static final int test_empty=0x7f020099;
+        public static final int test_kevin=0x7f02009a;
     }
     public static final class id {
         public static final int BackButton=0x7f0c009c;
@@ -3526,11 +3525,10 @@ containing a value of this type.
         public static final int database=0x7f030004;
         public static final int ic_launcher=0x7f030005;
         public static final int icon_home=0x7f030006;
-        public static final int search_button=0x7f030007;
-        public static final int splash_icon=0x7f030008;
-        public static final int user=0x7f030009;
-        public static final int user_data_storage=0x7f03000a;
-        public static final int user_identity=0x7f03000b;
+        public static final int splash_icon=0x7f030007;
+        public static final int user=0x7f030008;
+        public static final int user_data_storage=0x7f030009;
+        public static final int user_identity=0x7f03000a;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f060000;

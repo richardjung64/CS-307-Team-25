@@ -70,8 +70,8 @@ public class ItemActivity extends AppCompatActivity {
         year.setText(currentItem.getClothingYear());
         price.setText("$ "+currentItem.getClothingPrice());
         brand.setText(currentItem.getClothingBrand());
-        numLikes.setText(""+currentItem.getClothingLikes());
-        numOwned.setText(""+currentItem.getClothingOwned());
+        numLikes.setText(""+currentItem.getClothingLikes().intValue());
+        numOwned.setText(""+currentItem.getClothingOwned().intValue());
         description.setText(currentItem.getClothingDescription());
 
         if(currentItem.getClothingAvailability()) {

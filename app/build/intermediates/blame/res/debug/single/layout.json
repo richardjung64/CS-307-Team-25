@@ -164,12 +164,12 @@
         "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_others.xml"
     },
     {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
-        "source": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_home.xml"
-    },
-    {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_browse_bk.xml",
         "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_browse_bk.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
+        "source": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_home.xml"
     },
     {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\demo_nosql_select_operation_list_item.xml",
@@ -296,12 +296,12 @@
         "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
-        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_others.xml",
-        "source": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_others.xml"
-    },
-    {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_list_row.xml",
         "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\user_list_row.xml"
+    },
+    {
+        "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_others.xml",
+        "source": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_others.xml"
     },
     {
         "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
@@ -312,12 +312,12 @@
         "source": "C:\\Users\\tiger\\.android\\build-cache\\276be8b698e972ac00553a17445786998d0db300\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home_backup.xml",
-        "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_home_backup.xml"
-    },
-    {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_list_row.xml",
         "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\item_list_row.xml"
+    },
+    {
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home_backup.xml",
+        "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_home_backup.xml"
     },
     {
         "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",

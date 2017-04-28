@@ -168,6 +168,10 @@
         "source": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_home.xml"
     },
     {
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_browse_bk.xml",
+        "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\activity_browse_bk.xml"
+    },
+    {
         "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\layout\\demo_nosql_select_operation_list_item.xml",
         "source": "D:\\CS-307-Team-25\\app\\src\\main\\res\\layout\\demo_nosql_select_operation_list_item.xml"
     },

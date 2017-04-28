@@ -187,6 +187,8 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
             return users_who_liked.size();
         if (new_followers_count > 0)
             return (int)(new_followers_count);
-        return wishList_clothes.size();
+        if (wishList_clothes.size() > 0)
+            return wishList_clothes.size();
+        return 1;
     }
 }

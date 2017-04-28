@@ -313,8 +313,15 @@ public class DataAction {
                     post.setPostLikes(0.0);
                     post.setLikedUser(new ArrayList<String>());
                     mapper.save(post);
-
-                    curr.getUserPosts().add(post.getUserId());
+                    try {
+                        curr.getUserPosts().add(post.getUserId());
+                    }
+                    catch (Exception e) {
+                        List<String> posts = new ArrayList<>();
+                        posts.add(post.getUserId());
+                        curr.setUserPosts(posts);
+                    }
+                    //curr.getUserPosts().add(post.getUserId());
                     mapper.save(curr);
                 }
 

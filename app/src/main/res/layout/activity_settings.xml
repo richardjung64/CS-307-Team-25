@@ -48,12 +48,6 @@
             android:onClick="changeProfile"
             android:clickable="true"/>
 
-        <Button
-            android:id="@+id/not_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Notifications"
-            android:onClick="notification_open"/>
 
         <Button
             android:id="@+id/button_signout"
@@ -63,11 +57,19 @@
             android:onClick="signOut"/>
 
         <Button
+            android:id="@+id/not_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:onClick="notification_open"/>
+
+        <Button
             android:id="@+id/button_delete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Delete This Account"
-            android:onClick="deleteAccount"/>
+            android:onClick="deleteAccount"
+            android:visibility="gone"/>
 
 
 

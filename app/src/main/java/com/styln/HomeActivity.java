@@ -307,14 +307,17 @@ public class HomeActivity extends AppCompatActivity {
             UsersDO currentUser;
             String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
             currentUser = mapper.load(UsersDO.class, userID);
+
             List<String> tempSet;
-
-            if(currentUser.getUserPosts() == null){
+            while(currentUser == null)
+                currentUser = mapper.load(UsersDO.class, userID);
+            if(null == currentUser.getUserPosts() ){
                 Log.d(LOG_TAG,"NULLLLL");
-                currentUser.setUserPosts(new ArrayList<String>());
+                tempSet =new ArrayList<String>();
             }
-
-            tempSet = currentUser.getUserPosts();
+            else {
+                tempSet = currentUser.getUserPosts();
+            }
             List<String> result = new ArrayList<String>(tempSet);
 
             for (String str : result) {

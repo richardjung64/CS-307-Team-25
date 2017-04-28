@@ -11,7 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
-
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.*;
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.ClothingDO;
@@ -19,6 +19,7 @@ import com.amazonaws.models.nosql.PostTableDO;
 import com.amazonaws.models.nosql.UsersDO;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
@@ -45,9 +46,17 @@ public class TrendActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "Opened from " + pageKey);
 
         if(pageKey.equals("USER")){
-
+            prepareUserTrendData();
+            if(userRank.isEmpty()) {
+                Log.d(LOG_TAG, "POKEMON");
+            }
         } else {
-           /* getItemList task = new getItemList();
+            prepareTrendData();
+            Log.d(LOG_TAG, ":ASDA");
+            while(itemRank.isEmpty()) {
+                Log.d(LOG_TAG, "ASFSAFXZCVZXC");
+            }
+                /* getItemList task = new getItemList();
             try {
                 itemRank = task.execute(pageKey).get();
             } catch (InterruptedException e) {
@@ -58,8 +67,11 @@ public class TrendActivity extends AppCompatActivity {
             iAdapter = new TrendItemsAdapter(this, itemRank);*/
         }
 
-
-        //iAdapter = new TrendItemsAdapter(this, rank);
+        if(pageKey.equals("USER")){
+            uAdapter = new TrendUsersAdapter(this, userRank);
+        }
+        else
+            iAdapter = new TrendItemsAdapter(this, itemRank);
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
@@ -71,8 +83,84 @@ public class TrendActivity extends AppCompatActivity {
     }
 
     private void prepareTrendData() {
-        //TODO Load the RANK here
+        new prepareTrend().execute();
+    }
+    private void prepareUserTrendData() {
+        new prepareUserTrend().execute();
+    }
+    private class prepareTrend extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected Void doInBackground(Void...Params) {
+            try{
+                DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+                DynamoDBScanExpression scanR = new DynamoDBScanExpression();
+                List<ClothingDO> scanList = mapper.scan(ClothingDO.class, scanR);
+                if(scanList == null) {
+                    Log.d("AsyncTrend", "scanList == null");
+                }
+                scanList = new ArrayList<ClothingDO>(scanList);
+                Collections.sort(scanList, new likesComparator());
+                Collections.reverse(scanList);
+                List<ClothingDO> rank = new ArrayList();
+                int count = 0;
+                for(ClothingDO cloth : scanList){
+                    count++;
+                    if(count <= 5){
+                        itemRank.add(cloth);
+                    }
+                }
+                if(itemRank.isEmpty()){
+                    Log.d(LOG_TAG, "userList is empty");
+                }
+            if(scanList.isEmpty()){
+                Log.d(LOG_TAG, "scanList is empty");
+            }
+                /*for(ClothingDO c : rank) {
+                    itemRank.add(c);
+                }*/
+            } catch(Exception ex) {
+                Log.d("AsyncScanClothing", "catch an exception");
+            };
 
+            return null;
+        }
+    }
+    private class prepareUserTrend extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected Void doInBackground(Void...Params) {
+            try{
+                DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+                DynamoDBScanExpression scanR = new DynamoDBScanExpression();
+                List<UsersDO> scanList = mapper.scan(UsersDO.class, scanR);
+                if(scanList == null) {
+                    Log.d("AsyncTrend", "scanList == null");
+                }
+                scanList = new ArrayList<UsersDO>(scanList);
+                Collections.sort(scanList, new FollowersComparator());
+                Collections.reverse(scanList);
+                List<ClothingDO> rank = new ArrayList();
+                int count = 0;
+                for(UsersDO cloth : scanList){
+                    count++;
+                    if(count <= 5){
+                        userRank.add(cloth);
+                    }
+                }
+                if(userRank.isEmpty()){
+                    Log.d(LOG_TAG, "rankList is empty");
+                }
+                if(scanList.isEmpty()){
+                    Log.d(LOG_TAG, "scanList is empty");
+                }
+                /*for(ClothingDO c : rank) {
+                    itemRank.add(c);
+                }*/
+            } catch(Exception ex) {
+                Log.d("AsyncScanClothing", "catch an exception");
+            };
+
+            return null;
+        }
     }
 
     public void openHome(View view) {

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:2:1-95:12
+ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:2:1-96:12
 	package
 		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:3:5-24
 		INJECTED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml
@@ -52,7 +52,7 @@ ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:14:5-16:34
 	android:name
 		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:15:9-89
 application
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:18:5-93:19
+ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:18:5-94:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\tiger\.android\build-cache\8b36e3a951390b1b18bdf5283b7746bc9efad2bd\output\AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] C:\Users\tiger\.android\build-cache\cfbbbdf4d6a57cf299e87b36b263221aa6f2d0a8\output\AndroidManifest.xml:28:5-20
 MERGED from [com.google.android.gms:play-services-plus:10.2.1] C:\Users\tiger\.android\build-cache\b6ababc2cd7559b9c930388c5813150e13b47915\output\AndroidManifest.xml:18:5-19
@@ -181,41 +181,43 @@ ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:81:9-84:47
 	android:name
 		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:82:13-47
 activity#com.styln.BrowseActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:85:9-52
+ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:85:9-86:54
+	android:windowSoftInputMode
+		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:86:13-52
 	android:name
 		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:85:19-49
 activity#com.styln.ItemActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:86:9-50
+ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:87:9-50
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:86:19-47
+		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:87:19-47
 activity#com.styln.InformationActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:87:9-57
+ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:88:9-57
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:87:19-54
+		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:88:19-54
 activity#com.styln.SuggestActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:88:9-53
+ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:89:9-53
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:88:19-50
+		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:89:19-50
 activity#com.styln.OthersActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:89:9-52
+ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:90:9-52
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:89:19-49
+		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:90:19-49
 activity#com.styln.PostActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:90:9-50
+ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:91:9-50
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:90:19-47
+		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:91:19-47
 activity#com.styln.NotificationActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:91:9-58
+ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:92:9-58
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:91:19-55
+		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:92:19-55
 activity#com.styln.PostPageActivity
-ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:92:9-54
+ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:93:9-54
 	android:name
-		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:92:19-51
+		ADDED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml:93:19-51
 uses-sdk
 INJECTED from D:\CS-307-Team-25\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\tiger\.android\build-cache\8b36e3a951390b1b18bdf5283b7746bc9efad2bd\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:multidex:1.0.1] C:\Users\tiger\.android\build-cache\f033a32885a901e03d213af492eb284a15d31533\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\tiger\.android\build-cache\8b36e3a951390b1b18bdf5283b7746bc9efad2bd\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] C:\Users\tiger\.android\build-cache\cfbbbdf4d6a57cf299e87b36b263221aa6f2d0a8\output\AndroidManifest.xml:24:5-26:41
 MERGED from [com.google.android.gms:play-services-plus:10.2.1] C:\Users\tiger\.android\build-cache\b6ababc2cd7559b9c930388c5813150e13b47915\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-auth:10.2.1] C:\Users\tiger\.android\build-cache\4c1aaec5a3638ca635f5cf28e0a38ac914f7eaab\output\AndroidManifest.xml:17:5-43

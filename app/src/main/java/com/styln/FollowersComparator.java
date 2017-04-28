@@ -1,5 +1,7 @@
 package com.styln;
 
+import android.util.Log;
+
 import com.amazonaws.models.nosql.UsersDO;
 
 import java.util.Comparator;
@@ -11,10 +13,8 @@ import java.util.Comparator;
 public class FollowersComparator implements Comparator<UsersDO> {
         @Override
         public int compare(UsersDO c1, UsersDO c2){
-            if(c1.getUserFollower().size() > (c2.getUserFollower().size()))
-                return 1;
-            if(c1.getUserFollower().size() < (c2.getUserFollower().size()))
-                return -1;
-            return 0;
+            //Log.d("ASD", Integer.toString(c1.getUserFollower().size()));
+            return (c1.getUserFollower().size() - c2.getUserFollower().size());
+
         }
     }

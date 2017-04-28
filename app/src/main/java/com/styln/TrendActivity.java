@@ -47,14 +47,14 @@ public class TrendActivity extends AppCompatActivity {
 
         if(pageKey.equals("USER")){
             prepareUserTrendData();
-            if(userRank.isEmpty()) {
+            while(userRank.isEmpty()) {
                 Log.d(LOG_TAG, "POKEMON");
             }
         } else {
             prepareTrendData();
             Log.d(LOG_TAG, ":ASDA");
             while(itemRank.isEmpty()) {
-                Log.d(LOG_TAG, "ASFSAFXZCVZXC");
+                ;//Log.d(LOG_TAG, "ASFSAFXZCVZXC");
             }
                 /* getItemList task = new getItemList();
             try {
@@ -69,8 +69,14 @@ public class TrendActivity extends AppCompatActivity {
 
         if(pageKey.equals("USER")){
             uAdapter = new TrendUsersAdapter(this, userRank);
+            recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+            RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+
+            recyclerView.setLayoutManager(mLayoutManager);
+            recyclerView.setItemAnimator(new DefaultItemAnimator());
+            recyclerView.setAdapter(uAdapter);
         }
-        else
+        else{
             iAdapter = new TrendItemsAdapter(this, itemRank);
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -78,7 +84,7 @@ public class TrendActivity extends AppCompatActivity {
 
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(iAdapter);
+        recyclerView.setAdapter(iAdapter);}
 
     }
 
@@ -88,14 +94,16 @@ public class TrendActivity extends AppCompatActivity {
     private void prepareUserTrendData() {
         new prepareUserTrend().execute();
     }
+
     private class prepareTrend extends AsyncTask<Void, Void, Void> {
         @Override
         protected Void doInBackground(Void...Params) {
+            Log.d(LOG_TAG, "scasafsafsafnList == null");
             try{
                 DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
                 DynamoDBScanExpression scanR = new DynamoDBScanExpression();
                 List<ClothingDO> scanList = mapper.scan(ClothingDO.class, scanR);
-                if(scanList == null) {
+                if(scanList.isEmpty()) {
                     Log.d("AsyncTrend", "scanList == null");
                 }
                 scanList = new ArrayList<ClothingDO>(scanList);
@@ -128,17 +136,21 @@ public class TrendActivity extends AppCompatActivity {
     private class prepareUserTrend extends AsyncTask<Void, Void, Void> {
         @Override
         protected Void doInBackground(Void...Params) {
-            try{
+            Log.d(LOG_TAG, "USERERADSF == null");
+            //try{
                 DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
                 DynamoDBScanExpression scanR = new DynamoDBScanExpression();
                 List<UsersDO> scanList = mapper.scan(UsersDO.class, scanR);
-                if(scanList == null) {
-                    Log.d("AsyncTrend", "scanList == null");
+                if(scanList.isEmpty()) {
+                    Log.d(LOG_TAG, "scanList == null");
                 }
                 scanList = new ArrayList<UsersDO>(scanList);
+                if(!scanList.isEmpty()) {
+                    Log.d(LOG_TAG, "scanList =dfdsafdafdas= null");
+                }
                 Collections.sort(scanList, new FollowersComparator());
                 Collections.reverse(scanList);
-                List<ClothingDO> rank = new ArrayList();
+                //List<ClothingDO> rank = new ArrayList();
                 int count = 0;
                 for(UsersDO cloth : scanList){
                     count++;
@@ -155,9 +167,9 @@ public class TrendActivity extends AppCompatActivity {
                 /*for(ClothingDO c : rank) {
                     itemRank.add(c);
                 }*/
-            } catch(Exception ex) {
+            /*} catch(Exception ex) {
                 Log.d("AsyncScanClothing", "catch an exception");
-            };
+            };*/
 
             return null;
         }

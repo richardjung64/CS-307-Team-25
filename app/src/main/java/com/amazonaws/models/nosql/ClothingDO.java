@@ -30,7 +30,16 @@ public class ClothingDO {
     private String _clothingYear;
     private List<String> _likedUser;
     private List<String> _ownedUser;
+    private String old_price;
 
+    @DynamoDBAttribute(attributeName = "old_price")
+    public String getOld_price() {
+        return old_price;
+    }
+
+    public void setOld_price(String old_price) {
+        this.old_price = old_price;
+    }
 
     @DynamoDBHashKey(attributeName = "userId")
     @DynamoDBAttribute(attributeName = "userId")

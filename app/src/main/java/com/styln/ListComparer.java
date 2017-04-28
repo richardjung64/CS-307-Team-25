@@ -32,9 +32,9 @@ public class ListComparer implements Comparator<PostTableDO> {
         }
         try
         {
-        b = df.parse(bb);
+            b = df.parse(bb);
         } catch (ParseException e) {
-        e.printStackTrace();
+            e.printStackTrace();
         }
         return a.compareTo(b);
 

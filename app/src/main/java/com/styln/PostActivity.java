@@ -13,7 +13,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 
+import com.amazonaws.AmazonClientException;
 import com.amazonaws.mobile.AWSMobileClient;
+import com.amazonaws.mobile.util.ThreadUtils;
 import com.amazonaws.mobileconnectors.cognito.exceptions.DataAccessNotAuthorizedException;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.ClothingDO;
@@ -77,10 +79,26 @@ public class PostActivity extends AppCompatActivity {
     }
 
     public void Cancel(View view) {
-        Log.d(LOG_TAG, "Launching Home Activity...");
-        startActivity(new Intent(PostActivity.this, HomeActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        // finish should always be called on the main thread.
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Log.d(LOG_TAG, "Launching Home Activity...");
+                    startActivity(new Intent(PostActivity.this, HomeActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    // finish should always be called on the main thread.
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                });
+            }
+        }).start();
         finish();
     }
 

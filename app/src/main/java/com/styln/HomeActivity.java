@@ -408,43 +408,123 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void openTrend(View view) {
-        Log.d(LOG_TAG, "Launching Trend Activity...");
-        startActivity(new Intent(HomeActivity.this, TrendActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","ITEM"));
-        // finish should always be called on the main thread.
-        finish();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Log.d(LOG_TAG, "Launching Trend Activity...");
+                    startActivity(new Intent(HomeActivity.this, TrendActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","ITEM"));
+                    // finish should always be called on the main thread.
+                    //finish();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                });
+            }
+        }).start();
     }
 
     public void openPost(View view) {
-        Log.d(LOG_TAG, "Launching Post Activity...");
-        startActivity(new Intent(HomeActivity.this, PostActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        // finish should always be called on the main thread.
-        finish();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Log.d(LOG_TAG, "Launching Post Activity...");
+                    startActivity(new Intent(HomeActivity.this, PostActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    // finish should always be called on the main thread.
+                    //finish();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                });
+            }
+        }).start();
     }
 
     public void openBrowse(View view) {
-        Log.d(LOG_TAG, "Launching Browse Activity...");
-        startActivity(new Intent(HomeActivity.this, BrowseActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        // finish should always be called on the main thread.
-        finish();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Log.d(LOG_TAG, "Launching Browse Activity...");
+                    startActivity(new Intent(HomeActivity.this, BrowseActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    // finish should always be called on the main thread.
+                    //finish();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                });
+            }
+        }).start();
     }
 
     public void openProfile(View view) {
-        Log.d(LOG_TAG, "Launching Profile Activity...");
-        startActivity(new Intent(HomeActivity.this, ProfileActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        // finish should always be called on the main thread.
-        finish();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Log.d(LOG_TAG, "Launching Profile Activity...");
+                    startActivity(new Intent(HomeActivity.this, ProfileActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    // finish should always be called on the main thread.
+                    //finish();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                });
+            }
+        }).start();
     }
 
     public void openSettings(View view) {
-            Log.d(LOG_TAG, "Launching Settings Activity...");
-            startActivity(new Intent(HomeActivity.this, SettingsActivity.class)
-                    .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-            // finish should always be called on the main thread.
-            finish();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Log.d(LOG_TAG, "Launching Settings Activity...");
+                    startActivity(new Intent(HomeActivity.this, SettingsActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    // finish should always be called on the main thread.
+                    //finish();
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                });
+            }
+        }).start();
     }
 
 

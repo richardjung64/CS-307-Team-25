@@ -13,10 +13,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.amazonaws.AmazonClientException;
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobile.user.IdentityManager;
 import com.amazonaws.mobile.user.signin.FacebookSignInProvider;
 import com.amazonaws.mobile.user.signin.GoogleSignInProvider;
+import com.amazonaws.mobile.util.ThreadUtils;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.ClothingDO;
 import com.amazonaws.models.nosql.PostTableDO;
@@ -244,70 +246,192 @@ public class ProfileActivity extends AppCompatActivity {
 
 
     public void openHome(View view) {
-        Log.d(LOG_TAG, "Launching Home Activity...");
-        startActivity(new Intent(ProfileActivity.this, HomeActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        // finish should always be called on the main thread.
-        finish();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Log.d(LOG_TAG, "Launching Home Activity...");
+                    startActivity(new Intent(ProfileActivity.this, HomeActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    // finish should always be called on the main thread.
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                });
+            }
+        }).start();
     }
 
     public void openTrend(View view) {
-        Log.d(LOG_TAG, "Launching Trend Activity...");
-        startActivity(new Intent(ProfileActivity.this, TrendActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","ITEM"));
-        // finish should always be called on the main thread.
-        finish();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Log.d(LOG_TAG, "Launching Trend Activity...");
+                    startActivity(new Intent(ProfileActivity.this, TrendActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","ITEM"));
+                    // finish should always be called on the main thread.
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                });
+            }
+        }).start();
     }
 
     public void openPost(View view) {
-        Log.d(LOG_TAG, "Launching Post Activity...");
-        startActivity(new Intent(ProfileActivity.this, PostActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        // finish should always be called on the main thread.
-        finish();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Log.d(LOG_TAG, "Launching Post Activity...");
+                    startActivity(new Intent(ProfileActivity.this, PostActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    // finish should always be called on the main thread.
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                });
+            }
+        }).start();
+
     }
 
     public void openBrowse(View view) {
-        Log.d(LOG_TAG, "Launching Browse Activity...");
-        startActivity(new Intent(ProfileActivity.this, BrowseActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        // finish should always be called on the main thread.
-        finish();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Log.d(LOG_TAG, "Launching Browse Activity...");
+                    startActivity(new Intent(ProfileActivity.this, BrowseActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    // finish should always be called on the main thread.
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                });
+            }
+        }).start();
+
     }
 
     public void openProfile(View view) {
     }
 
     public void openFollowers(View view) {
-        Log.d(LOG_TAG, "Launching Followers Activity...");
-        startActivity(new Intent(ProfileActivity.this, FollowActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","followers").putExtra("ID",currUserID));
-        // finish should always be called on the main thread.
-        finish();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Log.d(LOG_TAG, "Launching Followers Activity...");
+                    startActivity(new Intent(ProfileActivity.this, FollowActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","followers").putExtra("ID",currUserID));
+                    // finish should always be called on the main thread.
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                });
+            }
+        }).start();
     }
 
     public void openFollowing(View view) {
-        Log.d(LOG_TAG, "Launching Following Activity...");
-        startActivity(new Intent(ProfileActivity.this, FollowActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","following").putExtra("ID",currUserID));
-        // finish should always be called on the main thread.
-        finish();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Log.d(LOG_TAG, "Launching Following Activity...");
+                    startActivity(new Intent(ProfileActivity.this, FollowActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","following").putExtra("ID",currUserID));
+                    // finish should always be called on the main thread.
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                });
+            }
+        }).start();
     }
 
     public void openWardrobe(View view) {
-        Log.d(LOG_TAG, "Launching Wardrobe Activity...");
-        startActivity(new Intent(ProfileActivity.this, CollectionActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wardrobe").putExtra("ID",currUserID));
-        // finish should always be called on the main thread.
-        finish();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Log.d(LOG_TAG, "Launching Wardrobe Activity...");
+                    startActivity(new Intent(ProfileActivity.this, CollectionActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wardrobe").putExtra("ID",currUserID));
+                    // finish should always be called on the main thread.
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                });
+            }
+        }).start();
     }
 
     public void openWishlist(View view) {
-        Log.d(LOG_TAG, "Launching Wishlist Activity...");
-        startActivity(new Intent(ProfileActivity.this, CollectionActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wishlist").putExtra("ID",currUserID));
-        // finish should always be called on the main thread.
-        finish();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Log.d(LOG_TAG, "Launching Wishlist Activity...");
+                    startActivity(new Intent(ProfileActivity.this, CollectionActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).putExtra("KEY","wishlist").putExtra("ID",currUserID));
+                    // finish should always be called on the main thread.
+                } catch (final AmazonClientException ex) {
+                    Log.e(LOG_TAG, "failed to add");
+                    return;
+                }
+                ThreadUtils.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                });
+            }
+        }).start();
     }
 
 }

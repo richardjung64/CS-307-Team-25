@@ -44,10 +44,10 @@ public class NotificationActivity extends AppCompatActivity {
             setContentView(R.layout.notification_layout);
             return;
         }
-        if (!(thisPost.getPostPoster().equals(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID()))) {
+/*        if (!(thisPost.getPostPoster().equals(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID()))) {
             setContentView(R.layout.notification_layout);
             return;
-        }
+        }*/
 
         setContentView(R.layout.notification_layout);
 

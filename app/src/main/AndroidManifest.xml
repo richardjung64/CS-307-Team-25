@@ -82,7 +82,8 @@
             android:name=".CollectionActivity"
             android:label="CollectionActivity"
             android:theme="@style/AppTheme" />
-        <activity android:name=".BrowseActivity" />
+        <activity android:name=".BrowseActivity"
+            android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".ItemActivity" />
         <activity android:name=".InformationActivity" />
         <activity android:name=".SuggestActivity" />

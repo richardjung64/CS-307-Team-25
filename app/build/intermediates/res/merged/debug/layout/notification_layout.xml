@@ -47,7 +47,8 @@
         android:layout_height="match_parent"
         android:layout_alignEnd="@+id/textbg"
         android:layout_alignStart="@+id/textbg"
-        android:layout_alignBottom="@+id/textbg" />
+        android:layout_alignBottom="@+id/textbg"
+        android:layout_marginTop="10dp"/>
 
     <ImageView
         android:id="@+id/backArrow"

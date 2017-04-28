@@ -16,12 +16,12 @@
         "source": "C:\\Users\\tiger\\.android\\build-cache\\ce72aff477b9b4cea3afe27050ae50a5c0c4ac34\\output\\res\\color\\common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "C:\\Users\\tiger\\.android\\build-cache\\276be8b698e972ac00553a17445786998d0db300\\output\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
         "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
         "source": "D:\\Users\\shanu\\.android\\build-cache\\4adfe91b751f6069a992c115541503356ef0d950\\output\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "D:\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\tiger\\.android\\build-cache\\276be8b698e972ac00553a17445786998d0db300\\output\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
         "merged": "D:\\Users\\shanu\\Desktop\\AndroidProjects\\CS-307-Team-25\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",

@@ -20,13 +20,12 @@
         />
 
     <ImageView
-        android:layout_width="500dp"
+        android:layout_width="match_parent"
         android:layout_height="70dp"
         android:src="@drawable/main_box_lower"
         android:id="@+id/lowerBox"
         android:scaleType="fitXY"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Space
@@ -179,6 +178,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:hint="Search here"
+                android:windowSoftInputMode="adjustNothing"
                 android:maxLines="1" />
 
             <Button

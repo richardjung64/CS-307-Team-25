@@ -36,7 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Back"
-            android:onClick="back"/>
+            android:onClick="back"
+            android:layout_marginTop="5dp"/>
 
 
         <Button

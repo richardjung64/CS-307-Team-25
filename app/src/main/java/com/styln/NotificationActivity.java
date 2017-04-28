@@ -1,5 +1,6 @@
 package com.styln;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +8,7 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 
 import com.amazonaws.mobile.AWSMobileClient;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
@@ -27,7 +29,7 @@ public class NotificationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (HomePostsAdapter.post_id == null) {
-            setContentView(R.layout.no_notf_layout);
+            setContentView(R.layout.notification_layout);
             return;
         }
         GetPost post = new GetPost();
@@ -39,11 +41,11 @@ public class NotificationActivity extends AppCompatActivity {
             Log.e(LOG_TAG, "Post error");
         }
         if (thisPost == null) {
-            setContentView(R.layout.no_notf_layout);
+            setContentView(R.layout.notification_layout);
             return;
         }
         if (!(thisPost.getPostPoster().equals(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID()))) {
-            setContentView(R.layout.no_notf_layout);
+            setContentView(R.layout.notification_layout);
             return;
         }
 
@@ -57,6 +59,14 @@ public class NotificationActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(iAdapter);
 
+    }
+
+    public void back(View view) {
+        Log.d(LOG_TAG, "Launching Settings Activity...");
+        startActivity(new Intent(NotificationActivity.this, SettingsActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        // finish should always be called on the main thread.
+        finish();
     }
 
     private class GetPost extends AsyncTask<String, Void, PostTableDO> {

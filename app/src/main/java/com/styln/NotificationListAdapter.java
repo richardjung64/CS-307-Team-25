@@ -78,39 +78,7 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
         String setText = user.getUserName() + " liked your post";
         Log.d(LOG_TAG, "TO DISPLAY: " + setText);
         holder.name.setText(setText);
-        //holder.name.setText();
-//        holder.brand.setText(item.getClothingBrand());
-//        Glide.with(mContext).load(item.getClothingPhotoLink()).into(holder.image);
-//        holder.space.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Log.d("HHAHA","HAHHA opening");
-//                Intent intent= new Intent(mContext, ItemActivity.class);
-//                intent.putExtra("SKU",""+holder.name.getText());
-//                mContext.startActivity(intent);
-//            }
-//        });
-//        holder.action.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                //remove
-//                Intent intentCurrent = ((Activity) mContext).getIntent();
-//
-//                DataAction da = new DataAction();
-//                if(intentCurrent.getStringExtra("KEY").equals("wardrobe")){
-//                    da.ownClothing(""+holder.name.getText());
-//                } else {
-//                    da.wishClothing(""+holder.name.getText());
-//                }
-//
-//                Toast.makeText(mContext, "Removed", Toast.LENGTH_SHORT).show();
-//
-//                Intent intent = new Intent(mContext, CollectionActivity.class);
-//                intent.putExtra("ID",intentCurrent.getStringExtra("ID"));
-//                intent.putExtra("KEY",intentCurrent.getStringExtra("KEY"));
-//                mContext.startActivity(intent);
-//            }
-//        });
+
     }
 
     private class GetUsers extends AsyncTask<String, Void, UsersDO> {

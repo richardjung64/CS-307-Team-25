@@ -164,7 +164,7 @@
         app:srcCompat="@drawable/main_logo_small"
         android:id="@+id/logo"
         android:clickable="true"
-        android:onClick="refresh"
+        android:onClick="openHome"
         android:scaleType="fitXY"
         android:layout_centerHorizontal="true"
         android:layout_alignTop="@+id/upperBox"

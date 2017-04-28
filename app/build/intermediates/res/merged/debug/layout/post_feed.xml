@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/post_feed"
     android:layout_width="match_parent"
-    android:layout_height="375dp"
+    android:layout_height="355dp"
     >
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="375dp"
+        android:layout_height="345dp"
         app:srcCompat="@drawable/me_textbg"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="20dp"

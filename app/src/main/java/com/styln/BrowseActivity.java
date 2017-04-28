@@ -148,6 +148,10 @@ public class BrowseActivity extends AppCompatActivity {
                         selected_users.add(user);
                 }
                 uAdapter = new SearchListUsersAdapter(this, selected_users);
+                RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+                recyclerView.setLayoutManager(mLayoutManager);
+                recyclerView.setItemAnimator(new DefaultItemAnimator());
+                recyclerView.setAdapter(uAdapter);
             }
         } else {
             GetClothes _task = new GetClothes();
@@ -174,13 +178,14 @@ public class BrowseActivity extends AppCompatActivity {
                         continue;
                     }
                 }
-                iAdapter = new SearchListItemsAdapter(this, selected_clothes);
+                iAdapter = new SearchListItemsAdapter(this, selected_clothes);RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+                recyclerView.setLayoutManager(mLayoutManager);
+                recyclerView.setItemAnimator(new DefaultItemAnimator());
+                recyclerView.setAdapter(iAdapter);
+
             }
         }
 
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(iAdapter);
+
     }
 }

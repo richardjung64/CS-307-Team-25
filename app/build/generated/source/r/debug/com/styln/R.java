@@ -3100,7 +3100,7 @@ containing a value of this type.
         public static final int button=0x7f0c0051;
         public static final int buttonPanel=0x7f0c0062;
         public static final int button_change_profile=0x7f0c00f7;
-        public static final int button_delete=0x7f0c00f8;
+        public static final int button_delete=0x7f0c00f9;
         public static final int button_insert_sample_data=0x7f0c012b;
         public static final int button_remove_sample_data=0x7f0c012c;
         public static final int button_signout=0x7f0c00de;
@@ -3260,7 +3260,7 @@ containing a value of this type.
         public static final int nosql_table_partition_label=0x7f0c0113;
         public static final int nosql_table_sort_key=0x7f0c0116;
         public static final int nosql_table_sort_label=0x7f0c0115;
-        public static final int not_button=0x7f0c00f9;
+        public static final int not_button=0x7f0c00f8;
         public static final int notif_bg=0x7f0c0149;
         public static final int notify_list=0x7f0c014a;
         public static final int notify_title=0x7f0c0131;

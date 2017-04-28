@@ -828,7 +828,7 @@ int id browseBox 0x7f0c008b
 int id button 0x7f0c0051
 int id buttonPanel 0x7f0c0062
 int id button_change_profile 0x7f0c00f7
-int id button_delete 0x7f0c00f8
+int id button_delete 0x7f0c00f9
 int id button_insert_sample_data 0x7f0c012b
 int id button_remove_sample_data 0x7f0c012c
 int id button_signout 0x7f0c00de
@@ -988,7 +988,7 @@ int id nosql_table_partition_key 0x7f0c0114
 int id nosql_table_partition_label 0x7f0c0113
 int id nosql_table_sort_key 0x7f0c0116
 int id nosql_table_sort_label 0x7f0c0115
-int id not_button 0x7f0c00f9
+int id not_button 0x7f0c00f8
 int id notif_bg 0x7f0c0149
 int id notify_list 0x7f0c014a
 int id notify_title 0x7f0c0131

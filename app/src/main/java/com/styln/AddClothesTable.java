@@ -38,7 +38,9 @@ public class AddClothesTable {
             item.setClothingColor("color" + Integer.toString(1 + random.nextInt(4)));
             item.setClothingPhotoLink("");
             item.setClothingLikes((double) 0);
-            item.setClothingPrice(Integer.toString(30 + random.nextInt(60)));
+            String price = Integer.toString(30 + random.nextInt(60));
+            item.setClothingPrice(price);
+            item.setOld_price(price);
             item.setClothingStore("Store" + Integer.toString(1 + random.nextInt(4)));
 
             items_list[count] = item;

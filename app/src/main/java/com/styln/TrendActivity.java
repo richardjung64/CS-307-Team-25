@@ -30,8 +30,11 @@ public class TrendActivity extends AppCompatActivity {
     private List<ClothingDO> itemRank = new ArrayList<>();
     private List<UsersDO> userRank = new ArrayList<>();
 
-    private TrendItemsAdapter iAdapter;
-    private TrendUsersAdapter uAdapter;
+    /*private TrendItemsAdapter iAdapter;
+    private TrendUsersAdapter uAdapter;*/
+    private  SearchListItemsAdapter iAdapter;
+    private SearchListUsersAdapter uAdapter;
+
 
     private String pageKey;
 
@@ -46,6 +49,14 @@ public class TrendActivity extends AppCompatActivity {
 
         if(pageKey.equals("USER")){
 
+
+            recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+            RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+
+            recyclerView.setLayoutManager(mLayoutManager);
+            recyclerView.setItemAnimator(new DefaultItemAnimator());
+            recyclerView.setAdapter(uAdapter);
+
         } else {
            /* getItemList task = new getItemList();
             try {
@@ -56,17 +67,16 @@ public class TrendActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             iAdapter = new TrendItemsAdapter(this, itemRank);*/
+
+
+            recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+            RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+
+            recyclerView.setLayoutManager(mLayoutManager);
+            recyclerView.setItemAnimator(new DefaultItemAnimator());
+            recyclerView.setAdapter(iAdapter);
         }
 
-
-        //iAdapter = new TrendItemsAdapter(this, rank);
-
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(iAdapter);
 
     }
 

@@ -96,7 +96,9 @@
         <activity android:name="com.styln.InformationActivity" />
         <activity android:name="com.styln.SuggestActivity" />
         <activity android:name="com.styln.OthersActivity" />
-        <activity android:name="com.styln.PostActivity" />
+        <activity
+            android:name="com.styln.PostActivity"
+            android:windowSoftInputMode="adjustPan" />
         <activity android:name="com.styln.NotificationActivity" />
         <activity android:name="com.styln.PostPageActivity" />
         <activity

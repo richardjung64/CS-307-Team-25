@@ -30,9 +30,12 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
     private List<String> users_who_liked;
     private List<UsersDO> users_list;
     private String curr_userId;
+    private String curr_clothId;
     private UsersDO curr_user;
     private double new_followers_count;
     private List<String> followers;
+    private PaginatedScanList<ClothingDO> clothes;
+    private List<String> wishList_clothes;
     private static final String LOG_TAG = NotificationListAdapter.class.getSimpleName();
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
@@ -59,6 +62,7 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
             this.new_followers_count = user.getNew_followers();
             Log.d(LOG_TAG, "MY NEW FOLLOWERS " + new_followers_count);
             followers = user.getUserFollower();
+            wishList_clothes = user.getUserWishList();
         }
     }
 
@@ -73,7 +77,7 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
     public void onBindViewHolder(final NotificationListAdapter.MyViewHolder holder, int position) {
 
         Log.d(LOG_TAG, "List size: " + users_who_liked.size());
-        for (int i = 0 ; i < users_who_liked.size(); i++) {
+        for (int i = 0; i < users_who_liked.size(); i++) {
             curr_userId = users_who_liked.get(i);
             Log.d(LOG_TAG, "USER: " + curr_userId);
             GetUsers users = new GetUsers();
@@ -81,8 +85,7 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
             try {
                 curr_user = users.execute().get();
                 Log.d(LOG_TAG, "USER NAME: " + curr_user.getUserName());
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 Log.e(LOG_TAG, "Failed to find user");
             }
             if (curr_user != null)
@@ -97,19 +100,18 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
         Log.d(LOG_TAG, "new followers: " + new_followers_count);
         if (new_followers_count > 0) {
             users_list = new ArrayList<>();
-            List <String> new_followers = new ArrayList<>();
-            for (int i = 0 ; i < new_followers_count; i++)
+            List<String> new_followers = new ArrayList<>();
+            for (int i = 0; i < new_followers_count; i++)
                 new_followers.add(followers.get(followers.size() - i - 1));
 
-            for (int i = 0 ; i < new_followers.size(); i++) {
+            for (int i = 0; i < new_followers.size(); i++) {
                 curr_userId = new_followers.get(i);
                 GetUsers users = new GetUsers();
                 UsersDO curr_user = null;
                 try {
                     curr_user = users.execute().get();
                     Log.d(LOG_TAG, "USER NAME FOLLOW: " + curr_user.getUserName());
-                }
-                catch (Exception e) {
+                } catch (Exception e) {
                     Log.e(LOG_TAG, "Failed to find user");
                 }
                 if (curr_user != null)
@@ -120,39 +122,26 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
             Log.d(LOG_TAG, "TO DISPLAY: " + _setText);
             holder.name.setText(_setText);
         }
-        //holder.name.setText();
-//        holder.brand.setText(item.getClothingBrand());
-//        Glide.with(mContext).load(item.getClothingPhotoLink()).into(holder.image);
-//        holder.space.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Log.d("HHAHA","HAHHA opening");
-//                Intent intent= new Intent(mContext, ItemActivity.class);
-//                intent.putExtra("SKU",""+holder.name.getText());
-//                mContext.startActivity(intent);
-//            }
-//        });
-//        holder.action.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                //remove
-//                Intent intentCurrent = ((Activity) mContext).getIntent();
-//
-//                DataAction da = new DataAction();
-//                if(intentCurrent.getStringExtra("KEY").equals("wardrobe")){
-//                    da.ownClothing(""+holder.name.getText());
-//                } else {
-//                    da.wishClothing(""+holder.name.getText());
-//                }
-//
-//                Toast.makeText(mContext, "Removed", Toast.LENGTH_SHORT).show();
-//
-//                Intent intent = new Intent(mContext, CollectionActivity.class);
-//                intent.putExtra("ID",intentCurrent.getStringExtra("ID"));
-//                intent.putExtra("KEY",intentCurrent.getStringExtra("KEY"));
-//                mContext.startActivity(intent);
-//            }
-//        });
+        List<ClothingDO> sale_items = new ArrayList<>();
+        for (int i = 0 ; i < wishList_clothes.size(); i++) {
+            curr_clothId = wishList_clothes.get(i);
+            GetClothes clothes = new GetClothes();
+            ClothingDO curr_cloth = null;
+            try {
+                curr_cloth = clothes.execute().get();
+                Log.d(LOG_TAG, "USER NAME FOLLOW: " + curr_user.getUserName());
+            } catch (Exception e) {
+                Log.e(LOG_TAG, "Failed to find user");
+            }
+
+            //Log.e(LOG_TAG, "Cloth price: " + curr_cloth.getClothingPrice());
+            if (curr_cloth != null && Integer.parseInt(curr_cloth.getClothingPrice()) < Integer.parseInt(curr_cloth.getOld_price()))
+                sale_items.add(curr_cloth);
+        }
+        ClothingDO _cloth = sale_items.get(position);
+        String _setText = _cloth.getUserId() + " is on sale!!";
+        Log.d(LOG_TAG, "TO DISPLAY: " + _setText);
+        holder.name.setText(_setText);
     }
 
     private class GetUsers extends AsyncTask<String, Void, UsersDO> {
@@ -174,9 +163,30 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
         }
     }
 
+    private class GetClothes extends AsyncTask<String, Void, ClothingDO> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        String id;
+
+        public String getId () {
+            id = curr_clothId;
+            return id;
+        }
+        @Override
+        protected ClothingDO doInBackground(String... strings) {
+            ClothingDO loadClothes = mapper.load(ClothingDO.class, getId());
+            if (loadClothes == null)
+                Log.e(LOG_TAG, "Search failed..");
+            else
+                Log.e(LOG_TAG, "Search successful..");
+            return loadClothes;
+        }
+    }
+
     public int getItemCount() {
         if (users_who_liked.size() > 0)
             return users_who_liked.size();
-        return (int)(new_followers_count);
+        if (new_followers_count > 0)
+            return (int)(new_followers_count);
+        return wishList_clothes.size();
     }
 }

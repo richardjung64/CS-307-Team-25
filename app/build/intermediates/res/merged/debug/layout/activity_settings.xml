@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:text="Notifications"
             android:onClick="notification_open"/>
-        
+
         <Button
             android:id="@+id/button_delete"
             android:layout_width="match_parent"

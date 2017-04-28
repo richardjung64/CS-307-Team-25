@@ -25,6 +25,16 @@ public class UsersDO {
     private boolean hasCustomDp;
     private boolean login_opt;
     private double new_followers;
+    private List<String> posts_liked;
+
+    @DynamoDBAttribute(attributeName = "posts_liked")
+    public List<String> getPosts_liked() {
+        return posts_liked;
+    }
+
+    public void setPosts_liked(List<String> posts_liked) {
+        this.posts_liked = posts_liked;
+    }
 
     @DynamoDBAttribute(attributeName = "new_followers")
     public double getNew_followers() {

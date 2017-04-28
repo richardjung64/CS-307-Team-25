@@ -84,36 +84,41 @@ public class OthersActivity extends AppCompatActivity {
         follow = (Button)findViewById(R.id.others_follow);
         boolean following = false;
 
-        if (loadUser != null && !loadUser.isLogin_opt()) {
-            if (loadUser.isHasCustomDp()) {
-                profilePic = (ImageView) findViewById(R.id.profilePicture);
-                String address = loadUser.getUserPhoto();
-                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
-                        thumbnail(0.1f).into(profilePic);
-            }
-            else {
-                profilePic = (ImageView) findViewById(R.id.profilePicture);
-                String address = FacebookSignInProvider.userImageUrl;
-                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
-                        thumbnail(0.1f).into(profilePic);
-            }
-            //Log.i(LOG_TAG,FacebookSignInProvider.userName);
-        }
-        else {
-            if (loadUser != null && loadUser.isHasCustomDp()) {
-                profilePic = (ImageView) findViewById(R.id.profilePicture);
-                String address = loadUser.getUserPhoto();
-                Log.d(LOG_TAG, "Profile DP " + address);
-                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
-                        thumbnail(0.1f).into(profilePic);
-            }
-            else {
-                profilePic = (ImageView) findViewById(R.id.profilePicture);
-                String address = GoogleSignInProvider.userImageUrl;
-                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
-                        thumbnail(0.1f).into(profilePic);
-            }
-        }
+        profilePic = (ImageView) findViewById(R.id.profilePicture);
+        String address = loadUser.getUserPhoto();
+        Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+                thumbnail(0.1f).into(profilePic);
+
+//        if (loadUser != null && !loadUser.isLogin_opt()) {
+//            if (loadUser.isHasCustomDp()) {
+//                profilePic = (ImageView) findViewById(R.id.profilePicture);
+//                String address = loadUser.getUserPhoto();
+//                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+//                        thumbnail(0.1f).into(profilePic);
+//            }
+//            else {
+//                profilePic = (ImageView) findViewById(R.id.profilePicture);
+//                String address = FacebookSignInProvider.userImageUrl;
+//                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+//                        thumbnail(0.1f).into(profilePic);
+//            }
+//            //Log.i(LOG_TAG,FacebookSignInProvider.userName);
+//        }
+//        else {
+//            if (loadUser != null && loadUser.isHasCustomDp()) {
+//                profilePic = (ImageView) findViewById(R.id.profilePicture);
+//                String address = loadUser.getUserPhoto();
+//                Log.d(LOG_TAG, "Profile DP " + address);
+//                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+//                        thumbnail(0.1f).into(profilePic);
+//            }
+//            else {
+//                profilePic = (ImageView) findViewById(R.id.profilePicture);
+//                String address = GoogleSignInProvider.userImageUrl;
+//                Glide.with(this).load(address).bitmapTransform(new CropCircleTransformation(getBaseContext())).
+//                        thumbnail(0.1f).into(profilePic);
+//            }
+//        }
 
         String currUserID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
         if(loadUser.getUserFollower() != null) {

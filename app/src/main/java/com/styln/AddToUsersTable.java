@@ -53,15 +53,11 @@ public class AddToUsersTable {
         final UsersDO users_table = new UsersDO();
         users_table.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
         users_table.setUserName(usr_name);
-        try {
-            users_table.getUserPhoto();
-        }
-        catch (Exception e) {
-            if (fb_pic == null)
-                users_table.setUserPhoto(g_pic);
-            else
-                users_table.setUserPhoto(fb_pic);
-        }
+
+        if (g_pic != null)
+            users_table.setUserPhoto(g_pic);
+        if (fb_pic != null)
+            users_table.setUserPhoto(fb_pic);
         users_table.setUserPrivacy(isPrivate);
         users_table.setUserAge(age);
         users_table.setUserDescription(userDescr);

@@ -350,7 +350,13 @@ public class HomeActivity extends AppCompatActivity {
             UsersDO currentUser;
             String userID = AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID();
             currentUser = mapper.load(UsersDO.class, userID);
-            List<String> users_following_list = currentUser.getUserFollowing();
+            List<String> users_following_list = new ArrayList<>();
+            try {
+               users_following_list = currentUser.getUserFollowing();
+            }
+            catch (Exception e) {
+                Log.e(LOG_TAG, "I dont know man");
+            }
             for (int i = 0 ; i < users_following_list.size(); i++) {
                 curr_user_id = users_following_list.get(i);
                 UsersDO thisUser;
@@ -364,10 +370,11 @@ public class HomeActivity extends AppCompatActivity {
                 tempSet = thisUser.getUserPosts();
                 result = new ArrayList<String>(tempSet);
             }
+            if (result != null) {
             for (String str : result) {
                 PostTableDO iterator = mapper.load(PostTableDO.class, str);
                 loadresult.add(iterator);
-
+            }
             }
             return loadresult;
         }

@@ -32,10 +32,12 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
     private String curr_userId;
     private String curr_clothId;
     private UsersDO curr_user;
+    private String curr_postId;
     private double new_followers_count;
     private List<String> followers;
     private PaginatedScanList<ClothingDO> clothes;
     private List<String> wishList_clothes;
+    private List<String> postsLiked;
     private static final String LOG_TAG = NotificationListAdapter.class.getSimpleName();
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
@@ -63,6 +65,7 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
             Log.d(LOG_TAG, "MY NEW FOLLOWERS " + new_followers_count);
             followers = user.getUserFollower();
             wishList_clothes = user.getUserWishList();
+            postsLiked = user.getPosts_liked();
         }
     }
 
@@ -77,19 +80,33 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
     public void onBindViewHolder(final NotificationListAdapter.MyViewHolder holder, int position) {
 
         Log.d(LOG_TAG, "List size: " + users_who_liked.size());
-        for (int i = 0; i < users_who_liked.size(); i++) {
-            curr_userId = users_who_liked.get(i);
-            Log.d(LOG_TAG, "USER: " + curr_userId);
-            GetUsers users = new GetUsers();
-            UsersDO curr_user = null;
-            try {
-                curr_user = users.execute().get();
-                Log.d(LOG_TAG, "USER NAME: " + curr_user.getUserName());
-            } catch (Exception e) {
-                Log.e(LOG_TAG, "Failed to find user");
+        if (postsLiked != null) {
+            for (int j = 0; j < postsLiked.size(); j++) {
+                GetPost getPost = new GetPost();
+                PostTableDO curr_post = new PostTableDO();
+                curr_postId = postsLiked.get(j);
+                try {
+                    curr_post = getPost.execute().get();
+                    //Log.d(LOG_TAG, "USER NAME FOLLOW: " + curr_user.getUserName());
+                } catch (Exception e) {
+                    //Log.e(LOG_TAG, "Failed to find user");
+                }
+                users_who_liked = curr_post.getLikedUser();
+                for (int i = 0; i < users_who_liked.size(); i++) {
+                    curr_userId = users_who_liked.get(i);
+                    //Log.d(LOG_TAG, "USER: " + curr_userId);
+                    GetUsers users = new GetUsers();
+                    UsersDO curr_user = null;
+                    try {
+                        curr_user = users.execute().get();
+                        Log.d(LOG_TAG, "USER NAME: " + curr_user.getUserName());
+                    } catch (Exception e) {
+                        Log.e(LOG_TAG, "Failed to find user");
+                    }
+                    if (curr_user != null)
+                        users_list.add(curr_user);
+                }
             }
-            if (curr_user != null)
-                users_list.add(curr_user);
         }
         if (users_list.size() > 0) {
             UsersDO user = users_list.get(position);
@@ -117,10 +134,17 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
                 if (curr_user != null)
                     users_list.add(curr_user);
             }
-            UsersDO _user = users_list.get(position);
-            String _setText = _user.getUserName() + " is following you";
-            Log.d(LOG_TAG, "TO DISPLAY: " + _setText);
-            holder.name.setText(_setText);
+            if (users_list.size() > 0) {
+                try {
+                    UsersDO _user = users_list.get(position);
+                    String _setText = _user.getUserName() + " is following you";
+                    Log.d(LOG_TAG, "TO DISPLAY: " + _setText);
+                    holder.name.setText(_setText);
+                }
+                catch (Exception e) {
+                    Log.e(LOG_TAG, "Damn son");
+                }
+            }
         }
         List<ClothingDO> sale_items = new ArrayList<>();
         for (int i = 0; i < wishList_clothes.size(); i++) {
@@ -138,10 +162,12 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
             if (curr_cloth != null && Integer.parseInt(curr_cloth.getClothingPrice()) < Integer.parseInt(curr_cloth.getOld_price()))
                 sale_items.add(curr_cloth);
         }
-        ClothingDO _cloth = sale_items.get(position);
-        String _setText = _cloth.getUserId() + " is on sale!!";
-        Log.d(LOG_TAG, "TO DISPLAY: " + _setText);
-        holder.name.setText(_setText);
+        if (sale_items.size() > 0) {
+            ClothingDO _cloth = sale_items.get(position);
+            String _setText = _cloth.getUserId() + " is on sale!!";
+            Log.d(LOG_TAG, "TO DISPLAY: " + _setText);
+            holder.name.setText(_setText);
+        }
     }
 
     private class GetUsers extends AsyncTask<String, Void, UsersDO> {
@@ -156,6 +182,26 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
         @Override
         protected UsersDO doInBackground(String... strings) {
             UsersDO loadUser = mapper.load(UsersDO.class, getId());
+            if (loadUser == null)
+                Log.e(LOG_TAG, "Search failed..");
+            else
+                Log.e(LOG_TAG, "Search successful..");
+            return loadUser;
+        }
+    }
+
+    private class GetPost extends AsyncTask<String, Void, PostTableDO> {
+        DynamoDBMapper mapper = AWSMobileClient.defaultMobileClient().getDynamoDBMapper();
+        String id;
+
+        public String getId() {
+            id = curr_postId;
+            return id;
+        }
+
+        @Override
+        protected PostTableDO doInBackground(String... strings) {
+            PostTableDO loadUser = mapper.load(PostTableDO.class, getId());
             if (loadUser == null)
                 Log.e(LOG_TAG, "Search failed..");
             else

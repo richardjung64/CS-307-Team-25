@@ -270,19 +270,34 @@ public class DataAction {
 
                 UsersDO curr = mapper.load(UsersDO.class, currUserID);
                 PostTableDO spost = mapper.load(PostTableDO.class, somePost);
-
-                if (spost.getLikedUser() == null) {
+                UsersDO post_poster = mapper.load(UsersDO.class, spost.getPostPoster());
+                try {
+                    if (spost.getLikedUser() == null) {
+                        spost.setLikedUser(new ArrayList<String>());
+                    }
+                }
+                catch (Exception e) {
                     spost.setLikedUser(new ArrayList<String>());
                 }
                 if (spost.getLikedUser().contains(currUserID)) {
                     //Already liked, unlike
                     spost.setPostLikes(spost.getPostLikes() - 1);
                     spost.getLikedUser().remove(currUserID);
+                    List<String> liskedPost = post_poster.getPosts_liked();
+                    if (liskedPost.contains(spost.getUserId()))
+                        liskedPost.remove(spost.getUserId());
+
                 } else {
                     //Like
                     spost.setPostLikes(spost.getPostLikes() + 1);
                     spost.getLikedUser().add(currUserID);
+                    List<String> liskedPost = curr.getPosts_liked();
+                    if (liskedPost == null)
+                        liskedPost = new ArrayList<>();
+                    liskedPost.add(spost.getUserId());
+                    post_poster.setPosts_liked(liskedPost);
                 }
+                mapper.save(post_poster);
                 mapper.save(spost);
             }
         };

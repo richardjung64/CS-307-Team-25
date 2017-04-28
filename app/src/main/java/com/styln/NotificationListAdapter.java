@@ -283,7 +283,7 @@ public class NotificationListAdapter extends RecyclerView.Adapter<NotificationLi
         if (wishList_clothes.size() > 0)
             sum += wishList_clothes.size();
         if (sum == 0)
-            return 1;
+            return 2;
         Log.d(LOG_TAG, "COUNT: " + sum);
         return sum;
     }

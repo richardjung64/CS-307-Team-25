@@ -1,29 +1,5 @@
 [
     {
-        "outputFile": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/D:\\CS-307-Team-25\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 63,
-                    "endOffset": 114
-                },
-                "from": {
-                    "file": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/C:\\Users\\tiger\\.android\\build-cache\\276be8b698e972ac00553a17445786998d0db300\\output\\res\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 63,
-                        "endOffset": 114
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "/Users/shanu/Desktop/AndroidProjects/CS-307-Team-25/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-land-v4/values-xlarge-land-v4.xml",
         "map": [
             {

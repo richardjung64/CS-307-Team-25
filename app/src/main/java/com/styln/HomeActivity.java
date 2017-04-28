@@ -311,14 +311,18 @@ public class HomeActivity extends AppCompatActivity {
 
             List<String> aaa;
             for (String str : users) {
-                UsersDO iterator = mapper.load(UsersDO.class, str);
-                aaa = iterator.getUserPosts();
-                List<String> zzz = new ArrayList<String>(aaa);
-                for (String abc : zzz) {
-                    PostTableDO xyz = mapper.load(PostTableDO.class, abc);
-                    loadresult.add(xyz);
+                try {
+                    UsersDO iterator = mapper.load(UsersDO.class, str);
+                    aaa = iterator.getUserPosts();
+                    List<String> zzz = new ArrayList<String>(aaa);
+                    for (String abc : zzz) {
+                        PostTableDO xyz = mapper.load(PostTableDO.class, abc);
+                        loadresult.add(xyz);
+                    }
                 }
-
+                catch (Exception e) {
+                    Log.d(LOG_TAG, "Null posts");
+                }
             }
 
             for (String str : result) {

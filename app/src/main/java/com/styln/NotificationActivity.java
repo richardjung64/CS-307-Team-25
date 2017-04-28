@@ -1,5 +1,6 @@
 package com.styln;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -70,8 +71,8 @@ public class NotificationActivity extends AppCompatActivity {
         iAdapter = new NotificationListAdapter(this,thisPost, curr_user);
 
         recyclerView = (RecyclerView) findViewById(R.id._recycler_view_notify);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-        recyclerView.setLayoutManager(mLayoutManager);
+        //RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        recyclerView.setLayoutManager(new WrapContentLinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(iAdapter);
 
@@ -102,6 +103,20 @@ public class NotificationActivity extends AppCompatActivity {
             else
                 Log.e(LOG_TAG, "Search successful..");
             return loadUser;
+        }
+    }
+
+    public class WrapContentLinearLayoutManager extends LinearLayoutManager {
+        WrapContentLinearLayoutManager (Context context, int orientation, boolean reverseLayout) {
+            super(context,orientation,reverseLayout);
+        }
+        @Override
+        public void onLayoutChildren(RecyclerView.Recycler recycler, RecyclerView.State state) {
+            try {
+                super.onLayoutChildren(recycler, state);
+            } catch (IndexOutOfBoundsException e) {
+                Log.e("Error", "IndexOutOfBoundsException in RecyclerView happens");
+            }
         }
     }
 

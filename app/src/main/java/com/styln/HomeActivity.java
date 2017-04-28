@@ -229,7 +229,8 @@ public class HomeActivity extends AppCompatActivity {
 
         if ((thisUser == null) || (thisUser.isFirstTime())) {
             Log.d(LOG_TAG, "Adding to database");
-            addToUsersTable = new AddToUsersTable(usr_name, str_age, userDescr, gender, isPrivate, filePath);
+            addToUsersTable = new AddToUsersTable(usr_name, str_age, userDescr, gender, isPrivate,
+                    FacebookSignInProvider.userImageUrl, GoogleSignInProvider.userImageUrl);
             addItemTable();
             addPost = new AddPostsTable();
             addPostTable();

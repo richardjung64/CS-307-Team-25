@@ -31,6 +31,7 @@ import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.models.nosql.ClothingDO;
 import com.amazonaws.models.nosql.UsersDO;
 import com.bumptech.glide.Glide;
+import com.google.android.gms.auth.api.signin.GoogleSignInApi;
 import com.styln.demo.nosql.DemoNoSQLOperationListItem;
 import com.styln.demo.nosql.DemoNoSQLTableBase;
 
@@ -296,7 +297,8 @@ public class HomeActivityBACKUP extends AppCompatActivity {
 
         if ((thisUser == null) || (thisUser.isFirstTime())) {
             Log.d(LOG_TAG, "Adding to database");
-            addToUsersTable = new AddToUsersTable(usr_name, str_age, userDescr, gender, isPrivate, filePath);
+            addToUsersTable = new AddToUsersTable(usr_name, str_age, userDescr, gender, isPrivate,
+                    FacebookSignInProvider.userImageUrl, GoogleSignInProvider.userImageUrl);
             addItemTable();
             addPost = new AddPostsTable();
             addPostTable();

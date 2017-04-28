@@ -20,6 +20,8 @@ public class AddToUsersTable {
     //public UsersDO users_table;
     public AmazonClientException lastException;
     final String LOG_TAG = AddToUsersTable.class.getSimpleName();
+    private String fb_pic;
+    private String g_pic;
 
     private String usr_name;
 
@@ -30,13 +32,15 @@ public class AddToUsersTable {
     private String age;
     private String filePath;
 
-    public AddToUsersTable(String userName, String age, String userDescr, String gender, boolean isPrivate, String filePath) {
+    public AddToUsersTable(String userName, String age, String userDescr, String gender, boolean isPrivate, String fb_pic, String g_pic) {
         this.usr_name = userName;
         this.age = age;
         this.userDescr = userDescr;
         this.gender = gender;
         this.isPrivate = isPrivate;
-        this.filePath = filePath;
+        this.fb_pic = fb_pic;
+        this.g_pic = g_pic;
+        //this.filePath = filePath;
         //this.context = context;
         //credentialsProvider = new CognitoCachingCredentialsProvider(context, "us-east-1:43cde55a-51f7-4d7a-a2ab-f77c948eed21", Regions.US_EAST_1);
         //ddbClient = new AmazonDynamoDBClient(credentialsProvider);
@@ -49,7 +53,15 @@ public class AddToUsersTable {
         final UsersDO users_table = new UsersDO();
         users_table.setUserId(AWSMobileClient.defaultMobileClient().getIdentityManager().getCachedUserID());
         users_table.setUserName(usr_name);
-        users_table.setUserPhoto("");
+        try {
+            users_table.getUserPhoto();
+        }
+        catch (Exception e) {
+            if (fb_pic == null)
+                users_table.setUserPhoto(g_pic);
+            else
+                users_table.setUserPhoto(fb_pic);
+        }
         users_table.setUserPrivacy(isPrivate);
         users_table.setUserAge(age);
         users_table.setUserDescription(userDescr);
